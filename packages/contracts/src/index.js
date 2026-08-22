@@ -41,7 +41,9 @@ const asString = (value, path, { min = 1, max = 200_000 } = {}) => {
   if (typeof value !== 'string' || value.length < min || value.length > max) {
     fail(path, `must be a string with ${min}..${max} characters`);
   }
-  if (/\p{Cc}/u.test(value)) fail(path, 'contains a control character');
+  const forbiddenControl = [...value].find((character) =>
+    /\p{Cc}/u.test(character) && character !== '\n' && character !== '\t');
+  if (forbiddenControl) fail(path, 'contains a forbidden control character');
   return value;
 };
 

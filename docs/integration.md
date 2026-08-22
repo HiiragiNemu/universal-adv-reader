@@ -67,15 +67,26 @@ The future handoff from `narcissu-kana-research` must publish, per corpus:
 5. unresolved cue records rather than guessed links;
 6. a source revision and a reproducible verification report.
 
-No archive bytes are copied into this Reader repository.
+No archive bytes are copied into this Reader repository. Local development mounts the resource repository read-only at `/corpus/`; production may provide the same URL contract with a static origin or CDN.
 
-## Planned engine adapters
+## Engine adapters
 
-These IDs are reserved only in documentation until evidence-backed implementations exist:
+Current:
 
 ```text
-majiro-mjo-v1     Narcissu 10th and Narcissu 3 script conversion
-ikura-isf-v1      KANA script conversion
+majiro-production-v1 + adv-story/majiro-v1
+  normalized Narcissu Majiro stories with vn-mjo-reader-script/v1 provenance
 ```
 
-Registering either ID in a corpus before its adapter is present makes loading fail closed.
+Planned as a distinct boundary:
+
+```text
+ikura-production-v1 + adv-story/ikura-v1
+  KANA script conversion
+```
+
+Registering an adapter ID or source format before its exact implementation is present makes loading fail closed.
+
+## UI shell migration
+
+The UI shell catalog is served from `/apps/web/.well-known/ui-shells.json`. `classic` is inherited, stable, and default. `next` is experimental and declares `requiresManualAcceptance: true`. Both shells use `ui-shell/1.0.0`; `?ui=next` is non-persistent, auto-promotion is disabled, and changing the default requires a separately recorded human acceptance.

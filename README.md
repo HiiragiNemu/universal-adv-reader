@@ -19,9 +19,12 @@
 - 媒体 resolver 注册表；
 - 所有剧情都可展开语音路由面板，未解析 cue 也保留可见槽位；
 - 深链与 `MessagePort` App Bridge provider；
-- 无框架依赖的可运行 Web Reader 演示。
+- 无框架依赖的可运行 Web Reader；
+- `classic` 继承版与 `next` 迁移候选双外壳，共用同一 ReaderSession / AdvIR / media / bridge；
+- 十周年版 `narcissu-himeko/himeko_ep00` 的日文、中文对照与英文三版本；
+- 该剧情的 13 条逻辑文本、22 个日英语音文件、背景图、BGM 与音效精确路由。
 
-Narcissu 10th、KANA、Narcissu 3 的真实引擎适配在这个基线验收后接入。
+当前首个 Majiro 生产切片直接读取 `narcissu-kana-research` 的已验证产物。KANA、Narcissu 3 与十周年版其余剧情沿用同一生产导入边界继续接入。
 
 ## 运行
 
@@ -38,6 +41,8 @@ npm run serve
 http://127.0.0.1:4173/apps/web/
 ```
 
+开发服务器把相邻的 `D:\PROGETTO\narcissu-kana-research` 以 `/corpus/` 只读挂载；也可用 `ADV_CORPUS_REPOSITORY` 指定同一仓库的实际位置。大体积图像和音频不会复制进本仓库。
+
 ## 目录
 
 ```text
@@ -47,6 +52,8 @@ packages/contracts       AdvIR 与清单验证
 packages/core            适配器、媒体解析器、阅读会话
 packages/bridge          稳定深链与 MessagePort 协议
 packages/adapters        预规范化 AdvIR 参考适配器
+packages/ui-shell        classic / next 共享外壳合同
+tools/import-narcissu10  只读导入首个十周年版生产剧情
 docs                     架构和接入说明
 test                     Node 内建测试
 ```

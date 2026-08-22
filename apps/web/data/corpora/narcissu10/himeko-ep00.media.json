@@ -1,0 +1,319 @@
+{
+  "schema": "adv-media/v1",
+  "revision": "narcissu10-himeko-ep00-media-r1",
+  "resolverId": "narcissu10-manifest",
+  "entries": [
+    {
+      "mediaId": "n10.en.bgm.2na",
+      "role": "bgm",
+      "url": "/corpus/archive/raw/narcissu10-original/narci_himeko/stream.arc.unpacked/2na.ogg",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "n10.en.image.b3",
+      "role": "image",
+      "url": "/corpus/archive/raw/narcissu10-original/narci_himeko/data.arc.unpacked/b3.png",
+      "mimeType": "image/png"
+    },
+    {
+      "mediaId": "n10.en.image.b4",
+      "role": "image",
+      "url": "/corpus/archive/raw/narcissu10-original/narci_himeko/data.arc.unpacked/b4.png",
+      "mimeType": "image/png"
+    },
+    {
+      "mediaId": "n10.en.image.black",
+      "role": "image",
+      "url": "/corpus/archive/derived/images/narcissu10-original/narci_himeko/fastdata.arc.unpacked/black.png",
+      "mimeType": "image/png"
+    },
+    {
+      "mediaId": "n10.en.image.sin_e04z",
+      "role": "image",
+      "url": "/corpus/archive/raw/narcissu10-original/narci_himeko/data.arc.unpacked/sin_e04z.png",
+      "mimeType": "image/png"
+    },
+    {
+      "mediaId": "n10.en.image.sin_e05z",
+      "role": "image",
+      "url": "/corpus/archive/raw/narcissu10-original/narci_himeko/data.arc.unpacked/sin_e05z.png",
+      "mimeType": "image/png"
+    },
+    {
+      "mediaId": "n10.en.image.sin_e06bz",
+      "role": "image",
+      "url": "/corpus/archive/raw/narcissu10-original/narci_himeko/data.arc.unpacked/sin_e06bz.png",
+      "mimeType": "image/png"
+    },
+    {
+      "mediaId": "n10.en.image.sin_e06z",
+      "role": "image",
+      "url": "/corpus/archive/raw/narcissu10-original/narci_himeko/data.arc.unpacked/sin_e06z.png",
+      "mimeType": "image/png"
+    },
+    {
+      "mediaId": "n10.en.image.sin_e07z",
+      "role": "image",
+      "url": "/corpus/archive/raw/narcissu10-original/narci_himeko/data.arc.unpacked/sin_e07z.png",
+      "mimeType": "image/png"
+    },
+    {
+      "mediaId": "n10.en.image.w3",
+      "role": "image",
+      "url": "/corpus/archive/raw/narcissu10-original/narci_himeko/data.arc.unpacked/w3.png",
+      "mimeType": "image/png"
+    },
+    {
+      "mediaId": "n10.en.sfx.car_close",
+      "role": "sfx",
+      "url": "/corpus/archive/raw/narcissu10-original/narci_himeko/data.arc.unpacked/car_close.wav",
+      "mimeType": "audio/wav"
+    },
+    {
+      "mediaId": "n10.en.sfx.car_thru_rl",
+      "role": "sfx",
+      "url": "/corpus/archive/raw/narcissu10-original/narci_himeko/data.arc.unpacked/car_thru_rl.wav",
+      "mimeType": "audio/wav"
+    },
+    {
+      "mediaId": "n10.en.sfx.kane02d",
+      "role": "sfx",
+      "url": "/corpus/archive/raw/narcissu10-original/narci_himeko/data.arc.unpacked/kane02d.wav",
+      "mimeType": "audio/wav"
+    },
+    {
+      "mediaId": "n10.en.sfx.kaze4",
+      "role": "sfx",
+      "url": "/corpus/archive/raw/narcissu10-original/narci_himeko/data.arc.unpacked/kaze4.wav",
+      "mimeType": "audio/wav"
+    },
+    {
+      "mediaId": "n10.en.sfx.z42r",
+      "role": "sfx",
+      "url": "/corpus/archive/raw/narcissu10-original/narci_himeko/data.arc.unpacked/z42r.wav",
+      "mimeType": "audio/wav"
+    },
+    {
+      "mediaId": "n10.en.voice.c77hime_0001",
+      "role": "voice",
+      "url": "/corpus/archive/raw/narcissu10-original/narci_himeko/voice.arc.unpacked/c77hime_0001.wav",
+      "mimeType": "audio/wav"
+    },
+    {
+      "mediaId": "n10.en.voice.c77hime_0002",
+      "role": "voice",
+      "url": "/corpus/archive/raw/narcissu10-original/narci_himeko/voice.arc.unpacked/c77hime_0002.wav",
+      "mimeType": "audio/wav"
+    },
+    {
+      "mediaId": "n10.en.voice.c77setu_0002",
+      "role": "voice",
+      "url": "/corpus/archive/raw/narcissu10-original/narci_himeko/voice.arc.unpacked/c77setu_0002.wav",
+      "mimeType": "audio/wav"
+    },
+    {
+      "mediaId": "n10.en.voice.c77setu_0003",
+      "role": "voice",
+      "url": "/corpus/archive/raw/narcissu10-original/narci_himeko/voice.arc.unpacked/c77setu_0003.wav",
+      "mimeType": "audio/wav"
+    },
+    {
+      "mediaId": "n10.en.voice.c77setu_0004",
+      "role": "voice",
+      "url": "/corpus/archive/raw/narcissu10-original/narci_himeko/voice.arc.unpacked/c77setu_0004.wav",
+      "mimeType": "audio/wav"
+    },
+    {
+      "mediaId": "n10.en.voice.c77setu_0006",
+      "role": "voice",
+      "url": "/corpus/archive/raw/narcissu10-original/narci_himeko/voice.arc.unpacked/c77setu_0006.wav",
+      "mimeType": "audio/wav"
+    },
+    {
+      "mediaId": "n10.en.voice.c77setu_0007",
+      "role": "voice",
+      "url": "/corpus/archive/raw/narcissu10-original/narci_himeko/voice.arc.unpacked/c77setu_0007.wav",
+      "mimeType": "audio/wav"
+    },
+    {
+      "mediaId": "n10.en.voice.c77setu_0008",
+      "role": "voice",
+      "url": "/corpus/archive/raw/narcissu10-original/narci_himeko/voice.arc.unpacked/c77setu_0008.wav",
+      "mimeType": "audio/wav"
+    },
+    {
+      "mediaId": "n10.en.voice.c77setu_0008b",
+      "role": "voice",
+      "url": "/corpus/archive/raw/narcissu10-original/narci_himeko/voice.arc.unpacked/c77setu_0008b.wav",
+      "mimeType": "audio/wav"
+    },
+    {
+      "mediaId": "n10.en.voice.hime1_0559",
+      "role": "voice",
+      "url": "/corpus/archive/raw/narcissu10-original/narci_himeko/voice.arc.unpacked/hime1_0559.ogg",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "n10.en.voice.hime1_0580zz",
+      "role": "voice",
+      "url": "/corpus/archive/raw/narcissu10-original/narci_himeko/voice.arc.unpacked/hime1_0580zz.ogg",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "n10.ja.bgm.2na",
+      "role": "bgm",
+      "url": "/corpus/archive/raw/narcissu10-original-ja-JP/narci_himeko/stream.arc.unpacked/2na.ogg",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "n10.ja.image.b3",
+      "role": "image",
+      "url": "/corpus/archive/raw/narcissu10-original-ja-JP/narci_himeko/data.arc.unpacked/b3.png",
+      "mimeType": "image/png"
+    },
+    {
+      "mediaId": "n10.ja.image.b4",
+      "role": "image",
+      "url": "/corpus/archive/raw/narcissu10-original-ja-JP/narci_himeko/data.arc.unpacked/b4.png",
+      "mimeType": "image/png"
+    },
+    {
+      "mediaId": "n10.ja.image.black",
+      "role": "image",
+      "url": "/corpus/archive/derived/images/narcissu10-original-ja-JP/narci_himeko/fastdata.arc.unpacked/black.png",
+      "mimeType": "image/png"
+    },
+    {
+      "mediaId": "n10.ja.image.sin_e04z",
+      "role": "image",
+      "url": "/corpus/archive/raw/narcissu10-original-ja-JP/narci_himeko/data.arc.unpacked/sin_e04z.png",
+      "mimeType": "image/png"
+    },
+    {
+      "mediaId": "n10.ja.image.sin_e05z",
+      "role": "image",
+      "url": "/corpus/archive/raw/narcissu10-original-ja-JP/narci_himeko/data.arc.unpacked/sin_e05z.png",
+      "mimeType": "image/png"
+    },
+    {
+      "mediaId": "n10.ja.image.sin_e06bz",
+      "role": "image",
+      "url": "/corpus/archive/raw/narcissu10-original-ja-JP/narci_himeko/data.arc.unpacked/sin_e06bz.png",
+      "mimeType": "image/png"
+    },
+    {
+      "mediaId": "n10.ja.image.sin_e06z",
+      "role": "image",
+      "url": "/corpus/archive/raw/narcissu10-original-ja-JP/narci_himeko/data.arc.unpacked/sin_e06z.png",
+      "mimeType": "image/png"
+    },
+    {
+      "mediaId": "n10.ja.image.sin_e07z",
+      "role": "image",
+      "url": "/corpus/archive/raw/narcissu10-original-ja-JP/narci_himeko/data.arc.unpacked/sin_e07z.png",
+      "mimeType": "image/png"
+    },
+    {
+      "mediaId": "n10.ja.image.w3",
+      "role": "image",
+      "url": "/corpus/archive/raw/narcissu10-original-ja-JP/narci_himeko/data.arc.unpacked/w3.png",
+      "mimeType": "image/png"
+    },
+    {
+      "mediaId": "n10.ja.sfx.car_close",
+      "role": "sfx",
+      "url": "/corpus/archive/raw/narcissu10-original-ja-JP/narci_himeko/data.arc.unpacked/car_close.wav",
+      "mimeType": "audio/wav"
+    },
+    {
+      "mediaId": "n10.ja.sfx.car_thru_rl",
+      "role": "sfx",
+      "url": "/corpus/archive/raw/narcissu10-original-ja-JP/narci_himeko/data.arc.unpacked/car_thru_rl.wav",
+      "mimeType": "audio/wav"
+    },
+    {
+      "mediaId": "n10.ja.sfx.kane02d",
+      "role": "sfx",
+      "url": "/corpus/archive/raw/narcissu10-original-ja-JP/narci_himeko/data.arc.unpacked/kane02d.wav",
+      "mimeType": "audio/wav"
+    },
+    {
+      "mediaId": "n10.ja.sfx.kaze4",
+      "role": "sfx",
+      "url": "/corpus/archive/raw/narcissu10-original-ja-JP/narci_himeko/data.arc.unpacked/kaze4.wav",
+      "mimeType": "audio/wav"
+    },
+    {
+      "mediaId": "n10.ja.sfx.z42r",
+      "role": "sfx",
+      "url": "/corpus/archive/raw/narcissu10-original-ja-JP/narci_himeko/data.arc.unpacked/z42r.wav",
+      "mimeType": "audio/wav"
+    },
+    {
+      "mediaId": "n10.ja.voice.c77hime_0001",
+      "role": "voice",
+      "url": "/corpus/archive/raw/narcissu10-original-ja-JP/narci_himeko/voice.arc.unpacked/c77hime_0001.wav",
+      "mimeType": "audio/wav"
+    },
+    {
+      "mediaId": "n10.ja.voice.c77hime_0002",
+      "role": "voice",
+      "url": "/corpus/archive/raw/narcissu10-original-ja-JP/narci_himeko/voice.arc.unpacked/c77hime_0002.wav",
+      "mimeType": "audio/wav"
+    },
+    {
+      "mediaId": "n10.ja.voice.c77setu_0002",
+      "role": "voice",
+      "url": "/corpus/archive/raw/narcissu10-original-ja-JP/narci_himeko/voice.arc.unpacked/c77setu_0002.wav",
+      "mimeType": "audio/wav"
+    },
+    {
+      "mediaId": "n10.ja.voice.c77setu_0003",
+      "role": "voice",
+      "url": "/corpus/archive/raw/narcissu10-original-ja-JP/narci_himeko/voice.arc.unpacked/c77setu_0003.wav",
+      "mimeType": "audio/wav"
+    },
+    {
+      "mediaId": "n10.ja.voice.c77setu_0004",
+      "role": "voice",
+      "url": "/corpus/archive/raw/narcissu10-original-ja-JP/narci_himeko/voice.arc.unpacked/c77setu_0004.wav",
+      "mimeType": "audio/wav"
+    },
+    {
+      "mediaId": "n10.ja.voice.c77setu_0006",
+      "role": "voice",
+      "url": "/corpus/archive/raw/narcissu10-original-ja-JP/narci_himeko/voice.arc.unpacked/c77setu_0006.wav",
+      "mimeType": "audio/wav"
+    },
+    {
+      "mediaId": "n10.ja.voice.c77setu_0007",
+      "role": "voice",
+      "url": "/corpus/archive/raw/narcissu10-original-ja-JP/narci_himeko/voice.arc.unpacked/c77setu_0007.wav",
+      "mimeType": "audio/wav"
+    },
+    {
+      "mediaId": "n10.ja.voice.c77setu_0008",
+      "role": "voice",
+      "url": "/corpus/archive/raw/narcissu10-original-ja-JP/narci_himeko/voice.arc.unpacked/c77setu_0008.wav",
+      "mimeType": "audio/wav"
+    },
+    {
+      "mediaId": "n10.ja.voice.c77setu_0008b",
+      "role": "voice",
+      "url": "/corpus/archive/raw/narcissu10-original-ja-JP/narci_himeko/voice.arc.unpacked/c77setu_0008b.wav",
+      "mimeType": "audio/wav"
+    },
+    {
+      "mediaId": "n10.ja.voice.hime1_0559",
+      "role": "voice",
+      "url": "/corpus/archive/raw/narcissu10-original-ja-JP/narci_himeko/voice.arc.unpacked/hime1_0559.ogg",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "n10.ja.voice.hime1_0580zz",
+      "role": "voice",
+      "url": "/corpus/archive/raw/narcissu10-original-ja-JP/narci_himeko/voice.arc.unpacked/hime1_0580zz.ogg",
+      "mimeType": "audio/ogg"
+    }
+  ]
+}

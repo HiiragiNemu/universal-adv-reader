@@ -7,9 +7,10 @@ import { fixtureJson } from '../test-support/helpers.js';
 
 const inputs = async () => {
   const catalog = await fixtureJson('catalog.json');
+  const corpus = catalog.corpora.find((item) => item.corpusId === 'architecture-demo');
   return {
-    corpus: catalog.corpora[0],
-    storyEntry: catalog.corpora[0].stories[0],
+    corpus,
+    storyEntry: corpus.stories[0],
     story: await fixtureJson('demo-story.json'),
   };
 };

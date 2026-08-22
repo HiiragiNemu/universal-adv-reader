@@ -1,0 +1,4210 @@
+diff --git a/README.md b/README.md
+index b178801..8e4f715 100644
+--- a/README.md
++++ b/README.md
+@@ -19,9 +19,12 @@
+ - 媒体 resolver 注册表；
+ - 所有剧情都可展开语音路由面板，未解析 cue 也保留可见槽位；
+ - 深链与 `MessagePort` App Bridge provider；
+-- 无框架依赖的可运行 Web Reader 演示。
++- 无框架依赖的可运行 Web Reader；
++- `classic` 继承版与 `next` 迁移候选双外壳，共用同一 ReaderSession / AdvIR / media / bridge；
++- 十周年版 `narcissu-himeko/himeko_ep00` 的日文、中文对照与英文三版本；
++- 该剧情的 13 条逻辑文本、22 个日英语音文件、背景图、BGM 与音效精确路由。
+ 
+-Narcissu 10th、KANA、Narcissu 3 的真实引擎适配在这个基线验收后接入。
++当前首个 Majiro 生产切片直接读取 `narcissu-kana-research` 的已验证产物。KANA、Narcissu 3 与十周年版其余剧情沿用同一生产导入边界继续接入。
+ 
+ ## 运行
+ 
+@@ -38,6 +41,8 @@ npm run serve
+ http://127.0.0.1:4173/apps/web/
+ ```
+ 
++开发服务器把相邻的 `D:\PROGETTO\narcissu-kana-research` 以 `/corpus/` 只读挂载；也可用 `ADV_CORPUS_REPOSITORY` 指定同一仓库的实际位置。大体积图像和音频不会复制进本仓库。
++
+ ## 目录
+ 
+ ```text
+@@ -47,6 +52,8 @@ packages/contracts       AdvIR 与清单验证
+ packages/core            适配器、媒体解析器、阅读会话
+ packages/bridge          稳定深链与 MessagePort 协议
+ packages/adapters        预规范化 AdvIR 参考适配器
++packages/ui-shell        classic / next 共享外壳合同
++tools/import-narcissu10  只读导入首个十周年版生产剧情
+ docs                     架构和接入说明
+ test                     Node 内建测试
+ ```
+diff --git a/apps/web/.well-known/adv-app.json b/apps/web/.well-known/adv-app.json
+index 76674ba..fce79d6 100644
+--- a/apps/web/.well-known/adv-app.json
++++ b/apps/web/.well-known/adv-app.json
+@@ -15,14 +15,14 @@
+   "capabilities": [
+     {
+       "id": "story.read",
+-      "adapterIds": ["adv-ir-v1"],
+-      "sourceFormats": ["adv-story/v1"],
++      "adapterIds": ["adv-ir-v1", "majiro-production-v1"],
++      "sourceFormats": ["adv-story/v1", "adv-story/majiro-v1"],
+       "features": ["text", "choices", "branches", "voice-controls", "image-actions", "audio-actions"]
+     },
+     {
+       "id": "voice.play",
+-      "adapterIds": ["adv-ir-v1"],
+-      "sourceFormats": ["adv-story/v1"],
++      "adapterIds": ["adv-ir-v1", "majiro-production-v1"],
++      "sourceFormats": ["adv-story/v1", "adv-story/majiro-v1"],
+       "features": ["utterance", "scene", "unresolved-cues"]
+     }
+   ],
+diff --git a/apps/web/.well-known/ui-shells.json b/apps/web/.well-known/ui-shells.json
+new file mode 100644
+index 0000000..0171ab6
+--- /dev/null
++++ b/apps/web/.well-known/ui-shells.json
+@@ -0,0 +1,73 @@
++{
++  "schema": "adv-ui-shell-catalog/v1",
++  "contract": "ui-shell/1.0.0",
++  "defaultShellId": "classic",
++  "migration": {
++    "selector": "?ui=next",
++    "persistent": false,
++    "autoPromotion": false,
++    "promotionPolicy": "manual-acceptance-only"
++  },
++  "runtime": "react-contract-first",
++  "slots": [
++    "shell",
++    "navigation",
++    "catalog",
++    "reader",
++    "sidebar-tree",
++    "floating-tools",
++    "pager",
++    "media"
++  ],
++  "breakpoints": {
++    "compact": "0-639",
++    "mobile": "640-767",
++    "desktop": "768-1279",
++    "wide": ">=1280",
++    "shortViewport": "height<=511"
++  },
++  "tokenNamespaces": ["primitive", "semantic", "state", "texture", "motion"],
++  "themes": [
++    { "id": "yellow", "classicRecipe": "classic.yellow", "status": "accepted" },
++    { "id": "eye-care", "classicRecipe": "classic.eye-care", "status": "accepted" },
++    { "id": "white", "classicRecipe": "classic.white", "status": "accepted" },
++    { "id": "night", "classicRecipe": "classic.dark", "status": "pending" },
++    { "id": "cold-frost", "classicRecipe": "classic.frost", "status": "pending" }
++  ],
++  "inputs": {
++    "mode": "read-only",
++    "contracts": ["ReaderSession", "AdvIR", "media", "bridge"]
++  },
++  "commands": {
++    "mode": "append-only",
++    "namespaces": ["navigate", "reader", "media", "bridge"]
++  },
++  "sidebarTree": {
++    "hierarchy": ["category", "folder", "story", "episode"],
++    "disclosureTargetPx": 44,
++    "keyboard": "roving",
++    "pointerCoarse": true,
++    "longTitle": "ellipsis",
++    "responsiveParity": true
++  },
++  "shells": [
++    {
++      "id": "classic",
++      "label": "继承版",
++      "status": "stable",
++      "runtime": "inherited-classic",
++      "sourceTaskId": "01a0256c-1bae-76a2-a328-d4db01f1fde4",
++      "sourceAccess": "read-only-architecture-reference"
++    },
++    {
++      "id": "next",
++      "label": "迁移候选",
++      "status": "experimental",
++      "runtime": "react-contract-first",
++      "researchTaskId": "01a02998-e9b8-78f0-b9ed-bac62839a31b",
++      "architectureTaskId": "01a029af-2c48-76f0-ba83-6070ac3f6618",
++      "requiresManualAcceptance": true,
++      "implementationStatus": "primitive-adapter-skeleton"
++    }
++  ]
++}
+diff --git a/apps/web/app.js b/apps/web/app.js
+index 12a680e..168394c 100644
+--- a/apps/web/app.js
++++ b/apps/web/app.js
+@@ -27,6 +27,10 @@ import {
+ } from '../../packages/bridge/src/deep-link.js';
+ import { attachBridgeProvider } from '../../packages/bridge/src/provider.js';
+ import { createAdvIrAdapter } from '../../packages/adapters/src/adv-ir-v1.js';
++import { createMajiroProductionAdapter } from '../../packages/adapters/src/majiro-production-v1.js';
++import { UiShellRegistry } from '../../packages/ui-shell/src/registry.js';
++import { classicShell } from './shells/classic.js';
++import { nextShell } from './shells/next.js';
+ 
+ const byId = (id) => document.getElementById(id);
+ const ui = {
+@@ -46,6 +50,7 @@ const ui = {
+   primaryLocale: byId('primary-locale'),
+   secondaryLocale: byId('secondary-locale'),
+   secondaryLocaleWrap: byId('secondary-locale-wrap'),
++  uiShellSelect: byId('ui-shell-select'),
+   voiceToggle: byId('voice-toggle'),
+   voiceSummary: byId('voice-summary'),
+   voicePanel: byId('voice-panel'),
+@@ -64,6 +69,10 @@ const ui = {
+ 
+ const adapterRegistry = new AdapterRegistry();
+ adapterRegistry.register(createAdvIrAdapter());
++adapterRegistry.register(createMajiroProductionAdapter());
++const uiShellRegistry = new UiShellRegistry();
++uiShellRegistry.register(classicShell);
++uiShellRegistry.register(nextShell);
+ const mediaRegistry = new MediaResolverRegistry();
+ const audioController = new AudioController();
+ 
+@@ -82,6 +91,21 @@ let compatibilityState = null;
+ let renderGeneration = 0;
+ let toastTimer = null;
+ 
++const selectUiShell = (requestedId) => {
++  const shellId = uiShellRegistry.get(requestedId) ? requestedId : 'classic';
++  const shell = uiShellRegistry.activate(shellId, { document, window });
++  const options = uiShellRegistry.list().map((item) => {
++    const suffix = item.status === 'experimental' ? ' · 候选' : ' · 默认';
++    const option = document.createElement('option');
++    option.value = item.id;
++    option.textContent = `${item.label}${suffix}`;
++    option.selected = item.id === shell.id;
++    return option;
++  });
++  ui.uiShellSelect.replaceChildren(...options);
++  return shell;
++};
++
+ const createElement = (tag, options = {}) => {
+   const element = document.createElement(tag);
+   if (options.className) element.className = options.className;
+@@ -480,7 +504,9 @@ const updateStage = (snapshot, resolutions) => {
+   const currentIndex = Math.max(0, snapshot.ordinal);
+   let imageCue = null;
+   for (let index = 0; index <= currentIndex; index += 1) {
+-    const candidate = (activeSession.events[index]?.cues ?? []).find((cue) => cue.kind === 'image');
++    const candidate = (activeSession.events[index]?.cues ?? [])
++      .filter((cue) => cue.kind === 'image')
++      .at(-1);
+     if (candidate) imageCue = candidate;
+   }
+   const resolution = imageCue ? resolutions.get(imageCue.cueId) : null;
+@@ -713,6 +739,16 @@ const bindUi = () => {
+   ui.sidebarToggle.addEventListener('click', toggleSidebar);
+   ui.sidebarScrim.addEventListener('click', closeSidebar);
+   ui.storySearch.addEventListener('input', renderCatalog);
++  ui.uiShellSelect.addEventListener('change', () => {
++    const shell = selectUiShell(ui.uiShellSelect.value);
++    const url = new URL(window.location.href);
++    if (shell.id === 'classic') url.searchParams.delete('ui');
++    else url.searchParams.set('ui', shell.id);
++    window.history.replaceState(null, '', `${url.pathname}${url.search}${url.hash}`);
++    showToast(shell.id === 'classic'
++      ? '已使用继承版 UI。'
++      : '正在预览迁移候选；默认架构未改变。');
++  });
+ 
+   for (const button of document.querySelectorAll('[data-locale-mode]')) {
+     button.addEventListener('click', () => {
+@@ -767,6 +803,7 @@ const bindUi = () => {
+ };
+ 
+ async function initialize() {
++  selectUiShell(new URL(window.location.href).searchParams.get('ui') ?? 'classic');
+   bindUi();
+   catalog = validateCatalog(await fetchJson('./data/catalog.json'));
+   ui.catalogRevision.textContent = `目录修订：${catalog.revision}`;
+diff --git a/apps/web/data/catalog.json b/apps/web/data/catalog.json
+index a8d1c77..7c03060 100644
+--- a/apps/web/data/catalog.json
++++ b/apps/web/data/catalog.json
+@@ -1,7 +1,23 @@
+ {
+   "schema": "adv-catalog/v1",
+-  "revision": "demo-catalog-r1",
++  "revision": "production-catalog-r2",
+   "corpora": [
++    {
++      "corpusId": "narcissu10",
++      "title": "Narcissu 10th Anniversary Anthology Project",
++      "adapterId": "majiro-production-v1",
++      "sourceFormat": "adv-story/majiro-v1",
++      "features": ["text", "voice", "images", "bgm", "sfx", "bilingual", "source-anchors"],
++      "stories": [
++        {
++          "canonicalStoryId": "narcissu-himeko/himeko_ep00",
++          "title": "姫子 · EP00",
++          "source": "./data/corpora/narcissu10/himeko-ep00.story.json",
++          "mediaManifest": "./data/corpora/narcissu10/himeko-ep00.media.json",
++          "preferredVariantId": "narcissu10/himeko-ep00/zh-ja"
++        }
++      ]
++    },
+     {
+       "corpusId": "architecture-demo",
+       "title": "通用 ADV 架构演示",
+diff --git a/apps/web/data/corpora/narcissu10/himeko-ep00.import-report.json b/apps/web/data/corpora/narcissu10/himeko-ep00.import-report.json
+new file mode 100644
+index 0000000..fa18262
+--- /dev/null
++++ b/apps/web/data/corpora/narcissu10/himeko-ep00.import-report.json
+@@ -0,0 +1,49 @@
++{
++  "schema": "adv-import-report/v1",
++  "result": "PASS",
++  "importer": "tools/import-narcissu10.mjs",
++  "sourceRepository": "narcissu-kana-research",
++  "sourceMount": "/corpus",
++  "sourceAccess": "read-only",
++  "sourceBridgeRevision": "reader-v1-mjo-1086-ikura-120-events-499170",
++  "canonicalStoryId": "narcissu-himeko/himeko_ep00",
++  "generated": {
++    "variants": 3,
++    "logicalLinesPerVariant": 13,
++    "totalLineEvents": 39,
++    "mediaEntries": 52,
++    "mediaEntriesByRole": {
++      "voice": 22,
++      "bgm": 2,
++      "sfx": 10,
++      "image": 18
++    }
++  },
++  "variants": [
++    {
++      "variantId": "narcissu10/himeko-ep00/zh-ja",
++      "sourceVariantId": "mjo/patches/narci_himeko/%23mjo/himeko_ep00",
++      "sourceTextEvents": 24,
++      "logicalLines": 13,
++      "routedMediaCommands": 26,
++      "unresolvedMediaKeys": []
++    },
++    {
++      "variantId": "narcissu10/himeko-ep00/ja",
++      "sourceVariantId": "mjo/narcissu10-original-ja-jp/narci_himeko/scenario.arc.unpacked/himeko_ep00",
++      "sourceTextEvents": 24,
++      "logicalLines": 13,
++      "routedMediaCommands": 26,
++      "unresolvedMediaKeys": []
++    },
++    {
++      "variantId": "narcissu10/himeko-ep00/en",
++      "sourceVariantId": "mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/himeko_ep00",
++      "sourceTextEvents": 24,
++      "logicalLines": 13,
++      "routedMediaCommands": 26,
++      "unresolvedMediaKeys": []
++    }
++  ],
++  "unresolvedMediaKeys": []
++}
+diff --git a/apps/web/data/corpora/narcissu10/himeko-ep00.media.json b/apps/web/data/corpora/narcissu10/himeko-ep00.media.json
+new file mode 100644
+index 0000000..dba017e
+--- /dev/null
++++ b/apps/web/data/corpora/narcissu10/himeko-ep00.media.json
+@@ -0,0 +1,319 @@
++{
++  "schema": "adv-media/v1",
++  "revision": "narcissu10-himeko-ep00-media-r1",
++  "resolverId": "narcissu10-manifest",
++  "entries": [
++    {
++      "mediaId": "n10.en.bgm.2na",
++      "role": "bgm",
++      "url": "/corpus/archive/raw/narcissu10-original/narci_himeko/stream.arc.unpacked/2na.ogg",
++      "mimeType": "audio/ogg"
++    },
++    {
++      "mediaId": "n10.en.image.b3",
++      "role": "image",
++      "url": "/corpus/archive/raw/narcissu10-original/narci_himeko/data.arc.unpacked/b3.png",
++      "mimeType": "image/png"
++    },
++    {
++      "mediaId": "n10.en.image.b4",
++      "role": "image",
++      "url": "/corpus/archive/raw/narcissu10-original/narci_himeko/data.arc.unpacked/b4.png",
++      "mimeType": "image/png"
++    },
++    {
++      "mediaId": "n10.en.image.black",
++      "role": "image",
++      "url": "/corpus/archive/derived/images/narcissu10-original/narci_himeko/fastdata.arc.unpacked/black.png",
++      "mimeType": "image/png"
++    },
++    {
++      "mediaId": "n10.en.image.sin_e04z",
++      "role": "image",
++      "url": "/corpus/archive/raw/narcissu10-original/narci_himeko/data.arc.unpacked/sin_e04z.png",
++      "mimeType": "image/png"
++    },
++    {
++      "mediaId": "n10.en.image.sin_e05z",
++      "role": "image",
++      "url": "/corpus/archive/raw/narcissu10-original/narci_himeko/data.arc.unpacked/sin_e05z.png",
++      "mimeType": "image/png"
++    },
++    {
++      "mediaId": "n10.en.image.sin_e06bz",
++      "role": "image",
++      "url": "/corpus/archive/raw/narcissu10-original/narci_himeko/data.arc.unpacked/sin_e06bz.png",
++      "mimeType": "image/png"
++    },
++    {
++      "mediaId": "n10.en.image.sin_e06z",
++      "role": "image",
++      "url": "/corpus/archive/raw/narcissu10-original/narci_himeko/data.arc.unpacked/sin_e06z.png",
++      "mimeType": "image/png"
++    },
++    {
++      "mediaId": "n10.en.image.sin_e07z",
++      "role": "image",
++      "url": "/corpus/archive/raw/narcissu10-original/narci_himeko/data.arc.unpacked/sin_e07z.png",
++      "mimeType": "image/png"
++    },
++    {
++      "mediaId": "n10.en.image.w3",
++      "role": "image",
++      "url": "/corpus/archive/raw/narcissu10-original/narci_himeko/data.arc.unpacked/w3.png",
++      "mimeType": "image/png"
++    },
++    {
++      "mediaId": "n10.en.sfx.car_close",
++      "role": "sfx",
++      "url": "/corpus/archive/raw/narcissu10-original/narci_himeko/data.arc.unpacked/car_close.wav",
++      "mimeType": "audio/wav"
++    },
++    {
++      "mediaId": "n10.en.sfx.car_thru_rl",
++      "role": "sfx",
++      "url": "/corpus/archive/raw/narcissu10-original/narci_himeko/data.arc.unpacked/car_thru_rl.wav",
++      "mimeType": "audio/wav"
++    },
++    {
++      "mediaId": "n10.en.sfx.kane02d",
++      "role": "sfx",
++      "url": "/corpus/archive/raw/narcissu10-original/narci_himeko/data.arc.unpacked/kane02d.wav",
++      "mimeType": "audio/wav"
++    },
++    {
++      "mediaId": "n10.en.sfx.kaze4",
++      "role": "sfx",
++      "url": "/corpus/archive/raw/narcissu10-original/narci_himeko/data.arc.unpacked/kaze4.wav",
++      "mimeType": "audio/wav"
++    },
++    {
++      "mediaId": "n10.en.sfx.z42r",
++      "role": "sfx",
++      "url": "/corpus/archive/raw/narcissu10-original/narci_himeko/data.arc.unpacked/z42r.wav",
++      "mimeType": "audio/wav"
++    },
++    {
++      "mediaId": "n10.en.voice.c77hime_0001",
++      "role": "voice",
++      "url": "/corpus/archive/raw/narcissu10-original/narci_himeko/voice.arc.unpacked/c77hime_0001.wav",
++      "mimeType": "audio/wav"
++    },
++    {
++      "mediaId": "n10.en.voice.c77hime_0002",
++      "role": "voice",
++      "url": "/corpus/archive/raw/narcissu10-original/narci_himeko/voice.arc.unpacked/c77hime_0002.wav",
++      "mimeType": "audio/wav"
++    },
++    {
++      "mediaId": "n10.en.voice.c77setu_0002",
++      "role": "voice",
++      "url": "/corpus/archive/raw/narcissu10-original/narci_himeko/voice.arc.unpacked/c77setu_0002.wav",
++      "mimeType": "audio/wav"
++    },
++    {
++      "mediaId": "n10.en.voice.c77setu_0003",
++      "role": "voice",
++      "url": "/corpus/archive/raw/narcissu10-original/narci_himeko/voice.arc.unpacked/c77setu_0003.wav",
++      "mimeType": "audio/wav"
++    },
++    {
++      "mediaId": "n10.en.voice.c77setu_0004",
++      "role": "voice",
++      "url": "/corpus/archive/raw/narcissu10-original/narci_himeko/voice.arc.unpacked/c77setu_0004.wav",
++      "mimeType": "audio/wav"
++    },
++    {
++      "mediaId": "n10.en.voice.c77setu_0006",
++      "role": "voice",
++      "url": "/corpus/archive/raw/narcissu10-original/narci_himeko/voice.arc.unpacked/c77setu_0006.wav",
++      "mimeType": "audio/wav"
++    },
++    {
++      "mediaId": "n10.en.voice.c77setu_0007",
++      "role": "voice",
++      "url": "/corpus/archive/raw/narcissu10-original/narci_himeko/voice.arc.unpacked/c77setu_0007.wav",
++      "mimeType": "audio/wav"
++    },
++    {
++      "mediaId": "n10.en.voice.c77setu_0008",
++      "role": "voice",
++      "url": "/corpus/archive/raw/narcissu10-original/narci_himeko/voice.arc.unpacked/c77setu_0008.wav",
++      "mimeType": "audio/wav"
++    },
++    {
++      "mediaId": "n10.en.voice.c77setu_0008b",
++      "role": "voice",
++      "url": "/corpus/archive/raw/narcissu10-original/narci_himeko/voice.arc.unpacked/c77setu_0008b.wav",
++      "mimeType": "audio/wav"
++    },
++    {
++      "mediaId": "n10.en.voice.hime1_0559",
++      "role": "voice",
++      "url": "/corpus/archive/raw/narcissu10-original/narci_himeko/voice.arc.unpacked/hime1_0559.ogg",
++      "mimeType": "audio/ogg"
++    },
++    {
++      "mediaId": "n10.en.voice.hime1_0580zz",
++      "role": "voice",
++      "url": "/corpus/archive/raw/narcissu10-original/narci_himeko/voice.arc.unpacked/hime1_0580zz.ogg",
++      "mimeType": "audio/ogg"
++    },
++    {
++      "mediaId": "n10.ja.bgm.2na",
++      "role": "bgm",
++      "url": "/corpus/archive/raw/narcissu10-original-ja-JP/narci_himeko/stream.arc.unpacked/2na.ogg",
++      "mimeType": "audio/ogg"
++    },
++    {
++      "mediaId": "n10.ja.image.b3",
++      "role": "image",
++      "url": "/corpus/archive/raw/narcissu10-original-ja-JP/narci_himeko/data.arc.unpacked/b3.png",
++      "mimeType": "image/png"
++    },
++    {
++      "mediaId": "n10.ja.image.b4",
++      "role": "image",
++      "url": "/corpus/archive/raw/narcissu10-original-ja-JP/narci_himeko/data.arc.unpacked/b4.png",
++      "mimeType": "image/png"
++    },
++    {
++      "mediaId": "n10.ja.image.black",
++      "role": "image",
++      "url": "/corpus/archive/derived/images/narcissu10-original-ja-JP/narci_himeko/fastdata.arc.unpacked/black.png",
++      "mimeType": "image/png"
++    },
++    {
++      "mediaId": "n10.ja.image.sin_e04z",
++      "role": "image",
++      "url": "/corpus/archive/raw/narcissu10-original-ja-JP/narci_himeko/data.arc.unpacked/sin_e04z.png",
++      "mimeType": "image/png"
++    },
++    {
++      "mediaId": "n10.ja.image.sin_e05z",
++      "role": "image",
++      "url": "/corpus/archive/raw/narcissu10-original-ja-JP/narci_himeko/data.arc.unpacked/sin_e05z.png",
++      "mimeType": "image/png"
++    },
++    {
++      "mediaId": "n10.ja.image.sin_e06bz",
++      "role": "image",
++      "url": "/corpus/archive/raw/narcissu10-original-ja-JP/narci_himeko/data.arc.unpacked/sin_e06bz.png",
++      "mimeType": "image/png"
++    },
++    {
++      "mediaId": "n10.ja.image.sin_e06z",
++      "role": "image",
++      "url": "/corpus/archive/raw/narcissu10-original-ja-JP/narci_himeko/data.arc.unpacked/sin_e06z.png",
++      "mimeType": "image/png"
++    },
++    {
++      "mediaId": "n10.ja.image.sin_e07z",
++      "role": "image",
++      "url": "/corpus/archive/raw/narcissu10-original-ja-JP/narci_himeko/data.arc.unpacked/sin_e07z.png",
++      "mimeType": "image/png"
++    },
++    {
++      "mediaId": "n10.ja.image.w3",
++      "role": "image",
++      "url": "/corpus/archive/raw/narcissu10-original-ja-JP/narci_himeko/data.arc.unpacked/w3.png",
++      "mimeType": "image/png"
++    },
++    {
++      "mediaId": "n10.ja.sfx.car_close",
++      "role": "sfx",
++      "url": "/corpus/archive/raw/narcissu10-original-ja-JP/narci_himeko/data.arc.unpacked/car_close.wav",
++      "mimeType": "audio/wav"
++    },
++    {
++      "mediaId": "n10.ja.sfx.car_thru_rl",
++      "role": "sfx",
++      "url": "/corpus/archive/raw/narcissu10-original-ja-JP/narci_himeko/data.arc.unpacked/car_thru_rl.wav",
++      "mimeType": "audio/wav"
++    },
++    {
++      "mediaId": "n10.ja.sfx.kane02d",
++      "role": "sfx",
++      "url": "/corpus/archive/raw/narcissu10-original-ja-JP/narci_himeko/data.arc.unpacked/kane02d.wav",
++      "mimeType": "audio/wav"
++    },
++    {
++      "mediaId": "n10.ja.sfx.kaze4",
++      "role": "sfx",
++      "url": "/corpus/archive/raw/narcissu10-original-ja-JP/narci_himeko/data.arc.unpacked/kaze4.wav",
++      "mimeType": "audio/wav"
++    },
++    {
++      "mediaId": "n10.ja.sfx.z42r",
++      "role": "sfx",
++      "url": "/corpus/archive/raw/narcissu10-original-ja-JP/narci_himeko/data.arc.unpacked/z42r.wav",
++      "mimeType": "audio/wav"
++    },
++    {
++      "mediaId": "n10.ja.voice.c77hime_0001",
++      "role": "voice",
++      "url": "/corpus/archive/raw/narcissu10-original-ja-JP/narci_himeko/voice.arc.unpacked/c77hime_0001.wav",
++      "mimeType": "audio/wav"
++    },
++    {
++      "mediaId": "n10.ja.voice.c77hime_0002",
++      "role": "voice",
++      "url": "/corpus/archive/raw/narcissu10-original-ja-JP/narci_himeko/voice.arc.unpacked/c77hime_0002.wav",
++      "mimeType": "audio/wav"
++    },
++    {
++      "mediaId": "n10.ja.voice.c77setu_0002",
++      "role": "voice",
++      "url": "/corpus/archive/raw/narcissu10-original-ja-JP/narci_himeko/voice.arc.unpacked/c77setu_0002.wav",
++      "mimeType": "audio/wav"
++    },
++    {
++      "mediaId": "n10.ja.voice.c77setu_0003",
++      "role": "voice",
++      "url": "/corpus/archive/raw/narcissu10-original-ja-JP/narci_himeko/voice.arc.unpacked/c77setu_0003.wav",
++      "mimeType": "audio/wav"
++    },
++    {
++      "mediaId": "n10.ja.voice.c77setu_0004",
++      "role": "voice",
++      "url": "/corpus/archive/raw/narcissu10-original-ja-JP/narci_himeko/voice.arc.unpacked/c77setu_0004.wav",
++      "mimeType": "audio/wav"
++    },
++    {
++      "mediaId": "n10.ja.voice.c77setu_0006",
++      "role": "voice",
++      "url": "/corpus/archive/raw/narcissu10-original-ja-JP/narci_himeko/voice.arc.unpacked/c77setu_0006.wav",
++      "mimeType": "audio/wav"
++    },
++    {
++      "mediaId": "n10.ja.voice.c77setu_0007",
++      "role": "voice",
++      "url": "/corpus/archive/raw/narcissu10-original-ja-JP/narci_himeko/voice.arc.unpacked/c77setu_0007.wav",
++      "mimeType": "audio/wav"
++    },
++    {
++      "mediaId": "n10.ja.voice.c77setu_0008",
++      "role": "voice",
++      "url": "/corpus/archive/raw/narcissu10-original-ja-JP/narci_himeko/voice.arc.unpacked/c77setu_0008.wav",
++      "mimeType": "audio/wav"
++    },
++    {
++      "mediaId": "n10.ja.voice.c77setu_0008b",
++      "role": "voice",
++      "url": "/corpus/archive/raw/narcissu10-original-ja-JP/narci_himeko/voice.arc.unpacked/c77setu_0008b.wav",
++      "mimeType": "audio/wav"
++    },
++    {
++      "mediaId": "n10.ja.voice.hime1_0559",
++      "role": "voice",
++      "url": "/corpus/archive/raw/narcissu10-original-ja-JP/narci_himeko/voice.arc.unpacked/hime1_0559.ogg",
++      "mimeType": "audio/ogg"
++    },
++    {
++      "mediaId": "n10.ja.voice.hime1_0580zz",
++      "role": "voice",
++      "url": "/corpus/archive/raw/narcissu10-original-ja-JP/narci_himeko/voice.arc.unpacked/hime1_0580zz.ogg",
++      "mimeType": "audio/ogg"
++    }
++  ]
++}
+diff --git a/apps/web/data/corpora/narcissu10/himeko-ep00.story.json b/apps/web/data/corpora/narcissu10/himeko-ep00.story.json
+new file mode 100644
+index 0000000..8381275
+--- /dev/null
++++ b/apps/web/data/corpora/narcissu10/himeko-ep00.story.json
+@@ -0,0 +1,2184 @@
++{
++  "schema": "adv-story/v1",
++  "corpusId": "narcissu10",
++  "canonicalStoryId": "narcissu-himeko/himeko_ep00",
++  "adapterId": "majiro-production-v1",
++  "revision": "himeko-ep00-reader-v1-mjo-1086-ikura-120-events-499170",
++  "title": "Narcissu 10th · Himeko EP00",
++  "provenance": {
++    "engine": "majiro",
++    "sourceSchema": "vn-mjo-reader-script/v1",
++    "sourceRepository": "narcissu-kana-research",
++    "sourceManifest": "manifests/generated/reader-adapter.json",
++    "sourceBridgeRevision": "reader-v1-mjo-1086-ikura-120-events-499170",
++    "canonicalSourceStoryId": "narcissu-himeko/himeko_ep00",
++    "extractionAccess": "read-only"
++  },
++  "variants": [
++    {
++      "variantId": "narcissu10/himeko-ep00/zh-ja",
++      "locales": [
++        "zh-CN",
++        "ja-JP"
++      ],
++      "sections": [
++        {
++          "sectionId": "main",
++          "title": {
++            "zh-CN": "姬子 EP00",
++            "ja-JP": "姫子 EP00"
++          },
++          "entryEventId": "line-001",
++          "events": [
++            {
++              "eventId": "line-001",
++              "kind": "line",
++              "text": {
++                "zh-CN": "「－在清晨的天空下，\n我们从富士山下来，踏上了归途－」",
++                "ja-JP": "「－まだ早朝の空の下、\n富士山からの帰路についたわたし達－」"
++              },
++              "nextEventId": "line-002",
++              "cues": [
++                {
++                  "cueId": "image:line-001:black:1",
++                  "kind": "image",
++                  "timing": "scene",
++                  "mediaId": "n10.ja.image.black",
++                  "resolverId": "narcissu10-manifest",
++                  "raw": {
++                    "sourceKey": "black",
++                    "codeOffset": 22,
++                    "sourceStringPath": "archive/derived/scripts/patches/narci_himeko/#mjo/himeko_ep00.strings.json",
++                    "playbackPath": "archive/derived/images/narcissu10-original-ja-JP/narci_himeko/fastdata.arc.unpacked/black.png"
++                  }
++                },
++                {
++                  "cueId": "image:line-001:b4:1",
++                  "kind": "image",
++                  "timing": "scene",
++                  "mediaId": "n10.ja.image.b4",
++                  "resolverId": "narcissu10-manifest",
++                  "raw": {
++                    "sourceKey": "b4",
++                    "codeOffset": 88,
++                    "sourceStringPath": "archive/derived/scripts/patches/narci_himeko/#mjo/himeko_ep00.strings.json",
++                    "playbackPath": "archive/raw/narcissu10-original-ja-JP/narci_himeko/data.arc.unpacked/b4.png"
++                  }
++                },
++                {
++                  "cueId": "sfx:line-001:car_thru_rl:1",
++                  "kind": "sfx",
++                  "timing": "utterance",
++                  "mediaId": "n10.ja.sfx.car_thru_rl",
++                  "resolverId": "narcissu10-manifest",
++                  "raw": {
++                    "sourceKey": "car_thru_rl",
++                    "codeOffset": 145,
++                    "sourceStringPath": "archive/derived/scripts/patches/narci_himeko/#mjo/himeko_ep00.strings.json",
++                    "playbackPath": "raw/narcissu10-original-ja-JP/narci_himeko/data.arc.unpacked/car_thru_rl.wav"
++                  }
++                },
++                {
++                  "cueId": "image:line-001:sin_e04z:1",
++                  "kind": "image",
++                  "timing": "scene",
++                  "mediaId": "n10.ja.image.sin_e04z",
++                  "resolverId": "narcissu10-manifest",
++                  "raw": {
++                    "sourceKey": "sin_e04z",
++                    "codeOffset": 179,
++                    "sourceStringPath": "archive/derived/scripts/patches/narci_himeko/#mjo/himeko_ep00.strings.json",
++                    "playbackPath": "archive/raw/narcissu10-original-ja-JP/narci_himeko/data.arc.unpacked/sin_e04z.png"
++                  }
++                },
++                {
++                  "cueId": "bgm:line-001:2na:1",
++                  "kind": "bgm",
++                  "timing": "scene",
++                  "mediaId": "n10.ja.bgm.2na",
++                  "resolverId": "narcissu10-manifest",
++                  "raw": {
++                    "sourceKey": "2na",
++                    "codeOffset": 220,
++                    "sourceStringPath": "archive/derived/scripts/patches/narci_himeko/#mjo/himeko_ep00.strings.json",
++                    "playbackPath": "raw/narcissu10-original-ja-JP/narci_himeko/stream.arc.unpacked/2na.ogg"
++                  }
++                },
++                {
++                  "cueId": "voice:line-001:c77setu_0002:1",
++                  "kind": "voice",
++                  "timing": "utterance",
++                  "mediaId": "n10.ja.voice.c77setu_0002",
++                  "resolverId": "narcissu10-manifest",
++                  "raw": {
++                    "sourceKey": "c77setu_0002",
++                    "codeOffset": 244,
++                    "sourceStringPath": "archive/derived/scripts/patches/narci_himeko/#mjo/himeko_ep00.strings.json",
++                    "playbackPath": "raw/narcissu10-original-ja-JP/narci_himeko/voice.arc.unpacked/c77setu_0002.wav"
++                  }
++                }
++              ],
++              "source": {
++                "engine": "majiro",
++                "variantSourceId": "mjo/patches/narci_himeko/%23mjo/himeko_ep00",
++                "scriptPath": "archive/derived/scripts/patches/narci_himeko/#mjo/himeko_ep00.script.json",
++                "textEventIndices": [
++                  0,
++                  1
++                ],
++                "codeOffsets": [
++                  277,
++                  292
++                ],
++                "textCodeOffset": 292,
++                "mjoAnchor": "mjo-124"
++              },
++              "speaker": {
++                "zh-CN": "濑津美",
++                "ja-JP": "セツミ"
++              }
++            },
++            {
++              "eventId": "line-002",
++              "kind": "line",
++              "text": {
++                "zh-CN": "「－途中，手里拿着便利店买的便当，\n 姬子突然小声说道－」",
++                "ja-JP": "「－そんな中、コンビニで買ったお弁当を手に、\n　ぽつりと姫子さんは呟いた－」"
++              },
++              "nextEventId": "line-003",
++              "cues": [
++                {
++                  "cueId": "voice:line-002:c77setu_0003:1",
++                  "kind": "voice",
++                  "timing": "utterance",
++                  "mediaId": "n10.ja.voice.c77setu_0003",
++                  "resolverId": "narcissu10-manifest",
++                  "raw": {
++                    "sourceKey": "c77setu_0003",
++                    "codeOffset": 390,
++                    "sourceStringPath": "archive/derived/scripts/patches/narci_himeko/#mjo/himeko_ep00.strings.json",
++                    "playbackPath": "raw/narcissu10-original-ja-JP/narci_himeko/voice.arc.unpacked/c77setu_0003.wav"
++                  }
++                }
++              ],
++              "source": {
++                "engine": "majiro",
++                "variantSourceId": "mjo/patches/narci_himeko/%23mjo/himeko_ep00",
++                "scriptPath": "archive/derived/scripts/patches/narci_himeko/#mjo/himeko_ep00.script.json",
++                "textEventIndices": [
++                  2,
++                  3
++                ],
++                "codeOffsets": [
++                  423,
++                  438
++                ],
++                "textCodeOffset": 438,
++                "mjoAnchor": "mjo-1b6"
++              },
++              "speaker": {
++                "zh-CN": "濑津美",
++                "ja-JP": "セツミ"
++              }
++            },
++            {
++              "eventId": "line-003",
++              "kind": "line",
++              "text": {
++                "zh-CN": "「濑津美，\n 总之让我也定个规矩吧」",
++                "ja-JP": "「ねぇセツミ、\n　とりあえず私もルールに一つ追加させてもらうわ」"
++              },
++              "nextEventId": "line-004",
++              "cues": [
++                {
++                  "cueId": "sfx:line-003:kaze4:1",
++                  "kind": "sfx",
++                  "timing": "utterance",
++                  "mediaId": "n10.ja.sfx.kaze4",
++                  "resolverId": "narcissu10-manifest",
++                  "raw": {
++                    "sourceKey": "kaze4",
++                    "codeOffset": 552,
++                    "sourceStringPath": "archive/derived/scripts/patches/narci_himeko/#mjo/himeko_ep00.strings.json",
++                    "playbackPath": "raw/narcissu10-original-ja-JP/narci_himeko/data.arc.unpacked/kaze4.wav"
++                  }
++                },
++                {
++                  "cueId": "image:line-003:sin_e05z:1",
++                  "kind": "image",
++                  "timing": "scene",
++                  "mediaId": "n10.ja.image.sin_e05z",
++                  "resolverId": "narcissu10-manifest",
++                  "raw": {
++                    "sourceKey": "sin_e05z",
++                    "codeOffset": 580,
++                    "sourceStringPath": "archive/derived/scripts/patches/narci_himeko/#mjo/himeko_ep00.strings.json",
++                    "playbackPath": "archive/raw/narcissu10-original-ja-JP/narci_himeko/data.arc.unpacked/sin_e05z.png"
++                  }
++                },
++                {
++                  "cueId": "voice:line-003:c77hime_0001:1",
++                  "kind": "voice",
++                  "timing": "utterance",
++                  "mediaId": "n10.ja.voice.c77hime_0001",
++                  "resolverId": "narcissu10-manifest",
++                  "raw": {
++                    "sourceKey": "c77hime_0001",
++                    "codeOffset": 621,
++                    "sourceStringPath": "archive/derived/scripts/patches/narci_himeko/#mjo/himeko_ep00.strings.json",
++                    "playbackPath": "raw/narcissu10-original-ja-JP/narci_himeko/voice.arc.unpacked/c77hime_0001.wav"
++                  }
++                }
++              ],
++              "source": {
++                "engine": "majiro",
++                "variantSourceId": "mjo/patches/narci_himeko/%23mjo/himeko_ep00",
++                "scriptPath": "archive/derived/scripts/patches/narci_himeko/#mjo/himeko_ep00.script.json",
++                "textEventIndices": [
++                  4,
++                  5
++                ],
++                "codeOffsets": [
++                  654,
++                  667
++                ],
++                "textCodeOffset": 667,
++                "mjoAnchor": "mjo-29b"
++              },
++              "speaker": {
++                "zh-CN": "姫子",
++                "ja-JP": "姫子"
++              }
++            },
++            {
++              "eventId": "line-004",
++              "kind": "line",
++              "text": {
++                "zh-CN": "「……规矩？」",
++                "ja-JP": "「……ルール？」"
++              },
++              "nextEventId": "line-005",
++              "cues": [
++                {
++                  "cueId": "voice:line-004:c77setu_0004:1",
++                  "kind": "voice",
++                  "timing": "utterance",
++                  "mediaId": "n10.ja.voice.c77setu_0004",
++                  "resolverId": "narcissu10-manifest",
++                  "raw": {
++                    "sourceKey": "c77setu_0004",
++                    "codeOffset": 769,
++                    "sourceStringPath": "archive/derived/scripts/patches/narci_himeko/#mjo/himeko_ep00.strings.json",
++                    "playbackPath": "raw/narcissu10-original-ja-JP/narci_himeko/voice.arc.unpacked/c77setu_0004.wav"
++                  }
++                }
++              ],
++              "source": {
++                "engine": "majiro",
++                "variantSourceId": "mjo/patches/narci_himeko/%23mjo/himeko_ep00",
++                "scriptPath": "archive/derived/scripts/patches/narci_himeko/#mjo/himeko_ep00.script.json",
++                "textEventIndices": [
++                  6,
++                  7
++                ],
++                "codeOffsets": [
++                  802,
++                  817
++                ],
++                "textCodeOffset": 817,
++                "mjoAnchor": "mjo-331"
++              },
++              "speaker": {
++                "zh-CN": "濑津美",
++                "ja-JP": "セツミ"
++              }
++            },
++            {
++              "eventId": "line-005",
++              "kind": "line",
++              "text": {
++                "zh-CN": "「嗯，交朋友其实也是可以的」",
++                "ja-JP": "「ええ、友達は作っても良いってね」"
++              },
++              "nextEventId": "line-006",
++              "cues": [
++                {
++                  "cueId": "voice:line-005:c77hime_0002:1",
++                  "kind": "voice",
++                  "timing": "utterance",
++                  "mediaId": "n10.ja.voice.c77hime_0002",
++                  "resolverId": "narcissu10-manifest",
++                  "raw": {
++                    "sourceKey": "c77hime_0002",
++                    "codeOffset": 856,
++                    "sourceStringPath": "archive/derived/scripts/patches/narci_himeko/#mjo/himeko_ep00.strings.json",
++                    "playbackPath": "raw/narcissu10-original-ja-JP/narci_himeko/voice.arc.unpacked/c77hime_0002.wav"
++                  }
++                }
++              ],
++              "source": {
++                "engine": "majiro",
++                "variantSourceId": "mjo/patches/narci_himeko/%23mjo/himeko_ep00",
++                "scriptPath": "archive/derived/scripts/patches/narci_himeko/#mjo/himeko_ep00.script.json",
++                "textEventIndices": [
++                  8,
++                  9
++                ],
++                "codeOffsets": [
++                  889,
++                  902
++                ],
++                "textCodeOffset": 902,
++                "mjoAnchor": "mjo-386"
++              },
++              "speaker": {
++                "zh-CN": "姫子",
++                "ja-JP": "姫子"
++              }
++            },
++            {
++              "eventId": "line-006",
++              "kind": "line",
++              "text": {
++                "zh-CN": "钟声回响着。\n姬子把车停在了教会前，姬子让我下了车。",
++                "ja-JP": "響きわたる鐘の音。\n教会の前に車を止めると、わたしを降ろす姫子さん。"
++              },
++              "nextEventId": "line-007",
++              "cues": [
++                {
++                  "cueId": "sfx:line-006:kane02d:1",
++                  "kind": "sfx",
++                  "timing": "utterance",
++                  "mediaId": "n10.ja.sfx.kane02d",
++                  "resolverId": "narcissu10-manifest",
++                  "raw": {
++                    "sourceKey": "kane02d",
++                    "codeOffset": 959,
++                    "sourceStringPath": "archive/derived/scripts/patches/narci_himeko/#mjo/himeko_ep00.strings.json",
++                    "playbackPath": "raw/narcissu10-original-ja-JP/narci_himeko/data.arc.unpacked/kane02d.wav"
++                  }
++                },
++                {
++                  "cueId": "image:line-006:sin_e06bz:1",
++                  "kind": "image",
++                  "timing": "scene",
++                  "mediaId": "n10.ja.image.sin_e06bz",
++                  "resolverId": "narcissu10-manifest",
++                  "raw": {
++                    "sourceKey": "sin_e06bz",
++                    "codeOffset": 989,
++                    "sourceStringPath": "archive/derived/scripts/patches/narci_himeko/#mjo/himeko_ep00.strings.json",
++                    "playbackPath": "archive/raw/narcissu10-original-ja-JP/narci_himeko/data.arc.unpacked/sin_e06bz.png"
++                  }
++                },
++                {
++                  "cueId": "image:line-006:sin_e06z:1",
++                  "kind": "image",
++                  "timing": "scene",
++                  "mediaId": "n10.ja.image.sin_e06z",
++                  "resolverId": "narcissu10-manifest",
++                  "raw": {
++                    "sourceKey": "sin_e06z",
++                    "codeOffset": 1025,
++                    "sourceStringPath": "archive/derived/scripts/patches/narci_himeko/#mjo/himeko_ep00.strings.json",
++                    "playbackPath": "archive/raw/narcissu10-original-ja-JP/narci_himeko/data.arc.unpacked/sin_e06z.png"
++                  }
++                }
++              ],
++              "source": {
++                "engine": "majiro",
++                "variantSourceId": "mjo/patches/narci_himeko/%23mjo/himeko_ep00",
++                "scriptPath": "archive/derived/scripts/patches/narci_himeko/#mjo/himeko_ep00.script.json",
++                "textEventIndices": [
++                  10
++                ],
++                "codeOffsets": [
++                  1066
++                ],
++                "textCodeOffset": 1066,
++                "mjoAnchor": "mjo-42a"
++              }
++            },
++            {
++              "eventId": "line-007",
++              "kind": "line",
++              "text": {
++                "zh-CN": "「那，就在这里道别吧」",
++                "ja-JP": "「じゃあ、ここでお別れしましょ」"
++              },
++              "nextEventId": "line-008",
++              "cues": [
++                {
++                  "cueId": "sfx:line-007:car_close:1",
++                  "kind": "sfx",
++                  "timing": "utterance",
++                  "mediaId": "n10.ja.sfx.car_close",
++                  "resolverId": "narcissu10-manifest",
++                  "raw": {
++                    "sourceKey": "car_close",
++                    "codeOffset": 1172,
++                    "sourceStringPath": "archive/derived/scripts/patches/narci_himeko/#mjo/himeko_ep00.strings.json",
++                    "playbackPath": "raw/narcissu10-original-ja-JP/narci_himeko/data.arc.unpacked/car_close.wav"
++                  }
++                },
++                {
++                  "cueId": "voice:line-007:hime1_0559:1",
++                  "kind": "voice",
++                  "timing": "utterance",
++                  "mediaId": "n10.ja.voice.hime1_0559",
++                  "resolverId": "narcissu10-manifest",
++                  "raw": {
++                    "sourceKey": "hime1_0559",
++                    "codeOffset": 1198,
++                    "sourceStringPath": "archive/derived/scripts/patches/narci_himeko/#mjo/himeko_ep00.strings.json",
++                    "playbackPath": "raw/narcissu10-original-ja-JP/narci_himeko/voice.arc.unpacked/hime1_0559.ogg"
++                  }
++                }
++              ],
++              "source": {
++                "engine": "majiro",
++                "variantSourceId": "mjo/patches/narci_himeko/%23mjo/himeko_ep00",
++                "scriptPath": "archive/derived/scripts/patches/narci_himeko/#mjo/himeko_ep00.script.json",
++                "textEventIndices": [
++                  11,
++                  12
++                ],
++                "codeOffsets": [
++                  1229,
++                  1242
++                ],
++                "textCodeOffset": 1242,
++                "mjoAnchor": "mjo-4da"
++              },
++              "speaker": {
++                "zh-CN": "姫子",
++                "ja-JP": "姫子"
++              }
++            },
++            {
++              "eventId": "line-008",
++              "kind": "line",
++              "text": {
++                "zh-CN": "然后…",
++                "ja-JP": "そして…"
++              },
++              "nextEventId": "line-009",
++              "source": {
++                "engine": "majiro",
++                "variantSourceId": "mjo/patches/narci_himeko/%23mjo/himeko_ep00",
++                "scriptPath": "archive/derived/scripts/patches/narci_himeko/#mjo/himeko_ep00.script.json",
++                "textEventIndices": [
++                  13
++                ],
++                "codeOffsets": [
++                  1297
++                ],
++                "textCodeOffset": 1297,
++                "mjoAnchor": "mjo-511"
++              }
++            },
++            {
++              "eventId": "line-009",
++              "kind": "line",
++              "text": {
++                "zh-CN": "「…再见了……可乐饼博士…」",
++                "ja-JP": "「…さよなら……コロッケ博士…」"
++              },
++              "nextEventId": "line-010",
++              "cues": [
++                {
++                  "cueId": "voice:line-009:hime1_0580zz:1",
++                  "kind": "voice",
++                  "timing": "utterance",
++                  "mediaId": "n10.ja.voice.hime1_0580zz",
++                  "resolverId": "narcissu10-manifest",
++                  "raw": {
++                    "sourceKey": "hime1_0580zz",
++                    "codeOffset": 1328,
++                    "sourceStringPath": "archive/derived/scripts/patches/narci_himeko/#mjo/himeko_ep00.strings.json",
++                    "playbackPath": "raw/narcissu10-original-ja-JP/narci_himeko/voice.arc.unpacked/hime1_0580zz.ogg"
++                  }
++                }
++              ],
++              "source": {
++                "engine": "majiro",
++                "variantSourceId": "mjo/patches/narci_himeko/%23mjo/himeko_ep00",
++                "scriptPath": "archive/derived/scripts/patches/narci_himeko/#mjo/himeko_ep00.script.json",
++                "textEventIndices": [
++                  14,
++                  15
++                ],
++                "codeOffsets": [
++                  1361,
++                  1374
++                ],
++                "textCodeOffset": 1374,
++                "mjoAnchor": "mjo-55e"
++              },
++              "speaker": {
++                "zh-CN": "姫子",
++                "ja-JP": "姫子"
++              }
++            },
++            {
++              "eventId": "line-010",
++              "kind": "line",
++              "text": {
++                "zh-CN": "「－说完这些，\n背对着我向教会走去－」",
++                "ja-JP": "「－その言葉を最後に、\nわたしに背を向けると教会へと歩き始める－」"
++              },
++              "nextEventId": "line-011",
++              "cues": [
++                {
++                  "cueId": "image:line-010:w3:1",
++                  "kind": "image",
++                  "timing": "scene",
++                  "mediaId": "n10.ja.image.w3",
++                  "resolverId": "narcissu10-manifest",
++                  "raw": {
++                    "sourceKey": "w3",
++                    "codeOffset": 1435,
++                    "sourceStringPath": "archive/derived/scripts/patches/narci_himeko/#mjo/himeko_ep00.strings.json",
++                    "playbackPath": "archive/raw/narcissu10-original-ja-JP/narci_himeko/data.arc.unpacked/w3.png"
++                  }
++                },
++                {
++                  "cueId": "sfx:line-010:z42r:1",
++                  "kind": "sfx",
++                  "timing": "utterance",
++                  "mediaId": "n10.ja.sfx.z42r",
++                  "resolverId": "narcissu10-manifest",
++                  "raw": {
++                    "sourceKey": "z42r",
++                    "codeOffset": 1470,
++                    "sourceStringPath": "archive/derived/scripts/patches/narci_himeko/#mjo/himeko_ep00.strings.json",
++                    "playbackPath": "raw/narcissu10-original-ja-JP/narci_himeko/data.arc.unpacked/z42r.wav"
++                  }
++                },
++                {
++                  "cueId": "image:line-010:sin_e07z:1",
++                  "kind": "image",
++                  "timing": "scene",
++                  "mediaId": "n10.ja.image.sin_e07z",
++                  "resolverId": "narcissu10-manifest",
++                  "raw": {
++                    "sourceKey": "sin_e07z",
++                    "codeOffset": 1497,
++                    "sourceStringPath": "archive/derived/scripts/patches/narci_himeko/#mjo/himeko_ep00.strings.json",
++                    "playbackPath": "archive/raw/narcissu10-original-ja-JP/narci_himeko/data.arc.unpacked/sin_e07z.png"
++                  }
++                },
++                {
++                  "cueId": "voice:line-010:c77setu_0006:1",
++                  "kind": "voice",
++                  "timing": "utterance",
++                  "mediaId": "n10.ja.voice.c77setu_0006",
++                  "resolverId": "narcissu10-manifest",
++                  "raw": {
++                    "sourceKey": "c77setu_0006",
++                    "codeOffset": 1538,
++                    "sourceStringPath": "archive/derived/scripts/patches/narci_himeko/#mjo/himeko_ep00.strings.json",
++                    "playbackPath": "raw/narcissu10-original-ja-JP/narci_himeko/voice.arc.unpacked/c77setu_0006.wav"
++                  }
++                }
++              ],
++              "source": {
++                "engine": "majiro",
++                "variantSourceId": "mjo/patches/narci_himeko/%23mjo/himeko_ep00",
++                "scriptPath": "archive/derived/scripts/patches/narci_himeko/#mjo/himeko_ep00.script.json",
++                "textEventIndices": [
++                  16,
++                  17
++                ],
++                "codeOffsets": [
++                  1571,
++                  1586
++                ],
++                "textCodeOffset": 1586,
++                "mjoAnchor": "mjo-632"
++              },
++              "speaker": {
++                "zh-CN": "濑津美",
++                "ja-JP": "セツミ"
++              }
++            },
++            {
++              "eventId": "line-011",
++              "kind": "line",
++              "text": {
++                "zh-CN": "「恐怕，她们都在里面吧，\n是要去见千寻和优花吧」",
++                "ja-JP": "「恐らく、その中に居るであろう、\n千尋さんや優花さんと会うのだろう」"
++              },
++              "nextEventId": "line-012",
++              "cues": [
++                {
++                  "cueId": "voice:line-011:c77setu_0007:1",
++                  "kind": "voice",
++                  "timing": "utterance",
++                  "mediaId": "n10.ja.voice.c77setu_0007",
++                  "resolverId": "narcissu10-manifest",
++                  "raw": {
++                    "sourceKey": "c77setu_0007",
++                    "codeOffset": 1690,
++                    "sourceStringPath": "archive/derived/scripts/patches/narci_himeko/#mjo/himeko_ep00.strings.json",
++                    "playbackPath": "raw/narcissu10-original-ja-JP/narci_himeko/voice.arc.unpacked/c77setu_0007.wav"
++                  }
++                }
++              ],
++              "source": {
++                "engine": "majiro",
++                "variantSourceId": "mjo/patches/narci_himeko/%23mjo/himeko_ep00",
++                "scriptPath": "archive/derived/scripts/patches/narci_himeko/#mjo/himeko_ep00.script.json",
++                "textEventIndices": [
++                  18,
++                  19
++                ],
++                "codeOffsets": [
++                  1723,
++                  1738
++                ],
++                "textCodeOffset": 1738,
++                "mjoAnchor": "mjo-6ca"
++              },
++              "speaker": {
++                "zh-CN": "濑津美",
++                "ja-JP": "セツミ"
++              }
++            },
++            {
++              "eventId": "line-012",
++              "kind": "line",
++              "text": {
++                "zh-CN": "「……肯定，曾经那个温柔的“曾经”也…」",
++                "ja-JP": "「……きっと、以前は優しかったの、”以前”は…」"
++              },
++              "nextEventId": "line-013",
++              "cues": [
++                {
++                  "cueId": "voice:line-012:c77setu_0008:1",
++                  "kind": "voice",
++                  "timing": "utterance",
++                  "mediaId": "n10.ja.voice.c77setu_0008",
++                  "resolverId": "narcissu10-manifest",
++                  "raw": {
++                    "sourceKey": "c77setu_0008",
++                    "codeOffset": 1844,
++                    "sourceStringPath": "archive/derived/scripts/patches/narci_himeko/#mjo/himeko_ep00.strings.json",
++                    "playbackPath": "raw/narcissu10-original-ja-JP/narci_himeko/voice.arc.unpacked/c77setu_0008.wav"
++                  }
++                }
++              ],
++              "source": {
++                "engine": "majiro",
++                "variantSourceId": "mjo/patches/narci_himeko/%23mjo/himeko_ep00",
++                "scriptPath": "archive/derived/scripts/patches/narci_himeko/#mjo/himeko_ep00.script.json",
++                "textEventIndices": [
++                  20,
++                  21
++                ],
++                "codeOffsets": [
++                  1877,
++                  1892
++                ],
++                "textCodeOffset": 1892,
++                "mjoAnchor": "mjo-764"
++              },
++              "speaker": {
++                "zh-CN": "濑津美",
++                "ja-JP": "セツミ"
++              }
++            },
++            {
++              "eventId": "line-013",
++              "kind": "line",
++              "text": {
++                "zh-CN": "「…不再存在了吧…」",
++                "ja-JP": "「…無くなるのだろう…」"
++              },
++              "nextEventId": "end-001",
++              "cues": [
++                {
++                  "cueId": "voice:line-013:c77setu_0008b:1",
++                  "kind": "voice",
++                  "timing": "utterance",
++                  "mediaId": "n10.ja.voice.c77setu_0008b",
++                  "resolverId": "narcissu10-manifest",
++                  "raw": {
++                    "sourceKey": "c77setu_0008b",
++                    "codeOffset": 1963,
++                    "sourceStringPath": "archive/derived/scripts/patches/narci_himeko/#mjo/himeko_ep00.strings.json",
++                    "playbackPath": "raw/narcissu10-original-ja-JP/narci_himeko/voice.arc.unpacked/c77setu_0008b.wav"
++                  }
++                }
++              ],
++              "source": {
++                "engine": "majiro",
++                "variantSourceId": "mjo/patches/narci_himeko/%23mjo/himeko_ep00",
++                "scriptPath": "archive/derived/scripts/patches/narci_himeko/#mjo/himeko_ep00.script.json",
++                "textEventIndices": [
++                  22,
++                  23
++                ],
++                "codeOffsets": [
++                  1997,
++                  2012
++                ],
++                "textCodeOffset": 2012,
++                "mjoAnchor": "mjo-7dc"
++              },
++              "speaker": {
++                "zh-CN": "濑津美",
++                "ja-JP": "セツミ"
++              }
++            },
++            {
++              "eventId": "end-001",
++              "kind": "end",
++              "cues": [
++                {
++                  "cueId": "image:end-001:b3:1",
++                  "kind": "image",
++                  "timing": "scene",
++                  "mediaId": "n10.ja.image.b3",
++                  "resolverId": "narcissu10-manifest",
++                  "raw": {
++                    "sourceKey": "b3",
++                    "codeOffset": 2081,
++                    "sourceStringPath": "archive/derived/scripts/patches/narci_himeko/#mjo/himeko_ep00.strings.json",
++                    "playbackPath": "archive/raw/narcissu10-original-ja-JP/narci_himeko/data.arc.unpacked/b3.png"
++                  }
++                }
++              ]
++            }
++          ]
++        }
++      ]
++    },
++    {
++      "variantId": "narcissu10/himeko-ep00/ja",
++      "locales": [
++        "ja-JP"
++      ],
++      "sections": [
++        {
++          "sectionId": "main",
++          "title": {
++            "ja-JP": "姫子 EP00"
++          },
++          "entryEventId": "line-001",
++          "events": [
++            {
++              "eventId": "line-001",
++              "kind": "line",
++              "text": {
++                "ja-JP": "「－まだ早朝の空の下、\n富士山からの帰路についたわたし達－」"
++              },
++              "nextEventId": "line-002",
++              "cues": [
++                {
++                  "cueId": "image:line-001:black:1",
++                  "kind": "image",
++                  "timing": "scene",
++                  "mediaId": "n10.ja.image.black",
++                  "resolverId": "narcissu10-manifest",
++                  "raw": {
++                    "sourceKey": "black",
++                    "codeOffset": 22,
++                    "sourceStringPath": "archive/derived/scripts/narcissu10-original-ja-JP/narci_himeko/scenario.arc.unpacked/himeko_ep00.strings.json",
++                    "playbackPath": "archive/derived/images/narcissu10-original-ja-JP/narci_himeko/fastdata.arc.unpacked/black.png"
++                  }
++                },
++                {
++                  "cueId": "image:line-001:b4:1",
++                  "kind": "image",
++                  "timing": "scene",
++                  "mediaId": "n10.ja.image.b4",
++                  "resolverId": "narcissu10-manifest",
++                  "raw": {
++                    "sourceKey": "b4",
++                    "codeOffset": 88,
++                    "sourceStringPath": "archive/derived/scripts/narcissu10-original-ja-JP/narci_himeko/scenario.arc.unpacked/himeko_ep00.strings.json",
++                    "playbackPath": "archive/raw/narcissu10-original-ja-JP/narci_himeko/data.arc.unpacked/b4.png"
++                  }
++                },
++                {
++                  "cueId": "sfx:line-001:car_thru_rl:1",
++                  "kind": "sfx",
++                  "timing": "utterance",
++                  "mediaId": "n10.ja.sfx.car_thru_rl",
++                  "resolverId": "narcissu10-manifest",
++                  "raw": {
++                    "sourceKey": "car_thru_rl",
++                    "codeOffset": 145,
++                    "sourceStringPath": "archive/derived/scripts/narcissu10-original-ja-JP/narci_himeko/scenario.arc.unpacked/himeko_ep00.strings.json",
++                    "playbackPath": "raw/narcissu10-original-ja-JP/narci_himeko/data.arc.unpacked/car_thru_rl.wav"
++                  }
++                },
++                {
++                  "cueId": "image:line-001:sin_e04z:1",
++                  "kind": "image",
++                  "timing": "scene",
++                  "mediaId": "n10.ja.image.sin_e04z",
++                  "resolverId": "narcissu10-manifest",
++                  "raw": {
++                    "sourceKey": "sin_e04z",
++                    "codeOffset": 179,
++                    "sourceStringPath": "archive/derived/scripts/narcissu10-original-ja-JP/narci_himeko/scenario.arc.unpacked/himeko_ep00.strings.json",
++                    "playbackPath": "archive/raw/narcissu10-original-ja-JP/narci_himeko/data.arc.unpacked/sin_e04z.png"
++                  }
++                },
++                {
++                  "cueId": "bgm:line-001:2na:1",
++                  "kind": "bgm",
++                  "timing": "scene",
++                  "mediaId": "n10.ja.bgm.2na",
++                  "resolverId": "narcissu10-manifest",
++                  "raw": {
++                    "sourceKey": "2na",
++                    "codeOffset": 220,
++                    "sourceStringPath": "archive/derived/scripts/narcissu10-original-ja-JP/narci_himeko/scenario.arc.unpacked/himeko_ep00.strings.json",
++                    "playbackPath": "raw/narcissu10-original-ja-JP/narci_himeko/stream.arc.unpacked/2na.ogg"
++                  }
++                },
++                {
++                  "cueId": "voice:line-001:c77setu_0002:1",
++                  "kind": "voice",
++                  "timing": "utterance",
++                  "mediaId": "n10.ja.voice.c77setu_0002",
++                  "resolverId": "narcissu10-manifest",
++                  "raw": {
++                    "sourceKey": "c77setu_0002",
++                    "codeOffset": 244,
++                    "sourceStringPath": "archive/derived/scripts/narcissu10-original-ja-JP/narci_himeko/scenario.arc.unpacked/himeko_ep00.strings.json",
++                    "playbackPath": "raw/narcissu10-original-ja-JP/narci_himeko/voice.arc.unpacked/c77setu_0002.wav"
++                  }
++                }
++              ],
++              "source": {
++                "engine": "majiro",
++                "variantSourceId": "mjo/narcissu10-original-ja-jp/narci_himeko/scenario.arc.unpacked/himeko_ep00",
++                "scriptPath": "archive/derived/scripts/narcissu10-original-ja-JP/narci_himeko/scenario.arc.unpacked/himeko_ep00.script.json",
++                "textEventIndices": [
++                  0,
++                  1
++                ],
++                "codeOffsets": [
++                  277,
++                  292
++                ],
++                "textCodeOffset": 292,
++                "mjoAnchor": "mjo-124"
++              },
++              "speaker": {
++                "ja-JP": "セツミ"
++              }
++            },
++            {
++              "eventId": "line-002",
++              "kind": "line",
++              "text": {
++                "ja-JP": "「－そんな中、コンビニで買ったお弁当を手に、\n　ぽつりと姫子さんは呟いた－」"
++              },
++              "nextEventId": "line-003",
++              "cues": [
++                {
++                  "cueId": "voice:line-002:c77setu_0003:1",
++                  "kind": "voice",
++                  "timing": "utterance",
++                  "mediaId": "n10.ja.voice.c77setu_0003",
++                  "resolverId": "narcissu10-manifest",
++                  "raw": {
++                    "sourceKey": "c77setu_0003",
++                    "codeOffset": 390,
++                    "sourceStringPath": "archive/derived/scripts/narcissu10-original-ja-JP/narci_himeko/scenario.arc.unpacked/himeko_ep00.strings.json",
++                    "playbackPath": "raw/narcissu10-original-ja-JP/narci_himeko/voice.arc.unpacked/c77setu_0003.wav"
++                  }
++                }
++              ],
++              "source": {
++                "engine": "majiro",
++                "variantSourceId": "mjo/narcissu10-original-ja-jp/narci_himeko/scenario.arc.unpacked/himeko_ep00",
++                "scriptPath": "archive/derived/scripts/narcissu10-original-ja-JP/narci_himeko/scenario.arc.unpacked/himeko_ep00.script.json",
++                "textEventIndices": [
++                  2,
++                  3
++                ],
++                "codeOffsets": [
++                  423,
++                  438
++                ],
++                "textCodeOffset": 438,
++                "mjoAnchor": "mjo-1b6"
++              },
++              "speaker": {
++                "ja-JP": "セツミ"
++              }
++            },
++            {
++              "eventId": "line-003",
++              "kind": "line",
++              "text": {
++                "ja-JP": "「ねぇセツミ、\n　とりあえず私もルールに一つ追加させてもらうわ」"
++              },
++              "nextEventId": "line-004",
++              "cues": [
++                {
++                  "cueId": "sfx:line-003:kaze4:1",
++                  "kind": "sfx",
++                  "timing": "utterance",
++                  "mediaId": "n10.ja.sfx.kaze4",
++                  "resolverId": "narcissu10-manifest",
++                  "raw": {
++                    "sourceKey": "kaze4",
++                    "codeOffset": 552,
++                    "sourceStringPath": "archive/derived/scripts/narcissu10-original-ja-JP/narci_himeko/scenario.arc.unpacked/himeko_ep00.strings.json",
++                    "playbackPath": "raw/narcissu10-original-ja-JP/narci_himeko/data.arc.unpacked/kaze4.wav"
++                  }
++                },
++                {
++                  "cueId": "image:line-003:sin_e05z:1",
++                  "kind": "image",
++                  "timing": "scene",
++                  "mediaId": "n10.ja.image.sin_e05z",
++                  "resolverId": "narcissu10-manifest",
++                  "raw": {
++                    "sourceKey": "sin_e05z",
++                    "codeOffset": 580,
++                    "sourceStringPath": "archive/derived/scripts/narcissu10-original-ja-JP/narci_himeko/scenario.arc.unpacked/himeko_ep00.strings.json",
++                    "playbackPath": "archive/raw/narcissu10-original-ja-JP/narci_himeko/data.arc.unpacked/sin_e05z.png"
++                  }
++                },
++                {
++                  "cueId": "voice:line-003:c77hime_0001:1",
++                  "kind": "voice",
++                  "timing": "utterance",
++                  "mediaId": "n10.ja.voice.c77hime_0001",
++                  "resolverId": "narcissu10-manifest",
++                  "raw": {
++                    "sourceKey": "c77hime_0001",
++                    "codeOffset": 621,
++                    "sourceStringPath": "archive/derived/scripts/narcissu10-original-ja-JP/narci_himeko/scenario.arc.unpacked/himeko_ep00.strings.json",
++                    "playbackPath": "raw/narcissu10-original-ja-JP/narci_himeko/voice.arc.unpacked/c77hime_0001.wav"
++                  }
++                }
++              ],
++              "source": {
++                "engine": "majiro",
++                "variantSourceId": "mjo/narcissu10-original-ja-jp/narci_himeko/scenario.arc.unpacked/himeko_ep00",
++                "scriptPath": "archive/derived/scripts/narcissu10-original-ja-JP/narci_himeko/scenario.arc.unpacked/himeko_ep00.script.json",
++                "textEventIndices": [
++                  4,
++                  5
++                ],
++                "codeOffsets": [
++                  654,
++                  667
++                ],
++                "textCodeOffset": 667,
++                "mjoAnchor": "mjo-29b"
++              },
++              "speaker": {
++                "ja-JP": "姫子"
++              }
++            },
++            {
++              "eventId": "line-004",
++              "kind": "line",
++              "text": {
++                "ja-JP": "「……ルール？」"
++              },
++              "nextEventId": "line-005",
++              "cues": [
++                {
++                  "cueId": "voice:line-004:c77setu_0004:1",
++                  "kind": "voice",
++                  "timing": "utterance",
++                  "mediaId": "n10.ja.voice.c77setu_0004",
++                  "resolverId": "narcissu10-manifest",
++                  "raw": {
++                    "sourceKey": "c77setu_0004",
++                    "codeOffset": 769,
++                    "sourceStringPath": "archive/derived/scripts/narcissu10-original-ja-JP/narci_himeko/scenario.arc.unpacked/himeko_ep00.strings.json",
++                    "playbackPath": "raw/narcissu10-original-ja-JP/narci_himeko/voice.arc.unpacked/c77setu_0004.wav"
++                  }
++                }
++              ],
++              "source": {
++                "engine": "majiro",
++                "variantSourceId": "mjo/narcissu10-original-ja-jp/narci_himeko/scenario.arc.unpacked/himeko_ep00",
++                "scriptPath": "archive/derived/scripts/narcissu10-original-ja-JP/narci_himeko/scenario.arc.unpacked/himeko_ep00.script.json",
++                "textEventIndices": [
++                  6,
++                  7
++                ],
++                "codeOffsets": [
++                  802,
++                  817
++                ],
++                "textCodeOffset": 817,
++                "mjoAnchor": "mjo-331"
++              },
++              "speaker": {
++                "ja-JP": "セツミ"
++              }
++            },
++            {
++              "eventId": "line-005",
++              "kind": "line",
++              "text": {
++                "ja-JP": "「ええ、友達は作っても良いってね」"
++              },
++              "nextEventId": "line-006",
++              "cues": [
++                {
++                  "cueId": "voice:line-005:c77hime_0002:1",
++                  "kind": "voice",
++                  "timing": "utterance",
++                  "mediaId": "n10.ja.voice.c77hime_0002",
++                  "resolverId": "narcissu10-manifest",
++                  "raw": {
++                    "sourceKey": "c77hime_0002",
++                    "codeOffset": 856,
++                    "sourceStringPath": "archive/derived/scripts/narcissu10-original-ja-JP/narci_himeko/scenario.arc.unpacked/himeko_ep00.strings.json",
++                    "playbackPath": "raw/narcissu10-original-ja-JP/narci_himeko/voice.arc.unpacked/c77hime_0002.wav"
++                  }
++                }
++              ],
++              "source": {
++                "engine": "majiro",
++                "variantSourceId": "mjo/narcissu10-original-ja-jp/narci_himeko/scenario.arc.unpacked/himeko_ep00",
++                "scriptPath": "archive/derived/scripts/narcissu10-original-ja-JP/narci_himeko/scenario.arc.unpacked/himeko_ep00.script.json",
++                "textEventIndices": [
++                  8,
++                  9
++                ],
++                "codeOffsets": [
++                  889,
++                  902
++                ],
++                "textCodeOffset": 902,
++                "mjoAnchor": "mjo-386"
++              },
++              "speaker": {
++                "ja-JP": "姫子"
++              }
++            },
++            {
++              "eventId": "line-006",
++              "kind": "line",
++              "text": {
++                "ja-JP": "響きわたる鐘の音。\n教会の前に車を止めると、わたしを降ろす姫子さん。"
++              },
++              "nextEventId": "line-007",
++              "cues": [
++                {
++                  "cueId": "sfx:line-006:kane02d:1",
++                  "kind": "sfx",
++                  "timing": "utterance",
++                  "mediaId": "n10.ja.sfx.kane02d",
++                  "resolverId": "narcissu10-manifest",
++                  "raw": {
++                    "sourceKey": "kane02d",
++                    "codeOffset": 959,
++                    "sourceStringPath": "archive/derived/scripts/narcissu10-original-ja-JP/narci_himeko/scenario.arc.unpacked/himeko_ep00.strings.json",
++                    "playbackPath": "raw/narcissu10-original-ja-JP/narci_himeko/data.arc.unpacked/kane02d.wav"
++                  }
++                },
++                {
++                  "cueId": "image:line-006:sin_e06bz:1",
++                  "kind": "image",
++                  "timing": "scene",
++                  "mediaId": "n10.ja.image.sin_e06bz",
++                  "resolverId": "narcissu10-manifest",
++                  "raw": {
++                    "sourceKey": "sin_e06bz",
++                    "codeOffset": 989,
++                    "sourceStringPath": "archive/derived/scripts/narcissu10-original-ja-JP/narci_himeko/scenario.arc.unpacked/himeko_ep00.strings.json",
++                    "playbackPath": "archive/raw/narcissu10-original-ja-JP/narci_himeko/data.arc.unpacked/sin_e06bz.png"
++                  }
++                },
++                {
++                  "cueId": "image:line-006:sin_e06z:1",
++                  "kind": "image",
++                  "timing": "scene",
++                  "mediaId": "n10.ja.image.sin_e06z",
++                  "resolverId": "narcissu10-manifest",
++                  "raw": {
++                    "sourceKey": "sin_e06z",
++                    "codeOffset": 1025,
++                    "sourceStringPath": "archive/derived/scripts/narcissu10-original-ja-JP/narci_himeko/scenario.arc.unpacked/himeko_ep00.strings.json",
++                    "playbackPath": "archive/raw/narcissu10-original-ja-JP/narci_himeko/data.arc.unpacked/sin_e06z.png"
++                  }
++                }
++              ],
++              "source": {
++                "engine": "majiro",
++                "variantSourceId": "mjo/narcissu10-original-ja-jp/narci_himeko/scenario.arc.unpacked/himeko_ep00",
++                "scriptPath": "archive/derived/scripts/narcissu10-original-ja-JP/narci_himeko/scenario.arc.unpacked/himeko_ep00.script.json",
++                "textEventIndices": [
++                  10
++                ],
++                "codeOffsets": [
++                  1066
++                ],
++                "textCodeOffset": 1066,
++                "mjoAnchor": "mjo-42a"
++              }
++            },
++            {
++              "eventId": "line-007",
++              "kind": "line",
++              "text": {
++                "ja-JP": "「じゃあ、ここでお別れしましょ」"
++              },
++              "nextEventId": "line-008",
++              "cues": [
++                {
++                  "cueId": "sfx:line-007:car_close:1",
++                  "kind": "sfx",
++                  "timing": "utterance",
++                  "mediaId": "n10.ja.sfx.car_close",
++                  "resolverId": "narcissu10-manifest",
++                  "raw": {
++                    "sourceKey": "car_close",
++                    "codeOffset": 1172,
++                    "sourceStringPath": "archive/derived/scripts/narcissu10-original-ja-JP/narci_himeko/scenario.arc.unpacked/himeko_ep00.strings.json",
++                    "playbackPath": "raw/narcissu10-original-ja-JP/narci_himeko/data.arc.unpacked/car_close.wav"
++                  }
++                },
++                {
++                  "cueId": "voice:line-007:hime1_0559:1",
++                  "kind": "voice",
++                  "timing": "utterance",
++                  "mediaId": "n10.ja.voice.hime1_0559",
++                  "resolverId": "narcissu10-manifest",
++                  "raw": {
++                    "sourceKey": "hime1_0559",
++                    "codeOffset": 1198,
++                    "sourceStringPath": "archive/derived/scripts/narcissu10-original-ja-JP/narci_himeko/scenario.arc.unpacked/himeko_ep00.strings.json",
++                    "playbackPath": "raw/narcissu10-original-ja-JP/narci_himeko/voice.arc.unpacked/hime1_0559.ogg"
++                  }
++                }
++              ],
++              "source": {
++                "engine": "majiro",
++                "variantSourceId": "mjo/narcissu10-original-ja-jp/narci_himeko/scenario.arc.unpacked/himeko_ep00",
++                "scriptPath": "archive/derived/scripts/narcissu10-original-ja-JP/narci_himeko/scenario.arc.unpacked/himeko_ep00.script.json",
++                "textEventIndices": [
++                  11,
++                  12
++                ],
++                "codeOffsets": [
++                  1229,
++                  1242
++                ],
++                "textCodeOffset": 1242,
++                "mjoAnchor": "mjo-4da"
++              },
++              "speaker": {
++                "ja-JP": "姫子"
++              }
++            },
++            {
++              "eventId": "line-008",
++              "kind": "line",
++              "text": {
++                "ja-JP": "そして…"
++              },
++              "nextEventId": "line-009",
++              "source": {
++                "engine": "majiro",
++                "variantSourceId": "mjo/narcissu10-original-ja-jp/narci_himeko/scenario.arc.unpacked/himeko_ep00",
++                "scriptPath": "archive/derived/scripts/narcissu10-original-ja-JP/narci_himeko/scenario.arc.unpacked/himeko_ep00.script.json",
++                "textEventIndices": [
++                  13
++                ],
++                "codeOffsets": [
++                  1297
++                ],
++                "textCodeOffset": 1297,
++                "mjoAnchor": "mjo-511"
++              }
++            },
++            {
++              "eventId": "line-009",
++              "kind": "line",
++              "text": {
++                "ja-JP": "「…さよなら……コロッケ博士…」"
++              },
++              "nextEventId": "line-010",
++              "cues": [
++                {
++                  "cueId": "voice:line-009:hime1_0580zz:1",
++                  "kind": "voice",
++                  "timing": "utterance",
++                  "mediaId": "n10.ja.voice.hime1_0580zz",
++                  "resolverId": "narcissu10-manifest",
++                  "raw": {
++                    "sourceKey": "hime1_0580zz",
++                    "codeOffset": 1328,
++                    "sourceStringPath": "archive/derived/scripts/narcissu10-original-ja-JP/narci_himeko/scenario.arc.unpacked/himeko_ep00.strings.json",
++                    "playbackPath": "raw/narcissu10-original-ja-JP/narci_himeko/voice.arc.unpacked/hime1_0580zz.ogg"
++                  }
++                }
++              ],
++              "source": {
++                "engine": "majiro",
++                "variantSourceId": "mjo/narcissu10-original-ja-jp/narci_himeko/scenario.arc.unpacked/himeko_ep00",
++                "scriptPath": "archive/derived/scripts/narcissu10-original-ja-JP/narci_himeko/scenario.arc.unpacked/himeko_ep00.script.json",
++                "textEventIndices": [
++                  14,
++                  15
++                ],
++                "codeOffsets": [
++                  1361,
++                  1374
++                ],
++                "textCodeOffset": 1374,
++                "mjoAnchor": "mjo-55e"
++              },
++              "speaker": {
++                "ja-JP": "姫子"
++              }
++            },
++            {
++              "eventId": "line-010",
++              "kind": "line",
++              "text": {
++                "ja-JP": "「－その言葉を最後に、\nわたしに背を向けると教会へと歩き始める－」"
++              },
++              "nextEventId": "line-011",
++              "cues": [
++                {
++                  "cueId": "image:line-010:w3:1",
++                  "kind": "image",
++                  "timing": "scene",
++                  "mediaId": "n10.ja.image.w3",
++                  "resolverId": "narcissu10-manifest",
++                  "raw": {
++                    "sourceKey": "w3",
++                    "codeOffset": 1435,
++                    "sourceStringPath": "archive/derived/scripts/narcissu10-original-ja-JP/narci_himeko/scenario.arc.unpacked/himeko_ep00.strings.json",
++                    "playbackPath": "archive/raw/narcissu10-original-ja-JP/narci_himeko/data.arc.unpacked/w3.png"
++                  }
++                },
++                {
++                  "cueId": "sfx:line-010:z42r:1",
++                  "kind": "sfx",
++                  "timing": "utterance",
++                  "mediaId": "n10.ja.sfx.z42r",
++                  "resolverId": "narcissu10-manifest",
++                  "raw": {
++                    "sourceKey": "z42r",
++                    "codeOffset": 1470,
++                    "sourceStringPath": "archive/derived/scripts/narcissu10-original-ja-JP/narci_himeko/scenario.arc.unpacked/himeko_ep00.strings.json",
++                    "playbackPath": "raw/narcissu10-original-ja-JP/narci_himeko/data.arc.unpacked/z42r.wav"
++                  }
++                },
++                {
++                  "cueId": "image:line-010:sin_e07z:1",
++                  "kind": "image",
++                  "timing": "scene",
++                  "mediaId": "n10.ja.image.sin_e07z",
++                  "resolverId": "narcissu10-manifest",
++                  "raw": {
++                    "sourceKey": "sin_e07z",
++                    "codeOffset": 1497,
++                    "sourceStringPath": "archive/derived/scripts/narcissu10-original-ja-JP/narci_himeko/scenario.arc.unpacked/himeko_ep00.strings.json",
++                    "playbackPath": "archive/raw/narcissu10-original-ja-JP/narci_himeko/data.arc.unpacked/sin_e07z.png"
++                  }
++                },
++                {
++                  "cueId": "voice:line-010:c77setu_0006:1",
++                  "kind": "voice",
++                  "timing": "utterance",
++                  "mediaId": "n10.ja.voice.c77setu_0006",
++                  "resolverId": "narcissu10-manifest",
++                  "raw": {
++                    "sourceKey": "c77setu_0006",
++                    "codeOffset": 1538,
++                    "sourceStringPath": "archive/derived/scripts/narcissu10-original-ja-JP/narci_himeko/scenario.arc.unpacked/himeko_ep00.strings.json",
++                    "playbackPath": "raw/narcissu10-original-ja-JP/narci_himeko/voice.arc.unpacked/c77setu_0006.wav"
++                  }
++                }
++              ],
++              "source": {
++                "engine": "majiro",
++                "variantSourceId": "mjo/narcissu10-original-ja-jp/narci_himeko/scenario.arc.unpacked/himeko_ep00",
++                "scriptPath": "archive/derived/scripts/narcissu10-original-ja-JP/narci_himeko/scenario.arc.unpacked/himeko_ep00.script.json",
++                "textEventIndices": [
++                  16,
++                  17
++                ],
++                "codeOffsets": [
++                  1571,
++                  1586
++                ],
++                "textCodeOffset": 1586,
++                "mjoAnchor": "mjo-632"
++              },
++              "speaker": {
++                "ja-JP": "セツミ"
++              }
++            },
++            {
++              "eventId": "line-011",
++              "kind": "line",
++              "text": {
++                "ja-JP": "「恐らく、その中に居るであろう、\n千尋さんや優花さんと会うのだろう」"
++              },
++              "nextEventId": "line-012",
++              "cues": [
++                {
++                  "cueId": "voice:line-011:c77setu_0007:1",
++                  "kind": "voice",
++                  "timing": "utterance",
++                  "mediaId": "n10.ja.voice.c77setu_0007",
++                  "resolverId": "narcissu10-manifest",
++                  "raw": {
++                    "sourceKey": "c77setu_0007",
++                    "codeOffset": 1690,
++                    "sourceStringPath": "archive/derived/scripts/narcissu10-original-ja-JP/narci_himeko/scenario.arc.unpacked/himeko_ep00.strings.json",
++                    "playbackPath": "raw/narcissu10-original-ja-JP/narci_himeko/voice.arc.unpacked/c77setu_0007.wav"
++                  }
++                }
++              ],
++              "source": {
++                "engine": "majiro",
++                "variantSourceId": "mjo/narcissu10-original-ja-jp/narci_himeko/scenario.arc.unpacked/himeko_ep00",
++                "scriptPath": "archive/derived/scripts/narcissu10-original-ja-JP/narci_himeko/scenario.arc.unpacked/himeko_ep00.script.json",
++                "textEventIndices": [
++                  18,
++                  19
++                ],
++                "codeOffsets": [
++                  1723,
++                  1738
++                ],
++                "textCodeOffset": 1738,
++                "mjoAnchor": "mjo-6ca"
++              },
++              "speaker": {
++                "ja-JP": "セツミ"
++              }
++            },
++            {
++              "eventId": "line-012",
++              "kind": "line",
++              "text": {
++                "ja-JP": "「……きっと、以前は優しかったの、”以前”は…」"
++              },
++              "nextEventId": "line-013",
++              "cues": [
++                {
++                  "cueId": "voice:line-012:c77setu_0008:1",
++                  "kind": "voice",
++                  "timing": "utterance",
++                  "mediaId": "n10.ja.voice.c77setu_0008",
++                  "resolverId": "narcissu10-manifest",
++                  "raw": {
++                    "sourceKey": "c77setu_0008",
++                    "codeOffset": 1844,
++                    "sourceStringPath": "archive/derived/scripts/narcissu10-original-ja-JP/narci_himeko/scenario.arc.unpacked/himeko_ep00.strings.json",
++                    "playbackPath": "raw/narcissu10-original-ja-JP/narci_himeko/voice.arc.unpacked/c77setu_0008.wav"
++                  }
++                }
++              ],
++              "source": {
++                "engine": "majiro",
++                "variantSourceId": "mjo/narcissu10-original-ja-jp/narci_himeko/scenario.arc.unpacked/himeko_ep00",
++                "scriptPath": "archive/derived/scripts/narcissu10-original-ja-JP/narci_himeko/scenario.arc.unpacked/himeko_ep00.script.json",
++                "textEventIndices": [
++                  20,
++                  21
++                ],
++                "codeOffsets": [
++                  1877,
++                  1892
++                ],
++                "textCodeOffset": 1892,
++                "mjoAnchor": "mjo-764"
++              },
++              "speaker": {
++                "ja-JP": "セツミ"
++              }
++            },
++            {
++              "eventId": "line-013",
++              "kind": "line",
++              "text": {
++                "ja-JP": "「…無くなるのだろう…」"
++              },
++              "nextEventId": "end-001",
++              "cues": [
++                {
++                  "cueId": "voice:line-013:c77setu_0008b:1",
++                  "kind": "voice",
++                  "timing": "utterance",
++                  "mediaId": "n10.ja.voice.c77setu_0008b",
++                  "resolverId": "narcissu10-manifest",
++                  "raw": {
++                    "sourceKey": "c77setu_0008b",
++                    "codeOffset": 1963,
++                    "sourceStringPath": "archive/derived/scripts/narcissu10-original-ja-JP/narci_himeko/scenario.arc.unpacked/himeko_ep00.strings.json",
++                    "playbackPath": "raw/narcissu10-original-ja-JP/narci_himeko/voice.arc.unpacked/c77setu_0008b.wav"
++                  }
++                }
++              ],
++              "source": {
++                "engine": "majiro",
++                "variantSourceId": "mjo/narcissu10-original-ja-jp/narci_himeko/scenario.arc.unpacked/himeko_ep00",
++                "scriptPath": "archive/derived/scripts/narcissu10-original-ja-JP/narci_himeko/scenario.arc.unpacked/himeko_ep00.script.json",
++                "textEventIndices": [
++                  22,
++                  23
++                ],
++                "codeOffsets": [
++                  1997,
++                  2012
++                ],
++                "textCodeOffset": 2012,
++                "mjoAnchor": "mjo-7dc"
++              },
++              "speaker": {
++                "ja-JP": "セツミ"
++              }
++            },
++            {
++              "eventId": "end-001",
++              "kind": "end",
++              "cues": [
++                {
++                  "cueId": "image:end-001:b3:1",
++                  "kind": "image",
++                  "timing": "scene",
++                  "mediaId": "n10.ja.image.b3",
++                  "resolverId": "narcissu10-manifest",
++                  "raw": {
++                    "sourceKey": "b3",
++                    "codeOffset": 2081,
++                    "sourceStringPath": "archive/derived/scripts/narcissu10-original-ja-JP/narci_himeko/scenario.arc.unpacked/himeko_ep00.strings.json",
++                    "playbackPath": "archive/raw/narcissu10-original-ja-JP/narci_himeko/data.arc.unpacked/b3.png"
++                  }
++                }
++              ]
++            }
++          ]
++        }
++      ]
++    },
++    {
++      "variantId": "narcissu10/himeko-ep00/en",
++      "locales": [
++        "en"
++      ],
++      "sections": [
++        {
++          "sectionId": "main",
++          "title": {
++            "en": "Himeko EP00"
++          },
++          "entryEventId": "line-001",
++          "events": [
++            {
++              "eventId": "line-001",
++              "kind": "line",
++              "text": {
++                "en": "「「\"... Under an early-morning sky, we were on the road back from Mount Fuji.\""
++              },
++              "nextEventId": "line-002",
++              "cues": [
++                {
++                  "cueId": "image:line-001:black:1",
++                  "kind": "image",
++                  "timing": "scene",
++                  "mediaId": "n10.en.image.black",
++                  "resolverId": "narcissu10-manifest",
++                  "raw": {
++                    "sourceKey": "black",
++                    "codeOffset": 22,
++                    "sourceStringPath": "archive/derived/scripts/narcissu10-original/narci_himeko/scenario.arc.unpacked/himeko_ep00.strings.json",
++                    "playbackPath": "archive/derived/images/narcissu10-original/narci_himeko/fastdata.arc.unpacked/black.png"
++                  }
++                },
++                {
++                  "cueId": "image:line-001:b4:1",
++                  "kind": "image",
++                  "timing": "scene",
++                  "mediaId": "n10.en.image.b4",
++                  "resolverId": "narcissu10-manifest",
++                  "raw": {
++                    "sourceKey": "b4",
++                    "codeOffset": 88,
++                    "sourceStringPath": "archive/derived/scripts/narcissu10-original/narci_himeko/scenario.arc.unpacked/himeko_ep00.strings.json",
++                    "playbackPath": "archive/raw/narcissu10-original/narci_himeko/data.arc.unpacked/b4.png"
++                  }
++                },
++                {
++                  "cueId": "sfx:line-001:car_thru_rl:1",
++                  "kind": "sfx",
++                  "timing": "utterance",
++                  "mediaId": "n10.en.sfx.car_thru_rl",
++                  "resolverId": "narcissu10-manifest",
++                  "raw": {
++                    "sourceKey": "car_thru_rl",
++                    "codeOffset": 145,
++                    "sourceStringPath": "archive/derived/scripts/narcissu10-original/narci_himeko/scenario.arc.unpacked/himeko_ep00.strings.json",
++                    "playbackPath": "raw/narcissu10-original/narci_himeko/data.arc.unpacked/car_thru_rl.wav"
++                  }
++                },
++                {
++                  "cueId": "image:line-001:sin_e04z:1",
++                  "kind": "image",
++                  "timing": "scene",
++                  "mediaId": "n10.en.image.sin_e04z",
++                  "resolverId": "narcissu10-manifest",
++                  "raw": {
++                    "sourceKey": "sin_e04z",
++                    "codeOffset": 179,
++                    "sourceStringPath": "archive/derived/scripts/narcissu10-original/narci_himeko/scenario.arc.unpacked/himeko_ep00.strings.json",
++                    "playbackPath": "archive/raw/narcissu10-original/narci_himeko/data.arc.unpacked/sin_e04z.png"
++                  }
++                },
++                {
++                  "cueId": "bgm:line-001:2na:1",
++                  "kind": "bgm",
++                  "timing": "scene",
++                  "mediaId": "n10.en.bgm.2na",
++                  "resolverId": "narcissu10-manifest",
++                  "raw": {
++                    "sourceKey": "2na",
++                    "codeOffset": 220,
++                    "sourceStringPath": "archive/derived/scripts/narcissu10-original/narci_himeko/scenario.arc.unpacked/himeko_ep00.strings.json",
++                    "playbackPath": "raw/narcissu10-original/narci_himeko/stream.arc.unpacked/2na.ogg"
++                  }
++                },
++                {
++                  "cueId": "voice:line-001:c77setu_0002:1",
++                  "kind": "voice",
++                  "timing": "utterance",
++                  "mediaId": "n10.en.voice.c77setu_0002",
++                  "resolverId": "narcissu10-manifest",
++                  "raw": {
++                    "sourceKey": "c77setu_0002",
++                    "codeOffset": 244,
++                    "sourceStringPath": "archive/derived/scripts/narcissu10-original/narci_himeko/scenario.arc.unpacked/himeko_ep00.strings.json",
++                    "playbackPath": "raw/narcissu10-original/narci_himeko/voice.arc.unpacked/c77setu_0002.wav"
++                  }
++                }
++              ],
++              "source": {
++                "engine": "majiro",
++                "variantSourceId": "mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/himeko_ep00",
++                "scriptPath": "archive/derived/scripts/narcissu10-original/narci_himeko/scenario.arc.unpacked/himeko_ep00.script.json",
++                "textEventIndices": [
++                  0,
++                  1
++                ],
++                "codeOffsets": [
++                  277,
++                  293
++                ],
++                "textCodeOffset": 293,
++                "mjoAnchor": "mjo-125"
++              },
++              "speaker": {
++                "en": "Setsumi"
++              }
++            },
++            {
++              "eventId": "line-002",
++              "kind": "line",
++              "text": {
++                "en": "「「\"Along the way, her hand on the lunch we bought at the convenience store, Himeko murmured slowly.\""
++              },
++              "nextEventId": "line-003",
++              "cues": [
++                {
++                  "cueId": "voice:line-002:c77setu_0003:1",
++                  "kind": "voice",
++                  "timing": "utterance",
++                  "mediaId": "n10.en.voice.c77setu_0003",
++                  "resolverId": "narcissu10-manifest",
++                  "raw": {
++                    "sourceKey": "c77setu_0003",
++                    "codeOffset": 395,
++                    "sourceStringPath": "archive/derived/scripts/narcissu10-original/narci_himeko/scenario.arc.unpacked/himeko_ep00.strings.json",
++                    "playbackPath": "raw/narcissu10-original/narci_himeko/voice.arc.unpacked/c77setu_0003.wav"
++                  }
++                }
++              ],
++              "source": {
++                "engine": "majiro",
++                "variantSourceId": "mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/himeko_ep00",
++                "scriptPath": "archive/derived/scripts/narcissu10-original/narci_himeko/scenario.arc.unpacked/himeko_ep00.script.json",
++                "textEventIndices": [
++                  2,
++                  3
++                ],
++                "codeOffsets": [
++                  428,
++                  444
++                ],
++                "textCodeOffset": 444,
++                "mjoAnchor": "mjo-1bc"
++              },
++              "speaker": {
++                "en": "Setsumi"
++              }
++            },
++            {
++              "eventId": "line-003",
++              "kind": "line",
++              "text": {
++                "en": "「「\"Hey, Setsumi... For now, I'm going to add one to the rules.\""
++              },
++              "nextEventId": "line-004",
++              "cues": [
++                {
++                  "cueId": "sfx:line-003:kaze4:1",
++                  "kind": "sfx",
++                  "timing": "utterance",
++                  "mediaId": "n10.en.sfx.kaze4",
++                  "resolverId": "narcissu10-manifest",
++                  "raw": {
++                    "sourceKey": "kaze4",
++                    "codeOffset": 569,
++                    "sourceStringPath": "archive/derived/scripts/narcissu10-original/narci_himeko/scenario.arc.unpacked/himeko_ep00.strings.json",
++                    "playbackPath": "raw/narcissu10-original/narci_himeko/data.arc.unpacked/kaze4.wav"
++                  }
++                },
++                {
++                  "cueId": "image:line-003:sin_e05z:1",
++                  "kind": "image",
++                  "timing": "scene",
++                  "mediaId": "n10.en.image.sin_e05z",
++                  "resolverId": "narcissu10-manifest",
++                  "raw": {
++                    "sourceKey": "sin_e05z",
++                    "codeOffset": 597,
++                    "sourceStringPath": "archive/derived/scripts/narcissu10-original/narci_himeko/scenario.arc.unpacked/himeko_ep00.strings.json",
++                    "playbackPath": "archive/raw/narcissu10-original/narci_himeko/data.arc.unpacked/sin_e05z.png"
++                  }
++                },
++                {
++                  "cueId": "voice:line-003:c77hime_0001:1",
++                  "kind": "voice",
++                  "timing": "utterance",
++                  "mediaId": "n10.en.voice.c77hime_0001",
++                  "resolverId": "narcissu10-manifest",
++                  "raw": {
++                    "sourceKey": "c77hime_0001",
++                    "codeOffset": 638,
++                    "sourceStringPath": "archive/derived/scripts/narcissu10-original/narci_himeko/scenario.arc.unpacked/himeko_ep00.strings.json",
++                    "playbackPath": "raw/narcissu10-original/narci_himeko/voice.arc.unpacked/c77hime_0001.wav"
++                  }
++                }
++              ],
++              "source": {
++                "engine": "majiro",
++                "variantSourceId": "mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/himeko_ep00",
++                "scriptPath": "archive/derived/scripts/narcissu10-original/narci_himeko/scenario.arc.unpacked/himeko_ep00.script.json",
++                "textEventIndices": [
++                  4,
++                  5
++                ],
++                "codeOffsets": [
++                  671,
++                  686
++                ],
++                "textCodeOffset": 686,
++                "mjoAnchor": "mjo-2ae"
++              },
++              "speaker": {
++                "en": "Himeko"
++              }
++            },
++            {
++              "eventId": "line-004",
++              "kind": "line",
++              "text": {
++                "en": "「「\"... Rules?\""
++              },
++              "nextEventId": "line-005",
++              "cues": [
++                {
++                  "cueId": "voice:line-004:c77setu_0004:1",
++                  "kind": "voice",
++                  "timing": "utterance",
++                  "mediaId": "n10.en.voice.c77setu_0004",
++                  "resolverId": "narcissu10-manifest",
++                  "raw": {
++                    "sourceKey": "c77setu_0004",
++                    "codeOffset": 774,
++                    "sourceStringPath": "archive/derived/scripts/narcissu10-original/narci_himeko/scenario.arc.unpacked/himeko_ep00.strings.json",
++                    "playbackPath": "raw/narcissu10-original/narci_himeko/voice.arc.unpacked/c77setu_0004.wav"
++                  }
++                }
++              ],
++              "source": {
++                "engine": "majiro",
++                "variantSourceId": "mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/himeko_ep00",
++                "scriptPath": "archive/derived/scripts/narcissu10-original/narci_himeko/scenario.arc.unpacked/himeko_ep00.script.json",
++                "textEventIndices": [
++                  6,
++                  7
++                ],
++                "codeOffsets": [
++                  807,
++                  823
++                ],
++                "textCodeOffset": 823,
++                "mjoAnchor": "mjo-337"
++              },
++              "speaker": {
++                "en": "Setsumi"
++              }
++            },
++            {
++              "eventId": "line-005",
++              "kind": "line",
++              "text": {
++                "en": "「「\"Yes, that it's okay to make friends.\""
++              },
++              "nextEventId": "line-006",
++              "cues": [
++                {
++                  "cueId": "voice:line-005:c77hime_0002:1",
++                  "kind": "voice",
++                  "timing": "utterance",
++                  "mediaId": "n10.en.voice.c77hime_0002",
++                  "resolverId": "narcissu10-manifest",
++                  "raw": {
++                    "sourceKey": "c77hime_0002",
++                    "codeOffset": 862,
++                    "sourceStringPath": "archive/derived/scripts/narcissu10-original/narci_himeko/scenario.arc.unpacked/himeko_ep00.strings.json",
++                    "playbackPath": "raw/narcissu10-original/narci_himeko/voice.arc.unpacked/c77hime_0002.wav"
++                  }
++                }
++              ],
++              "source": {
++                "engine": "majiro",
++                "variantSourceId": "mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/himeko_ep00",
++                "scriptPath": "archive/derived/scripts/narcissu10-original/narci_himeko/scenario.arc.unpacked/himeko_ep00.script.json",
++                "textEventIndices": [
++                  8,
++                  9
++                ],
++                "codeOffsets": [
++                  895,
++                  910
++                ],
++                "textCodeOffset": 910,
++                "mjoAnchor": "mjo-38e"
++              },
++              "speaker": {
++                "en": "Himeko"
++              }
++            },
++            {
++              "eventId": "line-006",
++              "kind": "line",
++              "text": {
++                "en": "The rolling sound of bells.\nStopping the car in front of the church, Himeko-san dropped me off."
++              },
++              "nextEventId": "line-007",
++              "cues": [
++                {
++                  "cueId": "sfx:line-006:kane02d:1",
++                  "kind": "sfx",
++                  "timing": "utterance",
++                  "mediaId": "n10.en.sfx.kane02d",
++                  "resolverId": "narcissu10-manifest",
++                  "raw": {
++                    "sourceKey": "kane02d",
++                    "codeOffset": 975,
++                    "sourceStringPath": "archive/derived/scripts/narcissu10-original/narci_himeko/scenario.arc.unpacked/himeko_ep00.strings.json",
++                    "playbackPath": "raw/narcissu10-original/narci_himeko/data.arc.unpacked/kane02d.wav"
++                  }
++                },
++                {
++                  "cueId": "image:line-006:sin_e06bz:1",
++                  "kind": "image",
++                  "timing": "scene",
++                  "mediaId": "n10.en.image.sin_e06bz",
++                  "resolverId": "narcissu10-manifest",
++                  "raw": {
++                    "sourceKey": "sin_e06bz",
++                    "codeOffset": 1005,
++                    "sourceStringPath": "archive/derived/scripts/narcissu10-original/narci_himeko/scenario.arc.unpacked/himeko_ep00.strings.json",
++                    "playbackPath": "archive/raw/narcissu10-original/narci_himeko/data.arc.unpacked/sin_e06bz.png"
++                  }
++                },
++                {
++                  "cueId": "image:line-006:sin_e06z:1",
++                  "kind": "image",
++                  "timing": "scene",
++                  "mediaId": "n10.en.image.sin_e06z",
++                  "resolverId": "narcissu10-manifest",
++                  "raw": {
++                    "sourceKey": "sin_e06z",
++                    "codeOffset": 1041,
++                    "sourceStringPath": "archive/derived/scripts/narcissu10-original/narci_himeko/scenario.arc.unpacked/himeko_ep00.strings.json",
++                    "playbackPath": "archive/raw/narcissu10-original/narci_himeko/data.arc.unpacked/sin_e06z.png"
++                  }
++                }
++              ],
++              "source": {
++                "engine": "majiro",
++                "variantSourceId": "mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/himeko_ep00",
++                "scriptPath": "archive/derived/scripts/narcissu10-original/narci_himeko/scenario.arc.unpacked/himeko_ep00.script.json",
++                "textEventIndices": [
++                  10
++                ],
++                "codeOffsets": [
++                  1082
++                ],
++                "textCodeOffset": 1082,
++                "mjoAnchor": "mjo-43a"
++              }
++            },
++            {
++              "eventId": "line-007",
++              "kind": "line",
++              "text": {
++                "en": "「「\"Well, let's say goodbye here.\""
++              },
++              "nextEventId": "line-008",
++              "cues": [
++                {
++                  "cueId": "sfx:line-007:car_close:1",
++                  "kind": "sfx",
++                  "timing": "utterance",
++                  "mediaId": "n10.en.sfx.car_close",
++                  "resolverId": "narcissu10-manifest",
++                  "raw": {
++                    "sourceKey": "car_close",
++                    "codeOffset": 1216,
++                    "sourceStringPath": "archive/derived/scripts/narcissu10-original/narci_himeko/scenario.arc.unpacked/himeko_ep00.strings.json",
++                    "playbackPath": "raw/narcissu10-original/narci_himeko/data.arc.unpacked/car_close.wav"
++                  }
++                },
++                {
++                  "cueId": "voice:line-007:hime1_0559:1",
++                  "kind": "voice",
++                  "timing": "utterance",
++                  "mediaId": "n10.en.voice.hime1_0559",
++                  "resolverId": "narcissu10-manifest",
++                  "raw": {
++                    "sourceKey": "hime1_0559",
++                    "codeOffset": 1242,
++                    "sourceStringPath": "archive/derived/scripts/narcissu10-original/narci_himeko/scenario.arc.unpacked/himeko_ep00.strings.json",
++                    "playbackPath": "raw/narcissu10-original/narci_himeko/voice.arc.unpacked/hime1_0559.ogg"
++                  }
++                }
++              ],
++              "source": {
++                "engine": "majiro",
++                "variantSourceId": "mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/himeko_ep00",
++                "scriptPath": "archive/derived/scripts/narcissu10-original/narci_himeko/scenario.arc.unpacked/himeko_ep00.script.json",
++                "textEventIndices": [
++                  11,
++                  12
++                ],
++                "codeOffsets": [
++                  1273,
++                  1288
++                ],
++                "textCodeOffset": 1288,
++                "mjoAnchor": "mjo-508"
++              },
++              "speaker": {
++                "en": "Himeko"
++              }
++            },
++            {
++              "eventId": "line-008",
++              "kind": "line",
++              "text": {
++                "en": "And then..."
++              },
++              "nextEventId": "line-009",
++              "source": {
++                "engine": "majiro",
++                "variantSourceId": "mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/himeko_ep00",
++                "scriptPath": "archive/derived/scripts/narcissu10-original/narci_himeko/scenario.arc.unpacked/himeko_ep00.script.json",
++                "textEventIndices": [
++                  13
++                ],
++                "codeOffsets": [
++                  1346
++                ],
++                "textCodeOffset": 1346,
++                "mjoAnchor": "mjo-542"
++              }
++            },
++            {
++              "eventId": "line-009",
++              "kind": "line",
++              "text": {
++                "en": "「「\"Farewell... Professor Croquette...\""
++              },
++              "nextEventId": "line-010",
++              "cues": [
++                {
++                  "cueId": "voice:line-009:hime1_0580zz:1",
++                  "kind": "voice",
++                  "timing": "utterance",
++                  "mediaId": "n10.en.voice.hime1_0580zz",
++                  "resolverId": "narcissu10-manifest",
++                  "raw": {
++                    "sourceKey": "hime1_0580zz",
++                    "codeOffset": 1380,
++                    "sourceStringPath": "archive/derived/scripts/narcissu10-original/narci_himeko/scenario.arc.unpacked/himeko_ep00.strings.json",
++                    "playbackPath": "raw/narcissu10-original/narci_himeko/voice.arc.unpacked/hime1_0580zz.ogg"
++                  }
++                }
++              ],
++              "source": {
++                "engine": "majiro",
++                "variantSourceId": "mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/himeko_ep00",
++                "scriptPath": "archive/derived/scripts/narcissu10-original/narci_himeko/scenario.arc.unpacked/himeko_ep00.script.json",
++                "textEventIndices": [
++                  14,
++                  15
++                ],
++                "codeOffsets": [
++                  1413,
++                  1428
++                ],
++                "textCodeOffset": 1428,
++                "mjoAnchor": "mjo-594"
++              },
++              "speaker": {
++                "en": "Himeko"
++              }
++            },
++            {
++              "eventId": "line-010",
++              "kind": "line",
++              "text": {
++                "en": "「「\"With those last words, she turned her back to me and began walking to the church.\""
++              },
++              "nextEventId": "line-011",
++              "cues": [
++                {
++                  "cueId": "image:line-010:w3:1",
++                  "kind": "image",
++                  "timing": "scene",
++                  "mediaId": "n10.en.image.w3",
++                  "resolverId": "narcissu10-manifest",
++                  "raw": {
++                    "sourceKey": "w3",
++                    "codeOffset": 1497,
++                    "sourceStringPath": "archive/derived/scripts/narcissu10-original/narci_himeko/scenario.arc.unpacked/himeko_ep00.strings.json",
++                    "playbackPath": "archive/raw/narcissu10-original/narci_himeko/data.arc.unpacked/w3.png"
++                  }
++                },
++                {
++                  "cueId": "sfx:line-010:z42r:1",
++                  "kind": "sfx",
++                  "timing": "utterance",
++                  "mediaId": "n10.en.sfx.z42r",
++                  "resolverId": "narcissu10-manifest",
++                  "raw": {
++                    "sourceKey": "z42r",
++                    "codeOffset": 1532,
++                    "sourceStringPath": "archive/derived/scripts/narcissu10-original/narci_himeko/scenario.arc.unpacked/himeko_ep00.strings.json",
++                    "playbackPath": "raw/narcissu10-original/narci_himeko/data.arc.unpacked/z42r.wav"
++                  }
++                },
++                {
++                  "cueId": "image:line-010:sin_e07z:1",
++                  "kind": "image",
++                  "timing": "scene",
++                  "mediaId": "n10.en.image.sin_e07z",
++                  "resolverId": "narcissu10-manifest",
++                  "raw": {
++                    "sourceKey": "sin_e07z",
++                    "codeOffset": 1559,
++                    "sourceStringPath": "archive/derived/scripts/narcissu10-original/narci_himeko/scenario.arc.unpacked/himeko_ep00.strings.json",
++                    "playbackPath": "archive/raw/narcissu10-original/narci_himeko/data.arc.unpacked/sin_e07z.png"
++                  }
++                },
++                {
++                  "cueId": "voice:line-010:c77setu_0006:1",
++                  "kind": "voice",
++                  "timing": "utterance",
++                  "mediaId": "n10.en.voice.c77setu_0006",
++                  "resolverId": "narcissu10-manifest",
++                  "raw": {
++                    "sourceKey": "c77setu_0006",
++                    "codeOffset": 1600,
++                    "sourceStringPath": "archive/derived/scripts/narcissu10-original/narci_himeko/scenario.arc.unpacked/himeko_ep00.strings.json",
++                    "playbackPath": "raw/narcissu10-original/narci_himeko/voice.arc.unpacked/c77setu_0006.wav"
++                  }
++                }
++              ],
++              "source": {
++                "engine": "majiro",
++                "variantSourceId": "mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/himeko_ep00",
++                "scriptPath": "archive/derived/scripts/narcissu10-original/narci_himeko/scenario.arc.unpacked/himeko_ep00.script.json",
++                "textEventIndices": [
++                  16,
++                  17
++                ],
++                "codeOffsets": [
++                  1633,
++                  1649
++                ],
++                "textCodeOffset": 1649,
++                "mjoAnchor": "mjo-671"
++              },
++              "speaker": {
++                "en": "Setsumi"
++              }
++            },
++            {
++              "eventId": "line-011",
++              "kind": "line",
++              "text": {
++                "en": "「「\"She was most likely going to meet either Chihiro-san or Yuka-san inside.\""
++              },
++              "nextEventId": "line-012",
++              "cues": [
++                {
++                  "cueId": "voice:line-011:c77setu_0007:1",
++                  "kind": "voice",
++                  "timing": "utterance",
++                  "mediaId": "n10.en.voice.c77setu_0007",
++                  "resolverId": "narcissu10-manifest",
++                  "raw": {
++                    "sourceKey": "c77setu_0007",
++                    "codeOffset": 1759,
++                    "sourceStringPath": "archive/derived/scripts/narcissu10-original/narci_himeko/scenario.arc.unpacked/himeko_ep00.strings.json",
++                    "playbackPath": "raw/narcissu10-original/narci_himeko/voice.arc.unpacked/c77setu_0007.wav"
++                  }
++                }
++              ],
++              "source": {
++                "engine": "majiro",
++                "variantSourceId": "mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/himeko_ep00",
++                "scriptPath": "archive/derived/scripts/narcissu10-original/narci_himeko/scenario.arc.unpacked/himeko_ep00.script.json",
++                "textEventIndices": [
++                  18,
++                  19
++                ],
++                "codeOffsets": [
++                  1792,
++                  1808
++                ],
++                "textCodeOffset": 1808,
++                "mjoAnchor": "mjo-710"
++              },
++              "speaker": {
++                "en": "Setsumi"
++              }
++            },
++            {
++              "eventId": "line-012",
++              "kind": "line",
++              "text": {
++                "en": "「「\"... I'm sure that the 'once' in 'once kind' was...\""
++              },
++              "nextEventId": "line-013",
++              "cues": [
++                {
++                  "cueId": "voice:line-012:c77setu_0008:1",
++                  "kind": "voice",
++                  "timing": "utterance",
++                  "mediaId": "n10.en.voice.c77setu_0008",
++                  "resolverId": "narcissu10-manifest",
++                  "raw": {
++                    "sourceKey": "c77setu_0008",
++                    "codeOffset": 1909,
++                    "sourceStringPath": "archive/derived/scripts/narcissu10-original/narci_himeko/scenario.arc.unpacked/himeko_ep00.strings.json",
++                    "playbackPath": "raw/narcissu10-original/narci_himeko/voice.arc.unpacked/c77setu_0008.wav"
++                  }
++                }
++              ],
++              "source": {
++                "engine": "majiro",
++                "variantSourceId": "mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/himeko_ep00",
++                "scriptPath": "archive/derived/scripts/narcissu10-original/narci_himeko/scenario.arc.unpacked/himeko_ep00.script.json",
++                "textEventIndices": [
++                  20,
++                  21
++                ],
++                "codeOffsets": [
++                  1942,
++                  1958
++                ],
++                "textCodeOffset": 1958,
++                "mjoAnchor": "mjo-7a6"
++              },
++              "speaker": {
++                "en": "Setsumi"
++              }
++            },
++            {
++              "eventId": "line-013",
++              "kind": "line",
++              "text": {
++                "en": "「「\"... going away...\""
++              },
++              "nextEventId": "end-001",
++              "cues": [
++                {
++                  "cueId": "voice:line-013:c77setu_0008b:1",
++                  "kind": "voice",
++                  "timing": "utterance",
++                  "mediaId": "n10.en.voice.c77setu_0008b",
++                  "resolverId": "narcissu10-manifest",
++                  "raw": {
++                    "sourceKey": "c77setu_0008b",
++                    "codeOffset": 2037,
++                    "sourceStringPath": "archive/derived/scripts/narcissu10-original/narci_himeko/scenario.arc.unpacked/himeko_ep00.strings.json",
++                    "playbackPath": "raw/narcissu10-original/narci_himeko/voice.arc.unpacked/c77setu_0008b.wav"
++                  }
++                }
++              ],
++              "source": {
++                "engine": "majiro",
++                "variantSourceId": "mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/himeko_ep00",
++                "scriptPath": "archive/derived/scripts/narcissu10-original/narci_himeko/scenario.arc.unpacked/himeko_ep00.script.json",
++                "textEventIndices": [
++                  22,
++                  23
++                ],
++                "codeOffsets": [
++                  2071,
++                  2087
++                ],
++                "textCodeOffset": 2087,
++                "mjoAnchor": "mjo-827"
++              },
++              "speaker": {
++                "en": "Setsumi"
++              }
++            },
++            {
++              "eventId": "end-001",
++              "kind": "end",
++              "cues": [
++                {
++                  "cueId": "image:end-001:b3:1",
++                  "kind": "image",
++                  "timing": "scene",
++                  "mediaId": "n10.en.image.b3",
++                  "resolverId": "narcissu10-manifest",
++                  "raw": {
++                    "sourceKey": "b3",
++                    "codeOffset": 2155,
++                    "sourceStringPath": "archive/derived/scripts/narcissu10-original/narci_himeko/scenario.arc.unpacked/himeko_ep00.strings.json",
++                    "playbackPath": "archive/raw/narcissu10-original/narci_himeko/data.arc.unpacked/b3.png"
++                  }
++                }
++              ]
++            }
++          ]
++        }
++      ]
++    }
++  ]
++}
+diff --git a/apps/web/index.html b/apps/web/index.html
+index 79d6bb7..cdc1e49 100644
+--- a/apps/web/index.html
++++ b/apps/web/index.html
+@@ -10,8 +10,8 @@
+     <link rel="stylesheet" href="./styles.css" />
+   </head>
+   <body>
+-    <div class="app-shell" id="app-shell">
+-      <header class="topbar">
++    <div class="app-shell" id="app-shell" data-ui-slot="shell">
++      <header class="topbar" data-ui-slot="navigation">
+         <button class="icon-button mobile-only" id="sidebar-toggle" type="button" aria-label="打开剧情目录" aria-expanded="false">☰</button>
+         <a class="brand" href="./" aria-label="Universal ADV Reader 首页">
+           <span class="brand-mark" aria-hidden="true">A</span>
+@@ -23,7 +23,7 @@
+         <div class="topbar-status" id="app-status" role="status">正在读取目录…</div>
+       </header>
+ 
+-      <aside class="sidebar" id="sidebar" aria-label="剧情目录">
++      <aside class="sidebar" id="sidebar" aria-label="剧情目录" data-ui-slot="catalog">
+         <div class="sidebar-head">
+           <label class="search-box">
+             <span aria-hidden="true">⌕</span>
+@@ -31,7 +31,7 @@
+           </label>
+           <p>资源与 Reader 分仓。这里只读取准备好的 manifest。</p>
+         </div>
+-        <nav id="catalog-tree" class="catalog-tree" aria-label="作品与章节"></nav>
++        <nav id="catalog-tree" class="catalog-tree" aria-label="作品与章节" data-ui-slot="sidebar-tree"></nav>
+         <div class="sidebar-foot">
+           <span class="dot dot-ready"></span>
+           <span id="catalog-revision">目录修订：—</span>
+@@ -40,8 +40,8 @@
+ 
+       <button class="sidebar-scrim mobile-only" id="sidebar-scrim" type="button" aria-label="关闭剧情目录"></button>
+ 
+-      <main class="reader" id="reader" tabindex="-1">
+-        <section class="stage" aria-label="剧情媒体舞台">
++      <main class="reader" id="reader" tabindex="-1" data-ui-slot="reader">
++        <section class="stage" aria-label="剧情媒体舞台" data-ui-slot="media">
+           <img id="stage-image" alt="" hidden />
+           <div class="stage-shade"></div>
+           <div class="stage-content">
+@@ -53,7 +53,7 @@
+           <div class="stage-route" id="stage-route">尚未定位事件</div>
+         </section>
+ 
+-        <section class="reader-toolbar" aria-label="阅读工具">
++        <section class="reader-toolbar" aria-label="阅读工具" data-ui-slot="floating-tools">
+           <div class="segmented" role="group" aria-label="语言显示">
+             <button type="button" data-locale-mode="primary">单语</button>
+             <button type="button" data-locale-mode="parallel">对照</button>
+@@ -70,6 +70,10 @@
+             对照语言
+             <select id="secondary-locale"></select>
+           </label>
++          <label class="select-label ui-shell-control">
++            UI
++            <select id="ui-shell-select" aria-label="Reader UI 架构"></select>
++          </label>
+           <button class="voice-master" id="voice-toggle" type="button" aria-expanded="false" aria-controls="voice-panel">
+             <span aria-hidden="true">◉</span>
+             <span>语音路由</span>
+@@ -106,7 +110,7 @@
+ 
+         <section class="event-list" id="event-list" aria-live="polite"></section>
+ 
+-        <nav class="route-controls" aria-label="剧情路由控制">
++        <nav class="route-controls" aria-label="剧情路由控制" data-ui-slot="pager">
+           <button id="previous-event" type="button">← 上一个访问点</button>
+           <span id="current-event-label">—</span>
+           <button id="next-event" type="button">下一事件 →</button>
+diff --git a/apps/web/shells/classic.js b/apps/web/shells/classic.js
+new file mode 100644
+index 0000000..da760c9
+--- /dev/null
++++ b/apps/web/shells/classic.js
+@@ -0,0 +1,21 @@
++import { UI_SHELL_API_VERSION } from '../../../packages/ui-shell/src/registry.js';
++
++export const classicShell = Object.freeze({
++  id: 'classic',
++  apiVersion: UI_SHELL_API_VERSION,
++  label: '继承版',
++  status: 'stable',
++  runtime: 'inherited-classic',
++  lineage: Object.freeze({
++    sourceTaskId: '01a0256c-1bae-76a2-a328-d4db01f1fde4',
++    policy: 'read-only-architecture-reference',
++  }),
++  activate({ document }) {
++    document.documentElement.dataset.uiShell = 'classic';
++    return () => {
++      if (document.documentElement.dataset.uiShell === 'classic') {
++        delete document.documentElement.dataset.uiShell;
++      }
++    };
++  },
++});
+diff --git a/apps/web/shells/next.js b/apps/web/shells/next.js
+new file mode 100644
+index 0000000..1348845
+--- /dev/null
++++ b/apps/web/shells/next.js
+@@ -0,0 +1,36 @@
++import { UI_SHELL_API_VERSION } from '../../../packages/ui-shell/src/registry.js';
++
++export const nextShell = Object.freeze({
++  id: 'next',
++  apiVersion: UI_SHELL_API_VERSION,
++  label: '迁移候选',
++  status: 'experimental',
++  runtime: 'react-contract-first',
++  requiresManualAcceptance: true,
++  persistent: false,
++  inputPolicy: 'read-only',
++  commandPolicy: 'append-only',
++  slots: Object.freeze([
++    'shell',
++    'navigation',
++    'catalog',
++    'reader',
++    'sidebar-tree',
++    'floating-tools',
++    'pager',
++    'media',
++  ]),
++  lineage: Object.freeze({
++    researchTaskId: '01a02998-e9b8-78f0-b9ed-bac62839a31b',
++    architectureTaskId: '01a029af-2c48-76f0-ba83-6070ac3f6618',
++    promotion: 'manual-acceptance-only',
++  }),
++  activate({ document }) {
++    document.documentElement.dataset.uiShell = 'next';
++    return () => {
++      if (document.documentElement.dataset.uiShell === 'next') {
++        delete document.documentElement.dataset.uiShell;
++      }
++    };
++  },
++});
+diff --git a/apps/web/styles.css b/apps/web/styles.css
+index 269898e..f3c8e21 100644
+--- a/apps/web/styles.css
++++ b/apps/web/styles.css
+@@ -144,6 +144,25 @@ button { color: inherit; }
+ .quiet-button { padding: 0 12px; background: transparent; color: var(--muted); font-size: 11px; }
+ .quiet-button:hover { color: #fff; background: var(--panel-soft); }
+ 
++html[data-ui-shell="next"] .stage::after {
++  content: "NEXT UI · 人工验收前不设为默认";
++  position: absolute;
++  z-index: 3;
++  top: 14px;
++  right: 14px;
++  padding: 6px 9px;
++  border: 1px solid rgba(239, 197, 111, .4);
++  border-radius: 999px;
++  color: #f3d898;
++  background: rgba(32, 22, 8, .76);
++  font: 700 9px ui-monospace, monospace;
++  letter-spacing: .08em;
++}
++
++html[data-ui-shell="next"] .reader {
++  --radius: 10px;
++}
++
+ .voice-panel {
+   display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: center; gap: 20px;
+   margin: 12px 0 22px; padding: 22px; border: 1px solid rgba(118, 213, 231, .28); border-radius: var(--radius);
+diff --git a/contracts/adv-story.schema.json b/contracts/adv-story.schema.json
+index 1cd5f56..cd636bc 100644
+--- a/contracts/adv-story.schema.json
++++ b/contracts/adv-story.schema.json
+@@ -12,6 +12,7 @@
+     "adapterId": { "$ref": "#/$defs/id" },
+     "revision": { "$ref": "#/$defs/id" },
+     "title": { "type": "string", "minLength": 1, "maxLength": 512 },
++    "provenance": { "type": "object" },
+     "variants": {
+       "type": "array",
+       "minItems": 1,
+diff --git a/docs/architecture.md b/docs/architecture.md
+index 6f1b5dd..a71e095 100644
+--- a/docs/architecture.md
++++ b/docs/architecture.md
+@@ -34,8 +34,16 @@ packages/bridge
+ 
+ packages/adapters
+   one adapter per declared source format
++
++packages/ui-shell
++  classic inherited shell -> stable/default
++  next research shell -> experimental/manual acceptance
+ ```
+ 
++Both UI shells implement `ui-shell/1.0.0` and consume the same eight semantic slots: `shell`, `navigation`, `catalog`, `reader`, `sidebar-tree`, `floating-tools`, `pager`, and `media`. `ReaderSession`, AdvIR, media, and bridge are read-only shell inputs; shells may only dispatch append-only `navigate`, `reader`, `media`, and `bridge` commands. `classic` remains the default. `next` targets a React contract-first runtime and can be selected with `?ui=next` for comparison, but it is not persisted and promotion is an explicit human-acceptance operation rather than an automatic migration.
++
++The Next contract defines compact `0-639`, mobile `640-767`, desktop `768-1279`, wide `>=1280`, and short-viewport `height<=511` ranges. Its token namespaces are `primitive`, `semantic`, `state`, `texture`, and `motion`. Accepted inherited theme recipes are `yellow`, `eye-care`, and `white`; `night` and `cold-frost` remain pending.
++
+ ## Stable identity
+ 
+ A visible position is never represented only by a line number.
+@@ -83,7 +91,13 @@ This keeps the transcript compact while preserving an entry point for every stor
+ 5. Produce stable event IDs before media binding.
+ 6. Report unsupported features explicitly.
+ 
+-The initial `adv-ir-v1` adapter accepts already-normalized fixtures. Majiro and IKURA adapters are intentionally deferred until the Reader and bridge baseline passes.
++The `adv-ir-v1` adapter accepts already-normalized fixtures. `majiro-production-v1` accepts only normalized AdvIR carrying exact `vn-mjo-reader-script/v1` provenance. It is fed by the read-only Narcissu importer and does not scan or mutate the resource repository. IKURA remains a separate future adapter boundary.
++
++## Corpus production boundary
++
++`tools/import-narcissu10.mjs` reads the source story catalog, extracted Majiro scripts, exact translation alignment, playback manifest, and media view manifest. It writes only compact AdvIR, media-route, and import-report JSON into this repository. Browser media URLs stay under `/corpus/archive/...`; the archive bytes remain owned by `narcissu-kana-research`.
++
++Translation producers remain separate as well. This repository consumes versioned normalized output and does not become the authoring workspace for Magireco translations.
+ 
+ ## Bridge roles
+ 
+diff --git a/docs/integration.md b/docs/integration.md
+index c0fb072..e13d91b 100644
+--- a/docs/integration.md
++++ b/docs/integration.md
+@@ -67,15 +67,26 @@ The future handoff from `narcissu-kana-research` must publish, per corpus:
+ 5. unresolved cue records rather than guessed links;
+ 6. a source revision and a reproducible verification report.
+ 
+-No archive bytes are copied into this Reader repository.
++No archive bytes are copied into this Reader repository. Local development mounts the resource repository read-only at `/corpus/`; production may provide the same URL contract with a static origin or CDN.
+ 
+-## Planned engine adapters
++## Engine adapters
+ 
+-These IDs are reserved only in documentation until evidence-backed implementations exist:
++Current:
+ 
+ ```text
+-majiro-mjo-v1     Narcissu 10th and Narcissu 3 script conversion
+-ikura-isf-v1      KANA script conversion
++majiro-production-v1 + adv-story/majiro-v1
++  normalized Narcissu Majiro stories with vn-mjo-reader-script/v1 provenance
+ ```
+ 
+-Registering either ID in a corpus before its adapter is present makes loading fail closed.
++Planned as a distinct boundary:
++
++```text
++ikura-production-v1 + adv-story/ikura-v1
++  KANA script conversion
++```
++
++Registering an adapter ID or source format before its exact implementation is present makes loading fail closed.
++
++## UI shell migration
++
++The UI shell catalog is served from `/apps/web/.well-known/ui-shells.json`. `classic` is inherited, stable, and default. `next` is experimental and declares `requiresManualAcceptance: true`. Both shells use `ui-shell/1.0.0`; `?ui=next` is non-persistent, auto-promotion is disabled, and changing the default requires a separately recorded human acceptance.
+diff --git a/package.json b/package.json
+index 80c60d4..dfbc438 100644
+--- a/package.json
++++ b/package.json
+@@ -8,8 +8,9 @@
+     "node": ">=22"
+   },
+   "scripts": {
++    "import:narcissu10": "node tools/import-narcissu10.mjs",
+     "serve": "node tools/serve.mjs",
+     "test": "node --test",
+-    "check": "node tools/check.mjs && node --test"
++    "check": "node tools/import-narcissu10.mjs && node tools/check.mjs && node --test"
+   }
+ }
+diff --git a/packages/adapters/src/majiro-production-v1.js b/packages/adapters/src/majiro-production-v1.js
+new file mode 100644
+index 0000000..b47f6a6
+--- /dev/null
++++ b/packages/adapters/src/majiro-production-v1.js
+@@ -0,0 +1,24 @@
++import { validateStoryDocument } from '../../contracts/src/index.js';
++
++export const MAJIRO_PRODUCTION_ADAPTER_ID = 'majiro-production-v1';
++export const MAJIRO_PRODUCTION_SOURCE_FORMAT = 'adv-story/majiro-v1';
++
++export function createMajiroProductionAdapter() {
++  return Object.freeze({
++    id: MAJIRO_PRODUCTION_ADAPTER_ID,
++    sourceFormats: Object.freeze([MAJIRO_PRODUCTION_SOURCE_FORMAT]),
++    async load({ storyEntry, io }) {
++      if (typeof io?.fetchJson !== 'function') {
++        throw new TypeError(`${MAJIRO_PRODUCTION_ADAPTER_ID} requires io.fetchJson`);
++      }
++      const story = validateStoryDocument(await io.fetchJson(storyEntry.source));
++      if (story.provenance?.engine !== 'majiro') {
++        throw new TypeError('Majiro production story must declare provenance.engine="majiro"');
++      }
++      if (story.provenance?.sourceSchema !== 'vn-mjo-reader-script/v1') {
++        throw new TypeError('Majiro production story must declare its exact source schema');
++      }
++      return story;
++    },
++  });
++}
+diff --git a/packages/contracts/src/index.js b/packages/contracts/src/index.js
+index 94e8215..35bba65 100644
+--- a/packages/contracts/src/index.js
++++ b/packages/contracts/src/index.js
+@@ -41,7 +41,9 @@ const asString = (value, path, { min = 1, max = 200_000 } = {}) => {
+   if (typeof value !== 'string' || value.length < min || value.length > max) {
+     fail(path, `must be a string with ${min}..${max} characters`);
+   }
+-  if (/\p{Cc}/u.test(value)) fail(path, 'contains a control character');
++  const forbiddenControl = [...value].find((character) =>
++    /\p{Cc}/u.test(character) && character !== '\n' && character !== '\t');
++  if (forbiddenControl) fail(path, 'contains a forbidden control character');
+   return value;
+ };
+ 
+diff --git a/packages/ui-shell/src/registry.js b/packages/ui-shell/src/registry.js
+new file mode 100644
+index 0000000..5b9a338
+--- /dev/null
++++ b/packages/ui-shell/src/registry.js
+@@ -0,0 +1,81 @@
++export const UI_SHELL_API_VERSION = 'ui-shell/1.0.0';
++
++const SHELL_ID = /^[a-z][a-z0-9-]{0,63}$/u;
++const SHELL_STATUSES = new Set(['stable', 'experimental']);
++
++export class UiShellRegistryError extends Error {
++  constructor(message) {
++    super(message);
++    this.name = 'UiShellRegistryError';
++  }
++}
++
++const validateShell = (shell) => {
++  if (!shell || typeof shell !== 'object') throw new UiShellRegistryError('shell contract is missing');
++  if (!SHELL_ID.test(shell.id ?? '')) throw new UiShellRegistryError('shell id is invalid');
++  if (shell.apiVersion !== UI_SHELL_API_VERSION) {
++    throw new UiShellRegistryError(`shell ${shell.id} uses an incompatible API version`);
++  }
++  if (!SHELL_STATUSES.has(shell.status)) {
++    throw new UiShellRegistryError(`shell ${shell.id} has an invalid status`);
++  }
++  if (typeof shell.label !== 'string' || shell.label.length === 0) {
++    throw new UiShellRegistryError(`shell ${shell.id} is missing a label`);
++  }
++  if (typeof shell.activate !== 'function') {
++    throw new UiShellRegistryError(`shell ${shell.id} is missing activate()`);
++  }
++  return shell;
++};
++
++export class UiShellRegistry {
++  #shells = new Map();
++  #active = null;
++  #disposeActive = null;
++
++  register(shell) {
++    validateShell(shell);
++    if (this.#shells.has(shell.id)) {
++      throw new UiShellRegistryError(`shell ${shell.id} is already registered`);
++    }
++    const record = Object.freeze({ ...shell });
++    this.#shells.set(record.id, record);
++    return () => {
++      if (this.#active?.id === record.id) throw new UiShellRegistryError('active shell cannot be removed');
++      this.#shells.delete(record.id);
++    };
++  }
++
++  get(shellId) {
++    return this.#shells.get(shellId) ?? null;
++  }
++
++  list() {
++    return [...this.#shells.values()];
++  }
++
++  get active() {
++    return this.#active;
++  }
++
++  activate(shellId, context) {
++    const shell = this.get(shellId);
++    if (!shell) throw new UiShellRegistryError(`shell ${shellId} is not registered`);
++    if (this.#active?.id === shell.id) return shell;
++    this.#disposeActive?.();
++    this.#disposeActive = null;
++    const dispose = shell.activate(context);
++    if (dispose !== undefined && typeof dispose !== 'function') {
++      throw new UiShellRegistryError(`shell ${shell.id} activate() returned an invalid disposer`);
++    }
++    this.#active = shell;
++    this.#disposeActive = dispose ?? null;
++    return shell;
++  }
++
++  dispose() {
++    this.#disposeActive?.();
++    this.#disposeActive = null;
++    this.#active = null;
++  }
++}
+diff --git a/test/adapter-registry.test.js b/test/adapter-registry.test.js
+index a21a6eb..3b4ed53 100644
+--- a/test/adapter-registry.test.js
++++ b/test/adapter-registry.test.js
+@@ -7,9 +7,10 @@ import { fixtureJson } from '../test-support/helpers.js';
+ 
+ const inputs = async () => {
+   const catalog = await fixtureJson('catalog.json');
++  const corpus = catalog.corpora.find((item) => item.corpusId === 'architecture-demo');
+   return {
+-    corpus: catalog.corpora[0],
+-    storyEntry: catalog.corpora[0].stories[0],
++    corpus,
++    storyEntry: corpus.stories[0],
+     story: await fixtureJson('demo-story.json'),
+   };
+ };
+diff --git a/test/contracts.test.js b/test/contracts.test.js
+index f82d5dd..da8260e 100644
+--- a/test/contracts.test.js
++++ b/test/contracts.test.js
+@@ -15,7 +15,8 @@ test('demo catalog, story, and media satisfy strict contracts', async () => {
+   const story = validateStoryDocument(await fixtureJson('demo-story.json'));
+   const media = validateMediaManifest(await fixtureJson('media.json'));
+ 
+-  assert.equal(catalog.corpora[0].stories[0].canonicalStoryId, story.canonicalStoryId);
++  const demoCorpus = catalog.corpora.find((corpus) => corpus.corpusId === 'architecture-demo');
++  assert.equal(demoCorpus.stories[0].canonicalStoryId, story.canonicalStoryId);
+   assert.equal(allStoryEvents(story).length, 9);
+   assert.equal(media.entries.length, 3);
+ });
+diff --git a/test/majiro-production-adapter.test.js b/test/majiro-production-adapter.test.js
+new file mode 100644
+index 0000000..983ddc8
+--- /dev/null
++++ b/test/majiro-production-adapter.test.js
+@@ -0,0 +1,24 @@
++import assert from 'node:assert/strict';
++import test from 'node:test';
++
++import { createMajiroProductionAdapter } from '../packages/adapters/src/majiro-production-v1.js';
++import { fixtureJson } from '../test-support/helpers.js';
++
++test('Majiro production adapter accepts only normalized stories with exact provenance', async () => {
++  const adapter = createMajiroProductionAdapter();
++  const story = await fixtureJson('corpora/narcissu10/himeko-ep00.story.json');
++  const loaded = await adapter.load({
++    storyEntry: { source: './story.json' },
++    io: { fetchJson: async () => story },
++  });
++  assert.equal(loaded.adapterId, 'majiro-production-v1');
++  assert.equal(loaded.provenance.engine, 'majiro');
++  assert.equal(loaded.provenance.sourceSchema, 'vn-mjo-reader-script/v1');
++
++  const invalid = structuredClone(story);
++  invalid.provenance.engine = 'ikura';
++  await assert.rejects(
++    adapter.load({ storyEntry: {}, io: { fetchJson: async () => invalid } }),
++    /provenance\.engine="majiro"/,
++  );
++});
+diff --git a/test/narcissu10-import.test.js b/test/narcissu10-import.test.js
+new file mode 100644
+index 0000000..a267e55
+--- /dev/null
++++ b/test/narcissu10-import.test.js
+@@ -0,0 +1,53 @@
++import assert from 'node:assert/strict';
++import test from 'node:test';
++
++import {
++  allStoryEvents,
++  validateMediaManifest,
++  validateStoryDocument,
++} from '../packages/contracts/src/index.js';
++import { voiceSlotForEvent } from '../packages/core/src/reader-session.js';
++import { fixtureJson } from '../test-support/helpers.js';
++
++test('Narcissu 10th production slice preserves aligned text, source anchors, and exact media routes', async () => {
++  const story = validateStoryDocument(await fixtureJson(
++    'corpora/narcissu10/himeko-ep00.story.json',
++  ));
++  const media = validateMediaManifest(await fixtureJson(
++    'corpora/narcissu10/himeko-ep00.media.json',
++  ));
++  const report = await fixtureJson('corpora/narcissu10/himeko-ep00.import-report.json');
++
++  assert.equal(story.canonicalStoryId, 'narcissu-himeko/himeko_ep00');
++  assert.equal(story.provenance.engine, 'majiro');
++  assert.equal(story.variants.length, 3);
++  const eventIds = story.variants.map((variant) =>
++    variant.sections[0].events.map((event) => event.eventId));
++  assert.deepEqual(eventIds[1], eventIds[0]);
++  assert.deepEqual(eventIds[2], eventIds[0]);
++
++  const linesByVariant = story.variants.map((variant) =>
++    variant.sections[0].events.filter((event) => event.kind === 'line'));
++  assert.deepEqual(linesByVariant.map((lines) => lines.length), [13, 13, 13]);
++  assert.match(linesByVariant[0][0].text['zh-CN'], /富士山/u);
++  assert.match(linesByVariant[0][0].text['ja-JP'], /富士山/u);
++  assert.match(linesByVariant[2][0].text.en, /Mount Fuji/u);
++  assert.equal(linesByVariant.flat().map(voiceSlotForEvent).every(Boolean), true);
++
++  const cues = allStoryEvents(story).flatMap((event) => event.cues ?? []);
++  const kinds = new Set(cues.map((cue) => cue.kind));
++  assert.deepEqual([...kinds].sort(), ['bgm', 'image', 'sfx', 'voice']);
++  assert.equal(cues.every((cue) => cue.raw?.sourceKey && Number.isInteger(cue.raw.codeOffset)), true);
++  assert.equal(linesByVariant.flat().every((line) => /^mjo-[0-9a-f]+$/u.test(line.source.mjoAnchor)), true);
++
++  const mediaIds = new Set(media.entries.map((entry) => entry.mediaId));
++  assert.equal(cues.every((cue) => mediaIds.has(cue.mediaId)), true);
++  assert.equal(media.entries.every((entry) => entry.url.startsWith('/corpus/archive/')), true);
++  assert.deepEqual(report.unresolvedMediaKeys, []);
++  assert.deepEqual(report.generated.mediaEntriesByRole, {
++    voice: 22,
++    bgm: 2,
++    sfx: 10,
++    image: 18,
++  });
++});
+diff --git a/test/ui-shell-registry.test.js b/test/ui-shell-registry.test.js
+new file mode 100644
+index 0000000..1c0a22a
+--- /dev/null
++++ b/test/ui-shell-registry.test.js
+@@ -0,0 +1,58 @@
++import assert from 'node:assert/strict';
++import { readFile } from 'node:fs/promises';
++import path from 'node:path';
++import test from 'node:test';
++
++import { classicShell } from '../apps/web/shells/classic.js';
++import { nextShell } from '../apps/web/shells/next.js';
++import { UiShellRegistry } from '../packages/ui-shell/src/registry.js';
++import { repositoryRoot } from '../test-support/helpers.js';
++
++test('classic remains default while next stays behind manual acceptance', async () => {
++  const registry = new UiShellRegistry();
++  registry.register(classicShell);
++  registry.register(nextShell);
++  const document = { documentElement: { dataset: {} } };
++
++  registry.activate('classic', { document });
++  assert.equal(document.documentElement.dataset.uiShell, 'classic');
++  registry.activate('next', { document });
++  assert.equal(document.documentElement.dataset.uiShell, 'next');
++  assert.equal(registry.active.requiresManualAcceptance, true);
++
++  const manifest = JSON.parse(await readFile(path.join(
++    repositoryRoot,
++    'apps',
++    'web',
++    '.well-known',
++    'ui-shells.json',
++  ), 'utf8'));
++  assert.equal(manifest.defaultShellId, 'classic');
++  assert.equal(manifest.contract, 'ui-shell/1.0.0');
++  assert.equal(manifest.migration.promotionPolicy, 'manual-acceptance-only');
++  assert.equal(manifest.migration.persistent, false);
++  assert.equal(manifest.migration.autoPromotion, false);
++  assert.deepEqual(manifest.slots, [
++    'shell',
++    'navigation',
++    'catalog',
++    'reader',
++    'sidebar-tree',
++    'floating-tools',
++    'pager',
++    'media',
++  ]);
++  assert.deepEqual(
++    Object.fromEntries(manifest.themes.map((theme) => [theme.id, theme.status])),
++    {
++      yellow: 'accepted',
++      'eye-care': 'accepted',
++      white: 'accepted',
++      night: 'pending',
++      'cold-frost': 'pending',
++    },
++  );
++  assert.equal(manifest.shells.find((shell) => shell.id === 'next').architectureTaskId,
++    '01a029af-2c48-76f0-ba83-6070ac3f6618');
++  registry.dispose();
++});
+diff --git a/tools/check.mjs b/tools/check.mjs
+index 0fb5047..b804700 100644
+--- a/tools/check.mjs
++++ b/tools/check.mjs
+@@ -1,5 +1,5 @@
+ import { spawnSync } from 'node:child_process';
+-import { access, readFile, readdir } from 'node:fs/promises';
++import { access, open, readFile, readdir } from 'node:fs/promises';
+ import path from 'node:path';
+ import { fileURLToPath, pathToFileURL } from 'node:url';
+ 
+@@ -13,6 +13,10 @@ import { voiceRouteSummary, voiceSlotForEvent } from '../packages/core/src/reade
+ 
+ const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
+ const webRoot = path.join(root, 'apps', 'web');
++const corpusRoot = path.resolve(
++  process.env.ADV_CORPUS_REPOSITORY
++    ?? path.resolve(root, '..', 'narcissu-kana-research'),
++);
+ 
+ const walk = async (directory) => {
+   const entries = await readdir(directory, { withFileTypes: true });
+@@ -28,6 +32,29 @@ const walk = async (directory) => {
+ 
+ const readJson = async (filename) => JSON.parse(await readFile(filename, 'utf8'));
+ const fromWebUrl = (value) => fileURLToPath(new URL(value, pathToFileURL(`${webRoot}${path.sep}`)));
++const fromMediaUrl = (value, manifestFilename) => {
++  if (value.startsWith('/corpus/')) {
++    const candidate = path.resolve(corpusRoot, value.slice('/corpus/'.length));
++    const prefix = `${corpusRoot}${path.sep}`;
++    if (candidate !== corpusRoot && !candidate.startsWith(prefix)) {
++      throw new Error(`corpus media escapes its mount: ${value}`);
++    }
++    return candidate;
++  }
++  const url = new URL(value, pathToFileURL(manifestFilename));
++  if (url.protocol !== 'file:') throw new Error(`fixture media URL is not local: ${value}`);
++  return fileURLToPath(url);
++};
++const readPrefix = async (filename, length = 4096) => {
++  const handle = await open(filename, 'r');
++  try {
++    const buffer = Buffer.alloc(length);
++    const { bytesRead } = await handle.read(buffer, 0, length, 0);
++    return buffer.subarray(0, bytesRead);
++  } finally {
++    await handle.close();
++  }
++};
+ 
+ const files = await walk(root);
+ const javascriptFiles = files.filter((filename) => ['.js', '.mjs'].includes(path.extname(filename)));
+@@ -49,6 +76,7 @@ let eventCount = 0;
+ let lineCount = 0;
+ let voiceSlotCount = 0;
+ let mediaEntryCount = 0;
++const verifiedMediaFiles = new Set();
+ 
+ for (const corpus of catalog.corpora) {
+   for (const entry of corpus.stories) {
+@@ -76,22 +104,30 @@ for (const corpus of catalog.corpora) {
+       throw new Error(`all-story voice expansion invariant failed for ${entry.canonicalStoryId}`);
+     }
+ 
+-    const manifestBase = pathToFileURL(mediaFilename);
+     for (const mediaEntry of media.entries) {
+-      const mediaUrl = new URL(mediaEntry.url, manifestBase);
+-      if (mediaUrl.protocol !== 'file:') throw new Error(`fixture media URL is not local: ${mediaEntry.url}`);
+-      const filename = fileURLToPath(mediaUrl);
+-      const header = await readFile(filename);
++      const filename = fromMediaUrl(mediaEntry.url, mediaFilename);
++      if (verifiedMediaFiles.has(filename)) continue;
++      await access(filename);
++      const header = await readPrefix(filename);
+       if (mediaEntry.mimeType === 'audio/wav') {
+         if (header.subarray(0, 4).toString('ascii') !== 'RIFF'
+           || header.subarray(8, 12).toString('ascii') !== 'WAVE') {
+           throw new Error(`invalid WAV fixture: ${path.relative(root, filename)}`);
+         }
+       }
++      if (mediaEntry.mimeType === 'audio/ogg'
++        && header.subarray(0, 4).toString('ascii') !== 'OggS') {
++        throw new Error(`invalid Ogg fixture: ${path.relative(root, filename)}`);
++      }
++      if (mediaEntry.mimeType === 'image/png'
++        && !header.subarray(0, 8).equals(Buffer.from([137, 80, 78, 71, 13, 10, 26, 10]))) {
++        throw new Error(`invalid PNG fixture: ${path.relative(root, filename)}`);
++      }
+       if (mediaEntry.mimeType === 'image/svg+xml'
+         && !header.toString('utf8', 0, Math.min(header.length, 4096)).includes('<svg')) {
+         throw new Error(`invalid SVG fixture: ${path.relative(root, filename)}`);
+       }
++      verifiedMediaFiles.add(filename);
+     }
+ 
+     storyCount += 1;
+@@ -104,6 +140,16 @@ for (const corpus of catalog.corpora) {
+ }
+ 
+ const appManifest = await readJson(path.join(webRoot, '.well-known', 'adv-app.json'));
++const uiShellManifest = await readJson(path.join(webRoot, '.well-known', 'ui-shells.json'));
++if (uiShellManifest.contract !== 'ui-shell/1.0.0'
++  || uiShellManifest.defaultShellId !== 'classic'
++  || uiShellManifest.migration?.promotionPolicy !== 'manual-acceptance-only'
++  || uiShellManifest.migration?.persistent !== false
++  || uiShellManifest.migration?.autoPromotion !== false
++  || uiShellManifest.slots?.length !== 8
++  || uiShellManifest.shells.find((shell) => shell.id === 'next')?.requiresManualAcceptance !== true) {
++  throw new Error('dual UI shell migration contract is invalid');
++}
+ if (appManifest.schema !== 'adv-app-manifest/v1'
+   || appManifest.protocol?.name !== 'adv-app-bridge'
+   || appManifest.protocol?.version !== 1) {
+@@ -127,4 +173,5 @@ console.log(JSON.stringify({
+   voiceSlotCount,
+   allLineEventsHaveExpandableVoiceSlots: voiceSlotCount === lineCount,
+   mediaEntryCount,
++  verifiedMediaFiles: verifiedMediaFiles.size,
+ }, null, 2));
+diff --git a/tools/import-narcissu10.mjs b/tools/import-narcissu10.mjs
+new file mode 100644
+index 0000000..0dc1755
+--- /dev/null
++++ b/tools/import-narcissu10.mjs
+@@ -0,0 +1,455 @@
++import { access, mkdir, readFile, writeFile } from 'node:fs/promises';
++import path from 'node:path';
++import { fileURLToPath } from 'node:url';
++
++import {
++  validateMediaManifest,
++  validateStoryDocument,
++} from '../packages/contracts/src/index.js';
++import {
++  MAJIRO_PRODUCTION_ADAPTER_ID,
++} from '../packages/adapters/src/majiro-production-v1.js';
++
++const repositoryRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
++const DEFAULT_RESOURCE_ROOT = path.resolve(repositoryRoot, '..', 'narcissu-kana-research');
++const DEFAULT_STORY_ID = 'narcissu-himeko/himeko_ep00';
++const READER_MANIFEST = 'manifests/generated/reader-adapter.json';
++const PLAYBACK_MANIFEST = 'manifests/generated/playback-media.json';
++const MEDIA_VIEW_MANIFEST = 'manifests/generated/narcissu10-media-view.json';
++const RESOLVER_ID = 'narcissu10-manifest';
++
++const parseArguments = (values) => {
++  const result = { resourceRoot: DEFAULT_RESOURCE_ROOT, storyId: DEFAULT_STORY_ID };
++  for (let index = 0; index < values.length; index += 1) {
++    const flag = values[index];
++    const value = values[index + 1];
++    if (flag === '--resource' && value) {
++      result.resourceRoot = path.resolve(value);
++      index += 1;
++    } else if (flag === '--story' && value) {
++      result.storyId = value;
++      index += 1;
++    } else {
++      throw new TypeError(`unknown or incomplete argument: ${flag}`);
++    }
++  }
++  return result;
++};
++
++const readJson = async (resourceRoot, relativePath) => JSON.parse(await readFile(
++  path.join(resourceRoot, relativePath),
++  'utf8',
++));
++
++const normalizeText = (value, { trim = false } = {}) => {
++  const normalized = String(value ?? '').replace(/\r\n?/gu, '\n');
++  return trim ? normalized.trim() : normalized;
++};
++
++const isDialogue = (value) => /^[\s]*[「『（("“]/u.test(value);
++
++const buildLogicalGroups = (textEvents) => {
++  const groups = [];
++  for (let index = 0; index < textEvents.length; index += 1) {
++    const current = textEvents[index];
++    const next = textEvents[index + 1];
++    const speakerPair = next
++      && !isDialogue(current.text)
++      && !current.text.includes('\n')
++      && current.text.length <= 24
++      && isDialogue(next.text);
++    if (speakerPair) {
++      groups.push({
++        sourceIndices: [index, index + 1],
++        speakerIndex: index,
++        textIndex: index + 1,
++        startOffset: current.codeOffset,
++      });
++      index += 1;
++    } else {
++      groups.push({
++        sourceIndices: [index],
++        speakerIndex: null,
++        textIndex: index,
++        startOffset: current.codeOffset,
++      });
++    }
++  }
++  return groups;
++};
++
++const basenameWithoutExtension = (value) => {
++  const filename = value.replaceAll('\\', '/').split('/').at(-1) ?? '';
++  const extension = path.posix.extname(filename);
++  return extension ? filename.slice(0, -extension.length) : filename;
++};
++
++const safeIdPart = (value) => {
++  const output = [...String(value)].map((character) =>
++    /[A-Za-z0-9_.-]/u.test(character)
++      ? character
++      : `x${character.codePointAt(0).toString(16)}`).join('');
++  return output || 'asset';
++};
++
++const mimeTypeForPath = (value) => {
++  const extension = path.posix.extname(value).toLowerCase();
++  return new Map([
++    ['.ogg', 'audio/ogg'],
++    ['.wav', 'audio/wav'],
++    ['.png', 'image/png'],
++    ['.jpg', 'image/jpeg'],
++    ['.jpeg', 'image/jpeg'],
++    ['.webp', 'image/webp'],
++  ]).get(extension) ?? 'application/octet-stream';
++};
++
++const sourceRootForLocale = (locale) => locale === 'en'
++  ? 'raw/narcissu10-original/narci_himeko/'
++  : 'raw/narcissu10-original-ja-JP/narci_himeko/';
++
++const mediaKindForAudioRole = (role) => new Map([
++  ['voice', 'voice'],
++  ['music', 'bgm'],
++  ['sound-effect', 'sfx'],
++]).get(role) ?? null;
++
++const createMediaRouter = ({ playback, mediaView, resourceRoot }) => {
++  const audioByPath = new Map(playback.audio.map((record) => [record.path, record]));
++  const entries = new Map();
++
++  const registerEntry = async ({ locale, key, kind, playbackPath }) => {
++    const localeTag = locale === 'en' ? 'en' : 'ja';
++    const mediaId = `n10.${localeTag}.${kind}.${safeIdPart(key)}`;
++    const url = playbackPath.startsWith('archive/')
++      ? `/corpus/${playbackPath}`
++      : `/corpus/archive/${playbackPath}`;
++    const entry = {
++      mediaId,
++      role: kind,
++      url,
++      mimeType: mimeTypeForPath(playbackPath),
++    };
++    const existing = entries.get(mediaId);
++    if (existing && existing.url !== entry.url) {
++      throw new Error(`media ID collision for ${mediaId}`);
++    }
++    if (!existing) {
++      const repositoryPath = url.slice('/corpus/'.length);
++      await access(path.join(resourceRoot, repositoryPath));
++      entries.set(mediaId, entry);
++    }
++    return mediaId;
++  };
++
++  const resolveOperand = async (locale, key) => {
++    const resolved = [];
++    const sourceRoot = sourceRootForLocale(locale);
++    const audioPath = (playback.audioById[key] ?? []).find((candidate) =>
++      candidate.startsWith(sourceRoot));
++    if (audioPath) {
++      const audioRecord = audioByPath.get(audioPath);
++      const kind = mediaKindForAudioRole(audioRecord?.role);
++      if (!kind) throw new Error(`audio role is not routable for ${key}: ${audioRecord?.role}`);
++      resolved.push({
++        key,
++        kind,
++        mediaId: await registerEntry({ locale, key, kind, playbackPath: audioPath }),
++        playbackPath: audioPath,
++      });
++    }
++
++    const imageRecord = mediaView.files.find((record) =>
++      record.locale === locale
++      && record.game === 'narci_himeko'
++      && record.kind === 'image'
++      && basenameWithoutExtension(record.canonicalPlaybackPath) === key);
++    if (imageRecord) {
++      resolved.push({
++        key,
++        kind: 'image',
++        mediaId: await registerEntry({
++          locale,
++          key,
++          kind: 'image',
++          playbackPath: imageRecord.canonicalPlaybackPath,
++        }),
++        playbackPath: imageRecord.canonicalPlaybackPath,
++      });
++    }
++    return resolved;
++  };
++
++  return {
++    entries,
++    async routeVariant({ locale, sourceStrings, groups, sourceStringPath }) {
++      const buckets = Array.from({ length: groups.length + 1 }, () => []);
++      const unresolved = [];
++      let commandCount = 0;
++      for (const operand of sourceStrings.strings.filter((entry) => entry.mnemonic === 'ldstr')) {
++        const routes = await resolveOperand(locale, operand.text);
++        if (routes.length === 0) continue;
++        commandCount += 1;
++        const nextGroupIndex = groups.findIndex((group) => group.startOffset > operand.codeOffset);
++        const targetIndex = nextGroupIndex === -1 ? groups.length : nextGroupIndex;
++        for (let routeIndex = 0; routeIndex < routes.length; routeIndex += 1) {
++          const route = routes[routeIndex];
++          const eventId = targetIndex === groups.length
++            ? 'end-001'
++            : `line-${String(targetIndex + 1).padStart(3, '0')}`;
++          buckets[targetIndex].push({
++            cueId: `${route.kind}:${eventId}:${safeIdPart(route.key)}:${routeIndex + 1}`,
++            kind: route.kind,
++            timing: ['image', 'bgm'].includes(route.kind) ? 'scene' : 'utterance',
++            mediaId: route.mediaId,
++            resolverId: RESOLVER_ID,
++            raw: {
++              sourceKey: route.key,
++              codeOffset: operand.codeOffset,
++              sourceStringPath,
++              playbackPath: route.playbackPath,
++            },
++          });
++        }
++      }
++      return { buckets, unresolved, commandCount };
++    },
++  };
++};
++
++const variantTextRecord = (variant, script, translationByOffset, eventIndex) => {
++  const event = script.textEvents[eventIndex];
++  if (variant.outputId.endsWith('/zh-ja')) {
++    const translation = translationByOffset.get(event.codeOffset);
++    if (translation === undefined) throw new Error(`missing exact translation at ${event.codeOffset}`);
++    return {
++      'zh-CN': normalizeText(translation),
++      'ja-JP': normalizeText(event.text),
++    };
++  }
++  return { [variant.locales[0]]: normalizeText(event.text) };
++};
++
++const buildStoryVariant = ({ descriptor, loaded, groups, mediaRouting }) => {
++  if (loaded.script.textEvents.length !== 24) {
++    throw new Error(`${descriptor.outputId} expected 24 source text events`);
++  }
++  const translationByOffset = new Map(
++    (loaded.script.translation?.entries ?? []).map((entry) => [
++      entry.target.codeOffset,
++      entry.displayText,
++    ]),
++  );
++  const events = groups.map((group, groupIndex) => {
++    const eventId = `line-${String(groupIndex + 1).padStart(3, '0')}`;
++    const nextEventId = groupIndex + 1 < groups.length
++      ? `line-${String(groupIndex + 2).padStart(3, '0')}`
++      : 'end-001';
++    const event = {
++      eventId,
++      kind: 'line',
++      text: variantTextRecord(descriptor, loaded.script, translationByOffset, group.textIndex),
++      nextEventId,
++      cues: mediaRouting.buckets[groupIndex],
++      source: {
++        engine: 'majiro',
++        variantSourceId: descriptor.source.id,
++        scriptPath: descriptor.source.references.script,
++        textEventIndices: group.sourceIndices,
++        codeOffsets: group.sourceIndices.map((index) => loaded.script.textEvents[index].codeOffset),
++        textCodeOffset: loaded.script.textEvents[group.textIndex].codeOffset,
++        mjoAnchor: `mjo-${loaded.script.textEvents[group.textIndex].codeOffset.toString(16)}`,
++      },
++    };
++    if (group.speakerIndex !== null) {
++      const speaker = variantTextRecord(
++        descriptor,
++        loaded.script,
++        translationByOffset,
++        group.speakerIndex,
++      );
++      event.speaker = Object.fromEntries(Object.entries(speaker).map(([locale, value]) => [
++        locale,
++        normalizeText(value, { trim: true }),
++      ]));
++    }
++    if (event.cues.length === 0) delete event.cues;
++    return event;
++  });
++  const endEvent = { eventId: 'end-001', kind: 'end', cues: mediaRouting.buckets.at(-1) };
++  if (endEvent.cues.length === 0) delete endEvent.cues;
++  events.push(endEvent);
++
++  return {
++    variantId: descriptor.outputId,
++    locales: descriptor.locales,
++    sections: [{
++      sectionId: 'main',
++      title: descriptor.sectionTitle,
++      entryEventId: 'line-001',
++      events,
++    }],
++  };
++};
++
++const main = async () => {
++  const options = parseArguments(process.argv.slice(2));
++  const readerManifest = await readJson(options.resourceRoot, READER_MANIFEST);
++  if (options.storyId !== DEFAULT_STORY_ID) {
++    throw new Error(`this production slice currently supports only ${DEFAULT_STORY_ID}`);
++  }
++  const sourceStory = readerManifest.stories.find((story) =>
++    story.canonicalStoryId === options.storyId);
++  if (!sourceStory) throw new Error(`source story not found: ${options.storyId}`);
++
++  const japanese = sourceStory.variants.find((variant) =>
++    variant.layer === 'base-scenario' && variant.sourceLocale === 'ja-JP');
++  const english = sourceStory.variants.find((variant) =>
++    variant.layer === 'base-scenario' && variant.sourceLocale === 'en');
++  const bilingual = sourceStory.variants.find((variant) =>
++    variant.layer === 'patch-source'
++    && variant.translation?.locale === 'zh-CN'
++    && variant.translation?.alignment === 'exact-bytecode-order');
++  if (!japanese || !english || !bilingual) {
++    throw new Error('required Japanese, English, and exact bilingual variants were not found');
++  }
++
++  const descriptors = [
++    {
++      outputId: 'narcissu10/himeko-ep00/zh-ja',
++      locales: ['zh-CN', 'ja-JP'],
++      assetLocale: 'ja-JP',
++      source: bilingual,
++      sectionTitle: { 'zh-CN': '姬子 EP00', 'ja-JP': '姫子 EP00' },
++    },
++    {
++      outputId: 'narcissu10/himeko-ep00/ja',
++      locales: ['ja-JP'],
++      assetLocale: 'ja-JP',
++      source: japanese,
++      sectionTitle: { 'ja-JP': '姫子 EP00' },
++    },
++    {
++      outputId: 'narcissu10/himeko-ep00/en',
++      locales: ['en'],
++      assetLocale: 'en',
++      source: english,
++      sectionTitle: { en: 'Himeko EP00' },
++    },
++  ];
++
++  const loadedById = new Map();
++  for (const descriptor of descriptors) {
++    loadedById.set(descriptor.outputId, {
++      script: await readJson(options.resourceRoot, descriptor.source.references.script),
++      strings: await readJson(options.resourceRoot, descriptor.source.references.strings),
++    });
++  }
++  const japaneseLoaded = loadedById.get('narcissu10/himeko-ep00/ja');
++  const groups = buildLogicalGroups(japaneseLoaded.script.textEvents);
++  if (groups.length !== 13) throw new Error(`logical grouping changed: expected 13, found ${groups.length}`);
++
++  const playback = await readJson(options.resourceRoot, PLAYBACK_MANIFEST);
++  const mediaView = await readJson(options.resourceRoot, MEDIA_VIEW_MANIFEST);
++  const router = createMediaRouter({ playback, mediaView, resourceRoot: options.resourceRoot });
++  const variants = [];
++  const routeReports = [];
++  for (const descriptor of descriptors) {
++    const loaded = loadedById.get(descriptor.outputId);
++    const variantGroups = buildLogicalGroups(loaded.script.textEvents);
++    if (JSON.stringify(variantGroups.map((group) => group.sourceIndices))
++      !== JSON.stringify(groups.map((group) => group.sourceIndices))) {
++      throw new Error(`logical source grouping differs for ${descriptor.outputId}`);
++    }
++    const mediaRouting = await router.routeVariant({
++      locale: descriptor.assetLocale,
++      sourceStrings: loaded.strings,
++      groups: variantGroups,
++      sourceStringPath: descriptor.source.references.strings,
++    });
++    variants.push(buildStoryVariant({ descriptor, loaded, groups: variantGroups, mediaRouting }));
++    routeReports.push({
++      variantId: descriptor.outputId,
++      sourceVariantId: descriptor.source.id,
++      sourceTextEvents: loaded.script.textEvents.length,
++      logicalLines: groups.length,
++      routedMediaCommands: mediaRouting.commandCount,
++      unresolvedMediaKeys: mediaRouting.unresolved,
++    });
++  }
++
++  const story = validateStoryDocument({
++    schema: 'adv-story/v1',
++    corpusId: 'narcissu10',
++    canonicalStoryId: options.storyId,
++    adapterId: MAJIRO_PRODUCTION_ADAPTER_ID,
++    revision: `himeko-ep00-${readerManifest.bridgeRevision}`,
++    title: 'Narcissu 10th · Himeko EP00',
++    provenance: {
++      engine: 'majiro',
++      sourceSchema: 'vn-mjo-reader-script/v1',
++      sourceRepository: 'narcissu-kana-research',
++      sourceManifest: READER_MANIFEST,
++      sourceBridgeRevision: readerManifest.bridgeRevision,
++      canonicalSourceStoryId: sourceStory.canonicalStoryId,
++      extractionAccess: 'read-only',
++    },
++    variants,
++  });
++  const media = validateMediaManifest({
++    schema: 'adv-media/v1',
++    revision: 'narcissu10-himeko-ep00-media-r1',
++    resolverId: RESOLVER_ID,
++    entries: [...router.entries.values()].sort((left, right) =>
++      left.mediaId.localeCompare(right.mediaId)),
++  });
++
++  const roleCounts = Object.fromEntries(
++    ['voice', 'bgm', 'sfx', 'image'].map((role) => [
++      role,
++      media.entries.filter((entry) => entry.role === role).length,
++    ]),
++  );
++  const report = {
++    schema: 'adv-import-report/v1',
++    result: 'PASS',
++    importer: 'tools/import-narcissu10.mjs',
++    sourceRepository: 'narcissu-kana-research',
++    sourceMount: '/corpus',
++    sourceAccess: 'read-only',
++    sourceBridgeRevision: readerManifest.bridgeRevision,
++    canonicalStoryId: sourceStory.canonicalStoryId,
++    generated: {
++      variants: story.variants.length,
++      logicalLinesPerVariant: groups.length,
++      totalLineEvents: groups.length * story.variants.length,
++      mediaEntries: media.entries.length,
++      mediaEntriesByRole: roleCounts,
++    },
++    variants: routeReports,
++    unresolvedMediaKeys: routeReports.flatMap((record) => record.unresolvedMediaKeys),
++  };
++  if (report.unresolvedMediaKeys.length > 0) throw new Error('media routing contains unresolved keys');
++
++  const outputRoot = path.join(repositoryRoot, 'apps', 'web', 'data', 'corpora', 'narcissu10');
++  await mkdir(outputRoot, { recursive: true });
++  const outputs = [
++    ['himeko-ep00.story.json', story],
++    ['himeko-ep00.media.json', media],
++    ['himeko-ep00.import-report.json', report],
++  ];
++  for (const [filename, document] of outputs) {
++    await writeFile(path.join(outputRoot, filename), `${JSON.stringify(document, null, 2)}\n`, 'utf8');
++  }
++  console.log(JSON.stringify({
++    status: 'PASS',
++    canonicalStoryId: story.canonicalStoryId,
++    variants: story.variants.length,
++    linesPerVariant: groups.length,
++    mediaEntries: media.entries.length,
++    roleCounts,
++    outputRoot,
++  }, null, 2));
++};
++
++await main();
+diff --git a/tools/rollback-phase2.ps1 b/tools/rollback-phase2.ps1
+new file mode 100644
+index 0000000..b2e3ba2
+--- /dev/null
++++ b/tools/rollback-phase2.ps1
+@@ -0,0 +1,95 @@
++[CmdletBinding()]
++param(
++  [string]$RepositoryRoot = (Split-Path -Parent $PSScriptRoot)
++)
++
++$ErrorActionPreference = 'Stop'
++$BaselineCommit = 'f30c7bc1879f22a7d686ad6c84f50e778004876a'
++$root = [System.IO.Path]::GetFullPath($RepositoryRoot)
++$rootPrefix = $root.TrimEnd('\', '/') + [System.IO.Path]::DirectorySeparatorChar
++
++if (-not (Test-Path -LiteralPath (Join-Path $root '.git'))) {
++  throw "RepositoryRoot is not the universal ADV repository: $root"
++}
++
++& git -C $root cat-file -e "$BaselineCommit^{commit}"
++if ($LASTEXITCODE -ne 0) {
++  throw "Baseline commit is missing: $BaselineCommit"
++}
++
++$trackedAtBaseline = @(
++  'README.md',
++  'apps/web/.well-known/adv-app.json',
++  'apps/web/app.js',
++  'apps/web/data/catalog.json',
++  'apps/web/index.html',
++  'apps/web/styles.css',
++  'contracts/adv-story.schema.json',
++  'docs/architecture.md',
++  'docs/integration.md',
++  'package.json',
++  'packages/contracts/src/index.js',
++  'test/adapter-registry.test.js',
++  'test/contracts.test.js',
++  'tools/check.mjs',
++  'tools/serve.mjs'
++)
++
++& git -C $root restore --source $BaselineCommit --worktree -- $trackedAtBaseline
++if ($LASTEXITCODE -ne 0) {
++  throw 'Failed to restore baseline-tracked files.'
++}
++
++$addedFiles = @(
++  'apps/web/.well-known/ui-shells.json',
++  'apps/web/data/corpora/narcissu10/himeko-ep00.import-report.json',
++  'apps/web/data/corpora/narcissu10/himeko-ep00.media.json',
++  'apps/web/data/corpora/narcissu10/himeko-ep00.story.json',
++  'apps/web/shells/classic.js',
++  'apps/web/shells/next.js',
++  'packages/adapters/src/majiro-production-v1.js',
++  'packages/ui-shell/src/registry.js',
++  'test/majiro-production-adapter.test.js',
++  'test/narcissu10-import.test.js',
++  'test/ui-shell-registry.test.js',
++  'tools/import-narcissu10.mjs',
++  'tools/rollback-phase2.ps1'
++)
++
++$removed = @()
++foreach ($relativePath in $addedFiles) {
++  $candidate = [System.IO.Path]::GetFullPath((Join-Path $root $relativePath))
++  if (-not $candidate.StartsWith($rootPrefix, [System.StringComparison]::OrdinalIgnoreCase)) {
++    throw "Rollback path escaped the repository: $relativePath"
++  }
++  if (Test-Path -LiteralPath $candidate -PathType Leaf) {
++    Remove-Item -LiteralPath $candidate -Force
++    $removed += $relativePath
++  }
++}
++
++$addedDirectories = @(
++  'apps/web/data/corpora/narcissu10',
++  'apps/web/data/corpora',
++  'apps/web/shells',
++  'packages/ui-shell/src',
++  'packages/ui-shell'
++)
++foreach ($relativePath in $addedDirectories) {
++  $candidate = [System.IO.Path]::GetFullPath((Join-Path $root $relativePath))
++  if (-not $candidate.StartsWith($rootPrefix, [System.StringComparison]::OrdinalIgnoreCase)) {
++    throw "Rollback directory escaped the repository: $relativePath"
++  }
++  if ((Test-Path -LiteralPath $candidate -PathType Container) -and
++    ((Get-ChildItem -LiteralPath $candidate -Force).Count -eq 0)) {
++    Remove-Item -LiteralPath $candidate -Force
++  }
++}
++
++[pscustomobject]@{
++  status = 'ROLLED_BACK'
++  baselineCommit = $BaselineCommit
++  repositoryRoot = $root
++  restoredTrackedFiles = $trackedAtBaseline.Count
++  removedAddedFiles = $removed.Count
++} | ConvertTo-Json
+diff --git a/tools/serve.mjs b/tools/serve.mjs
+index 5695a4c..9359ee1 100644
+--- a/tools/serve.mjs
++++ b/tools/serve.mjs
+@@ -1,10 +1,14 @@
+-import { createReadStream } from 'node:fs';
++import { createReadStream, existsSync } from 'node:fs';
+ import { stat } from 'node:fs/promises';
+ import { createServer } from 'node:http';
+ import path from 'node:path';
+ import { fileURLToPath } from 'node:url';
+ 
+ const repositoryRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
++const corpusRoot = path.resolve(
++  process.env.ADV_CORPUS_REPOSITORY
++    ?? path.resolve(repositoryRoot, '..', 'narcissu-kana-research'),
++);
+ const host = process.env.HOST ?? '127.0.0.1';
+ const port = Number.parseInt(process.env.PORT ?? '4173', 10);
+ 
+@@ -14,10 +18,31 @@ const contentTypes = new Map([
+   ['.js', 'text/javascript; charset=utf-8'],
+   ['.json', 'application/json; charset=utf-8'],
+   ['.mjs', 'text/javascript; charset=utf-8'],
++  ['.ogg', 'audio/ogg'],
++  ['.png', 'image/png'],
++  ['.jpg', 'image/jpeg'],
++  ['.jpeg', 'image/jpeg'],
+   ['.svg', 'image/svg+xml; charset=utf-8'],
+   ['.wav', 'audio/wav'],
++  ['.webp', 'image/webp'],
+ ]);
+ 
++const parseRange = (value, size) => {
++  const match = /^bytes=(\d*)-(\d*)$/u.exec(value ?? '');
++  if (!match) return null;
++  let start = match[1] ? Number.parseInt(match[1], 10) : null;
++  let end = match[2] ? Number.parseInt(match[2], 10) : null;
++  if (start === null && end !== null) {
++    start = Math.max(0, size - end);
++    end = size - 1;
++  } else {
++    start ??= 0;
++    end ??= size - 1;
++  }
++  if (start < 0 || end < start || start >= size) return null;
++  return { start, end: Math.min(end, size - 1) };
++};
++
+ const sendText = (response, statusCode, body, headers = {}) => {
+   const payload = Buffer.from(body);
+   response.writeHead(statusCode, {
+@@ -51,9 +76,12 @@ const server = createServer(async (request, response) => {
+     }
+     if (pathname.endsWith('/')) pathname += 'index.html';
+ 
+-    const candidate = path.resolve(repositoryRoot, `.${pathname}`);
+-    const rootPrefix = `${repositoryRoot}${path.sep}`;
+-    if (candidate !== repositoryRoot && !candidate.startsWith(rootPrefix)) {
++    const corpusRequest = pathname.startsWith('/corpus/');
++    const activeRoot = corpusRequest ? corpusRoot : repositoryRoot;
++    const mountedPath = corpusRequest ? pathname.slice('/corpus'.length) : pathname;
++    const candidate = path.resolve(activeRoot, `.${mountedPath}`);
++    const rootPrefix = `${activeRoot}${path.sep}`;
++    if (candidate !== activeRoot && !candidate.startsWith(rootPrefix)) {
+       sendText(response, 403, 'Forbidden');
+       return;
+     }
+@@ -70,10 +98,21 @@ const server = createServer(async (request, response) => {
+       return;
+     }
+ 
+-    response.writeHead(200, {
++    const range = parseRange(request.headers.range, details.size);
++    if (request.headers.range && !range) {
++      sendText(response, 416, 'Range Not Satisfiable', {
++        'content-range': `bytes */${details.size}`,
++      });
++      return;
++    }
++    const statusCode = range ? 206 : 200;
++    const contentLength = range ? range.end - range.start + 1 : details.size;
++    response.writeHead(statusCode, {
+       'content-type': contentTypes.get(path.extname(candidate).toLowerCase())
+         ?? 'application/octet-stream',
+-      'content-length': details.size,
++      'content-length': contentLength,
++      'accept-ranges': 'bytes',
++      ...(range ? { 'content-range': `bytes ${range.start}-${range.end}/${details.size}` } : {}),
+       'cache-control': 'no-store',
+       'x-content-type-options': 'nosniff',
+     });
+@@ -81,7 +120,7 @@ const server = createServer(async (request, response) => {
+       response.end();
+       return;
+     }
+-    createReadStream(candidate).pipe(response);
++    createReadStream(candidate, range ?? undefined).pipe(response);
+   } catch (error) {
+     sendText(response, 500, error instanceof Error ? error.message : String(error));
+   }
+@@ -89,6 +128,9 @@ const server = createServer(async (request, response) => {
+ 
+ server.listen(port, host, () => {
+   console.log(`READY http://${host}:${port}/apps/web/`);
++  console.log(existsSync(corpusRoot)
++    ? `CORPUS read-only ${corpusRoot}`
++    : `CORPUS missing ${corpusRoot}`);
+ });
+ 
+ for (const signal of ['SIGINT', 'SIGTERM']) {

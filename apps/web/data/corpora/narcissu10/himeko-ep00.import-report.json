@@ -1,0 +1,49 @@
+{
+  "schema": "adv-import-report/v1",
+  "result": "PASS",
+  "importer": "tools/import-narcissu10.mjs",
+  "sourceRepository": "narcissu-kana-research",
+  "sourceMount": "/corpus",
+  "sourceAccess": "read-only",
+  "sourceBridgeRevision": "reader-v1-mjo-1086-ikura-120-events-499170",
+  "canonicalStoryId": "narcissu-himeko/himeko_ep00",
+  "generated": {
+    "variants": 3,
+    "logicalLinesPerVariant": 13,
+    "totalLineEvents": 39,
+    "mediaEntries": 52,
+    "mediaEntriesByRole": {
+      "voice": 22,
+      "bgm": 2,
+      "sfx": 10,
+      "image": 18
+    }
+  },
+  "variants": [
+    {
+      "variantId": "narcissu10/himeko-ep00/zh-ja",
+      "sourceVariantId": "mjo/patches/narci_himeko/%23mjo/himeko_ep00",
+      "sourceTextEvents": 24,
+      "logicalLines": 13,
+      "routedMediaCommands": 26,
+      "unresolvedMediaKeys": []
+    },
+    {
+      "variantId": "narcissu10/himeko-ep00/ja",
+      "sourceVariantId": "mjo/narcissu10-original-ja-jp/narci_himeko/scenario.arc.unpacked/himeko_ep00",
+      "sourceTextEvents": 24,
+      "logicalLines": 13,
+      "routedMediaCommands": 26,
+      "unresolvedMediaKeys": []
+    },
+    {
+      "variantId": "narcissu10/himeko-ep00/en",
+      "sourceVariantId": "mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/himeko_ep00",
+      "sourceTextEvents": 24,
+      "logicalLines": 13,
+      "routedMediaCommands": 26,
+      "unresolvedMediaKeys": []
+    }
+  ],
+  "unresolvedMediaKeys": []
+}

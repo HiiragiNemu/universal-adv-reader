@@ -8,8 +8,9 @@
     "node": ">=22"
   },
   "scripts": {
+    "import:narcissu10": "node tools/import-narcissu10.mjs",
     "serve": "node tools/serve.mjs",
     "test": "node --test",
-    "check": "node tools/check.mjs && node --test"
+    "check": "node tools/import-narcissu10.mjs && node tools/check.mjs && node --test"
   }
 }

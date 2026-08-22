@@ -15,14 +15,14 @@
   "capabilities": [
     {
       "id": "story.read",
-      "adapterIds": ["adv-ir-v1"],
-      "sourceFormats": ["adv-story/v1"],
+      "adapterIds": ["adv-ir-v1", "majiro-production-v1"],
+      "sourceFormats": ["adv-story/v1", "adv-story/majiro-v1"],
       "features": ["text", "choices", "branches", "voice-controls", "image-actions", "audio-actions"]
     },
     {
       "id": "voice.play",
-      "adapterIds": ["adv-ir-v1"],
-      "sourceFormats": ["adv-story/v1"],
+      "adapterIds": ["adv-ir-v1", "majiro-production-v1"],
+      "sourceFormats": ["adv-story/v1", "adv-story/majiro-v1"],
       "features": ["utterance", "scene", "unresolved-cues"]
     }
   ],

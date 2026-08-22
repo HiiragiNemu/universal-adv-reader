@@ -1,0 +1,73 @@
+{
+  "schema": "adv-ui-shell-catalog/v1",
+  "contract": "ui-shell/1.0.0",
+  "defaultShellId": "classic",
+  "migration": {
+    "selector": "?ui=next",
+    "persistent": false,
+    "autoPromotion": false,
+    "promotionPolicy": "manual-acceptance-only"
+  },
+  "runtime": "react-contract-first",
+  "slots": [
+    "shell",
+    "navigation",
+    "catalog",
+    "reader",
+    "sidebar-tree",
+    "floating-tools",
+    "pager",
+    "media"
+  ],
+  "breakpoints": {
+    "compact": "0-639",
+    "mobile": "640-767",
+    "desktop": "768-1279",
+    "wide": ">=1280",
+    "shortViewport": "height<=511"
+  },
+  "tokenNamespaces": ["primitive", "semantic", "state", "texture", "motion"],
+  "themes": [
+    { "id": "yellow", "classicRecipe": "classic.yellow", "status": "accepted" },
+    { "id": "eye-care", "classicRecipe": "classic.eye-care", "status": "accepted" },
+    { "id": "white", "classicRecipe": "classic.white", "status": "accepted" },
+    { "id": "night", "classicRecipe": "classic.dark", "status": "pending" },
+    { "id": "cold-frost", "classicRecipe": "classic.frost", "status": "pending" }
+  ],
+  "inputs": {
+    "mode": "read-only",
+    "contracts": ["ReaderSession", "AdvIR", "media", "bridge"]
+  },
+  "commands": {
+    "mode": "append-only",
+    "namespaces": ["navigate", "reader", "media", "bridge"]
+  },
+  "sidebarTree": {
+    "hierarchy": ["category", "folder", "story", "episode"],
+    "disclosureTargetPx": 44,
+    "keyboard": "roving",
+    "pointerCoarse": true,
+    "longTitle": "ellipsis",
+    "responsiveParity": true
+  },
+  "shells": [
+    {
+      "id": "classic",
+      "label": "继承版",
+      "status": "stable",
+      "runtime": "inherited-classic",
+      "sourceTaskId": "01a0256c-1bae-76a2-a328-d4db01f1fde4",
+      "sourceAccess": "read-only-architecture-reference"
+    },
+    {
+      "id": "next",
+      "label": "迁移候选",
+      "status": "experimental",
+      "runtime": "react-contract-first",
+      "researchTaskId": "01a02998-e9b8-78f0-b9ed-bac62839a31b",
+      "architectureTaskId": "01a029af-2c48-76f0-ba83-6070ac3f6618",
+      "requiresManualAcceptance": true,
+      "implementationStatus": "primitive-adapter-skeleton"
+    }
+  ]
+}

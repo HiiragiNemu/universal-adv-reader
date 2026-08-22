@@ -15,7 +15,8 @@ test('demo catalog, story, and media satisfy strict contracts', async () => {
   const story = validateStoryDocument(await fixtureJson('demo-story.json'));
   const media = validateMediaManifest(await fixtureJson('media.json'));
 
-  assert.equal(catalog.corpora[0].stories[0].canonicalStoryId, story.canonicalStoryId);
+  const demoCorpus = catalog.corpora.find((corpus) => corpus.corpusId === 'architecture-demo');
+  assert.equal(demoCorpus.stories[0].canonicalStoryId, story.canonicalStoryId);
   assert.equal(allStoryEvents(story).length, 9);
   assert.equal(media.entries.length, 3);
 });

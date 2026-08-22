@@ -144,6 +144,25 @@ button { color: inherit; }
 .quiet-button { padding: 0 12px; background: transparent; color: var(--muted); font-size: 11px; }
 .quiet-button:hover { color: #fff; background: var(--panel-soft); }
 
+html[data-ui-shell="next"] .stage::after {
+  content: "NEXT UI · 人工验收前不设为默认";
+  position: absolute;
+  z-index: 3;
+  top: 14px;
+  right: 14px;
+  padding: 6px 9px;
+  border: 1px solid rgba(239, 197, 111, .4);
+  border-radius: 999px;
+  color: #f3d898;
+  background: rgba(32, 22, 8, .76);
+  font: 700 9px ui-monospace, monospace;
+  letter-spacing: .08em;
+}
+
+html[data-ui-shell="next"] .reader {
+  --radius: 10px;
+}
+
 .voice-panel {
   display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: center; gap: 20px;
   margin: 12px 0 22px; padding: 22px; border: 1px solid rgba(118, 213, 231, .28); border-radius: var(--radius);

@@ -1,7 +1,23 @@
 {
   "schema": "adv-catalog/v1",
-  "revision": "demo-catalog-r1",
+  "revision": "production-catalog-r2",
   "corpora": [
+    {
+      "corpusId": "narcissu10",
+      "title": "Narcissu 10th Anniversary Anthology Project",
+      "adapterId": "majiro-production-v1",
+      "sourceFormat": "adv-story/majiro-v1",
+      "features": ["text", "voice", "images", "bgm", "sfx", "bilingual", "source-anchors"],
+      "stories": [
+        {
+          "canonicalStoryId": "narcissu-himeko/himeko_ep00",
+          "title": "姫子 · EP00",
+          "source": "./data/corpora/narcissu10/himeko-ep00.story.json",
+          "mediaManifest": "./data/corpora/narcissu10/himeko-ep00.media.json",
+          "preferredVariantId": "narcissu10/himeko-ep00/zh-ja"
+        }
+      ]
+    },
     {
       "corpusId": "architecture-demo",
       "title": "通用 ADV 架构演示",

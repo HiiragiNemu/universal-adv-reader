@@ -27,6 +27,10 @@ import {
 } from '../../packages/bridge/src/deep-link.js';
 import { attachBridgeProvider } from '../../packages/bridge/src/provider.js';
 import { createAdvIrAdapter } from '../../packages/adapters/src/adv-ir-v1.js';
+import { createMajiroProductionAdapter } from '../../packages/adapters/src/majiro-production-v1.js';
+import { UiShellRegistry } from '../../packages/ui-shell/src/registry.js';
+import { classicShell } from './shells/classic.js';
+import { nextShell } from './shells/next.js';
 
 const byId = (id) => document.getElementById(id);
 const ui = {
@@ -46,6 +50,7 @@ const ui = {
   primaryLocale: byId('primary-locale'),
   secondaryLocale: byId('secondary-locale'),
   secondaryLocaleWrap: byId('secondary-locale-wrap'),
+  uiShellSelect: byId('ui-shell-select'),
   voiceToggle: byId('voice-toggle'),
   voiceSummary: byId('voice-summary'),
   voicePanel: byId('voice-panel'),
@@ -64,6 +69,10 @@ const ui = {
 
 const adapterRegistry = new AdapterRegistry();
 adapterRegistry.register(createAdvIrAdapter());
+adapterRegistry.register(createMajiroProductionAdapter());
+const uiShellRegistry = new UiShellRegistry();
+uiShellRegistry.register(classicShell);
+uiShellRegistry.register(nextShell);
 const mediaRegistry = new MediaResolverRegistry();
 const audioController = new AudioController();
 
@@ -81,6 +90,21 @@ let resolutionCache = new Map();
 let compatibilityState = null;
 let renderGeneration = 0;
 let toastTimer = null;
+
+const selectUiShell = (requestedId) => {
+  const shellId = uiShellRegistry.get(requestedId) ? requestedId : 'classic';
+  const shell = uiShellRegistry.activate(shellId, { document, window });
+  const options = uiShellRegistry.list().map((item) => {
+    const suffix = item.status === 'experimental' ? ' · 候选' : ' · 默认';
+    const option = document.createElement('option');
+    option.value = item.id;
+    option.textContent = `${item.label}${suffix}`;
+    option.selected = item.id === shell.id;
+    return option;
+  });
+  ui.uiShellSelect.replaceChildren(...options);
+  return shell;
+};
 
 const createElement = (tag, options = {}) => {
   const element = document.createElement(tag);
@@ -480,7 +504,9 @@ const updateStage = (snapshot, resolutions) => {
   const currentIndex = Math.max(0, snapshot.ordinal);
   let imageCue = null;
   for (let index = 0; index <= currentIndex; index += 1) {
-    const candidate = (activeSession.events[index]?.cues ?? []).find((cue) => cue.kind === 'image');
+    const candidate = (activeSession.events[index]?.cues ?? [])
+      .filter((cue) => cue.kind === 'image')
+      .at(-1);
     if (candidate) imageCue = candidate;
   }
   const resolution = imageCue ? resolutions.get(imageCue.cueId) : null;
@@ -713,6 +739,16 @@ const bindUi = () => {
   ui.sidebarToggle.addEventListener('click', toggleSidebar);
   ui.sidebarScrim.addEventListener('click', closeSidebar);
   ui.storySearch.addEventListener('input', renderCatalog);
+  ui.uiShellSelect.addEventListener('change', () => {
+    const shell = selectUiShell(ui.uiShellSelect.value);
+    const url = new URL(window.location.href);
+    if (shell.id === 'classic') url.searchParams.delete('ui');
+    else url.searchParams.set('ui', shell.id);
+    window.history.replaceState(null, '', `${url.pathname}${url.search}${url.hash}`);
+    showToast(shell.id === 'classic'
+      ? '已使用继承版 UI。'
+      : '正在预览迁移候选；默认架构未改变。');
+  });
 
   for (const button of document.querySelectorAll('[data-locale-mode]')) {
     button.addEventListener('click', () => {
@@ -767,6 +803,7 @@ const bindUi = () => {
 };
 
 async function initialize() {
+  selectUiShell(new URL(window.location.href).searchParams.get('ui') ?? 'classic');
   bindUi();
   catalog = validateCatalog(await fetchJson('./data/catalog.json'));
   ui.catalogRevision.textContent = `目录修订：${catalog.revision}`;

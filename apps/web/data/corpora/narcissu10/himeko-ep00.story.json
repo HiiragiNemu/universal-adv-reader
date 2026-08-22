@@ -1,0 +1,2184 @@
+{
+  "schema": "adv-story/v1",
+  "corpusId": "narcissu10",
+  "canonicalStoryId": "narcissu-himeko/himeko_ep00",
+  "adapterId": "majiro-production-v1",
+  "revision": "himeko-ep00-reader-v1-mjo-1086-ikura-120-events-499170",
+  "title": "Narcissu 10th · Himeko EP00",
+  "provenance": {
+    "engine": "majiro",
+    "sourceSchema": "vn-mjo-reader-script/v1",
+    "sourceRepository": "narcissu-kana-research",
+    "sourceManifest": "manifests/generated/reader-adapter.json",
+    "sourceBridgeRevision": "reader-v1-mjo-1086-ikura-120-events-499170",
+    "canonicalSourceStoryId": "narcissu-himeko/himeko_ep00",
+    "extractionAccess": "read-only"
+  },
+  "variants": [
+    {
+      "variantId": "narcissu10/himeko-ep00/zh-ja",
+      "locales": [
+        "zh-CN",
+        "ja-JP"
+      ],
+      "sections": [
+        {
+          "sectionId": "main",
+          "title": {
+            "zh-CN": "姬子 EP00",
+            "ja-JP": "姫子 EP00"
+          },
+          "entryEventId": "line-001",
+          "events": [
+            {
+              "eventId": "line-001",
+              "kind": "line",
+              "text": {
+                "zh-CN": "「－在清晨的天空下，\n我们从富士山下来，踏上了归途－」",
+                "ja-JP": "「－まだ早朝の空の下、\n富士山からの帰路についたわたし達－」"
+              },
+              "nextEventId": "line-002",
+              "cues": [
+                {
+                  "cueId": "image:line-001:black:1",
+                  "kind": "image",
+                  "timing": "scene",
+                  "mediaId": "n10.ja.image.black",
+                  "resolverId": "narcissu10-manifest",
+                  "raw": {
+                    "sourceKey": "black",
+                    "codeOffset": 22,
+                    "sourceStringPath": "archive/derived/scripts/patches/narci_himeko/#mjo/himeko_ep00.strings.json",
+                    "playbackPath": "archive/derived/images/narcissu10-original-ja-JP/narci_himeko/fastdata.arc.unpacked/black.png"
+                  }
+                },
+                {
+                  "cueId": "image:line-001:b4:1",
+                  "kind": "image",
+                  "timing": "scene",
+                  "mediaId": "n10.ja.image.b4",
+                  "resolverId": "narcissu10-manifest",
+                  "raw": {
+                    "sourceKey": "b4",
+                    "codeOffset": 88,
+                    "sourceStringPath": "archive/derived/scripts/patches/narci_himeko/#mjo/himeko_ep00.strings.json",
+                    "playbackPath": "archive/raw/narcissu10-original-ja-JP/narci_himeko/data.arc.unpacked/b4.png"
+                  }
+                },
+                {
+                  "cueId": "sfx:line-001:car_thru_rl:1",
+                  "kind": "sfx",
+                  "timing": "utterance",
+                  "mediaId": "n10.ja.sfx.car_thru_rl",
+                  "resolverId": "narcissu10-manifest",
+                  "raw": {
+                    "sourceKey": "car_thru_rl",
+                    "codeOffset": 145,
+                    "sourceStringPath": "archive/derived/scripts/patches/narci_himeko/#mjo/himeko_ep00.strings.json",
+                    "playbackPath": "raw/narcissu10-original-ja-JP/narci_himeko/data.arc.unpacked/car_thru_rl.wav"
+                  }
+                },
+                {
+                  "cueId": "image:line-001:sin_e04z:1",
+                  "kind": "image",
+                  "timing": "scene",
+                  "mediaId": "n10.ja.image.sin_e04z",
+                  "resolverId": "narcissu10-manifest",
+                  "raw": {
+                    "sourceKey": "sin_e04z",
+                    "codeOffset": 179,
+                    "sourceStringPath": "archive/derived/scripts/patches/narci_himeko/#mjo/himeko_ep00.strings.json",
+                    "playbackPath": "archive/raw/narcissu10-original-ja-JP/narci_himeko/data.arc.unpacked/sin_e04z.png"
+                  }
+                },
+                {
+                  "cueId": "bgm:line-001:2na:1",
+                  "kind": "bgm",
+                  "timing": "scene",
+                  "mediaId": "n10.ja.bgm.2na",
+                  "resolverId": "narcissu10-manifest",
+                  "raw": {
+                    "sourceKey": "2na",
+                    "codeOffset": 220,
+                    "sourceStringPath": "archive/derived/scripts/patches/narci_himeko/#mjo/himeko_ep00.strings.json",
+                    "playbackPath": "raw/narcissu10-original-ja-JP/narci_himeko/stream.arc.unpacked/2na.ogg"
+                  }
+                },
+                {
+                  "cueId": "voice:line-001:c77setu_0002:1",
+                  "kind": "voice",
+                  "timing": "utterance",
+                  "mediaId": "n10.ja.voice.c77setu_0002",
+                  "resolverId": "narcissu10-manifest",
+                  "raw": {
+                    "sourceKey": "c77setu_0002",
+                    "codeOffset": 244,
+                    "sourceStringPath": "archive/derived/scripts/patches/narci_himeko/#mjo/himeko_ep00.strings.json",
+                    "playbackPath": "raw/narcissu10-original-ja-JP/narci_himeko/voice.arc.unpacked/c77setu_0002.wav"
+                  }
+                }
+              ],
+              "source": {
+                "engine": "majiro",
+                "variantSourceId": "mjo/patches/narci_himeko/%23mjo/himeko_ep00",
+                "scriptPath": "archive/derived/scripts/patches/narci_himeko/#mjo/himeko_ep00.script.json",
+                "textEventIndices": [
+                  0,
+                  1
+                ],
+                "codeOffsets": [
+                  277,
+                  292
+                ],
+                "textCodeOffset": 292,
+                "mjoAnchor": "mjo-124"
+              },
+              "speaker": {
+                "zh-CN": "濑津美",
+                "ja-JP": "セツミ"
+              }
+            },
+            {
+              "eventId": "line-002",
+              "kind": "line",
+              "text": {
+                "zh-CN": "「－途中，手里拿着便利店买的便当，\n 姬子突然小声说道－」",
+                "ja-JP": "「－そんな中、コンビニで買ったお弁当を手に、\n　ぽつりと姫子さんは呟いた－」"
+              },
+              "nextEventId": "line-003",
+              "cues": [
+                {
+                  "cueId": "voice:line-002:c77setu_0003:1",
+                  "kind": "voice",
+                  "timing": "utterance",
+                  "mediaId": "n10.ja.voice.c77setu_0003",
+                  "resolverId": "narcissu10-manifest",
+                  "raw": {
+                    "sourceKey": "c77setu_0003",
+                    "codeOffset": 390,
+                    "sourceStringPath": "archive/derived/scripts/patches/narci_himeko/#mjo/himeko_ep00.strings.json",
+                    "playbackPath": "raw/narcissu10-original-ja-JP/narci_himeko/voice.arc.unpacked/c77setu_0003.wav"
+                  }
+                }
+              ],
+              "source": {
+                "engine": "majiro",
+                "variantSourceId": "mjo/patches/narci_himeko/%23mjo/himeko_ep00",
+                "scriptPath": "archive/derived/scripts/patches/narci_himeko/#mjo/himeko_ep00.script.json",
+                "textEventIndices": [
+                  2,
+                  3
+                ],
+                "codeOffsets": [
+                  423,
+                  438
+                ],
+                "textCodeOffset": 438,
+                "mjoAnchor": "mjo-1b6"
+              },
+              "speaker": {
+                "zh-CN": "濑津美",
+                "ja-JP": "セツミ"
+              }
+            },
+            {
+              "eventId": "line-003",
+              "kind": "line",
+              "text": {
+                "zh-CN": "「濑津美，\n 总之让我也定个规矩吧」",
+                "ja-JP": "「ねぇセツミ、\n　とりあえず私もルールに一つ追加させてもらうわ」"
+              },
+              "nextEventId": "line-004",
+              "cues": [
+                {
+                  "cueId": "sfx:line-003:kaze4:1",
+                  "kind": "sfx",
+                  "timing": "utterance",
+                  "mediaId": "n10.ja.sfx.kaze4",
+                  "resolverId": "narcissu10-manifest",
+                  "raw": {
+                    "sourceKey": "kaze4",
+                    "codeOffset": 552,
+                    "sourceStringPath": "archive/derived/scripts/patches/narci_himeko/#mjo/himeko_ep00.strings.json",
+                    "playbackPath": "raw/narcissu10-original-ja-JP/narci_himeko/data.arc.unpacked/kaze4.wav"
+                  }
+                },
+                {
+                  "cueId": "image:line-003:sin_e05z:1",
+                  "kind": "image",
+                  "timing": "scene",
+                  "mediaId": "n10.ja.image.sin_e05z",
+                  "resolverId": "narcissu10-manifest",
+                  "raw": {
+                    "sourceKey": "sin_e05z",
+                    "codeOffset": 580,
+                    "sourceStringPath": "archive/derived/scripts/patches/narci_himeko/#mjo/himeko_ep00.strings.json",
+                    "playbackPath": "archive/raw/narcissu10-original-ja-JP/narci_himeko/data.arc.unpacked/sin_e05z.png"
+                  }
+                },
+                {
+                  "cueId": "voice:line-003:c77hime_0001:1",
+                  "kind": "voice",
+                  "timing": "utterance",
+                  "mediaId": "n10.ja.voice.c77hime_0001",
+                  "resolverId": "narcissu10-manifest",
+                  "raw": {
+                    "sourceKey": "c77hime_0001",
+                    "codeOffset": 621,
+                    "sourceStringPath": "archive/derived/scripts/patches/narci_himeko/#mjo/himeko_ep00.strings.json",
+                    "playbackPath": "raw/narcissu10-original-ja-JP/narci_himeko/voice.arc.unpacked/c77hime_0001.wav"
+                  }
+                }
+              ],
+              "source": {
+                "engine": "majiro",
+                "variantSourceId": "mjo/patches/narci_himeko/%23mjo/himeko_ep00",
+                "scriptPath": "archive/derived/scripts/patches/narci_himeko/#mjo/himeko_ep00.script.json",
+                "textEventIndices": [
+                  4,
+                  5
+                ],
+                "codeOffsets": [
+                  654,
+                  667
+                ],
+                "textCodeOffset": 667,
+                "mjoAnchor": "mjo-29b"
+              },
+              "speaker": {
+                "zh-CN": "姫子",
+                "ja-JP": "姫子"
+              }
+            },
+            {
+              "eventId": "line-004",
+              "kind": "line",
+              "text": {
+                "zh-CN": "「……规矩？」",
+                "ja-JP": "「……ルール？」"
+              },
+              "nextEventId": "line-005",
+              "cues": [
+                {
+                  "cueId": "voice:line-004:c77setu_0004:1",
+                  "kind": "voice",
+                  "timing": "utterance",
+                  "mediaId": "n10.ja.voice.c77setu_0004",
+                  "resolverId": "narcissu10-manifest",
+                  "raw": {
+                    "sourceKey": "c77setu_0004",
+                    "codeOffset": 769,
+                    "sourceStringPath": "archive/derived/scripts/patches/narci_himeko/#mjo/himeko_ep00.strings.json",
+                    "playbackPath": "raw/narcissu10-original-ja-JP/narci_himeko/voice.arc.unpacked/c77setu_0004.wav"
+                  }
+                }
+              ],
+              "source": {
+                "engine": "majiro",
+                "variantSourceId": "mjo/patches/narci_himeko/%23mjo/himeko_ep00",
+                "scriptPath": "archive/derived/scripts/patches/narci_himeko/#mjo/himeko_ep00.script.json",
+                "textEventIndices": [
+                  6,
+                  7
+                ],
+                "codeOffsets": [
+                  802,
+                  817
+                ],
+                "textCodeOffset": 817,
+                "mjoAnchor": "mjo-331"
+              },
+              "speaker": {
+                "zh-CN": "濑津美",
+                "ja-JP": "セツミ"
+              }
+            },
+            {
+              "eventId": "line-005",
+              "kind": "line",
+              "text": {
+                "zh-CN": "「嗯，交朋友其实也是可以的」",
+                "ja-JP": "「ええ、友達は作っても良いってね」"
+              },
+              "nextEventId": "line-006",
+              "cues": [
+                {
+                  "cueId": "voice:line-005:c77hime_0002:1",
+                  "kind": "voice",
+                  "timing": "utterance",
+                  "mediaId": "n10.ja.voice.c77hime_0002",
+                  "resolverId": "narcissu10-manifest",
+                  "raw": {
+                    "sourceKey": "c77hime_0002",
+                    "codeOffset": 856,
+                    "sourceStringPath": "archive/derived/scripts/patches/narci_himeko/#mjo/himeko_ep00.strings.json",
+                    "playbackPath": "raw/narcissu10-original-ja-JP/narci_himeko/voice.arc.unpacked/c77hime_0002.wav"
+                  }
+                }
+              ],
+              "source": {
+                "engine": "majiro",
+                "variantSourceId": "mjo/patches/narci_himeko/%23mjo/himeko_ep00",
+                "scriptPath": "archive/derived/scripts/patches/narci_himeko/#mjo/himeko_ep00.script.json",
+                "textEventIndices": [
+                  8,
+                  9
+                ],
+                "codeOffsets": [
+                  889,
+                  902
+                ],
+                "textCodeOffset": 902,
+                "mjoAnchor": "mjo-386"
+              },
+              "speaker": {
+                "zh-CN": "姫子",
+                "ja-JP": "姫子"
+              }
+            },
+            {
+              "eventId": "line-006",
+              "kind": "line",
+              "text": {
+                "zh-CN": "钟声回响着。\n姬子把车停在了教会前，姬子让我下了车。",
+                "ja-JP": "響きわたる鐘の音。\n教会の前に車を止めると、わたしを降ろす姫子さん。"
+              },
+              "nextEventId": "line-007",
+              "cues": [
+                {
+                  "cueId": "sfx:line-006:kane02d:1",
+                  "kind": "sfx",
+                  "timing": "utterance",
+                  "mediaId": "n10.ja.sfx.kane02d",
+                  "resolverId": "narcissu10-manifest",
+                  "raw": {
+                    "sourceKey": "kane02d",
+                    "codeOffset": 959,
+                    "sourceStringPath": "archive/derived/scripts/patches/narci_himeko/#mjo/himeko_ep00.strings.json",
+                    "playbackPath": "raw/narcissu10-original-ja-JP/narci_himeko/data.arc.unpacked/kane02d.wav"
+                  }
+                },
+                {
+                  "cueId": "image:line-006:sin_e06bz:1",
+                  "kind": "image",
+                  "timing": "scene",
+                  "mediaId": "n10.ja.image.sin_e06bz",
+                  "resolverId": "narcissu10-manifest",
+                  "raw": {
+                    "sourceKey": "sin_e06bz",
+                    "codeOffset": 989,
+                    "sourceStringPath": "archive/derived/scripts/patches/narci_himeko/#mjo/himeko_ep00.strings.json",
+                    "playbackPath": "archive/raw/narcissu10-original-ja-JP/narci_himeko/data.arc.unpacked/sin_e06bz.png"
+                  }
+                },
+                {
+                  "cueId": "image:line-006:sin_e06z:1",
+                  "kind": "image",
+                  "timing": "scene",
+                  "mediaId": "n10.ja.image.sin_e06z",
+                  "resolverId": "narcissu10-manifest",
+                  "raw": {
+                    "sourceKey": "sin_e06z",
+                    "codeOffset": 1025,
+                    "sourceStringPath": "archive/derived/scripts/patches/narci_himeko/#mjo/himeko_ep00.strings.json",
+                    "playbackPath": "archive/raw/narcissu10-original-ja-JP/narci_himeko/data.arc.unpacked/sin_e06z.png"
+                  }
+                }
+              ],
+              "source": {
+                "engine": "majiro",
+                "variantSourceId": "mjo/patches/narci_himeko/%23mjo/himeko_ep00",
+                "scriptPath": "archive/derived/scripts/patches/narci_himeko/#mjo/himeko_ep00.script.json",
+                "textEventIndices": [
+                  10
+                ],
+                "codeOffsets": [
+                  1066
+                ],
+                "textCodeOffset": 1066,
+                "mjoAnchor": "mjo-42a"
+              }
+            },
+            {
+              "eventId": "line-007",
+              "kind": "line",
+              "text": {
+                "zh-CN": "「那，就在这里道别吧」",
+                "ja-JP": "「じゃあ、ここでお別れしましょ」"
+              },
+              "nextEventId": "line-008",
+              "cues": [
+                {
+                  "cueId": "sfx:line-007:car_close:1",
+                  "kind": "sfx",
+                  "timing": "utterance",
+                  "mediaId": "n10.ja.sfx.car_close",
+                  "resolverId": "narcissu10-manifest",
+                  "raw": {
+                    "sourceKey": "car_close",
+                    "codeOffset": 1172,
+                    "sourceStringPath": "archive/derived/scripts/patches/narci_himeko/#mjo/himeko_ep00.strings.json",
+                    "playbackPath": "raw/narcissu10-original-ja-JP/narci_himeko/data.arc.unpacked/car_close.wav"
+                  }
+                },
+                {
+                  "cueId": "voice:line-007:hime1_0559:1",
+                  "kind": "voice",
+                  "timing": "utterance",
+                  "mediaId": "n10.ja.voice.hime1_0559",
+                  "resolverId": "narcissu10-manifest",
+                  "raw": {
+                    "sourceKey": "hime1_0559",
+                    "codeOffset": 1198,
+                    "sourceStringPath": "archive/derived/scripts/patches/narci_himeko/#mjo/himeko_ep00.strings.json",
+                    "playbackPath": "raw/narcissu10-original-ja-JP/narci_himeko/voice.arc.unpacked/hime1_0559.ogg"
+                  }
+                }
+              ],
+              "source": {
+                "engine": "majiro",
+                "variantSourceId": "mjo/patches/narci_himeko/%23mjo/himeko_ep00",
+                "scriptPath": "archive/derived/scripts/patches/narci_himeko/#mjo/himeko_ep00.script.json",
+                "textEventIndices": [
+                  11,
+                  12
+                ],
+                "codeOffsets": [
+                  1229,
+                  1242
+                ],
+                "textCodeOffset": 1242,
+                "mjoAnchor": "mjo-4da"
+              },
+              "speaker": {
+                "zh-CN": "姫子",
+                "ja-JP": "姫子"
+              }
+            },
+            {
+              "eventId": "line-008",
+              "kind": "line",
+              "text": {
+                "zh-CN": "然后…",
+                "ja-JP": "そして…"
+              },
+              "nextEventId": "line-009",
+              "source": {
+                "engine": "majiro",
+                "variantSourceId": "mjo/patches/narci_himeko/%23mjo/himeko_ep00",
+                "scriptPath": "archive/derived/scripts/patches/narci_himeko/#mjo/himeko_ep00.script.json",
+                "textEventIndices": [
+                  13
+                ],
+                "codeOffsets": [
+                  1297
+                ],
+                "textCodeOffset": 1297,
+                "mjoAnchor": "mjo-511"
+              }
+            },
+            {
+              "eventId": "line-009",
+              "kind": "line",
+              "text": {
+                "zh-CN": "「…再见了……可乐饼博士…」",
+                "ja-JP": "「…さよなら……コロッケ博士…」"
+              },
+              "nextEventId": "line-010",
+              "cues": [
+                {
+                  "cueId": "voice:line-009:hime1_0580zz:1",
+                  "kind": "voice",
+                  "timing": "utterance",
+                  "mediaId": "n10.ja.voice.hime1_0580zz",
+                  "resolverId": "narcissu10-manifest",
+                  "raw": {
+                    "sourceKey": "hime1_0580zz",
+                    "codeOffset": 1328,
+                    "sourceStringPath": "archive/derived/scripts/patches/narci_himeko/#mjo/himeko_ep00.strings.json",
+                    "playbackPath": "raw/narcissu10-original-ja-JP/narci_himeko/voice.arc.unpacked/hime1_0580zz.ogg"
+                  }
+                }
+              ],
+              "source": {
+                "engine": "majiro",
+                "variantSourceId": "mjo/patches/narci_himeko/%23mjo/himeko_ep00",
+                "scriptPath": "archive/derived/scripts/patches/narci_himeko/#mjo/himeko_ep00.script.json",
+                "textEventIndices": [
+                  14,
+                  15
+                ],
+                "codeOffsets": [
+                  1361,
+                  1374
+                ],
+                "textCodeOffset": 1374,
+                "mjoAnchor": "mjo-55e"
+              },
+              "speaker": {
+                "zh-CN": "姫子",
+                "ja-JP": "姫子"
+              }
+            },
+            {
+              "eventId": "line-010",
+              "kind": "line",
+              "text": {
+                "zh-CN": "「－说完这些，\n背对着我向教会走去－」",
+                "ja-JP": "「－その言葉を最後に、\nわたしに背を向けると教会へと歩き始める－」"
+              },
+              "nextEventId": "line-011",
+              "cues": [
+                {
+                  "cueId": "image:line-010:w3:1",
+                  "kind": "image",
+                  "timing": "scene",
+                  "mediaId": "n10.ja.image.w3",
+                  "resolverId": "narcissu10-manifest",
+                  "raw": {
+                    "sourceKey": "w3",
+                    "codeOffset": 1435,
+                    "sourceStringPath": "archive/derived/scripts/patches/narci_himeko/#mjo/himeko_ep00.strings.json",
+                    "playbackPath": "archive/raw/narcissu10-original-ja-JP/narci_himeko/data.arc.unpacked/w3.png"
+                  }
+                },
+                {
+                  "cueId": "sfx:line-010:z42r:1",
+                  "kind": "sfx",
+                  "timing": "utterance",
+                  "mediaId": "n10.ja.sfx.z42r",
+                  "resolverId": "narcissu10-manifest",
+                  "raw": {
+                    "sourceKey": "z42r",
+                    "codeOffset": 1470,
+                    "sourceStringPath": "archive/derived/scripts/patches/narci_himeko/#mjo/himeko_ep00.strings.json",
+                    "playbackPath": "raw/narcissu10-original-ja-JP/narci_himeko/data.arc.unpacked/z42r.wav"
+                  }
+                },
+                {
+                  "cueId": "image:line-010:sin_e07z:1",
+                  "kind": "image",
+                  "timing": "scene",
+                  "mediaId": "n10.ja.image.sin_e07z",
+                  "resolverId": "narcissu10-manifest",
+                  "raw": {
+                    "sourceKey": "sin_e07z",
+                    "codeOffset": 1497,
+                    "sourceStringPath": "archive/derived/scripts/patches/narci_himeko/#mjo/himeko_ep00.strings.json",
+                    "playbackPath": "archive/raw/narcissu10-original-ja-JP/narci_himeko/data.arc.unpacked/sin_e07z.png"
+                  }
+                },
+                {
+                  "cueId": "voice:line-010:c77setu_0006:1",
+                  "kind": "voice",
+                  "timing": "utterance",
+                  "mediaId": "n10.ja.voice.c77setu_0006",
+                  "resolverId": "narcissu10-manifest",
+                  "raw": {
+                    "sourceKey": "c77setu_0006",
+                    "codeOffset": 1538,
+                    "sourceStringPath": "archive/derived/scripts/patches/narci_himeko/#mjo/himeko_ep00.strings.json",
+                    "playbackPath": "raw/narcissu10-original-ja-JP/narci_himeko/voice.arc.unpacked/c77setu_0006.wav"
+                  }
+                }
+              ],
+              "source": {
+                "engine": "majiro",
+                "variantSourceId": "mjo/patches/narci_himeko/%23mjo/himeko_ep00",
+                "scriptPath": "archive/derived/scripts/patches/narci_himeko/#mjo/himeko_ep00.script.json",
+                "textEventIndices": [
+                  16,
+                  17
+                ],
+                "codeOffsets": [
+                  1571,
+                  1586
+                ],
+                "textCodeOffset": 1586,
+                "mjoAnchor": "mjo-632"
+              },
+              "speaker": {
+                "zh-CN": "濑津美",
+                "ja-JP": "セツミ"
+              }
+            },
+            {
+              "eventId": "line-011",
+              "kind": "line",
+              "text": {
+                "zh-CN": "「恐怕，她们都在里面吧，\n是要去见千寻和优花吧」",
+                "ja-JP": "「恐らく、その中に居るであろう、\n千尋さんや優花さんと会うのだろう」"
+              },
+              "nextEventId": "line-012",
+              "cues": [
+                {
+                  "cueId": "voice:line-011:c77setu_0007:1",
+                  "kind": "voice",
+                  "timing": "utterance",
+                  "mediaId": "n10.ja.voice.c77setu_0007",
+                  "resolverId": "narcissu10-manifest",
+                  "raw": {
+                    "sourceKey": "c77setu_0007",
+                    "codeOffset": 1690,
+                    "sourceStringPath": "archive/derived/scripts/patches/narci_himeko/#mjo/himeko_ep00.strings.json",
+                    "playbackPath": "raw/narcissu10-original-ja-JP/narci_himeko/voice.arc.unpacked/c77setu_0007.wav"
+                  }
+                }
+              ],
+              "source": {
+                "engine": "majiro",
+                "variantSourceId": "mjo/patches/narci_himeko/%23mjo/himeko_ep00",
+                "scriptPath": "archive/derived/scripts/patches/narci_himeko/#mjo/himeko_ep00.script.json",
+                "textEventIndices": [
+                  18,
+                  19
+                ],
+                "codeOffsets": [
+                  1723,
+                  1738
+                ],
+                "textCodeOffset": 1738,
+                "mjoAnchor": "mjo-6ca"
+              },
+              "speaker": {
+                "zh-CN": "濑津美",
+                "ja-JP": "セツミ"
+              }
+            },
+            {
+              "eventId": "line-012",
+              "kind": "line",
+              "text": {
+                "zh-CN": "「……肯定，曾经那个温柔的“曾经”也…」",
+                "ja-JP": "「……きっと、以前は優しかったの、”以前”は…」"
+              },
+              "nextEventId": "line-013",
+              "cues": [
+                {
+                  "cueId": "voice:line-012:c77setu_0008:1",
+                  "kind": "voice",
+                  "timing": "utterance",
+                  "mediaId": "n10.ja.voice.c77setu_0008",
+                  "resolverId": "narcissu10-manifest",
+                  "raw": {
+                    "sourceKey": "c77setu_0008",
+                    "codeOffset": 1844,
+                    "sourceStringPath": "archive/derived/scripts/patches/narci_himeko/#mjo/himeko_ep00.strings.json",
+                    "playbackPath": "raw/narcissu10-original-ja-JP/narci_himeko/voice.arc.unpacked/c77setu_0008.wav"
+                  }
+                }
+              ],
+              "source": {
+                "engine": "majiro",
+                "variantSourceId": "mjo/patches/narci_himeko/%23mjo/himeko_ep00",
+                "scriptPath": "archive/derived/scripts/patches/narci_himeko/#mjo/himeko_ep00.script.json",
+                "textEventIndices": [
+                  20,
+                  21
+                ],
+                "codeOffsets": [
+                  1877,
+                  1892
+                ],
+                "textCodeOffset": 1892,
+                "mjoAnchor": "mjo-764"
+              },
+              "speaker": {
+                "zh-CN": "濑津美",
+                "ja-JP": "セツミ"
+              }
+            },
+            {
+              "eventId": "line-013",
+              "kind": "line",
+              "text": {
+                "zh-CN": "「…不再存在了吧…」",
+                "ja-JP": "「…無くなるのだろう…」"
+              },
+              "nextEventId": "end-001",
+              "cues": [
+                {
+                  "cueId": "voice:line-013:c77setu_0008b:1",
+                  "kind": "voice",
+                  "timing": "utterance",
+                  "mediaId": "n10.ja.voice.c77setu_0008b",
+                  "resolverId": "narcissu10-manifest",
+                  "raw": {
+                    "sourceKey": "c77setu_0008b",
+                    "codeOffset": 1963,
+                    "sourceStringPath": "archive/derived/scripts/patches/narci_himeko/#mjo/himeko_ep00.strings.json",
+                    "playbackPath": "raw/narcissu10-original-ja-JP/narci_himeko/voice.arc.unpacked/c77setu_0008b.wav"
+                  }
+                }
+              ],
+              "source": {
+                "engine": "majiro",
+                "variantSourceId": "mjo/patches/narci_himeko/%23mjo/himeko_ep00",
+                "scriptPath": "archive/derived/scripts/patches/narci_himeko/#mjo/himeko_ep00.script.json",
+                "textEventIndices": [
+                  22,
+                  23
+                ],
+                "codeOffsets": [
+                  1997,
+                  2012
+                ],
+                "textCodeOffset": 2012,
+                "mjoAnchor": "mjo-7dc"
+              },
+              "speaker": {
+                "zh-CN": "濑津美",
+                "ja-JP": "セツミ"
+              }
+            },
+            {
+              "eventId": "end-001",
+              "kind": "end",
+              "cues": [
+                {
+                  "cueId": "image:end-001:b3:1",
+                  "kind": "image",
+                  "timing": "scene",
+                  "mediaId": "n10.ja.image.b3",
+                  "resolverId": "narcissu10-manifest",
+                  "raw": {
+                    "sourceKey": "b3",
+                    "codeOffset": 2081,
+                    "sourceStringPath": "archive/derived/scripts/patches/narci_himeko/#mjo/himeko_ep00.strings.json",
+                    "playbackPath": "archive/raw/narcissu10-original-ja-JP/narci_himeko/data.arc.unpacked/b3.png"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "variantId": "narcissu10/himeko-ep00/ja",
+      "locales": [
+        "ja-JP"
+      ],
+      "sections": [
+        {
+          "sectionId": "main",
+          "title": {
+            "ja-JP": "姫子 EP00"
+          },
+          "entryEventId": "line-001",
+          "events": [
+            {
+              "eventId": "line-001",
+              "kind": "line",
+              "text": {
+                "ja-JP": "「－まだ早朝の空の下、\n富士山からの帰路についたわたし達－」"
+              },
+              "nextEventId": "line-002",
+              "cues": [
+                {
+                  "cueId": "image:line-001:black:1",
+                  "kind": "image",
+                  "timing": "scene",
+                  "mediaId": "n10.ja.image.black",
+                  "resolverId": "narcissu10-manifest",
+                  "raw": {
+                    "sourceKey": "black",
+                    "codeOffset": 22,
+                    "sourceStringPath": "archive/derived/scripts/narcissu10-original-ja-JP/narci_himeko/scenario.arc.unpacked/himeko_ep00.strings.json",
+                    "playbackPath": "archive/derived/images/narcissu10-original-ja-JP/narci_himeko/fastdata.arc.unpacked/black.png"
+                  }
+                },
+                {
+                  "cueId": "image:line-001:b4:1",
+                  "kind": "image",
+                  "timing": "scene",
+                  "mediaId": "n10.ja.image.b4",
+                  "resolverId": "narcissu10-manifest",
+                  "raw": {
+                    "sourceKey": "b4",
+                    "codeOffset": 88,
+                    "sourceStringPath": "archive/derived/scripts/narcissu10-original-ja-JP/narci_himeko/scenario.arc.unpacked/himeko_ep00.strings.json",
+                    "playbackPath": "archive/raw/narcissu10-original-ja-JP/narci_himeko/data.arc.unpacked/b4.png"
+                  }
+                },
+                {
+                  "cueId": "sfx:line-001:car_thru_rl:1",
+                  "kind": "sfx",
+                  "timing": "utterance",
+                  "mediaId": "n10.ja.sfx.car_thru_rl",
+                  "resolverId": "narcissu10-manifest",
+                  "raw": {
+                    "sourceKey": "car_thru_rl",
+                    "codeOffset": 145,
+                    "sourceStringPath": "archive/derived/scripts/narcissu10-original-ja-JP/narci_himeko/scenario.arc.unpacked/himeko_ep00.strings.json",
+                    "playbackPath": "raw/narcissu10-original-ja-JP/narci_himeko/data.arc.unpacked/car_thru_rl.wav"
+                  }
+                },
+                {
+                  "cueId": "image:line-001:sin_e04z:1",
+                  "kind": "image",
+                  "timing": "scene",
+                  "mediaId": "n10.ja.image.sin_e04z",
+                  "resolverId": "narcissu10-manifest",
+                  "raw": {
+                    "sourceKey": "sin_e04z",
+                    "codeOffset": 179,
+                    "sourceStringPath": "archive/derived/scripts/narcissu10-original-ja-JP/narci_himeko/scenario.arc.unpacked/himeko_ep00.strings.json",
+                    "playbackPath": "archive/raw/narcissu10-original-ja-JP/narci_himeko/data.arc.unpacked/sin_e04z.png"
+                  }
+                },
+                {
+                  "cueId": "bgm:line-001:2na:1",
+                  "kind": "bgm",
+                  "timing": "scene",
+                  "mediaId": "n10.ja.bgm.2na",
+                  "resolverId": "narcissu10-manifest",
+                  "raw": {
+                    "sourceKey": "2na",
+                    "codeOffset": 220,
+                    "sourceStringPath": "archive/derived/scripts/narcissu10-original-ja-JP/narci_himeko/scenario.arc.unpacked/himeko_ep00.strings.json",
+                    "playbackPath": "raw/narcissu10-original-ja-JP/narci_himeko/stream.arc.unpacked/2na.ogg"
+                  }
+                },
+                {
+                  "cueId": "voice:line-001:c77setu_0002:1",
+                  "kind": "voice",
+                  "timing": "utterance",
+                  "mediaId": "n10.ja.voice.c77setu_0002",
+                  "resolverId": "narcissu10-manifest",
+                  "raw": {
+                    "sourceKey": "c77setu_0002",
+                    "codeOffset": 244,
+                    "sourceStringPath": "archive/derived/scripts/narcissu10-original-ja-JP/narci_himeko/scenario.arc.unpacked/himeko_ep00.strings.json",
+                    "playbackPath": "raw/narcissu10-original-ja-JP/narci_himeko/voice.arc.unpacked/c77setu_0002.wav"
+                  }
+                }
+              ],
+              "source": {
+                "engine": "majiro",
+                "variantSourceId": "mjo/narcissu10-original-ja-jp/narci_himeko/scenario.arc.unpacked/himeko_ep00",
+                "scriptPath": "archive/derived/scripts/narcissu10-original-ja-JP/narci_himeko/scenario.arc.unpacked/himeko_ep00.script.json",
+                "textEventIndices": [
+                  0,
+                  1
+                ],
+                "codeOffsets": [
+                  277,
+                  292
+                ],
+                "textCodeOffset": 292,
+                "mjoAnchor": "mjo-124"
+              },
+              "speaker": {
+                "ja-JP": "セツミ"
+              }
+            },
+            {
+              "eventId": "line-002",
+              "kind": "line",
+              "text": {
+                "ja-JP": "「－そんな中、コンビニで買ったお弁当を手に、\n　ぽつりと姫子さんは呟いた－」"
+              },
+              "nextEventId": "line-003",
+              "cues": [
+                {
+                  "cueId": "voice:line-002:c77setu_0003:1",
+                  "kind": "voice",
+                  "timing": "utterance",
+                  "mediaId": "n10.ja.voice.c77setu_0003",
+                  "resolverId": "narcissu10-manifest",
+                  "raw": {
+                    "sourceKey": "c77setu_0003",
+                    "codeOffset": 390,
+                    "sourceStringPath": "archive/derived/scripts/narcissu10-original-ja-JP/narci_himeko/scenario.arc.unpacked/himeko_ep00.strings.json",
+                    "playbackPath": "raw/narcissu10-original-ja-JP/narci_himeko/voice.arc.unpacked/c77setu_0003.wav"
+                  }
+                }
+              ],
+              "source": {
+                "engine": "majiro",
+                "variantSourceId": "mjo/narcissu10-original-ja-jp/narci_himeko/scenario.arc.unpacked/himeko_ep00",
+                "scriptPath": "archive/derived/scripts/narcissu10-original-ja-JP/narci_himeko/scenario.arc.unpacked/himeko_ep00.script.json",
+                "textEventIndices": [
+                  2,
+                  3
+                ],
+                "codeOffsets": [
+                  423,
+                  438
+                ],
+                "textCodeOffset": 438,
+                "mjoAnchor": "mjo-1b6"
+              },
+              "speaker": {
+                "ja-JP": "セツミ"
+              }
+            },
+            {
+              "eventId": "line-003",
+              "kind": "line",
+              "text": {
+                "ja-JP": "「ねぇセツミ、\n　とりあえず私もルールに一つ追加させてもらうわ」"
+              },
+              "nextEventId": "line-004",
+              "cues": [
+                {
+                  "cueId": "sfx:line-003:kaze4:1",
+                  "kind": "sfx",
+                  "timing": "utterance",
+                  "mediaId": "n10.ja.sfx.kaze4",
+                  "resolverId": "narcissu10-manifest",
+                  "raw": {
+                    "sourceKey": "kaze4",
+                    "codeOffset": 552,
+                    "sourceStringPath": "archive/derived/scripts/narcissu10-original-ja-JP/narci_himeko/scenario.arc.unpacked/himeko_ep00.strings.json",
+                    "playbackPath": "raw/narcissu10-original-ja-JP/narci_himeko/data.arc.unpacked/kaze4.wav"
+                  }
+                },
+                {
+                  "cueId": "image:line-003:sin_e05z:1",
+                  "kind": "image",
+                  "timing": "scene",
+                  "mediaId": "n10.ja.image.sin_e05z",
+                  "resolverId": "narcissu10-manifest",
+                  "raw": {
+                    "sourceKey": "sin_e05z",
+                    "codeOffset": 580,
+                    "sourceStringPath": "archive/derived/scripts/narcissu10-original-ja-JP/narci_himeko/scenario.arc.unpacked/himeko_ep00.strings.json",
+                    "playbackPath": "archive/raw/narcissu10-original-ja-JP/narci_himeko/data.arc.unpacked/sin_e05z.png"
+                  }
+                },
+                {
+                  "cueId": "voice:line-003:c77hime_0001:1",
+                  "kind": "voice",
+                  "timing": "utterance",
+                  "mediaId": "n10.ja.voice.c77hime_0001",
+                  "resolverId": "narcissu10-manifest",
+                  "raw": {
+                    "sourceKey": "c77hime_0001",
+                    "codeOffset": 621,
+                    "sourceStringPath": "archive/derived/scripts/narcissu10-original-ja-JP/narci_himeko/scenario.arc.unpacked/himeko_ep00.strings.json",
+                    "playbackPath": "raw/narcissu10-original-ja-JP/narci_himeko/voice.arc.unpacked/c77hime_0001.wav"
+                  }
+                }
+              ],
+              "source": {
+                "engine": "majiro",
+                "variantSourceId": "mjo/narcissu10-original-ja-jp/narci_himeko/scenario.arc.unpacked/himeko_ep00",
+                "scriptPath": "archive/derived/scripts/narcissu10-original-ja-JP/narci_himeko/scenario.arc.unpacked/himeko_ep00.script.json",
+                "textEventIndices": [
+                  4,
+                  5
+                ],
+                "codeOffsets": [
+                  654,
+                  667
+                ],
+                "textCodeOffset": 667,
+                "mjoAnchor": "mjo-29b"
+              },
+              "speaker": {
+                "ja-JP": "姫子"
+              }
+            },
+            {
+              "eventId": "line-004",
+              "kind": "line",
+              "text": {
+                "ja-JP": "「……ルール？」"
+              },
+              "nextEventId": "line-005",
+              "cues": [
+                {
+                  "cueId": "voice:line-004:c77setu_0004:1",
+                  "kind": "voice",
+                  "timing": "utterance",
+                  "mediaId": "n10.ja.voice.c77setu_0004",
+                  "resolverId": "narcissu10-manifest",
+                  "raw": {
+                    "sourceKey": "c77setu_0004",
+                    "codeOffset": 769,
+                    "sourceStringPath": "archive/derived/scripts/narcissu10-original-ja-JP/narci_himeko/scenario.arc.unpacked/himeko_ep00.strings.json",
+                    "playbackPath": "raw/narcissu10-original-ja-JP/narci_himeko/voice.arc.unpacked/c77setu_0004.wav"
+                  }
+                }
+              ],
+              "source": {
+                "engine": "majiro",
+                "variantSourceId": "mjo/narcissu10-original-ja-jp/narci_himeko/scenario.arc.unpacked/himeko_ep00",
+                "scriptPath": "archive/derived/scripts/narcissu10-original-ja-JP/narci_himeko/scenario.arc.unpacked/himeko_ep00.script.json",
+                "textEventIndices": [
+                  6,
+                  7
+                ],
+                "codeOffsets": [
+                  802,
+                  817
+                ],
+                "textCodeOffset": 817,
+                "mjoAnchor": "mjo-331"
+              },
+              "speaker": {
+                "ja-JP": "セツミ"
+              }
+            },
+            {
+              "eventId": "line-005",
+              "kind": "line",
+              "text": {
+                "ja-JP": "「ええ、友達は作っても良いってね」"
+              },
+              "nextEventId": "line-006",
+              "cues": [
+                {
+                  "cueId": "voice:line-005:c77hime_0002:1",
+                  "kind": "voice",
+                  "timing": "utterance",
+                  "mediaId": "n10.ja.voice.c77hime_0002",
+                  "resolverId": "narcissu10-manifest",
+                  "raw": {
+                    "sourceKey": "c77hime_0002",
+                    "codeOffset": 856,
+                    "sourceStringPath": "archive/derived/scripts/narcissu10-original-ja-JP/narci_himeko/scenario.arc.unpacked/himeko_ep00.strings.json",
+                    "playbackPath": "raw/narcissu10-original-ja-JP/narci_himeko/voice.arc.unpacked/c77hime_0002.wav"
+                  }
+                }
+              ],
+              "source": {
+                "engine": "majiro",
+                "variantSourceId": "mjo/narcissu10-original-ja-jp/narci_himeko/scenario.arc.unpacked/himeko_ep00",
+                "scriptPath": "archive/derived/scripts/narcissu10-original-ja-JP/narci_himeko/scenario.arc.unpacked/himeko_ep00.script.json",
+                "textEventIndices": [
+                  8,
+                  9
+                ],
+                "codeOffsets": [
+                  889,
+                  902
+                ],
+                "textCodeOffset": 902,
+                "mjoAnchor": "mjo-386"
+              },
+              "speaker": {
+                "ja-JP": "姫子"
+              }
+            },
+            {
+              "eventId": "line-006",
+              "kind": "line",
+              "text": {
+                "ja-JP": "響きわたる鐘の音。\n教会の前に車を止めると、わたしを降ろす姫子さん。"
+              },
+              "nextEventId": "line-007",
+              "cues": [
+                {
+                  "cueId": "sfx:line-006:kane02d:1",
+                  "kind": "sfx",
+                  "timing": "utterance",
+                  "mediaId": "n10.ja.sfx.kane02d",
+                  "resolverId": "narcissu10-manifest",
+                  "raw": {
+                    "sourceKey": "kane02d",
+                    "codeOffset": 959,
+                    "sourceStringPath": "archive/derived/scripts/narcissu10-original-ja-JP/narci_himeko/scenario.arc.unpacked/himeko_ep00.strings.json",
+                    "playbackPath": "raw/narcissu10-original-ja-JP/narci_himeko/data.arc.unpacked/kane02d.wav"
+                  }
+                },
+                {
+                  "cueId": "image:line-006:sin_e06bz:1",
+                  "kind": "image",
+                  "timing": "scene",
+                  "mediaId": "n10.ja.image.sin_e06bz",
+                  "resolverId": "narcissu10-manifest",
+                  "raw": {
+                    "sourceKey": "sin_e06bz",
+                    "codeOffset": 989,
+                    "sourceStringPath": "archive/derived/scripts/narcissu10-original-ja-JP/narci_himeko/scenario.arc.unpacked/himeko_ep00.strings.json",
+                    "playbackPath": "archive/raw/narcissu10-original-ja-JP/narci_himeko/data.arc.unpacked/sin_e06bz.png"
+                  }
+                },
+                {
+                  "cueId": "image:line-006:sin_e06z:1",
+                  "kind": "image",
+                  "timing": "scene",
+                  "mediaId": "n10.ja.image.sin_e06z",
+                  "resolverId": "narcissu10-manifest",
+                  "raw": {
+                    "sourceKey": "sin_e06z",
+                    "codeOffset": 1025,
+                    "sourceStringPath": "archive/derived/scripts/narcissu10-original-ja-JP/narci_himeko/scenario.arc.unpacked/himeko_ep00.strings.json",
+                    "playbackPath": "archive/raw/narcissu10-original-ja-JP/narci_himeko/data.arc.unpacked/sin_e06z.png"
+                  }
+                }
+              ],
+              "source": {
+                "engine": "majiro",
+                "variantSourceId": "mjo/narcissu10-original-ja-jp/narci_himeko/scenario.arc.unpacked/himeko_ep00",
+                "scriptPath": "archive/derived/scripts/narcissu10-original-ja-JP/narci_himeko/scenario.arc.unpacked/himeko_ep00.script.json",
+                "textEventIndices": [
+                  10
+                ],
+                "codeOffsets": [
+                  1066
+                ],
+                "textCodeOffset": 1066,
+                "mjoAnchor": "mjo-42a"
+              }
+            },
+            {
+              "eventId": "line-007",
+              "kind": "line",
+              "text": {
+                "ja-JP": "「じゃあ、ここでお別れしましょ」"
+              },
+              "nextEventId": "line-008",
+              "cues": [
+                {
+                  "cueId": "sfx:line-007:car_close:1",
+                  "kind": "sfx",
+                  "timing": "utterance",
+                  "mediaId": "n10.ja.sfx.car_close",
+                  "resolverId": "narcissu10-manifest",
+                  "raw": {
+                    "sourceKey": "car_close",
+                    "codeOffset": 1172,
+                    "sourceStringPath": "archive/derived/scripts/narcissu10-original-ja-JP/narci_himeko/scenario.arc.unpacked/himeko_ep00.strings.json",
+                    "playbackPath": "raw/narcissu10-original-ja-JP/narci_himeko/data.arc.unpacked/car_close.wav"
+                  }
+                },
+                {
+                  "cueId": "voice:line-007:hime1_0559:1",
+                  "kind": "voice",
+                  "timing": "utterance",
+                  "mediaId": "n10.ja.voice.hime1_0559",
+                  "resolverId": "narcissu10-manifest",
+                  "raw": {
+                    "sourceKey": "hime1_0559",
+                    "codeOffset": 1198,
+                    "sourceStringPath": "archive/derived/scripts/narcissu10-original-ja-JP/narci_himeko/scenario.arc.unpacked/himeko_ep00.strings.json",
+                    "playbackPath": "raw/narcissu10-original-ja-JP/narci_himeko/voice.arc.unpacked/hime1_0559.ogg"
+                  }
+                }
+              ],
+              "source": {
+                "engine": "majiro",
+                "variantSourceId": "mjo/narcissu10-original-ja-jp/narci_himeko/scenario.arc.unpacked/himeko_ep00",
+                "scriptPath": "archive/derived/scripts/narcissu10-original-ja-JP/narci_himeko/scenario.arc.unpacked/himeko_ep00.script.json",
+                "textEventIndices": [
+                  11,
+                  12
+                ],
+                "codeOffsets": [
+                  1229,
+                  1242
+                ],
+                "textCodeOffset": 1242,
+                "mjoAnchor": "mjo-4da"
+              },
+              "speaker": {
+                "ja-JP": "姫子"
+              }
+            },
+            {
+              "eventId": "line-008",
+              "kind": "line",
+              "text": {
+                "ja-JP": "そして…"
+              },
+              "nextEventId": "line-009",
+              "source": {
+                "engine": "majiro",
+                "variantSourceId": "mjo/narcissu10-original-ja-jp/narci_himeko/scenario.arc.unpacked/himeko_ep00",
+                "scriptPath": "archive/derived/scripts/narcissu10-original-ja-JP/narci_himeko/scenario.arc.unpacked/himeko_ep00.script.json",
+                "textEventIndices": [
+                  13
+                ],
+                "codeOffsets": [
+                  1297
+                ],
+                "textCodeOffset": 1297,
+                "mjoAnchor": "mjo-511"
+              }
+            },
+            {
+              "eventId": "line-009",
+              "kind": "line",
+              "text": {
+                "ja-JP": "「…さよなら……コロッケ博士…」"
+              },
+              "nextEventId": "line-010",
+              "cues": [
+                {
+                  "cueId": "voice:line-009:hime1_0580zz:1",
+                  "kind": "voice",
+                  "timing": "utterance",
+                  "mediaId": "n10.ja.voice.hime1_0580zz",
+                  "resolverId": "narcissu10-manifest",
+                  "raw": {
+                    "sourceKey": "hime1_0580zz",
+                    "codeOffset": 1328,
+                    "sourceStringPath": "archive/derived/scripts/narcissu10-original-ja-JP/narci_himeko/scenario.arc.unpacked/himeko_ep00.strings.json",
+                    "playbackPath": "raw/narcissu10-original-ja-JP/narci_himeko/voice.arc.unpacked/hime1_0580zz.ogg"
+                  }
+                }
+              ],
+              "source": {
+                "engine": "majiro",
+                "variantSourceId": "mjo/narcissu10-original-ja-jp/narci_himeko/scenario.arc.unpacked/himeko_ep00",
+                "scriptPath": "archive/derived/scripts/narcissu10-original-ja-JP/narci_himeko/scenario.arc.unpacked/himeko_ep00.script.json",
+                "textEventIndices": [
+                  14,
+                  15
+                ],
+                "codeOffsets": [
+                  1361,
+                  1374
+                ],
+                "textCodeOffset": 1374,
+                "mjoAnchor": "mjo-55e"
+              },
+              "speaker": {
+                "ja-JP": "姫子"
+              }
+            },
+            {
+              "eventId": "line-010",
+              "kind": "line",
+              "text": {
+                "ja-JP": "「－その言葉を最後に、\nわたしに背を向けると教会へと歩き始める－」"
+              },
+              "nextEventId": "line-011",
+              "cues": [
+                {
+                  "cueId": "image:line-010:w3:1",
+                  "kind": "image",
+                  "timing": "scene",
+                  "mediaId": "n10.ja.image.w3",
+                  "resolverId": "narcissu10-manifest",
+                  "raw": {
+                    "sourceKey": "w3",
+                    "codeOffset": 1435,
+                    "sourceStringPath": "archive/derived/scripts/narcissu10-original-ja-JP/narci_himeko/scenario.arc.unpacked/himeko_ep00.strings.json",
+                    "playbackPath": "archive/raw/narcissu10-original-ja-JP/narci_himeko/data.arc.unpacked/w3.png"
+                  }
+                },
+                {
+                  "cueId": "sfx:line-010:z42r:1",
+                  "kind": "sfx",
+                  "timing": "utterance",
+                  "mediaId": "n10.ja.sfx.z42r",
+                  "resolverId": "narcissu10-manifest",
+                  "raw": {
+                    "sourceKey": "z42r",
+                    "codeOffset": 1470,
+                    "sourceStringPath": "archive/derived/scripts/narcissu10-original-ja-JP/narci_himeko/scenario.arc.unpacked/himeko_ep00.strings.json",
+                    "playbackPath": "raw/narcissu10-original-ja-JP/narci_himeko/data.arc.unpacked/z42r.wav"
+                  }
+                },
+                {
+                  "cueId": "image:line-010:sin_e07z:1",
+                  "kind": "image",
+                  "timing": "scene",
+                  "mediaId": "n10.ja.image.sin_e07z",
+                  "resolverId": "narcissu10-manifest",
+                  "raw": {
+                    "sourceKey": "sin_e07z",
+                    "codeOffset": 1497,
+                    "sourceStringPath": "archive/derived/scripts/narcissu10-original-ja-JP/narci_himeko/scenario.arc.unpacked/himeko_ep00.strings.json",
+                    "playbackPath": "archive/raw/narcissu10-original-ja-JP/narci_himeko/data.arc.unpacked/sin_e07z.png"
+                  }
+                },
+                {
+                  "cueId": "voice:line-010:c77setu_0006:1",
+                  "kind": "voice",
+                  "timing": "utterance",
+                  "mediaId": "n10.ja.voice.c77setu_0006",
+                  "resolverId": "narcissu10-manifest",
+                  "raw": {
+                    "sourceKey": "c77setu_0006",
+                    "codeOffset": 1538,
+                    "sourceStringPath": "archive/derived/scripts/narcissu10-original-ja-JP/narci_himeko/scenario.arc.unpacked/himeko_ep00.strings.json",
+                    "playbackPath": "raw/narcissu10-original-ja-JP/narci_himeko/voice.arc.unpacked/c77setu_0006.wav"
+                  }
+                }
+              ],
+              "source": {
+                "engine": "majiro",
+                "variantSourceId": "mjo/narcissu10-original-ja-jp/narci_himeko/scenario.arc.unpacked/himeko_ep00",
+                "scriptPath": "archive/derived/scripts/narcissu10-original-ja-JP/narci_himeko/scenario.arc.unpacked/himeko_ep00.script.json",
+                "textEventIndices": [
+                  16,
+                  17
+                ],
+                "codeOffsets": [
+                  1571,
+                  1586
+                ],
+                "textCodeOffset": 1586,
+                "mjoAnchor": "mjo-632"
+              },
+              "speaker": {
+                "ja-JP": "セツミ"
+              }
+            },
+            {
+              "eventId": "line-011",
+              "kind": "line",
+              "text": {
+                "ja-JP": "「恐らく、その中に居るであろう、\n千尋さんや優花さんと会うのだろう」"
+              },
+              "nextEventId": "line-012",
+              "cues": [
+                {
+                  "cueId": "voice:line-011:c77setu_0007:1",
+                  "kind": "voice",
+                  "timing": "utterance",
+                  "mediaId": "n10.ja.voice.c77setu_0007",
+                  "resolverId": "narcissu10-manifest",
+                  "raw": {
+                    "sourceKey": "c77setu_0007",
+                    "codeOffset": 1690,
+                    "sourceStringPath": "archive/derived/scripts/narcissu10-original-ja-JP/narci_himeko/scenario.arc.unpacked/himeko_ep00.strings.json",
+                    "playbackPath": "raw/narcissu10-original-ja-JP/narci_himeko/voice.arc.unpacked/c77setu_0007.wav"
+                  }
+                }
+              ],
+              "source": {
+                "engine": "majiro",
+                "variantSourceId": "mjo/narcissu10-original-ja-jp/narci_himeko/scenario.arc.unpacked/himeko_ep00",
+                "scriptPath": "archive/derived/scripts/narcissu10-original-ja-JP/narci_himeko/scenario.arc.unpacked/himeko_ep00.script.json",
+                "textEventIndices": [
+                  18,
+                  19
+                ],
+                "codeOffsets": [
+                  1723,
+                  1738
+                ],
+                "textCodeOffset": 1738,
+                "mjoAnchor": "mjo-6ca"
+              },
+              "speaker": {
+                "ja-JP": "セツミ"
+              }
+            },
+            {
+              "eventId": "line-012",
+              "kind": "line",
+              "text": {
+                "ja-JP": "「……きっと、以前は優しかったの、”以前”は…」"
+              },
+              "nextEventId": "line-013",
+              "cues": [
+                {
+                  "cueId": "voice:line-012:c77setu_0008:1",
+                  "kind": "voice",
+                  "timing": "utterance",
+                  "mediaId": "n10.ja.voice.c77setu_0008",
+                  "resolverId": "narcissu10-manifest",
+                  "raw": {
+                    "sourceKey": "c77setu_0008",
+                    "codeOffset": 1844,
+                    "sourceStringPath": "archive/derived/scripts/narcissu10-original-ja-JP/narci_himeko/scenario.arc.unpacked/himeko_ep00.strings.json",
+                    "playbackPath": "raw/narcissu10-original-ja-JP/narci_himeko/voice.arc.unpacked/c77setu_0008.wav"
+                  }
+                }
+              ],
+              "source": {
+                "engine": "majiro",
+                "variantSourceId": "mjo/narcissu10-original-ja-jp/narci_himeko/scenario.arc.unpacked/himeko_ep00",
+                "scriptPath": "archive/derived/scripts/narcissu10-original-ja-JP/narci_himeko/scenario.arc.unpacked/himeko_ep00.script.json",
+                "textEventIndices": [
+                  20,
+                  21
+                ],
+                "codeOffsets": [
+                  1877,
+                  1892
+                ],
+                "textCodeOffset": 1892,
+                "mjoAnchor": "mjo-764"
+              },
+              "speaker": {
+                "ja-JP": "セツミ"
+              }
+            },
+            {
+              "eventId": "line-013",
+              "kind": "line",
+              "text": {
+                "ja-JP": "「…無くなるのだろう…」"
+              },
+              "nextEventId": "end-001",
+              "cues": [
+                {
+                  "cueId": "voice:line-013:c77setu_0008b:1",
+                  "kind": "voice",
+                  "timing": "utterance",
+                  "mediaId": "n10.ja.voice.c77setu_0008b",
+                  "resolverId": "narcissu10-manifest",
+                  "raw": {
+                    "sourceKey": "c77setu_0008b",
+                    "codeOffset": 1963,
+                    "sourceStringPath": "archive/derived/scripts/narcissu10-original-ja-JP/narci_himeko/scenario.arc.unpacked/himeko_ep00.strings.json",
+                    "playbackPath": "raw/narcissu10-original-ja-JP/narci_himeko/voice.arc.unpacked/c77setu_0008b.wav"
+                  }
+                }
+              ],
+              "source": {
+                "engine": "majiro",
+                "variantSourceId": "mjo/narcissu10-original-ja-jp/narci_himeko/scenario.arc.unpacked/himeko_ep00",
+                "scriptPath": "archive/derived/scripts/narcissu10-original-ja-JP/narci_himeko/scenario.arc.unpacked/himeko_ep00.script.json",
+                "textEventIndices": [
+                  22,
+                  23
+                ],
+                "codeOffsets": [
+                  1997,
+                  2012
+                ],
+                "textCodeOffset": 2012,
+                "mjoAnchor": "mjo-7dc"
+              },
+              "speaker": {
+                "ja-JP": "セツミ"
+              }
+            },
+            {
+              "eventId": "end-001",
+              "kind": "end",
+              "cues": [
+                {
+                  "cueId": "image:end-001:b3:1",
+                  "kind": "image",
+                  "timing": "scene",
+                  "mediaId": "n10.ja.image.b3",
+                  "resolverId": "narcissu10-manifest",
+                  "raw": {
+                    "sourceKey": "b3",
+                    "codeOffset": 2081,
+                    "sourceStringPath": "archive/derived/scripts/narcissu10-original-ja-JP/narci_himeko/scenario.arc.unpacked/himeko_ep00.strings.json",
+                    "playbackPath": "archive/raw/narcissu10-original-ja-JP/narci_himeko/data.arc.unpacked/b3.png"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "variantId": "narcissu10/himeko-ep00/en",
+      "locales": [
+        "en"
+      ],
+      "sections": [
+        {
+          "sectionId": "main",
+          "title": {
+            "en": "Himeko EP00"
+          },
+          "entryEventId": "line-001",
+          "events": [
+            {
+              "eventId": "line-001",
+              "kind": "line",
+              "text": {
+                "en": "「「\"... Under an early-morning sky, we were on the road back from Mount Fuji.\""
+              },
+              "nextEventId": "line-002",
+              "cues": [
+                {
+                  "cueId": "image:line-001:black:1",
+                  "kind": "image",
+                  "timing": "scene",
+                  "mediaId": "n10.en.image.black",
+                  "resolverId": "narcissu10-manifest",
+                  "raw": {
+                    "sourceKey": "black",
+                    "codeOffset": 22,
+                    "sourceStringPath": "archive/derived/scripts/narcissu10-original/narci_himeko/scenario.arc.unpacked/himeko_ep00.strings.json",
+                    "playbackPath": "archive/derived/images/narcissu10-original/narci_himeko/fastdata.arc.unpacked/black.png"
+                  }
+                },
+                {
+                  "cueId": "image:line-001:b4:1",
+                  "kind": "image",
+                  "timing": "scene",
+                  "mediaId": "n10.en.image.b4",
+                  "resolverId": "narcissu10-manifest",
+                  "raw": {
+                    "sourceKey": "b4",
+                    "codeOffset": 88,
+                    "sourceStringPath": "archive/derived/scripts/narcissu10-original/narci_himeko/scenario.arc.unpacked/himeko_ep00.strings.json",
+                    "playbackPath": "archive/raw/narcissu10-original/narci_himeko/data.arc.unpacked/b4.png"
+                  }
+                },
+                {
+                  "cueId": "sfx:line-001:car_thru_rl:1",
+                  "kind": "sfx",
+                  "timing": "utterance",
+                  "mediaId": "n10.en.sfx.car_thru_rl",
+                  "resolverId": "narcissu10-manifest",
+                  "raw": {
+                    "sourceKey": "car_thru_rl",
+                    "codeOffset": 145,
+                    "sourceStringPath": "archive/derived/scripts/narcissu10-original/narci_himeko/scenario.arc.unpacked/himeko_ep00.strings.json",
+                    "playbackPath": "raw/narcissu10-original/narci_himeko/data.arc.unpacked/car_thru_rl.wav"
+                  }
+                },
+                {
+                  "cueId": "image:line-001:sin_e04z:1",
+                  "kind": "image",
+                  "timing": "scene",
+                  "mediaId": "n10.en.image.sin_e04z",
+                  "resolverId": "narcissu10-manifest",
+                  "raw": {
+                    "sourceKey": "sin_e04z",
+                    "codeOffset": 179,
+                    "sourceStringPath": "archive/derived/scripts/narcissu10-original/narci_himeko/scenario.arc.unpacked/himeko_ep00.strings.json",
+                    "playbackPath": "archive/raw/narcissu10-original/narci_himeko/data.arc.unpacked/sin_e04z.png"
+                  }
+                },
+                {
+                  "cueId": "bgm:line-001:2na:1",
+                  "kind": "bgm",
+                  "timing": "scene",
+                  "mediaId": "n10.en.bgm.2na",
+                  "resolverId": "narcissu10-manifest",
+                  "raw": {
+                    "sourceKey": "2na",
+                    "codeOffset": 220,
+                    "sourceStringPath": "archive/derived/scripts/narcissu10-original/narci_himeko/scenario.arc.unpacked/himeko_ep00.strings.json",
+                    "playbackPath": "raw/narcissu10-original/narci_himeko/stream.arc.unpacked/2na.ogg"
+                  }
+                },
+                {
+                  "cueId": "voice:line-001:c77setu_0002:1",
+                  "kind": "voice",
+                  "timing": "utterance",
+                  "mediaId": "n10.en.voice.c77setu_0002",
+                  "resolverId": "narcissu10-manifest",
+                  "raw": {
+                    "sourceKey": "c77setu_0002",
+                    "codeOffset": 244,
+                    "sourceStringPath": "archive/derived/scripts/narcissu10-original/narci_himeko/scenario.arc.unpacked/himeko_ep00.strings.json",
+                    "playbackPath": "raw/narcissu10-original/narci_himeko/voice.arc.unpacked/c77setu_0002.wav"
+                  }
+                }
+              ],
+              "source": {
+                "engine": "majiro",
+                "variantSourceId": "mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/himeko_ep00",
+                "scriptPath": "archive/derived/scripts/narcissu10-original/narci_himeko/scenario.arc.unpacked/himeko_ep00.script.json",
+                "textEventIndices": [
+                  0,
+                  1
+                ],
+                "codeOffsets": [
+                  277,
+                  293
+                ],
+                "textCodeOffset": 293,
+                "mjoAnchor": "mjo-125"
+              },
+              "speaker": {
+                "en": "Setsumi"
+              }
+            },
+            {
+              "eventId": "line-002",
+              "kind": "line",
+              "text": {
+                "en": "「「\"Along the way, her hand on the lunch we bought at the convenience store, Himeko murmured slowly.\""
+              },
+              "nextEventId": "line-003",
+              "cues": [
+                {
+                  "cueId": "voice:line-002:c77setu_0003:1",
+                  "kind": "voice",
+                  "timing": "utterance",
+                  "mediaId": "n10.en.voice.c77setu_0003",
+                  "resolverId": "narcissu10-manifest",
+                  "raw": {
+                    "sourceKey": "c77setu_0003",
+                    "codeOffset": 395,
+                    "sourceStringPath": "archive/derived/scripts/narcissu10-original/narci_himeko/scenario.arc.unpacked/himeko_ep00.strings.json",
+                    "playbackPath": "raw/narcissu10-original/narci_himeko/voice.arc.unpacked/c77setu_0003.wav"
+                  }
+                }
+              ],
+              "source": {
+                "engine": "majiro",
+                "variantSourceId": "mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/himeko_ep00",
+                "scriptPath": "archive/derived/scripts/narcissu10-original/narci_himeko/scenario.arc.unpacked/himeko_ep00.script.json",
+                "textEventIndices": [
+                  2,
+                  3
+                ],
+                "codeOffsets": [
+                  428,
+                  444
+                ],
+                "textCodeOffset": 444,
+                "mjoAnchor": "mjo-1bc"
+              },
+              "speaker": {
+                "en": "Setsumi"
+              }
+            },
+            {
+              "eventId": "line-003",
+              "kind": "line",
+              "text": {
+                "en": "「「\"Hey, Setsumi... For now, I'm going to add one to the rules.\""
+              },
+              "nextEventId": "line-004",
+              "cues": [
+                {
+                  "cueId": "sfx:line-003:kaze4:1",
+                  "kind": "sfx",
+                  "timing": "utterance",
+                  "mediaId": "n10.en.sfx.kaze4",
+                  "resolverId": "narcissu10-manifest",
+                  "raw": {
+                    "sourceKey": "kaze4",
+                    "codeOffset": 569,
+                    "sourceStringPath": "archive/derived/scripts/narcissu10-original/narci_himeko/scenario.arc.unpacked/himeko_ep00.strings.json",
+                    "playbackPath": "raw/narcissu10-original/narci_himeko/data.arc.unpacked/kaze4.wav"
+                  }
+                },
+                {
+                  "cueId": "image:line-003:sin_e05z:1",
+                  "kind": "image",
+                  "timing": "scene",
+                  "mediaId": "n10.en.image.sin_e05z",
+                  "resolverId": "narcissu10-manifest",
+                  "raw": {
+                    "sourceKey": "sin_e05z",
+                    "codeOffset": 597,
+                    "sourceStringPath": "archive/derived/scripts/narcissu10-original/narci_himeko/scenario.arc.unpacked/himeko_ep00.strings.json",
+                    "playbackPath": "archive/raw/narcissu10-original/narci_himeko/data.arc.unpacked/sin_e05z.png"
+                  }
+                },
+                {
+                  "cueId": "voice:line-003:c77hime_0001:1",
+                  "kind": "voice",
+                  "timing": "utterance",
+                  "mediaId": "n10.en.voice.c77hime_0001",
+                  "resolverId": "narcissu10-manifest",
+                  "raw": {
+                    "sourceKey": "c77hime_0001",
+                    "codeOffset": 638,
+                    "sourceStringPath": "archive/derived/scripts/narcissu10-original/narci_himeko/scenario.arc.unpacked/himeko_ep00.strings.json",
+                    "playbackPath": "raw/narcissu10-original/narci_himeko/voice.arc.unpacked/c77hime_0001.wav"
+                  }
+                }
+              ],
+              "source": {
+                "engine": "majiro",
+                "variantSourceId": "mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/himeko_ep00",
+                "scriptPath": "archive/derived/scripts/narcissu10-original/narci_himeko/scenario.arc.unpacked/himeko_ep00.script.json",
+                "textEventIndices": [
+                  4,
+                  5
+                ],
+                "codeOffsets": [
+                  671,
+                  686
+                ],
+                "textCodeOffset": 686,
+                "mjoAnchor": "mjo-2ae"
+              },
+              "speaker": {
+                "en": "Himeko"
+              }
+            },
+            {
+              "eventId": "line-004",
+              "kind": "line",
+              "text": {
+                "en": "「「\"... Rules?\""
+              },
+              "nextEventId": "line-005",
+              "cues": [
+                {
+                  "cueId": "voice:line-004:c77setu_0004:1",
+                  "kind": "voice",
+                  "timing": "utterance",
+                  "mediaId": "n10.en.voice.c77setu_0004",
+                  "resolverId": "narcissu10-manifest",
+                  "raw": {
+                    "sourceKey": "c77setu_0004",
+                    "codeOffset": 774,
+                    "sourceStringPath": "archive/derived/scripts/narcissu10-original/narci_himeko/scenario.arc.unpacked/himeko_ep00.strings.json",
+                    "playbackPath": "raw/narcissu10-original/narci_himeko/voice.arc.unpacked/c77setu_0004.wav"
+                  }
+                }
+              ],
+              "source": {
+                "engine": "majiro",
+                "variantSourceId": "mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/himeko_ep00",
+                "scriptPath": "archive/derived/scripts/narcissu10-original/narci_himeko/scenario.arc.unpacked/himeko_ep00.script.json",
+                "textEventIndices": [
+                  6,
+                  7
+                ],
+                "codeOffsets": [
+                  807,
+                  823
+                ],
+                "textCodeOffset": 823,
+                "mjoAnchor": "mjo-337"
+              },
+              "speaker": {
+                "en": "Setsumi"
+              }
+            },
+            {
+              "eventId": "line-005",
+              "kind": "line",
+              "text": {
+                "en": "「「\"Yes, that it's okay to make friends.\""
+              },
+              "nextEventId": "line-006",
+              "cues": [
+                {
+                  "cueId": "voice:line-005:c77hime_0002:1",
+                  "kind": "voice",
+                  "timing": "utterance",
+                  "mediaId": "n10.en.voice.c77hime_0002",
+                  "resolverId": "narcissu10-manifest",
+                  "raw": {
+                    "sourceKey": "c77hime_0002",
+                    "codeOffset": 862,
+                    "sourceStringPath": "archive/derived/scripts/narcissu10-original/narci_himeko/scenario.arc.unpacked/himeko_ep00.strings.json",
+                    "playbackPath": "raw/narcissu10-original/narci_himeko/voice.arc.unpacked/c77hime_0002.wav"
+                  }
+                }
+              ],
+              "source": {
+                "engine": "majiro",
+                "variantSourceId": "mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/himeko_ep00",
+                "scriptPath": "archive/derived/scripts/narcissu10-original/narci_himeko/scenario.arc.unpacked/himeko_ep00.script.json",
+                "textEventIndices": [
+                  8,
+                  9
+                ],
+                "codeOffsets": [
+                  895,
+                  910
+                ],
+                "textCodeOffset": 910,
+                "mjoAnchor": "mjo-38e"
+              },
+              "speaker": {
+                "en": "Himeko"
+              }
+            },
+            {
+              "eventId": "line-006",
+              "kind": "line",
+              "text": {
+                "en": "The rolling sound of bells.\nStopping the car in front of the church, Himeko-san dropped me off."
+              },
+              "nextEventId": "line-007",
+              "cues": [
+                {
+                  "cueId": "sfx:line-006:kane02d:1",
+                  "kind": "sfx",
+                  "timing": "utterance",
+                  "mediaId": "n10.en.sfx.kane02d",
+                  "resolverId": "narcissu10-manifest",
+                  "raw": {
+                    "sourceKey": "kane02d",
+                    "codeOffset": 975,
+                    "sourceStringPath": "archive/derived/scripts/narcissu10-original/narci_himeko/scenario.arc.unpacked/himeko_ep00.strings.json",
+                    "playbackPath": "raw/narcissu10-original/narci_himeko/data.arc.unpacked/kane02d.wav"
+                  }
+                },
+                {
+                  "cueId": "image:line-006:sin_e06bz:1",
+                  "kind": "image",
+                  "timing": "scene",
+                  "mediaId": "n10.en.image.sin_e06bz",
+                  "resolverId": "narcissu10-manifest",
+                  "raw": {
+                    "sourceKey": "sin_e06bz",
+                    "codeOffset": 1005,
+                    "sourceStringPath": "archive/derived/scripts/narcissu10-original/narci_himeko/scenario.arc.unpacked/himeko_ep00.strings.json",
+                    "playbackPath": "archive/raw/narcissu10-original/narci_himeko/data.arc.unpacked/sin_e06bz.png"
+                  }
+                },
+                {
+                  "cueId": "image:line-006:sin_e06z:1",
+                  "kind": "image",
+                  "timing": "scene",
+                  "mediaId": "n10.en.image.sin_e06z",
+                  "resolverId": "narcissu10-manifest",
+                  "raw": {
+                    "sourceKey": "sin_e06z",
+                    "codeOffset": 1041,
+                    "sourceStringPath": "archive/derived/scripts/narcissu10-original/narci_himeko/scenario.arc.unpacked/himeko_ep00.strings.json",
+                    "playbackPath": "archive/raw/narcissu10-original/narci_himeko/data.arc.unpacked/sin_e06z.png"
+                  }
+                }
+              ],
+              "source": {
+                "engine": "majiro",
+                "variantSourceId": "mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/himeko_ep00",
+                "scriptPath": "archive/derived/scripts/narcissu10-original/narci_himeko/scenario.arc.unpacked/himeko_ep00.script.json",
+                "textEventIndices": [
+                  10
+                ],
+                "codeOffsets": [
+                  1082
+                ],
+                "textCodeOffset": 1082,
+                "mjoAnchor": "mjo-43a"
+              }
+            },
+            {
+              "eventId": "line-007",
+              "kind": "line",
+              "text": {
+                "en": "「「\"Well, let's say goodbye here.\""
+              },
+              "nextEventId": "line-008",
+              "cues": [
+                {
+                  "cueId": "sfx:line-007:car_close:1",
+                  "kind": "sfx",
+                  "timing": "utterance",
+                  "mediaId": "n10.en.sfx.car_close",
+                  "resolverId": "narcissu10-manifest",
+                  "raw": {
+                    "sourceKey": "car_close",
+                    "codeOffset": 1216,
+                    "sourceStringPath": "archive/derived/scripts/narcissu10-original/narci_himeko/scenario.arc.unpacked/himeko_ep00.strings.json",
+                    "playbackPath": "raw/narcissu10-original/narci_himeko/data.arc.unpacked/car_close.wav"
+                  }
+                },
+                {
+                  "cueId": "voice:line-007:hime1_0559:1",
+                  "kind": "voice",
+                  "timing": "utterance",
+                  "mediaId": "n10.en.voice.hime1_0559",
+                  "resolverId": "narcissu10-manifest",
+                  "raw": {
+                    "sourceKey": "hime1_0559",
+                    "codeOffset": 1242,
+                    "sourceStringPath": "archive/derived/scripts/narcissu10-original/narci_himeko/scenario.arc.unpacked/himeko_ep00.strings.json",
+                    "playbackPath": "raw/narcissu10-original/narci_himeko/voice.arc.unpacked/hime1_0559.ogg"
+                  }
+                }
+              ],
+              "source": {
+                "engine": "majiro",
+                "variantSourceId": "mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/himeko_ep00",
+                "scriptPath": "archive/derived/scripts/narcissu10-original/narci_himeko/scenario.arc.unpacked/himeko_ep00.script.json",
+                "textEventIndices": [
+                  11,
+                  12
+                ],
+                "codeOffsets": [
+                  1273,
+                  1288
+                ],
+                "textCodeOffset": 1288,
+                "mjoAnchor": "mjo-508"
+              },
+              "speaker": {
+                "en": "Himeko"
+              }
+            },
+            {
+              "eventId": "line-008",
+              "kind": "line",
+              "text": {
+                "en": "And then..."
+              },
+              "nextEventId": "line-009",
+              "source": {
+                "engine": "majiro",
+                "variantSourceId": "mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/himeko_ep00",
+                "scriptPath": "archive/derived/scripts/narcissu10-original/narci_himeko/scenario.arc.unpacked/himeko_ep00.script.json",
+                "textEventIndices": [
+                  13
+                ],
+                "codeOffsets": [
+                  1346
+                ],
+                "textCodeOffset": 1346,
+                "mjoAnchor": "mjo-542"
+              }
+            },
+            {
+              "eventId": "line-009",
+              "kind": "line",
+              "text": {
+                "en": "「「\"Farewell... Professor Croquette...\""
+              },
+              "nextEventId": "line-010",
+              "cues": [
+                {
+                  "cueId": "voice:line-009:hime1_0580zz:1",
+                  "kind": "voice",
+                  "timing": "utterance",
+                  "mediaId": "n10.en.voice.hime1_0580zz",
+                  "resolverId": "narcissu10-manifest",
+                  "raw": {
+                    "sourceKey": "hime1_0580zz",
+                    "codeOffset": 1380,
+                    "sourceStringPath": "archive/derived/scripts/narcissu10-original/narci_himeko/scenario.arc.unpacked/himeko_ep00.strings.json",
+                    "playbackPath": "raw/narcissu10-original/narci_himeko/voice.arc.unpacked/hime1_0580zz.ogg"
+                  }
+                }
+              ],
+              "source": {
+                "engine": "majiro",
+                "variantSourceId": "mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/himeko_ep00",
+                "scriptPath": "archive/derived/scripts/narcissu10-original/narci_himeko/scenario.arc.unpacked/himeko_ep00.script.json",
+                "textEventIndices": [
+                  14,
+                  15
+                ],
+                "codeOffsets": [
+                  1413,
+                  1428
+                ],
+                "textCodeOffset": 1428,
+                "mjoAnchor": "mjo-594"
+              },
+              "speaker": {
+                "en": "Himeko"
+              }
+            },
+            {
+              "eventId": "line-010",
+              "kind": "line",
+              "text": {
+                "en": "「「\"With those last words, she turned her back to me and began walking to the church.\""
+              },
+              "nextEventId": "line-011",
+              "cues": [
+                {
+                  "cueId": "image:line-010:w3:1",
+                  "kind": "image",
+                  "timing": "scene",
+                  "mediaId": "n10.en.image.w3",
+                  "resolverId": "narcissu10-manifest",
+                  "raw": {
+                    "sourceKey": "w3",
+                    "codeOffset": 1497,
+                    "sourceStringPath": "archive/derived/scripts/narcissu10-original/narci_himeko/scenario.arc.unpacked/himeko_ep00.strings.json",
+                    "playbackPath": "archive/raw/narcissu10-original/narci_himeko/data.arc.unpacked/w3.png"
+                  }
+                },
+                {
+                  "cueId": "sfx:line-010:z42r:1",
+                  "kind": "sfx",
+                  "timing": "utterance",
+                  "mediaId": "n10.en.sfx.z42r",
+                  "resolverId": "narcissu10-manifest",
+                  "raw": {
+                    "sourceKey": "z42r",
+                    "codeOffset": 1532,
+                    "sourceStringPath": "archive/derived/scripts/narcissu10-original/narci_himeko/scenario.arc.unpacked/himeko_ep00.strings.json",
+                    "playbackPath": "raw/narcissu10-original/narci_himeko/data.arc.unpacked/z42r.wav"
+                  }
+                },
+                {
+                  "cueId": "image:line-010:sin_e07z:1",
+                  "kind": "image",
+                  "timing": "scene",
+                  "mediaId": "n10.en.image.sin_e07z",
+                  "resolverId": "narcissu10-manifest",
+                  "raw": {
+                    "sourceKey": "sin_e07z",
+                    "codeOffset": 1559,
+                    "sourceStringPath": "archive/derived/scripts/narcissu10-original/narci_himeko/scenario.arc.unpacked/himeko_ep00.strings.json",
+                    "playbackPath": "archive/raw/narcissu10-original/narci_himeko/data.arc.unpacked/sin_e07z.png"
+                  }
+                },
+                {
+                  "cueId": "voice:line-010:c77setu_0006:1",
+                  "kind": "voice",
+                  "timing": "utterance",
+                  "mediaId": "n10.en.voice.c77setu_0006",
+                  "resolverId": "narcissu10-manifest",
+                  "raw": {
+                    "sourceKey": "c77setu_0006",
+                    "codeOffset": 1600,
+                    "sourceStringPath": "archive/derived/scripts/narcissu10-original/narci_himeko/scenario.arc.unpacked/himeko_ep00.strings.json",
+                    "playbackPath": "raw/narcissu10-original/narci_himeko/voice.arc.unpacked/c77setu_0006.wav"
+                  }
+                }
+              ],
+              "source": {
+                "engine": "majiro",
+                "variantSourceId": "mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/himeko_ep00",
+                "scriptPath": "archive/derived/scripts/narcissu10-original/narci_himeko/scenario.arc.unpacked/himeko_ep00.script.json",
+                "textEventIndices": [
+                  16,
+                  17
+                ],
+                "codeOffsets": [
+                  1633,
+                  1649
+                ],
+                "textCodeOffset": 1649,
+                "mjoAnchor": "mjo-671"
+              },
+              "speaker": {
+                "en": "Setsumi"
+              }
+            },
+            {
+              "eventId": "line-011",
+              "kind": "line",
+              "text": {
+                "en": "「「\"She was most likely going to meet either Chihiro-san or Yuka-san inside.\""
+              },
+              "nextEventId": "line-012",
+              "cues": [
+                {
+                  "cueId": "voice:line-011:c77setu_0007:1",
+                  "kind": "voice",
+                  "timing": "utterance",
+                  "mediaId": "n10.en.voice.c77setu_0007",
+                  "resolverId": "narcissu10-manifest",
+                  "raw": {
+                    "sourceKey": "c77setu_0007",
+                    "codeOffset": 1759,
+                    "sourceStringPath": "archive/derived/scripts/narcissu10-original/narci_himeko/scenario.arc.unpacked/himeko_ep00.strings.json",
+                    "playbackPath": "raw/narcissu10-original/narci_himeko/voice.arc.unpacked/c77setu_0007.wav"
+                  }
+                }
+              ],
+              "source": {
+                "engine": "majiro",
+                "variantSourceId": "mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/himeko_ep00",
+                "scriptPath": "archive/derived/scripts/narcissu10-original/narci_himeko/scenario.arc.unpacked/himeko_ep00.script.json",
+                "textEventIndices": [
+                  18,
+                  19
+                ],
+                "codeOffsets": [
+                  1792,
+                  1808
+                ],
+                "textCodeOffset": 1808,
+                "mjoAnchor": "mjo-710"
+              },
+              "speaker": {
+                "en": "Setsumi"
+              }
+            },
+            {
+              "eventId": "line-012",
+              "kind": "line",
+              "text": {
+                "en": "「「\"... I'm sure that the 'once' in 'once kind' was...\""
+              },
+              "nextEventId": "line-013",
+              "cues": [
+                {
+                  "cueId": "voice:line-012:c77setu_0008:1",
+                  "kind": "voice",
+                  "timing": "utterance",
+                  "mediaId": "n10.en.voice.c77setu_0008",
+                  "resolverId": "narcissu10-manifest",
+                  "raw": {
+                    "sourceKey": "c77setu_0008",
+                    "codeOffset": 1909,
+                    "sourceStringPath": "archive/derived/scripts/narcissu10-original/narci_himeko/scenario.arc.unpacked/himeko_ep00.strings.json",
+                    "playbackPath": "raw/narcissu10-original/narci_himeko/voice.arc.unpacked/c77setu_0008.wav"
+                  }
+                }
+              ],
+              "source": {
+                "engine": "majiro",
+                "variantSourceId": "mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/himeko_ep00",
+                "scriptPath": "archive/derived/scripts/narcissu10-original/narci_himeko/scenario.arc.unpacked/himeko_ep00.script.json",
+                "textEventIndices": [
+                  20,
+                  21
+                ],
+                "codeOffsets": [
+                  1942,
+                  1958
+                ],
+                "textCodeOffset": 1958,
+                "mjoAnchor": "mjo-7a6"
+              },
+              "speaker": {
+                "en": "Setsumi"
+              }
+            },
+            {
+              "eventId": "line-013",
+              "kind": "line",
+              "text": {
+                "en": "「「\"... going away...\""
+              },
+              "nextEventId": "end-001",
+              "cues": [
+                {
+                  "cueId": "voice:line-013:c77setu_0008b:1",
+                  "kind": "voice",
+                  "timing": "utterance",
+                  "mediaId": "n10.en.voice.c77setu_0008b",
+                  "resolverId": "narcissu10-manifest",
+                  "raw": {
+                    "sourceKey": "c77setu_0008b",
+                    "codeOffset": 2037,
+                    "sourceStringPath": "archive/derived/scripts/narcissu10-original/narci_himeko/scenario.arc.unpacked/himeko_ep00.strings.json",
+                    "playbackPath": "raw/narcissu10-original/narci_himeko/voice.arc.unpacked/c77setu_0008b.wav"
+                  }
+                }
+              ],
+              "source": {
+                "engine": "majiro",
+                "variantSourceId": "mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/himeko_ep00",
+                "scriptPath": "archive/derived/scripts/narcissu10-original/narci_himeko/scenario.arc.unpacked/himeko_ep00.script.json",
+                "textEventIndices": [
+                  22,
+                  23
+                ],
+                "codeOffsets": [
+                  2071,
+                  2087
+                ],
+                "textCodeOffset": 2087,
+                "mjoAnchor": "mjo-827"
+              },
+              "speaker": {
+                "en": "Setsumi"
+              }
+            },
+            {
+              "eventId": "end-001",
+              "kind": "end",
+              "cues": [
+                {
+                  "cueId": "image:end-001:b3:1",
+                  "kind": "image",
+                  "timing": "scene",
+                  "mediaId": "n10.en.image.b3",
+                  "resolverId": "narcissu10-manifest",
+                  "raw": {
+                    "sourceKey": "b3",
+                    "codeOffset": 2155,
+                    "sourceStringPath": "archive/derived/scripts/narcissu10-original/narci_himeko/scenario.arc.unpacked/himeko_ep00.strings.json",
+                    "playbackPath": "archive/raw/narcissu10-original/narci_himeko/data.arc.unpacked/b3.png"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

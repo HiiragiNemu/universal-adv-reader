@@ -34,7 +34,15 @@ packages/bridge
 
 packages/adapters
   one adapter per declared source format
+
+packages/ui-shell
+  classic inherited shell -> stable/default
+  next research shell -> experimental/manual acceptance
 ```
+
+Both UI shells implement `ui-shell/1.0.0` and consume the same eight semantic slots: `shell`, `navigation`, `catalog`, `reader`, `sidebar-tree`, `floating-tools`, `pager`, and `media`. `ReaderSession`, AdvIR, media, and bridge are read-only shell inputs; shells may only dispatch append-only `navigate`, `reader`, `media`, and `bridge` commands. `classic` remains the default. `next` targets a React contract-first runtime and can be selected with `?ui=next` for comparison, but it is not persisted and promotion is an explicit human-acceptance operation rather than an automatic migration.
+
+The Next contract defines compact `0-639`, mobile `640-767`, desktop `768-1279`, wide `>=1280`, and short-viewport `height<=511` ranges. Its token namespaces are `primitive`, `semantic`, `state`, `texture`, and `motion`. Accepted inherited theme recipes are `yellow`, `eye-care`, and `white`; `night` and `cold-frost` remain pending.
 
 ## Stable identity
 
@@ -83,7 +91,13 @@ This keeps the transcript compact while preserving an entry point for every stor
 5. Produce stable event IDs before media binding.
 6. Report unsupported features explicitly.
 
-The initial `adv-ir-v1` adapter accepts already-normalized fixtures. Majiro and IKURA adapters are intentionally deferred until the Reader and bridge baseline passes.
+The `adv-ir-v1` adapter accepts already-normalized fixtures. `majiro-production-v1` accepts only normalized AdvIR carrying exact `vn-mjo-reader-script/v1` provenance. It is fed by the read-only Narcissu importer and does not scan or mutate the resource repository. IKURA remains a separate future adapter boundary.
+
+## Corpus production boundary
+
+`tools/import-narcissu10.mjs` reads the source story catalog, extracted Majiro scripts, exact translation alignment, playback manifest, and media view manifest. It writes only compact AdvIR, media-route, and import-report JSON into this repository. Browser media URLs stay under `/corpus/archive/...`; the archive bytes remain owned by `narcissu-kana-research`.
+
+Translation producers remain separate as well. This repository consumes versioned normalized output and does not become the authoring workspace for Magireco translations.
 
 ## Bridge roles
 

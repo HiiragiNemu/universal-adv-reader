@@ -12,6 +12,7 @@
     "adapterId": { "$ref": "#/$defs/id" },
     "revision": { "$ref": "#/$defs/id" },
     "title": { "type": "string", "minLength": 1, "maxLength": 512 },
+    "provenance": { "type": "object" },
     "variants": {
       "type": "array",
       "minItems": 1,

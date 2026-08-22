@@ -1,5 +1,5 @@
 import { spawnSync } from 'node:child_process';
-import { access, readFile, readdir } from 'node:fs/promises';
+import { access, open, readFile, readdir } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 
@@ -13,6 +13,10 @@ import { voiceRouteSummary, voiceSlotForEvent } from '../packages/core/src/reade
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const webRoot = path.join(root, 'apps', 'web');
+const corpusRoot = path.resolve(
+  process.env.ADV_CORPUS_REPOSITORY
+    ?? path.resolve(root, '..', 'narcissu-kana-research'),
+);
 
 const walk = async (directory) => {
   const entries = await readdir(directory, { withFileTypes: true });
@@ -28,6 +32,29 @@ const walk = async (directory) => {
 
 const readJson = async (filename) => JSON.parse(await readFile(filename, 'utf8'));
 const fromWebUrl = (value) => fileURLToPath(new URL(value, pathToFileURL(`${webRoot}${path.sep}`)));
+const fromMediaUrl = (value, manifestFilename) => {
+  if (value.startsWith('/corpus/')) {
+    const candidate = path.resolve(corpusRoot, value.slice('/corpus/'.length));
+    const prefix = `${corpusRoot}${path.sep}`;
+    if (candidate !== corpusRoot && !candidate.startsWith(prefix)) {
+      throw new Error(`corpus media escapes its mount: ${value}`);
+    }
+    return candidate;
+  }
+  const url = new URL(value, pathToFileURL(manifestFilename));
+  if (url.protocol !== 'file:') throw new Error(`fixture media URL is not local: ${value}`);
+  return fileURLToPath(url);
+};
+const readPrefix = async (filename, length = 4096) => {
+  const handle = await open(filename, 'r');
+  try {
+    const buffer = Buffer.alloc(length);
+    const { bytesRead } = await handle.read(buffer, 0, length, 0);
+    return buffer.subarray(0, bytesRead);
+  } finally {
+    await handle.close();
+  }
+};
 
 const files = await walk(root);
 const javascriptFiles = files.filter((filename) => ['.js', '.mjs'].includes(path.extname(filename)));
@@ -49,6 +76,7 @@ let eventCount = 0;
 let lineCount = 0;
 let voiceSlotCount = 0;
 let mediaEntryCount = 0;
+const verifiedMediaFiles = new Set();
 
 for (const corpus of catalog.corpora) {
   for (const entry of corpus.stories) {
@@ -76,22 +104,30 @@ for (const corpus of catalog.corpora) {
       throw new Error(`all-story voice expansion invariant failed for ${entry.canonicalStoryId}`);
     }
 
-    const manifestBase = pathToFileURL(mediaFilename);
     for (const mediaEntry of media.entries) {
-      const mediaUrl = new URL(mediaEntry.url, manifestBase);
-      if (mediaUrl.protocol !== 'file:') throw new Error(`fixture media URL is not local: ${mediaEntry.url}`);
-      const filename = fileURLToPath(mediaUrl);
-      const header = await readFile(filename);
+      const filename = fromMediaUrl(mediaEntry.url, mediaFilename);
+      if (verifiedMediaFiles.has(filename)) continue;
+      await access(filename);
+      const header = await readPrefix(filename);
       if (mediaEntry.mimeType === 'audio/wav') {
         if (header.subarray(0, 4).toString('ascii') !== 'RIFF'
           || header.subarray(8, 12).toString('ascii') !== 'WAVE') {
           throw new Error(`invalid WAV fixture: ${path.relative(root, filename)}`);
         }
       }
+      if (mediaEntry.mimeType === 'audio/ogg'
+        && header.subarray(0, 4).toString('ascii') !== 'OggS') {
+        throw new Error(`invalid Ogg fixture: ${path.relative(root, filename)}`);
+      }
+      if (mediaEntry.mimeType === 'image/png'
+        && !header.subarray(0, 8).equals(Buffer.from([137, 80, 78, 71, 13, 10, 26, 10]))) {
+        throw new Error(`invalid PNG fixture: ${path.relative(root, filename)}`);
+      }
       if (mediaEntry.mimeType === 'image/svg+xml'
         && !header.toString('utf8', 0, Math.min(header.length, 4096)).includes('<svg')) {
         throw new Error(`invalid SVG fixture: ${path.relative(root, filename)}`);
       }
+      verifiedMediaFiles.add(filename);
     }
 
     storyCount += 1;
@@ -104,6 +140,16 @@ for (const corpus of catalog.corpora) {
 }
 
 const appManifest = await readJson(path.join(webRoot, '.well-known', 'adv-app.json'));
+const uiShellManifest = await readJson(path.join(webRoot, '.well-known', 'ui-shells.json'));
+if (uiShellManifest.contract !== 'ui-shell/1.0.0'
+  || uiShellManifest.defaultShellId !== 'classic'
+  || uiShellManifest.migration?.promotionPolicy !== 'manual-acceptance-only'
+  || uiShellManifest.migration?.persistent !== false
+  || uiShellManifest.migration?.autoPromotion !== false
+  || uiShellManifest.slots?.length !== 8
+  || uiShellManifest.shells.find((shell) => shell.id === 'next')?.requiresManualAcceptance !== true) {
+  throw new Error('dual UI shell migration contract is invalid');
+}
 if (appManifest.schema !== 'adv-app-manifest/v1'
   || appManifest.protocol?.name !== 'adv-app-bridge'
   || appManifest.protocol?.version !== 1) {
@@ -127,4 +173,5 @@ console.log(JSON.stringify({
   voiceSlotCount,
   allLineEventsHaveExpandableVoiceSlots: voiceSlotCount === lineCount,
   mediaEntryCount,
+  verifiedMediaFiles: verifiedMediaFiles.size,
 }, null, 2));
