@@ -1,0 +1,189 @@
+{
+  "schema": "adv-story/v1",
+  "corpusId": "architecture-demo",
+  "canonicalStoryId": "demo/arrival",
+  "adapterId": "adv-ir-v1",
+  "revision": "demo-story-r1",
+  "title": "到站之前",
+  "variants": [
+    {
+      "variantId": "demo/default",
+      "locales": ["zh-CN", "ja-JP"],
+      "sections": [
+        {
+          "sectionId": "prologue",
+          "title": {
+            "zh-CN": "序章：月台",
+            "ja-JP": "序章：ホーム"
+          },
+          "entryEventId": "line-001",
+          "events": [
+            {
+              "eventId": "line-001",
+              "kind": "line",
+              "speaker": {
+                "zh-CN": "旅人",
+                "ja-JP": "旅人"
+              },
+              "text": {
+                "zh-CN": "列车还没有进站，远处先传来了短促的提示音。",
+                "ja-JP": "列車が来る前に、遠くから短い合図が聞こえた。"
+              },
+              "nextEventId": "line-002",
+              "cues": [
+                {
+                  "cueId": "image:demo-platform",
+                  "kind": "image",
+                  "timing": "scene",
+                  "mediaId": "demo.bg.platform",
+                  "resolverId": "demo-manifest"
+                },
+                {
+                  "cueId": "voice:demo-001",
+                  "kind": "voice",
+                  "timing": "utterance",
+                  "mediaId": "demo.voice.001",
+                  "resolverId": "demo-manifest"
+                }
+              ],
+              "source": {
+                "fixture": true,
+                "commandIndex": 1
+              }
+            },
+            {
+              "eventId": "line-002",
+              "kind": "line",
+              "speaker": {
+                "zh-CN": "同行者",
+                "ja-JP": "同行者"
+              },
+              "text": {
+                "zh-CN": "这句话保留了原始语音键，但媒体映射故意留空。",
+                "ja-JP": "この台詞は音声キーを残し、媒体の対応だけを未解決にしてある。"
+              },
+              "nextEventId": "choice-001",
+              "cues": [
+                {
+                  "cueId": "voice:demo-missing",
+                  "kind": "voice",
+                  "timing": "utterance",
+                  "mediaId": "demo.voice.missing",
+                  "resolverId": "demo-manifest",
+                  "raw": {
+                    "sourceKey": "DEMO_MISSING_0001"
+                  }
+                }
+              ],
+              "source": {
+                "fixture": true,
+                "commandIndex": 2
+              }
+            },
+            {
+              "eventId": "choice-001",
+              "kind": "choice",
+              "choices": [
+                {
+                  "choiceId": "stay",
+                  "label": {
+                    "zh-CN": "留在候车室",
+                    "ja-JP": "待合室に残る"
+                  },
+                  "nextEventId": "branch-stay"
+                },
+                {
+                  "choiceId": "platform",
+                  "label": {
+                    "zh-CN": "走向月台",
+                    "ja-JP": "ホームへ向かう"
+                  },
+                  "nextEventId": "branch-platform"
+                }
+              ]
+            },
+            {
+              "eventId": "branch-stay",
+              "kind": "line",
+              "speaker": {
+                "zh-CN": "旅人",
+                "ja-JP": "旅人"
+              },
+              "text": {
+                "zh-CN": "我把行李放回脚边，决定再等一会儿。",
+                "ja-JP": "荷物を足元に戻し、もう少し待つことにした。"
+              },
+              "nextEventId": "closing"
+            },
+            {
+              "eventId": "branch-platform",
+              "kind": "line",
+              "speaker": {
+                "zh-CN": "旅人",
+                "ja-JP": "旅人"
+              },
+              "text": {
+                "zh-CN": "我沿着白线慢慢走向空旷的月台。",
+                "ja-JP": "白線に沿って、静かなホームへ歩いていった。"
+              },
+              "nextEventId": "closing",
+              "cues": [
+                {
+                  "cueId": "sfx:demo-step",
+                  "kind": "sfx",
+                  "timing": "utterance",
+                  "mediaId": "demo.sfx.step",
+                  "resolverId": "demo-manifest"
+                }
+              ]
+            },
+            {
+              "eventId": "closing",
+              "kind": "line",
+              "speaker": {
+                "zh-CN": "旁白",
+                "ja-JP": "地の文"
+              },
+              "text": {
+                "zh-CN": "两条路线最终都回到了同一班列车。",
+                "ja-JP": "どちらの道も、最後には同じ列車へ戻っていく。"
+              },
+              "nextEventId": "end-001"
+            },
+            {
+              "eventId": "end-001",
+              "kind": "end"
+            }
+          ]
+        },
+        {
+          "sectionId": "epilogue",
+          "title": {
+            "zh-CN": "尾声：可接入基线",
+            "ja-JP": "終章：接続可能な基盤"
+          },
+          "entryEventId": "line-101",
+          "events": [
+            {
+              "eventId": "line-101",
+              "kind": "line",
+              "speaker": {
+                "zh-CN": "系统",
+                "ja-JP": "システム"
+              },
+              "text": {
+                "zh-CN": "即使本节没有任何语音 cue，展开语音路由后仍会显示待接入槽位。",
+                "ja-JP": "音声 cue が一つもなくても、音声ルートを開けば接続待ちの枠が表示される。"
+              },
+              "nextEventId": "end-101"
+            },
+            {
+              "eventId": "end-101",
+              "kind": "end"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

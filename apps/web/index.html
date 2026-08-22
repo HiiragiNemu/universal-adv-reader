@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="dark" />
+    <meta name="theme-color" content="#07111f" />
+    <title>Universal ADV Reader</title>
+    <link rel="icon" href="./media/platform.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="app-shell" id="app-shell">
+      <header class="topbar">
+        <button class="icon-button mobile-only" id="sidebar-toggle" type="button" aria-label="打开剧情目录" aria-expanded="false">☰</button>
+        <a class="brand" href="./" aria-label="Universal ADV Reader 首页">
+          <span class="brand-mark" aria-hidden="true">A</span>
+          <span>
+            <strong>Universal ADV Reader</strong>
+            <small>作品无关 · 严格适配 · 稳定路由</small>
+          </span>
+        </a>
+        <div class="topbar-status" id="app-status" role="status">正在读取目录…</div>
+      </header>
+
+      <aside class="sidebar" id="sidebar" aria-label="剧情目录">
+        <div class="sidebar-head">
+          <label class="search-box">
+            <span aria-hidden="true">⌕</span>
+            <input id="story-search" type="search" placeholder="搜索作品、剧情或章节" autocomplete="off" />
+          </label>
+          <p>资源与 Reader 分仓。这里只读取准备好的 manifest。</p>
+        </div>
+        <nav id="catalog-tree" class="catalog-tree" aria-label="作品与章节"></nav>
+        <div class="sidebar-foot">
+          <span class="dot dot-ready"></span>
+          <span id="catalog-revision">目录修订：—</span>
+        </div>
+      </aside>
+
+      <button class="sidebar-scrim mobile-only" id="sidebar-scrim" type="button" aria-label="关闭剧情目录"></button>
+
+      <main class="reader" id="reader" tabindex="-1">
+        <section class="stage" aria-label="剧情媒体舞台">
+          <img id="stage-image" alt="" hidden />
+          <div class="stage-shade"></div>
+          <div class="stage-content">
+            <div class="stage-kicker">SCRIPT → MEDIA ROUTE</div>
+            <h1 id="story-title">正在载入…</h1>
+            <p id="section-title">—</p>
+            <div class="stage-badges" id="stage-badges"></div>
+          </div>
+          <div class="stage-route" id="stage-route">尚未定位事件</div>
+        </section>
+
+        <section class="reader-toolbar" aria-label="阅读工具">
+          <div class="segmented" role="group" aria-label="语言显示">
+            <button type="button" data-locale-mode="primary">单语</button>
+            <button type="button" data-locale-mode="parallel">对照</button>
+          </div>
+          <label class="select-label">
+            版本
+            <select id="variant-select"></select>
+          </label>
+          <label class="select-label">
+            主语言
+            <select id="primary-locale"></select>
+          </label>
+          <label class="select-label" id="secondary-locale-wrap">
+            对照语言
+            <select id="secondary-locale"></select>
+          </label>
+          <button class="voice-master" id="voice-toggle" type="button" aria-expanded="false" aria-controls="voice-panel">
+            <span aria-hidden="true">◉</span>
+            <span>语音路由</span>
+            <strong id="voice-summary">0 / 0</strong>
+          </button>
+          <button class="quiet-button" id="copy-link" type="button">复制当前位置</button>
+        </section>
+
+        <section class="voice-panel" id="voice-panel" hidden>
+          <div>
+            <span class="eyebrow">VOICE ROUTING</span>
+            <h2>所有剧情均可展开</h2>
+            <p>已解析 cue 可播放；未解析 cue 与没有 cue 的文本仍保留接入槽位。</p>
+          </div>
+          <label class="select-label">
+            展开后显示
+            <select id="voice-slot-mode">
+              <option value="all">全部文本槽位</option>
+              <option value="declared">仅已声明 cue</option>
+            </select>
+          </label>
+          <div class="voice-metrics" id="voice-metrics"></div>
+        </section>
+
+        <div class="compatibility-banner" id="compatibility-banner" hidden role="status"></div>
+
+        <section class="transcript-head">
+          <div>
+            <span class="eyebrow">READING TRACK</span>
+            <h2 id="transcript-title">剧情正文</h2>
+          </div>
+          <span id="event-progress">0 / 0</span>
+        </section>
+
+        <section class="event-list" id="event-list" aria-live="polite"></section>
+
+        <nav class="route-controls" aria-label="剧情路由控制">
+          <button id="previous-event" type="button">← 上一个访问点</button>
+          <span id="current-event-label">—</span>
+          <button id="next-event" type="button">下一事件 →</button>
+        </nav>
+      </main>
+    </div>
+
+    <div class="toast" id="toast" role="status" hidden></div>
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>

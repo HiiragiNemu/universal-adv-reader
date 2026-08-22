@@ -1,0 +1,91 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/contracts/adv-story.schema.json",
+  "title": "Universal ADV story document",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema", "corpusId", "canonicalStoryId", "adapterId", "revision", "title", "variants"],
+  "properties": {
+    "schema": { "const": "adv-story/v1" },
+    "corpusId": { "$ref": "#/$defs/id" },
+    "canonicalStoryId": { "$ref": "#/$defs/pathId" },
+    "adapterId": { "$ref": "#/$defs/id" },
+    "revision": { "$ref": "#/$defs/id" },
+    "title": { "type": "string", "minLength": 1, "maxLength": 512 },
+    "variants": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/$defs/variant" }
+    }
+  },
+  "$defs": {
+    "id": { "type": "string", "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,191}$" },
+    "pathId": { "type": "string", "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:/-]{0,255}$" },
+    "localized": {
+      "type": "object",
+      "minProperties": 1,
+      "additionalProperties": { "type": "string", "maxLength": 200000 }
+    },
+    "cue": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["cueId", "kind", "timing"],
+      "properties": {
+        "cueId": { "$ref": "#/$defs/pathId" },
+        "kind": { "enum": ["voice", "bgm", "sfx", "image", "video"] },
+        "timing": { "enum": ["utterance", "scene"] },
+        "mediaId": { "$ref": "#/$defs/pathId" },
+        "resolverId": { "$ref": "#/$defs/id" },
+        "stopEventId": { "$ref": "#/$defs/id" },
+        "raw": { "type": "object" }
+      }
+    },
+    "choice": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["choiceId", "label", "nextEventId"],
+      "properties": {
+        "choiceId": { "$ref": "#/$defs/id" },
+        "label": { "$ref": "#/$defs/localized" },
+        "nextEventId": { "$ref": "#/$defs/id" },
+        "cues": { "type": "array", "items": { "$ref": "#/$defs/cue" } }
+      }
+    },
+    "event": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["eventId", "kind"],
+      "properties": {
+        "eventId": { "$ref": "#/$defs/id" },
+        "kind": { "enum": ["line", "choice", "action", "end"] },
+        "speaker": { "$ref": "#/$defs/localized" },
+        "text": { "$ref": "#/$defs/localized" },
+        "nextEventId": { "$ref": "#/$defs/id" },
+        "choices": { "type": "array", "items": { "$ref": "#/$defs/choice" } },
+        "cues": { "type": "array", "items": { "$ref": "#/$defs/cue" } },
+        "source": { "type": "object" }
+      }
+    },
+    "section": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["sectionId", "title", "entryEventId", "events"],
+      "properties": {
+        "sectionId": { "$ref": "#/$defs/id" },
+        "title": { "$ref": "#/$defs/localized" },
+        "entryEventId": { "$ref": "#/$defs/id" },
+        "events": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/event" } }
+      }
+    },
+    "variant": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["variantId", "locales", "sections"],
+      "properties": {
+        "variantId": { "$ref": "#/$defs/pathId" },
+        "locales": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "type": "string", "minLength": 2, "maxLength": 35 } },
+        "sections": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/section" } }
+      }
+    }
+  }
+}

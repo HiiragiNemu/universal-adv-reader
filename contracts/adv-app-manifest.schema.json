@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/contracts/adv-app-manifest.schema.json",
+  "title": "Universal ADV app manifest",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema", "appId", "roles", "protocol", "capabilities", "deepLinks", "embed", "voiceControls"],
+  "properties": {
+    "schema": { "const": "adv-app-manifest/v1" },
+    "appId": { "type": "string", "pattern": "^[a-z][a-z0-9-]+$" },
+    "roles": { "type": "array", "uniqueItems": true, "items": { "enum": ["standalone-app", "plugin-host", "proxy-target", "action-provider"] } },
+    "protocol": {
+      "type": "object",
+      "required": ["name", "version", "transports"],
+      "properties": {
+        "name": { "const": "adv-app-bridge" },
+        "version": { "const": 1 },
+        "transports": { "type": "array", "items": { "enum": ["deep-link", "message-port"] } }
+      }
+    },
+    "capabilities": { "type": "array", "items": { "type": "object" } },
+    "deepLinks": { "type": "object" },
+    "embed": { "type": "object" },
+    "voiceControls": { "type": "object" }
+  }
+}

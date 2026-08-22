@@ -1,0 +1,43 @@
+{
+  "schema": "adv-app-manifest/v1",
+  "appId": "universal-adv-reader",
+  "roles": [
+    "standalone-app",
+    "plugin-host",
+    "proxy-target",
+    "action-provider"
+  ],
+  "protocol": {
+    "name": "adv-app-bridge",
+    "version": 1,
+    "transports": ["deep-link", "message-port"]
+  },
+  "capabilities": [
+    {
+      "id": "story.read",
+      "adapterIds": ["adv-ir-v1"],
+      "sourceFormats": ["adv-story/v1"],
+      "features": ["text", "choices", "branches", "voice-controls", "image-actions", "audio-actions"]
+    },
+    {
+      "id": "voice.play",
+      "adapterIds": ["adv-ir-v1"],
+      "sourceFormats": ["adv-story/v1"],
+      "features": ["utterance", "scene", "unresolved-cues"]
+    }
+  ],
+  "deepLinks": {
+    "storyRead": "/apps/web/?canonicalStoryId={canonicalStoryId}&variantId={variantId}&sectionId={sectionId}&eventId={eventId}&storyRevision={storyRevision}&catalogRevision={catalogRevision}&bridgeRevision=adv-app-bridge-1"
+  },
+  "embed": {
+    "entry": "/apps/web/?embed=1",
+    "lifecycle": ["mount", "update", "suspend", "resume", "dispose"],
+    "trustedParentOrigins": []
+  },
+  "voiceControls": {
+    "availableForAllStories": true,
+    "defaultState": "collapsed",
+    "expandedDefaultSlotMode": "all",
+    "unresolvedCueBehavior": "visible"
+  }
+}

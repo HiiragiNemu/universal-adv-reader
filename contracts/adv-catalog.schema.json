@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/contracts/adv-catalog.schema.json",
+  "title": "Universal ADV catalog",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema", "revision", "corpora"],
+  "properties": {
+    "schema": { "const": "adv-catalog/v1" },
+    "revision": { "type": "string", "minLength": 1 },
+    "corpora": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["corpusId", "title", "adapterId", "sourceFormat", "features", "stories"],
+        "properties": {
+          "corpusId": { "type": "string", "minLength": 1 },
+          "title": { "type": "string", "minLength": 1 },
+          "adapterId": { "type": "string", "minLength": 1 },
+          "sourceFormat": { "type": "string", "minLength": 1 },
+          "features": { "type": "array", "uniqueItems": true, "items": { "type": "string", "minLength": 1 } },
+          "stories": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["canonicalStoryId", "title", "source", "mediaManifest", "preferredVariantId"],
+              "properties": {
+                "canonicalStoryId": { "type": "string", "minLength": 1 },
+                "title": { "type": "string", "minLength": 1 },
+                "source": { "type": "string", "minLength": 1 },
+                "mediaManifest": { "type": "string", "minLength": 1 },
+                "preferredVariantId": { "type": "string", "minLength": 1 }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

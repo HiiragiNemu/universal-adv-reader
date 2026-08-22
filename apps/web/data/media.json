@@ -1,0 +1,25 @@
+{
+  "schema": "adv-media/v1",
+  "revision": "demo-media-r1",
+  "resolverId": "demo-manifest",
+  "entries": [
+    {
+      "mediaId": "demo.voice.001",
+      "role": "voice",
+      "url": "../media/demo-voice.wav",
+      "mimeType": "audio/wav"
+    },
+    {
+      "mediaId": "demo.sfx.step",
+      "role": "sfx",
+      "url": "../media/demo-step.wav",
+      "mimeType": "audio/wav"
+    },
+    {
+      "mediaId": "demo.bg.platform",
+      "role": "image",
+      "url": "../media/platform.svg",
+      "mimeType": "image/svg+xml"
+    }
+  ]
+}

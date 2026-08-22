@@ -1,0 +1,15 @@
+{
+  "name": "universal-adv-reader",
+  "version": "0.1.0",
+  "private": true,
+  "license": "UNLICENSED",
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "serve": "node tools/serve.mjs",
+    "test": "node --test",
+    "check": "node tools/check.mjs && node --test"
+  }
+}
