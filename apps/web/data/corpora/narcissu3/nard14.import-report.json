@@ -1,0 +1,24 @@
+{
+  "schema": "adv-import-report/v1",
+  "result": "PASS",
+  "importer": "tools/import-narcissu3.mjs",
+  "sourceRepository": "narcissu-kana-research",
+  "sourceMount": "/corpus",
+  "sourceAccess": "read-only",
+  "sourceBridgeRevision": "reader-v1-mjo-1086-ikura-120-events-499170",
+  "canonicalStoryId": "narcissu-3rd/nard14",
+  "generated": {
+    "variants": 1,
+    "sourceTextEvents": 32,
+    "logicalLines": 30,
+    "routedMediaCommands": 8,
+    "mediaEntries": 7,
+    "mediaEntriesByRole": {
+      "voice": 2,
+      "bgm": 1,
+      "sfx": 0,
+      "image": 4
+    }
+  },
+  "unresolvedMediaKeys": []
+}

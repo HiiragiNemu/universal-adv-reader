@@ -9,8 +9,11 @@
   },
   "scripts": {
     "import:narcissu10": "node tools/import-narcissu10.mjs",
+    "import:narcissu3": "node tools/import-narcissu3.mjs",
+    "import:kana": "node tools/import-kana.mjs",
+    "import:production": "node tools/import-narcissu10.mjs && node tools/import-narcissu3.mjs && node tools/import-kana.mjs",
     "serve": "node tools/serve.mjs",
     "test": "node --test",
-    "check": "node tools/import-narcissu10.mjs && node tools/check.mjs && node --test"
+    "check": "npm run import:production && node tools/check.mjs && node --test"
   }
 }

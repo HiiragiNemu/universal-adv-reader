@@ -1,0 +1,4 @@
+$ git apply --check --whitespace=nowarn reports\patches\phase3.patch
+CHECK_EXIT_STATUS=0
+$ git apply --whitespace=nowarn reports\patches\phase3.patch
+APPLY_EXIT_STATUS=0

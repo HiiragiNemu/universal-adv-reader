@@ -1,0 +1,889 @@
+{
+  "schema": "adv-media/v1",
+  "revision": "narcissu3-nar3_01-media-r1",
+  "resolverId": "narcissu3-manifest",
+  "entries": [
+    {
+      "mediaId": "n3.nar3_01.ja.bgm.ebi_ori01",
+      "role": "bgm",
+      "url": "/corpus/archive/raw/narcissu3/stream.arc.unpacked/ebi_ori01.ogg",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "n3.nar3_01.ja.bgm.ebi_ori02",
+      "role": "bgm",
+      "url": "/corpus/archive/raw/narcissu3/stream.arc.unpacked/ebi_ori02.ogg",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "n3.nar3_01.ja.image.3008",
+      "role": "image",
+      "url": "/corpus/archive/derived/images/narcissu3/data1.arc.unpacked/3008.png",
+      "mimeType": "image/png"
+    },
+    {
+      "mediaId": "n3.nar3_01.ja.image.3010c",
+      "role": "image",
+      "url": "/corpus/archive/derived/images/narcissu3/data1.arc.unpacked/3010c.png",
+      "mimeType": "image/png"
+    },
+    {
+      "mediaId": "n3.nar3_01.ja.image.3011",
+      "role": "image",
+      "url": "/corpus/archive/derived/images/narcissu3/data1.arc.unpacked/3011.png",
+      "mimeType": "image/png"
+    },
+    {
+      "mediaId": "n3.nar3_01.ja.image.3011b",
+      "role": "image",
+      "url": "/corpus/archive/derived/images/narcissu3/data1.arc.unpacked/3011b.png",
+      "mimeType": "image/png"
+    },
+    {
+      "mediaId": "n3.nar3_01.ja.image.b3",
+      "role": "image",
+      "url": "/corpus/archive/derived/images/narcissu3/data1.arc.unpacked/b3.png",
+      "mimeType": "image/png"
+    },
+    {
+      "mediaId": "n3.nar3_01.ja.image.bg_0001",
+      "role": "image",
+      "url": "/corpus/archive/derived/images/narcissu3/data1.arc.unpacked/bg_0001.png",
+      "mimeType": "image/png"
+    },
+    {
+      "mediaId": "n3.nar3_01.ja.image.bg_0005",
+      "role": "image",
+      "url": "/corpus/archive/derived/images/narcissu3/data1.arc.unpacked/bg_0005.png",
+      "mimeType": "image/png"
+    },
+    {
+      "mediaId": "n3.nar3_01.ja.image.bg_0010",
+      "role": "image",
+      "url": "/corpus/archive/derived/images/narcissu3/data1.arc.unpacked/bg_0010.png",
+      "mimeType": "image/png"
+    },
+    {
+      "mediaId": "n3.nar3_01.ja.image.bg_0011",
+      "role": "image",
+      "url": "/corpus/archive/derived/images/narcissu3/data1.arc.unpacked/bg_0011.png",
+      "mimeType": "image/png"
+    },
+    {
+      "mediaId": "n3.nar3_01.ja.image.na03_03",
+      "role": "image",
+      "url": "/corpus/archive/derived/images/narcissu3/data1.arc.unpacked/na03_03.png",
+      "mimeType": "image/png"
+    },
+    {
+      "mediaId": "n3.nar3_01.ja.image.na03_03b",
+      "role": "image",
+      "url": "/corpus/archive/derived/images/narcissu3/data1.arc.unpacked/na03_03b.png",
+      "mimeType": "image/png"
+    },
+    {
+      "mediaId": "n3.nar3_01.ja.image.na03_04",
+      "role": "image",
+      "url": "/corpus/archive/derived/images/narcissu3/data1.arc.unpacked/na03_04.png",
+      "mimeType": "image/png"
+    },
+    {
+      "mediaId": "n3.nar3_01.ja.image.na03_05",
+      "role": "image",
+      "url": "/corpus/archive/derived/images/narcissu3/data1.arc.unpacked/na03_05.png",
+      "mimeType": "image/png"
+    },
+    {
+      "mediaId": "n3.nar3_01.ja.image.na03_06",
+      "role": "image",
+      "url": "/corpus/archive/derived/images/narcissu3/data1.arc.unpacked/na03_06.png",
+      "mimeType": "image/png"
+    },
+    {
+      "mediaId": "n3.nar3_01.ja.image.na03_06b",
+      "role": "image",
+      "url": "/corpus/archive/derived/images/narcissu3/data1.arc.unpacked/na03_06b.png",
+      "mimeType": "image/png"
+    },
+    {
+      "mediaId": "n3.nar3_01.ja.image.na03_07",
+      "role": "image",
+      "url": "/corpus/archive/derived/images/narcissu3/data1.arc.unpacked/na03_07.png",
+      "mimeType": "image/png"
+    },
+    {
+      "mediaId": "n3.nar3_01.ja.image.na03_08",
+      "role": "image",
+      "url": "/corpus/archive/derived/images/narcissu3/data1.arc.unpacked/na03_08.png",
+      "mimeType": "image/png"
+    },
+    {
+      "mediaId": "n3.nar3_01.ja.image.na03_09",
+      "role": "image",
+      "url": "/corpus/archive/derived/images/narcissu3/data1.arc.unpacked/na03_09.png",
+      "mimeType": "image/png"
+    },
+    {
+      "mediaId": "n3.nar3_01.ja.image.na03_11",
+      "role": "image",
+      "url": "/corpus/archive/derived/images/narcissu3/data1.arc.unpacked/na03_11.png",
+      "mimeType": "image/png"
+    },
+    {
+      "mediaId": "n3.nar3_01.ja.image.na03_12",
+      "role": "image",
+      "url": "/corpus/archive/derived/images/narcissu3/data1.arc.unpacked/na03_12.png",
+      "mimeType": "image/png"
+    },
+    {
+      "mediaId": "n3.nar3_01.ja.image.na03_15",
+      "role": "image",
+      "url": "/corpus/archive/derived/images/narcissu3/data1.arc.unpacked/na03_15.png",
+      "mimeType": "image/png"
+    },
+    {
+      "mediaId": "n3.nar3_01.ja.image.na03_15b",
+      "role": "image",
+      "url": "/corpus/archive/derived/images/narcissu3/data1.arc.unpacked/na03_15b.png",
+      "mimeType": "image/png"
+    },
+    {
+      "mediaId": "n3.nar3_01.ja.image.na03_15c",
+      "role": "image",
+      "url": "/corpus/archive/derived/images/narcissu3/data1.arc.unpacked/na03_15c.png",
+      "mimeType": "image/png"
+    },
+    {
+      "mediaId": "n3.nar3_01.ja.image.na03_16",
+      "role": "image",
+      "url": "/corpus/archive/derived/images/narcissu3/data1.arc.unpacked/na03_16.png",
+      "mimeType": "image/png"
+    },
+    {
+      "mediaId": "n3.nar3_01.ja.image.na03_16b",
+      "role": "image",
+      "url": "/corpus/archive/derived/images/narcissu3/data1.arc.unpacked/na03_16b.png",
+      "mimeType": "image/png"
+    },
+    {
+      "mediaId": "n3.nar3_01.ja.image.na03_t01d",
+      "role": "image",
+      "url": "/corpus/archive/derived/images/narcissu3/data1.arc.unpacked/na03_t01d.png",
+      "mimeType": "image/png"
+    },
+    {
+      "mediaId": "n3.nar3_01.ja.image.red",
+      "role": "image",
+      "url": "/corpus/archive/derived/images/narcissu3/fastdata.arc.unpacked/red.png",
+      "mimeType": "image/png"
+    },
+    {
+      "mediaId": "n3.nar3_01.ja.image.w3",
+      "role": "image",
+      "url": "/corpus/archive/derived/images/narcissu3/data1.arc.unpacked/w3.png",
+      "mimeType": "image/png"
+    },
+    {
+      "mediaId": "n3.nar3_01.ja.sfx.asi02",
+      "role": "sfx",
+      "url": "/corpus/archive/raw/narcissu3/data1.arc.unpacked/asi02.wav",
+      "mimeType": "audio/wav"
+    },
+    {
+      "mediaId": "n3.nar3_01.ja.sfx.kiru01_1",
+      "role": "sfx",
+      "url": "/corpus/archive/raw/narcissu3/data1.arc.unpacked/kiru01_1.ogg",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "n3.nar3_01.ja.sfx.z42r",
+      "role": "sfx",
+      "url": "/corpus/archive/raw/narcissu3/data1.arc.unpacked/z42r.wav",
+      "mimeType": "audio/wav"
+    },
+    {
+      "mediaId": "n3.nar3_01.ja.voice.n3hei_0001",
+      "role": "voice",
+      "url": "/corpus/archive/raw/narcissu3/voice.arc.unpacked/n3hei_0001.ogg",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "n3.nar3_01.ja.voice.n3hei_0002",
+      "role": "voice",
+      "url": "/corpus/archive/raw/narcissu3/voice.arc.unpacked/n3hei_0002.ogg",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "n3.nar3_01.ja.voice.n3hei_0003",
+      "role": "voice",
+      "url": "/corpus/archive/raw/narcissu3/voice.arc.unpacked/n3hei_0003.ogg",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "n3.nar3_01.ja.voice.n3hei_0004",
+      "role": "voice",
+      "url": "/corpus/archive/raw/narcissu3/voice.arc.unpacked/n3hei_0004.ogg",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "n3.nar3_01.ja.voice.n3hei_0005",
+      "role": "voice",
+      "url": "/corpus/archive/raw/narcissu3/voice.arc.unpacked/n3hei_0005.ogg",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "n3.nar3_01.ja.voice.n3hei_0007",
+      "role": "voice",
+      "url": "/corpus/archive/raw/narcissu3/voice.arc.unpacked/n3hei_0007.ogg",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "n3.nar3_01.ja.voice.n3hei_0008",
+      "role": "voice",
+      "url": "/corpus/archive/raw/narcissu3/voice.arc.unpacked/n3hei_0008.ogg",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "n3.nar3_01.ja.voice.n3hei_0009",
+      "role": "voice",
+      "url": "/corpus/archive/raw/narcissu3/voice.arc.unpacked/n3hei_0009.ogg",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "n3.nar3_01.ja.voice.n3hei_0010",
+      "role": "voice",
+      "url": "/corpus/archive/raw/narcissu3/voice.arc.unpacked/n3hei_0010.ogg",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "n3.nar3_01.ja.voice.n3hei_0011",
+      "role": "voice",
+      "url": "/corpus/archive/raw/narcissu3/voice.arc.unpacked/n3hei_0011.ogg",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "n3.nar3_01.ja.voice.n3hei_0012",
+      "role": "voice",
+      "url": "/corpus/archive/raw/narcissu3/voice.arc.unpacked/n3hei_0012.ogg",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "n3.nar3_01.ja.voice.n3hei_0013",
+      "role": "voice",
+      "url": "/corpus/archive/raw/narcissu3/voice.arc.unpacked/n3hei_0013.ogg",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "n3.nar3_01.ja.voice.n3hei_0014",
+      "role": "voice",
+      "url": "/corpus/archive/raw/narcissu3/voice.arc.unpacked/n3hei_0014.ogg",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "n3.nar3_01.ja.voice.n3hei_0015",
+      "role": "voice",
+      "url": "/corpus/archive/raw/narcissu3/voice.arc.unpacked/n3hei_0015.ogg",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "n3.nar3_01.ja.voice.n3hei_0016",
+      "role": "voice",
+      "url": "/corpus/archive/raw/narcissu3/voice.arc.unpacked/n3hei_0016.ogg",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "n3.nar3_01.ja.voice.n3hei_0017",
+      "role": "voice",
+      "url": "/corpus/archive/raw/narcissu3/voice.arc.unpacked/n3hei_0017.ogg",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "n3.nar3_01.ja.voice.n3hei_0018",
+      "role": "voice",
+      "url": "/corpus/archive/raw/narcissu3/voice.arc.unpacked/n3hei_0018.ogg",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "n3.nar3_01.ja.voice.n3hei_0019",
+      "role": "voice",
+      "url": "/corpus/archive/raw/narcissu3/voice.arc.unpacked/n3hei_0019.ogg",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "n3.nar3_01.ja.voice.n3hei_0020",
+      "role": "voice",
+      "url": "/corpus/archive/raw/narcissu3/voice.arc.unpacked/n3hei_0020.ogg",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "n3.nar3_01.ja.voice.n3hei_0021",
+      "role": "voice",
+      "url": "/corpus/archive/raw/narcissu3/voice.arc.unpacked/n3hei_0021.ogg",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "n3.nar3_01.ja.voice.n3hei_0022",
+      "role": "voice",
+      "url": "/corpus/archive/raw/narcissu3/voice.arc.unpacked/n3hei_0022.ogg",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "n3.nar3_01.ja.voice.n3hei_0023",
+      "role": "voice",
+      "url": "/corpus/archive/raw/narcissu3/voice.arc.unpacked/n3hei_0023.ogg",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "n3.nar3_01.ja.voice.n3hei_0024",
+      "role": "voice",
+      "url": "/corpus/archive/raw/narcissu3/voice.arc.unpacked/n3hei_0024.ogg",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "n3.nar3_01.ja.voice.n3hei_0025",
+      "role": "voice",
+      "url": "/corpus/archive/raw/narcissu3/voice.arc.unpacked/n3hei_0025.ogg",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "n3.nar3_01.ja.voice.n3hei_0026",
+      "role": "voice",
+      "url": "/corpus/archive/raw/narcissu3/voice.arc.unpacked/n3hei_0026.ogg",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "n3.nar3_01.ja.voice.n3hei_0027",
+      "role": "voice",
+      "url": "/corpus/archive/raw/narcissu3/voice.arc.unpacked/n3hei_0027.ogg",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "n3.nar3_01.ja.voice.n3hei_0028",
+      "role": "voice",
+      "url": "/corpus/archive/raw/narcissu3/voice.arc.unpacked/n3hei_0028.ogg",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "n3.nar3_01.ja.voice.n3hei_0029",
+      "role": "voice",
+      "url": "/corpus/archive/raw/narcissu3/voice.arc.unpacked/n3hei_0029.ogg",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "n3.nar3_01.ja.voice.n3hei_0030",
+      "role": "voice",
+      "url": "/corpus/archive/raw/narcissu3/voice.arc.unpacked/n3hei_0030.ogg",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "n3.nar3_01.ja.voice.n3hei_0031",
+      "role": "voice",
+      "url": "/corpus/archive/raw/narcissu3/voice.arc.unpacked/n3hei_0031.ogg",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "n3.nar3_01.ja.voice.n3hei_0032",
+      "role": "voice",
+      "url": "/corpus/archive/raw/narcissu3/voice.arc.unpacked/n3hei_0032.ogg",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "n3.nar3_01.ja.voice.n3hei_0033",
+      "role": "voice",
+      "url": "/corpus/archive/raw/narcissu3/voice.arc.unpacked/n3hei_0033.ogg",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "n3.nar3_01.ja.voice.n3hei_0034",
+      "role": "voice",
+      "url": "/corpus/archive/raw/narcissu3/voice.arc.unpacked/n3hei_0034.ogg",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "n3.nar3_01.ja.voice.n3hei_0035",
+      "role": "voice",
+      "url": "/corpus/archive/raw/narcissu3/voice.arc.unpacked/n3hei_0035.ogg",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "n3.nar3_01.ja.voice.n3hei_0036",
+      "role": "voice",
+      "url": "/corpus/archive/raw/narcissu3/voice.arc.unpacked/n3hei_0036.ogg",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "n3.nar3_01.ja.voice.n3hei_0037",
+      "role": "voice",
+      "url": "/corpus/archive/raw/narcissu3/voice.arc.unpacked/n3hei_0037.ogg",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "n3.nar3_01.ja.voice.n3hei_0038",
+      "role": "voice",
+      "url": "/corpus/archive/raw/narcissu3/voice.arc.unpacked/n3hei_0038.ogg",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "n3.nar3_01.ja.voice.n3hei_0039",
+      "role": "voice",
+      "url": "/corpus/archive/raw/narcissu3/voice.arc.unpacked/n3hei_0039.ogg",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "n3.nar3_01.ja.voice.n3hei_0040",
+      "role": "voice",
+      "url": "/corpus/archive/raw/narcissu3/voice.arc.unpacked/n3hei_0040.ogg",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "n3.nar3_01.ja.voice.n3hei_0041",
+      "role": "voice",
+      "url": "/corpus/archive/raw/narcissu3/voice.arc.unpacked/n3hei_0041.ogg",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "n3.nar3_01.ja.voice.n3hei_0042",
+      "role": "voice",
+      "url": "/corpus/archive/raw/narcissu3/voice.arc.unpacked/n3hei_0042.ogg",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "n3.nar3_01.ja.voice.n3hei_0043",
+      "role": "voice",
+      "url": "/corpus/archive/raw/narcissu3/voice.arc.unpacked/n3hei_0043.ogg",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "n3.nar3_01.ja.voice.n3hei_0044",
+      "role": "voice",
+      "url": "/corpus/archive/raw/narcissu3/voice.arc.unpacked/n3hei_0044.ogg",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "n3.nar3_01.ja.voice.n3hei_0045",
+      "role": "voice",
+      "url": "/corpus/archive/raw/narcissu3/voice.arc.unpacked/n3hei_0045.ogg",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "n3.nar3_01.ja.voice.n3hei_0046",
+      "role": "voice",
+      "url": "/corpus/archive/raw/narcissu3/voice.arc.unpacked/n3hei_0046.ogg",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "n3.nar3_01.ja.voice.n3hei_0047",
+      "role": "voice",
+      "url": "/corpus/archive/raw/narcissu3/voice.arc.unpacked/n3hei_0047.ogg",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "n3.nar3_01.ja.voice.n3hei_0048",
+      "role": "voice",
+      "url": "/corpus/archive/raw/narcissu3/voice.arc.unpacked/n3hei_0048.ogg",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "n3.nar3_01.ja.voice.n3hei_0049",
+      "role": "voice",
+      "url": "/corpus/archive/raw/narcissu3/voice.arc.unpacked/n3hei_0049.ogg",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "n3.nar3_01.ja.voice.n3hei_0050",
+      "role": "voice",
+      "url": "/corpus/archive/raw/narcissu3/voice.arc.unpacked/n3hei_0050.ogg",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "n3.nar3_01.ja.voice.n3hei_0051",
+      "role": "voice",
+      "url": "/corpus/archive/raw/narcissu3/voice.arc.unpacked/n3hei_0051.ogg",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "n3.nar3_01.ja.voice.n3hei_0052",
+      "role": "voice",
+      "url": "/corpus/archive/raw/narcissu3/voice.arc.unpacked/n3hei_0052.ogg",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "n3.nar3_01.ja.voice.n3iri_0025",
+      "role": "voice",
+      "url": "/corpus/archive/raw/narcissu3/voice.arc.unpacked/n3iri_0025.ogg",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "n3.nar3_01.ja.voice.n3iri_0026",
+      "role": "voice",
+      "url": "/corpus/archive/raw/narcissu3/voice.arc.unpacked/n3iri_0026.ogg",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "n3.nar3_01.ja.voice.n3kiri_0049",
+      "role": "voice",
+      "url": "/corpus/archive/raw/narcissu3/voice.arc.unpacked/n3kiri_0049.ogg",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "n3.nar3_01.ja.voice.n3kiri_0050",
+      "role": "voice",
+      "url": "/corpus/archive/raw/narcissu3/voice.arc.unpacked/n3kiri_0050.ogg",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "n3.nar3_01.ja.voice.n3kiri_0051",
+      "role": "voice",
+      "url": "/corpus/archive/raw/narcissu3/voice.arc.unpacked/n3kiri_0051.ogg",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "n3.nar3_01.ja.voice.n3kiri_0052",
+      "role": "voice",
+      "url": "/corpus/archive/raw/narcissu3/voice.arc.unpacked/n3kiri_0052.ogg",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "n3.nar3_01.ja.voice.n3kiri_0053",
+      "role": "voice",
+      "url": "/corpus/archive/raw/narcissu3/voice.arc.unpacked/n3kiri_0053.ogg",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "n3.nar3_01.ja.voice.n3kiri_0054",
+      "role": "voice",
+      "url": "/corpus/archive/raw/narcissu3/voice.arc.unpacked/n3kiri_0054.ogg",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "n3.nar3_01.ja.voice.n3kiri_0057",
+      "role": "voice",
+      "url": "/corpus/archive/raw/narcissu3/voice.arc.unpacked/n3kiri_0057.ogg",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "n3.nar3_01.ja.voice.n3kiri_0058",
+      "role": "voice",
+      "url": "/corpus/archive/raw/narcissu3/voice.arc.unpacked/n3kiri_0058.ogg",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "n3.nar3_01.ja.voice.n3kiri_0059",
+      "role": "voice",
+      "url": "/corpus/archive/raw/narcissu3/voice.arc.unpacked/n3kiri_0059.ogg",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "n3.nar3_01.ja.voice.n3kiri_0060",
+      "role": "voice",
+      "url": "/corpus/archive/raw/narcissu3/voice.arc.unpacked/n3kiri_0060.ogg",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "n3.nar3_01.ja.voice.n3kiri_0061",
+      "role": "voice",
+      "url": "/corpus/archive/raw/narcissu3/voice.arc.unpacked/n3kiri_0061.ogg",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "n3.nar3_01.ja.voice.n3kiri_0062",
+      "role": "voice",
+      "url": "/corpus/archive/raw/narcissu3/voice.arc.unpacked/n3kiri_0062.ogg",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "n3.nar3_01.ja.voice.n3kiri_0063",
+      "role": "voice",
+      "url": "/corpus/archive/raw/narcissu3/voice.arc.unpacked/n3kiri_0063.ogg",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "n3.nar3_01.ja.voice.n3kiri_0064",
+      "role": "voice",
+      "url": "/corpus/archive/raw/narcissu3/voice.arc.unpacked/n3kiri_0064.ogg",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "n3.nar3_01.ja.voice.n3kiri_0065",
+      "role": "voice",
+      "url": "/corpus/archive/raw/narcissu3/voice.arc.unpacked/n3kiri_0065.ogg",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "n3.nar3_01.ja.voice.n3kiri_0066",
+      "role": "voice",
+      "url": "/corpus/archive/raw/narcissu3/voice.arc.unpacked/n3kiri_0066.ogg",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "n3.nar3_01.ja.voice.n3kiri_0067",
+      "role": "voice",
+      "url": "/corpus/archive/raw/narcissu3/voice.arc.unpacked/n3kiri_0067.ogg",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "n3.nar3_01.ja.voice.n3kiri_0068",
+      "role": "voice",
+      "url": "/corpus/archive/raw/narcissu3/voice.arc.unpacked/n3kiri_0068.ogg",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "n3.nar3_01.ja.voice.n3kiri_0069",
+      "role": "voice",
+      "url": "/corpus/archive/raw/narcissu3/voice.arc.unpacked/n3kiri_0069.ogg",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "n3.nar3_01.ja.voice.n3kiri_0070",
+      "role": "voice",
+      "url": "/corpus/archive/raw/narcissu3/voice.arc.unpacked/n3kiri_0070.ogg",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "n3.nar3_01.ja.voice.n3kiri_0071",
+      "role": "voice",
+      "url": "/corpus/archive/raw/narcissu3/voice.arc.unpacked/n3kiri_0071.ogg",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "n3.nar3_01.ja.voice.n3kiri_0072",
+      "role": "voice",
+      "url": "/corpus/archive/raw/narcissu3/voice.arc.unpacked/n3kiri_0072.ogg",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "n3.nar3_01.ja.voice.n3kiri_0073",
+      "role": "voice",
+      "url": "/corpus/archive/raw/narcissu3/voice.arc.unpacked/n3kiri_0073.ogg",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "n3.nar3_01.ja.voice.n3kiri_0074",
+      "role": "voice",
+      "url": "/corpus/archive/raw/narcissu3/voice.arc.unpacked/n3kiri_0074.ogg",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "n3.nar3_01.ja.voice.n3kiri_0075",
+      "role": "voice",
+      "url": "/corpus/archive/raw/narcissu3/voice.arc.unpacked/n3kiri_0075.ogg",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "n3.nar3_01.ja.voice.n3kiri_0076",
+      "role": "voice",
+      "url": "/corpus/archive/raw/narcissu3/voice.arc.unpacked/n3kiri_0076.ogg",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "n3.nar3_01.ja.voice.n3kiri_0077",
+      "role": "voice",
+      "url": "/corpus/archive/raw/narcissu3/voice.arc.unpacked/n3kiri_0077.ogg",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "n3.nar3_01.ja.voice.n3kiri_0078",
+      "role": "voice",
+      "url": "/corpus/archive/raw/narcissu3/voice.arc.unpacked/n3kiri_0078.ogg",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "n3.nar3_01.ja.voice.n3kiri_0080",
+      "role": "voice",
+      "url": "/corpus/archive/raw/narcissu3/voice.arc.unpacked/n3kiri_0080.ogg",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "n3.nar3_01.ja.voice.n3kiri_0081",
+      "role": "voice",
+      "url": "/corpus/archive/raw/narcissu3/voice.arc.unpacked/n3kiri_0081.ogg",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "n3.nar3_01.ja.voice.n3kiri_0082",
+      "role": "voice",
+      "url": "/corpus/archive/raw/narcissu3/voice.arc.unpacked/n3kiri_0082.ogg",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "n3.nar3_01.ja.voice.n3kiri_0083",
+      "role": "voice",
+      "url": "/corpus/archive/raw/narcissu3/voice.arc.unpacked/n3kiri_0083.ogg",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "n3.nar3_01.ja.voice.n3kiri_0084",
+      "role": "voice",
+      "url": "/corpus/archive/raw/narcissu3/voice.arc.unpacked/n3kiri_0084.ogg",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "n3.nar3_01.ja.voice.n3kiri_0085",
+      "role": "voice",
+      "url": "/corpus/archive/raw/narcissu3/voice.arc.unpacked/n3kiri_0085.ogg",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "n3.nar3_01.ja.voice.n3kiri_0086",
+      "role": "voice",
+      "url": "/corpus/archive/raw/narcissu3/voice.arc.unpacked/n3kiri_0086.ogg",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "n3.nar3_01.ja.voice.n3kiri_0087",
+      "role": "voice",
+      "url": "/corpus/archive/raw/narcissu3/voice.arc.unpacked/n3kiri_0087.ogg",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "n3.nar3_01.ja.voice.n3kiri_0088",
+      "role": "voice",
+      "url": "/corpus/archive/raw/narcissu3/voice.arc.unpacked/n3kiri_0088.ogg",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "n3.nar3_01.ja.voice.n3kiri_0089",
+      "role": "voice",
+      "url": "/corpus/archive/raw/narcissu3/voice.arc.unpacked/n3kiri_0089.ogg",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "n3.nar3_01.ja.voice.n3kiri_0090",
+      "role": "voice",
+      "url": "/corpus/archive/raw/narcissu3/voice.arc.unpacked/n3kiri_0090.ogg",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "n3.nar3_01.ja.voice.n3kiri_0091",
+      "role": "voice",
+      "url": "/corpus/archive/raw/narcissu3/voice.arc.unpacked/n3kiri_0091.ogg",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "n3.nar3_01.ja.voice.n3kiri_0092",
+      "role": "voice",
+      "url": "/corpus/archive/raw/narcissu3/voice.arc.unpacked/n3kiri_0092.ogg",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "n3.nar3_01.ja.voice.n3kiri_0093",
+      "role": "voice",
+      "url": "/corpus/archive/raw/narcissu3/voice.arc.unpacked/n3kiri_0093.ogg",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "n3.nar3_01.ja.voice.n3kiri_0094",
+      "role": "voice",
+      "url": "/corpus/archive/raw/narcissu3/voice.arc.unpacked/n3kiri_0094.ogg",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "n3.nar3_01.ja.voice.n3kiri_0095",
+      "role": "voice",
+      "url": "/corpus/archive/raw/narcissu3/voice.arc.unpacked/n3kiri_0095.ogg",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "n3.nar3_01.ja.voice.n3kiri_0096",
+      "role": "voice",
+      "url": "/corpus/archive/raw/narcissu3/voice.arc.unpacked/n3kiri_0096.ogg",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "n3.nar3_01.ja.voice.n3kiri_0097",
+      "role": "voice",
+      "url": "/corpus/archive/raw/narcissu3/voice.arc.unpacked/n3kiri_0097.ogg",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "n3.nar3_01.ja.voice.n3kiri_0098",
+      "role": "voice",
+      "url": "/corpus/archive/raw/narcissu3/voice.arc.unpacked/n3kiri_0098.ogg",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "n3.nar3_01.ja.voice.n3kiri_0099",
+      "role": "voice",
+      "url": "/corpus/archive/raw/narcissu3/voice.arc.unpacked/n3kiri_0099.ogg",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "n3.nar3_01.ja.voice.n3kiri_0100",
+      "role": "voice",
+      "url": "/corpus/archive/raw/narcissu3/voice.arc.unpacked/n3kiri_0100.ogg",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "n3.nar3_01.ja.voice.n3kiri_0101",
+      "role": "voice",
+      "url": "/corpus/archive/raw/narcissu3/voice.arc.unpacked/n3kiri_0101.ogg",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "n3.nar3_01.ja.voice.n3kiri_0102",
+      "role": "voice",
+      "url": "/corpus/archive/raw/narcissu3/voice.arc.unpacked/n3kiri_0102.ogg",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "n3.nar3_01.ja.voice.n3kiri_0103",
+      "role": "voice",
+      "url": "/corpus/archive/raw/narcissu3/voice.arc.unpacked/n3kiri_0103.ogg",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "n3.nar3_01.ja.voice.n3kiri_0104",
+      "role": "voice",
+      "url": "/corpus/archive/raw/narcissu3/voice.arc.unpacked/n3kiri_0104.ogg",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "n3.nar3_01.ja.voice.n3kiri_0105",
+      "role": "voice",
+      "url": "/corpus/archive/raw/narcissu3/voice.arc.unpacked/n3kiri_0105.ogg",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "n3.nar3_01.ja.voice.n3kiri_0106",
+      "role": "voice",
+      "url": "/corpus/archive/raw/narcissu3/voice.arc.unpacked/n3kiri_0106.ogg",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "n3.nar3_01.ja.voice.n3kiri_0107",
+      "role": "voice",
+      "url": "/corpus/archive/raw/narcissu3/voice.arc.unpacked/n3kiri_0107.ogg",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "n3.nar3_01.ja.voice.n3zijo_0020",
+      "role": "voice",
+      "url": "/corpus/archive/raw/narcissu3/voice.arc.unpacked/n3zijo_0020.ogg",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "n3.nar3_01.ja.voice.n3zijo_0021c",
+      "role": "voice",
+      "url": "/corpus/archive/raw/narcissu3/voice.arc.unpacked/n3zijo_0021c.ogg",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "n3.nar3_01.ja.voice.n3zijo_0022",
+      "role": "voice",
+      "url": "/corpus/archive/raw/narcissu3/voice.arc.unpacked/n3zijo_0022.ogg",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "n3.nar3_01.ja.voice.n3zijo_0023",
+      "role": "voice",
+      "url": "/corpus/archive/raw/narcissu3/voice.arc.unpacked/n3zijo_0023.ogg",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "n3.nar3_01.ja.voice.n3zijo_0024",
+      "role": "voice",
+      "url": "/corpus/archive/raw/narcissu3/voice.arc.unpacked/n3zijo_0024.ogg",
+      "mimeType": "audio/ogg"
+    }
+  ]
+}

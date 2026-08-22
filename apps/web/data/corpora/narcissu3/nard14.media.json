@@ -1,0 +1,49 @@
+{
+  "schema": "adv-media/v1",
+  "revision": "narcissu3-nard14-media-r1",
+  "resolverId": "narcissu3-manifest",
+  "entries": [
+    {
+      "mediaId": "n3.nard14.ja.bgm.2sou01",
+      "role": "bgm",
+      "url": "/corpus/archive/raw/narcissu3/stream.arc.unpacked/2sou01.ogg",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "n3.nard14.ja.image.b3",
+      "role": "image",
+      "url": "/corpus/archive/derived/images/narcissu3/data1.arc.unpacked/b3.png",
+      "mimeType": "image/png"
+    },
+    {
+      "mediaId": "n3.nard14.ja.image.black",
+      "role": "image",
+      "url": "/corpus/archive/derived/images/narcissu3/fastdata.arc.unpacked/black.png",
+      "mimeType": "image/png"
+    },
+    {
+      "mediaId": "n3.nard14.ja.image.n3d_ck_c01",
+      "role": "image",
+      "url": "/corpus/archive/derived/images/narcissu3/data1.arc.unpacked/n3d_ck_c01.png",
+      "mimeType": "image/png"
+    },
+    {
+      "mediaId": "n3.nard14.ja.image.n3d_ck_c02",
+      "role": "image",
+      "url": "/corpus/archive/derived/images/narcissu3/data1.arc.unpacked/n3d_ck_c02.png",
+      "mimeType": "image/png"
+    },
+    {
+      "mediaId": "n3.nard14.ja.voice.n3tisa_0986",
+      "role": "voice",
+      "url": "/corpus/archive/raw/narcissu3/voice.arc.unpacked/n3tisa_0986.ogg",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "n3.nard14.ja.voice.n3tisa_0987",
+      "role": "voice",
+      "url": "/corpus/archive/raw/narcissu3/voice.arc.unpacked/n3tisa_0987.ogg",
+      "mimeType": "audio/ogg"
+    }
+  ]
+}

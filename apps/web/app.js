@@ -15,6 +15,7 @@ import {
   createManifestMediaResolver,
 } from '../../packages/core/src/media-resolver-registry.js';
 import { AudioController } from '../../packages/core/src/audio-controller.js';
+import { stageImageCueForEvents } from '../../packages/core/src/stage-media.js';
 import {
   loadReaderPreferences,
   saveReaderPreferences,
@@ -28,6 +29,7 @@ import {
 import { attachBridgeProvider } from '../../packages/bridge/src/provider.js';
 import { createAdvIrAdapter } from '../../packages/adapters/src/adv-ir-v1.js';
 import { createMajiroProductionAdapter } from '../../packages/adapters/src/majiro-production-v1.js';
+import { createIkuraProductionAdapter } from '../../packages/adapters/src/ikura-production-v1.js';
 import { UiShellRegistry } from '../../packages/ui-shell/src/registry.js';
 import { classicShell } from './shells/classic.js';
 import { nextShell } from './shells/next.js';
@@ -70,6 +72,7 @@ const ui = {
 const adapterRegistry = new AdapterRegistry();
 adapterRegistry.register(createAdvIrAdapter());
 adapterRegistry.register(createMajiroProductionAdapter());
+adapterRegistry.register(createIkuraProductionAdapter());
 const uiShellRegistry = new UiShellRegistry();
 uiShellRegistry.register(classicShell);
 uiShellRegistry.register(nextShell);
@@ -183,6 +186,71 @@ const secondaryText = (localized) => localizedText(
 
 const makeBadge = (text) => createElement('span', { className: 'badge', text });
 
+const applyRovingTreeNavigation = () => {
+  const allItems = [...ui.catalogTree.querySelectorAll('[data-tree-item]')];
+  const visibleItems = () => allItems.filter((item) => item.offsetParent !== null);
+  const preferred = allItems.find((item) => item.classList.contains('active')) ?? allItems[0];
+  for (const item of allItems) item.tabIndex = item === preferred ? 0 : -1;
+  const focusItem = (item) => {
+    if (!item) return;
+    for (const candidate of allItems) candidate.tabIndex = candidate === item ? 0 : -1;
+    item.focus();
+  };
+  for (const item of allItems) {
+    item.addEventListener('focus', () => {
+      for (const candidate of allItems) candidate.tabIndex = candidate === item ? 0 : -1;
+    });
+    item.addEventListener('keydown', (event) => {
+      const items = visibleItems();
+      const index = items.indexOf(item);
+      if (event.key === 'ArrowDown') {
+        event.preventDefault();
+        focusItem(items[Math.min(items.length - 1, index + 1)]);
+      } else if (event.key === 'ArrowUp') {
+        event.preventDefault();
+        focusItem(items[Math.max(0, index - 1)]);
+      } else if (event.key === 'Home') {
+        event.preventDefault();
+        focusItem(items[0]);
+      } else if (event.key === 'End') {
+        event.preventDefault();
+        focusItem(items.at(-1));
+      } else if (event.key === 'ArrowRight' && item.tagName === 'SUMMARY') {
+        event.preventDefault();
+        const details = item.parentElement;
+        if (!details.open) details.open = true;
+        requestAnimationFrame(() => {
+          const nested = [...details.querySelectorAll('[data-tree-item]')]
+            .find((candidate) => candidate !== item && candidate.offsetParent !== null);
+          focusItem(nested ?? item);
+        });
+      } else if (event.key === 'ArrowLeft') {
+        const details = item.tagName === 'SUMMARY' ? item.parentElement : item.closest('details');
+        if (!details) return;
+        event.preventDefault();
+        if (item.tagName === 'SUMMARY' && details.open) details.open = false;
+        else focusItem(details.querySelector(':scope > summary'));
+      }
+    });
+  }
+};
+
+const folderGroupsForCorpus = (corpus, stories) => {
+  const groups = new Map();
+  for (const story of stories) {
+    const folderId = story.folderId ?? 'stories';
+    if (!groups.has(folderId)) {
+      groups.set(folderId, {
+        folderId,
+        title: story.folderTitle ?? '剧情',
+        stories: [],
+      });
+    }
+    groups.get(folderId).stories.push(story);
+  }
+  return [...groups.values()];
+};
+
 function renderCatalog() {
   if (!catalog) return;
   const query = ui.storySearch.value.trim().toLocaleLowerCase();
@@ -198,58 +266,95 @@ function renderCatalog() {
         .toLocaleLowerCase().includes(query);
     });
     if (stories.length === 0) continue;
-    const block = createElement('section', { className: 'corpus-block' });
-    const heading = createElement('div', { className: 'corpus-heading' });
+    const block = createElement('details', { className: 'corpus-block' });
+    block.open = Boolean(query) || activeCorpus === corpus || blocks.length === 0;
+    const heading = createElement('summary', { className: 'corpus-heading' });
+    heading.dataset.treeItem = 'category';
+    heading.setAttribute('role', 'treeitem');
+    heading.setAttribute('aria-level', '1');
     heading.append(
-      createElement('span', { text: corpus.title }),
+      createElement('span', { className: 'tree-label', text: corpus.title }),
       createElement('span', { text: corpus.adapterId }),
     );
     block.append(heading);
-    for (const storyEntry of stories) {
-      const storyButton = createElement('button', {
-        className: `story-link${activeStoryEntry === storyEntry ? ' active' : ''}`,
-        text: storyEntry.title,
-        type: 'button',
-      });
-      storyButton.title = storyEntry.canonicalStoryId;
-      storyButton.addEventListener('click', () => {
-        closeSidebar();
-        void openStory(corpus, storyEntry, {
-          canonicalStoryId: storyEntry.canonicalStoryId,
-          variantId: storyEntry.preferredVariantId,
+    const corpusChildren = createElement('div', { className: 'corpus-children' });
+    corpusChildren.setAttribute('role', 'group');
+    for (const folder of folderGroupsForCorpus(corpus, stories)) {
+      const folderGroup = createElement('details', { className: 'folder-group' });
+      folderGroup.open = Boolean(query) || folder.stories.includes(activeStoryEntry);
+      const folderHeading = createElement('summary', { className: 'folder-heading' });
+      folderHeading.dataset.treeItem = 'folder';
+      folderHeading.setAttribute('role', 'treeitem');
+      folderHeading.setAttribute('aria-level', '2');
+      folderHeading.title = folder.title;
+      folderHeading.append(
+        createElement('span', { className: 'tree-label', text: folder.title }),
+        createElement('span', { className: 'tree-count', text: String(folder.stories.length) }),
+      );
+      folderGroup.append(folderHeading);
+      const folderChildren = createElement('div', { className: 'folder-children' });
+      folderChildren.setAttribute('role', 'group');
+      for (const storyEntry of folder.stories) {
+        const storyButton = createElement('button', {
+          className: `story-link${activeStoryEntry === storyEntry ? ' active' : ''}`,
+          type: 'button',
         });
-      });
-      block.append(storyButton);
+        storyButton.dataset.treeItem = 'story';
+        storyButton.setAttribute('role', 'treeitem');
+        storyButton.setAttribute('aria-level', '3');
+        storyButton.append(createElement('span', { className: 'tree-label', text: storyEntry.title }));
+        storyButton.title = storyEntry.canonicalStoryId;
+        storyButton.addEventListener('click', () => {
+          closeSidebar();
+          void openStory(corpus, storyEntry, {
+            canonicalStoryId: storyEntry.canonicalStoryId,
+            variantId: storyEntry.preferredVariantId,
+          });
+        });
+        folderChildren.append(storyButton);
 
-      if (activeStoryEntry === storyEntry && activeSession) {
-        const sectionList = createElement('div', { className: 'section-list' });
-        for (const section of activeSession.variant.sections) {
-          const sectionButton = createElement('button', {
-            className: `section-link${activeSession.section.sectionId === section.sectionId ? ' active' : ''}`,
-            text: primaryText(section.title),
-            type: 'button',
-          });
-          sectionButton.title = section.sectionId;
-          sectionButton.addEventListener('click', () => {
-            closeSidebar();
-            activeSession.open({
-              canonicalStoryId: activeStory.canonicalStoryId,
-              variantId: activeSession.variant.variantId,
-              sectionId: section.sectionId,
+        if (activeStoryEntry === storyEntry && activeSession) {
+          const sectionList = createElement('div', { className: 'section-list' });
+          sectionList.setAttribute('role', 'group');
+          for (const section of activeSession.variant.sections) {
+            const sectionButton = createElement('button', {
+              className: `section-link${activeSession.section.sectionId === section.sectionId ? ' active' : ''}`,
+              type: 'button',
             });
-            renderCatalog();
-          });
-          sectionList.append(sectionButton);
+            sectionButton.dataset.treeItem = 'episode';
+            sectionButton.setAttribute('role', 'treeitem');
+            sectionButton.setAttribute('aria-level', '4');
+            sectionButton.append(createElement('span', {
+              className: 'tree-label',
+              text: primaryText(section.title),
+            }));
+            sectionButton.title = section.sectionId;
+            sectionButton.addEventListener('click', () => {
+              closeSidebar();
+              activeSession.open({
+                canonicalStoryId: activeStory.canonicalStoryId,
+                variantId: activeSession.variant.variantId,
+                sectionId: section.sectionId,
+              });
+              renderCatalog();
+            });
+            sectionList.append(sectionButton);
+          }
+          folderChildren.append(sectionList);
         }
-        block.append(sectionList);
       }
+      folderGroup.append(folderChildren);
+      corpusChildren.append(folderGroup);
     }
+    block.append(corpusChildren);
     blocks.push(block);
   }
   if (blocks.length === 0) {
     blocks.push(createElement('p', { className: 'voice-empty', text: '没有匹配的剧情。' }));
   }
   replaceChildren(ui.catalogTree, blocks);
+  ui.catalogTree.setAttribute('role', 'tree');
+  applyRovingTreeNavigation();
 }
 
 const savePreferencesAndRender = (update) => {
@@ -502,13 +607,7 @@ const updateStage = (snapshot, resolutions) => {
   ]);
 
   const currentIndex = Math.max(0, snapshot.ordinal);
-  let imageCue = null;
-  for (let index = 0; index <= currentIndex; index += 1) {
-    const candidate = (activeSession.events[index]?.cues ?? [])
-      .filter((cue) => cue.kind === 'image')
-      .at(-1);
-    if (candidate) imageCue = candidate;
-  }
+  const imageCue = stageImageCueForEvents(activeSession.events, currentIndex);
   const resolution = imageCue ? resolutions.get(imageCue.cueId) : null;
   if (resolution?.status === 'resolved') {
     ui.stageImage.src = resolution.url;

@@ -1,0 +1,67 @@
+{
+  "schema": "adv-media/v1",
+  "revision": "kana-ev494-media-r1",
+  "resolverId": "kana-manifest",
+  "entries": [
+    {
+      "mediaId": "kana.ev494.bgm.TK11.ogg",
+      "role": "bgm",
+      "url": "/corpus/archive/raw/kana/WMSC.unpacked/TK11.OGG",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "kana.ev494.image.BLACK",
+      "role": "image",
+      "url": "/corpus/archive/derived/images/kana/GGD.unpacked/BLACK.png",
+      "mimeType": "image/png"
+    },
+    {
+      "mediaId": "kana.ev494.image.KE049P3",
+      "role": "image",
+      "url": "/corpus/archive/derived/images/kana/GGD.unpacked/KE049P3.png",
+      "mimeType": "image/png"
+    },
+    {
+      "mediaId": "kana.ev494.image.KE049P6",
+      "role": "image",
+      "url": "/corpus/archive/derived/images/kana/GGD.unpacked/KE049P6.png",
+      "mimeType": "image/png"
+    },
+    {
+      "mediaId": "kana.ev494.voice.Kan2048",
+      "role": "voice",
+      "url": "/corpus/archive/raw/kana/VOICE.unpacked/KAN2048.OGG",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "kana.ev494.voice.Kan2049",
+      "role": "voice",
+      "url": "/corpus/archive/raw/kana/VOICE.unpacked/KAN2049.OGG",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "kana.ev494.voice.Kan2050",
+      "role": "voice",
+      "url": "/corpus/archive/raw/kana/VOICE.unpacked/KAN2050.OGG",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "kana.ev494.voice.Kan2051",
+      "role": "voice",
+      "url": "/corpus/archive/raw/kana/VOICE.unpacked/KAN2051.OGG",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "kana.ev494.voice.Kan2052",
+      "role": "voice",
+      "url": "/corpus/archive/raw/kana/VOICE.unpacked/KAN2052.OGG",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "kana.ev494.voice.Kan2053",
+      "role": "voice",
+      "url": "/corpus/archive/raw/kana/VOICE.unpacked/KAN2053.OGG",
+      "mimeType": "audio/ogg"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "schema": "adv-import-report/v1",
+  "result": "PASS",
+  "importer": "tools/import-kana.mjs",
+  "sourceRepository": "narcissu-kana-research",
+  "sourceMount": "/corpus",
+  "sourceAccess": "read-only",
+  "sourceBridgeRevision": "reader-v1-mjo-1086-ikura-120-events-499170",
+  "canonicalStoryId": "kana-okaeri/ev494",
+  "generated": {
+    "variants": 3,
+    "routeMode": "narrative",
+    "normalTextAlignments": 40,
+    "hiddenInternalTextAlignments": 1,
+    "normalInstructionBoundary": 413,
+    "exactLocalTransfers": 1872,
+    "exactCrossScriptTransfers": 1,
+    "voiceCues": 6,
+    "routedMediaCalls": 5,
+    "mediaEntries": 10,
+    "mediaEntriesByRole": {
+      "voice": 6,
+      "bgm": 1,
+      "sfx": 0,
+      "image": 3
+    }
+  },
+  "routeVerification": {
+    "opcodeSequenceEqual": true,
+    "pointerTargetOrdinalEqual": true,
+    "routeTopologyEqual": true,
+    "nonTextOperandDifferenceCount": 0,
+    "mixedByteMarkerCount": 0
+  },
+  "unresolvedMediaKeys": []
+}

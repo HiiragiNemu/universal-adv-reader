@@ -1,0 +1,8 @@
+$ pwsh -NoProfile -ExecutionPolicy Bypass -File .\tools\rollback-phase3.ps1
+{
+  "status": "ROLLED_BACK",
+  "baselineCommit": "a290a412baedbdadaf55f051c1afda58883fa9ea",
+  "repositoryRoot": "D:\\PROGETTO\\universal-adv-reader",
+  "patch": "D:\\PROGETTO\\universal-adv-reader\\reports\\patches\\phase3.patch"
+}
+EXIT_STATUS=0

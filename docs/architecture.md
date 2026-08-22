@@ -91,11 +91,11 @@ This keeps the transcript compact while preserving an entry point for every stor
 5. Produce stable event IDs before media binding.
 6. Report unsupported features explicitly.
 
-The `adv-ir-v1` adapter accepts already-normalized fixtures. `majiro-production-v1` accepts only normalized AdvIR carrying exact `vn-mjo-reader-script/v1` provenance. It is fed by the read-only Narcissu importer and does not scan or mutate the resource repository. IKURA remains a separate future adapter boundary.
+The `adv-ir-v1` adapter accepts already-normalized fixtures. `majiro-production-v1` accepts only normalized AdvIR carrying exact `vn-mjo-reader-script/v1` provenance. `ikura-production-v1` accepts only normalized AdvIR carrying exact `vn-ikura-script/v1` provenance and an exact route-topology record. Both production adapters are fed by read-only importers and never scan or mutate the resource repository at runtime.
 
 ## Corpus production boundary
 
-`tools/import-narcissu10.mjs` reads the source story catalog, extracted Majiro scripts, exact translation alignment, playback manifest, and media view manifest. It writes only compact AdvIR, media-route, and import-report JSON into this repository. Browser media URLs stay under `/corpus/archive/...`; the archive bytes remain owned by `narcissu-kana-research`.
+`tools/import-narcissu10.mjs`, `tools/import-narcissu3.mjs`, and `tools/import-kana.mjs` read the source story catalog, extracted scripts, exact translation/route evidence, and playback manifests. They write only compact AdvIR, media-route, and import-report JSON into this repository. KANA excludes the engine's shared internal error text from the normal reading path while preserving its VM selector arm in source evidence. Browser media URLs stay under `/corpus/archive/...`; the archive bytes remain owned by `narcissu-kana-research`.
 
 Translation producers remain separate as well. This repository consumes versioned normalized output and does not become the authoring workspace for Magireco translations.
 

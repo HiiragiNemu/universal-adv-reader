@@ -76,13 +76,9 @@ Current:
 ```text
 majiro-production-v1 + adv-story/majiro-v1
   normalized Narcissu Majiro stories with vn-mjo-reader-script/v1 provenance
-```
 
-Planned as a distinct boundary:
-
-```text
 ikura-production-v1 + adv-story/ikura-v1
-  KANA script conversion
+  normalized KANA stories with vn-ikura-script/v1 and route-topology provenance
 ```
 
 Registering an adapter ID or source format before its exact implementation is present makes loading fail closed.

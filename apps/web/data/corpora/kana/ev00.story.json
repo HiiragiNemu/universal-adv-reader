@@ -1,0 +1,777 @@
+{
+  "schema": "adv-story/v1",
+  "corpusId": "kana",
+  "canonicalStoryId": "kana-okaeri/ev00",
+  "adapterId": "ikura-production-v1",
+  "revision": "ev00-reader-v1-mjo-1086-ikura-120-events-499170",
+  "title": "KANA: Okaeri!! · EV00",
+  "provenance": {
+    "engine": "ikura",
+    "sourceSchema": "vn-ikura-script/v1",
+    "routeSchema": "vn-kana-route-script-pair/v1",
+    "sourceRepository": "narcissu-kana-research",
+    "sourceManifest": "manifests/generated/reader-adapter.json",
+    "routeRecord": "manifests/generated/kana-route-diff/scripts/EV00.json",
+    "sourceBridgeRevision": "reader-v1-mjo-1086-ikura-120-events-499170",
+    "canonicalSourceStoryId": "kana-okaeri/ev00",
+    "extractionAccess": "read-only",
+    "routeTopologyEqual": true
+  },
+  "variants": [
+    {
+      "variantId": "kana/ev00/zh-ja",
+      "locales": [
+        "zh-CN",
+        "ja-JP"
+      ],
+      "sections": [
+        {
+          "sectionId": "main",
+          "title": {
+            "zh-CN": "开始 · 路线选择",
+            "ja-JP": "はじまり・ルート選択"
+          },
+          "entryEventId": "line-001",
+          "events": [
+            {
+              "eventId": "line-001",
+              "kind": "line",
+              "text": {
+                "zh-CN": "开始",
+                "ja-JP": "はじまり"
+              },
+              "nextEventId": "choice-001",
+              "cues": [
+                {
+                  "cueId": "image:line-001:BLACK:7",
+                  "kind": "image",
+                  "timing": "scene",
+                  "mediaId": "kana.ev00.image.BLACK",
+                  "resolverId": "kana-manifest",
+                  "raw": {
+                    "sourceKey": "BLACK",
+                    "playbackPath": "derived/images/kana/GGD.unpacked/BLACK.png",
+                    "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV00.json",
+                    "instructionIndex": 7,
+                    "jaInstructionOffset": 55,
+                    "zhInstructionOffset": 55,
+                    "opcode": 5,
+                    "targetInstructionIndex": 192,
+                    "targetJaOffset": 1113,
+                    "targetZhOffset": 1109,
+                    "routeTopologyEqual": true
+                  }
+                }
+              ],
+              "source": {
+                "engine": "ikura",
+                "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV00.json",
+                "instructionIndex": 11,
+                "opcode": 247,
+                "status": "translated",
+                "instructionOffsets": {
+                  "zh-CN": 79,
+                  "ja-JP": 79
+                },
+                "anchors": {
+                  "zh-CN": "ikura-4f",
+                  "ja-JP": "ikura-4f"
+                }
+              }
+            },
+            {
+              "eventId": "choice-001",
+              "kind": "choice",
+              "choices": [
+                {
+                  "choiceId": "route-1",
+                  "label": {
+                    "zh-CN": "我曾经有个妹妹。",
+                    "ja-JP": "俺には妹がいた。"
+                  },
+                  "nextEventId": "branch-001-end"
+                },
+                {
+                  "choiceId": "route-2",
+                  "label": {
+                    "zh-CN": "我有个妹妹。　　",
+                    "ja-JP": "俺には妹がいる。"
+                  },
+                  "nextEventId": "branch-002-end"
+                }
+              ],
+              "cues": [
+                {
+                  "cueId": "image:choice-001:COM_B:20",
+                  "kind": "image",
+                  "timing": "scene",
+                  "mediaId": "kana.ev00.image.COM_B",
+                  "resolverId": "kana-manifest",
+                  "raw": {
+                    "sourceKey": "COM_B",
+                    "playbackPath": "derived/images/kana/GGD.unpacked/COM_B.png",
+                    "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV00.json",
+                    "instructionIndex": 20,
+                    "jaInstructionOffset": 198,
+                    "zhInstructionOffset": 194,
+                    "opcode": 5,
+                    "targetInstructionIndex": 3326,
+                    "targetJaOffset": 25587,
+                    "targetZhOffset": 25583,
+                    "routeTopologyEqual": true
+                  }
+                }
+              ],
+              "source": {
+                "engine": "ikura",
+                "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV00.json",
+                "selectorInstructionIndex": 21,
+                "selectorOpcode": 7,
+                "labels": [
+                  {
+                    "engine": "ikura",
+                    "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV00.json",
+                    "instructionIndex": 17,
+                    "opcode": 21,
+                    "status": "translated",
+                    "instructionOffsets": {
+                      "zh-CN": 112,
+                      "ja-JP": 116
+                    },
+                    "anchors": {
+                      "zh-CN": "ikura-70",
+                      "ja-JP": "ikura-74"
+                    }
+                  },
+                  {
+                    "engine": "ikura",
+                    "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV00.json",
+                    "instructionIndex": 18,
+                    "opcode": 21,
+                    "status": "translated",
+                    "instructionOffsets": {
+                      "zh-CN": 148,
+                      "ja-JP": 152
+                    },
+                    "anchors": {
+                      "zh-CN": "ikura-94",
+                      "ja-JP": "ikura-98"
+                    }
+                  }
+                ],
+                "arms": [
+                  {
+                    "armIndex": 0,
+                    "pointerIndex": 993,
+                    "targetInstructionIndex": 3868,
+                    "jaTargetOffset": 31821,
+                    "zhTargetOffset": 31817
+                  },
+                  {
+                    "armIndex": 1,
+                    "pointerIndex": 2,
+                    "targetInstructionIndex": 23,
+                    "jaTargetOffset": 219,
+                    "zhTargetOffset": 215
+                  },
+                  {
+                    "armIndex": 2,
+                    "pointerIndex": 3,
+                    "targetInstructionIndex": 25,
+                    "jaTargetOffset": 231,
+                    "zhTargetOffset": 227
+                  }
+                ],
+                "routeTopologyEqual": true
+              }
+            },
+            {
+              "eventId": "branch-001-end",
+              "kind": "end",
+              "source": {
+                "engine": "ikura",
+                "selectorInstructionIndex": 21,
+                "armIndex": 1,
+                "pointerIndex": 2,
+                "targetInstructionIndex": 23,
+                "jaTargetOffset": 219,
+                "zhTargetOffset": 215
+              },
+              "cues": [
+                {
+                  "cueId": "image:choice-001:BLACK:162",
+                  "kind": "image",
+                  "timing": "scene",
+                  "mediaId": "kana.ev00.image.BLACK",
+                  "resolverId": "kana-manifest",
+                  "raw": {
+                    "sourceKey": "BLACK",
+                    "playbackPath": "derived/images/kana/GGD.unpacked/BLACK.png",
+                    "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV00.json",
+                    "instructionIndex": 162,
+                    "jaInstructionOffset": 948,
+                    "zhInstructionOffset": 944,
+                    "opcode": 5,
+                    "targetInstructionIndex": 192,
+                    "targetJaOffset": 1113,
+                    "targetZhOffset": 1109,
+                    "routeTopologyEqual": true
+                  }
+                }
+              ]
+            },
+            {
+              "eventId": "branch-002-end",
+              "kind": "end",
+              "source": {
+                "engine": "ikura",
+                "selectorInstructionIndex": 21,
+                "armIndex": 2,
+                "pointerIndex": 3,
+                "targetInstructionIndex": 25,
+                "jaTargetOffset": 231,
+                "zhTargetOffset": 227
+              },
+              "cues": [
+                {
+                  "cueId": "image:choice-001:BLACK:162",
+                  "kind": "image",
+                  "timing": "scene",
+                  "mediaId": "kana.ev00.image.BLACK",
+                  "resolverId": "kana-manifest",
+                  "raw": {
+                    "sourceKey": "BLACK",
+                    "playbackPath": "derived/images/kana/GGD.unpacked/BLACK.png",
+                    "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV00.json",
+                    "instructionIndex": 162,
+                    "jaInstructionOffset": 948,
+                    "zhInstructionOffset": 944,
+                    "opcode": 5,
+                    "targetInstructionIndex": 192,
+                    "targetJaOffset": 1113,
+                    "targetZhOffset": 1109,
+                    "routeTopologyEqual": true
+                  }
+                }
+              ]
+            },
+            {
+              "eventId": "runtime-error-end",
+              "kind": "end",
+              "source": {
+                "engine": "ikura",
+                "hiddenInternalArm": true,
+                "selectorInstructionIndex": 21,
+                "armIndex": 0,
+                "pointerIndex": 993,
+                "targetInstructionIndex": 3868,
+                "jaTargetOffset": 31821,
+                "zhTargetOffset": 31817
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "variantId": "kana/ev00/ja",
+      "locales": [
+        "ja-JP"
+      ],
+      "sections": [
+        {
+          "sectionId": "main",
+          "title": {
+            "ja-JP": "はじまり・ルート選択"
+          },
+          "entryEventId": "line-001",
+          "events": [
+            {
+              "eventId": "line-001",
+              "kind": "line",
+              "text": {
+                "ja-JP": "はじまり"
+              },
+              "nextEventId": "choice-001",
+              "cues": [
+                {
+                  "cueId": "image:line-001:BLACK:7",
+                  "kind": "image",
+                  "timing": "scene",
+                  "mediaId": "kana.ev00.image.BLACK",
+                  "resolverId": "kana-manifest",
+                  "raw": {
+                    "sourceKey": "BLACK",
+                    "playbackPath": "derived/images/kana/GGD.unpacked/BLACK.png",
+                    "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV00.json",
+                    "instructionIndex": 7,
+                    "jaInstructionOffset": 55,
+                    "zhInstructionOffset": 55,
+                    "opcode": 5,
+                    "targetInstructionIndex": 192,
+                    "targetJaOffset": 1113,
+                    "targetZhOffset": 1109,
+                    "routeTopologyEqual": true
+                  }
+                }
+              ],
+              "source": {
+                "engine": "ikura",
+                "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV00.json",
+                "instructionIndex": 11,
+                "opcode": 247,
+                "status": "translated",
+                "instructionOffsets": {
+                  "zh-CN": 79,
+                  "ja-JP": 79
+                },
+                "anchors": {
+                  "zh-CN": "ikura-4f",
+                  "ja-JP": "ikura-4f"
+                }
+              }
+            },
+            {
+              "eventId": "choice-001",
+              "kind": "choice",
+              "choices": [
+                {
+                  "choiceId": "route-1",
+                  "label": {
+                    "ja-JP": "俺には妹がいた。"
+                  },
+                  "nextEventId": "branch-001-end"
+                },
+                {
+                  "choiceId": "route-2",
+                  "label": {
+                    "ja-JP": "俺には妹がいる。"
+                  },
+                  "nextEventId": "branch-002-end"
+                }
+              ],
+              "cues": [
+                {
+                  "cueId": "image:choice-001:COM_B:20",
+                  "kind": "image",
+                  "timing": "scene",
+                  "mediaId": "kana.ev00.image.COM_B",
+                  "resolverId": "kana-manifest",
+                  "raw": {
+                    "sourceKey": "COM_B",
+                    "playbackPath": "derived/images/kana/GGD.unpacked/COM_B.png",
+                    "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV00.json",
+                    "instructionIndex": 20,
+                    "jaInstructionOffset": 198,
+                    "zhInstructionOffset": 194,
+                    "opcode": 5,
+                    "targetInstructionIndex": 3326,
+                    "targetJaOffset": 25587,
+                    "targetZhOffset": 25583,
+                    "routeTopologyEqual": true
+                  }
+                }
+              ],
+              "source": {
+                "engine": "ikura",
+                "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV00.json",
+                "selectorInstructionIndex": 21,
+                "selectorOpcode": 7,
+                "labels": [
+                  {
+                    "engine": "ikura",
+                    "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV00.json",
+                    "instructionIndex": 17,
+                    "opcode": 21,
+                    "status": "translated",
+                    "instructionOffsets": {
+                      "zh-CN": 112,
+                      "ja-JP": 116
+                    },
+                    "anchors": {
+                      "zh-CN": "ikura-70",
+                      "ja-JP": "ikura-74"
+                    }
+                  },
+                  {
+                    "engine": "ikura",
+                    "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV00.json",
+                    "instructionIndex": 18,
+                    "opcode": 21,
+                    "status": "translated",
+                    "instructionOffsets": {
+                      "zh-CN": 148,
+                      "ja-JP": 152
+                    },
+                    "anchors": {
+                      "zh-CN": "ikura-94",
+                      "ja-JP": "ikura-98"
+                    }
+                  }
+                ],
+                "arms": [
+                  {
+                    "armIndex": 0,
+                    "pointerIndex": 993,
+                    "targetInstructionIndex": 3868,
+                    "jaTargetOffset": 31821,
+                    "zhTargetOffset": 31817
+                  },
+                  {
+                    "armIndex": 1,
+                    "pointerIndex": 2,
+                    "targetInstructionIndex": 23,
+                    "jaTargetOffset": 219,
+                    "zhTargetOffset": 215
+                  },
+                  {
+                    "armIndex": 2,
+                    "pointerIndex": 3,
+                    "targetInstructionIndex": 25,
+                    "jaTargetOffset": 231,
+                    "zhTargetOffset": 227
+                  }
+                ],
+                "routeTopologyEqual": true
+              }
+            },
+            {
+              "eventId": "branch-001-end",
+              "kind": "end",
+              "source": {
+                "engine": "ikura",
+                "selectorInstructionIndex": 21,
+                "armIndex": 1,
+                "pointerIndex": 2,
+                "targetInstructionIndex": 23,
+                "jaTargetOffset": 219,
+                "zhTargetOffset": 215
+              },
+              "cues": [
+                {
+                  "cueId": "image:choice-001:BLACK:162",
+                  "kind": "image",
+                  "timing": "scene",
+                  "mediaId": "kana.ev00.image.BLACK",
+                  "resolverId": "kana-manifest",
+                  "raw": {
+                    "sourceKey": "BLACK",
+                    "playbackPath": "derived/images/kana/GGD.unpacked/BLACK.png",
+                    "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV00.json",
+                    "instructionIndex": 162,
+                    "jaInstructionOffset": 948,
+                    "zhInstructionOffset": 944,
+                    "opcode": 5,
+                    "targetInstructionIndex": 192,
+                    "targetJaOffset": 1113,
+                    "targetZhOffset": 1109,
+                    "routeTopologyEqual": true
+                  }
+                }
+              ]
+            },
+            {
+              "eventId": "branch-002-end",
+              "kind": "end",
+              "source": {
+                "engine": "ikura",
+                "selectorInstructionIndex": 21,
+                "armIndex": 2,
+                "pointerIndex": 3,
+                "targetInstructionIndex": 25,
+                "jaTargetOffset": 231,
+                "zhTargetOffset": 227
+              },
+              "cues": [
+                {
+                  "cueId": "image:choice-001:BLACK:162",
+                  "kind": "image",
+                  "timing": "scene",
+                  "mediaId": "kana.ev00.image.BLACK",
+                  "resolverId": "kana-manifest",
+                  "raw": {
+                    "sourceKey": "BLACK",
+                    "playbackPath": "derived/images/kana/GGD.unpacked/BLACK.png",
+                    "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV00.json",
+                    "instructionIndex": 162,
+                    "jaInstructionOffset": 948,
+                    "zhInstructionOffset": 944,
+                    "opcode": 5,
+                    "targetInstructionIndex": 192,
+                    "targetJaOffset": 1113,
+                    "targetZhOffset": 1109,
+                    "routeTopologyEqual": true
+                  }
+                }
+              ]
+            },
+            {
+              "eventId": "runtime-error-end",
+              "kind": "end",
+              "source": {
+                "engine": "ikura",
+                "hiddenInternalArm": true,
+                "selectorInstructionIndex": 21,
+                "armIndex": 0,
+                "pointerIndex": 993,
+                "targetInstructionIndex": 3868,
+                "jaTargetOffset": 31821,
+                "zhTargetOffset": 31817
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "variantId": "kana/ev00/zh",
+      "locales": [
+        "zh-CN"
+      ],
+      "sections": [
+        {
+          "sectionId": "main",
+          "title": {
+            "zh-CN": "开始 · 路线选择"
+          },
+          "entryEventId": "line-001",
+          "events": [
+            {
+              "eventId": "line-001",
+              "kind": "line",
+              "text": {
+                "zh-CN": "开始"
+              },
+              "nextEventId": "choice-001",
+              "cues": [
+                {
+                  "cueId": "image:line-001:BLACK:7",
+                  "kind": "image",
+                  "timing": "scene",
+                  "mediaId": "kana.ev00.image.BLACK",
+                  "resolverId": "kana-manifest",
+                  "raw": {
+                    "sourceKey": "BLACK",
+                    "playbackPath": "derived/images/kana/GGD.unpacked/BLACK.png",
+                    "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV00.json",
+                    "instructionIndex": 7,
+                    "jaInstructionOffset": 55,
+                    "zhInstructionOffset": 55,
+                    "opcode": 5,
+                    "targetInstructionIndex": 192,
+                    "targetJaOffset": 1113,
+                    "targetZhOffset": 1109,
+                    "routeTopologyEqual": true
+                  }
+                }
+              ],
+              "source": {
+                "engine": "ikura",
+                "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV00.json",
+                "instructionIndex": 11,
+                "opcode": 247,
+                "status": "translated",
+                "instructionOffsets": {
+                  "zh-CN": 79,
+                  "ja-JP": 79
+                },
+                "anchors": {
+                  "zh-CN": "ikura-4f",
+                  "ja-JP": "ikura-4f"
+                }
+              }
+            },
+            {
+              "eventId": "choice-001",
+              "kind": "choice",
+              "choices": [
+                {
+                  "choiceId": "route-1",
+                  "label": {
+                    "zh-CN": "我曾经有个妹妹。"
+                  },
+                  "nextEventId": "branch-001-end"
+                },
+                {
+                  "choiceId": "route-2",
+                  "label": {
+                    "zh-CN": "我有个妹妹。　　"
+                  },
+                  "nextEventId": "branch-002-end"
+                }
+              ],
+              "cues": [
+                {
+                  "cueId": "image:choice-001:COM_B:20",
+                  "kind": "image",
+                  "timing": "scene",
+                  "mediaId": "kana.ev00.image.COM_B",
+                  "resolverId": "kana-manifest",
+                  "raw": {
+                    "sourceKey": "COM_B",
+                    "playbackPath": "derived/images/kana/GGD.unpacked/COM_B.png",
+                    "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV00.json",
+                    "instructionIndex": 20,
+                    "jaInstructionOffset": 198,
+                    "zhInstructionOffset": 194,
+                    "opcode": 5,
+                    "targetInstructionIndex": 3326,
+                    "targetJaOffset": 25587,
+                    "targetZhOffset": 25583,
+                    "routeTopologyEqual": true
+                  }
+                }
+              ],
+              "source": {
+                "engine": "ikura",
+                "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV00.json",
+                "selectorInstructionIndex": 21,
+                "selectorOpcode": 7,
+                "labels": [
+                  {
+                    "engine": "ikura",
+                    "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV00.json",
+                    "instructionIndex": 17,
+                    "opcode": 21,
+                    "status": "translated",
+                    "instructionOffsets": {
+                      "zh-CN": 112,
+                      "ja-JP": 116
+                    },
+                    "anchors": {
+                      "zh-CN": "ikura-70",
+                      "ja-JP": "ikura-74"
+                    }
+                  },
+                  {
+                    "engine": "ikura",
+                    "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV00.json",
+                    "instructionIndex": 18,
+                    "opcode": 21,
+                    "status": "translated",
+                    "instructionOffsets": {
+                      "zh-CN": 148,
+                      "ja-JP": 152
+                    },
+                    "anchors": {
+                      "zh-CN": "ikura-94",
+                      "ja-JP": "ikura-98"
+                    }
+                  }
+                ],
+                "arms": [
+                  {
+                    "armIndex": 0,
+                    "pointerIndex": 993,
+                    "targetInstructionIndex": 3868,
+                    "jaTargetOffset": 31821,
+                    "zhTargetOffset": 31817
+                  },
+                  {
+                    "armIndex": 1,
+                    "pointerIndex": 2,
+                    "targetInstructionIndex": 23,
+                    "jaTargetOffset": 219,
+                    "zhTargetOffset": 215
+                  },
+                  {
+                    "armIndex": 2,
+                    "pointerIndex": 3,
+                    "targetInstructionIndex": 25,
+                    "jaTargetOffset": 231,
+                    "zhTargetOffset": 227
+                  }
+                ],
+                "routeTopologyEqual": true
+              }
+            },
+            {
+              "eventId": "branch-001-end",
+              "kind": "end",
+              "source": {
+                "engine": "ikura",
+                "selectorInstructionIndex": 21,
+                "armIndex": 1,
+                "pointerIndex": 2,
+                "targetInstructionIndex": 23,
+                "jaTargetOffset": 219,
+                "zhTargetOffset": 215
+              },
+              "cues": [
+                {
+                  "cueId": "image:choice-001:BLACK:162",
+                  "kind": "image",
+                  "timing": "scene",
+                  "mediaId": "kana.ev00.image.BLACK",
+                  "resolverId": "kana-manifest",
+                  "raw": {
+                    "sourceKey": "BLACK",
+                    "playbackPath": "derived/images/kana/GGD.unpacked/BLACK.png",
+                    "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV00.json",
+                    "instructionIndex": 162,
+                    "jaInstructionOffset": 948,
+                    "zhInstructionOffset": 944,
+                    "opcode": 5,
+                    "targetInstructionIndex": 192,
+                    "targetJaOffset": 1113,
+                    "targetZhOffset": 1109,
+                    "routeTopologyEqual": true
+                  }
+                }
+              ]
+            },
+            {
+              "eventId": "branch-002-end",
+              "kind": "end",
+              "source": {
+                "engine": "ikura",
+                "selectorInstructionIndex": 21,
+                "armIndex": 2,
+                "pointerIndex": 3,
+                "targetInstructionIndex": 25,
+                "jaTargetOffset": 231,
+                "zhTargetOffset": 227
+              },
+              "cues": [
+                {
+                  "cueId": "image:choice-001:BLACK:162",
+                  "kind": "image",
+                  "timing": "scene",
+                  "mediaId": "kana.ev00.image.BLACK",
+                  "resolverId": "kana-manifest",
+                  "raw": {
+                    "sourceKey": "BLACK",
+                    "playbackPath": "derived/images/kana/GGD.unpacked/BLACK.png",
+                    "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV00.json",
+                    "instructionIndex": 162,
+                    "jaInstructionOffset": 948,
+                    "zhInstructionOffset": 944,
+                    "opcode": 5,
+                    "targetInstructionIndex": 192,
+                    "targetJaOffset": 1113,
+                    "targetZhOffset": 1109,
+                    "routeTopologyEqual": true
+                  }
+                }
+              ]
+            },
+            {
+              "eventId": "runtime-error-end",
+              "kind": "end",
+              "source": {
+                "engine": "ikura",
+                "hiddenInternalArm": true,
+                "selectorInstructionIndex": 21,
+                "armIndex": 0,
+                "pointerIndex": 993,
+                "targetInstructionIndex": 3868,
+                "jaTargetOffset": 31821,
+                "zhTargetOffset": 31817
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -22,9 +22,12 @@
 - 无框架依赖的可运行 Web Reader；
 - `classic` 继承版与 `next` 迁移候选双外壳，共用同一 ReaderSession / AdvIR / media / bridge；
 - 十周年版 `narcissu-himeko/himeko_ep00` 的日文、中文对照与英文三版本；
-- 该剧情的 13 条逻辑文本、22 个日英语音文件、背景图、BGM 与音效精确路由。
+- Narcissu 3 `narcissu-3rd/nard14` 的 30 条短篇逻辑文本，以及 `nar3_01` 的 385 条场景文本、114 条语音、28 张场景/转场图、BGM 与音效路由；舞台会保留真实场景图而不让转场规则图覆盖；
+- KANA `EV494` 的 40 组日中精确对齐文本、6 条语音、3 张场景图与 BGM；
+- KANA `EV00` 的两项日中选项、两个用户分支及原 VM 的第三个内部错误分支；
+- Majiro 与 IKURA 两种生产适配器，共用相同 ReaderSession、媒体和深链合同。
 
-当前首个 Majiro 生产切片直接读取 `narcissu-kana-research` 的已验证产物。KANA、Narcissu 3 与十周年版其余剧情沿用同一生产导入边界继续接入。
+当前三个作品切片均直接读取 `narcissu-kana-research` 的已验证产物；资源仓库保持只读。其余剧情沿用同一批量生产导入边界继续接入。
 
 ## 运行
 
@@ -51,9 +54,9 @@ contracts                JSON Schema
 packages/contracts       AdvIR 与清单验证
 packages/core            适配器、媒体解析器、阅读会话
 packages/bridge          稳定深链与 MessagePort 协议
-packages/adapters        预规范化 AdvIR 参考适配器
+packages/adapters        AdvIR、Majiro、IKURA 精确适配器
 packages/ui-shell        classic / next 共享外壳合同
-tools/import-narcissu10  只读导入首个十周年版生产剧情
+tools/import-*           只读导入十周年版、Narcissu 3 与 KANA
 docs                     架构和接入说明
 test                     Node 内建测试
 ```

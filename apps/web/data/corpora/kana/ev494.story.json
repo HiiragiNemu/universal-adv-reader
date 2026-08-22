@@ -1,0 +1,3667 @@
+{
+  "schema": "adv-story/v1",
+  "corpusId": "kana",
+  "canonicalStoryId": "kana-okaeri/ev494",
+  "adapterId": "ikura-production-v1",
+  "revision": "ev494-reader-v1-mjo-1086-ikura-120-events-499170",
+  "title": "KANA: Okaeri!! · EV494",
+  "provenance": {
+    "engine": "ikura",
+    "sourceSchema": "vn-ikura-script/v1",
+    "routeSchema": "vn-kana-route-script-pair/v1",
+    "sourceRepository": "narcissu-kana-research",
+    "sourceManifest": "manifests/generated/reader-adapter.json",
+    "routeRecord": "manifests/generated/kana-route-diff/scripts/EV494.json",
+    "sourceBridgeRevision": "reader-v1-mjo-1086-ikura-120-events-499170",
+    "canonicalSourceStoryId": "kana-okaeri/ev494",
+    "extractionAccess": "read-only",
+    "routeTopologyEqual": true
+  },
+  "variants": [
+    {
+      "variantId": "kana/ev494/zh-ja",
+      "locales": [
+        "zh-CN",
+        "ja-JP"
+      ],
+      "sections": [
+        {
+          "sectionId": "main",
+          "title": {
+            "zh-CN": "高等期 · 回到医院",
+            "ja-JP": "高等期・病院に戻って"
+          },
+          "entryEventId": "line-001",
+          "events": [
+            {
+              "eventId": "line-001",
+              "kind": "line",
+              "text": {
+                "zh-CN": "高等期·回到医院……",
+                "ja-JP": "高等期・病院に戻って……"
+              },
+              "nextEventId": "line-002",
+              "cues": [
+                {
+                  "cueId": "bgm:line-001:TK11.ogg:2",
+                  "kind": "bgm",
+                  "timing": "scene",
+                  "mediaId": "kana.ev494.bgm.TK11.ogg",
+                  "resolverId": "kana-manifest",
+                  "raw": {
+                    "sourceKey": "TK11.ogg",
+                    "playbackPath": "raw/kana/WMSC.unpacked/TK11.OGG",
+                    "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV494.json",
+                    "instructionIndex": 2,
+                    "jaInstructionOffset": 19,
+                    "zhInstructionOffset": 19,
+                    "opcode": 5,
+                    "targetInstructionIndex": 2821,
+                    "targetJaOffset": 22045,
+                    "targetZhOffset": 22359,
+                    "routeTopologyEqual": true
+                  }
+                },
+                {
+                  "cueId": "image:line-001:KE049P6:4",
+                  "kind": "image",
+                  "timing": "scene",
+                  "mediaId": "kana.ev494.image.KE049P6",
+                  "resolverId": "kana-manifest",
+                  "raw": {
+                    "sourceKey": "KE049P6",
+                    "playbackPath": "derived/images/kana/GGD.unpacked/KE049P6.png",
+                    "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV494.json",
+                    "instructionIndex": 4,
+                    "jaInstructionOffset": 31,
+                    "zhInstructionOffset": 31,
+                    "opcode": 5,
+                    "targetInstructionIndex": 2028,
+                    "targetJaOffset": 16016,
+                    "targetZhOffset": 16330,
+                    "routeTopologyEqual": true
+                  }
+                }
+              ],
+              "source": {
+                "engine": "ikura",
+                "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV494.json",
+                "instructionIndex": 11,
+                "opcode": 247,
+                "status": "translated",
+                "instructionOffsets": {
+                  "zh-CN": 71,
+                  "ja-JP": 71
+                },
+                "anchors": {
+                  "zh-CN": "ikura-47",
+                  "ja-JP": "ikura-47"
+                }
+              }
+            },
+            {
+              "eventId": "line-002",
+              "kind": "line",
+              "text": {
+                "zh-CN": "隆　道：「如果有一个可以实现任何愿望的神的话……加奈会许什么愿呢？」",
+                "ja-JP": "隆　道：「どんな願いでもかなえてくれる神様がいたとして……加奈なら何を願う？」"
+              },
+              "nextEventId": "line-003",
+              "source": {
+                "engine": "ikura",
+                "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV494.json",
+                "instructionIndex": 17,
+                "opcode": 43,
+                "status": "translated",
+                "instructionOffsets": {
+                  "zh-CN": 126,
+                  "ja-JP": 130
+                },
+                "anchors": {
+                  "zh-CN": "ikura-7e",
+                  "ja-JP": "ikura-82"
+                }
+              },
+              "speaker": {
+                "zh-CN": "隆　道",
+                "ja-JP": "隆　道"
+              }
+            },
+            {
+              "eventId": "line-003",
+              "kind": "line",
+              "text": {
+                "zh-CN": "　对于我唐突的发问，加奈一瞬间浮现出了疑惑，然后认真考虑了起来。",
+                "ja-JP": "　俺の発した唐突な問いに、加奈は一瞬疑問を浮かべ、そして考え込んだ。"
+              },
+              "nextEventId": "line-004",
+              "source": {
+                "engine": "ikura",
+                "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV494.json",
+                "instructionIndex": 25,
+                "opcode": 43,
+                "status": "translated",
+                "instructionOffsets": {
+                  "zh-CN": 245,
+                  "ja-JP": 232
+                },
+                "anchors": {
+                  "zh-CN": "ikura-f5",
+                  "ja-JP": "ikura-e8"
+                }
+              }
+            },
+            {
+              "eventId": "line-004",
+              "kind": "line",
+              "text": {
+                "zh-CN": "　现在，加奈能保持清醒的时间已经很短了。",
+                "ja-JP": "　今、加奈の覚醒時間は短い。"
+              },
+              "nextEventId": "line-005",
+              "source": {
+                "engine": "ikura",
+                "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV494.json",
+                "instructionIndex": 33,
+                "opcode": 43,
+                "status": "translated",
+                "instructionOffsets": {
+                  "zh-CN": 360,
+                  "ja-JP": 331
+                },
+                "anchors": {
+                  "zh-CN": "ikura-168",
+                  "ja-JP": "ikura-14b"
+                }
+              }
+            },
+            {
+              "eventId": "line-005",
+              "kind": "line",
+              "text": {
+                "zh-CN": "　因为……感冒了吧。",
+                "ja-JP": "　それは……風邪を引いたからだった。"
+              },
+              "nextEventId": "line-006",
+              "source": {
+                "engine": "ikura",
+                "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV494.json",
+                "instructionIndex": 41,
+                "opcode": 43,
+                "status": "translated",
+                "instructionOffsets": {
+                  "zh-CN": 451,
+                  "ja-JP": 404
+                },
+                "anchors": {
+                  "zh-CN": "ikura-1c3",
+                  "ja-JP": "ikura-194"
+                }
+              }
+            },
+            {
+              "eventId": "line-006",
+              "kind": "line",
+              "text": {
+                "zh-CN": "　仅仅的感冒……如果是普通的人类，这个病的确没什么大不了的。",
+                "ja-JP": "　ただの風邪……普通の人間なら、どうということはない。"
+              },
+              "nextEventId": "line-007",
+              "source": {
+                "engine": "ikura",
+                "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV494.json",
+                "instructionIndex": 49,
+                "opcode": 43,
+                "status": "translated",
+                "instructionOffsets": {
+                  "zh-CN": 522,
+                  "ja-JP": 478
+                },
+                "anchors": {
+                  "zh-CN": "ikura-20a",
+                  "ja-JP": "ikura-1de"
+                }
+              }
+            },
+            {
+              "eventId": "line-007",
+              "kind": "line",
+              "text": {
+                "zh-CN": "　但是，对于加奈来说，这“仅仅”的感冒，却像导火索一般。",
+                "ja-JP": "　けど、加奈にとっては、そのただの風邪が引き金になりうるのだ。"
+              },
+              "nextEventId": "line-008",
+              "source": {
+                "engine": "ikura",
+                "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV494.json",
+                "instructionIndex": 52,
+                "opcode": 43,
+                "status": "translated",
+                "instructionOffsets": {
+                  "zh-CN": 606,
+                  "ja-JP": 537
+                },
+                "anchors": {
+                  "zh-CN": "ikura-25e",
+                  "ja-JP": "ikura-219"
+                }
+              }
+            },
+            {
+              "eventId": "line-008",
+              "kind": "line",
+              "text": {
+                "zh-CN": "　腎不全。并发症。感染症。",
+                "ja-JP": "　腎不全。合併症。感染症。"
+              },
+              "nextEventId": "line-009",
+              "source": {
+                "engine": "ikura",
+                "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV494.json",
+                "instructionIndex": 60,
+                "opcode": 43,
+                "status": "translated",
+                "instructionOffsets": {
+                  "zh-CN": 713,
+                  "ja-JP": 625
+                },
+                "anchors": {
+                  "zh-CN": "ikura-2c9",
+                  "ja-JP": "ikura-271"
+                }
+              }
+            },
+            {
+              "eventId": "line-009",
+              "kind": "line",
+              "text": {
+                "zh-CN": "　虽然这些都是很常见、常听到的医学术语的组合，但是这到底代表着多么恐怖的事情，知道的人却很少。",
+                "ja-JP": "　このありふれた、よく聞く医学用語の組み合わせが、どれだけ恐ろしい意味を持っているか、正確に把握する者は少ない。"
+              },
+              "nextEventId": "line-010",
+              "source": {
+                "engine": "ikura",
+                "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV494.json",
+                "instructionIndex": 68,
+                "opcode": 43,
+                "status": "translated",
+                "instructionOffsets": {
+                  "zh-CN": 790,
+                  "ja-JP": 698
+                },
+                "anchors": {
+                  "zh-CN": "ikura-316",
+                  "ja-JP": "ikura-2ba"
+                }
+              }
+            },
+            {
+              "eventId": "line-010",
+              "kind": "line",
+              "text": {
+                "zh-CN": "　加奈在一步一步的被拉到名为死亡的阶梯上去。",
+                "ja-JP": "　死へのエスカレーターが、ゆっくりと加奈を上に連れて行く。"
+              },
+              "nextEventId": "line-011",
+              "source": {
+                "engine": "ikura",
+                "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV494.json",
+                "instructionIndex": 71,
+                "opcode": 43,
+                "status": "translated",
+                "instructionOffsets": {
+                  "zh-CN": 908,
+                  "ja-JP": 795
+                },
+                "anchors": {
+                  "zh-CN": "ikura-38c",
+                  "ja-JP": "ikura-31b"
+                }
+              }
+            },
+            {
+              "eventId": "line-011",
+              "kind": "line",
+              "text": {
+                "zh-CN": "　如果这个感冒发展成了肺炎的话？",
+                "ja-JP": "　もしこの風邪が肺炎にでもなったら？"
+              },
+              "nextEventId": "line-012",
+              "source": {
+                "engine": "ikura",
+                "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV494.json",
+                "instructionIndex": 79,
+                "opcode": 43,
+                "status": "translated",
+                "instructionOffsets": {
+                  "zh-CN": 1003,
+                  "ja-JP": 884
+                },
+                "anchors": {
+                  "zh-CN": "ikura-3eb",
+                  "ja-JP": "ikura-374"
+                }
+              }
+            },
+            {
+              "eventId": "line-012",
+              "kind": "line",
+              "text": {
+                "zh-CN": "　……无论如何，也无计可施了吧。",
+                "ja-JP": "　……とうてい、助かりはしないだろう。"
+              },
+              "nextEventId": "line-013",
+              "source": {
+                "engine": "ikura",
+                "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV494.json",
+                "instructionIndex": 87,
+                "opcode": 43,
+                "status": "translated",
+                "instructionOffsets": {
+                  "zh-CN": 1086,
+                  "ja-JP": 957
+                },
+                "anchors": {
+                  "zh-CN": "ikura-43e",
+                  "ja-JP": "ikura-3bd"
+                }
+              }
+            },
+            {
+              "eventId": "line-013",
+              "kind": "line",
+              "text": {
+                "zh-CN": "加　奈：「……神？」",
+                "ja-JP": "加　奈：「……神様？」"
+              },
+              "nextEventId": "line-014",
+              "cues": [
+                {
+                  "cueId": "voice:line-013:Kan2048:95",
+                  "kind": "voice",
+                  "timing": "utterance",
+                  "mediaId": "kana.ev494.voice.Kan2048",
+                  "resolverId": "kana-manifest",
+                  "raw": {
+                    "sourceKey": "Kan2048",
+                    "playbackPath": "raw/kana/VOICE.unpacked/KAN2048.OGG",
+                    "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV494.json",
+                    "instructionIndex": 95,
+                    "jaInstructionOffset": 1030,
+                    "zhInstructionOffset": 1169,
+                    "opcode": 43,
+                    "routeTopologyEqual": true
+                  }
+                }
+              ],
+              "source": {
+                "engine": "ikura",
+                "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV494.json",
+                "instructionIndex": 95,
+                "opcode": 43,
+                "status": "translated",
+                "instructionOffsets": {
+                  "zh-CN": 1169,
+                  "ja-JP": 1030
+                },
+                "anchors": {
+                  "zh-CN": "ikura-491",
+                  "ja-JP": "ikura-406"
+                }
+              },
+              "speaker": {
+                "zh-CN": "加　奈",
+                "ja-JP": "加　奈"
+              }
+            },
+            {
+              "eventId": "line-014",
+              "kind": "line",
+              "text": {
+                "zh-CN": "隆　道：「啊啊……文字游戏哟」",
+                "ja-JP": "隆　道：「ああ……言葉遊びだよ」"
+              },
+              "nextEventId": "line-015",
+              "source": {
+                "engine": "ikura",
+                "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV494.json",
+                "instructionIndex": 98,
+                "opcode": 43,
+                "status": "translated",
+                "instructionOffsets": {
+                  "zh-CN": 1222,
+                  "ja-JP": 1081
+                },
+                "anchors": {
+                  "zh-CN": "ikura-4c6",
+                  "ja-JP": "ikura-439"
+                }
+              },
+              "speaker": {
+                "zh-CN": "隆　道",
+                "ja-JP": "隆　道"
+              }
+            },
+            {
+              "eventId": "line-015",
+              "kind": "line",
+              "text": {
+                "zh-CN": "加　奈：「我……」",
+                "ja-JP": "加　奈：「わたし…………」"
+              },
+              "nextEventId": "line-016",
+              "cues": [
+                {
+                  "cueId": "voice:line-015:Kan2049:101",
+                  "kind": "voice",
+                  "timing": "utterance",
+                  "mediaId": "kana.ev494.voice.Kan2049",
+                  "resolverId": "kana-manifest",
+                  "raw": {
+                    "sourceKey": "Kan2049",
+                    "playbackPath": "raw/kana/VOICE.unpacked/KAN2049.OGG",
+                    "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV494.json",
+                    "instructionIndex": 101,
+                    "jaInstructionOffset": 1129,
+                    "zhInstructionOffset": 1276,
+                    "opcode": 43,
+                    "routeTopologyEqual": true
+                  }
+                }
+              ],
+              "source": {
+                "engine": "ikura",
+                "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV494.json",
+                "instructionIndex": 101,
+                "opcode": 43,
+                "status": "translated",
+                "instructionOffsets": {
+                  "zh-CN": 1276,
+                  "ja-JP": 1129
+                },
+                "anchors": {
+                  "zh-CN": "ikura-4fc",
+                  "ja-JP": "ikura-469"
+                }
+              },
+              "speaker": {
+                "zh-CN": "加　奈",
+                "ja-JP": "加　奈"
+              }
+            },
+            {
+              "eventId": "line-016",
+              "kind": "line",
+              "text": {
+                "zh-CN": "　加奈考虑了相当长的时间。",
+                "ja-JP": "　加奈はずいぶんと長いこと考えた。"
+              },
+              "nextEventId": "line-017",
+              "source": {
+                "engine": "ikura",
+                "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV494.json",
+                "instructionIndex": 109,
+                "opcode": 43,
+                "status": "translated",
+                "instructionOffsets": {
+                  "zh-CN": 1354,
+                  "ja-JP": 1209
+                },
+                "anchors": {
+                  "zh-CN": "ikura-54a",
+                  "ja-JP": "ikura-4b9"
+                }
+              }
+            },
+            {
+              "eventId": "line-017",
+              "kind": "line",
+              "text": {
+                "zh-CN": "　对于这个文字游戏一般的问题，慎重地，认真地考虑着答案。",
+                "ja-JP": "　言葉遊びのような問いに、慎重に、大切に答えを考えているようだった。"
+              },
+              "nextEventId": "line-018",
+              "source": {
+                "engine": "ikura",
+                "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV494.json",
+                "instructionIndex": 112,
+                "opcode": 43,
+                "status": "translated",
+                "instructionOffsets": {
+                  "zh-CN": 1404,
+                  "ja-JP": 1254
+                },
+                "anchors": {
+                  "zh-CN": "ikura-57c",
+                  "ja-JP": "ikura-4e6"
+                }
+              }
+            },
+            {
+              "eventId": "line-018",
+              "kind": "line",
+              "text": {
+                "zh-CN": "　然后，加奈开口道。",
+                "ja-JP": "　そして、加奈は口を開く。"
+              },
+              "nextEventId": "line-019",
+              "source": {
+                "engine": "ikura",
+                "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV494.json",
+                "instructionIndex": 115,
+                "opcode": 43,
+                "status": "translated",
+                "instructionOffsets": {
+                  "zh-CN": 1484,
+                  "ja-JP": 1322
+                },
+                "anchors": {
+                  "zh-CN": "ikura-5cc",
+                  "ja-JP": "ikura-52a"
+                }
+              }
+            },
+            {
+              "eventId": "line-019",
+              "kind": "line",
+              "text": {
+                "zh-CN": "加　奈：「……想活下去」",
+                "ja-JP": "加　奈：「……生きたい」"
+              },
+              "nextEventId": "line-020",
+              "cues": [
+                {
+                  "cueId": "voice:line-019:Kan2050:123",
+                  "kind": "voice",
+                  "timing": "utterance",
+                  "mediaId": "kana.ev494.voice.Kan2050",
+                  "resolverId": "kana-manifest",
+                  "raw": {
+                    "sourceKey": "Kan2050",
+                    "playbackPath": "raw/kana/VOICE.unpacked/KAN2050.OGG",
+                    "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV494.json",
+                    "instructionIndex": 123,
+                    "jaInstructionOffset": 1390,
+                    "zhInstructionOffset": 1555,
+                    "opcode": 43,
+                    "routeTopologyEqual": true
+                  }
+                }
+              ],
+              "source": {
+                "engine": "ikura",
+                "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV494.json",
+                "instructionIndex": 123,
+                "opcode": 43,
+                "status": "translated",
+                "instructionOffsets": {
+                  "zh-CN": 1555,
+                  "ja-JP": 1390
+                },
+                "anchors": {
+                  "zh-CN": "ikura-613",
+                  "ja-JP": "ikura-56e"
+                }
+              },
+              "speaker": {
+                "zh-CN": "加　奈",
+                "ja-JP": "加　奈"
+              }
+            },
+            {
+              "eventId": "line-020",
+              "kind": "line",
+              "text": {
+                "zh-CN": "　不知何时眼角浮出了泪滴，流到了脸颊上。",
+                "ja-JP": "　いつのまにか目尻に浮かんだ水滴が、頬を伝った。"
+              },
+              "nextEventId": "line-021",
+              "source": {
+                "engine": "ikura",
+                "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV494.json",
+                "instructionIndex": 131,
+                "opcode": 43,
+                "status": "translated",
+                "instructionOffsets": {
+                  "zh-CN": 1639,
+                  "ja-JP": 1468
+                },
+                "anchors": {
+                  "zh-CN": "ikura-667",
+                  "ja-JP": "ikura-5bc"
+                }
+              }
+            },
+            {
+              "eventId": "line-021",
+              "kind": "line",
+              "text": {
+                "zh-CN": "加　奈：「想活下去啊……更久地」",
+                "ja-JP": "加　奈：「生きたいよ……もっと」"
+              },
+              "nextEventId": "line-022",
+              "cues": [
+                {
+                  "cueId": "voice:line-021:Kan2051:139",
+                  "kind": "voice",
+                  "timing": "utterance",
+                  "mediaId": "kana.ev494.voice.Kan2051",
+                  "resolverId": "kana-manifest",
+                  "raw": {
+                    "sourceKey": "Kan2051",
+                    "playbackPath": "raw/kana/VOICE.unpacked/KAN2051.OGG",
+                    "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV494.json",
+                    "instructionIndex": 139,
+                    "jaInstructionOffset": 1553,
+                    "zhInstructionOffset": 1730,
+                    "opcode": 43,
+                    "routeTopologyEqual": true
+                  }
+                }
+              ],
+              "source": {
+                "engine": "ikura",
+                "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV494.json",
+                "instructionIndex": 139,
+                "opcode": 43,
+                "status": "translated",
+                "instructionOffsets": {
+                  "zh-CN": 1730,
+                  "ja-JP": 1553
+                },
+                "anchors": {
+                  "zh-CN": "ikura-6c2",
+                  "ja-JP": "ikura-611"
+                }
+              },
+              "speaker": {
+                "zh-CN": "加　奈",
+                "ja-JP": "加　奈"
+              }
+            },
+            {
+              "eventId": "line-022",
+              "kind": "line",
+              "text": {
+                "zh-CN": "　加奈哭了。",
+                "ja-JP": "　加奈が泣く。"
+              },
+              "nextEventId": "line-023",
+              "source": {
+                "engine": "ikura",
+                "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV494.json",
+                "instructionIndex": 147,
+                "opcode": 43,
+                "status": "translated",
+                "instructionOffsets": {
+                  "zh-CN": 1822,
+                  "ja-JP": 1635
+                },
+                "anchors": {
+                  "zh-CN": "ikura-71e",
+                  "ja-JP": "ikura-663"
+                }
+              }
+            },
+            {
+              "eventId": "line-023",
+              "kind": "line",
+              "text": {
+                "zh-CN": "　没有能够笑对死亡的人。",
+                "ja-JP": "　死がつらくない人間などいない。"
+              },
+              "nextEventId": "line-024",
+              "source": {
+                "engine": "ikura",
+                "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV494.json",
+                "instructionIndex": 155,
+                "opcode": 43,
+                "status": "translated",
+                "instructionOffsets": {
+                  "zh-CN": 1885,
+                  "ja-JP": 1696
+                },
+                "anchors": {
+                  "zh-CN": "ikura-75d",
+                  "ja-JP": "ikura-6a0"
+                }
+              }
+            },
+            {
+              "eventId": "line-024",
+              "kind": "line",
+              "text": {
+                "zh-CN": "　没有能够不惧死亡的人。",
+                "ja-JP": "　死が怖くない人間などいない。"
+              },
+              "nextEventId": "line-025",
+              "source": {
+                "engine": "ikura",
+                "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV494.json",
+                "instructionIndex": 158,
+                "opcode": 43,
+                "status": "translated",
+                "instructionOffsets": {
+                  "zh-CN": 1933,
+                  "ja-JP": 1739
+                },
+                "anchors": {
+                  "zh-CN": "ikura-78d",
+                  "ja-JP": "ikura-6cb"
+                }
+              }
+            },
+            {
+              "eventId": "line-025",
+              "kind": "line",
+              "text": {
+                "zh-CN": "　不论有多么泰然，不论有多么达观，果然，人还是惧怕名为死的这种未知的恐怖。",
+                "ja-JP": "　どんなに悟っているように思えても、どれだけ達観してしまっても、やはり死という未知の恐怖は人を臆病にさせる。"
+              },
+              "nextEventId": "line-026",
+              "source": {
+                "engine": "ikura",
+                "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV494.json",
+                "instructionIndex": 161,
+                "opcode": 43,
+                "status": "translated",
+                "instructionOffsets": {
+                  "zh-CN": 1981,
+                  "ja-JP": 1782
+                },
+                "anchors": {
+                  "zh-CN": "ikura-7bd",
+                  "ja-JP": "ikura-6f6"
+                }
+              }
+            },
+            {
+              "eventId": "line-026",
+              "kind": "line",
+              "text": {
+                "zh-CN": "　加奈连区区二十年都没有活到啊。",
+                "ja-JP": "　加奈はまだ二十年も生きていないというのに。"
+              },
+              "nextEventId": "line-027",
+              "source": {
+                "engine": "ikura",
+                "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV494.json",
+                "instructionIndex": 164,
+                "opcode": 43,
+                "status": "translated",
+                "instructionOffsets": {
+                  "zh-CN": 2079,
+                  "ja-JP": 1872
+                },
+                "anchors": {
+                  "zh-CN": "ikura-81f",
+                  "ja-JP": "ikura-750"
+                }
+              }
+            },
+            {
+              "eventId": "line-027",
+              "kind": "line",
+              "text": {
+                "zh-CN": "隆　道：「这样啊……」",
+                "ja-JP": "隆　道：「そうか……」"
+              },
+              "nextEventId": "line-028",
+              "source": {
+                "engine": "ikura",
+                "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV494.json",
+                "instructionIndex": 172,
+                "opcode": 43,
+                "status": "translated",
+                "instructionOffsets": {
+                  "zh-CN": 2162,
+                  "ja-JP": 1951
+                },
+                "anchors": {
+                  "zh-CN": "ikura-872",
+                  "ja-JP": "ikura-79f"
+                }
+              },
+              "speaker": {
+                "zh-CN": "隆　道",
+                "ja-JP": "隆　道"
+              }
+            },
+            {
+              "eventId": "line-028",
+              "kind": "line",
+              "text": {
+                "zh-CN": "　我伸出手，像平常一样触摸着那张脸。",
+                "ja-JP": "　俺は手を伸ばし、いつものようにその頬に触れた。"
+              },
+              "nextEventId": "line-029",
+              "source": {
+                "engine": "ikura",
+                "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV494.json",
+                "instructionIndex": 180,
+                "opcode": 43,
+                "status": "translated",
+                "instructionOffsets": {
+                  "zh-CN": 2235,
+                  "ja-JP": 2018
+                },
+                "anchors": {
+                  "zh-CN": "ikura-8bb",
+                  "ja-JP": "ikura-7e2"
+                }
+              }
+            },
+            {
+              "eventId": "line-029",
+              "kind": "line",
+              "text": {
+                "zh-CN": "　想要使泪水逆流一般，用大拇指将其拭去。",
+                "ja-JP": "　逆流するように、親指で雫をぬぐってやる。"
+              },
+              "nextEventId": "line-030",
+              "source": {
+                "engine": "ikura",
+                "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV494.json",
+                "instructionIndex": 183,
+                "opcode": 43,
+                "status": "translated",
+                "instructionOffsets": {
+                  "zh-CN": 2295,
+                  "ja-JP": 2074
+                },
+                "anchors": {
+                  "zh-CN": "ikura-8f7",
+                  "ja-JP": "ikura-81a"
+                }
+              }
+            },
+            {
+              "eventId": "line-030",
+              "kind": "line",
+              "text": {
+                "zh-CN": "　不知为何越是这样，加奈哭得越厉害。",
+                "ja-JP": "　なのにそうすると、ますます加奈は泣いた。"
+              },
+              "nextEventId": "line-031",
+              "source": {
+                "engine": "ikura",
+                "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV494.json",
+                "instructionIndex": 186,
+                "opcode": 43,
+                "status": "translated",
+                "instructionOffsets": {
+                  "zh-CN": 2359,
+                  "ja-JP": 2124
+                },
+                "anchors": {
+                  "zh-CN": "ikura-937",
+                  "ja-JP": "ikura-84c"
+                }
+              }
+            },
+            {
+              "eventId": "line-031",
+              "kind": "line",
+              "text": {
+                "zh-CN": "隆　道：「好啦」",
+                "ja-JP": "隆　道：「こら」"
+              },
+              "nextEventId": "line-032",
+              "source": {
+                "engine": "ikura",
+                "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV494.json",
+                "instructionIndex": 194,
+                "opcode": 43,
+                "status": "translated",
+                "instructionOffsets": {
+                  "zh-CN": 2446,
+                  "ja-JP": 2199
+                },
+                "anchors": {
+                  "zh-CN": "ikura-98e",
+                  "ja-JP": "ikura-897"
+                }
+              },
+              "speaker": {
+                "zh-CN": "隆　道",
+                "ja-JP": "隆　道"
+              }
+            },
+            {
+              "eventId": "line-032",
+              "kind": "line",
+              "text": {
+                "zh-CN": "加　奈：「可是……」",
+                "ja-JP": "加　奈：「だって……」"
+              },
+              "nextEventId": "line-033",
+              "cues": [
+                {
+                  "cueId": "voice:line-032:Kan2052:197",
+                  "kind": "voice",
+                  "timing": "utterance",
+                  "mediaId": "kana.ev494.voice.Kan2052",
+                  "resolverId": "kana-manifest",
+                  "raw": {
+                    "sourceKey": "Kan2052",
+                    "playbackPath": "raw/kana/VOICE.unpacked/KAN2052.OGG",
+                    "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV494.json",
+                    "instructionIndex": 197,
+                    "jaInstructionOffset": 2234,
+                    "zhInstructionOffset": 2486,
+                    "opcode": 43,
+                    "routeTopologyEqual": true
+                  }
+                }
+              ],
+              "source": {
+                "engine": "ikura",
+                "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV494.json",
+                "instructionIndex": 197,
+                "opcode": 43,
+                "status": "translated",
+                "instructionOffsets": {
+                  "zh-CN": 2486,
+                  "ja-JP": 2234
+                },
+                "anchors": {
+                  "zh-CN": "ikura-9b6",
+                  "ja-JP": "ikura-8ba"
+                }
+              },
+              "speaker": {
+                "zh-CN": "加　奈",
+                "ja-JP": "加　奈"
+              }
+            },
+            {
+              "eventId": "line-033",
+              "kind": "line",
+              "text": {
+                "zh-CN": "隆　道：「……不要哭」",
+                "ja-JP": "隆　道：「……泣くな」"
+              },
+              "nextEventId": "line-034",
+              "cues": [
+                {
+                  "cueId": "image:line-033:KE049P3:200",
+                  "kind": "image",
+                  "timing": "scene",
+                  "mediaId": "kana.ev494.image.KE049P3",
+                  "resolverId": "kana-manifest",
+                  "raw": {
+                    "sourceKey": "KE049P3",
+                    "playbackPath": "derived/images/kana/GGD.unpacked/KE049P3.png",
+                    "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV494.json",
+                    "instructionIndex": 200,
+                    "jaInstructionOffset": 2283,
+                    "zhInstructionOffset": 2539,
+                    "opcode": 5,
+                    "targetInstructionIndex": 2013,
+                    "targetJaOffset": 15911,
+                    "targetZhOffset": 16225,
+                    "routeTopologyEqual": true
+                  }
+                }
+              ],
+              "source": {
+                "engine": "ikura",
+                "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV494.json",
+                "instructionIndex": 207,
+                "opcode": 43,
+                "status": "translated",
+                "instructionOffsets": {
+                  "zh-CN": 2583,
+                  "ja-JP": 2327
+                },
+                "anchors": {
+                  "zh-CN": "ikura-a17",
+                  "ja-JP": "ikura-917"
+                }
+              },
+              "speaker": {
+                "zh-CN": "隆　道",
+                "ja-JP": "隆　道"
+              }
+            },
+            {
+              "eventId": "line-034",
+              "kind": "line",
+              "text": {
+                "zh-CN": "　加奈握住我的手，忍住了泪水。",
+                "ja-JP": "　俺の手を握りながら加奈は涙をこらえた。"
+              },
+              "nextEventId": "line-035",
+              "source": {
+                "engine": "ikura",
+                "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV494.json",
+                "instructionIndex": 215,
+                "opcode": 43,
+                "status": "translated",
+                "instructionOffsets": {
+                  "zh-CN": 2656,
+                  "ja-JP": 2395
+                },
+                "anchors": {
+                  "zh-CN": "ikura-a60",
+                  "ja-JP": "ikura-95b"
+                }
+              }
+            },
+            {
+              "eventId": "line-035",
+              "kind": "line",
+              "text": {
+                "zh-CN": "　那是一副完全不能称之为笑容的脸。",
+                "ja-JP": "　それはとても笑顔とは言えない顔だったが。"
+              },
+              "nextEventId": "line-036",
+              "source": {
+                "engine": "ikura",
+                "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV494.json",
+                "instructionIndex": 218,
+                "opcode": 43,
+                "status": "translated",
+                "instructionOffsets": {
+                  "zh-CN": 2710,
+                  "ja-JP": 2445
+                },
+                "anchors": {
+                  "zh-CN": "ikura-a96",
+                  "ja-JP": "ikura-98d"
+                }
+              }
+            },
+            {
+              "eventId": "line-036",
+              "kind": "line",
+              "text": {
+                "zh-CN": "隆　道：「我去拿食物过来。稍微要你一个人呆一会儿……没事吗？」",
+                "ja-JP": "隆　道：「食事をとってくる。少し一人にするけど……平気か？」"
+              },
+              "nextEventId": "line-037",
+              "source": {
+                "engine": "ikura",
+                "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV494.json",
+                "instructionIndex": 226,
+                "opcode": 43,
+                "status": "translated",
+                "instructionOffsets": {
+                  "zh-CN": 2795,
+                  "ja-JP": 2521
+                },
+                "anchors": {
+                  "zh-CN": "ikura-aeb",
+                  "ja-JP": "ikura-9d9"
+                }
+              },
+              "speaker": {
+                "zh-CN": "隆　道",
+                "ja-JP": "隆　道"
+              }
+            },
+            {
+              "eventId": "line-037",
+              "kind": "line",
+              "text": {
+                "zh-CN": "　我抚摸着她的头。",
+                "ja-JP": "　くしゃくしゃと頭を撫でる。"
+              },
+              "nextEventId": "line-038",
+              "source": {
+                "engine": "ikura",
+                "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV494.json",
+                "instructionIndex": 234,
+                "opcode": 43,
+                "status": "translated",
+                "instructionOffsets": {
+                  "zh-CN": 2908,
+                  "ja-JP": 2614
+                },
+                "anchors": {
+                  "zh-CN": "ikura-b5c",
+                  "ja-JP": "ikura-a36"
+                }
+              }
+            },
+            {
+              "eventId": "line-038",
+              "kind": "line",
+              "text": {
+                "zh-CN": "加　奈：「……（点头点头）」",
+                "ja-JP": "加　奈：「……（こくこく）」"
+              },
+              "nextEventId": "line-039",
+              "cues": [
+                {
+                  "cueId": "voice:line-038:Kan2053:242",
+                  "kind": "voice",
+                  "timing": "utterance",
+                  "mediaId": "kana.ev494.voice.Kan2053",
+                  "resolverId": "kana-manifest",
+                  "raw": {
+                    "sourceKey": "Kan2053",
+                    "playbackPath": "raw/kana/VOICE.unpacked/KAN2053.OGG",
+                    "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV494.json",
+                    "instructionIndex": 242,
+                    "jaInstructionOffset": 2681,
+                    "zhInstructionOffset": 2977,
+                    "opcode": 43,
+                    "routeTopologyEqual": true
+                  }
+                }
+              ],
+              "source": {
+                "engine": "ikura",
+                "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV494.json",
+                "instructionIndex": 242,
+                "opcode": 43,
+                "status": "translated",
+                "instructionOffsets": {
+                  "zh-CN": 2977,
+                  "ja-JP": 2681
+                },
+                "anchors": {
+                  "zh-CN": "ikura-ba1",
+                  "ja-JP": "ikura-a79"
+                }
+              },
+              "speaker": {
+                "zh-CN": "加　奈",
+                "ja-JP": "加　奈"
+              }
+            },
+            {
+              "eventId": "line-039",
+              "kind": "line",
+              "text": {
+                "zh-CN": "　加奈一次次一次次地点着头。",
+                "ja-JP": "　加奈は何度も何度もうなずくのだった。"
+              },
+              "nextEventId": "line-040",
+              "source": {
+                "engine": "ikura",
+                "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV494.json",
+                "instructionIndex": 250,
+                "opcode": 43,
+                "status": "translated",
+                "instructionOffsets": {
+                  "zh-CN": 3065,
+                  "ja-JP": 2760
+                },
+                "anchors": {
+                  "zh-CN": "ikura-bf9",
+                  "ja-JP": "ikura-ac8"
+                }
+              }
+            },
+            {
+              "eventId": "line-040",
+              "kind": "line",
+              "text": {
+                "zh-CN": "　这个时候，我已经得出了一个结论。",
+                "ja-JP": "　この時、俺はすでにひとつの結論を出していた。"
+              },
+              "nextEventId": "end-001",
+              "source": {
+                "engine": "ikura",
+                "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV494.json",
+                "instructionIndex": 260,
+                "opcode": 43,
+                "status": "translated",
+                "instructionOffsets": {
+                  "zh-CN": 3158,
+                  "ja-JP": 2850
+                },
+                "anchors": {
+                  "zh-CN": "ikura-c56",
+                  "ja-JP": "ikura-b22"
+                }
+              }
+            },
+            {
+              "eventId": "end-001",
+              "kind": "end",
+              "cues": [
+                {
+                  "cueId": "image:end-001:BLACK:266",
+                  "kind": "image",
+                  "timing": "scene",
+                  "mediaId": "kana.ev494.image.BLACK",
+                  "resolverId": "kana-manifest",
+                  "raw": {
+                    "sourceKey": "BLACK",
+                    "playbackPath": "derived/images/kana/GGD.unpacked/BLACK.png",
+                    "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV494.json",
+                    "instructionIndex": 266,
+                    "jaInstructionOffset": 2915,
+                    "zhInstructionOffset": 3229,
+                    "opcode": 5,
+                    "targetInstructionIndex": 439,
+                    "targetJaOffset": 3827,
+                    "targetZhOffset": 4141,
+                    "routeTopologyEqual": true
+                  }
+                },
+                {
+                  "cueId": "image:end-001:BLACK:409",
+                  "kind": "image",
+                  "timing": "scene",
+                  "mediaId": "kana.ev494.image.BLACK",
+                  "resolverId": "kana-manifest",
+                  "raw": {
+                    "sourceKey": "BLACK",
+                    "playbackPath": "derived/images/kana/GGD.unpacked/BLACK.png",
+                    "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV494.json",
+                    "instructionIndex": 409,
+                    "jaInstructionOffset": 3662,
+                    "zhInstructionOffset": 3976,
+                    "opcode": 5,
+                    "targetInstructionIndex": 439,
+                    "targetJaOffset": 3827,
+                    "targetZhOffset": 4141,
+                    "routeTopologyEqual": true
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "variantId": "kana/ev494/ja",
+      "locales": [
+        "ja-JP"
+      ],
+      "sections": [
+        {
+          "sectionId": "main",
+          "title": {
+            "ja-JP": "高等期・病院に戻って"
+          },
+          "entryEventId": "line-001",
+          "events": [
+            {
+              "eventId": "line-001",
+              "kind": "line",
+              "text": {
+                "ja-JP": "高等期・病院に戻って……"
+              },
+              "nextEventId": "line-002",
+              "cues": [
+                {
+                  "cueId": "bgm:line-001:TK11.ogg:2",
+                  "kind": "bgm",
+                  "timing": "scene",
+                  "mediaId": "kana.ev494.bgm.TK11.ogg",
+                  "resolverId": "kana-manifest",
+                  "raw": {
+                    "sourceKey": "TK11.ogg",
+                    "playbackPath": "raw/kana/WMSC.unpacked/TK11.OGG",
+                    "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV494.json",
+                    "instructionIndex": 2,
+                    "jaInstructionOffset": 19,
+                    "zhInstructionOffset": 19,
+                    "opcode": 5,
+                    "targetInstructionIndex": 2821,
+                    "targetJaOffset": 22045,
+                    "targetZhOffset": 22359,
+                    "routeTopologyEqual": true
+                  }
+                },
+                {
+                  "cueId": "image:line-001:KE049P6:4",
+                  "kind": "image",
+                  "timing": "scene",
+                  "mediaId": "kana.ev494.image.KE049P6",
+                  "resolverId": "kana-manifest",
+                  "raw": {
+                    "sourceKey": "KE049P6",
+                    "playbackPath": "derived/images/kana/GGD.unpacked/KE049P6.png",
+                    "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV494.json",
+                    "instructionIndex": 4,
+                    "jaInstructionOffset": 31,
+                    "zhInstructionOffset": 31,
+                    "opcode": 5,
+                    "targetInstructionIndex": 2028,
+                    "targetJaOffset": 16016,
+                    "targetZhOffset": 16330,
+                    "routeTopologyEqual": true
+                  }
+                }
+              ],
+              "source": {
+                "engine": "ikura",
+                "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV494.json",
+                "instructionIndex": 11,
+                "opcode": 247,
+                "status": "translated",
+                "instructionOffsets": {
+                  "zh-CN": 71,
+                  "ja-JP": 71
+                },
+                "anchors": {
+                  "zh-CN": "ikura-47",
+                  "ja-JP": "ikura-47"
+                }
+              }
+            },
+            {
+              "eventId": "line-002",
+              "kind": "line",
+              "text": {
+                "ja-JP": "隆　道：「どんな願いでもかなえてくれる神様がいたとして……加奈なら何を願う？」"
+              },
+              "nextEventId": "line-003",
+              "source": {
+                "engine": "ikura",
+                "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV494.json",
+                "instructionIndex": 17,
+                "opcode": 43,
+                "status": "translated",
+                "instructionOffsets": {
+                  "zh-CN": 126,
+                  "ja-JP": 130
+                },
+                "anchors": {
+                  "zh-CN": "ikura-7e",
+                  "ja-JP": "ikura-82"
+                }
+              },
+              "speaker": {
+                "ja-JP": "隆　道"
+              }
+            },
+            {
+              "eventId": "line-003",
+              "kind": "line",
+              "text": {
+                "ja-JP": "　俺の発した唐突な問いに、加奈は一瞬疑問を浮かべ、そして考え込んだ。"
+              },
+              "nextEventId": "line-004",
+              "source": {
+                "engine": "ikura",
+                "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV494.json",
+                "instructionIndex": 25,
+                "opcode": 43,
+                "status": "translated",
+                "instructionOffsets": {
+                  "zh-CN": 245,
+                  "ja-JP": 232
+                },
+                "anchors": {
+                  "zh-CN": "ikura-f5",
+                  "ja-JP": "ikura-e8"
+                }
+              }
+            },
+            {
+              "eventId": "line-004",
+              "kind": "line",
+              "text": {
+                "ja-JP": "　今、加奈の覚醒時間は短い。"
+              },
+              "nextEventId": "line-005",
+              "source": {
+                "engine": "ikura",
+                "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV494.json",
+                "instructionIndex": 33,
+                "opcode": 43,
+                "status": "translated",
+                "instructionOffsets": {
+                  "zh-CN": 360,
+                  "ja-JP": 331
+                },
+                "anchors": {
+                  "zh-CN": "ikura-168",
+                  "ja-JP": "ikura-14b"
+                }
+              }
+            },
+            {
+              "eventId": "line-005",
+              "kind": "line",
+              "text": {
+                "ja-JP": "　それは……風邪を引いたからだった。"
+              },
+              "nextEventId": "line-006",
+              "source": {
+                "engine": "ikura",
+                "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV494.json",
+                "instructionIndex": 41,
+                "opcode": 43,
+                "status": "translated",
+                "instructionOffsets": {
+                  "zh-CN": 451,
+                  "ja-JP": 404
+                },
+                "anchors": {
+                  "zh-CN": "ikura-1c3",
+                  "ja-JP": "ikura-194"
+                }
+              }
+            },
+            {
+              "eventId": "line-006",
+              "kind": "line",
+              "text": {
+                "ja-JP": "　ただの風邪……普通の人間なら、どうということはない。"
+              },
+              "nextEventId": "line-007",
+              "source": {
+                "engine": "ikura",
+                "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV494.json",
+                "instructionIndex": 49,
+                "opcode": 43,
+                "status": "translated",
+                "instructionOffsets": {
+                  "zh-CN": 522,
+                  "ja-JP": 478
+                },
+                "anchors": {
+                  "zh-CN": "ikura-20a",
+                  "ja-JP": "ikura-1de"
+                }
+              }
+            },
+            {
+              "eventId": "line-007",
+              "kind": "line",
+              "text": {
+                "ja-JP": "　けど、加奈にとっては、そのただの風邪が引き金になりうるのだ。"
+              },
+              "nextEventId": "line-008",
+              "source": {
+                "engine": "ikura",
+                "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV494.json",
+                "instructionIndex": 52,
+                "opcode": 43,
+                "status": "translated",
+                "instructionOffsets": {
+                  "zh-CN": 606,
+                  "ja-JP": 537
+                },
+                "anchors": {
+                  "zh-CN": "ikura-25e",
+                  "ja-JP": "ikura-219"
+                }
+              }
+            },
+            {
+              "eventId": "line-008",
+              "kind": "line",
+              "text": {
+                "ja-JP": "　腎不全。合併症。感染症。"
+              },
+              "nextEventId": "line-009",
+              "source": {
+                "engine": "ikura",
+                "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV494.json",
+                "instructionIndex": 60,
+                "opcode": 43,
+                "status": "translated",
+                "instructionOffsets": {
+                  "zh-CN": 713,
+                  "ja-JP": 625
+                },
+                "anchors": {
+                  "zh-CN": "ikura-2c9",
+                  "ja-JP": "ikura-271"
+                }
+              }
+            },
+            {
+              "eventId": "line-009",
+              "kind": "line",
+              "text": {
+                "ja-JP": "　このありふれた、よく聞く医学用語の組み合わせが、どれだけ恐ろしい意味を持っているか、正確に把握する者は少ない。"
+              },
+              "nextEventId": "line-010",
+              "source": {
+                "engine": "ikura",
+                "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV494.json",
+                "instructionIndex": 68,
+                "opcode": 43,
+                "status": "translated",
+                "instructionOffsets": {
+                  "zh-CN": 790,
+                  "ja-JP": 698
+                },
+                "anchors": {
+                  "zh-CN": "ikura-316",
+                  "ja-JP": "ikura-2ba"
+                }
+              }
+            },
+            {
+              "eventId": "line-010",
+              "kind": "line",
+              "text": {
+                "ja-JP": "　死へのエスカレーターが、ゆっくりと加奈を上に連れて行く。"
+              },
+              "nextEventId": "line-011",
+              "source": {
+                "engine": "ikura",
+                "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV494.json",
+                "instructionIndex": 71,
+                "opcode": 43,
+                "status": "translated",
+                "instructionOffsets": {
+                  "zh-CN": 908,
+                  "ja-JP": 795
+                },
+                "anchors": {
+                  "zh-CN": "ikura-38c",
+                  "ja-JP": "ikura-31b"
+                }
+              }
+            },
+            {
+              "eventId": "line-011",
+              "kind": "line",
+              "text": {
+                "ja-JP": "　もしこの風邪が肺炎にでもなったら？"
+              },
+              "nextEventId": "line-012",
+              "source": {
+                "engine": "ikura",
+                "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV494.json",
+                "instructionIndex": 79,
+                "opcode": 43,
+                "status": "translated",
+                "instructionOffsets": {
+                  "zh-CN": 1003,
+                  "ja-JP": 884
+                },
+                "anchors": {
+                  "zh-CN": "ikura-3eb",
+                  "ja-JP": "ikura-374"
+                }
+              }
+            },
+            {
+              "eventId": "line-012",
+              "kind": "line",
+              "text": {
+                "ja-JP": "　……とうてい、助かりはしないだろう。"
+              },
+              "nextEventId": "line-013",
+              "source": {
+                "engine": "ikura",
+                "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV494.json",
+                "instructionIndex": 87,
+                "opcode": 43,
+                "status": "translated",
+                "instructionOffsets": {
+                  "zh-CN": 1086,
+                  "ja-JP": 957
+                },
+                "anchors": {
+                  "zh-CN": "ikura-43e",
+                  "ja-JP": "ikura-3bd"
+                }
+              }
+            },
+            {
+              "eventId": "line-013",
+              "kind": "line",
+              "text": {
+                "ja-JP": "加　奈：「……神様？」"
+              },
+              "nextEventId": "line-014",
+              "cues": [
+                {
+                  "cueId": "voice:line-013:Kan2048:95",
+                  "kind": "voice",
+                  "timing": "utterance",
+                  "mediaId": "kana.ev494.voice.Kan2048",
+                  "resolverId": "kana-manifest",
+                  "raw": {
+                    "sourceKey": "Kan2048",
+                    "playbackPath": "raw/kana/VOICE.unpacked/KAN2048.OGG",
+                    "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV494.json",
+                    "instructionIndex": 95,
+                    "jaInstructionOffset": 1030,
+                    "zhInstructionOffset": 1169,
+                    "opcode": 43,
+                    "routeTopologyEqual": true
+                  }
+                }
+              ],
+              "source": {
+                "engine": "ikura",
+                "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV494.json",
+                "instructionIndex": 95,
+                "opcode": 43,
+                "status": "translated",
+                "instructionOffsets": {
+                  "zh-CN": 1169,
+                  "ja-JP": 1030
+                },
+                "anchors": {
+                  "zh-CN": "ikura-491",
+                  "ja-JP": "ikura-406"
+                }
+              },
+              "speaker": {
+                "ja-JP": "加　奈"
+              }
+            },
+            {
+              "eventId": "line-014",
+              "kind": "line",
+              "text": {
+                "ja-JP": "隆　道：「ああ……言葉遊びだよ」"
+              },
+              "nextEventId": "line-015",
+              "source": {
+                "engine": "ikura",
+                "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV494.json",
+                "instructionIndex": 98,
+                "opcode": 43,
+                "status": "translated",
+                "instructionOffsets": {
+                  "zh-CN": 1222,
+                  "ja-JP": 1081
+                },
+                "anchors": {
+                  "zh-CN": "ikura-4c6",
+                  "ja-JP": "ikura-439"
+                }
+              },
+              "speaker": {
+                "ja-JP": "隆　道"
+              }
+            },
+            {
+              "eventId": "line-015",
+              "kind": "line",
+              "text": {
+                "ja-JP": "加　奈：「わたし…………」"
+              },
+              "nextEventId": "line-016",
+              "cues": [
+                {
+                  "cueId": "voice:line-015:Kan2049:101",
+                  "kind": "voice",
+                  "timing": "utterance",
+                  "mediaId": "kana.ev494.voice.Kan2049",
+                  "resolverId": "kana-manifest",
+                  "raw": {
+                    "sourceKey": "Kan2049",
+                    "playbackPath": "raw/kana/VOICE.unpacked/KAN2049.OGG",
+                    "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV494.json",
+                    "instructionIndex": 101,
+                    "jaInstructionOffset": 1129,
+                    "zhInstructionOffset": 1276,
+                    "opcode": 43,
+                    "routeTopologyEqual": true
+                  }
+                }
+              ],
+              "source": {
+                "engine": "ikura",
+                "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV494.json",
+                "instructionIndex": 101,
+                "opcode": 43,
+                "status": "translated",
+                "instructionOffsets": {
+                  "zh-CN": 1276,
+                  "ja-JP": 1129
+                },
+                "anchors": {
+                  "zh-CN": "ikura-4fc",
+                  "ja-JP": "ikura-469"
+                }
+              },
+              "speaker": {
+                "ja-JP": "加　奈"
+              }
+            },
+            {
+              "eventId": "line-016",
+              "kind": "line",
+              "text": {
+                "ja-JP": "　加奈はずいぶんと長いこと考えた。"
+              },
+              "nextEventId": "line-017",
+              "source": {
+                "engine": "ikura",
+                "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV494.json",
+                "instructionIndex": 109,
+                "opcode": 43,
+                "status": "translated",
+                "instructionOffsets": {
+                  "zh-CN": 1354,
+                  "ja-JP": 1209
+                },
+                "anchors": {
+                  "zh-CN": "ikura-54a",
+                  "ja-JP": "ikura-4b9"
+                }
+              }
+            },
+            {
+              "eventId": "line-017",
+              "kind": "line",
+              "text": {
+                "ja-JP": "　言葉遊びのような問いに、慎重に、大切に答えを考えているようだった。"
+              },
+              "nextEventId": "line-018",
+              "source": {
+                "engine": "ikura",
+                "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV494.json",
+                "instructionIndex": 112,
+                "opcode": 43,
+                "status": "translated",
+                "instructionOffsets": {
+                  "zh-CN": 1404,
+                  "ja-JP": 1254
+                },
+                "anchors": {
+                  "zh-CN": "ikura-57c",
+                  "ja-JP": "ikura-4e6"
+                }
+              }
+            },
+            {
+              "eventId": "line-018",
+              "kind": "line",
+              "text": {
+                "ja-JP": "　そして、加奈は口を開く。"
+              },
+              "nextEventId": "line-019",
+              "source": {
+                "engine": "ikura",
+                "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV494.json",
+                "instructionIndex": 115,
+                "opcode": 43,
+                "status": "translated",
+                "instructionOffsets": {
+                  "zh-CN": 1484,
+                  "ja-JP": 1322
+                },
+                "anchors": {
+                  "zh-CN": "ikura-5cc",
+                  "ja-JP": "ikura-52a"
+                }
+              }
+            },
+            {
+              "eventId": "line-019",
+              "kind": "line",
+              "text": {
+                "ja-JP": "加　奈：「……生きたい」"
+              },
+              "nextEventId": "line-020",
+              "cues": [
+                {
+                  "cueId": "voice:line-019:Kan2050:123",
+                  "kind": "voice",
+                  "timing": "utterance",
+                  "mediaId": "kana.ev494.voice.Kan2050",
+                  "resolverId": "kana-manifest",
+                  "raw": {
+                    "sourceKey": "Kan2050",
+                    "playbackPath": "raw/kana/VOICE.unpacked/KAN2050.OGG",
+                    "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV494.json",
+                    "instructionIndex": 123,
+                    "jaInstructionOffset": 1390,
+                    "zhInstructionOffset": 1555,
+                    "opcode": 43,
+                    "routeTopologyEqual": true
+                  }
+                }
+              ],
+              "source": {
+                "engine": "ikura",
+                "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV494.json",
+                "instructionIndex": 123,
+                "opcode": 43,
+                "status": "translated",
+                "instructionOffsets": {
+                  "zh-CN": 1555,
+                  "ja-JP": 1390
+                },
+                "anchors": {
+                  "zh-CN": "ikura-613",
+                  "ja-JP": "ikura-56e"
+                }
+              },
+              "speaker": {
+                "ja-JP": "加　奈"
+              }
+            },
+            {
+              "eventId": "line-020",
+              "kind": "line",
+              "text": {
+                "ja-JP": "　いつのまにか目尻に浮かんだ水滴が、頬を伝った。"
+              },
+              "nextEventId": "line-021",
+              "source": {
+                "engine": "ikura",
+                "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV494.json",
+                "instructionIndex": 131,
+                "opcode": 43,
+                "status": "translated",
+                "instructionOffsets": {
+                  "zh-CN": 1639,
+                  "ja-JP": 1468
+                },
+                "anchors": {
+                  "zh-CN": "ikura-667",
+                  "ja-JP": "ikura-5bc"
+                }
+              }
+            },
+            {
+              "eventId": "line-021",
+              "kind": "line",
+              "text": {
+                "ja-JP": "加　奈：「生きたいよ……もっと」"
+              },
+              "nextEventId": "line-022",
+              "cues": [
+                {
+                  "cueId": "voice:line-021:Kan2051:139",
+                  "kind": "voice",
+                  "timing": "utterance",
+                  "mediaId": "kana.ev494.voice.Kan2051",
+                  "resolverId": "kana-manifest",
+                  "raw": {
+                    "sourceKey": "Kan2051",
+                    "playbackPath": "raw/kana/VOICE.unpacked/KAN2051.OGG",
+                    "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV494.json",
+                    "instructionIndex": 139,
+                    "jaInstructionOffset": 1553,
+                    "zhInstructionOffset": 1730,
+                    "opcode": 43,
+                    "routeTopologyEqual": true
+                  }
+                }
+              ],
+              "source": {
+                "engine": "ikura",
+                "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV494.json",
+                "instructionIndex": 139,
+                "opcode": 43,
+                "status": "translated",
+                "instructionOffsets": {
+                  "zh-CN": 1730,
+                  "ja-JP": 1553
+                },
+                "anchors": {
+                  "zh-CN": "ikura-6c2",
+                  "ja-JP": "ikura-611"
+                }
+              },
+              "speaker": {
+                "ja-JP": "加　奈"
+              }
+            },
+            {
+              "eventId": "line-022",
+              "kind": "line",
+              "text": {
+                "ja-JP": "　加奈が泣く。"
+              },
+              "nextEventId": "line-023",
+              "source": {
+                "engine": "ikura",
+                "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV494.json",
+                "instructionIndex": 147,
+                "opcode": 43,
+                "status": "translated",
+                "instructionOffsets": {
+                  "zh-CN": 1822,
+                  "ja-JP": 1635
+                },
+                "anchors": {
+                  "zh-CN": "ikura-71e",
+                  "ja-JP": "ikura-663"
+                }
+              }
+            },
+            {
+              "eventId": "line-023",
+              "kind": "line",
+              "text": {
+                "ja-JP": "　死がつらくない人間などいない。"
+              },
+              "nextEventId": "line-024",
+              "source": {
+                "engine": "ikura",
+                "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV494.json",
+                "instructionIndex": 155,
+                "opcode": 43,
+                "status": "translated",
+                "instructionOffsets": {
+                  "zh-CN": 1885,
+                  "ja-JP": 1696
+                },
+                "anchors": {
+                  "zh-CN": "ikura-75d",
+                  "ja-JP": "ikura-6a0"
+                }
+              }
+            },
+            {
+              "eventId": "line-024",
+              "kind": "line",
+              "text": {
+                "ja-JP": "　死が怖くない人間などいない。"
+              },
+              "nextEventId": "line-025",
+              "source": {
+                "engine": "ikura",
+                "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV494.json",
+                "instructionIndex": 158,
+                "opcode": 43,
+                "status": "translated",
+                "instructionOffsets": {
+                  "zh-CN": 1933,
+                  "ja-JP": 1739
+                },
+                "anchors": {
+                  "zh-CN": "ikura-78d",
+                  "ja-JP": "ikura-6cb"
+                }
+              }
+            },
+            {
+              "eventId": "line-025",
+              "kind": "line",
+              "text": {
+                "ja-JP": "　どんなに悟っているように思えても、どれだけ達観してしまっても、やはり死という未知の恐怖は人を臆病にさせる。"
+              },
+              "nextEventId": "line-026",
+              "source": {
+                "engine": "ikura",
+                "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV494.json",
+                "instructionIndex": 161,
+                "opcode": 43,
+                "status": "translated",
+                "instructionOffsets": {
+                  "zh-CN": 1981,
+                  "ja-JP": 1782
+                },
+                "anchors": {
+                  "zh-CN": "ikura-7bd",
+                  "ja-JP": "ikura-6f6"
+                }
+              }
+            },
+            {
+              "eventId": "line-026",
+              "kind": "line",
+              "text": {
+                "ja-JP": "　加奈はまだ二十年も生きていないというのに。"
+              },
+              "nextEventId": "line-027",
+              "source": {
+                "engine": "ikura",
+                "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV494.json",
+                "instructionIndex": 164,
+                "opcode": 43,
+                "status": "translated",
+                "instructionOffsets": {
+                  "zh-CN": 2079,
+                  "ja-JP": 1872
+                },
+                "anchors": {
+                  "zh-CN": "ikura-81f",
+                  "ja-JP": "ikura-750"
+                }
+              }
+            },
+            {
+              "eventId": "line-027",
+              "kind": "line",
+              "text": {
+                "ja-JP": "隆　道：「そうか……」"
+              },
+              "nextEventId": "line-028",
+              "source": {
+                "engine": "ikura",
+                "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV494.json",
+                "instructionIndex": 172,
+                "opcode": 43,
+                "status": "translated",
+                "instructionOffsets": {
+                  "zh-CN": 2162,
+                  "ja-JP": 1951
+                },
+                "anchors": {
+                  "zh-CN": "ikura-872",
+                  "ja-JP": "ikura-79f"
+                }
+              },
+              "speaker": {
+                "ja-JP": "隆　道"
+              }
+            },
+            {
+              "eventId": "line-028",
+              "kind": "line",
+              "text": {
+                "ja-JP": "　俺は手を伸ばし、いつものようにその頬に触れた。"
+              },
+              "nextEventId": "line-029",
+              "source": {
+                "engine": "ikura",
+                "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV494.json",
+                "instructionIndex": 180,
+                "opcode": 43,
+                "status": "translated",
+                "instructionOffsets": {
+                  "zh-CN": 2235,
+                  "ja-JP": 2018
+                },
+                "anchors": {
+                  "zh-CN": "ikura-8bb",
+                  "ja-JP": "ikura-7e2"
+                }
+              }
+            },
+            {
+              "eventId": "line-029",
+              "kind": "line",
+              "text": {
+                "ja-JP": "　逆流するように、親指で雫をぬぐってやる。"
+              },
+              "nextEventId": "line-030",
+              "source": {
+                "engine": "ikura",
+                "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV494.json",
+                "instructionIndex": 183,
+                "opcode": 43,
+                "status": "translated",
+                "instructionOffsets": {
+                  "zh-CN": 2295,
+                  "ja-JP": 2074
+                },
+                "anchors": {
+                  "zh-CN": "ikura-8f7",
+                  "ja-JP": "ikura-81a"
+                }
+              }
+            },
+            {
+              "eventId": "line-030",
+              "kind": "line",
+              "text": {
+                "ja-JP": "　なのにそうすると、ますます加奈は泣いた。"
+              },
+              "nextEventId": "line-031",
+              "source": {
+                "engine": "ikura",
+                "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV494.json",
+                "instructionIndex": 186,
+                "opcode": 43,
+                "status": "translated",
+                "instructionOffsets": {
+                  "zh-CN": 2359,
+                  "ja-JP": 2124
+                },
+                "anchors": {
+                  "zh-CN": "ikura-937",
+                  "ja-JP": "ikura-84c"
+                }
+              }
+            },
+            {
+              "eventId": "line-031",
+              "kind": "line",
+              "text": {
+                "ja-JP": "隆　道：「こら」"
+              },
+              "nextEventId": "line-032",
+              "source": {
+                "engine": "ikura",
+                "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV494.json",
+                "instructionIndex": 194,
+                "opcode": 43,
+                "status": "translated",
+                "instructionOffsets": {
+                  "zh-CN": 2446,
+                  "ja-JP": 2199
+                },
+                "anchors": {
+                  "zh-CN": "ikura-98e",
+                  "ja-JP": "ikura-897"
+                }
+              },
+              "speaker": {
+                "ja-JP": "隆　道"
+              }
+            },
+            {
+              "eventId": "line-032",
+              "kind": "line",
+              "text": {
+                "ja-JP": "加　奈：「だって……」"
+              },
+              "nextEventId": "line-033",
+              "cues": [
+                {
+                  "cueId": "voice:line-032:Kan2052:197",
+                  "kind": "voice",
+                  "timing": "utterance",
+                  "mediaId": "kana.ev494.voice.Kan2052",
+                  "resolverId": "kana-manifest",
+                  "raw": {
+                    "sourceKey": "Kan2052",
+                    "playbackPath": "raw/kana/VOICE.unpacked/KAN2052.OGG",
+                    "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV494.json",
+                    "instructionIndex": 197,
+                    "jaInstructionOffset": 2234,
+                    "zhInstructionOffset": 2486,
+                    "opcode": 43,
+                    "routeTopologyEqual": true
+                  }
+                }
+              ],
+              "source": {
+                "engine": "ikura",
+                "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV494.json",
+                "instructionIndex": 197,
+                "opcode": 43,
+                "status": "translated",
+                "instructionOffsets": {
+                  "zh-CN": 2486,
+                  "ja-JP": 2234
+                },
+                "anchors": {
+                  "zh-CN": "ikura-9b6",
+                  "ja-JP": "ikura-8ba"
+                }
+              },
+              "speaker": {
+                "ja-JP": "加　奈"
+              }
+            },
+            {
+              "eventId": "line-033",
+              "kind": "line",
+              "text": {
+                "ja-JP": "隆　道：「……泣くな」"
+              },
+              "nextEventId": "line-034",
+              "cues": [
+                {
+                  "cueId": "image:line-033:KE049P3:200",
+                  "kind": "image",
+                  "timing": "scene",
+                  "mediaId": "kana.ev494.image.KE049P3",
+                  "resolverId": "kana-manifest",
+                  "raw": {
+                    "sourceKey": "KE049P3",
+                    "playbackPath": "derived/images/kana/GGD.unpacked/KE049P3.png",
+                    "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV494.json",
+                    "instructionIndex": 200,
+                    "jaInstructionOffset": 2283,
+                    "zhInstructionOffset": 2539,
+                    "opcode": 5,
+                    "targetInstructionIndex": 2013,
+                    "targetJaOffset": 15911,
+                    "targetZhOffset": 16225,
+                    "routeTopologyEqual": true
+                  }
+                }
+              ],
+              "source": {
+                "engine": "ikura",
+                "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV494.json",
+                "instructionIndex": 207,
+                "opcode": 43,
+                "status": "translated",
+                "instructionOffsets": {
+                  "zh-CN": 2583,
+                  "ja-JP": 2327
+                },
+                "anchors": {
+                  "zh-CN": "ikura-a17",
+                  "ja-JP": "ikura-917"
+                }
+              },
+              "speaker": {
+                "ja-JP": "隆　道"
+              }
+            },
+            {
+              "eventId": "line-034",
+              "kind": "line",
+              "text": {
+                "ja-JP": "　俺の手を握りながら加奈は涙をこらえた。"
+              },
+              "nextEventId": "line-035",
+              "source": {
+                "engine": "ikura",
+                "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV494.json",
+                "instructionIndex": 215,
+                "opcode": 43,
+                "status": "translated",
+                "instructionOffsets": {
+                  "zh-CN": 2656,
+                  "ja-JP": 2395
+                },
+                "anchors": {
+                  "zh-CN": "ikura-a60",
+                  "ja-JP": "ikura-95b"
+                }
+              }
+            },
+            {
+              "eventId": "line-035",
+              "kind": "line",
+              "text": {
+                "ja-JP": "　それはとても笑顔とは言えない顔だったが。"
+              },
+              "nextEventId": "line-036",
+              "source": {
+                "engine": "ikura",
+                "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV494.json",
+                "instructionIndex": 218,
+                "opcode": 43,
+                "status": "translated",
+                "instructionOffsets": {
+                  "zh-CN": 2710,
+                  "ja-JP": 2445
+                },
+                "anchors": {
+                  "zh-CN": "ikura-a96",
+                  "ja-JP": "ikura-98d"
+                }
+              }
+            },
+            {
+              "eventId": "line-036",
+              "kind": "line",
+              "text": {
+                "ja-JP": "隆　道：「食事をとってくる。少し一人にするけど……平気か？」"
+              },
+              "nextEventId": "line-037",
+              "source": {
+                "engine": "ikura",
+                "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV494.json",
+                "instructionIndex": 226,
+                "opcode": 43,
+                "status": "translated",
+                "instructionOffsets": {
+                  "zh-CN": 2795,
+                  "ja-JP": 2521
+                },
+                "anchors": {
+                  "zh-CN": "ikura-aeb",
+                  "ja-JP": "ikura-9d9"
+                }
+              },
+              "speaker": {
+                "ja-JP": "隆　道"
+              }
+            },
+            {
+              "eventId": "line-037",
+              "kind": "line",
+              "text": {
+                "ja-JP": "　くしゃくしゃと頭を撫でる。"
+              },
+              "nextEventId": "line-038",
+              "source": {
+                "engine": "ikura",
+                "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV494.json",
+                "instructionIndex": 234,
+                "opcode": 43,
+                "status": "translated",
+                "instructionOffsets": {
+                  "zh-CN": 2908,
+                  "ja-JP": 2614
+                },
+                "anchors": {
+                  "zh-CN": "ikura-b5c",
+                  "ja-JP": "ikura-a36"
+                }
+              }
+            },
+            {
+              "eventId": "line-038",
+              "kind": "line",
+              "text": {
+                "ja-JP": "加　奈：「……（こくこく）」"
+              },
+              "nextEventId": "line-039",
+              "cues": [
+                {
+                  "cueId": "voice:line-038:Kan2053:242",
+                  "kind": "voice",
+                  "timing": "utterance",
+                  "mediaId": "kana.ev494.voice.Kan2053",
+                  "resolverId": "kana-manifest",
+                  "raw": {
+                    "sourceKey": "Kan2053",
+                    "playbackPath": "raw/kana/VOICE.unpacked/KAN2053.OGG",
+                    "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV494.json",
+                    "instructionIndex": 242,
+                    "jaInstructionOffset": 2681,
+                    "zhInstructionOffset": 2977,
+                    "opcode": 43,
+                    "routeTopologyEqual": true
+                  }
+                }
+              ],
+              "source": {
+                "engine": "ikura",
+                "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV494.json",
+                "instructionIndex": 242,
+                "opcode": 43,
+                "status": "translated",
+                "instructionOffsets": {
+                  "zh-CN": 2977,
+                  "ja-JP": 2681
+                },
+                "anchors": {
+                  "zh-CN": "ikura-ba1",
+                  "ja-JP": "ikura-a79"
+                }
+              },
+              "speaker": {
+                "ja-JP": "加　奈"
+              }
+            },
+            {
+              "eventId": "line-039",
+              "kind": "line",
+              "text": {
+                "ja-JP": "　加奈は何度も何度もうなずくのだった。"
+              },
+              "nextEventId": "line-040",
+              "source": {
+                "engine": "ikura",
+                "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV494.json",
+                "instructionIndex": 250,
+                "opcode": 43,
+                "status": "translated",
+                "instructionOffsets": {
+                  "zh-CN": 3065,
+                  "ja-JP": 2760
+                },
+                "anchors": {
+                  "zh-CN": "ikura-bf9",
+                  "ja-JP": "ikura-ac8"
+                }
+              }
+            },
+            {
+              "eventId": "line-040",
+              "kind": "line",
+              "text": {
+                "ja-JP": "　この時、俺はすでにひとつの結論を出していた。"
+              },
+              "nextEventId": "end-001",
+              "source": {
+                "engine": "ikura",
+                "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV494.json",
+                "instructionIndex": 260,
+                "opcode": 43,
+                "status": "translated",
+                "instructionOffsets": {
+                  "zh-CN": 3158,
+                  "ja-JP": 2850
+                },
+                "anchors": {
+                  "zh-CN": "ikura-c56",
+                  "ja-JP": "ikura-b22"
+                }
+              }
+            },
+            {
+              "eventId": "end-001",
+              "kind": "end",
+              "cues": [
+                {
+                  "cueId": "image:end-001:BLACK:266",
+                  "kind": "image",
+                  "timing": "scene",
+                  "mediaId": "kana.ev494.image.BLACK",
+                  "resolverId": "kana-manifest",
+                  "raw": {
+                    "sourceKey": "BLACK",
+                    "playbackPath": "derived/images/kana/GGD.unpacked/BLACK.png",
+                    "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV494.json",
+                    "instructionIndex": 266,
+                    "jaInstructionOffset": 2915,
+                    "zhInstructionOffset": 3229,
+                    "opcode": 5,
+                    "targetInstructionIndex": 439,
+                    "targetJaOffset": 3827,
+                    "targetZhOffset": 4141,
+                    "routeTopologyEqual": true
+                  }
+                },
+                {
+                  "cueId": "image:end-001:BLACK:409",
+                  "kind": "image",
+                  "timing": "scene",
+                  "mediaId": "kana.ev494.image.BLACK",
+                  "resolverId": "kana-manifest",
+                  "raw": {
+                    "sourceKey": "BLACK",
+                    "playbackPath": "derived/images/kana/GGD.unpacked/BLACK.png",
+                    "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV494.json",
+                    "instructionIndex": 409,
+                    "jaInstructionOffset": 3662,
+                    "zhInstructionOffset": 3976,
+                    "opcode": 5,
+                    "targetInstructionIndex": 439,
+                    "targetJaOffset": 3827,
+                    "targetZhOffset": 4141,
+                    "routeTopologyEqual": true
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "variantId": "kana/ev494/zh",
+      "locales": [
+        "zh-CN"
+      ],
+      "sections": [
+        {
+          "sectionId": "main",
+          "title": {
+            "zh-CN": "高等期 · 回到医院"
+          },
+          "entryEventId": "line-001",
+          "events": [
+            {
+              "eventId": "line-001",
+              "kind": "line",
+              "text": {
+                "zh-CN": "高等期·回到医院……"
+              },
+              "nextEventId": "line-002",
+              "cues": [
+                {
+                  "cueId": "bgm:line-001:TK11.ogg:2",
+                  "kind": "bgm",
+                  "timing": "scene",
+                  "mediaId": "kana.ev494.bgm.TK11.ogg",
+                  "resolverId": "kana-manifest",
+                  "raw": {
+                    "sourceKey": "TK11.ogg",
+                    "playbackPath": "raw/kana/WMSC.unpacked/TK11.OGG",
+                    "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV494.json",
+                    "instructionIndex": 2,
+                    "jaInstructionOffset": 19,
+                    "zhInstructionOffset": 19,
+                    "opcode": 5,
+                    "targetInstructionIndex": 2821,
+                    "targetJaOffset": 22045,
+                    "targetZhOffset": 22359,
+                    "routeTopologyEqual": true
+                  }
+                },
+                {
+                  "cueId": "image:line-001:KE049P6:4",
+                  "kind": "image",
+                  "timing": "scene",
+                  "mediaId": "kana.ev494.image.KE049P6",
+                  "resolverId": "kana-manifest",
+                  "raw": {
+                    "sourceKey": "KE049P6",
+                    "playbackPath": "derived/images/kana/GGD.unpacked/KE049P6.png",
+                    "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV494.json",
+                    "instructionIndex": 4,
+                    "jaInstructionOffset": 31,
+                    "zhInstructionOffset": 31,
+                    "opcode": 5,
+                    "targetInstructionIndex": 2028,
+                    "targetJaOffset": 16016,
+                    "targetZhOffset": 16330,
+                    "routeTopologyEqual": true
+                  }
+                }
+              ],
+              "source": {
+                "engine": "ikura",
+                "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV494.json",
+                "instructionIndex": 11,
+                "opcode": 247,
+                "status": "translated",
+                "instructionOffsets": {
+                  "zh-CN": 71,
+                  "ja-JP": 71
+                },
+                "anchors": {
+                  "zh-CN": "ikura-47",
+                  "ja-JP": "ikura-47"
+                }
+              }
+            },
+            {
+              "eventId": "line-002",
+              "kind": "line",
+              "text": {
+                "zh-CN": "隆　道：「如果有一个可以实现任何愿望的神的话……加奈会许什么愿呢？」"
+              },
+              "nextEventId": "line-003",
+              "source": {
+                "engine": "ikura",
+                "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV494.json",
+                "instructionIndex": 17,
+                "opcode": 43,
+                "status": "translated",
+                "instructionOffsets": {
+                  "zh-CN": 126,
+                  "ja-JP": 130
+                },
+                "anchors": {
+                  "zh-CN": "ikura-7e",
+                  "ja-JP": "ikura-82"
+                }
+              },
+              "speaker": {
+                "zh-CN": "隆　道"
+              }
+            },
+            {
+              "eventId": "line-003",
+              "kind": "line",
+              "text": {
+                "zh-CN": "　对于我唐突的发问，加奈一瞬间浮现出了疑惑，然后认真考虑了起来。"
+              },
+              "nextEventId": "line-004",
+              "source": {
+                "engine": "ikura",
+                "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV494.json",
+                "instructionIndex": 25,
+                "opcode": 43,
+                "status": "translated",
+                "instructionOffsets": {
+                  "zh-CN": 245,
+                  "ja-JP": 232
+                },
+                "anchors": {
+                  "zh-CN": "ikura-f5",
+                  "ja-JP": "ikura-e8"
+                }
+              }
+            },
+            {
+              "eventId": "line-004",
+              "kind": "line",
+              "text": {
+                "zh-CN": "　现在，加奈能保持清醒的时间已经很短了。"
+              },
+              "nextEventId": "line-005",
+              "source": {
+                "engine": "ikura",
+                "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV494.json",
+                "instructionIndex": 33,
+                "opcode": 43,
+                "status": "translated",
+                "instructionOffsets": {
+                  "zh-CN": 360,
+                  "ja-JP": 331
+                },
+                "anchors": {
+                  "zh-CN": "ikura-168",
+                  "ja-JP": "ikura-14b"
+                }
+              }
+            },
+            {
+              "eventId": "line-005",
+              "kind": "line",
+              "text": {
+                "zh-CN": "　因为……感冒了吧。"
+              },
+              "nextEventId": "line-006",
+              "source": {
+                "engine": "ikura",
+                "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV494.json",
+                "instructionIndex": 41,
+                "opcode": 43,
+                "status": "translated",
+                "instructionOffsets": {
+                  "zh-CN": 451,
+                  "ja-JP": 404
+                },
+                "anchors": {
+                  "zh-CN": "ikura-1c3",
+                  "ja-JP": "ikura-194"
+                }
+              }
+            },
+            {
+              "eventId": "line-006",
+              "kind": "line",
+              "text": {
+                "zh-CN": "　仅仅的感冒……如果是普通的人类，这个病的确没什么大不了的。"
+              },
+              "nextEventId": "line-007",
+              "source": {
+                "engine": "ikura",
+                "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV494.json",
+                "instructionIndex": 49,
+                "opcode": 43,
+                "status": "translated",
+                "instructionOffsets": {
+                  "zh-CN": 522,
+                  "ja-JP": 478
+                },
+                "anchors": {
+                  "zh-CN": "ikura-20a",
+                  "ja-JP": "ikura-1de"
+                }
+              }
+            },
+            {
+              "eventId": "line-007",
+              "kind": "line",
+              "text": {
+                "zh-CN": "　但是，对于加奈来说，这“仅仅”的感冒，却像导火索一般。"
+              },
+              "nextEventId": "line-008",
+              "source": {
+                "engine": "ikura",
+                "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV494.json",
+                "instructionIndex": 52,
+                "opcode": 43,
+                "status": "translated",
+                "instructionOffsets": {
+                  "zh-CN": 606,
+                  "ja-JP": 537
+                },
+                "anchors": {
+                  "zh-CN": "ikura-25e",
+                  "ja-JP": "ikura-219"
+                }
+              }
+            },
+            {
+              "eventId": "line-008",
+              "kind": "line",
+              "text": {
+                "zh-CN": "　腎不全。并发症。感染症。"
+              },
+              "nextEventId": "line-009",
+              "source": {
+                "engine": "ikura",
+                "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV494.json",
+                "instructionIndex": 60,
+                "opcode": 43,
+                "status": "translated",
+                "instructionOffsets": {
+                  "zh-CN": 713,
+                  "ja-JP": 625
+                },
+                "anchors": {
+                  "zh-CN": "ikura-2c9",
+                  "ja-JP": "ikura-271"
+                }
+              }
+            },
+            {
+              "eventId": "line-009",
+              "kind": "line",
+              "text": {
+                "zh-CN": "　虽然这些都是很常见、常听到的医学术语的组合，但是这到底代表着多么恐怖的事情，知道的人却很少。"
+              },
+              "nextEventId": "line-010",
+              "source": {
+                "engine": "ikura",
+                "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV494.json",
+                "instructionIndex": 68,
+                "opcode": 43,
+                "status": "translated",
+                "instructionOffsets": {
+                  "zh-CN": 790,
+                  "ja-JP": 698
+                },
+                "anchors": {
+                  "zh-CN": "ikura-316",
+                  "ja-JP": "ikura-2ba"
+                }
+              }
+            },
+            {
+              "eventId": "line-010",
+              "kind": "line",
+              "text": {
+                "zh-CN": "　加奈在一步一步的被拉到名为死亡的阶梯上去。"
+              },
+              "nextEventId": "line-011",
+              "source": {
+                "engine": "ikura",
+                "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV494.json",
+                "instructionIndex": 71,
+                "opcode": 43,
+                "status": "translated",
+                "instructionOffsets": {
+                  "zh-CN": 908,
+                  "ja-JP": 795
+                },
+                "anchors": {
+                  "zh-CN": "ikura-38c",
+                  "ja-JP": "ikura-31b"
+                }
+              }
+            },
+            {
+              "eventId": "line-011",
+              "kind": "line",
+              "text": {
+                "zh-CN": "　如果这个感冒发展成了肺炎的话？"
+              },
+              "nextEventId": "line-012",
+              "source": {
+                "engine": "ikura",
+                "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV494.json",
+                "instructionIndex": 79,
+                "opcode": 43,
+                "status": "translated",
+                "instructionOffsets": {
+                  "zh-CN": 1003,
+                  "ja-JP": 884
+                },
+                "anchors": {
+                  "zh-CN": "ikura-3eb",
+                  "ja-JP": "ikura-374"
+                }
+              }
+            },
+            {
+              "eventId": "line-012",
+              "kind": "line",
+              "text": {
+                "zh-CN": "　……无论如何，也无计可施了吧。"
+              },
+              "nextEventId": "line-013",
+              "source": {
+                "engine": "ikura",
+                "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV494.json",
+                "instructionIndex": 87,
+                "opcode": 43,
+                "status": "translated",
+                "instructionOffsets": {
+                  "zh-CN": 1086,
+                  "ja-JP": 957
+                },
+                "anchors": {
+                  "zh-CN": "ikura-43e",
+                  "ja-JP": "ikura-3bd"
+                }
+              }
+            },
+            {
+              "eventId": "line-013",
+              "kind": "line",
+              "text": {
+                "zh-CN": "加　奈：「……神？」"
+              },
+              "nextEventId": "line-014",
+              "cues": [
+                {
+                  "cueId": "voice:line-013:Kan2048:95",
+                  "kind": "voice",
+                  "timing": "utterance",
+                  "mediaId": "kana.ev494.voice.Kan2048",
+                  "resolverId": "kana-manifest",
+                  "raw": {
+                    "sourceKey": "Kan2048",
+                    "playbackPath": "raw/kana/VOICE.unpacked/KAN2048.OGG",
+                    "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV494.json",
+                    "instructionIndex": 95,
+                    "jaInstructionOffset": 1030,
+                    "zhInstructionOffset": 1169,
+                    "opcode": 43,
+                    "routeTopologyEqual": true
+                  }
+                }
+              ],
+              "source": {
+                "engine": "ikura",
+                "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV494.json",
+                "instructionIndex": 95,
+                "opcode": 43,
+                "status": "translated",
+                "instructionOffsets": {
+                  "zh-CN": 1169,
+                  "ja-JP": 1030
+                },
+                "anchors": {
+                  "zh-CN": "ikura-491",
+                  "ja-JP": "ikura-406"
+                }
+              },
+              "speaker": {
+                "zh-CN": "加　奈"
+              }
+            },
+            {
+              "eventId": "line-014",
+              "kind": "line",
+              "text": {
+                "zh-CN": "隆　道：「啊啊……文字游戏哟」"
+              },
+              "nextEventId": "line-015",
+              "source": {
+                "engine": "ikura",
+                "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV494.json",
+                "instructionIndex": 98,
+                "opcode": 43,
+                "status": "translated",
+                "instructionOffsets": {
+                  "zh-CN": 1222,
+                  "ja-JP": 1081
+                },
+                "anchors": {
+                  "zh-CN": "ikura-4c6",
+                  "ja-JP": "ikura-439"
+                }
+              },
+              "speaker": {
+                "zh-CN": "隆　道"
+              }
+            },
+            {
+              "eventId": "line-015",
+              "kind": "line",
+              "text": {
+                "zh-CN": "加　奈：「我……」"
+              },
+              "nextEventId": "line-016",
+              "cues": [
+                {
+                  "cueId": "voice:line-015:Kan2049:101",
+                  "kind": "voice",
+                  "timing": "utterance",
+                  "mediaId": "kana.ev494.voice.Kan2049",
+                  "resolverId": "kana-manifest",
+                  "raw": {
+                    "sourceKey": "Kan2049",
+                    "playbackPath": "raw/kana/VOICE.unpacked/KAN2049.OGG",
+                    "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV494.json",
+                    "instructionIndex": 101,
+                    "jaInstructionOffset": 1129,
+                    "zhInstructionOffset": 1276,
+                    "opcode": 43,
+                    "routeTopologyEqual": true
+                  }
+                }
+              ],
+              "source": {
+                "engine": "ikura",
+                "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV494.json",
+                "instructionIndex": 101,
+                "opcode": 43,
+                "status": "translated",
+                "instructionOffsets": {
+                  "zh-CN": 1276,
+                  "ja-JP": 1129
+                },
+                "anchors": {
+                  "zh-CN": "ikura-4fc",
+                  "ja-JP": "ikura-469"
+                }
+              },
+              "speaker": {
+                "zh-CN": "加　奈"
+              }
+            },
+            {
+              "eventId": "line-016",
+              "kind": "line",
+              "text": {
+                "zh-CN": "　加奈考虑了相当长的时间。"
+              },
+              "nextEventId": "line-017",
+              "source": {
+                "engine": "ikura",
+                "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV494.json",
+                "instructionIndex": 109,
+                "opcode": 43,
+                "status": "translated",
+                "instructionOffsets": {
+                  "zh-CN": 1354,
+                  "ja-JP": 1209
+                },
+                "anchors": {
+                  "zh-CN": "ikura-54a",
+                  "ja-JP": "ikura-4b9"
+                }
+              }
+            },
+            {
+              "eventId": "line-017",
+              "kind": "line",
+              "text": {
+                "zh-CN": "　对于这个文字游戏一般的问题，慎重地，认真地考虑着答案。"
+              },
+              "nextEventId": "line-018",
+              "source": {
+                "engine": "ikura",
+                "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV494.json",
+                "instructionIndex": 112,
+                "opcode": 43,
+                "status": "translated",
+                "instructionOffsets": {
+                  "zh-CN": 1404,
+                  "ja-JP": 1254
+                },
+                "anchors": {
+                  "zh-CN": "ikura-57c",
+                  "ja-JP": "ikura-4e6"
+                }
+              }
+            },
+            {
+              "eventId": "line-018",
+              "kind": "line",
+              "text": {
+                "zh-CN": "　然后，加奈开口道。"
+              },
+              "nextEventId": "line-019",
+              "source": {
+                "engine": "ikura",
+                "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV494.json",
+                "instructionIndex": 115,
+                "opcode": 43,
+                "status": "translated",
+                "instructionOffsets": {
+                  "zh-CN": 1484,
+                  "ja-JP": 1322
+                },
+                "anchors": {
+                  "zh-CN": "ikura-5cc",
+                  "ja-JP": "ikura-52a"
+                }
+              }
+            },
+            {
+              "eventId": "line-019",
+              "kind": "line",
+              "text": {
+                "zh-CN": "加　奈：「……想活下去」"
+              },
+              "nextEventId": "line-020",
+              "cues": [
+                {
+                  "cueId": "voice:line-019:Kan2050:123",
+                  "kind": "voice",
+                  "timing": "utterance",
+                  "mediaId": "kana.ev494.voice.Kan2050",
+                  "resolverId": "kana-manifest",
+                  "raw": {
+                    "sourceKey": "Kan2050",
+                    "playbackPath": "raw/kana/VOICE.unpacked/KAN2050.OGG",
+                    "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV494.json",
+                    "instructionIndex": 123,
+                    "jaInstructionOffset": 1390,
+                    "zhInstructionOffset": 1555,
+                    "opcode": 43,
+                    "routeTopologyEqual": true
+                  }
+                }
+              ],
+              "source": {
+                "engine": "ikura",
+                "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV494.json",
+                "instructionIndex": 123,
+                "opcode": 43,
+                "status": "translated",
+                "instructionOffsets": {
+                  "zh-CN": 1555,
+                  "ja-JP": 1390
+                },
+                "anchors": {
+                  "zh-CN": "ikura-613",
+                  "ja-JP": "ikura-56e"
+                }
+              },
+              "speaker": {
+                "zh-CN": "加　奈"
+              }
+            },
+            {
+              "eventId": "line-020",
+              "kind": "line",
+              "text": {
+                "zh-CN": "　不知何时眼角浮出了泪滴，流到了脸颊上。"
+              },
+              "nextEventId": "line-021",
+              "source": {
+                "engine": "ikura",
+                "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV494.json",
+                "instructionIndex": 131,
+                "opcode": 43,
+                "status": "translated",
+                "instructionOffsets": {
+                  "zh-CN": 1639,
+                  "ja-JP": 1468
+                },
+                "anchors": {
+                  "zh-CN": "ikura-667",
+                  "ja-JP": "ikura-5bc"
+                }
+              }
+            },
+            {
+              "eventId": "line-021",
+              "kind": "line",
+              "text": {
+                "zh-CN": "加　奈：「想活下去啊……更久地」"
+              },
+              "nextEventId": "line-022",
+              "cues": [
+                {
+                  "cueId": "voice:line-021:Kan2051:139",
+                  "kind": "voice",
+                  "timing": "utterance",
+                  "mediaId": "kana.ev494.voice.Kan2051",
+                  "resolverId": "kana-manifest",
+                  "raw": {
+                    "sourceKey": "Kan2051",
+                    "playbackPath": "raw/kana/VOICE.unpacked/KAN2051.OGG",
+                    "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV494.json",
+                    "instructionIndex": 139,
+                    "jaInstructionOffset": 1553,
+                    "zhInstructionOffset": 1730,
+                    "opcode": 43,
+                    "routeTopologyEqual": true
+                  }
+                }
+              ],
+              "source": {
+                "engine": "ikura",
+                "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV494.json",
+                "instructionIndex": 139,
+                "opcode": 43,
+                "status": "translated",
+                "instructionOffsets": {
+                  "zh-CN": 1730,
+                  "ja-JP": 1553
+                },
+                "anchors": {
+                  "zh-CN": "ikura-6c2",
+                  "ja-JP": "ikura-611"
+                }
+              },
+              "speaker": {
+                "zh-CN": "加　奈"
+              }
+            },
+            {
+              "eventId": "line-022",
+              "kind": "line",
+              "text": {
+                "zh-CN": "　加奈哭了。"
+              },
+              "nextEventId": "line-023",
+              "source": {
+                "engine": "ikura",
+                "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV494.json",
+                "instructionIndex": 147,
+                "opcode": 43,
+                "status": "translated",
+                "instructionOffsets": {
+                  "zh-CN": 1822,
+                  "ja-JP": 1635
+                },
+                "anchors": {
+                  "zh-CN": "ikura-71e",
+                  "ja-JP": "ikura-663"
+                }
+              }
+            },
+            {
+              "eventId": "line-023",
+              "kind": "line",
+              "text": {
+                "zh-CN": "　没有能够笑对死亡的人。"
+              },
+              "nextEventId": "line-024",
+              "source": {
+                "engine": "ikura",
+                "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV494.json",
+                "instructionIndex": 155,
+                "opcode": 43,
+                "status": "translated",
+                "instructionOffsets": {
+                  "zh-CN": 1885,
+                  "ja-JP": 1696
+                },
+                "anchors": {
+                  "zh-CN": "ikura-75d",
+                  "ja-JP": "ikura-6a0"
+                }
+              }
+            },
+            {
+              "eventId": "line-024",
+              "kind": "line",
+              "text": {
+                "zh-CN": "　没有能够不惧死亡的人。"
+              },
+              "nextEventId": "line-025",
+              "source": {
+                "engine": "ikura",
+                "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV494.json",
+                "instructionIndex": 158,
+                "opcode": 43,
+                "status": "translated",
+                "instructionOffsets": {
+                  "zh-CN": 1933,
+                  "ja-JP": 1739
+                },
+                "anchors": {
+                  "zh-CN": "ikura-78d",
+                  "ja-JP": "ikura-6cb"
+                }
+              }
+            },
+            {
+              "eventId": "line-025",
+              "kind": "line",
+              "text": {
+                "zh-CN": "　不论有多么泰然，不论有多么达观，果然，人还是惧怕名为死的这种未知的恐怖。"
+              },
+              "nextEventId": "line-026",
+              "source": {
+                "engine": "ikura",
+                "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV494.json",
+                "instructionIndex": 161,
+                "opcode": 43,
+                "status": "translated",
+                "instructionOffsets": {
+                  "zh-CN": 1981,
+                  "ja-JP": 1782
+                },
+                "anchors": {
+                  "zh-CN": "ikura-7bd",
+                  "ja-JP": "ikura-6f6"
+                }
+              }
+            },
+            {
+              "eventId": "line-026",
+              "kind": "line",
+              "text": {
+                "zh-CN": "　加奈连区区二十年都没有活到啊。"
+              },
+              "nextEventId": "line-027",
+              "source": {
+                "engine": "ikura",
+                "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV494.json",
+                "instructionIndex": 164,
+                "opcode": 43,
+                "status": "translated",
+                "instructionOffsets": {
+                  "zh-CN": 2079,
+                  "ja-JP": 1872
+                },
+                "anchors": {
+                  "zh-CN": "ikura-81f",
+                  "ja-JP": "ikura-750"
+                }
+              }
+            },
+            {
+              "eventId": "line-027",
+              "kind": "line",
+              "text": {
+                "zh-CN": "隆　道：「这样啊……」"
+              },
+              "nextEventId": "line-028",
+              "source": {
+                "engine": "ikura",
+                "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV494.json",
+                "instructionIndex": 172,
+                "opcode": 43,
+                "status": "translated",
+                "instructionOffsets": {
+                  "zh-CN": 2162,
+                  "ja-JP": 1951
+                },
+                "anchors": {
+                  "zh-CN": "ikura-872",
+                  "ja-JP": "ikura-79f"
+                }
+              },
+              "speaker": {
+                "zh-CN": "隆　道"
+              }
+            },
+            {
+              "eventId": "line-028",
+              "kind": "line",
+              "text": {
+                "zh-CN": "　我伸出手，像平常一样触摸着那张脸。"
+              },
+              "nextEventId": "line-029",
+              "source": {
+                "engine": "ikura",
+                "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV494.json",
+                "instructionIndex": 180,
+                "opcode": 43,
+                "status": "translated",
+                "instructionOffsets": {
+                  "zh-CN": 2235,
+                  "ja-JP": 2018
+                },
+                "anchors": {
+                  "zh-CN": "ikura-8bb",
+                  "ja-JP": "ikura-7e2"
+                }
+              }
+            },
+            {
+              "eventId": "line-029",
+              "kind": "line",
+              "text": {
+                "zh-CN": "　想要使泪水逆流一般，用大拇指将其拭去。"
+              },
+              "nextEventId": "line-030",
+              "source": {
+                "engine": "ikura",
+                "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV494.json",
+                "instructionIndex": 183,
+                "opcode": 43,
+                "status": "translated",
+                "instructionOffsets": {
+                  "zh-CN": 2295,
+                  "ja-JP": 2074
+                },
+                "anchors": {
+                  "zh-CN": "ikura-8f7",
+                  "ja-JP": "ikura-81a"
+                }
+              }
+            },
+            {
+              "eventId": "line-030",
+              "kind": "line",
+              "text": {
+                "zh-CN": "　不知为何越是这样，加奈哭得越厉害。"
+              },
+              "nextEventId": "line-031",
+              "source": {
+                "engine": "ikura",
+                "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV494.json",
+                "instructionIndex": 186,
+                "opcode": 43,
+                "status": "translated",
+                "instructionOffsets": {
+                  "zh-CN": 2359,
+                  "ja-JP": 2124
+                },
+                "anchors": {
+                  "zh-CN": "ikura-937",
+                  "ja-JP": "ikura-84c"
+                }
+              }
+            },
+            {
+              "eventId": "line-031",
+              "kind": "line",
+              "text": {
+                "zh-CN": "隆　道：「好啦」"
+              },
+              "nextEventId": "line-032",
+              "source": {
+                "engine": "ikura",
+                "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV494.json",
+                "instructionIndex": 194,
+                "opcode": 43,
+                "status": "translated",
+                "instructionOffsets": {
+                  "zh-CN": 2446,
+                  "ja-JP": 2199
+                },
+                "anchors": {
+                  "zh-CN": "ikura-98e",
+                  "ja-JP": "ikura-897"
+                }
+              },
+              "speaker": {
+                "zh-CN": "隆　道"
+              }
+            },
+            {
+              "eventId": "line-032",
+              "kind": "line",
+              "text": {
+                "zh-CN": "加　奈：「可是……」"
+              },
+              "nextEventId": "line-033",
+              "cues": [
+                {
+                  "cueId": "voice:line-032:Kan2052:197",
+                  "kind": "voice",
+                  "timing": "utterance",
+                  "mediaId": "kana.ev494.voice.Kan2052",
+                  "resolverId": "kana-manifest",
+                  "raw": {
+                    "sourceKey": "Kan2052",
+                    "playbackPath": "raw/kana/VOICE.unpacked/KAN2052.OGG",
+                    "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV494.json",
+                    "instructionIndex": 197,
+                    "jaInstructionOffset": 2234,
+                    "zhInstructionOffset": 2486,
+                    "opcode": 43,
+                    "routeTopologyEqual": true
+                  }
+                }
+              ],
+              "source": {
+                "engine": "ikura",
+                "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV494.json",
+                "instructionIndex": 197,
+                "opcode": 43,
+                "status": "translated",
+                "instructionOffsets": {
+                  "zh-CN": 2486,
+                  "ja-JP": 2234
+                },
+                "anchors": {
+                  "zh-CN": "ikura-9b6",
+                  "ja-JP": "ikura-8ba"
+                }
+              },
+              "speaker": {
+                "zh-CN": "加　奈"
+              }
+            },
+            {
+              "eventId": "line-033",
+              "kind": "line",
+              "text": {
+                "zh-CN": "隆　道：「……不要哭」"
+              },
+              "nextEventId": "line-034",
+              "cues": [
+                {
+                  "cueId": "image:line-033:KE049P3:200",
+                  "kind": "image",
+                  "timing": "scene",
+                  "mediaId": "kana.ev494.image.KE049P3",
+                  "resolverId": "kana-manifest",
+                  "raw": {
+                    "sourceKey": "KE049P3",
+                    "playbackPath": "derived/images/kana/GGD.unpacked/KE049P3.png",
+                    "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV494.json",
+                    "instructionIndex": 200,
+                    "jaInstructionOffset": 2283,
+                    "zhInstructionOffset": 2539,
+                    "opcode": 5,
+                    "targetInstructionIndex": 2013,
+                    "targetJaOffset": 15911,
+                    "targetZhOffset": 16225,
+                    "routeTopologyEqual": true
+                  }
+                }
+              ],
+              "source": {
+                "engine": "ikura",
+                "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV494.json",
+                "instructionIndex": 207,
+                "opcode": 43,
+                "status": "translated",
+                "instructionOffsets": {
+                  "zh-CN": 2583,
+                  "ja-JP": 2327
+                },
+                "anchors": {
+                  "zh-CN": "ikura-a17",
+                  "ja-JP": "ikura-917"
+                }
+              },
+              "speaker": {
+                "zh-CN": "隆　道"
+              }
+            },
+            {
+              "eventId": "line-034",
+              "kind": "line",
+              "text": {
+                "zh-CN": "　加奈握住我的手，忍住了泪水。"
+              },
+              "nextEventId": "line-035",
+              "source": {
+                "engine": "ikura",
+                "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV494.json",
+                "instructionIndex": 215,
+                "opcode": 43,
+                "status": "translated",
+                "instructionOffsets": {
+                  "zh-CN": 2656,
+                  "ja-JP": 2395
+                },
+                "anchors": {
+                  "zh-CN": "ikura-a60",
+                  "ja-JP": "ikura-95b"
+                }
+              }
+            },
+            {
+              "eventId": "line-035",
+              "kind": "line",
+              "text": {
+                "zh-CN": "　那是一副完全不能称之为笑容的脸。"
+              },
+              "nextEventId": "line-036",
+              "source": {
+                "engine": "ikura",
+                "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV494.json",
+                "instructionIndex": 218,
+                "opcode": 43,
+                "status": "translated",
+                "instructionOffsets": {
+                  "zh-CN": 2710,
+                  "ja-JP": 2445
+                },
+                "anchors": {
+                  "zh-CN": "ikura-a96",
+                  "ja-JP": "ikura-98d"
+                }
+              }
+            },
+            {
+              "eventId": "line-036",
+              "kind": "line",
+              "text": {
+                "zh-CN": "隆　道：「我去拿食物过来。稍微要你一个人呆一会儿……没事吗？」"
+              },
+              "nextEventId": "line-037",
+              "source": {
+                "engine": "ikura",
+                "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV494.json",
+                "instructionIndex": 226,
+                "opcode": 43,
+                "status": "translated",
+                "instructionOffsets": {
+                  "zh-CN": 2795,
+                  "ja-JP": 2521
+                },
+                "anchors": {
+                  "zh-CN": "ikura-aeb",
+                  "ja-JP": "ikura-9d9"
+                }
+              },
+              "speaker": {
+                "zh-CN": "隆　道"
+              }
+            },
+            {
+              "eventId": "line-037",
+              "kind": "line",
+              "text": {
+                "zh-CN": "　我抚摸着她的头。"
+              },
+              "nextEventId": "line-038",
+              "source": {
+                "engine": "ikura",
+                "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV494.json",
+                "instructionIndex": 234,
+                "opcode": 43,
+                "status": "translated",
+                "instructionOffsets": {
+                  "zh-CN": 2908,
+                  "ja-JP": 2614
+                },
+                "anchors": {
+                  "zh-CN": "ikura-b5c",
+                  "ja-JP": "ikura-a36"
+                }
+              }
+            },
+            {
+              "eventId": "line-038",
+              "kind": "line",
+              "text": {
+                "zh-CN": "加　奈：「……（点头点头）」"
+              },
+              "nextEventId": "line-039",
+              "cues": [
+                {
+                  "cueId": "voice:line-038:Kan2053:242",
+                  "kind": "voice",
+                  "timing": "utterance",
+                  "mediaId": "kana.ev494.voice.Kan2053",
+                  "resolverId": "kana-manifest",
+                  "raw": {
+                    "sourceKey": "Kan2053",
+                    "playbackPath": "raw/kana/VOICE.unpacked/KAN2053.OGG",
+                    "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV494.json",
+                    "instructionIndex": 242,
+                    "jaInstructionOffset": 2681,
+                    "zhInstructionOffset": 2977,
+                    "opcode": 43,
+                    "routeTopologyEqual": true
+                  }
+                }
+              ],
+              "source": {
+                "engine": "ikura",
+                "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV494.json",
+                "instructionIndex": 242,
+                "opcode": 43,
+                "status": "translated",
+                "instructionOffsets": {
+                  "zh-CN": 2977,
+                  "ja-JP": 2681
+                },
+                "anchors": {
+                  "zh-CN": "ikura-ba1",
+                  "ja-JP": "ikura-a79"
+                }
+              },
+              "speaker": {
+                "zh-CN": "加　奈"
+              }
+            },
+            {
+              "eventId": "line-039",
+              "kind": "line",
+              "text": {
+                "zh-CN": "　加奈一次次一次次地点着头。"
+              },
+              "nextEventId": "line-040",
+              "source": {
+                "engine": "ikura",
+                "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV494.json",
+                "instructionIndex": 250,
+                "opcode": 43,
+                "status": "translated",
+                "instructionOffsets": {
+                  "zh-CN": 3065,
+                  "ja-JP": 2760
+                },
+                "anchors": {
+                  "zh-CN": "ikura-bf9",
+                  "ja-JP": "ikura-ac8"
+                }
+              }
+            },
+            {
+              "eventId": "line-040",
+              "kind": "line",
+              "text": {
+                "zh-CN": "　这个时候，我已经得出了一个结论。"
+              },
+              "nextEventId": "end-001",
+              "source": {
+                "engine": "ikura",
+                "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV494.json",
+                "instructionIndex": 260,
+                "opcode": 43,
+                "status": "translated",
+                "instructionOffsets": {
+                  "zh-CN": 3158,
+                  "ja-JP": 2850
+                },
+                "anchors": {
+                  "zh-CN": "ikura-c56",
+                  "ja-JP": "ikura-b22"
+                }
+              }
+            },
+            {
+              "eventId": "end-001",
+              "kind": "end",
+              "cues": [
+                {
+                  "cueId": "image:end-001:BLACK:266",
+                  "kind": "image",
+                  "timing": "scene",
+                  "mediaId": "kana.ev494.image.BLACK",
+                  "resolverId": "kana-manifest",
+                  "raw": {
+                    "sourceKey": "BLACK",
+                    "playbackPath": "derived/images/kana/GGD.unpacked/BLACK.png",
+                    "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV494.json",
+                    "instructionIndex": 266,
+                    "jaInstructionOffset": 2915,
+                    "zhInstructionOffset": 3229,
+                    "opcode": 5,
+                    "targetInstructionIndex": 439,
+                    "targetJaOffset": 3827,
+                    "targetZhOffset": 4141,
+                    "routeTopologyEqual": true
+                  }
+                },
+                {
+                  "cueId": "image:end-001:BLACK:409",
+                  "kind": "image",
+                  "timing": "scene",
+                  "mediaId": "kana.ev494.image.BLACK",
+                  "resolverId": "kana-manifest",
+                  "raw": {
+                    "sourceKey": "BLACK",
+                    "playbackPath": "derived/images/kana/GGD.unpacked/BLACK.png",
+                    "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV494.json",
+                    "instructionIndex": 409,
+                    "jaInstructionOffset": 3662,
+                    "zhInstructionOffset": 3976,
+                    "opcode": 5,
+                    "targetInstructionIndex": 439,
+                    "targetJaOffset": 3827,
+                    "targetZhOffset": 4141,
+                    "routeTopologyEqual": true
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

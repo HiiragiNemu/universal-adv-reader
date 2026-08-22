@@ -1,0 +1,809 @@
+{
+  "schema": "adv-story/v1",
+  "corpusId": "narcissu3",
+  "canonicalStoryId": "narcissu-3rd/nard14",
+  "adapterId": "majiro-production-v1",
+  "revision": "nard14-reader-v1-mjo-1086-ikura-120-events-499170",
+  "title": "Narcissu 3rd · nard14",
+  "provenance": {
+    "engine": "majiro",
+    "sourceSchema": "vn-mjo-reader-script/v1",
+    "sourceRepository": "narcissu-kana-research",
+    "sourceManifest": "manifests/generated/reader-adapter.json",
+    "sourceBridgeRevision": "reader-v1-mjo-1086-ikura-120-events-499170",
+    "canonicalSourceStoryId": "narcissu-3rd/nard14",
+    "extractionAccess": "read-only"
+  },
+  "variants": [
+    {
+      "variantId": "narcissu3/nard14/ja",
+      "locales": [
+        "ja-JP"
+      ],
+      "sections": [
+        {
+          "sectionId": "main",
+          "title": {
+            "ja-JP": "nard14 · 7階行き前日"
+          },
+          "entryEventId": "line-001",
+          "events": [
+            {
+              "eventId": "line-001",
+              "kind": "line",
+              "text": {
+                "ja-JP": "――７階行き前日、深夜。"
+              },
+              "nextEventId": "line-002",
+              "cues": [
+                {
+                  "cueId": "image:line-001:n3d_ck_c01:50:1",
+                  "kind": "image",
+                  "timing": "scene",
+                  "mediaId": "n3.nard14.ja.image.n3d_ck_c01",
+                  "resolverId": "narcissu3-manifest",
+                  "raw": {
+                    "sourceKey": "n3d_ck_c01",
+                    "codeOffset": 50,
+                    "sourceStringPath": "archive/derived/scripts/narcissu3/scenario.arc.unpacked/nard14.strings.json",
+                    "playbackPath": "derived/images/narcissu3/data1.arc.unpacked/n3d_ck_c01.png",
+                    "presentationRole": "transition",
+                    "losslessCandidates": [
+                      "derived/images/narcissu3/data1.arc.unpacked/n3d_ck_c01.png",
+                      "derived/images/narcissu3/update.arc.unpacked/n3d_ck_c01.png"
+                    ],
+                    "selectedLayer": "base-scenario"
+                  }
+                },
+                {
+                  "cueId": "image:line-001:n3d_ck_c02:81:1",
+                  "kind": "image",
+                  "timing": "scene",
+                  "mediaId": "n3.nard14.ja.image.n3d_ck_c02",
+                  "resolverId": "narcissu3-manifest",
+                  "raw": {
+                    "sourceKey": "n3d_ck_c02",
+                    "codeOffset": 81,
+                    "sourceStringPath": "archive/derived/scripts/narcissu3/scenario.arc.unpacked/nard14.strings.json",
+                    "playbackPath": "derived/images/narcissu3/data1.arc.unpacked/n3d_ck_c02.png",
+                    "presentationRole": "transition",
+                    "losslessCandidates": [
+                      "derived/images/narcissu3/data1.arc.unpacked/n3d_ck_c02.png",
+                      "derived/images/narcissu3/update.arc.unpacked/n3d_ck_c02.png"
+                    ],
+                    "selectedLayer": "base-scenario"
+                  }
+                },
+                {
+                  "cueId": "image:line-001:black:146:1",
+                  "kind": "image",
+                  "timing": "scene",
+                  "mediaId": "n3.nard14.ja.image.black",
+                  "resolverId": "narcissu3-manifest",
+                  "raw": {
+                    "sourceKey": "black",
+                    "codeOffset": 146,
+                    "sourceStringPath": "archive/derived/scripts/narcissu3/scenario.arc.unpacked/nard14.strings.json",
+                    "playbackPath": "derived/images/narcissu3/fastdata.arc.unpacked/black.png",
+                    "presentationRole": "transition"
+                  }
+                },
+                {
+                  "cueId": "image:line-001:b3:172:1",
+                  "kind": "image",
+                  "timing": "scene",
+                  "mediaId": "n3.nard14.ja.image.b3",
+                  "resolverId": "narcissu3-manifest",
+                  "raw": {
+                    "sourceKey": "b3",
+                    "codeOffset": 172,
+                    "sourceStringPath": "archive/derived/scripts/narcissu3/scenario.arc.unpacked/nard14.strings.json",
+                    "playbackPath": "derived/images/narcissu3/data1.arc.unpacked/b3.png",
+                    "presentationRole": "transition"
+                  }
+                }
+              ],
+              "source": {
+                "engine": "majiro",
+                "variantSourceId": "mjo/narcissu3/scenario.arc.unpacked/nard14",
+                "scriptPath": "archive/derived/scripts/narcissu3/scenario.arc.unpacked/nard14.script.json",
+                "textEventIndices": [
+                  0
+                ],
+                "codeOffsets": [
+                  207
+                ],
+                "textCodeOffset": 207,
+                "mjoAnchor": "mjo-cf"
+              }
+            },
+            {
+              "eventId": "line-002",
+              "kind": "line",
+              "text": {
+                "ja-JP": "「…お兄さんに、言っちゃった」"
+              },
+              "nextEventId": "line-003",
+              "cues": [
+                {
+                  "cueId": "voice:line-002:n3tisa_0986:254:1",
+                  "kind": "voice",
+                  "timing": "utterance",
+                  "mediaId": "n3.nard14.ja.voice.n3tisa_0986",
+                  "resolverId": "narcissu3-manifest",
+                  "raw": {
+                    "sourceKey": "n3tisa_0986",
+                    "codeOffset": 254,
+                    "sourceStringPath": "archive/derived/scripts/narcissu3/scenario.arc.unpacked/nard14.strings.json",
+                    "playbackPath": "raw/narcissu3/voice.arc.unpacked/n3tisa_0986.ogg"
+                  }
+                }
+              ],
+              "source": {
+                "engine": "majiro",
+                "variantSourceId": "mjo/narcissu3/scenario.arc.unpacked/nard14",
+                "scriptPath": "archive/derived/scripts/narcissu3/scenario.arc.unpacked/nard14.script.json",
+                "textEventIndices": [
+                  1,
+                  2
+                ],
+                "codeOffsets": [
+                  286,
+                  301
+                ],
+                "textCodeOffset": 301,
+                "mjoAnchor": "mjo-12d"
+              },
+              "speaker": {
+                "ja-JP": "チサト"
+              }
+            },
+            {
+              "eventId": "line-003",
+              "kind": "line",
+              "text": {
+                "ja-JP": "それはまるで悪い事をしたような、後悔するような口調で。"
+              },
+              "nextEventId": "line-004",
+              "cues": [
+                {
+                  "cueId": "bgm:line-003:2sou01:354:1",
+                  "kind": "bgm",
+                  "timing": "scene",
+                  "mediaId": "n3.nard14.ja.bgm.2sou01",
+                  "resolverId": "narcissu3-manifest",
+                  "raw": {
+                    "sourceKey": "2sou01",
+                    "codeOffset": 354,
+                    "sourceStringPath": "archive/derived/scripts/narcissu3/scenario.arc.unpacked/nard14.strings.json",
+                    "playbackPath": "raw/narcissu3/stream.arc.unpacked/2sou01.ogg"
+                  }
+                }
+              ],
+              "source": {
+                "engine": "majiro",
+                "variantSourceId": "mjo/narcissu3/scenario.arc.unpacked/nard14",
+                "scriptPath": "archive/derived/scripts/narcissu3/scenario.arc.unpacked/nard14.script.json",
+                "textEventIndices": [
+                  3
+                ],
+                "codeOffsets": [
+                  381
+                ],
+                "textCodeOffset": 381,
+                "mjoAnchor": "mjo-17d"
+              }
+            },
+            {
+              "eventId": "line-004",
+              "kind": "line",
+              "text": {
+                "ja-JP": "「…伝えちゃったんだよね、わたし」"
+              },
+              "nextEventId": "line-005",
+              "cues": [
+                {
+                  "cueId": "voice:line-004:n3tisa_0987:458:1",
+                  "kind": "voice",
+                  "timing": "utterance",
+                  "mediaId": "n3.nard14.ja.voice.n3tisa_0987",
+                  "resolverId": "narcissu3-manifest",
+                  "raw": {
+                    "sourceKey": "n3tisa_0987",
+                    "codeOffset": 458,
+                    "sourceStringPath": "archive/derived/scripts/narcissu3/scenario.arc.unpacked/nard14.strings.json",
+                    "playbackPath": "raw/narcissu3/voice.arc.unpacked/n3tisa_0987.ogg"
+                  }
+                }
+              ],
+              "source": {
+                "engine": "majiro",
+                "variantSourceId": "mjo/narcissu3/scenario.arc.unpacked/nard14",
+                "scriptPath": "archive/derived/scripts/narcissu3/scenario.arc.unpacked/nard14.script.json",
+                "textEventIndices": [
+                  4,
+                  5
+                ],
+                "codeOffsets": [
+                  490,
+                  505
+                ],
+                "textCodeOffset": 505,
+                "mjoAnchor": "mjo-1f9"
+              },
+              "speaker": {
+                "ja-JP": "チサト"
+              }
+            },
+            {
+              "eventId": "line-005",
+              "kind": "line",
+              "text": {
+                "ja-JP": "わたしは何もない空間に向かってそう呟いていた。"
+              },
+              "nextEventId": "line-006",
+              "source": {
+                "engine": "majiro",
+                "variantSourceId": "mjo/narcissu3/scenario.arc.unpacked/nard14",
+                "scriptPath": "archive/derived/scripts/narcissu3/scenario.arc.unpacked/nard14.script.json",
+                "textEventIndices": [
+                  6
+                ],
+                "codeOffsets": [
+                  562
+                ],
+                "textCodeOffset": 562,
+                "mjoAnchor": "mjo-232"
+              }
+            },
+            {
+              "eventId": "line-006",
+              "kind": "line",
+              "text": {
+                "ja-JP": "…そうじゃないのに。"
+              },
+              "nextEventId": "line-007",
+              "source": {
+                "engine": "majiro",
+                "variantSourceId": "mjo/narcissu3/scenario.arc.unpacked/nard14",
+                "scriptPath": "archive/derived/scripts/narcissu3/scenario.arc.unpacked/nard14.script.json",
+                "textEventIndices": [
+                  7
+                ],
+                "codeOffsets": [
+                  631
+                ],
+                "textCodeOffset": 631,
+                "mjoAnchor": "mjo-277"
+              }
+            },
+            {
+              "eventId": "line-007",
+              "kind": "line",
+              "text": {
+                "ja-JP": "こうするべきだと決め、そうしただけなのに。"
+              },
+              "nextEventId": "line-008",
+              "source": {
+                "engine": "majiro",
+                "variantSourceId": "mjo/narcissu3/scenario.arc.unpacked/nard14",
+                "scriptPath": "archive/derived/scripts/narcissu3/scenario.arc.unpacked/nard14.script.json",
+                "textEventIndices": [
+                  8
+                ],
+                "codeOffsets": [
+                  674
+                ],
+                "textCodeOffset": 674,
+                "mjoAnchor": "mjo-2a2"
+              }
+            },
+            {
+              "eventId": "line-008",
+              "kind": "line",
+              "text": {
+                "ja-JP": "――暗く、肌寒い部屋の中。"
+              },
+              "nextEventId": "line-009",
+              "source": {
+                "engine": "majiro",
+                "variantSourceId": "mjo/narcissu3/scenario.arc.unpacked/nard14",
+                "scriptPath": "archive/derived/scripts/narcissu3/scenario.arc.unpacked/nard14.script.json",
+                "textEventIndices": [
+                  9
+                ],
+                "codeOffsets": [
+                  739
+                ],
+                "textCodeOffset": 739,
+                "mjoAnchor": "mjo-2e3"
+              }
+            },
+            {
+              "eventId": "line-009",
+              "kind": "line",
+              "text": {
+                "ja-JP": "わたしは１人でずっと考え事をしていた。"
+              },
+              "nextEventId": "line-010",
+              "source": {
+                "engine": "majiro",
+                "variantSourceId": "mjo/narcissu3/scenario.arc.unpacked/nard14",
+                "scriptPath": "archive/derived/scripts/narcissu3/scenario.arc.unpacked/nard14.script.json",
+                "textEventIndices": [
+                  10
+                ],
+                "codeOffsets": [
+                  788
+                ],
+                "textCodeOffset": 788,
+                "mjoAnchor": "mjo-314"
+              }
+            },
+            {
+              "eventId": "line-010",
+              "kind": "line",
+              "text": {
+                "ja-JP": "それは今日までの出来事、今日の出来事、明日の事、そして明日以降の事について…と実に様々。"
+              },
+              "nextEventId": "line-011",
+              "source": {
+                "engine": "majiro",
+                "variantSourceId": "mjo/narcissu3/scenario.arc.unpacked/nard14",
+                "scriptPath": "archive/derived/scripts/narcissu3/scenario.arc.unpacked/nard14.script.json",
+                "textEventIndices": [
+                  11
+                ],
+                "codeOffsets": [
+                  849
+                ],
+                "textCodeOffset": 849,
+                "mjoAnchor": "mjo-351"
+              }
+            },
+            {
+              "eventId": "line-011",
+              "kind": "line",
+              "text": {
+                "ja-JP": "でも…"
+              },
+              "nextEventId": "line-012",
+              "source": {
+                "engine": "majiro",
+                "variantSourceId": "mjo/narcissu3/scenario.arc.unpacked/nard14",
+                "scriptPath": "archive/derived/scripts/narcissu3/scenario.arc.unpacked/nard14.script.json",
+                "textEventIndices": [
+                  12
+                ],
+                "codeOffsets": [
+                  960
+                ],
+                "textCodeOffset": 960,
+                "mjoAnchor": "mjo-3c0"
+              }
+            },
+            {
+              "eventId": "line-012",
+              "kind": "line",
+              "text": {
+                "ja-JP": "やっぱり今日の出来事が一番多く頭をよぎっていた。"
+              },
+              "nextEventId": "line-013",
+              "source": {
+                "engine": "majiro",
+                "variantSourceId": "mjo/narcissu3/scenario.arc.unpacked/nard14",
+                "scriptPath": "archive/derived/scripts/narcissu3/scenario.arc.unpacked/nard14.script.json",
+                "textEventIndices": [
+                  13
+                ],
+                "codeOffsets": [
+                  989
+                ],
+                "textCodeOffset": 989,
+                "mjoAnchor": "mjo-3dd"
+              }
+            },
+            {
+              "eventId": "line-013",
+              "kind": "line",
+              "text": {
+                "ja-JP": "まあそれは当然か。わたしはそう心の中で呟く。"
+              },
+              "nextEventId": "line-014",
+              "source": {
+                "engine": "majiro",
+                "variantSourceId": "mjo/narcissu3/scenario.arc.unpacked/nard14",
+                "scriptPath": "archive/derived/scripts/narcissu3/scenario.arc.unpacked/nard14.script.json",
+                "textEventIndices": [
+                  14
+                ],
+                "codeOffsets": [
+                  1060
+                ],
+                "textCodeOffset": 1060,
+                "mjoAnchor": "mjo-424"
+              }
+            },
+            {
+              "eventId": "line-014",
+              "kind": "line",
+              "text": {
+                "ja-JP": "…苦渋の決断だった。"
+              },
+              "nextEventId": "line-015",
+              "source": {
+                "engine": "majiro",
+                "variantSourceId": "mjo/narcissu3/scenario.arc.unpacked/nard14",
+                "scriptPath": "archive/derived/scripts/narcissu3/scenario.arc.unpacked/nard14.script.json",
+                "textEventIndices": [
+                  15
+                ],
+                "codeOffsets": [
+                  1127
+                ],
+                "textCodeOffset": 1127,
+                "mjoAnchor": "mjo-467"
+              }
+            },
+            {
+              "eventId": "line-015",
+              "kind": "line",
+              "text": {
+                "ja-JP": "そして本当に辛い事というのは喋る側も聞く側もこんなに\n大変なんだと痛感した。"
+              },
+              "nextEventId": "line-016",
+              "source": {
+                "engine": "majiro",
+                "variantSourceId": "mjo/narcissu3/scenario.arc.unpacked/nard14",
+                "scriptPath": "archive/derived/scripts/narcissu3/scenario.arc.unpacked/nard14.script.json",
+                "textEventIndices": [
+                  16
+                ],
+                "codeOffsets": [
+                  1170
+                ],
+                "textCodeOffset": 1170,
+                "mjoAnchor": "mjo-492"
+              }
+            },
+            {
+              "eventId": "line-016",
+              "kind": "line",
+              "text": {
+                "ja-JP": "でもこれでよかった…はずだ。"
+              },
+              "nextEventId": "line-017",
+              "source": {
+                "engine": "majiro",
+                "variantSourceId": "mjo/narcissu3/scenario.arc.unpacked/nard14",
+                "scriptPath": "archive/derived/scripts/narcissu3/scenario.arc.unpacked/nard14.script.json",
+                "textEventIndices": [
+                  17
+                ],
+                "codeOffsets": [
+                  1284
+                ],
+                "textCodeOffset": 1284,
+                "mjoAnchor": "mjo-504"
+              }
+            },
+            {
+              "eventId": "line-017",
+              "kind": "line",
+              "text": {
+                "ja-JP": "そうする事があの人のためでもあるんだ。"
+              },
+              "nextEventId": "line-018",
+              "source": {
+                "engine": "majiro",
+                "variantSourceId": "mjo/narcissu3/scenario.arc.unpacked/nard14",
+                "scriptPath": "archive/derived/scripts/narcissu3/scenario.arc.unpacked/nard14.script.json",
+                "textEventIndices": [
+                  18
+                ],
+                "codeOffsets": [
+                  1335
+                ],
+                "textCodeOffset": 1335,
+                "mjoAnchor": "mjo-537"
+              }
+            },
+            {
+              "eventId": "line-018",
+              "kind": "line",
+              "text": {
+                "ja-JP": "そう言い聞かせ、これが正しいんだと、わたしは正しい判断をしたんだと言い聞かせる。"
+              },
+              "nextEventId": "line-019",
+              "source": {
+                "engine": "majiro",
+                "variantSourceId": "mjo/narcissu3/scenario.arc.unpacked/nard14",
+                "scriptPath": "archive/derived/scripts/narcissu3/scenario.arc.unpacked/nard14.script.json",
+                "textEventIndices": [
+                  19
+                ],
+                "codeOffsets": [
+                  1396
+                ],
+                "textCodeOffset": 1396,
+                "mjoAnchor": "mjo-574"
+              }
+            },
+            {
+              "eventId": "line-019",
+              "kind": "line",
+              "text": {
+                "ja-JP": "――明日。"
+              },
+              "nextEventId": "line-020",
+              "source": {
+                "engine": "majiro",
+                "variantSourceId": "mjo/narcissu3/scenario.arc.unpacked/nard14",
+                "scriptPath": "archive/derived/scripts/narcissu3/scenario.arc.unpacked/nard14.script.json",
+                "textEventIndices": [
+                  20
+                ],
+                "codeOffsets": [
+                  1499
+                ],
+                "textCodeOffset": 1499,
+                "mjoAnchor": "mjo-5db"
+              }
+            },
+            {
+              "eventId": "line-020",
+              "kind": "line",
+              "text": {
+                "ja-JP": "わたしは７階に行く。"
+              },
+              "nextEventId": "line-021",
+              "source": {
+                "engine": "majiro",
+                "variantSourceId": "mjo/narcissu3/scenario.arc.unpacked/nard14",
+                "scriptPath": "archive/derived/scripts/narcissu3/scenario.arc.unpacked/nard14.script.json",
+                "textEventIndices": [
+                  21
+                ],
+                "codeOffsets": [
+                  1532
+                ],
+                "textCodeOffset": 1532,
+                "mjoAnchor": "mjo-5fc"
+              }
+            },
+            {
+              "eventId": "line-021",
+              "kind": "line",
+              "text": {
+                "ja-JP": "それはある意味、すじ雲が浮かぶ空よりもさらに高い所に\n向かうも同然。"
+              },
+              "nextEventId": "line-022",
+              "source": {
+                "engine": "majiro",
+                "variantSourceId": "mjo/narcissu3/scenario.arc.unpacked/nard14",
+                "scriptPath": "archive/derived/scripts/narcissu3/scenario.arc.unpacked/nard14.script.json",
+                "textEventIndices": [
+                  22
+                ],
+                "codeOffsets": [
+                  1575
+                ],
+                "textCodeOffset": 1575,
+                "mjoAnchor": "mjo-627"
+              }
+            },
+            {
+              "eventId": "line-022",
+              "kind": "line",
+              "text": {
+                "ja-JP": "わたしにはそれがとても皮肉の効いた、質の悪い冗談に\n聞こえてならななかった。"
+              },
+              "nextEventId": "line-023",
+              "source": {
+                "engine": "majiro",
+                "variantSourceId": "mjo/narcissu3/scenario.arc.unpacked/nard14",
+                "scriptPath": "archive/derived/scripts/narcissu3/scenario.arc.unpacked/nard14.script.json",
+                "textEventIndices": [
+                  23
+                ],
+                "codeOffsets": [
+                  1681
+                ],
+                "textCodeOffset": 1681,
+                "mjoAnchor": "mjo-691"
+              }
+            },
+            {
+              "eventId": "line-023",
+              "kind": "line",
+              "text": {
+                "ja-JP": "…わたしは正規の手順で、１つ１つ相殺する事ですじ雲の\n高さに到達する事は出来なかった。"
+              },
+              "nextEventId": "line-024",
+              "source": {
+                "engine": "majiro",
+                "variantSourceId": "mjo/narcissu3/scenario.arc.unpacked/nard14",
+                "scriptPath": "archive/derived/scripts/narcissu3/scenario.arc.unpacked/nard14.script.json",
+                "textEventIndices": [
+                  24
+                ],
+                "codeOffsets": [
+                  1795
+                ],
+                "textCodeOffset": 1795,
+                "mjoAnchor": "mjo-703"
+              }
+            },
+            {
+              "eventId": "line-024",
+              "kind": "line",
+              "text": {
+                "ja-JP": "そんなわたしが、すじ雲よりも高い場所へ…"
+              },
+              "nextEventId": "line-025",
+              "source": {
+                "engine": "majiro",
+                "variantSourceId": "mjo/narcissu3/scenario.arc.unpacked/nard14",
+                "scriptPath": "archive/derived/scripts/narcissu3/scenario.arc.unpacked/nard14.script.json",
+                "textEventIndices": [
+                  25
+                ],
+                "codeOffsets": [
+                  1919
+                ],
+                "textCodeOffset": 1919,
+                "mjoAnchor": "mjo-77f"
+              }
+            },
+            {
+              "eventId": "line-025",
+              "kind": "line",
+              "text": {
+                "ja-JP": "明日、すじ雲の高さまで到達出来なかったわたしが、代わりに７階へ行く――"
+              },
+              "nextEventId": "line-026",
+              "source": {
+                "engine": "majiro",
+                "variantSourceId": "mjo/narcissu3/scenario.arc.unpacked/nard14",
+                "scriptPath": "archive/derived/scripts/narcissu3/scenario.arc.unpacked/nard14.script.json",
+                "textEventIndices": [
+                  26
+                ],
+                "codeOffsets": [
+                  1982
+                ],
+                "textCodeOffset": 1982,
+                "mjoAnchor": "mjo-7be"
+              }
+            },
+            {
+              "eventId": "line-026",
+              "kind": "line",
+              "text": {
+                "ja-JP": "そこは捉え方によっては上空７０００ｍよりも地上の生活\nから遠い場所。"
+              },
+              "nextEventId": "line-027",
+              "source": {
+                "engine": "majiro",
+                "variantSourceId": "mjo/narcissu3/scenario.arc.unpacked/nard14",
+                "scriptPath": "archive/derived/scripts/narcissu3/scenario.arc.unpacked/nard14.script.json",
+                "textEventIndices": [
+                  27
+                ],
+                "codeOffsets": [
+                  2075
+                ],
+                "textCodeOffset": 2075,
+                "mjoAnchor": "mjo-81b"
+              }
+            },
+            {
+              "eventId": "line-027",
+              "kind": "line",
+              "text": {
+                "ja-JP": "わたしはそこに、上空７０００ｍより死に近い場所へと\n向かう事となった。"
+              },
+              "nextEventId": "line-028",
+              "source": {
+                "engine": "majiro",
+                "variantSourceId": "mjo/narcissu3/scenario.arc.unpacked/nard14",
+                "scriptPath": "archive/derived/scripts/narcissu3/scenario.arc.unpacked/nard14.script.json",
+                "textEventIndices": [
+                  28
+                ],
+                "codeOffsets": [
+                  2181
+                ],
+                "textCodeOffset": 2181,
+                "mjoAnchor": "mjo-885"
+              }
+            },
+            {
+              "eventId": "line-028",
+              "kind": "line",
+              "text": {
+                "ja-JP": "――明日、それはわたしが７階へと上がってしまう日。"
+              },
+              "nextEventId": "line-029",
+              "source": {
+                "engine": "majiro",
+                "variantSourceId": "mjo/narcissu3/scenario.arc.unpacked/nard14",
+                "scriptPath": "archive/derived/scripts/narcissu3/scenario.arc.unpacked/nard14.script.json",
+                "textEventIndices": [
+                  29
+                ],
+                "codeOffsets": [
+                  2289
+                ],
+                "textCodeOffset": 2289,
+                "mjoAnchor": "mjo-8f1"
+              }
+            },
+            {
+              "eventId": "line-029",
+              "kind": "line",
+              "text": {
+                "ja-JP": "また、わたしとお兄さん決別をしなければいけない日。"
+              },
+              "nextEventId": "line-030",
+              "source": {
+                "engine": "majiro",
+                "variantSourceId": "mjo/narcissu3/scenario.arc.unpacked/nard14",
+                "scriptPath": "archive/derived/scripts/narcissu3/scenario.arc.unpacked/nard14.script.json",
+                "textEventIndices": [
+                  30
+                ],
+                "codeOffsets": [
+                  2362
+                ],
+                "textCodeOffset": 2362,
+                "mjoAnchor": "mjo-93a"
+              }
+            },
+            {
+              "eventId": "line-030",
+              "kind": "line",
+              "text": {
+                "ja-JP": "そんな悲しい日が、そんな悲しい時が、もうすぐそこまで\n訪れてようとしていた――"
+              },
+              "nextEventId": "end-001",
+              "source": {
+                "engine": "majiro",
+                "variantSourceId": "mjo/narcissu3/scenario.arc.unpacked/nard14",
+                "scriptPath": "archive/derived/scripts/narcissu3/scenario.arc.unpacked/nard14.script.json",
+                "textEventIndices": [
+                  31
+                ],
+                "codeOffsets": [
+                  2435
+                ],
+                "textCodeOffset": 2435,
+                "mjoAnchor": "mjo-983"
+              }
+            },
+            {
+              "eventId": "end-001",
+              "kind": "end",
+              "cues": [
+                {
+                  "cueId": "image:end-001:black:2569:1",
+                  "kind": "image",
+                  "timing": "scene",
+                  "mediaId": "n3.nard14.ja.image.black",
+                  "resolverId": "narcissu3-manifest",
+                  "raw": {
+                    "sourceKey": "black",
+                    "codeOffset": 2569,
+                    "sourceStringPath": "archive/derived/scripts/narcissu3/scenario.arc.unpacked/nard14.strings.json",
+                    "playbackPath": "derived/images/narcissu3/fastdata.arc.unpacked/black.png",
+                    "presentationRole": "transition"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

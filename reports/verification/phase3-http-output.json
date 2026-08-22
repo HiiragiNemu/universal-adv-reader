@@ -1,0 +1,44 @@
+{
+  "status": "PASS",
+  "base": "http://127.0.0.1:4176",
+  "home": {
+    "status": 200,
+    "contentType": "text/html; charset=utf-8"
+  },
+  "catalog": {
+    "status": 200,
+    "revision": "production-catalog-r4",
+    "stories": 6
+  },
+  "narcissu3": {
+    "status": 200,
+    "canonicalStoryId": "narcissu-3rd/nar3_01",
+    "lines": 385,
+    "stageImage": "3008.png"
+  },
+  "kanaChoice": {
+    "status": 200,
+    "canonicalStoryId": "kana-okaeri/ev00",
+    "choices": 2,
+    "choiceMedia": [
+      "kana.ev00.image.COM_B"
+    ]
+  },
+  "ui": {
+    "status": 200,
+    "contract": "ui-shell/1.0.0",
+    "default": "classic",
+    "autoPromotion": false
+  },
+  "image": {
+    "status": 200,
+    "contentType": "image/png",
+    "length": 337357
+  },
+  "voice": {
+    "status": 206,
+    "bytes": 16,
+    "contentType": "audio/ogg",
+    "contentRange": "bytes 0-15/40293"
+  }
+}

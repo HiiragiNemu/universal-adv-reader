@@ -1,6 +1,6 @@
 {
   "schema": "adv-catalog/v1",
-  "revision": "production-catalog-r2",
+  "revision": "production-catalog-r4",
   "corpora": [
     {
       "corpusId": "narcissu10",
@@ -12,9 +12,65 @@
         {
           "canonicalStoryId": "narcissu-himeko/himeko_ep00",
           "title": "姫子 · EP00",
+          "folderId": "himeko",
+          "folderTitle": "姬子篇",
           "source": "./data/corpora/narcissu10/himeko-ep00.story.json",
           "mediaManifest": "./data/corpora/narcissu10/himeko-ep00.media.json",
           "preferredVariantId": "narcissu10/himeko-ep00/zh-ja"
+        }
+      ]
+    },
+    {
+      "corpusId": "narcissu3",
+      "title": "Narcissu 3rd",
+      "adapterId": "majiro-production-v1",
+      "sourceFormat": "adv-story/majiro-v1",
+      "features": ["text", "voice", "images", "bgm", "source-anchors"],
+      "stories": [
+        {
+          "canonicalStoryId": "narcissu-3rd/nard14",
+          "title": "nard14 · 7 楼前夜",
+          "folderId": "scenario",
+          "folderTitle": "Narcissu 3rd 剧情",
+          "source": "./data/corpora/narcissu3/nard14.story.json",
+          "mediaManifest": "./data/corpora/narcissu3/nard14.media.json",
+          "preferredVariantId": "narcissu3/nard14/ja"
+        },
+        {
+          "canonicalStoryId": "narcissu-3rd/nar3_01",
+          "title": "nar3_01 · 伊莉丝篇",
+          "folderId": "scenario",
+          "folderTitle": "Narcissu 3rd 剧情",
+          "source": "./data/corpora/narcissu3/nar3_01.story.json",
+          "mediaManifest": "./data/corpora/narcissu3/nar3_01.media.json",
+          "preferredVariantId": "narcissu3/nar3_01/ja"
+        }
+      ]
+    },
+    {
+      "corpusId": "kana",
+      "title": "KANA: Okaeri!!",
+      "adapterId": "ikura-production-v1",
+      "sourceFormat": "adv-story/ikura-v1",
+      "features": ["text", "choices", "branches", "voice", "images", "bgm", "bilingual", "source-anchors"],
+      "stories": [
+        {
+          "canonicalStoryId": "kana-okaeri/ev494",
+          "title": "EV494 · 回到医院",
+          "folderId": "event-scripts",
+          "folderTitle": "剧情事件脚本",
+          "source": "./data/corpora/kana/ev494.story.json",
+          "mediaManifest": "./data/corpora/kana/ev494.media.json",
+          "preferredVariantId": "kana/ev494/zh-ja"
+        },
+        {
+          "canonicalStoryId": "kana-okaeri/ev00",
+          "title": "EV00 · 起始路线选择",
+          "folderId": "event-scripts",
+          "folderTitle": "剧情事件脚本",
+          "source": "./data/corpora/kana/ev00.story.json",
+          "mediaManifest": "./data/corpora/kana/ev00.media.json",
+          "preferredVariantId": "kana/ev00/zh-ja"
         }
       ]
     },
@@ -28,6 +84,8 @@
         {
           "canonicalStoryId": "demo/arrival",
           "title": "到站之前",
+          "folderId": "architecture",
+          "folderTitle": "架构样例",
           "source": "./data/demo-story.json",
           "mediaManifest": "./data/media.json",
           "preferredVariantId": "demo/default"

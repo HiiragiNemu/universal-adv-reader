@@ -29,6 +29,8 @@
               "properties": {
                 "canonicalStoryId": { "type": "string", "minLength": 1 },
                 "title": { "type": "string", "minLength": 1 },
+                "folderId": { "type": "string", "minLength": 1 },
+                "folderTitle": { "type": "string", "minLength": 1 },
                 "source": { "type": "string", "minLength": 1 },
                 "mediaManifest": { "type": "string", "minLength": 1 },
                 "preferredVariantId": { "type": "string", "minLength": 1 }

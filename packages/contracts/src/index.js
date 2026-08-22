@@ -212,6 +212,8 @@ export function validateCatalog(value) {
       const story = asRecord(value, storyPath);
       storyIds.push(asPathId(story.canonicalStoryId, `${storyPath}.canonicalStoryId`));
       asString(story.title, `${storyPath}.title`, { max: 512 });
+      if (story.folderId !== undefined) asSimpleId(story.folderId, `${storyPath}.folderId`);
+      if (story.folderTitle !== undefined) asString(story.folderTitle, `${storyPath}.folderTitle`, { max: 512 });
       asString(story.source, `${storyPath}.source`, { max: 2048 });
       asString(story.mediaManifest, `${storyPath}.mediaManifest`, { max: 2048 });
       asPathId(story.preferredVariantId, `${storyPath}.preferredVariantId`);

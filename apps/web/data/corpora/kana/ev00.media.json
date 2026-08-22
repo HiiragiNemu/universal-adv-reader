@@ -1,0 +1,19 @@
+{
+  "schema": "adv-media/v1",
+  "revision": "kana-ev00-media-r1",
+  "resolverId": "kana-manifest",
+  "entries": [
+    {
+      "mediaId": "kana.ev00.image.BLACK",
+      "role": "image",
+      "url": "/corpus/archive/derived/images/kana/GGD.unpacked/BLACK.png",
+      "mimeType": "image/png"
+    },
+    {
+      "mediaId": "kana.ev00.image.COM_B",
+      "role": "image",
+      "url": "/corpus/archive/derived/images/kana/GGD.unpacked/COM_B.png",
+      "mimeType": "image/png"
+    }
+  ]
+}
