@@ -1,0 +1,57 @@
+/* One source/progress contract for cold catalogue cards and Reader navigation.
+   Colour changes never reinterpret source_unverified as human translation. */
+html body :is(#magi-home-display.magi-home-frost-root,#magi-reader-display.magi-reader-theme-frost) [data-translation-origin][data-translation-status] {
+  --cold-source-hue: 190; --cold-source-sat: 12%; --cold-source-light: 64%; --cold-fill-alpha: .14;
+  --cold-source-ink: hsl(var(--cold-source-hue) var(--cold-source-sat) var(--cold-source-light));
+  --cold-source-edge: hsl(var(--cold-source-hue) var(--cold-source-sat) 49% / .78);
+  --cold-source-fill: hsl(var(--cold-source-hue) var(--cold-source-sat) 48% / var(--cold-fill-alpha));
+}
+html body :is(#magi-home-display.magi-home-frost-root,#magi-reader-display.magi-reader-theme-frost) [data-translation-origin='human'][data-translation-status] { --cold-source-hue: 161; }
+html body :is(#magi-home-display.magi-home-frost-root,#magi-reader-display.magi-reader-theme-frost) [data-translation-origin='reviewed'][data-translation-status] { --cold-source-hue: 199; }
+html body :is(#magi-home-display.magi-home-frost-root,#magi-reader-display.magi-reader-theme-frost) [data-translation-origin='official'][data-translation-status] { --cold-source-hue: 180; }
+html body :is(#magi-home-display.magi-home-frost-root,#magi-reader-display.magi-reader-theme-frost) [data-translation-origin='unverified'][data-translation-status] { --cold-source-hue: 215; }
+html body :is(#magi-home-display.magi-home-frost-root,#magi-reader-display.magi-reader-theme-frost) [data-translation-origin][data-translation-status='complete'] {
+  --cold-source-sat: 34%; --cold-source-light: 78%; --cold-fill-alpha: .30;
+}
+html body :is(#magi-home-display.magi-home-frost-root,#magi-reader-display.magi-reader-theme-frost) [data-translation-origin='official'][data-translation-status='complete'] {
+  --cold-source-sat: 25%; --cold-source-light: 86%;
+}
+html body :is(#magi-home-display.magi-home-frost-root,#magi-reader-display.magi-reader-theme-frost) [data-translation-origin='unverified'][data-translation-status] {
+  --cold-source-sat: 17%; --cold-source-light: 65%; --cold-fill-alpha: .14;
+}
+html body :is(#magi-home-display.magi-home-frost-root,#magi-reader-display.magi-reader-theme-frost) [data-translation-origin][data-translation-status='none'] {
+  --cold-source-sat: 8%; --cold-source-light: 52%; --cold-fill-alpha: 0;
+}
+html body #magi-home-display.magi-home-frost-root .magi-folder-source-card[data-translation-origin][data-translation-status],
+html body #magi-home-display.magi-home-frost-root .magi-story-source-link[data-translation-origin][data-translation-status] {
+  border-color: var(--cold-source-edge) !important;
+}
+html body #magi-home-display.magi-home-frost-root .magi-folder-source-card[data-translation-origin][data-translation-status] > .magi-folder-heading-flow,
+html body #magi-home-display.magi-home-frost-root .magi-story-source-link[data-translation-origin][data-translation-status] > .magi-home-story-heading-row,
+html body #magi-reader-display.magi-reader-theme-frost.magi-reader-theme-dark .magi-reader-sidebar :is(.magi-reader-story-link[id],.magi-reader-sidebar-folder-button[aria-expanded])[data-translation-origin][data-translation-status] {
+  color: var(--cold-source-ink) !important; border-color: var(--cold-source-edge) !important;
+  background: linear-gradient(90deg,var(--cold-source-fill) 0 var(--cold-progress),transparent var(--cold-progress) 100%) !important;
+  box-shadow: inset 2px 0 var(--cold-source-edge) !important;
+}
+/* Mixed folders retain the real contribution split, rather than taking the
+   hue of their first story. Values are summed chapter translation percentages. */
+html body #magi-home-display.magi-home-frost-root .magi-folder-source-card[data-translation-origin='mixed'][data-translation-status] > .magi-folder-heading-flow,
+html body #magi-reader-display.magi-reader-theme-frost.magi-reader-theme-dark .magi-reader-sidebar .magi-reader-sidebar-folder-button[aria-expanded][data-translation-origin='mixed'][data-translation-status] {
+  background: linear-gradient(90deg,
+    hsl(161 34% 48% / .23) 0 var(--cold-human-end),
+    hsl(199 34% 48% / .23) var(--cold-human-end) var(--cold-reviewed-end),
+    hsl(180 25% 62% / .23) var(--cold-reviewed-end) var(--cold-official-end),
+    hsl(215 17% 42% / .15) var(--cold-official-end) var(--cold-pending-end),
+    transparent var(--cold-pending-end) 100%) !important;
+}
+html body #magi-home-display.magi-home-frost-root [data-translation-origin][data-translation-status] :is(.magi-folder-heading-flow,.magi-home-story-heading-row) :is(span,a,div,strong),
+html body #magi-reader-display.magi-reader-theme-frost.magi-reader-theme-dark .magi-reader-sidebar :is(.magi-reader-story-link[id],.magi-reader-sidebar-folder-button[aria-expanded])[data-translation-origin][data-translation-status] :is(span,strong) {
+  color: var(--cold-source-ink) !important; -webkit-text-fill-color: currentColor !important;
+}
+html body #magi-reader-display.magi-reader-theme-frost.magi-reader-theme-dark .magi-reader-sidebar .magi-reader-story-link[id][data-translation-origin][data-translation-status][aria-current='page'] {
+  outline: 1px solid #89dfcb !important; outline-offset: -1px; box-shadow: inset 3px 0 #89dfcb !important;
+}
+
+html body :is(#magi-home-display.magi-home-frost-root,#magi-reader-display.magi-reader-theme-frost) [data-translation-origin='unverified'][data-translation-status='complete'] {
+  --cold-source-sat: 21%; --cold-source-light: 74%; --cold-fill-alpha: .22;
+}

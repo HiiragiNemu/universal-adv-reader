@@ -1,0 +1,156 @@
+{
+  "schema": "adv-test-fixtures/v1",
+  "upstreamCommit": "56309ca742130e36d8d10fdb4f72de2a04cda02a",
+  "files": [
+    {
+      "source": "reports/verification/reader-inheritance-20261012/atom03/manifest.json",
+      "file": "optical/manifest.json",
+      "sha256": "414108ca0ff4d8eed210cb2599a494e1bf375a80e15e44b44e23135d550f7b3f",
+      "bytes": 23294
+    },
+    {
+      "source": "reports/verification/content-repair-20261013/catalog/legacy-voice-proof-baseline.json",
+      "file": "native/legacy-voice-proof-baseline.json",
+      "sha256": "c407b4b3c01c58d3bb9db91dd889a56d9882543351342e45c3df2fd94f14a2ac",
+      "bytes": 25708
+    },
+    {
+      "source": "reports/verification/content-repair-20261013/kana/chapter-plan.json",
+      "file": "native/kana-chapter-plan.json",
+      "sha256": "5b9b0ee7c3c60e9aa891c2e6ce13628c71125895b41d8c1d7587f3a8c207262c",
+      "bytes": 119315
+    },
+    {
+      "source": "reports/verification/reader-inheritance-20261012/atom07/baseline/lib/story-parser.ts",
+      "file": "directory/story-parser.ts",
+      "sha256": "5b5121499f6082a0963b842b429a88b1c7eea26725a10da8d3e807eb1bf36451",
+      "bytes": 26402
+    },
+    {
+      "source": "reports/verification/reader-inheritance-20261012/atom19/modified/apps/classic-reader/public/data/legacy-vn/narcissu-3rd/nar1_00.alignment.json",
+      "file": "native/nar1_00.alignment.json",
+      "sha256": "861fa7d3f37d6a035919640fb6192762406549030817d4a8a803ccb09375444f",
+      "bytes": 9213
+    },
+    {
+      "source": "reports/verification/reader-inheritance-20261012/atom20/modified/apps/classic-reader/public/data/legacy-vn/narcissu-3rd/nar1_02.alignment.json",
+      "file": "native/nar1_02.alignment.json",
+      "sha256": "e3dde94d8acd5e335ceca583c5db784b46b6d579a0bdde83903572b31b75a80e",
+      "bytes": 33891
+    },
+    {
+      "source": "reports/verification/reader-inheritance-20261012/atom16/baseline/apps/classic-reader/app/api/admin/exedra-localize/export/route.ts",
+      "file": "backend/apps/classic-reader/app/api/admin/exedra-localize/export/route.ts",
+      "sha256": "9d7b8f81258669c734ef7c4a7fe31d837fcdaf8439bff88e0a42f3fd4ea46bdd",
+      "bytes": 2470
+    },
+    {
+      "source": "reports/verification/reader-inheritance-20261012/atom16/baseline/apps/classic-reader/app/api/admin/exedra-localize/route.ts",
+      "file": "backend/apps/classic-reader/app/api/admin/exedra-localize/route.ts",
+      "sha256": "8311db51a41d1d6343ef71167a671e70c7cf9d7ff9591ca056afc7d714010218",
+      "bytes": 8565
+    },
+    {
+      "source": "reports/verification/reader-inheritance-20261012/atom16/baseline/apps/classic-reader/app/api/admin/machine-review/route.ts",
+      "file": "backend/apps/classic-reader/app/api/admin/machine-review/route.ts",
+      "sha256": "59acbb9716ba9707a3bd2f262051c14e51e8712cd9a9c31e21ca1c7a6a945044",
+      "bytes": 3564
+    },
+    {
+      "source": "reports/verification/reader-inheritance-20261012/atom16/baseline/apps/classic-reader/app/api/admin/submissions/route.ts",
+      "file": "backend/apps/classic-reader/app/api/admin/submissions/route.ts",
+      "sha256": "6005f93049de54d48ab723d122710133f924488ffffab693d605366fab36f59e",
+      "bytes": 2308
+    },
+    {
+      "source": "reports/verification/reader-inheritance-20261012/atom16/baseline/apps/classic-reader/app/api/admin/submissions/[id]/route.ts",
+      "file": "backend/apps/classic-reader/app/api/admin/submissions/[id]/route.ts",
+      "sha256": "36b8a3bed08cea6b4bd888471d95c63fa5e4bdb41b13fc8fa8accbc1047ae953",
+      "bytes": 9470
+    },
+    {
+      "source": "reports/verification/reader-inheritance-20261012/atom16/baseline/apps/classic-reader/app/api/audio/magireco-voice/[voiceId]/route.ts",
+      "file": "backend/apps/classic-reader/app/api/audio/magireco-voice/[voiceId]/route.ts",
+      "sha256": "7e33f9464b3e69726710717d80d5593cd816e3f62fcec621151324eb07a315f5",
+      "bytes": 6501
+    },
+    {
+      "source": "reports/verification/reader-inheritance-20261012/atom16/baseline/apps/classic-reader/app/api/exedra/localization-status/route.ts",
+      "file": "backend/apps/classic-reader/app/api/exedra/localization-status/route.ts",
+      "sha256": "8b647615fe5609a09458d0510525f461dd80d9e7a41d8d1a2949398f92321770",
+      "bytes": 2092
+    },
+    {
+      "source": "reports/verification/reader-inheritance-20261012/atom16/baseline/apps/classic-reader/app/api/exedra/localized/[id]/route.ts",
+      "file": "backend/apps/classic-reader/app/api/exedra/localized/[id]/route.ts",
+      "sha256": "e826f57c6601f21c220f9fe68d4d0d7960eb74f6a076766d24e9cad42b6dc44a",
+      "bytes": 2482
+    },
+    {
+      "source": "reports/verification/reader-inheritance-20261012/atom16/baseline/apps/classic-reader/app/api/proofreading/config/route.ts",
+      "file": "backend/apps/classic-reader/app/api/proofreading/config/route.ts",
+      "sha256": "363f7b1ecf8be80c60cebbbfff7f96ad9f3156cd33b011e6c31dab4aa30c43e6",
+      "bytes": 1200
+    },
+    {
+      "source": "reports/verification/reader-inheritance-20261012/atom16/baseline/apps/classic-reader/app/api/proofreading/machine-status/route.ts",
+      "file": "backend/apps/classic-reader/app/api/proofreading/machine-status/route.ts",
+      "sha256": "c73efd65740d4c4e6a1a24c2ab4985330d2694b08c1847da18fd38c7db65352e",
+      "bytes": 844
+    },
+    {
+      "source": "reports/verification/reader-inheritance-20261012/atom16/baseline/apps/classic-reader/app/api/story-json/[id]/[language]/[index]/route.ts",
+      "file": "backend/apps/classic-reader/app/api/story-json/[id]/[language]/[index]/route.ts",
+      "sha256": "6859d084c4bf0a07fd802303327a7629828f6ea042eadd0a6b5cd321cfb7a918",
+      "bytes": 2770
+    },
+    {
+      "source": "reports/verification/reader-inheritance-20261012/atom16/baseline/apps/classic-reader/app/api/submit/route.ts",
+      "file": "backend/apps/classic-reader/app/api/submit/route.ts",
+      "sha256": "210e1bf6a0a68a8acb867771ab28dd71baf28b21dd392272e7016c7df647913a",
+      "bytes": 13323
+    },
+    {
+      "source": "reports/verification/reader-inheritance-20261012/atom16/baseline/apps/classic-reader/app/review/submissions/page.tsx",
+      "file": "backend/apps/classic-reader/app/review/submissions/page.tsx",
+      "sha256": "8b28d2e6b3060a2b82f3bcbb08d400fb126f9dd8fb9a11a5327feb59f7154621",
+      "bytes": 26379
+    },
+    {
+      "source": "reports/verification/reader-inheritance-20261012/atom16/baseline/apps/classic-reader/app/review/machine-translations/page.tsx",
+      "file": "backend/apps/classic-reader/app/review/machine-translations/page.tsx",
+      "sha256": "c9ed34906d4fe890bb476de1c2703fb4f17c6caf8d447efca5e382d813e1798a",
+      "bytes": 9363
+    },
+    {
+      "source": "reports/verification/reader-inheritance-20261012/atom16/baseline/apps/classic-reader/app/review/exedra-localization/page.tsx",
+      "file": "backend/apps/classic-reader/app/review/exedra-localization/page.tsx",
+      "sha256": "ec354531f513a695f7edbdf50584ab53663fc1594db2488e478e5e3494d2ba26",
+      "bytes": 12049
+    },
+    {
+      "source": "reports/verification/reader-inheritance-20261012/atom16/baseline/apps/classic-reader/app/proofreading/status/page.tsx",
+      "file": "backend/apps/classic-reader/app/proofreading/status/page.tsx",
+      "sha256": "5392be071fdc3c1c84642e6527a38a42cdba0cbf37836b0034988cb6d2847e24",
+      "bytes": 6965
+    },
+    {
+      "source": "HiiragiNemu/magi-reader@56309ca742130e36d8d10fdb4f72de2a04cda02a:website/lib/curved-range.ts",
+      "file": "upstream/lib/curved-range.ts",
+      "sha256": "3dd715ee24ada05da8297cfd13f20b97a7b37347cfc91d98e74536d32020ecb0",
+      "bytes": 556
+    },
+    {
+      "source": "HiiragiNemu/magi-reader@56309ca742130e36d8d10fdb4f72de2a04cda02a:website/lib/use-curved-font-range.ts",
+      "file": "upstream/lib/use-curved-font-range.ts",
+      "sha256": "ce524736d3fcd89fb049cdd134ba32ae961dcdd1519dc348d4e22ce16ad0c2d8",
+      "bytes": 2720
+    },
+    {
+      "source": "HiiragiNemu/magi-reader@56309ca742130e36d8d10fdb4f72de2a04cda02a:website/app/reader/reader-stacked-alignment.css",
+      "file": "upstream/app/reader/reader-stacked-alignment.css",
+      "sha256": "e93bbfb7a61b30f57629b772151f6cf609f54d3c3a7a3be8951a69acb945358b",
+      "bytes": 2650
+    }
+  ]
+}

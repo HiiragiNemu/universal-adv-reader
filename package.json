@@ -1,11 +1,11 @@
 {
   "name": "universal-adv-reader",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": true,
   "license": "UNLICENSED",
   "type": "module",
   "engines": {
-    "node": ">=22"
+    "node": ">=24"
   },
   "scripts": {
     "import:narcissu10": "node tools/import-narcissu10.mjs",
@@ -13,7 +13,22 @@
     "import:kana": "node tools/import-kana.mjs",
     "import:production": "node tools/import-narcissu10.mjs && node tools/import-narcissu3.mjs && node tools/import-kana.mjs",
     "serve": "node tools/serve.mjs",
-    "test": "node --test",
-    "check": "npm run import:production && node tools/check.mjs && node --test"
+    "serve:classic": "node tools/serve-classic.mjs",
+    "verify:cloudflare": "node tools/verify-cloudflare-local.mjs",
+    "build:cloudflare": "node tools/build-cloudflare-pages.mjs",
+    "prepare:cloudflare-media": "node tools/prepare-cloudflare-media.mjs",
+    "publish:cloudflare": "node tools/release-cloudflare.mjs",
+    "test": "node --test \"test/*.test.js\"",
+    "verify:corpus": "node tools/verify-full-corpus.mjs",
+    "check": "node tools/check.mjs && node --test \"test/*.test.js\"",
+    "review:github": "node tools/import-github-review.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/HiiragiNemu/universal-adv-reader.git"
+  },
+  "homepage": "https://universal-adv-reader.pages.dev/apps/web",
+  "bugs": {
+    "url": "https://github.com/HiiragiNemu/universal-adv-reader/issues"
   }
 }

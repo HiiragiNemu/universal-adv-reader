@@ -1,0 +1,395 @@
+{
+  "schema": "vn-research-playback-catalog/v1",
+  "result": "PASS",
+  "repositoryRoot": ".",
+  "archiveRoot": "archive",
+  "manifests": {
+    "readerAdapter": "manifests/generated/reader-adapter.json",
+    "readerSelection": "manifests/generated/reader-selection.json",
+    "bilingualTitles": "manifests/generated/bilingual-titles.json",
+    "chineseContent": "manifests/generated/chinese-content.json",
+    "curatedTranslations": "manifests/generated/curated-translations.json",
+    "playbackMedia": "manifests/generated/playback-media.json",
+    "majiroScripts": "manifests/generated/derived/mjo-scripts.json",
+    "ikuraScripts": "manifests/generated/derived/ikura-scripts.json",
+    "convertedImages": "manifests/generated/derived/images.json",
+    "convertedPatchImages": "manifests/generated/derived/images-patches.json",
+    "narcissu10OriginalAssets": "manifests/generated/narcissu10-original-assets.json",
+    "narcissu10MediaView": "manifests/generated/narcissu10-media-view.json",
+    "patch-narci_himeko": "manifests/generated/derived/patch-narci_himeko.json",
+    "patch-narci_iris": "manifests/generated/derived/patch-narci_iris.json",
+    "patch-narci_onetwo": "manifests/generated/derived/patch-narci_onetwo.json",
+    "patch-narci_sumire": "manifests/generated/derived/patch-narci_sumire.json",
+    "patch-narci_zero": "manifests/generated/derived/patch-narci_zero.json"
+  },
+  "resolution": {
+    "scripts": {
+      "reader": "Resolve stable story, locale, variant, section, and event identities through readerAdapter.",
+      "selection": "Publish only readerSelection records whose decision is include; all excluded records remain archived and addressable by stable ID.",
+      "titles": "Use bilingualTitles for complete sourced zh-CN/ja-JP hierarchy labels; technical fallbacks are not localized titles, and inherited/editorial values retain their method and confidence.",
+      "majiro": "Use majiroScripts.scripts[].script for reader events; retain .plainObject and .strings relative to archive/derived/scripts.",
+      "ikura": "Use ikuraScripts.scripts[].script relative to archive/derived/ikura-scripts.",
+      "chinese": "Use chineseContent to resolve every archived Chinese line source, paired IKURA script, route record, mapping status, and Reader section.",
+      "curatedChinese": "Use curatedTranslations for reviewed work-scoped translations whose exact source offsets are validated against original scripts."
+    },
+    "audio": "Resolve cue stems through playbackMedia.audioById; each value is relative to archive.",
+    "images": "Prefer convertedImages/convertedPatchImages PNG outputs; retain source containers for exact reconstruction.",
+    "officialLocales": "Use narcissu10OriginalAssets to select complete en or ja-JP ARC mounts, graphics, audio and scripts; narcissu10MediaView supplies role-oriented browse paths.",
+    "overlays": "Apply each mount profile in listed order; later layers override earlier layers."
+  },
+  "mountProfiles": [
+    {
+      "id": "narcissu3",
+      "precedence": "later layers override earlier layers",
+      "layers": [
+        {
+          "kind": "base-extracted",
+          "root": "archive/raw/narcissu3"
+        }
+      ]
+    },
+    {
+      "id": "narci_himeko",
+      "precedence": "later layers override earlier layers",
+      "layers": [
+        {
+          "kind": "base-extracted",
+          "root": "archive/raw/narcissu10-original/narci_himeko"
+        },
+        {
+          "kind": "patch-archive-extracted",
+          "root": "archive/raw/patch-archives/narci_himeko",
+          "archiveOrder": [
+            "update.arc.unpacked"
+          ]
+        },
+        {
+          "kind": "patch-loose",
+          "root": "archive/raw/patches/narci_himeko"
+        }
+      ]
+    },
+    {
+      "id": "narci_himeko-en",
+      "precedence": "later layers override earlier layers",
+      "layers": [
+        {
+          "kind": "official-language-depot",
+          "locale": "en",
+          "root": "archive/raw/narcissu10-original/narci_himeko"
+        }
+      ]
+    },
+    {
+      "id": "narci_himeko-ja-JP",
+      "precedence": "later layers override earlier layers",
+      "layers": [
+        {
+          "kind": "official-language-depot",
+          "locale": "ja-JP",
+          "root": "archive/raw/narcissu10-original-ja-JP/narci_himeko"
+        }
+      ]
+    },
+    {
+      "id": "narci_iris",
+      "precedence": "later layers override earlier layers",
+      "layers": [
+        {
+          "kind": "base-extracted",
+          "root": "archive/raw/narcissu10-original/narci_iris"
+        },
+        {
+          "kind": "patch-archive-extracted",
+          "root": "archive/raw/patch-archives/narci_iris",
+          "archiveOrder": [
+            "update.arc.unpacked"
+          ]
+        },
+        {
+          "kind": "patch-loose",
+          "root": "archive/raw/patches/narci_iris"
+        }
+      ]
+    },
+    {
+      "id": "narci_iris-en",
+      "precedence": "later layers override earlier layers",
+      "layers": [
+        {
+          "kind": "official-language-depot",
+          "locale": "en",
+          "root": "archive/raw/narcissu10-original/narci_iris"
+        }
+      ]
+    },
+    {
+      "id": "narci_iris-ja-JP",
+      "precedence": "later layers override earlier layers",
+      "layers": [
+        {
+          "kind": "official-language-depot",
+          "locale": "ja-JP",
+          "root": "archive/raw/narcissu10-original-ja-JP/narci_iris"
+        }
+      ]
+    },
+    {
+      "id": "narci_onetwo",
+      "precedence": "later layers override earlier layers",
+      "layers": [
+        {
+          "kind": "base-extracted",
+          "root": "archive/raw/narcissu10-original/narci_onetwo"
+        },
+        {
+          "kind": "patch-archive-extracted",
+          "root": "archive/raw/patch-archives/narci_onetwo",
+          "archiveOrder": [
+            "update.arc.unpacked",
+            "update1.arc.unpacked"
+          ]
+        },
+        {
+          "kind": "patch-loose",
+          "root": "archive/raw/patches/narci_onetwo"
+        }
+      ]
+    },
+    {
+      "id": "narci_onetwo-en",
+      "precedence": "later layers override earlier layers",
+      "layers": [
+        {
+          "kind": "official-language-depot",
+          "locale": "en",
+          "root": "archive/raw/narcissu10-original/narci_onetwo"
+        }
+      ]
+    },
+    {
+      "id": "narci_onetwo-ja-JP",
+      "precedence": "later layers override earlier layers",
+      "layers": [
+        {
+          "kind": "official-language-depot",
+          "locale": "ja-JP",
+          "root": "archive/raw/narcissu10-original-ja-JP/narci_onetwo"
+        }
+      ]
+    },
+    {
+      "id": "narci_sumire",
+      "precedence": "later layers override earlier layers",
+      "layers": [
+        {
+          "kind": "base-extracted",
+          "root": "archive/raw/narcissu10-original/narci_sumire"
+        },
+        {
+          "kind": "patch-archive-extracted",
+          "root": "archive/raw/patch-archives/narci_sumire",
+          "archiveOrder": [
+            "update.arc.unpacked",
+            "update1.arc.unpacked"
+          ]
+        },
+        {
+          "kind": "patch-loose",
+          "root": "archive/raw/patches/narci_sumire"
+        }
+      ]
+    },
+    {
+      "id": "narci_sumire-en",
+      "precedence": "later layers override earlier layers",
+      "layers": [
+        {
+          "kind": "official-language-depot",
+          "locale": "en",
+          "root": "archive/raw/narcissu10-original/narci_sumire"
+        }
+      ]
+    },
+    {
+      "id": "narci_sumire-ja-JP",
+      "precedence": "later layers override earlier layers",
+      "layers": [
+        {
+          "kind": "official-language-depot",
+          "locale": "ja-JP",
+          "root": "archive/raw/narcissu10-original-ja-JP/narci_sumire"
+        }
+      ]
+    },
+    {
+      "id": "narci_zero",
+      "precedence": "later layers override earlier layers",
+      "layers": [
+        {
+          "kind": "base-extracted",
+          "root": "archive/raw/narcissu10-original/narci_zero"
+        },
+        {
+          "kind": "patch-archive-extracted",
+          "root": "archive/raw/patch-archives/narci_zero",
+          "archiveOrder": [
+            "update.arc.unpacked"
+          ]
+        },
+        {
+          "kind": "patch-loose",
+          "root": "archive/raw/patches/narci_zero"
+        }
+      ]
+    },
+    {
+      "id": "narci_zero-en",
+      "precedence": "later layers override earlier layers",
+      "layers": [
+        {
+          "kind": "official-language-depot",
+          "locale": "en",
+          "root": "archive/raw/narcissu10-original/narci_zero"
+        }
+      ]
+    },
+    {
+      "id": "narci_zero-ja-JP",
+      "precedence": "later layers override earlier layers",
+      "layers": [
+        {
+          "kind": "official-language-depot",
+          "locale": "ja-JP",
+          "root": "archive/raw/narcissu10-original-ja-JP/narci_zero"
+        }
+      ]
+    },
+    {
+      "id": "kana",
+      "precedence": "later layers override earlier layers",
+      "layers": [
+        {
+          "kind": "base-extracted",
+          "root": "archive/raw/kana"
+        },
+        {
+          "kind": "loose-game-files",
+          "root": "archive/inputs/kana"
+        }
+      ]
+    }
+  ],
+  "archivedInputs": [
+    {
+      "path": "archive/inputs/kana/@凯哥S我偶像.txt",
+      "bytes": 0
+    },
+    {
+      "path": "archive/inputs/kana/dologo.mpg",
+      "bytes": 1794052
+    },
+    {
+      "path": "archive/inputs/kana/GAME.SUF",
+      "bytes": 126
+    },
+    {
+      "path": "archive/inputs/kana/KANACHS.EXE",
+      "bytes": 806912
+    },
+    {
+      "path": "archive/inputs/kana/KANACHS.INI",
+      "bytes": 222
+    },
+    {
+      "path": "archive/inputs/kana/KANAOKA.CNT",
+      "bytes": 764
+    },
+    {
+      "path": "archive/inputs/kana/KANAOKA.EXE",
+      "bytes": 806912
+    },
+    {
+      "path": "archive/inputs/kana/KANAOKA.HLP",
+      "bytes": 1107838
+    },
+    {
+      "path": "archive/inputs/kana/KANAOKA.MPG",
+      "bytes": 57022464
+    },
+    {
+      "path": "archive/inputs/kana/KANAOKA.OLD",
+      "bytes": 806912
+    },
+    {
+      "path": "archive/inputs/kana/say花火吧_百度贴吧.url",
+      "bytes": 77
+    },
+    {
+      "path": "archive/inputs/kana/如有问题请前往say花火吧发帖求助.txt",
+      "bytes": 59
+    },
+    {
+      "path": "archive/inputs/kana/请读我.txt",
+      "bytes": 248
+    },
+    {
+      "path": "archive/inputs/patches/narci_himeko/Narci_himeko_cn.exe",
+      "bytes": 15884288
+    },
+    {
+      "path": "archive/inputs/patches/narci_iris/narci_iris_cn.exe",
+      "bytes": 12881920
+    },
+    {
+      "path": "archive/inputs/patches/narci_onetwo/narci_onetwo_cn.exe",
+      "bytes": 10673152
+    },
+    {
+      "path": "archive/inputs/patches/narci_sumire/narci_sumire_cn.exe",
+      "bytes": 79691776
+    },
+    {
+      "path": "archive/inputs/patches/narci_zero/narci_zero_cn_.exe",
+      "bytes": 16777216
+    }
+  ],
+  "counts": {
+    "mediaFiles": 46279,
+    "majiroScripts": 1086,
+    "majiroInstructions": 4040943,
+    "majiroStrings": 1493801,
+    "majiroTextEvents": 466345,
+    "majiroTranslationScripts": 116,
+    "majiroExactTranslationScripts": 97,
+    "curatedTranslationStories": 1,
+    "curatedTranslationLines": 160,
+    "ikuraScripts": 120,
+    "ikuraInstructions": 642492,
+    "ikuraTextEvents": 32825,
+    "convertedImages": 2513,
+    "archivedInputFiles": 18,
+    "readerStories": 518,
+    "readerArchivedStories": 518,
+    "readerVisibleStories": 200,
+    "readerExcludedStories": 318,
+    "bilingualTitleNodes": 410,
+    "bilingualTitleStories": 200,
+    "zhAuthoritativeTitles": 410,
+    "jaAuthoritativeTitles": 410,
+    "readerVariants": 1207,
+    "chineseContentRecords": 263,
+    "chineseContentStories": 263,
+    "majiroChineseLines": 48182,
+    "majiroCompiledChineseScripts": 86,
+    "majiroCompiledChineseTextEvents": 39245,
+    "kanaChineseTextEvents": 16402,
+    "narcissu10OriginalFiles": 30264,
+    "narcissu10BrowseableMedia": 29493
+  },
+  "validation": {
+    "checkedFileReferences": 115242,
+    "failureCount": 0,
+    "failures": []
+  }
+}

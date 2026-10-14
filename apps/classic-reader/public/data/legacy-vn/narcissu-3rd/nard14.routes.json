@@ -1,0 +1,5445 @@
+{
+  "schema": "classic-reader-story-routes/v1",
+  "canonicalStoryId": "narcissu-3rd/nard14",
+  "sourceCanonicalStoryId": "narcissu-3rd/nard14",
+  "preferredVariantId": "mjo/narcissu3/update.arc.unpacked/nard14",
+  "japaneseVariantId": "mjo/narcissu3/scenario.arc.unpacked/nard14",
+  "chineseVariantId": "mjo/narcissu3/update.arc.unpacked/nard14",
+  "voiceRouting": {
+    "schema": "classic-reader-voice-routing/v1",
+    "defaultState": "collapsed",
+    "expandedSlotMode": "all-lines",
+    "unresolvedLineBehavior": "visible"
+  },
+  "titleAuthority": {
+    "work": {
+      "authorityId": "work/narcissu3",
+      "title_cn": "水仙3rd",
+      "title_jp": "ナルキッソス３",
+      "source": {
+        "zh-CN": "archive/raw/narcissu3/update.arc.unpacked/majiro.env",
+        "ja-JP": "archive/raw/narcissu3/fastdata.arc.unpacked/majiro.env"
+      },
+      "evidence": {
+        "zh-CN": [
+          "active TITLEBAR at gb18030 line 36: 水仙3rd",
+          "rawLineHex=5449544c454241520909cbaecfc9337264"
+        ],
+        "ja-JP": [
+          "active TITLEBAR at cp932 line 36: ナルキッソス３",
+          "rawLineHex=5449544c4542415209098369838b834c8362835c83588252"
+        ]
+      },
+      "confidence": {
+        "zh-CN": 1,
+        "ja-JP": 1
+      }
+    },
+    "arc": {
+      "authorityId": "arc/narcissu-3rd",
+      "title_cn": "水仙3rd",
+      "title_jp": "ナルキッソス３",
+      "source": {
+        "zh-CN": "archive/raw/narcissu3/update.arc.unpacked/majiro.env",
+        "ja-JP": "archive/raw/narcissu3/fastdata.arc.unpacked/majiro.env"
+      },
+      "evidence": {
+        "zh-CN": [
+          "active TITLEBAR at gb18030 line 36: 水仙3rd",
+          "rawLineHex=5449544c454241520909cbaecfc9337264"
+        ],
+        "ja-JP": [
+          "active TITLEBAR at cp932 line 36: ナルキッソス３",
+          "rawLineHex=5449544c4542415209098369838b834c8362835c83588252"
+        ]
+      },
+      "confidence": {
+        "zh-CN": 1,
+        "ja-JP": 1
+      }
+    },
+    "story": {
+      "authorityId": "story/narcissu-3rd/nard14",
+      "title_cn": "前一天",
+      "title_jp": "前夜",
+      "source": {
+        "zh-CN": "archive/derived/images/narcissu3/update.arc.unpacked/ナルキ３シーラスチャプターoff.png",
+        "ja-JP": "archive/derived/images/narcissu3/fastdata.arc.unpacked/ナルキ３シーラスチャプターoff.png"
+      },
+      "evidence": {
+        "zh-CN": [
+          "official runtime menu image [800, 600]",
+          "groupId=n3-ciras",
+          "visibleEntry=chapter:15",
+          "imageRegion=[0, 120, 800, 310]",
+          "routeSource=archive/derived/scripts/narcissu3/scenario.arc.unpacked/subutitle_3_シーラス.strings.json",
+          "routeMode=explicit-target",
+          "routeTarget=nard14"
+        ],
+        "ja-JP": [
+          "official runtime menu image [800, 600]",
+          "groupId=n3-ciras",
+          "visibleEntry=chapter:15",
+          "imageRegion=[0, 120, 800, 310]",
+          "routeSource=archive/derived/scripts/narcissu3/scenario.arc.unpacked/subutitle_3_シーラス.strings.json",
+          "routeMode=explicit-target",
+          "routeTarget=nard14"
+        ]
+      },
+      "confidence": {
+        "zh-CN": 1,
+        "ja-JP": 1
+      }
+    }
+  },
+  "sections": [
+    {
+      "sectionId": "main",
+      "entryEventId": "mjo-cf",
+      "events": [
+        {
+          "eventId": "mjo-cf",
+          "kind": "line",
+          "source": {
+            "engine": "majiro",
+            "variantSourceId": "mjo/narcissu3/scenario.arc.unpacked/nard14",
+            "scriptPath": "archive/derived/scripts/narcissu3/scenario.arc.unpacked/nard14.script.json",
+            "textEventIndices": [
+              0
+            ],
+            "codeOffsets": [
+              207
+            ],
+            "nativeUnit": {
+              "schema": "majiro-display-unit/v1",
+              "codeOffset": 207,
+              "endCodeOffset": 238,
+              "bodyCodeOffset": 207,
+              "codeOffsets": [
+                207,
+                236
+              ],
+              "textEventIndices": [
+                0
+              ],
+              "textParts": [
+                {
+                  "kind": "text",
+                  "text": "――７階行き前日、深夜。",
+                  "codeOffset": 207,
+                  "rawText": "――７階行き前日、深夜。",
+                  "rawHex": "815c815c82568a4b8d7382ab914f93fa8141905b96e98142",
+                  "textEventIndex": 0,
+                  "segmentIndex": 0
+                }
+              ],
+              "speakerRaw": null,
+              "ruby": [],
+              "controls": [],
+              "boundary": {
+                "codeOffset": 238,
+                "control": "p"
+              }
+            }
+          },
+          "nextEventId": "mjo-12d",
+          "textLineIndex": {
+            "ja-JP": 0
+          },
+          "cues": [
+            {
+              "cueId": "cue-b8ef1ae7732fa273",
+              "kind": "image",
+              "timing": "scene",
+              "mediaId": "asset/a-796d0325dd501200",
+              "resolverId": "research-media-v1",
+              "raw": {
+                "sourceKey": "n3d_ck_c01",
+                "codeOffset": 50,
+                "playbackPath": "derived/images/narcissu3/data1.arc.unpacked/n3d_ck_c01.png",
+                "targetEventId": "mjo-cf"
+              }
+            },
+            {
+              "cueId": "cue-7fa7e24c70c94af4",
+              "kind": "image",
+              "timing": "scene",
+              "mediaId": "asset/a-3d4ebd0ad56cbb99",
+              "resolverId": "research-media-v1",
+              "raw": {
+                "sourceKey": "n3d_ck_c02",
+                "codeOffset": 81,
+                "playbackPath": "derived/images/narcissu3/data1.arc.unpacked/n3d_ck_c02.png",
+                "targetEventId": "mjo-cf"
+              }
+            },
+            {
+              "cueId": "cue-db18f486d35c201c",
+              "kind": "image",
+              "timing": "scene",
+              "mediaId": "asset/a-1e25df50e807fd1b",
+              "resolverId": "research-media-v1",
+              "raw": {
+                "sourceKey": "black",
+                "codeOffset": 146,
+                "playbackPath": "derived/images/narcissu3/fastdata.arc.unpacked/black.png",
+                "targetEventId": "mjo-cf"
+              }
+            },
+            {
+              "cueId": "cue-b7f927ea0c531598",
+              "kind": "image",
+              "timing": "scene",
+              "mediaId": "asset/a-1e7559daa9bfc1b2",
+              "resolverId": "research-media-v1",
+              "raw": {
+                "sourceKey": "b3",
+                "codeOffset": 172,
+                "playbackPath": "derived/images/narcissu3/data1.arc.unpacked/b3.png",
+                "targetEventId": "mjo-cf"
+              }
+            }
+          ]
+        },
+        {
+          "eventId": "mjo-12d",
+          "kind": "line",
+          "source": {
+            "engine": "majiro",
+            "variantSourceId": "mjo/narcissu3/scenario.arc.unpacked/nard14",
+            "scriptPath": "archive/derived/scripts/narcissu3/scenario.arc.unpacked/nard14.script.json",
+            "textEventIndices": [
+              1,
+              2
+            ],
+            "codeOffsets": [
+              286,
+              301
+            ],
+            "nativeUnit": {
+              "schema": "majiro-display-unit/v1",
+              "codeOffset": 286,
+              "endCodeOffset": 338,
+              "bodyCodeOffset": 301,
+              "codeOffsets": [
+                286,
+                301,
+                336
+              ],
+              "textEventIndices": [
+                1,
+                2
+              ],
+              "textParts": [
+                {
+                  "kind": "text",
+                  "text": "「…お兄さんに、言っちゃった」",
+                  "codeOffset": 301,
+                  "rawText": "「…お兄さんに、言っちゃった」",
+                  "rawHex": "8175816382a88c5a82b382f182c981418cbe82c182bf82e182c182bd8176",
+                  "textEventIndex": 2,
+                  "segmentIndex": 0
+                }
+              ],
+              "speakerRaw": {
+                "method": "native-name-slot",
+                "codeOffset": 286,
+                "rawHex": "836083548367",
+                "text": "チサト",
+                "decodedText": "チサト"
+              },
+              "ruby": [],
+              "controls": [],
+              "boundary": {
+                "codeOffset": 338,
+                "control": "p"
+              }
+            }
+          },
+          "nextEventId": "mjo-17d",
+          "textLineIndex": {
+            "ja-JP": 1
+          },
+          "cues": [
+            {
+              "cueId": "cue-b258f3e30ea18aa9",
+              "kind": "voice",
+              "timing": "utterance",
+              "mediaId": "asset/a-9cd8b7329b470941",
+              "resolverId": "research-media-v1",
+              "raw": {
+                "sourceKey": "n3tisa_0986",
+                "codeOffset": 254,
+                "playbackPath": "raw/narcissu3/voice.arc.unpacked/n3tisa_0986.ogg",
+                "targetEventId": "mjo-12d"
+              }
+            }
+          ]
+        },
+        {
+          "eventId": "mjo-17d",
+          "kind": "line",
+          "source": {
+            "engine": "majiro",
+            "variantSourceId": "mjo/narcissu3/scenario.arc.unpacked/nard14",
+            "scriptPath": "archive/derived/scripts/narcissu3/scenario.arc.unpacked/nard14.script.json",
+            "textEventIndices": [
+              3
+            ],
+            "codeOffsets": [
+              381
+            ],
+            "nativeUnit": {
+              "schema": "majiro-display-unit/v1",
+              "codeOffset": 381,
+              "endCodeOffset": 442,
+              "bodyCodeOffset": 381,
+              "codeOffsets": [
+                381,
+                440
+              ],
+              "textEventIndices": [
+                3
+              ],
+              "textParts": [
+                {
+                  "kind": "text",
+                  "text": "それはまるで悪い事をしたような、後悔するような口調で。",
+                  "codeOffset": 381,
+                  "rawText": "それはまるで悪い事をしたような、後悔するような口調で。",
+                  "rawHex": "82bb82ea82cd82dc82e982c588ab82a28e9682f082b582bd82e682a482c881418ce389f782b782e982e682a482c88cfb92b282c58142",
+                  "textEventIndex": 3,
+                  "segmentIndex": 0
+                }
+              ],
+              "speakerRaw": null,
+              "ruby": [],
+              "controls": [],
+              "boundary": {
+                "codeOffset": 442,
+                "control": "p"
+              }
+            }
+          },
+          "nextEventId": "mjo-1f9",
+          "textLineIndex": {
+            "ja-JP": 2
+          },
+          "cues": [
+            {
+              "cueId": "cue-5531e455d2a240aa",
+              "kind": "bgm",
+              "timing": "scene",
+              "mediaId": "asset/a-ed4b45158ad23073",
+              "resolverId": "research-media-v1",
+              "raw": {
+                "sourceKey": "2sou01",
+                "codeOffset": 354,
+                "playbackPath": "raw/narcissu3/stream.arc.unpacked/2sou01.ogg",
+                "targetEventId": "mjo-17d"
+              }
+            }
+          ]
+        },
+        {
+          "eventId": "mjo-1f9",
+          "kind": "line",
+          "source": {
+            "engine": "majiro",
+            "variantSourceId": "mjo/narcissu3/scenario.arc.unpacked/nard14",
+            "scriptPath": "archive/derived/scripts/narcissu3/scenario.arc.unpacked/nard14.script.json",
+            "textEventIndices": [
+              4,
+              5
+            ],
+            "codeOffsets": [
+              490,
+              505
+            ],
+            "nativeUnit": {
+              "schema": "majiro-display-unit/v1",
+              "codeOffset": 490,
+              "endCodeOffset": 546,
+              "bodyCodeOffset": 505,
+              "codeOffsets": [
+                490,
+                505,
+                544
+              ],
+              "textEventIndices": [
+                4,
+                5
+              ],
+              "textParts": [
+                {
+                  "kind": "text",
+                  "text": "「…伝えちゃったんだよね、わたし」",
+                  "codeOffset": 505,
+                  "rawText": "「…伝えちゃったんだよね、わたし」",
+                  "rawHex": "81758163936082a682bf82e182c182bd82f182be82e682cb814182ed82bd82b58176",
+                  "textEventIndex": 5,
+                  "segmentIndex": 0
+                }
+              ],
+              "speakerRaw": {
+                "method": "native-name-slot",
+                "codeOffset": 490,
+                "rawHex": "836083548367",
+                "text": "チサト",
+                "decodedText": "チサト"
+              },
+              "ruby": [],
+              "controls": [],
+              "boundary": {
+                "codeOffset": 546,
+                "control": "p"
+              }
+            }
+          },
+          "nextEventId": "mjo-232",
+          "textLineIndex": {
+            "ja-JP": 3
+          },
+          "cues": [
+            {
+              "cueId": "cue-d63bc60f3eeb6e80",
+              "kind": "voice",
+              "timing": "utterance",
+              "mediaId": "asset/a-de7346382f2b9682",
+              "resolverId": "research-media-v1",
+              "raw": {
+                "sourceKey": "n3tisa_0987",
+                "codeOffset": 458,
+                "playbackPath": "raw/narcissu3/voice.arc.unpacked/n3tisa_0987.ogg",
+                "targetEventId": "mjo-1f9"
+              }
+            }
+          ]
+        },
+        {
+          "eventId": "mjo-232",
+          "kind": "line",
+          "source": {
+            "engine": "majiro",
+            "variantSourceId": "mjo/narcissu3/scenario.arc.unpacked/nard14",
+            "scriptPath": "archive/derived/scripts/narcissu3/scenario.arc.unpacked/nard14.script.json",
+            "textEventIndices": [
+              6
+            ],
+            "codeOffsets": [
+              562
+            ],
+            "nativeUnit": {
+              "schema": "majiro-display-unit/v1",
+              "codeOffset": 562,
+              "endCodeOffset": 615,
+              "bodyCodeOffset": 562,
+              "codeOffsets": [
+                562,
+                613
+              ],
+              "textEventIndices": [
+                6
+              ],
+              "textParts": [
+                {
+                  "kind": "text",
+                  "text": "わたしは何もない空間に向かってそう呟いていた。",
+                  "codeOffset": 562,
+                  "rawText": "わたしは何もない空間に向かってそう呟いていた。",
+                  "rawHex": "82ed82bd82b582cd89bd82e082c882a28bf38ad482c98cfc82a982c182c482bb82a499ea82a282c482a282bd8142",
+                  "textEventIndex": 6,
+                  "segmentIndex": 0
+                }
+              ],
+              "speakerRaw": null,
+              "ruby": [],
+              "controls": [],
+              "boundary": {
+                "codeOffset": 615,
+                "control": "p"
+              }
+            }
+          },
+          "nextEventId": "mjo-277",
+          "textLineIndex": {
+            "ja-JP": 4
+          }
+        },
+        {
+          "eventId": "mjo-277",
+          "kind": "line",
+          "source": {
+            "engine": "majiro",
+            "variantSourceId": "mjo/narcissu3/scenario.arc.unpacked/nard14",
+            "scriptPath": "archive/derived/scripts/narcissu3/scenario.arc.unpacked/nard14.script.json",
+            "textEventIndices": [
+              7
+            ],
+            "codeOffsets": [
+              631
+            ],
+            "nativeUnit": {
+              "schema": "majiro-display-unit/v1",
+              "codeOffset": 631,
+              "endCodeOffset": 658,
+              "bodyCodeOffset": 631,
+              "codeOffsets": [
+                631,
+                656
+              ],
+              "textEventIndices": [
+                7
+              ],
+              "textParts": [
+                {
+                  "kind": "text",
+                  "text": "…そうじゃないのに。",
+                  "codeOffset": 631,
+                  "rawText": "…そうじゃないのに。",
+                  "rawHex": "816382bb82a482b682e182c882a282cc82c98142",
+                  "textEventIndex": 7,
+                  "segmentIndex": 0
+                }
+              ],
+              "speakerRaw": null,
+              "ruby": [],
+              "controls": [],
+              "boundary": {
+                "codeOffset": 658,
+                "control": "p"
+              }
+            }
+          },
+          "nextEventId": "mjo-2a2",
+          "textLineIndex": {
+            "ja-JP": 5
+          }
+        },
+        {
+          "eventId": "mjo-2a2",
+          "kind": "line",
+          "source": {
+            "engine": "majiro",
+            "variantSourceId": "mjo/narcissu3/scenario.arc.unpacked/nard14",
+            "scriptPath": "archive/derived/scripts/narcissu3/scenario.arc.unpacked/nard14.script.json",
+            "textEventIndices": [
+              8
+            ],
+            "codeOffsets": [
+              674
+            ],
+            "nativeUnit": {
+              "schema": "majiro-display-unit/v1",
+              "codeOffset": 674,
+              "endCodeOffset": 723,
+              "bodyCodeOffset": 674,
+              "codeOffsets": [
+                674,
+                721
+              ],
+              "textEventIndices": [
+                8
+              ],
+              "textParts": [
+                {
+                  "kind": "text",
+                  "text": "こうするべきだと決め、そうしただけなのに。",
+                  "codeOffset": 674,
+                  "rawText": "こうするべきだと決め、そうしただけなのに。",
+                  "rawHex": "82b182a482b782e982d782ab82be82c68c8882df814182bb82a482b582bd82be82af82c882cc82c98142",
+                  "textEventIndex": 8,
+                  "segmentIndex": 0
+                }
+              ],
+              "speakerRaw": null,
+              "ruby": [],
+              "controls": [],
+              "boundary": {
+                "codeOffset": 723,
+                "control": "p"
+              }
+            }
+          },
+          "nextEventId": "mjo-2e3",
+          "textLineIndex": {
+            "ja-JP": 6
+          }
+        },
+        {
+          "eventId": "mjo-2e3",
+          "kind": "line",
+          "source": {
+            "engine": "majiro",
+            "variantSourceId": "mjo/narcissu3/scenario.arc.unpacked/nard14",
+            "scriptPath": "archive/derived/scripts/narcissu3/scenario.arc.unpacked/nard14.script.json",
+            "textEventIndices": [
+              9
+            ],
+            "codeOffsets": [
+              739
+            ],
+            "nativeUnit": {
+              "schema": "majiro-display-unit/v1",
+              "codeOffset": 739,
+              "endCodeOffset": 772,
+              "bodyCodeOffset": 739,
+              "codeOffsets": [
+                739,
+                770
+              ],
+              "textEventIndices": [
+                9
+              ],
+              "textParts": [
+                {
+                  "kind": "text",
+                  "text": "――暗く、肌寒い部屋の中。",
+                  "codeOffset": 739,
+                  "rawText": "――暗く、肌寒い部屋の中。",
+                  "rawHex": "815c815c88c382ad814194a78aa682a2959489ae82cc92868142",
+                  "textEventIndex": 9,
+                  "segmentIndex": 0
+                }
+              ],
+              "speakerRaw": null,
+              "ruby": [],
+              "controls": [],
+              "boundary": {
+                "codeOffset": 772,
+                "control": "p"
+              }
+            }
+          },
+          "nextEventId": "mjo-314",
+          "textLineIndex": {
+            "ja-JP": 7
+          }
+        },
+        {
+          "eventId": "mjo-314",
+          "kind": "line",
+          "source": {
+            "engine": "majiro",
+            "variantSourceId": "mjo/narcissu3/scenario.arc.unpacked/nard14",
+            "scriptPath": "archive/derived/scripts/narcissu3/scenario.arc.unpacked/nard14.script.json",
+            "textEventIndices": [
+              10
+            ],
+            "codeOffsets": [
+              788
+            ],
+            "nativeUnit": {
+              "schema": "majiro-display-unit/v1",
+              "codeOffset": 788,
+              "endCodeOffset": 833,
+              "bodyCodeOffset": 788,
+              "codeOffsets": [
+                788,
+                831
+              ],
+              "textEventIndices": [
+                10
+              ],
+              "textParts": [
+                {
+                  "kind": "text",
+                  "text": "わたしは１人でずっと考え事をしていた。",
+                  "codeOffset": 788,
+                  "rawText": "わたしは１人でずっと考え事をしていた。",
+                  "rawHex": "82ed82bd82b582cd8250906c82c582b882c182c68d6c82a68e9682f082b582c482a282bd8142",
+                  "textEventIndex": 10,
+                  "segmentIndex": 0
+                }
+              ],
+              "speakerRaw": null,
+              "ruby": [],
+              "controls": [],
+              "boundary": {
+                "codeOffset": 833,
+                "control": "p"
+              }
+            }
+          },
+          "nextEventId": "mjo-351",
+          "textLineIndex": {
+            "ja-JP": 8
+          }
+        },
+        {
+          "eventId": "mjo-351",
+          "kind": "line",
+          "source": {
+            "engine": "majiro",
+            "variantSourceId": "mjo/narcissu3/scenario.arc.unpacked/nard14",
+            "scriptPath": "archive/derived/scripts/narcissu3/scenario.arc.unpacked/nard14.script.json",
+            "textEventIndices": [
+              11
+            ],
+            "codeOffsets": [
+              849
+            ],
+            "nativeUnit": {
+              "schema": "majiro-display-unit/v1",
+              "codeOffset": 849,
+              "endCodeOffset": 944,
+              "bodyCodeOffset": 849,
+              "codeOffsets": [
+                849,
+                942
+              ],
+              "textEventIndices": [
+                11
+              ],
+              "textParts": [
+                {
+                  "kind": "text",
+                  "text": "それは今日までの出来事、今日の出来事、明日の事、そして明日以降の事について…と実に様々。",
+                  "codeOffset": 849,
+                  "rawText": "それは今日までの出来事、今日の出来事、明日の事、そして明日以降の事について…と実に様々。",
+                  "rawHex": "82bb82ea82cd8da193fa82dc82c582cc8f6f97888e9681418da193fa82cc8f6f97888e96814196be93fa82cc8e96814182bb82b582c496be93fa88c88d7e82cc8e9682c982c282a282c4816382c68ec082c9976c81588142",
+                  "textEventIndex": 11,
+                  "segmentIndex": 0
+                }
+              ],
+              "speakerRaw": null,
+              "ruby": [],
+              "controls": [],
+              "boundary": {
+                "codeOffset": 944,
+                "control": "p"
+              }
+            }
+          },
+          "nextEventId": "mjo-3c0",
+          "textLineIndex": {
+            "ja-JP": 9
+          }
+        },
+        {
+          "eventId": "mjo-3c0",
+          "kind": "line",
+          "source": {
+            "engine": "majiro",
+            "variantSourceId": "mjo/narcissu3/scenario.arc.unpacked/nard14",
+            "scriptPath": "archive/derived/scripts/narcissu3/scenario.arc.unpacked/nard14.script.json",
+            "textEventIndices": [
+              12
+            ],
+            "codeOffsets": [
+              960
+            ],
+            "nativeUnit": {
+              "schema": "majiro-display-unit/v1",
+              "codeOffset": 960,
+              "endCodeOffset": 973,
+              "bodyCodeOffset": 960,
+              "codeOffsets": [
+                960,
+                971
+              ],
+              "textEventIndices": [
+                12
+              ],
+              "textParts": [
+                {
+                  "kind": "text",
+                  "text": "でも…",
+                  "codeOffset": 960,
+                  "rawText": "でも…",
+                  "rawHex": "82c582e08163",
+                  "textEventIndex": 12,
+                  "segmentIndex": 0
+                }
+              ],
+              "speakerRaw": null,
+              "ruby": [],
+              "controls": [],
+              "boundary": {
+                "codeOffset": 973,
+                "control": "p"
+              }
+            }
+          },
+          "nextEventId": "mjo-3dd",
+          "textLineIndex": {
+            "ja-JP": 10
+          }
+        },
+        {
+          "eventId": "mjo-3dd",
+          "kind": "line",
+          "source": {
+            "engine": "majiro",
+            "variantSourceId": "mjo/narcissu3/scenario.arc.unpacked/nard14",
+            "scriptPath": "archive/derived/scripts/narcissu3/scenario.arc.unpacked/nard14.script.json",
+            "textEventIndices": [
+              13
+            ],
+            "codeOffsets": [
+              989
+            ],
+            "nativeUnit": {
+              "schema": "majiro-display-unit/v1",
+              "codeOffset": 989,
+              "endCodeOffset": 1044,
+              "bodyCodeOffset": 989,
+              "codeOffsets": [
+                989,
+                1042
+              ],
+              "textEventIndices": [
+                13
+              ],
+              "textParts": [
+                {
+                  "kind": "text",
+                  "text": "やっぱり今日の出来事が一番多く頭をよぎっていた。",
+                  "codeOffset": 989,
+                  "rawText": "やっぱり今日の出来事が一番多く頭をよぎっていた。",
+                  "rawHex": "82e282c182cf82e88da193fa82cc8f6f97888e9682aa88ea94d491bd82ad93aa82f082e682ac82c182c482a282bd8142",
+                  "textEventIndex": 13,
+                  "segmentIndex": 0
+                }
+              ],
+              "speakerRaw": null,
+              "ruby": [],
+              "controls": [],
+              "boundary": {
+                "codeOffset": 1044,
+                "control": "p"
+              }
+            }
+          },
+          "nextEventId": "mjo-424",
+          "textLineIndex": {
+            "ja-JP": 11
+          }
+        },
+        {
+          "eventId": "mjo-424",
+          "kind": "line",
+          "source": {
+            "engine": "majiro",
+            "variantSourceId": "mjo/narcissu3/scenario.arc.unpacked/nard14",
+            "scriptPath": "archive/derived/scripts/narcissu3/scenario.arc.unpacked/nard14.script.json",
+            "textEventIndices": [
+              14
+            ],
+            "codeOffsets": [
+              1060
+            ],
+            "nativeUnit": {
+              "schema": "majiro-display-unit/v1",
+              "codeOffset": 1060,
+              "endCodeOffset": 1111,
+              "bodyCodeOffset": 1060,
+              "codeOffsets": [
+                1060,
+                1109
+              ],
+              "textEventIndices": [
+                14
+              ],
+              "textParts": [
+                {
+                  "kind": "text",
+                  "text": "まあそれは当然か。わたしはそう心の中で呟く。",
+                  "codeOffset": 1060,
+                  "rawText": "まあそれは当然か。わたしはそう心の中で呟く。",
+                  "rawHex": "82dc82a082bb82ea82cd9396915282a9814282ed82bd82b582cd82bb82a4905382cc928682c599ea82ad8142",
+                  "textEventIndex": 14,
+                  "segmentIndex": 0
+                }
+              ],
+              "speakerRaw": null,
+              "ruby": [],
+              "controls": [],
+              "boundary": {
+                "codeOffset": 1111,
+                "control": "p"
+              }
+            }
+          },
+          "nextEventId": "mjo-467",
+          "textLineIndex": {
+            "ja-JP": 12
+          }
+        },
+        {
+          "eventId": "mjo-467",
+          "kind": "line",
+          "source": {
+            "engine": "majiro",
+            "variantSourceId": "mjo/narcissu3/scenario.arc.unpacked/nard14",
+            "scriptPath": "archive/derived/scripts/narcissu3/scenario.arc.unpacked/nard14.script.json",
+            "textEventIndices": [
+              15
+            ],
+            "codeOffsets": [
+              1127
+            ],
+            "nativeUnit": {
+              "schema": "majiro-display-unit/v1",
+              "codeOffset": 1127,
+              "endCodeOffset": 1154,
+              "bodyCodeOffset": 1127,
+              "codeOffsets": [
+                1127,
+                1152
+              ],
+              "textEventIndices": [
+                15
+              ],
+              "textParts": [
+                {
+                  "kind": "text",
+                  "text": "…苦渋の決断だった。",
+                  "codeOffset": 1127,
+                  "rawText": "…苦渋の決断だった。",
+                  "rawHex": "81638bea8f6182cc8c88926682be82c182bd8142",
+                  "textEventIndex": 15,
+                  "segmentIndex": 0
+                }
+              ],
+              "speakerRaw": null,
+              "ruby": [],
+              "controls": [],
+              "boundary": {
+                "codeOffset": 1154,
+                "control": "p"
+              }
+            }
+          },
+          "nextEventId": "mjo-492",
+          "textLineIndex": {
+            "ja-JP": 13
+          }
+        },
+        {
+          "eventId": "mjo-492",
+          "kind": "line",
+          "source": {
+            "engine": "majiro",
+            "variantSourceId": "mjo/narcissu3/scenario.arc.unpacked/nard14",
+            "scriptPath": "archive/derived/scripts/narcissu3/scenario.arc.unpacked/nard14.script.json",
+            "textEventIndices": [
+              16
+            ],
+            "codeOffsets": [
+              1170
+            ],
+            "nativeUnit": {
+              "schema": "majiro-display-unit/v1",
+              "codeOffset": 1170,
+              "endCodeOffset": 1268,
+              "bodyCodeOffset": 1170,
+              "codeOffsets": [
+                1170,
+                1227,
+                1229,
+                1239,
+                1266
+              ],
+              "textEventIndices": [
+                16
+              ],
+              "textParts": [
+                {
+                  "kind": "text",
+                  "text": "そして本当に辛い事というのは喋る側も聞く側もこんなに",
+                  "codeOffset": 1170,
+                  "rawText": "そして本当に辛い事というのは喋る側も聞く側もこんなに",
+                  "rawHex": "82bb82b582c4967b939682c9906882a28e9682c682a282a482cc82cd929d82e991a482e095b782ad91a482e082b182f182c882c9",
+                  "textEventIndex": 16,
+                  "segmentIndex": 0
+                },
+                {
+                  "kind": "linebreak",
+                  "text": "\n",
+                  "codeOffset": 1229
+                },
+                {
+                  "kind": "text",
+                  "text": "大変なんだと痛感した。",
+                  "codeOffset": 1239,
+                  "rawText": "大変なんだと痛感した。",
+                  "rawHex": "91e595cf82c882f182be82c692c98ab482b582bd8142",
+                  "textEventIndex": 16,
+                  "segmentIndex": 1
+                }
+              ],
+              "speakerRaw": null,
+              "ruby": [],
+              "controls": [
+                {
+                  "codeOffset": 1229,
+                  "value": "n"
+                }
+              ],
+              "boundary": {
+                "codeOffset": 1268,
+                "control": "p"
+              }
+            }
+          },
+          "nextEventId": "mjo-504",
+          "textLineIndex": {
+            "ja-JP": 14
+          }
+        },
+        {
+          "eventId": "mjo-504",
+          "kind": "line",
+          "source": {
+            "engine": "majiro",
+            "variantSourceId": "mjo/narcissu3/scenario.arc.unpacked/nard14",
+            "scriptPath": "archive/derived/scripts/narcissu3/scenario.arc.unpacked/nard14.script.json",
+            "textEventIndices": [
+              17
+            ],
+            "codeOffsets": [
+              1284
+            ],
+            "nativeUnit": {
+              "schema": "majiro-display-unit/v1",
+              "codeOffset": 1284,
+              "endCodeOffset": 1319,
+              "bodyCodeOffset": 1284,
+              "codeOffsets": [
+                1284,
+                1317
+              ],
+              "textEventIndices": [
+                17
+              ],
+              "textParts": [
+                {
+                  "kind": "text",
+                  "text": "でもこれでよかった…はずだ。",
+                  "codeOffset": 1284,
+                  "rawText": "でもこれでよかった…はずだ。",
+                  "rawHex": "82c582e082b182ea82c582e682a982c182bd816382cd82b882be8142",
+                  "textEventIndex": 17,
+                  "segmentIndex": 0
+                }
+              ],
+              "speakerRaw": null,
+              "ruby": [],
+              "controls": [],
+              "boundary": {
+                "codeOffset": 1319,
+                "control": "p"
+              }
+            }
+          },
+          "nextEventId": "mjo-537",
+          "textLineIndex": {
+            "ja-JP": 15
+          }
+        },
+        {
+          "eventId": "mjo-537",
+          "kind": "line",
+          "source": {
+            "engine": "majiro",
+            "variantSourceId": "mjo/narcissu3/scenario.arc.unpacked/nard14",
+            "scriptPath": "archive/derived/scripts/narcissu3/scenario.arc.unpacked/nard14.script.json",
+            "textEventIndices": [
+              18
+            ],
+            "codeOffsets": [
+              1335
+            ],
+            "nativeUnit": {
+              "schema": "majiro-display-unit/v1",
+              "codeOffset": 1335,
+              "endCodeOffset": 1380,
+              "bodyCodeOffset": 1335,
+              "codeOffsets": [
+                1335,
+                1378
+              ],
+              "textEventIndices": [
+                18
+              ],
+              "textParts": [
+                {
+                  "kind": "text",
+                  "text": "そうする事があの人のためでもあるんだ。",
+                  "codeOffset": 1335,
+                  "rawText": "そうする事があの人のためでもあるんだ。",
+                  "rawHex": "82bb82a482b782e98e9682aa82a082cc906c82cc82bd82df82c582e082a082e982f182be8142",
+                  "textEventIndex": 18,
+                  "segmentIndex": 0
+                }
+              ],
+              "speakerRaw": null,
+              "ruby": [],
+              "controls": [],
+              "boundary": {
+                "codeOffset": 1380,
+                "control": "p"
+              }
+            }
+          },
+          "nextEventId": "mjo-574",
+          "textLineIndex": {
+            "ja-JP": 16
+          }
+        },
+        {
+          "eventId": "mjo-574",
+          "kind": "line",
+          "source": {
+            "engine": "majiro",
+            "variantSourceId": "mjo/narcissu3/scenario.arc.unpacked/nard14",
+            "scriptPath": "archive/derived/scripts/narcissu3/scenario.arc.unpacked/nard14.script.json",
+            "textEventIndices": [
+              19
+            ],
+            "codeOffsets": [
+              1396
+            ],
+            "nativeUnit": {
+              "schema": "majiro-display-unit/v1",
+              "codeOffset": 1396,
+              "endCodeOffset": 1483,
+              "bodyCodeOffset": 1396,
+              "codeOffsets": [
+                1396,
+                1481
+              ],
+              "textEventIndices": [
+                19
+              ],
+              "textParts": [
+                {
+                  "kind": "text",
+                  "text": "そう言い聞かせ、これが正しいんだと、わたしは正しい判断をしたんだと言い聞かせる。",
+                  "codeOffset": 1396,
+                  "rawText": "そう言い聞かせ、これが正しいんだと、わたしは正しい判断をしたんだと言い聞かせる。",
+                  "rawHex": "82bb82a48cbe82a295b782a982b9814182b182ea82aa90b382b582a282f182be82c6814182ed82bd82b582cd90b382b582a294bb926682f082b582bd82f182be82c68cbe82a295b782a982b982e98142",
+                  "textEventIndex": 19,
+                  "segmentIndex": 0
+                }
+              ],
+              "speakerRaw": null,
+              "ruby": [],
+              "controls": [],
+              "boundary": {
+                "codeOffset": 1483,
+                "control": "p"
+              }
+            }
+          },
+          "nextEventId": "mjo-5db",
+          "textLineIndex": {
+            "ja-JP": 17
+          }
+        },
+        {
+          "eventId": "mjo-5db",
+          "kind": "line",
+          "source": {
+            "engine": "majiro",
+            "variantSourceId": "mjo/narcissu3/scenario.arc.unpacked/nard14",
+            "scriptPath": "archive/derived/scripts/narcissu3/scenario.arc.unpacked/nard14.script.json",
+            "textEventIndices": [
+              20
+            ],
+            "codeOffsets": [
+              1499
+            ],
+            "nativeUnit": {
+              "schema": "majiro-display-unit/v1",
+              "codeOffset": 1499,
+              "endCodeOffset": 1516,
+              "bodyCodeOffset": 1499,
+              "codeOffsets": [
+                1499,
+                1514
+              ],
+              "textEventIndices": [
+                20
+              ],
+              "textParts": [
+                {
+                  "kind": "text",
+                  "text": "――明日。",
+                  "codeOffset": 1499,
+                  "rawText": "――明日。",
+                  "rawHex": "815c815c96be93fa8142",
+                  "textEventIndex": 20,
+                  "segmentIndex": 0
+                }
+              ],
+              "speakerRaw": null,
+              "ruby": [],
+              "controls": [],
+              "boundary": {
+                "codeOffset": 1516,
+                "control": "p"
+              }
+            }
+          },
+          "nextEventId": "mjo-5fc",
+          "textLineIndex": {
+            "ja-JP": 18
+          }
+        },
+        {
+          "eventId": "mjo-5fc",
+          "kind": "line",
+          "source": {
+            "engine": "majiro",
+            "variantSourceId": "mjo/narcissu3/scenario.arc.unpacked/nard14",
+            "scriptPath": "archive/derived/scripts/narcissu3/scenario.arc.unpacked/nard14.script.json",
+            "textEventIndices": [
+              21
+            ],
+            "codeOffsets": [
+              1532
+            ],
+            "nativeUnit": {
+              "schema": "majiro-display-unit/v1",
+              "codeOffset": 1532,
+              "endCodeOffset": 1559,
+              "bodyCodeOffset": 1532,
+              "codeOffsets": [
+                1532,
+                1557
+              ],
+              "textEventIndices": [
+                21
+              ],
+              "textParts": [
+                {
+                  "kind": "text",
+                  "text": "わたしは７階に行く。",
+                  "codeOffset": 1532,
+                  "rawText": "わたしは７階に行く。",
+                  "rawHex": "82ed82bd82b582cd82568a4b82c98d7382ad8142",
+                  "textEventIndex": 21,
+                  "segmentIndex": 0
+                }
+              ],
+              "speakerRaw": null,
+              "ruby": [],
+              "controls": [],
+              "boundary": {
+                "codeOffset": 1559,
+                "control": "p"
+              }
+            }
+          },
+          "nextEventId": "mjo-627",
+          "textLineIndex": {
+            "ja-JP": 19
+          }
+        },
+        {
+          "eventId": "mjo-627",
+          "kind": "line",
+          "source": {
+            "engine": "majiro",
+            "variantSourceId": "mjo/narcissu3/scenario.arc.unpacked/nard14",
+            "scriptPath": "archive/derived/scripts/narcissu3/scenario.arc.unpacked/nard14.script.json",
+            "textEventIndices": [
+              22
+            ],
+            "codeOffsets": [
+              1575
+            ],
+            "nativeUnit": {
+              "schema": "majiro-display-unit/v1",
+              "codeOffset": 1575,
+              "endCodeOffset": 1665,
+              "bodyCodeOffset": 1575,
+              "codeOffsets": [
+                1575,
+                1632,
+                1634,
+                1644,
+                1663
+              ],
+              "textEventIndices": [
+                22
+              ],
+              "textParts": [
+                {
+                  "kind": "text",
+                  "text": "それはある意味、すじ雲が浮かぶ空よりもさらに高い所に",
+                  "codeOffset": 1575,
+                  "rawText": "それはある意味、すじ雲が浮かぶ空よりもさらに高い所に",
+                  "rawHex": "82bb82ea82cd82a082e988d396a1814182b782b6895f82aa958282a982d48bf382e682e882e082b382e782c98d8282a28f8a82c9",
+                  "textEventIndex": 22,
+                  "segmentIndex": 0
+                },
+                {
+                  "kind": "linebreak",
+                  "text": "\n",
+                  "codeOffset": 1634
+                },
+                {
+                  "kind": "text",
+                  "text": "向かうも同然。",
+                  "codeOffset": 1644,
+                  "rawText": "向かうも同然。",
+                  "rawHex": "8cfc82a982a482e093af91528142",
+                  "textEventIndex": 22,
+                  "segmentIndex": 1
+                }
+              ],
+              "speakerRaw": null,
+              "ruby": [],
+              "controls": [
+                {
+                  "codeOffset": 1634,
+                  "value": "n"
+                }
+              ],
+              "boundary": {
+                "codeOffset": 1665,
+                "control": "p"
+              }
+            }
+          },
+          "nextEventId": "mjo-691",
+          "textLineIndex": {
+            "ja-JP": 20
+          }
+        },
+        {
+          "eventId": "mjo-691",
+          "kind": "line",
+          "source": {
+            "engine": "majiro",
+            "variantSourceId": "mjo/narcissu3/scenario.arc.unpacked/nard14",
+            "scriptPath": "archive/derived/scripts/narcissu3/scenario.arc.unpacked/nard14.script.json",
+            "textEventIndices": [
+              23
+            ],
+            "codeOffsets": [
+              1681
+            ],
+            "nativeUnit": {
+              "schema": "majiro-display-unit/v1",
+              "codeOffset": 1681,
+              "endCodeOffset": 1779,
+              "bodyCodeOffset": 1681,
+              "codeOffsets": [
+                1681,
+                1736,
+                1738,
+                1748,
+                1777
+              ],
+              "textEventIndices": [
+                23
+              ],
+              "textParts": [
+                {
+                  "kind": "text",
+                  "text": "わたしにはそれがとても皮肉の効いた、質の悪い冗談に",
+                  "codeOffset": 1681,
+                  "rawText": "わたしにはそれがとても皮肉の効いた、質の悪い冗談に",
+                  "rawHex": "82ed82bd82b582c982cd82bb82ea82aa82c682c482e094e793f782cc8cf882a282bd81418ebf82cc88ab82a28fe7926b82c9",
+                  "textEventIndex": 23,
+                  "segmentIndex": 0
+                },
+                {
+                  "kind": "linebreak",
+                  "text": "\n",
+                  "codeOffset": 1738
+                },
+                {
+                  "kind": "text",
+                  "text": "聞こえてならななかった。",
+                  "codeOffset": 1748,
+                  "rawText": "聞こえてならななかった。",
+                  "rawHex": "95b782b182a682c482c882e782c882c882a982c182bd8142",
+                  "textEventIndex": 23,
+                  "segmentIndex": 1
+                }
+              ],
+              "speakerRaw": null,
+              "ruby": [],
+              "controls": [
+                {
+                  "codeOffset": 1738,
+                  "value": "n"
+                }
+              ],
+              "boundary": {
+                "codeOffset": 1779,
+                "control": "p"
+              }
+            }
+          },
+          "nextEventId": "mjo-703",
+          "textLineIndex": {
+            "ja-JP": 21
+          }
+        },
+        {
+          "eventId": "mjo-703",
+          "kind": "line",
+          "source": {
+            "engine": "majiro",
+            "variantSourceId": "mjo/narcissu3/scenario.arc.unpacked/nard14",
+            "scriptPath": "archive/derived/scripts/narcissu3/scenario.arc.unpacked/nard14.script.json",
+            "textEventIndices": [
+              24
+            ],
+            "codeOffsets": [
+              1795
+            ],
+            "nativeUnit": {
+              "schema": "majiro-display-unit/v1",
+              "codeOffset": 1795,
+              "endCodeOffset": 1903,
+              "bodyCodeOffset": 1795,
+              "codeOffsets": [
+                1795,
+                1852,
+                1854,
+                1864,
+                1901
+              ],
+              "textEventIndices": [
+                24
+              ],
+              "textParts": [
+                {
+                  "kind": "text",
+                  "text": "…わたしは正規の手順で、１つ１つ相殺する事ですじ雲の",
+                  "codeOffset": 1795,
+                  "rawText": "…わたしは正規の手順で、１つ１つ相殺する事ですじ雲の",
+                  "rawHex": "816382ed82bd82b582cd90b38b4b82cc8ee88f8782c58141825082c2825082c2918a8e4582b782e98e9682c582b782b6895f82cc",
+                  "textEventIndex": 24,
+                  "segmentIndex": 0
+                },
+                {
+                  "kind": "linebreak",
+                  "text": "\n",
+                  "codeOffset": 1854
+                },
+                {
+                  "kind": "text",
+                  "text": "高さに到達する事は出来なかった。",
+                  "codeOffset": 1864,
+                  "rawText": "高さに到達する事は出来なかった。",
+                  "rawHex": "8d8282b382c9939e924282b782e98e9682cd8f6f978882c882a982c182bd8142",
+                  "textEventIndex": 24,
+                  "segmentIndex": 1
+                }
+              ],
+              "speakerRaw": null,
+              "ruby": [],
+              "controls": [
+                {
+                  "codeOffset": 1854,
+                  "value": "n"
+                }
+              ],
+              "boundary": {
+                "codeOffset": 1903,
+                "control": "p"
+              }
+            }
+          },
+          "nextEventId": "mjo-77f",
+          "textLineIndex": {
+            "ja-JP": 22
+          }
+        },
+        {
+          "eventId": "mjo-77f",
+          "kind": "line",
+          "source": {
+            "engine": "majiro",
+            "variantSourceId": "mjo/narcissu3/scenario.arc.unpacked/nard14",
+            "scriptPath": "archive/derived/scripts/narcissu3/scenario.arc.unpacked/nard14.script.json",
+            "textEventIndices": [
+              25
+            ],
+            "codeOffsets": [
+              1919
+            ],
+            "nativeUnit": {
+              "schema": "majiro-display-unit/v1",
+              "codeOffset": 1919,
+              "endCodeOffset": 1966,
+              "bodyCodeOffset": 1919,
+              "codeOffsets": [
+                1919,
+                1964
+              ],
+              "textEventIndices": [
+                25
+              ],
+              "textParts": [
+                {
+                  "kind": "text",
+                  "text": "そんなわたしが、すじ雲よりも高い場所へ…",
+                  "codeOffset": 1919,
+                  "rawText": "そんなわたしが、すじ雲よりも高い場所へ…",
+                  "rawHex": "82bb82f182c882ed82bd82b582aa814182b782b6895f82e682e882e08d8282a28fea8f8a82d68163",
+                  "textEventIndex": 25,
+                  "segmentIndex": 0
+                }
+              ],
+              "speakerRaw": null,
+              "ruby": [],
+              "controls": [],
+              "boundary": {
+                "codeOffset": 1966,
+                "control": "p"
+              }
+            }
+          },
+          "nextEventId": "mjo-7be",
+          "textLineIndex": {
+            "ja-JP": 23
+          }
+        },
+        {
+          "eventId": "mjo-7be",
+          "kind": "line",
+          "source": {
+            "engine": "majiro",
+            "variantSourceId": "mjo/narcissu3/scenario.arc.unpacked/nard14",
+            "scriptPath": "archive/derived/scripts/narcissu3/scenario.arc.unpacked/nard14.script.json",
+            "textEventIndices": [
+              26
+            ],
+            "codeOffsets": [
+              1982
+            ],
+            "nativeUnit": {
+              "schema": "majiro-display-unit/v1",
+              "codeOffset": 1982,
+              "endCodeOffset": 2059,
+              "bodyCodeOffset": 1982,
+              "codeOffsets": [
+                1982,
+                2057
+              ],
+              "textEventIndices": [
+                26
+              ],
+              "textParts": [
+                {
+                  "kind": "text",
+                  "text": "明日、すじ雲の高さまで到達出来なかったわたしが、代わりに７階へ行く――",
+                  "codeOffset": 1982,
+                  "rawText": "明日、すじ雲の高さまで到達出来なかったわたしが、代わりに７階へ行く――",
+                  "rawHex": "96be93fa814182b782b6895f82cc8d8282b382dc82c5939e92428f6f978882c882a982c182bd82ed82bd82b582aa814191e382ed82e882c982568a4b82d68d7382ad815c815c",
+                  "textEventIndex": 26,
+                  "segmentIndex": 0
+                }
+              ],
+              "speakerRaw": null,
+              "ruby": [],
+              "controls": [],
+              "boundary": {
+                "codeOffset": 2059,
+                "control": "p"
+              }
+            }
+          },
+          "nextEventId": "mjo-81b",
+          "textLineIndex": {
+            "ja-JP": 24
+          }
+        },
+        {
+          "eventId": "mjo-81b",
+          "kind": "line",
+          "source": {
+            "engine": "majiro",
+            "variantSourceId": "mjo/narcissu3/scenario.arc.unpacked/nard14",
+            "scriptPath": "archive/derived/scripts/narcissu3/scenario.arc.unpacked/nard14.script.json",
+            "textEventIndices": [
+              27
+            ],
+            "codeOffsets": [
+              2075
+            ],
+            "nativeUnit": {
+              "schema": "majiro-display-unit/v1",
+              "codeOffset": 2075,
+              "endCodeOffset": 2165,
+              "bodyCodeOffset": 2075,
+              "codeOffsets": [
+                2075,
+                2132,
+                2134,
+                2144,
+                2163
+              ],
+              "textEventIndices": [
+                27
+              ],
+              "textParts": [
+                {
+                  "kind": "text",
+                  "text": "そこは捉え方によっては上空７０００ｍよりも地上の生活",
+                  "codeOffset": 2075,
+                  "rawText": "そこは捉え方によっては上空７０００ｍよりも地上の生活",
+                  "rawHex": "82bb82b182cd91a882a695fb82c982e682c182c482cd8fe38bf38256824f824f824f828d82e682e882e0926e8fe382cc90b68a88",
+                  "textEventIndex": 27,
+                  "segmentIndex": 0
+                },
+                {
+                  "kind": "linebreak",
+                  "text": "\n",
+                  "codeOffset": 2134
+                },
+                {
+                  "kind": "text",
+                  "text": "から遠い場所。",
+                  "codeOffset": 2144,
+                  "rawText": "から遠い場所。",
+                  "rawHex": "82a982e7899382a28fea8f8a8142",
+                  "textEventIndex": 27,
+                  "segmentIndex": 1
+                }
+              ],
+              "speakerRaw": null,
+              "ruby": [],
+              "controls": [
+                {
+                  "codeOffset": 2134,
+                  "value": "n"
+                }
+              ],
+              "boundary": {
+                "codeOffset": 2165,
+                "control": "p"
+              }
+            }
+          },
+          "nextEventId": "mjo-885",
+          "textLineIndex": {
+            "ja-JP": 25
+          }
+        },
+        {
+          "eventId": "mjo-885",
+          "kind": "line",
+          "source": {
+            "engine": "majiro",
+            "variantSourceId": "mjo/narcissu3/scenario.arc.unpacked/nard14",
+            "scriptPath": "archive/derived/scripts/narcissu3/scenario.arc.unpacked/nard14.script.json",
+            "textEventIndices": [
+              28
+            ],
+            "codeOffsets": [
+              2181
+            ],
+            "nativeUnit": {
+              "schema": "majiro-display-unit/v1",
+              "codeOffset": 2181,
+              "endCodeOffset": 2273,
+              "bodyCodeOffset": 2181,
+              "codeOffsets": [
+                2181,
+                2236,
+                2238,
+                2248,
+                2271
+              ],
+              "textEventIndices": [
+                28
+              ],
+              "textParts": [
+                {
+                  "kind": "text",
+                  "text": "わたしはそこに、上空７０００ｍより死に近い場所へと",
+                  "codeOffset": 2181,
+                  "rawText": "わたしはそこに、上空７０００ｍより死に近い場所へと",
+                  "rawHex": "82ed82bd82b582cd82bb82b182c981418fe38bf38256824f824f824f828d82e682e88e8082c98bdf82a28fea8f8a82d682c6",
+                  "textEventIndex": 28,
+                  "segmentIndex": 0
+                },
+                {
+                  "kind": "linebreak",
+                  "text": "\n",
+                  "codeOffset": 2238
+                },
+                {
+                  "kind": "text",
+                  "text": "向かう事となった。",
+                  "codeOffset": 2248,
+                  "rawText": "向かう事となった。",
+                  "rawHex": "8cfc82a982a48e9682c682c882c182bd8142",
+                  "textEventIndex": 28,
+                  "segmentIndex": 1
+                }
+              ],
+              "speakerRaw": null,
+              "ruby": [],
+              "controls": [
+                {
+                  "codeOffset": 2238,
+                  "value": "n"
+                }
+              ],
+              "boundary": {
+                "codeOffset": 2273,
+                "control": "p"
+              }
+            }
+          },
+          "nextEventId": "mjo-8f1",
+          "textLineIndex": {
+            "ja-JP": 26
+          }
+        },
+        {
+          "eventId": "mjo-8f1",
+          "kind": "line",
+          "source": {
+            "engine": "majiro",
+            "variantSourceId": "mjo/narcissu3/scenario.arc.unpacked/nard14",
+            "scriptPath": "archive/derived/scripts/narcissu3/scenario.arc.unpacked/nard14.script.json",
+            "textEventIndices": [
+              29
+            ],
+            "codeOffsets": [
+              2289
+            ],
+            "nativeUnit": {
+              "schema": "majiro-display-unit/v1",
+              "codeOffset": 2289,
+              "endCodeOffset": 2346,
+              "bodyCodeOffset": 2289,
+              "codeOffsets": [
+                2289,
+                2344
+              ],
+              "textEventIndices": [
+                29
+              ],
+              "textParts": [
+                {
+                  "kind": "text",
+                  "text": "――明日、それはわたしが７階へと上がってしまう日。",
+                  "codeOffset": 2289,
+                  "rawText": "――明日、それはわたしが７階へと上がってしまう日。",
+                  "rawHex": "815c815c96be93fa814182bb82ea82cd82ed82bd82b582aa82568a4b82d682c68fe382aa82c182c482b582dc82a493fa8142",
+                  "textEventIndex": 29,
+                  "segmentIndex": 0
+                }
+              ],
+              "speakerRaw": null,
+              "ruby": [],
+              "controls": [],
+              "boundary": {
+                "codeOffset": 2346,
+                "control": "p"
+              }
+            }
+          },
+          "nextEventId": "mjo-93a",
+          "textLineIndex": {
+            "ja-JP": 27
+          }
+        },
+        {
+          "eventId": "mjo-93a",
+          "kind": "line",
+          "source": {
+            "engine": "majiro",
+            "variantSourceId": "mjo/narcissu3/scenario.arc.unpacked/nard14",
+            "scriptPath": "archive/derived/scripts/narcissu3/scenario.arc.unpacked/nard14.script.json",
+            "textEventIndices": [
+              30
+            ],
+            "codeOffsets": [
+              2362
+            ],
+            "nativeUnit": {
+              "schema": "majiro-display-unit/v1",
+              "codeOffset": 2362,
+              "endCodeOffset": 2419,
+              "bodyCodeOffset": 2362,
+              "codeOffsets": [
+                2362,
+                2417
+              ],
+              "textEventIndices": [
+                30
+              ],
+              "textParts": [
+                {
+                  "kind": "text",
+                  "text": "また、わたしとお兄さん決別をしなければいけない日。",
+                  "codeOffset": 2362,
+                  "rawText": "また、わたしとお兄さん決別をしなければいけない日。",
+                  "rawHex": "82dc82bd814182ed82bd82b582c682a88c5a82b382f18c8895ca82f082b582c882af82ea82ce82a282af82c882a293fa8142",
+                  "textEventIndex": 30,
+                  "segmentIndex": 0
+                }
+              ],
+              "speakerRaw": null,
+              "ruby": [],
+              "controls": [],
+              "boundary": {
+                "codeOffset": 2419,
+                "control": "p"
+              }
+            }
+          },
+          "nextEventId": "mjo-983",
+          "textLineIndex": {
+            "ja-JP": 28
+          }
+        },
+        {
+          "eventId": "mjo-983",
+          "kind": "line",
+          "source": {
+            "engine": "majiro",
+            "variantSourceId": "mjo/narcissu3/scenario.arc.unpacked/nard14",
+            "scriptPath": "archive/derived/scripts/narcissu3/scenario.arc.unpacked/nard14.script.json",
+            "textEventIndices": [
+              31
+            ],
+            "codeOffsets": [
+              2435
+            ],
+            "nativeUnit": {
+              "schema": "majiro-display-unit/v1",
+              "codeOffset": 2435,
+              "endCodeOffset": 2535,
+              "bodyCodeOffset": 2435,
+              "codeOffsets": [
+                2435,
+                2492,
+                2494,
+                2504,
+                2533
+              ],
+              "textEventIndices": [
+                31
+              ],
+              "textParts": [
+                {
+                  "kind": "text",
+                  "text": "そんな悲しい日が、そんな悲しい時が、もうすぐそこまで",
+                  "codeOffset": 2435,
+                  "rawText": "そんな悲しい日が、そんな悲しい時が、もうすぐそこまで",
+                  "rawHex": "82bb82f182c894df82b582a293fa82aa814182bb82f182c894df82b582a28e9e82aa814182e082a482b782ae82bb82b182dc82c5",
+                  "textEventIndex": 31,
+                  "segmentIndex": 0
+                },
+                {
+                  "kind": "linebreak",
+                  "text": "\n",
+                  "codeOffset": 2494
+                },
+                {
+                  "kind": "text",
+                  "text": "訪れてようとしていた――",
+                  "codeOffset": 2504,
+                  "rawText": "訪れてようとしていた――",
+                  "rawHex": "964b82ea82c482e682a482c682b582c482a282bd815c815c",
+                  "textEventIndex": 31,
+                  "segmentIndex": 1
+                }
+              ],
+              "speakerRaw": null,
+              "ruby": [],
+              "controls": [
+                {
+                  "codeOffset": 2494,
+                  "value": "n"
+                }
+              ],
+              "boundary": {
+                "codeOffset": 2535,
+                "control": "p"
+              }
+            }
+          },
+          "nextEventId": "end-001",
+          "textLineIndex": {
+            "ja-JP": 29
+          }
+        },
+        {
+          "eventId": "end-001",
+          "kind": "end",
+          "cues": [
+            {
+              "cueId": "cue-0d022e58cb3282af",
+              "kind": "image",
+              "timing": "scene",
+              "mediaId": "asset/a-1e25df50e807fd1b",
+              "resolverId": "research-media-v1",
+              "raw": {
+                "sourceKey": "black",
+                "codeOffset": 2569,
+                "playbackPath": "derived/images/narcissu3/fastdata.arc.unpacked/black.png",
+                "targetEventId": "end-001"
+              }
+            }
+          ]
+        }
+      ],
+      "titleAuthority": {
+        "sectionId": "main",
+        "authorityId": "section/narcissu-3rd/nard14/main",
+        "title_cn": "前一天",
+        "title_jp": "前夜",
+        "source": {
+          "zh-CN": "archive/derived/images/narcissu3/update.arc.unpacked/ナルキ３シーラスチャプターoff.png",
+          "ja-JP": "archive/derived/images/narcissu3/fastdata.arc.unpacked/ナルキ３シーラスチャプターoff.png"
+        },
+        "evidence": {
+          "zh-CN": [
+            "official runtime menu image [800, 600]",
+            "groupId=n3-ciras",
+            "visibleEntry=chapter:15",
+            "imageRegion=[0, 120, 800, 310]",
+            "routeSource=archive/derived/scripts/narcissu3/scenario.arc.unpacked/subutitle_3_シーラス.strings.json",
+            "routeMode=explicit-target",
+            "routeTarget=nard14"
+          ],
+          "ja-JP": [
+            "official runtime menu image [800, 600]",
+            "groupId=n3-ciras",
+            "visibleEntry=chapter:15",
+            "imageRegion=[0, 120, 800, 310]",
+            "routeSource=archive/derived/scripts/narcissu3/scenario.arc.unpacked/subutitle_3_シーラス.strings.json",
+            "routeMode=explicit-target",
+            "routeTarget=nard14"
+          ]
+        },
+        "confidence": {
+          "zh-CN": 1,
+          "ja-JP": 1
+        }
+      }
+    }
+  ],
+  "variantRoutes": [
+    {
+      "variantId": "mjo/narcissu3/scenario.arc.unpacked/nard14",
+      "locales": [
+        "ja-JP"
+      ],
+      "readerLocales": [
+        "ja-JP"
+      ],
+      "textLineCounts": {
+        "ja-JP": 30
+      },
+      "sections": [
+        {
+          "sectionId": "main",
+          "entryEventId": "mjo-cf",
+          "events": [
+            {
+              "eventId": "mjo-cf",
+              "kind": "line",
+              "source": {
+                "engine": "majiro",
+                "variantSourceId": "mjo/narcissu3/scenario.arc.unpacked/nard14",
+                "scriptPath": "archive/derived/scripts/narcissu3/scenario.arc.unpacked/nard14.script.json",
+                "textEventIndices": [
+                  0
+                ],
+                "codeOffsets": [
+                  207
+                ],
+                "nativeUnit": {
+                  "schema": "majiro-display-unit/v1",
+                  "codeOffset": 207,
+                  "endCodeOffset": 238,
+                  "bodyCodeOffset": 207,
+                  "codeOffsets": [
+                    207,
+                    236
+                  ],
+                  "textEventIndices": [
+                    0
+                  ],
+                  "textParts": [
+                    {
+                      "kind": "text",
+                      "text": "――７階行き前日、深夜。",
+                      "codeOffset": 207,
+                      "rawText": "――７階行き前日、深夜。",
+                      "rawHex": "815c815c82568a4b8d7382ab914f93fa8141905b96e98142",
+                      "textEventIndex": 0,
+                      "segmentIndex": 0
+                    }
+                  ],
+                  "speakerRaw": null,
+                  "ruby": [],
+                  "controls": [],
+                  "boundary": {
+                    "codeOffset": 238,
+                    "control": "p"
+                  }
+                }
+              },
+              "nextEventId": "mjo-12d",
+              "textLineIndex": {
+                "ja-JP": 0
+              },
+              "cues": [
+                {
+                  "cueId": "cue-b8ef1ae7732fa273",
+                  "kind": "image",
+                  "timing": "scene",
+                  "mediaId": "asset/a-796d0325dd501200",
+                  "resolverId": "research-media-v1",
+                  "raw": {
+                    "sourceKey": "n3d_ck_c01",
+                    "codeOffset": 50,
+                    "playbackPath": "derived/images/narcissu3/data1.arc.unpacked/n3d_ck_c01.png",
+                    "targetEventId": "mjo-cf"
+                  }
+                },
+                {
+                  "cueId": "cue-7fa7e24c70c94af4",
+                  "kind": "image",
+                  "timing": "scene",
+                  "mediaId": "asset/a-3d4ebd0ad56cbb99",
+                  "resolverId": "research-media-v1",
+                  "raw": {
+                    "sourceKey": "n3d_ck_c02",
+                    "codeOffset": 81,
+                    "playbackPath": "derived/images/narcissu3/data1.arc.unpacked/n3d_ck_c02.png",
+                    "targetEventId": "mjo-cf"
+                  }
+                },
+                {
+                  "cueId": "cue-db18f486d35c201c",
+                  "kind": "image",
+                  "timing": "scene",
+                  "mediaId": "asset/a-1e25df50e807fd1b",
+                  "resolverId": "research-media-v1",
+                  "raw": {
+                    "sourceKey": "black",
+                    "codeOffset": 146,
+                    "playbackPath": "derived/images/narcissu3/fastdata.arc.unpacked/black.png",
+                    "targetEventId": "mjo-cf"
+                  }
+                },
+                {
+                  "cueId": "cue-b7f927ea0c531598",
+                  "kind": "image",
+                  "timing": "scene",
+                  "mediaId": "asset/a-1e7559daa9bfc1b2",
+                  "resolverId": "research-media-v1",
+                  "raw": {
+                    "sourceKey": "b3",
+                    "codeOffset": 172,
+                    "playbackPath": "derived/images/narcissu3/data1.arc.unpacked/b3.png",
+                    "targetEventId": "mjo-cf"
+                  }
+                }
+              ]
+            },
+            {
+              "eventId": "mjo-12d",
+              "kind": "line",
+              "source": {
+                "engine": "majiro",
+                "variantSourceId": "mjo/narcissu3/scenario.arc.unpacked/nard14",
+                "scriptPath": "archive/derived/scripts/narcissu3/scenario.arc.unpacked/nard14.script.json",
+                "textEventIndices": [
+                  1,
+                  2
+                ],
+                "codeOffsets": [
+                  286,
+                  301
+                ],
+                "nativeUnit": {
+                  "schema": "majiro-display-unit/v1",
+                  "codeOffset": 286,
+                  "endCodeOffset": 338,
+                  "bodyCodeOffset": 301,
+                  "codeOffsets": [
+                    286,
+                    301,
+                    336
+                  ],
+                  "textEventIndices": [
+                    1,
+                    2
+                  ],
+                  "textParts": [
+                    {
+                      "kind": "text",
+                      "text": "「…お兄さんに、言っちゃった」",
+                      "codeOffset": 301,
+                      "rawText": "「…お兄さんに、言っちゃった」",
+                      "rawHex": "8175816382a88c5a82b382f182c981418cbe82c182bf82e182c182bd8176",
+                      "textEventIndex": 2,
+                      "segmentIndex": 0
+                    }
+                  ],
+                  "speakerRaw": {
+                    "method": "native-name-slot",
+                    "codeOffset": 286,
+                    "rawHex": "836083548367",
+                    "text": "チサト",
+                    "decodedText": "チサト"
+                  },
+                  "ruby": [],
+                  "controls": [],
+                  "boundary": {
+                    "codeOffset": 338,
+                    "control": "p"
+                  }
+                }
+              },
+              "nextEventId": "mjo-17d",
+              "textLineIndex": {
+                "ja-JP": 1
+              },
+              "cues": [
+                {
+                  "cueId": "cue-b258f3e30ea18aa9",
+                  "kind": "voice",
+                  "timing": "utterance",
+                  "mediaId": "asset/a-9cd8b7329b470941",
+                  "resolverId": "research-media-v1",
+                  "raw": {
+                    "sourceKey": "n3tisa_0986",
+                    "codeOffset": 254,
+                    "playbackPath": "raw/narcissu3/voice.arc.unpacked/n3tisa_0986.ogg",
+                    "targetEventId": "mjo-12d"
+                  }
+                }
+              ]
+            },
+            {
+              "eventId": "mjo-17d",
+              "kind": "line",
+              "source": {
+                "engine": "majiro",
+                "variantSourceId": "mjo/narcissu3/scenario.arc.unpacked/nard14",
+                "scriptPath": "archive/derived/scripts/narcissu3/scenario.arc.unpacked/nard14.script.json",
+                "textEventIndices": [
+                  3
+                ],
+                "codeOffsets": [
+                  381
+                ],
+                "nativeUnit": {
+                  "schema": "majiro-display-unit/v1",
+                  "codeOffset": 381,
+                  "endCodeOffset": 442,
+                  "bodyCodeOffset": 381,
+                  "codeOffsets": [
+                    381,
+                    440
+                  ],
+                  "textEventIndices": [
+                    3
+                  ],
+                  "textParts": [
+                    {
+                      "kind": "text",
+                      "text": "それはまるで悪い事をしたような、後悔するような口調で。",
+                      "codeOffset": 381,
+                      "rawText": "それはまるで悪い事をしたような、後悔するような口調で。",
+                      "rawHex": "82bb82ea82cd82dc82e982c588ab82a28e9682f082b582bd82e682a482c881418ce389f782b782e982e682a482c88cfb92b282c58142",
+                      "textEventIndex": 3,
+                      "segmentIndex": 0
+                    }
+                  ],
+                  "speakerRaw": null,
+                  "ruby": [],
+                  "controls": [],
+                  "boundary": {
+                    "codeOffset": 442,
+                    "control": "p"
+                  }
+                }
+              },
+              "nextEventId": "mjo-1f9",
+              "textLineIndex": {
+                "ja-JP": 2
+              },
+              "cues": [
+                {
+                  "cueId": "cue-5531e455d2a240aa",
+                  "kind": "bgm",
+                  "timing": "scene",
+                  "mediaId": "asset/a-ed4b45158ad23073",
+                  "resolverId": "research-media-v1",
+                  "raw": {
+                    "sourceKey": "2sou01",
+                    "codeOffset": 354,
+                    "playbackPath": "raw/narcissu3/stream.arc.unpacked/2sou01.ogg",
+                    "targetEventId": "mjo-17d"
+                  }
+                }
+              ]
+            },
+            {
+              "eventId": "mjo-1f9",
+              "kind": "line",
+              "source": {
+                "engine": "majiro",
+                "variantSourceId": "mjo/narcissu3/scenario.arc.unpacked/nard14",
+                "scriptPath": "archive/derived/scripts/narcissu3/scenario.arc.unpacked/nard14.script.json",
+                "textEventIndices": [
+                  4,
+                  5
+                ],
+                "codeOffsets": [
+                  490,
+                  505
+                ],
+                "nativeUnit": {
+                  "schema": "majiro-display-unit/v1",
+                  "codeOffset": 490,
+                  "endCodeOffset": 546,
+                  "bodyCodeOffset": 505,
+                  "codeOffsets": [
+                    490,
+                    505,
+                    544
+                  ],
+                  "textEventIndices": [
+                    4,
+                    5
+                  ],
+                  "textParts": [
+                    {
+                      "kind": "text",
+                      "text": "「…伝えちゃったんだよね、わたし」",
+                      "codeOffset": 505,
+                      "rawText": "「…伝えちゃったんだよね、わたし」",
+                      "rawHex": "81758163936082a682bf82e182c182bd82f182be82e682cb814182ed82bd82b58176",
+                      "textEventIndex": 5,
+                      "segmentIndex": 0
+                    }
+                  ],
+                  "speakerRaw": {
+                    "method": "native-name-slot",
+                    "codeOffset": 490,
+                    "rawHex": "836083548367",
+                    "text": "チサト",
+                    "decodedText": "チサト"
+                  },
+                  "ruby": [],
+                  "controls": [],
+                  "boundary": {
+                    "codeOffset": 546,
+                    "control": "p"
+                  }
+                }
+              },
+              "nextEventId": "mjo-232",
+              "textLineIndex": {
+                "ja-JP": 3
+              },
+              "cues": [
+                {
+                  "cueId": "cue-d63bc60f3eeb6e80",
+                  "kind": "voice",
+                  "timing": "utterance",
+                  "mediaId": "asset/a-de7346382f2b9682",
+                  "resolverId": "research-media-v1",
+                  "raw": {
+                    "sourceKey": "n3tisa_0987",
+                    "codeOffset": 458,
+                    "playbackPath": "raw/narcissu3/voice.arc.unpacked/n3tisa_0987.ogg",
+                    "targetEventId": "mjo-1f9"
+                  }
+                }
+              ]
+            },
+            {
+              "eventId": "mjo-232",
+              "kind": "line",
+              "source": {
+                "engine": "majiro",
+                "variantSourceId": "mjo/narcissu3/scenario.arc.unpacked/nard14",
+                "scriptPath": "archive/derived/scripts/narcissu3/scenario.arc.unpacked/nard14.script.json",
+                "textEventIndices": [
+                  6
+                ],
+                "codeOffsets": [
+                  562
+                ],
+                "nativeUnit": {
+                  "schema": "majiro-display-unit/v1",
+                  "codeOffset": 562,
+                  "endCodeOffset": 615,
+                  "bodyCodeOffset": 562,
+                  "codeOffsets": [
+                    562,
+                    613
+                  ],
+                  "textEventIndices": [
+                    6
+                  ],
+                  "textParts": [
+                    {
+                      "kind": "text",
+                      "text": "わたしは何もない空間に向かってそう呟いていた。",
+                      "codeOffset": 562,
+                      "rawText": "わたしは何もない空間に向かってそう呟いていた。",
+                      "rawHex": "82ed82bd82b582cd89bd82e082c882a28bf38ad482c98cfc82a982c182c482bb82a499ea82a282c482a282bd8142",
+                      "textEventIndex": 6,
+                      "segmentIndex": 0
+                    }
+                  ],
+                  "speakerRaw": null,
+                  "ruby": [],
+                  "controls": [],
+                  "boundary": {
+                    "codeOffset": 615,
+                    "control": "p"
+                  }
+                }
+              },
+              "nextEventId": "mjo-277",
+              "textLineIndex": {
+                "ja-JP": 4
+              }
+            },
+            {
+              "eventId": "mjo-277",
+              "kind": "line",
+              "source": {
+                "engine": "majiro",
+                "variantSourceId": "mjo/narcissu3/scenario.arc.unpacked/nard14",
+                "scriptPath": "archive/derived/scripts/narcissu3/scenario.arc.unpacked/nard14.script.json",
+                "textEventIndices": [
+                  7
+                ],
+                "codeOffsets": [
+                  631
+                ],
+                "nativeUnit": {
+                  "schema": "majiro-display-unit/v1",
+                  "codeOffset": 631,
+                  "endCodeOffset": 658,
+                  "bodyCodeOffset": 631,
+                  "codeOffsets": [
+                    631,
+                    656
+                  ],
+                  "textEventIndices": [
+                    7
+                  ],
+                  "textParts": [
+                    {
+                      "kind": "text",
+                      "text": "…そうじゃないのに。",
+                      "codeOffset": 631,
+                      "rawText": "…そうじゃないのに。",
+                      "rawHex": "816382bb82a482b682e182c882a282cc82c98142",
+                      "textEventIndex": 7,
+                      "segmentIndex": 0
+                    }
+                  ],
+                  "speakerRaw": null,
+                  "ruby": [],
+                  "controls": [],
+                  "boundary": {
+                    "codeOffset": 658,
+                    "control": "p"
+                  }
+                }
+              },
+              "nextEventId": "mjo-2a2",
+              "textLineIndex": {
+                "ja-JP": 5
+              }
+            },
+            {
+              "eventId": "mjo-2a2",
+              "kind": "line",
+              "source": {
+                "engine": "majiro",
+                "variantSourceId": "mjo/narcissu3/scenario.arc.unpacked/nard14",
+                "scriptPath": "archive/derived/scripts/narcissu3/scenario.arc.unpacked/nard14.script.json",
+                "textEventIndices": [
+                  8
+                ],
+                "codeOffsets": [
+                  674
+                ],
+                "nativeUnit": {
+                  "schema": "majiro-display-unit/v1",
+                  "codeOffset": 674,
+                  "endCodeOffset": 723,
+                  "bodyCodeOffset": 674,
+                  "codeOffsets": [
+                    674,
+                    721
+                  ],
+                  "textEventIndices": [
+                    8
+                  ],
+                  "textParts": [
+                    {
+                      "kind": "text",
+                      "text": "こうするべきだと決め、そうしただけなのに。",
+                      "codeOffset": 674,
+                      "rawText": "こうするべきだと決め、そうしただけなのに。",
+                      "rawHex": "82b182a482b782e982d782ab82be82c68c8882df814182bb82a482b582bd82be82af82c882cc82c98142",
+                      "textEventIndex": 8,
+                      "segmentIndex": 0
+                    }
+                  ],
+                  "speakerRaw": null,
+                  "ruby": [],
+                  "controls": [],
+                  "boundary": {
+                    "codeOffset": 723,
+                    "control": "p"
+                  }
+                }
+              },
+              "nextEventId": "mjo-2e3",
+              "textLineIndex": {
+                "ja-JP": 6
+              }
+            },
+            {
+              "eventId": "mjo-2e3",
+              "kind": "line",
+              "source": {
+                "engine": "majiro",
+                "variantSourceId": "mjo/narcissu3/scenario.arc.unpacked/nard14",
+                "scriptPath": "archive/derived/scripts/narcissu3/scenario.arc.unpacked/nard14.script.json",
+                "textEventIndices": [
+                  9
+                ],
+                "codeOffsets": [
+                  739
+                ],
+                "nativeUnit": {
+                  "schema": "majiro-display-unit/v1",
+                  "codeOffset": 739,
+                  "endCodeOffset": 772,
+                  "bodyCodeOffset": 739,
+                  "codeOffsets": [
+                    739,
+                    770
+                  ],
+                  "textEventIndices": [
+                    9
+                  ],
+                  "textParts": [
+                    {
+                      "kind": "text",
+                      "text": "――暗く、肌寒い部屋の中。",
+                      "codeOffset": 739,
+                      "rawText": "――暗く、肌寒い部屋の中。",
+                      "rawHex": "815c815c88c382ad814194a78aa682a2959489ae82cc92868142",
+                      "textEventIndex": 9,
+                      "segmentIndex": 0
+                    }
+                  ],
+                  "speakerRaw": null,
+                  "ruby": [],
+                  "controls": [],
+                  "boundary": {
+                    "codeOffset": 772,
+                    "control": "p"
+                  }
+                }
+              },
+              "nextEventId": "mjo-314",
+              "textLineIndex": {
+                "ja-JP": 7
+              }
+            },
+            {
+              "eventId": "mjo-314",
+              "kind": "line",
+              "source": {
+                "engine": "majiro",
+                "variantSourceId": "mjo/narcissu3/scenario.arc.unpacked/nard14",
+                "scriptPath": "archive/derived/scripts/narcissu3/scenario.arc.unpacked/nard14.script.json",
+                "textEventIndices": [
+                  10
+                ],
+                "codeOffsets": [
+                  788
+                ],
+                "nativeUnit": {
+                  "schema": "majiro-display-unit/v1",
+                  "codeOffset": 788,
+                  "endCodeOffset": 833,
+                  "bodyCodeOffset": 788,
+                  "codeOffsets": [
+                    788,
+                    831
+                  ],
+                  "textEventIndices": [
+                    10
+                  ],
+                  "textParts": [
+                    {
+                      "kind": "text",
+                      "text": "わたしは１人でずっと考え事をしていた。",
+                      "codeOffset": 788,
+                      "rawText": "わたしは１人でずっと考え事をしていた。",
+                      "rawHex": "82ed82bd82b582cd8250906c82c582b882c182c68d6c82a68e9682f082b582c482a282bd8142",
+                      "textEventIndex": 10,
+                      "segmentIndex": 0
+                    }
+                  ],
+                  "speakerRaw": null,
+                  "ruby": [],
+                  "controls": [],
+                  "boundary": {
+                    "codeOffset": 833,
+                    "control": "p"
+                  }
+                }
+              },
+              "nextEventId": "mjo-351",
+              "textLineIndex": {
+                "ja-JP": 8
+              }
+            },
+            {
+              "eventId": "mjo-351",
+              "kind": "line",
+              "source": {
+                "engine": "majiro",
+                "variantSourceId": "mjo/narcissu3/scenario.arc.unpacked/nard14",
+                "scriptPath": "archive/derived/scripts/narcissu3/scenario.arc.unpacked/nard14.script.json",
+                "textEventIndices": [
+                  11
+                ],
+                "codeOffsets": [
+                  849
+                ],
+                "nativeUnit": {
+                  "schema": "majiro-display-unit/v1",
+                  "codeOffset": 849,
+                  "endCodeOffset": 944,
+                  "bodyCodeOffset": 849,
+                  "codeOffsets": [
+                    849,
+                    942
+                  ],
+                  "textEventIndices": [
+                    11
+                  ],
+                  "textParts": [
+                    {
+                      "kind": "text",
+                      "text": "それは今日までの出来事、今日の出来事、明日の事、そして明日以降の事について…と実に様々。",
+                      "codeOffset": 849,
+                      "rawText": "それは今日までの出来事、今日の出来事、明日の事、そして明日以降の事について…と実に様々。",
+                      "rawHex": "82bb82ea82cd8da193fa82dc82c582cc8f6f97888e9681418da193fa82cc8f6f97888e96814196be93fa82cc8e96814182bb82b582c496be93fa88c88d7e82cc8e9682c982c282a282c4816382c68ec082c9976c81588142",
+                      "textEventIndex": 11,
+                      "segmentIndex": 0
+                    }
+                  ],
+                  "speakerRaw": null,
+                  "ruby": [],
+                  "controls": [],
+                  "boundary": {
+                    "codeOffset": 944,
+                    "control": "p"
+                  }
+                }
+              },
+              "nextEventId": "mjo-3c0",
+              "textLineIndex": {
+                "ja-JP": 9
+              }
+            },
+            {
+              "eventId": "mjo-3c0",
+              "kind": "line",
+              "source": {
+                "engine": "majiro",
+                "variantSourceId": "mjo/narcissu3/scenario.arc.unpacked/nard14",
+                "scriptPath": "archive/derived/scripts/narcissu3/scenario.arc.unpacked/nard14.script.json",
+                "textEventIndices": [
+                  12
+                ],
+                "codeOffsets": [
+                  960
+                ],
+                "nativeUnit": {
+                  "schema": "majiro-display-unit/v1",
+                  "codeOffset": 960,
+                  "endCodeOffset": 973,
+                  "bodyCodeOffset": 960,
+                  "codeOffsets": [
+                    960,
+                    971
+                  ],
+                  "textEventIndices": [
+                    12
+                  ],
+                  "textParts": [
+                    {
+                      "kind": "text",
+                      "text": "でも…",
+                      "codeOffset": 960,
+                      "rawText": "でも…",
+                      "rawHex": "82c582e08163",
+                      "textEventIndex": 12,
+                      "segmentIndex": 0
+                    }
+                  ],
+                  "speakerRaw": null,
+                  "ruby": [],
+                  "controls": [],
+                  "boundary": {
+                    "codeOffset": 973,
+                    "control": "p"
+                  }
+                }
+              },
+              "nextEventId": "mjo-3dd",
+              "textLineIndex": {
+                "ja-JP": 10
+              }
+            },
+            {
+              "eventId": "mjo-3dd",
+              "kind": "line",
+              "source": {
+                "engine": "majiro",
+                "variantSourceId": "mjo/narcissu3/scenario.arc.unpacked/nard14",
+                "scriptPath": "archive/derived/scripts/narcissu3/scenario.arc.unpacked/nard14.script.json",
+                "textEventIndices": [
+                  13
+                ],
+                "codeOffsets": [
+                  989
+                ],
+                "nativeUnit": {
+                  "schema": "majiro-display-unit/v1",
+                  "codeOffset": 989,
+                  "endCodeOffset": 1044,
+                  "bodyCodeOffset": 989,
+                  "codeOffsets": [
+                    989,
+                    1042
+                  ],
+                  "textEventIndices": [
+                    13
+                  ],
+                  "textParts": [
+                    {
+                      "kind": "text",
+                      "text": "やっぱり今日の出来事が一番多く頭をよぎっていた。",
+                      "codeOffset": 989,
+                      "rawText": "やっぱり今日の出来事が一番多く頭をよぎっていた。",
+                      "rawHex": "82e282c182cf82e88da193fa82cc8f6f97888e9682aa88ea94d491bd82ad93aa82f082e682ac82c182c482a282bd8142",
+                      "textEventIndex": 13,
+                      "segmentIndex": 0
+                    }
+                  ],
+                  "speakerRaw": null,
+                  "ruby": [],
+                  "controls": [],
+                  "boundary": {
+                    "codeOffset": 1044,
+                    "control": "p"
+                  }
+                }
+              },
+              "nextEventId": "mjo-424",
+              "textLineIndex": {
+                "ja-JP": 11
+              }
+            },
+            {
+              "eventId": "mjo-424",
+              "kind": "line",
+              "source": {
+                "engine": "majiro",
+                "variantSourceId": "mjo/narcissu3/scenario.arc.unpacked/nard14",
+                "scriptPath": "archive/derived/scripts/narcissu3/scenario.arc.unpacked/nard14.script.json",
+                "textEventIndices": [
+                  14
+                ],
+                "codeOffsets": [
+                  1060
+                ],
+                "nativeUnit": {
+                  "schema": "majiro-display-unit/v1",
+                  "codeOffset": 1060,
+                  "endCodeOffset": 1111,
+                  "bodyCodeOffset": 1060,
+                  "codeOffsets": [
+                    1060,
+                    1109
+                  ],
+                  "textEventIndices": [
+                    14
+                  ],
+                  "textParts": [
+                    {
+                      "kind": "text",
+                      "text": "まあそれは当然か。わたしはそう心の中で呟く。",
+                      "codeOffset": 1060,
+                      "rawText": "まあそれは当然か。わたしはそう心の中で呟く。",
+                      "rawHex": "82dc82a082bb82ea82cd9396915282a9814282ed82bd82b582cd82bb82a4905382cc928682c599ea82ad8142",
+                      "textEventIndex": 14,
+                      "segmentIndex": 0
+                    }
+                  ],
+                  "speakerRaw": null,
+                  "ruby": [],
+                  "controls": [],
+                  "boundary": {
+                    "codeOffset": 1111,
+                    "control": "p"
+                  }
+                }
+              },
+              "nextEventId": "mjo-467",
+              "textLineIndex": {
+                "ja-JP": 12
+              }
+            },
+            {
+              "eventId": "mjo-467",
+              "kind": "line",
+              "source": {
+                "engine": "majiro",
+                "variantSourceId": "mjo/narcissu3/scenario.arc.unpacked/nard14",
+                "scriptPath": "archive/derived/scripts/narcissu3/scenario.arc.unpacked/nard14.script.json",
+                "textEventIndices": [
+                  15
+                ],
+                "codeOffsets": [
+                  1127
+                ],
+                "nativeUnit": {
+                  "schema": "majiro-display-unit/v1",
+                  "codeOffset": 1127,
+                  "endCodeOffset": 1154,
+                  "bodyCodeOffset": 1127,
+                  "codeOffsets": [
+                    1127,
+                    1152
+                  ],
+                  "textEventIndices": [
+                    15
+                  ],
+                  "textParts": [
+                    {
+                      "kind": "text",
+                      "text": "…苦渋の決断だった。",
+                      "codeOffset": 1127,
+                      "rawText": "…苦渋の決断だった。",
+                      "rawHex": "81638bea8f6182cc8c88926682be82c182bd8142",
+                      "textEventIndex": 15,
+                      "segmentIndex": 0
+                    }
+                  ],
+                  "speakerRaw": null,
+                  "ruby": [],
+                  "controls": [],
+                  "boundary": {
+                    "codeOffset": 1154,
+                    "control": "p"
+                  }
+                }
+              },
+              "nextEventId": "mjo-492",
+              "textLineIndex": {
+                "ja-JP": 13
+              }
+            },
+            {
+              "eventId": "mjo-492",
+              "kind": "line",
+              "source": {
+                "engine": "majiro",
+                "variantSourceId": "mjo/narcissu3/scenario.arc.unpacked/nard14",
+                "scriptPath": "archive/derived/scripts/narcissu3/scenario.arc.unpacked/nard14.script.json",
+                "textEventIndices": [
+                  16
+                ],
+                "codeOffsets": [
+                  1170
+                ],
+                "nativeUnit": {
+                  "schema": "majiro-display-unit/v1",
+                  "codeOffset": 1170,
+                  "endCodeOffset": 1268,
+                  "bodyCodeOffset": 1170,
+                  "codeOffsets": [
+                    1170,
+                    1227,
+                    1229,
+                    1239,
+                    1266
+                  ],
+                  "textEventIndices": [
+                    16
+                  ],
+                  "textParts": [
+                    {
+                      "kind": "text",
+                      "text": "そして本当に辛い事というのは喋る側も聞く側もこんなに",
+                      "codeOffset": 1170,
+                      "rawText": "そして本当に辛い事というのは喋る側も聞く側もこんなに",
+                      "rawHex": "82bb82b582c4967b939682c9906882a28e9682c682a282a482cc82cd929d82e991a482e095b782ad91a482e082b182f182c882c9",
+                      "textEventIndex": 16,
+                      "segmentIndex": 0
+                    },
+                    {
+                      "kind": "linebreak",
+                      "text": "\n",
+                      "codeOffset": 1229
+                    },
+                    {
+                      "kind": "text",
+                      "text": "大変なんだと痛感した。",
+                      "codeOffset": 1239,
+                      "rawText": "大変なんだと痛感した。",
+                      "rawHex": "91e595cf82c882f182be82c692c98ab482b582bd8142",
+                      "textEventIndex": 16,
+                      "segmentIndex": 1
+                    }
+                  ],
+                  "speakerRaw": null,
+                  "ruby": [],
+                  "controls": [
+                    {
+                      "codeOffset": 1229,
+                      "value": "n"
+                    }
+                  ],
+                  "boundary": {
+                    "codeOffset": 1268,
+                    "control": "p"
+                  }
+                }
+              },
+              "nextEventId": "mjo-504",
+              "textLineIndex": {
+                "ja-JP": 14
+              }
+            },
+            {
+              "eventId": "mjo-504",
+              "kind": "line",
+              "source": {
+                "engine": "majiro",
+                "variantSourceId": "mjo/narcissu3/scenario.arc.unpacked/nard14",
+                "scriptPath": "archive/derived/scripts/narcissu3/scenario.arc.unpacked/nard14.script.json",
+                "textEventIndices": [
+                  17
+                ],
+                "codeOffsets": [
+                  1284
+                ],
+                "nativeUnit": {
+                  "schema": "majiro-display-unit/v1",
+                  "codeOffset": 1284,
+                  "endCodeOffset": 1319,
+                  "bodyCodeOffset": 1284,
+                  "codeOffsets": [
+                    1284,
+                    1317
+                  ],
+                  "textEventIndices": [
+                    17
+                  ],
+                  "textParts": [
+                    {
+                      "kind": "text",
+                      "text": "でもこれでよかった…はずだ。",
+                      "codeOffset": 1284,
+                      "rawText": "でもこれでよかった…はずだ。",
+                      "rawHex": "82c582e082b182ea82c582e682a982c182bd816382cd82b882be8142",
+                      "textEventIndex": 17,
+                      "segmentIndex": 0
+                    }
+                  ],
+                  "speakerRaw": null,
+                  "ruby": [],
+                  "controls": [],
+                  "boundary": {
+                    "codeOffset": 1319,
+                    "control": "p"
+                  }
+                }
+              },
+              "nextEventId": "mjo-537",
+              "textLineIndex": {
+                "ja-JP": 15
+              }
+            },
+            {
+              "eventId": "mjo-537",
+              "kind": "line",
+              "source": {
+                "engine": "majiro",
+                "variantSourceId": "mjo/narcissu3/scenario.arc.unpacked/nard14",
+                "scriptPath": "archive/derived/scripts/narcissu3/scenario.arc.unpacked/nard14.script.json",
+                "textEventIndices": [
+                  18
+                ],
+                "codeOffsets": [
+                  1335
+                ],
+                "nativeUnit": {
+                  "schema": "majiro-display-unit/v1",
+                  "codeOffset": 1335,
+                  "endCodeOffset": 1380,
+                  "bodyCodeOffset": 1335,
+                  "codeOffsets": [
+                    1335,
+                    1378
+                  ],
+                  "textEventIndices": [
+                    18
+                  ],
+                  "textParts": [
+                    {
+                      "kind": "text",
+                      "text": "そうする事があの人のためでもあるんだ。",
+                      "codeOffset": 1335,
+                      "rawText": "そうする事があの人のためでもあるんだ。",
+                      "rawHex": "82bb82a482b782e98e9682aa82a082cc906c82cc82bd82df82c582e082a082e982f182be8142",
+                      "textEventIndex": 18,
+                      "segmentIndex": 0
+                    }
+                  ],
+                  "speakerRaw": null,
+                  "ruby": [],
+                  "controls": [],
+                  "boundary": {
+                    "codeOffset": 1380,
+                    "control": "p"
+                  }
+                }
+              },
+              "nextEventId": "mjo-574",
+              "textLineIndex": {
+                "ja-JP": 16
+              }
+            },
+            {
+              "eventId": "mjo-574",
+              "kind": "line",
+              "source": {
+                "engine": "majiro",
+                "variantSourceId": "mjo/narcissu3/scenario.arc.unpacked/nard14",
+                "scriptPath": "archive/derived/scripts/narcissu3/scenario.arc.unpacked/nard14.script.json",
+                "textEventIndices": [
+                  19
+                ],
+                "codeOffsets": [
+                  1396
+                ],
+                "nativeUnit": {
+                  "schema": "majiro-display-unit/v1",
+                  "codeOffset": 1396,
+                  "endCodeOffset": 1483,
+                  "bodyCodeOffset": 1396,
+                  "codeOffsets": [
+                    1396,
+                    1481
+                  ],
+                  "textEventIndices": [
+                    19
+                  ],
+                  "textParts": [
+                    {
+                      "kind": "text",
+                      "text": "そう言い聞かせ、これが正しいんだと、わたしは正しい判断をしたんだと言い聞かせる。",
+                      "codeOffset": 1396,
+                      "rawText": "そう言い聞かせ、これが正しいんだと、わたしは正しい判断をしたんだと言い聞かせる。",
+                      "rawHex": "82bb82a48cbe82a295b782a982b9814182b182ea82aa90b382b582a282f182be82c6814182ed82bd82b582cd90b382b582a294bb926682f082b582bd82f182be82c68cbe82a295b782a982b982e98142",
+                      "textEventIndex": 19,
+                      "segmentIndex": 0
+                    }
+                  ],
+                  "speakerRaw": null,
+                  "ruby": [],
+                  "controls": [],
+                  "boundary": {
+                    "codeOffset": 1483,
+                    "control": "p"
+                  }
+                }
+              },
+              "nextEventId": "mjo-5db",
+              "textLineIndex": {
+                "ja-JP": 17
+              }
+            },
+            {
+              "eventId": "mjo-5db",
+              "kind": "line",
+              "source": {
+                "engine": "majiro",
+                "variantSourceId": "mjo/narcissu3/scenario.arc.unpacked/nard14",
+                "scriptPath": "archive/derived/scripts/narcissu3/scenario.arc.unpacked/nard14.script.json",
+                "textEventIndices": [
+                  20
+                ],
+                "codeOffsets": [
+                  1499
+                ],
+                "nativeUnit": {
+                  "schema": "majiro-display-unit/v1",
+                  "codeOffset": 1499,
+                  "endCodeOffset": 1516,
+                  "bodyCodeOffset": 1499,
+                  "codeOffsets": [
+                    1499,
+                    1514
+                  ],
+                  "textEventIndices": [
+                    20
+                  ],
+                  "textParts": [
+                    {
+                      "kind": "text",
+                      "text": "――明日。",
+                      "codeOffset": 1499,
+                      "rawText": "――明日。",
+                      "rawHex": "815c815c96be93fa8142",
+                      "textEventIndex": 20,
+                      "segmentIndex": 0
+                    }
+                  ],
+                  "speakerRaw": null,
+                  "ruby": [],
+                  "controls": [],
+                  "boundary": {
+                    "codeOffset": 1516,
+                    "control": "p"
+                  }
+                }
+              },
+              "nextEventId": "mjo-5fc",
+              "textLineIndex": {
+                "ja-JP": 18
+              }
+            },
+            {
+              "eventId": "mjo-5fc",
+              "kind": "line",
+              "source": {
+                "engine": "majiro",
+                "variantSourceId": "mjo/narcissu3/scenario.arc.unpacked/nard14",
+                "scriptPath": "archive/derived/scripts/narcissu3/scenario.arc.unpacked/nard14.script.json",
+                "textEventIndices": [
+                  21
+                ],
+                "codeOffsets": [
+                  1532
+                ],
+                "nativeUnit": {
+                  "schema": "majiro-display-unit/v1",
+                  "codeOffset": 1532,
+                  "endCodeOffset": 1559,
+                  "bodyCodeOffset": 1532,
+                  "codeOffsets": [
+                    1532,
+                    1557
+                  ],
+                  "textEventIndices": [
+                    21
+                  ],
+                  "textParts": [
+                    {
+                      "kind": "text",
+                      "text": "わたしは７階に行く。",
+                      "codeOffset": 1532,
+                      "rawText": "わたしは７階に行く。",
+                      "rawHex": "82ed82bd82b582cd82568a4b82c98d7382ad8142",
+                      "textEventIndex": 21,
+                      "segmentIndex": 0
+                    }
+                  ],
+                  "speakerRaw": null,
+                  "ruby": [],
+                  "controls": [],
+                  "boundary": {
+                    "codeOffset": 1559,
+                    "control": "p"
+                  }
+                }
+              },
+              "nextEventId": "mjo-627",
+              "textLineIndex": {
+                "ja-JP": 19
+              }
+            },
+            {
+              "eventId": "mjo-627",
+              "kind": "line",
+              "source": {
+                "engine": "majiro",
+                "variantSourceId": "mjo/narcissu3/scenario.arc.unpacked/nard14",
+                "scriptPath": "archive/derived/scripts/narcissu3/scenario.arc.unpacked/nard14.script.json",
+                "textEventIndices": [
+                  22
+                ],
+                "codeOffsets": [
+                  1575
+                ],
+                "nativeUnit": {
+                  "schema": "majiro-display-unit/v1",
+                  "codeOffset": 1575,
+                  "endCodeOffset": 1665,
+                  "bodyCodeOffset": 1575,
+                  "codeOffsets": [
+                    1575,
+                    1632,
+                    1634,
+                    1644,
+                    1663
+                  ],
+                  "textEventIndices": [
+                    22
+                  ],
+                  "textParts": [
+                    {
+                      "kind": "text",
+                      "text": "それはある意味、すじ雲が浮かぶ空よりもさらに高い所に",
+                      "codeOffset": 1575,
+                      "rawText": "それはある意味、すじ雲が浮かぶ空よりもさらに高い所に",
+                      "rawHex": "82bb82ea82cd82a082e988d396a1814182b782b6895f82aa958282a982d48bf382e682e882e082b382e782c98d8282a28f8a82c9",
+                      "textEventIndex": 22,
+                      "segmentIndex": 0
+                    },
+                    {
+                      "kind": "linebreak",
+                      "text": "\n",
+                      "codeOffset": 1634
+                    },
+                    {
+                      "kind": "text",
+                      "text": "向かうも同然。",
+                      "codeOffset": 1644,
+                      "rawText": "向かうも同然。",
+                      "rawHex": "8cfc82a982a482e093af91528142",
+                      "textEventIndex": 22,
+                      "segmentIndex": 1
+                    }
+                  ],
+                  "speakerRaw": null,
+                  "ruby": [],
+                  "controls": [
+                    {
+                      "codeOffset": 1634,
+                      "value": "n"
+                    }
+                  ],
+                  "boundary": {
+                    "codeOffset": 1665,
+                    "control": "p"
+                  }
+                }
+              },
+              "nextEventId": "mjo-691",
+              "textLineIndex": {
+                "ja-JP": 20
+              }
+            },
+            {
+              "eventId": "mjo-691",
+              "kind": "line",
+              "source": {
+                "engine": "majiro",
+                "variantSourceId": "mjo/narcissu3/scenario.arc.unpacked/nard14",
+                "scriptPath": "archive/derived/scripts/narcissu3/scenario.arc.unpacked/nard14.script.json",
+                "textEventIndices": [
+                  23
+                ],
+                "codeOffsets": [
+                  1681
+                ],
+                "nativeUnit": {
+                  "schema": "majiro-display-unit/v1",
+                  "codeOffset": 1681,
+                  "endCodeOffset": 1779,
+                  "bodyCodeOffset": 1681,
+                  "codeOffsets": [
+                    1681,
+                    1736,
+                    1738,
+                    1748,
+                    1777
+                  ],
+                  "textEventIndices": [
+                    23
+                  ],
+                  "textParts": [
+                    {
+                      "kind": "text",
+                      "text": "わたしにはそれがとても皮肉の効いた、質の悪い冗談に",
+                      "codeOffset": 1681,
+                      "rawText": "わたしにはそれがとても皮肉の効いた、質の悪い冗談に",
+                      "rawHex": "82ed82bd82b582c982cd82bb82ea82aa82c682c482e094e793f782cc8cf882a282bd81418ebf82cc88ab82a28fe7926b82c9",
+                      "textEventIndex": 23,
+                      "segmentIndex": 0
+                    },
+                    {
+                      "kind": "linebreak",
+                      "text": "\n",
+                      "codeOffset": 1738
+                    },
+                    {
+                      "kind": "text",
+                      "text": "聞こえてならななかった。",
+                      "codeOffset": 1748,
+                      "rawText": "聞こえてならななかった。",
+                      "rawHex": "95b782b182a682c482c882e782c882c882a982c182bd8142",
+                      "textEventIndex": 23,
+                      "segmentIndex": 1
+                    }
+                  ],
+                  "speakerRaw": null,
+                  "ruby": [],
+                  "controls": [
+                    {
+                      "codeOffset": 1738,
+                      "value": "n"
+                    }
+                  ],
+                  "boundary": {
+                    "codeOffset": 1779,
+                    "control": "p"
+                  }
+                }
+              },
+              "nextEventId": "mjo-703",
+              "textLineIndex": {
+                "ja-JP": 21
+              }
+            },
+            {
+              "eventId": "mjo-703",
+              "kind": "line",
+              "source": {
+                "engine": "majiro",
+                "variantSourceId": "mjo/narcissu3/scenario.arc.unpacked/nard14",
+                "scriptPath": "archive/derived/scripts/narcissu3/scenario.arc.unpacked/nard14.script.json",
+                "textEventIndices": [
+                  24
+                ],
+                "codeOffsets": [
+                  1795
+                ],
+                "nativeUnit": {
+                  "schema": "majiro-display-unit/v1",
+                  "codeOffset": 1795,
+                  "endCodeOffset": 1903,
+                  "bodyCodeOffset": 1795,
+                  "codeOffsets": [
+                    1795,
+                    1852,
+                    1854,
+                    1864,
+                    1901
+                  ],
+                  "textEventIndices": [
+                    24
+                  ],
+                  "textParts": [
+                    {
+                      "kind": "text",
+                      "text": "…わたしは正規の手順で、１つ１つ相殺する事ですじ雲の",
+                      "codeOffset": 1795,
+                      "rawText": "…わたしは正規の手順で、１つ１つ相殺する事ですじ雲の",
+                      "rawHex": "816382ed82bd82b582cd90b38b4b82cc8ee88f8782c58141825082c2825082c2918a8e4582b782e98e9682c582b782b6895f82cc",
+                      "textEventIndex": 24,
+                      "segmentIndex": 0
+                    },
+                    {
+                      "kind": "linebreak",
+                      "text": "\n",
+                      "codeOffset": 1854
+                    },
+                    {
+                      "kind": "text",
+                      "text": "高さに到達する事は出来なかった。",
+                      "codeOffset": 1864,
+                      "rawText": "高さに到達する事は出来なかった。",
+                      "rawHex": "8d8282b382c9939e924282b782e98e9682cd8f6f978882c882a982c182bd8142",
+                      "textEventIndex": 24,
+                      "segmentIndex": 1
+                    }
+                  ],
+                  "speakerRaw": null,
+                  "ruby": [],
+                  "controls": [
+                    {
+                      "codeOffset": 1854,
+                      "value": "n"
+                    }
+                  ],
+                  "boundary": {
+                    "codeOffset": 1903,
+                    "control": "p"
+                  }
+                }
+              },
+              "nextEventId": "mjo-77f",
+              "textLineIndex": {
+                "ja-JP": 22
+              }
+            },
+            {
+              "eventId": "mjo-77f",
+              "kind": "line",
+              "source": {
+                "engine": "majiro",
+                "variantSourceId": "mjo/narcissu3/scenario.arc.unpacked/nard14",
+                "scriptPath": "archive/derived/scripts/narcissu3/scenario.arc.unpacked/nard14.script.json",
+                "textEventIndices": [
+                  25
+                ],
+                "codeOffsets": [
+                  1919
+                ],
+                "nativeUnit": {
+                  "schema": "majiro-display-unit/v1",
+                  "codeOffset": 1919,
+                  "endCodeOffset": 1966,
+                  "bodyCodeOffset": 1919,
+                  "codeOffsets": [
+                    1919,
+                    1964
+                  ],
+                  "textEventIndices": [
+                    25
+                  ],
+                  "textParts": [
+                    {
+                      "kind": "text",
+                      "text": "そんなわたしが、すじ雲よりも高い場所へ…",
+                      "codeOffset": 1919,
+                      "rawText": "そんなわたしが、すじ雲よりも高い場所へ…",
+                      "rawHex": "82bb82f182c882ed82bd82b582aa814182b782b6895f82e682e882e08d8282a28fea8f8a82d68163",
+                      "textEventIndex": 25,
+                      "segmentIndex": 0
+                    }
+                  ],
+                  "speakerRaw": null,
+                  "ruby": [],
+                  "controls": [],
+                  "boundary": {
+                    "codeOffset": 1966,
+                    "control": "p"
+                  }
+                }
+              },
+              "nextEventId": "mjo-7be",
+              "textLineIndex": {
+                "ja-JP": 23
+              }
+            },
+            {
+              "eventId": "mjo-7be",
+              "kind": "line",
+              "source": {
+                "engine": "majiro",
+                "variantSourceId": "mjo/narcissu3/scenario.arc.unpacked/nard14",
+                "scriptPath": "archive/derived/scripts/narcissu3/scenario.arc.unpacked/nard14.script.json",
+                "textEventIndices": [
+                  26
+                ],
+                "codeOffsets": [
+                  1982
+                ],
+                "nativeUnit": {
+                  "schema": "majiro-display-unit/v1",
+                  "codeOffset": 1982,
+                  "endCodeOffset": 2059,
+                  "bodyCodeOffset": 1982,
+                  "codeOffsets": [
+                    1982,
+                    2057
+                  ],
+                  "textEventIndices": [
+                    26
+                  ],
+                  "textParts": [
+                    {
+                      "kind": "text",
+                      "text": "明日、すじ雲の高さまで到達出来なかったわたしが、代わりに７階へ行く――",
+                      "codeOffset": 1982,
+                      "rawText": "明日、すじ雲の高さまで到達出来なかったわたしが、代わりに７階へ行く――",
+                      "rawHex": "96be93fa814182b782b6895f82cc8d8282b382dc82c5939e92428f6f978882c882a982c182bd82ed82bd82b582aa814191e382ed82e882c982568a4b82d68d7382ad815c815c",
+                      "textEventIndex": 26,
+                      "segmentIndex": 0
+                    }
+                  ],
+                  "speakerRaw": null,
+                  "ruby": [],
+                  "controls": [],
+                  "boundary": {
+                    "codeOffset": 2059,
+                    "control": "p"
+                  }
+                }
+              },
+              "nextEventId": "mjo-81b",
+              "textLineIndex": {
+                "ja-JP": 24
+              }
+            },
+            {
+              "eventId": "mjo-81b",
+              "kind": "line",
+              "source": {
+                "engine": "majiro",
+                "variantSourceId": "mjo/narcissu3/scenario.arc.unpacked/nard14",
+                "scriptPath": "archive/derived/scripts/narcissu3/scenario.arc.unpacked/nard14.script.json",
+                "textEventIndices": [
+                  27
+                ],
+                "codeOffsets": [
+                  2075
+                ],
+                "nativeUnit": {
+                  "schema": "majiro-display-unit/v1",
+                  "codeOffset": 2075,
+                  "endCodeOffset": 2165,
+                  "bodyCodeOffset": 2075,
+                  "codeOffsets": [
+                    2075,
+                    2132,
+                    2134,
+                    2144,
+                    2163
+                  ],
+                  "textEventIndices": [
+                    27
+                  ],
+                  "textParts": [
+                    {
+                      "kind": "text",
+                      "text": "そこは捉え方によっては上空７０００ｍよりも地上の生活",
+                      "codeOffset": 2075,
+                      "rawText": "そこは捉え方によっては上空７０００ｍよりも地上の生活",
+                      "rawHex": "82bb82b182cd91a882a695fb82c982e682c182c482cd8fe38bf38256824f824f824f828d82e682e882e0926e8fe382cc90b68a88",
+                      "textEventIndex": 27,
+                      "segmentIndex": 0
+                    },
+                    {
+                      "kind": "linebreak",
+                      "text": "\n",
+                      "codeOffset": 2134
+                    },
+                    {
+                      "kind": "text",
+                      "text": "から遠い場所。",
+                      "codeOffset": 2144,
+                      "rawText": "から遠い場所。",
+                      "rawHex": "82a982e7899382a28fea8f8a8142",
+                      "textEventIndex": 27,
+                      "segmentIndex": 1
+                    }
+                  ],
+                  "speakerRaw": null,
+                  "ruby": [],
+                  "controls": [
+                    {
+                      "codeOffset": 2134,
+                      "value": "n"
+                    }
+                  ],
+                  "boundary": {
+                    "codeOffset": 2165,
+                    "control": "p"
+                  }
+                }
+              },
+              "nextEventId": "mjo-885",
+              "textLineIndex": {
+                "ja-JP": 25
+              }
+            },
+            {
+              "eventId": "mjo-885",
+              "kind": "line",
+              "source": {
+                "engine": "majiro",
+                "variantSourceId": "mjo/narcissu3/scenario.arc.unpacked/nard14",
+                "scriptPath": "archive/derived/scripts/narcissu3/scenario.arc.unpacked/nard14.script.json",
+                "textEventIndices": [
+                  28
+                ],
+                "codeOffsets": [
+                  2181
+                ],
+                "nativeUnit": {
+                  "schema": "majiro-display-unit/v1",
+                  "codeOffset": 2181,
+                  "endCodeOffset": 2273,
+                  "bodyCodeOffset": 2181,
+                  "codeOffsets": [
+                    2181,
+                    2236,
+                    2238,
+                    2248,
+                    2271
+                  ],
+                  "textEventIndices": [
+                    28
+                  ],
+                  "textParts": [
+                    {
+                      "kind": "text",
+                      "text": "わたしはそこに、上空７０００ｍより死に近い場所へと",
+                      "codeOffset": 2181,
+                      "rawText": "わたしはそこに、上空７０００ｍより死に近い場所へと",
+                      "rawHex": "82ed82bd82b582cd82bb82b182c981418fe38bf38256824f824f824f828d82e682e88e8082c98bdf82a28fea8f8a82d682c6",
+                      "textEventIndex": 28,
+                      "segmentIndex": 0
+                    },
+                    {
+                      "kind": "linebreak",
+                      "text": "\n",
+                      "codeOffset": 2238
+                    },
+                    {
+                      "kind": "text",
+                      "text": "向かう事となった。",
+                      "codeOffset": 2248,
+                      "rawText": "向かう事となった。",
+                      "rawHex": "8cfc82a982a48e9682c682c882c182bd8142",
+                      "textEventIndex": 28,
+                      "segmentIndex": 1
+                    }
+                  ],
+                  "speakerRaw": null,
+                  "ruby": [],
+                  "controls": [
+                    {
+                      "codeOffset": 2238,
+                      "value": "n"
+                    }
+                  ],
+                  "boundary": {
+                    "codeOffset": 2273,
+                    "control": "p"
+                  }
+                }
+              },
+              "nextEventId": "mjo-8f1",
+              "textLineIndex": {
+                "ja-JP": 26
+              }
+            },
+            {
+              "eventId": "mjo-8f1",
+              "kind": "line",
+              "source": {
+                "engine": "majiro",
+                "variantSourceId": "mjo/narcissu3/scenario.arc.unpacked/nard14",
+                "scriptPath": "archive/derived/scripts/narcissu3/scenario.arc.unpacked/nard14.script.json",
+                "textEventIndices": [
+                  29
+                ],
+                "codeOffsets": [
+                  2289
+                ],
+                "nativeUnit": {
+                  "schema": "majiro-display-unit/v1",
+                  "codeOffset": 2289,
+                  "endCodeOffset": 2346,
+                  "bodyCodeOffset": 2289,
+                  "codeOffsets": [
+                    2289,
+                    2344
+                  ],
+                  "textEventIndices": [
+                    29
+                  ],
+                  "textParts": [
+                    {
+                      "kind": "text",
+                      "text": "――明日、それはわたしが７階へと上がってしまう日。",
+                      "codeOffset": 2289,
+                      "rawText": "――明日、それはわたしが７階へと上がってしまう日。",
+                      "rawHex": "815c815c96be93fa814182bb82ea82cd82ed82bd82b582aa82568a4b82d682c68fe382aa82c182c482b582dc82a493fa8142",
+                      "textEventIndex": 29,
+                      "segmentIndex": 0
+                    }
+                  ],
+                  "speakerRaw": null,
+                  "ruby": [],
+                  "controls": [],
+                  "boundary": {
+                    "codeOffset": 2346,
+                    "control": "p"
+                  }
+                }
+              },
+              "nextEventId": "mjo-93a",
+              "textLineIndex": {
+                "ja-JP": 27
+              }
+            },
+            {
+              "eventId": "mjo-93a",
+              "kind": "line",
+              "source": {
+                "engine": "majiro",
+                "variantSourceId": "mjo/narcissu3/scenario.arc.unpacked/nard14",
+                "scriptPath": "archive/derived/scripts/narcissu3/scenario.arc.unpacked/nard14.script.json",
+                "textEventIndices": [
+                  30
+                ],
+                "codeOffsets": [
+                  2362
+                ],
+                "nativeUnit": {
+                  "schema": "majiro-display-unit/v1",
+                  "codeOffset": 2362,
+                  "endCodeOffset": 2419,
+                  "bodyCodeOffset": 2362,
+                  "codeOffsets": [
+                    2362,
+                    2417
+                  ],
+                  "textEventIndices": [
+                    30
+                  ],
+                  "textParts": [
+                    {
+                      "kind": "text",
+                      "text": "また、わたしとお兄さん決別をしなければいけない日。",
+                      "codeOffset": 2362,
+                      "rawText": "また、わたしとお兄さん決別をしなければいけない日。",
+                      "rawHex": "82dc82bd814182ed82bd82b582c682a88c5a82b382f18c8895ca82f082b582c882af82ea82ce82a282af82c882a293fa8142",
+                      "textEventIndex": 30,
+                      "segmentIndex": 0
+                    }
+                  ],
+                  "speakerRaw": null,
+                  "ruby": [],
+                  "controls": [],
+                  "boundary": {
+                    "codeOffset": 2419,
+                    "control": "p"
+                  }
+                }
+              },
+              "nextEventId": "mjo-983",
+              "textLineIndex": {
+                "ja-JP": 28
+              }
+            },
+            {
+              "eventId": "mjo-983",
+              "kind": "line",
+              "source": {
+                "engine": "majiro",
+                "variantSourceId": "mjo/narcissu3/scenario.arc.unpacked/nard14",
+                "scriptPath": "archive/derived/scripts/narcissu3/scenario.arc.unpacked/nard14.script.json",
+                "textEventIndices": [
+                  31
+                ],
+                "codeOffsets": [
+                  2435
+                ],
+                "nativeUnit": {
+                  "schema": "majiro-display-unit/v1",
+                  "codeOffset": 2435,
+                  "endCodeOffset": 2535,
+                  "bodyCodeOffset": 2435,
+                  "codeOffsets": [
+                    2435,
+                    2492,
+                    2494,
+                    2504,
+                    2533
+                  ],
+                  "textEventIndices": [
+                    31
+                  ],
+                  "textParts": [
+                    {
+                      "kind": "text",
+                      "text": "そんな悲しい日が、そんな悲しい時が、もうすぐそこまで",
+                      "codeOffset": 2435,
+                      "rawText": "そんな悲しい日が、そんな悲しい時が、もうすぐそこまで",
+                      "rawHex": "82bb82f182c894df82b582a293fa82aa814182bb82f182c894df82b582a28e9e82aa814182e082a482b782ae82bb82b182dc82c5",
+                      "textEventIndex": 31,
+                      "segmentIndex": 0
+                    },
+                    {
+                      "kind": "linebreak",
+                      "text": "\n",
+                      "codeOffset": 2494
+                    },
+                    {
+                      "kind": "text",
+                      "text": "訪れてようとしていた――",
+                      "codeOffset": 2504,
+                      "rawText": "訪れてようとしていた――",
+                      "rawHex": "964b82ea82c482e682a482c682b582c482a282bd815c815c",
+                      "textEventIndex": 31,
+                      "segmentIndex": 1
+                    }
+                  ],
+                  "speakerRaw": null,
+                  "ruby": [],
+                  "controls": [
+                    {
+                      "codeOffset": 2494,
+                      "value": "n"
+                    }
+                  ],
+                  "boundary": {
+                    "codeOffset": 2535,
+                    "control": "p"
+                  }
+                }
+              },
+              "nextEventId": "end-001",
+              "textLineIndex": {
+                "ja-JP": 29
+              }
+            },
+            {
+              "eventId": "end-001",
+              "kind": "end",
+              "cues": [
+                {
+                  "cueId": "cue-0d022e58cb3282af",
+                  "kind": "image",
+                  "timing": "scene",
+                  "mediaId": "asset/a-1e25df50e807fd1b",
+                  "resolverId": "research-media-v1",
+                  "raw": {
+                    "sourceKey": "black",
+                    "codeOffset": 2569,
+                    "playbackPath": "derived/images/narcissu3/fastdata.arc.unpacked/black.png",
+                    "targetEventId": "end-001"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "variantId": "mjo/narcissu3/update.arc.unpacked/nard14",
+      "locales": [
+        "zh-CN"
+      ],
+      "readerLocales": [
+        "zh-CN"
+      ],
+      "textLineCounts": {
+        "zh-CN": 30
+      },
+      "sections": [
+        {
+          "sectionId": "main",
+          "entryEventId": "mjo-ab",
+          "events": [
+            {
+              "eventId": "mjo-ab",
+              "kind": "line",
+              "source": {
+                "engine": "majiro",
+                "variantSourceId": "mjo/narcissu3/update.arc.unpacked/nard14",
+                "scriptPath": "archive/derived/scripts/narcissu3/update.arc.unpacked/nard14.script.json",
+                "textEventIndices": [
+                  0
+                ],
+                "codeOffsets": [
+                  171
+                ],
+                "nativeUnit": {
+                  "schema": "majiro-display-unit/v1",
+                  "codeOffset": 171,
+                  "endCodeOffset": 205,
+                  "bodyCodeOffset": 171,
+                  "codeOffsets": [
+                    171,
+                    203
+                  ],
+                  "textEventIndices": [
+                    0
+                  ],
+                  "textParts": [
+                    {
+                      "kind": "text",
+                      "text": "——去７楼的前一天，深夜。 ",
+                      "codeOffset": 171,
+                      "rawText": "——去７楼的前一天，深夜。 ",
+                      "rawHex": "a1aaa1aac8a5a3b7c2a5b5c4c7b0d2bbcceca3acc9eed2b9a1a320",
+                      "textEventIndex": 0,
+                      "segmentIndex": 0
+                    }
+                  ],
+                  "speakerRaw": null,
+                  "ruby": [],
+                  "controls": [],
+                  "boundary": {
+                    "codeOffset": 205,
+                    "control": "p"
+                  }
+                }
+              },
+              "nextEventId": "mjo-104",
+              "textLineIndex": {
+                "zh-CN": 0
+              },
+              "cues": [
+                {
+                  "cueId": "cue-9e9fa41811c4ead6",
+                  "kind": "image",
+                  "timing": "scene",
+                  "mediaId": "asset/a-796d0325dd501200",
+                  "resolverId": "research-media-v1",
+                  "raw": {
+                    "sourceKey": "n3d_ck_c01",
+                    "codeOffset": 34,
+                    "playbackPath": "derived/images/narcissu3/data1.arc.unpacked/n3d_ck_c01.png",
+                    "targetEventId": "mjo-ab"
+                  }
+                },
+                {
+                  "cueId": "cue-a2a11771e8711d91",
+                  "kind": "image",
+                  "timing": "scene",
+                  "mediaId": "asset/a-3d4ebd0ad56cbb99",
+                  "resolverId": "research-media-v1",
+                  "raw": {
+                    "sourceKey": "n3d_ck_c02",
+                    "codeOffset": 61,
+                    "playbackPath": "derived/images/narcissu3/data1.arc.unpacked/n3d_ck_c02.png",
+                    "targetEventId": "mjo-ab"
+                  }
+                },
+                {
+                  "cueId": "cue-7911e68ef5847c20",
+                  "kind": "image",
+                  "timing": "scene",
+                  "mediaId": "asset/a-1e25df50e807fd1b",
+                  "resolverId": "research-media-v1",
+                  "raw": {
+                    "sourceKey": "black",
+                    "codeOffset": 118,
+                    "playbackPath": "derived/images/narcissu3/fastdata.arc.unpacked/black.png",
+                    "targetEventId": "mjo-ab"
+                  }
+                },
+                {
+                  "cueId": "cue-24ebfbafe58239f2",
+                  "kind": "image",
+                  "timing": "scene",
+                  "mediaId": "asset/a-1e7559daa9bfc1b2",
+                  "resolverId": "research-media-v1",
+                  "raw": {
+                    "sourceKey": "b3",
+                    "codeOffset": 140,
+                    "playbackPath": "derived/images/narcissu3/data1.arc.unpacked/b3.png",
+                    "targetEventId": "mjo-ab"
+                  }
+                }
+              ]
+            },
+            {
+              "eventId": "mjo-104",
+              "kind": "line",
+              "source": {
+                "engine": "majiro",
+                "variantSourceId": "mjo/narcissu3/update.arc.unpacked/nard14",
+                "scriptPath": "archive/derived/scripts/narcissu3/update.arc.unpacked/nard14.script.json",
+                "textEventIndices": [
+                  1,
+                  2
+                ],
+                "codeOffsets": [
+                  245,
+                  260
+                ],
+                "nativeUnit": {
+                  "schema": "majiro-display-unit/v1",
+                  "codeOffset": 245,
+                  "endCodeOffset": 290,
+                  "bodyCodeOffset": 260,
+                  "codeOffsets": [
+                    245,
+                    260,
+                    288
+                  ],
+                  "textEventIndices": [
+                    1,
+                    2
+                  ],
+                  "textParts": [
+                    {
+                      "kind": "text",
+                      "text": "「……对哥哥，说了。」 ",
+                      "codeOffset": 260,
+                      "rawText": "「……对哥哥，说了。」 ",
+                      "rawHex": "8175a1ada1adb6d4b8e7b8e7a3accbb5c1cba1a3817620",
+                      "textEventIndex": 2,
+                      "segmentIndex": 0
+                    }
+                  ],
+                  "speakerRaw": {
+                    "method": "native-name-slot",
+                    "codeOffset": 245,
+                    "rawHex": "836083548367",
+                    "text": "チサト",
+                    "decodedText": "チサト"
+                  },
+                  "ruby": [],
+                  "controls": [],
+                  "boundary": {
+                    "codeOffset": 290,
+                    "control": "p"
+                  }
+                }
+              },
+              "nextEventId": "mjo-145",
+              "textLineIndex": {
+                "zh-CN": 1
+              },
+              "cues": [
+                {
+                  "cueId": "cue-edea5e5306314213",
+                  "kind": "voice",
+                  "timing": "utterance",
+                  "mediaId": "asset/a-9cd8b7329b470941",
+                  "resolverId": "research-media-v1",
+                  "raw": {
+                    "sourceKey": "n3tisa_0986",
+                    "codeOffset": 217,
+                    "playbackPath": "raw/narcissu3/voice.arc.unpacked/n3tisa_0986.ogg",
+                    "targetEventId": "mjo-104"
+                  }
+                }
+              ]
+            },
+            {
+              "eventId": "mjo-145",
+              "kind": "line",
+              "source": {
+                "engine": "majiro",
+                "variantSourceId": "mjo/narcissu3/update.arc.unpacked/nard14",
+                "scriptPath": "archive/derived/scripts/narcissu3/update.arc.unpacked/nard14.script.json",
+                "textEventIndices": [
+                  3
+                ],
+                "codeOffsets": [
+                  325
+                ],
+                "nativeUnit": {
+                  "schema": "majiro-display-unit/v1",
+                  "codeOffset": 325,
+                  "endCodeOffset": 371,
+                  "bodyCodeOffset": 325,
+                  "codeOffsets": [
+                    325,
+                    369
+                  ],
+                  "textEventIndices": [
+                    3
+                  ],
+                  "textParts": [
+                    {
+                      "kind": "text",
+                      "text": "那像是做了坏事似的，用后悔的口吻说道。 ",
+                      "codeOffset": 325,
+                      "rawText": "那像是做了坏事似的，用后悔的口吻说道。 ",
+                      "rawHex": "c4c7cff1cac7d7f6c1cbbbb5cac2cbc6b5c4a3acd3c3baf3bbdab5c4bfdacec7cbb5b5c0a1a320",
+                      "textEventIndex": 3,
+                      "segmentIndex": 0
+                    }
+                  ],
+                  "speakerRaw": null,
+                  "ruby": [],
+                  "controls": [],
+                  "boundary": {
+                    "codeOffset": 371,
+                    "control": "p"
+                  }
+                }
+              },
+              "nextEventId": "mjo-1aa",
+              "textLineIndex": {
+                "zh-CN": 2
+              },
+              "cues": [
+                {
+                  "cueId": "cue-ca65c1c8af7de8c6",
+                  "kind": "bgm",
+                  "timing": "scene",
+                  "mediaId": "asset/a-ed4b45158ad23073",
+                  "resolverId": "research-media-v1",
+                  "raw": {
+                    "sourceKey": "2sou01",
+                    "codeOffset": 302,
+                    "playbackPath": "raw/narcissu3/stream.arc.unpacked/2sou01.ogg",
+                    "targetEventId": "mjo-145"
+                  }
+                }
+              ]
+            },
+            {
+              "eventId": "mjo-1aa",
+              "kind": "line",
+              "source": {
+                "engine": "majiro",
+                "variantSourceId": "mjo/narcissu3/update.arc.unpacked/nard14",
+                "scriptPath": "archive/derived/scripts/narcissu3/update.arc.unpacked/nard14.script.json",
+                "textEventIndices": [
+                  4,
+                  5
+                ],
+                "codeOffsets": [
+                  411,
+                  426
+                ],
+                "nativeUnit": {
+                  "schema": "majiro-display-unit/v1",
+                  "codeOffset": 411,
+                  "endCodeOffset": 458,
+                  "bodyCodeOffset": 426,
+                  "codeOffsets": [
+                    411,
+                    426,
+                    456
+                  ],
+                  "textEventIndices": [
+                    4,
+                    5
+                  ],
+                  "textParts": [
+                    {
+                      "kind": "text",
+                      "text": "「……竟然说了呢，我。」 ",
+                      "codeOffset": 426,
+                      "rawText": "「……竟然说了呢，我。」 ",
+                      "rawHex": "8175a1ada1adbeb9c8bbcbb5c1cbc4d8a3acced2a1a3817620",
+                      "textEventIndex": 5,
+                      "segmentIndex": 0
+                    }
+                  ],
+                  "speakerRaw": {
+                    "method": "native-name-slot",
+                    "codeOffset": 411,
+                    "rawHex": "836083548367",
+                    "text": "チサト",
+                    "decodedText": "チサト"
+                  },
+                  "ruby": [],
+                  "controls": [],
+                  "boundary": {
+                    "codeOffset": 458,
+                    "control": "p"
+                  }
+                }
+              },
+              "nextEventId": "mjo-1d6",
+              "textLineIndex": {
+                "zh-CN": 3
+              },
+              "cues": [
+                {
+                  "cueId": "cue-9242893b84a81762",
+                  "kind": "voice",
+                  "timing": "utterance",
+                  "mediaId": "asset/a-de7346382f2b9682",
+                  "resolverId": "research-media-v1",
+                  "raw": {
+                    "sourceKey": "n3tisa_0987",
+                    "codeOffset": 383,
+                    "playbackPath": "raw/narcissu3/voice.arc.unpacked/n3tisa_0987.ogg",
+                    "targetEventId": "mjo-1aa"
+                  }
+                }
+              ]
+            },
+            {
+              "eventId": "mjo-1d6",
+              "kind": "line",
+              "source": {
+                "engine": "majiro",
+                "variantSourceId": "mjo/narcissu3/update.arc.unpacked/nard14",
+                "scriptPath": "archive/derived/scripts/narcissu3/update.arc.unpacked/nard14.script.json",
+                "textEventIndices": [
+                  6
+                ],
+                "codeOffsets": [
+                  470
+                ],
+                "nativeUnit": {
+                  "schema": "majiro-display-unit/v1",
+                  "codeOffset": 470,
+                  "endCodeOffset": 510,
+                  "bodyCodeOffset": 470,
+                  "codeOffsets": [
+                    470,
+                    508
+                  ],
+                  "textEventIndices": [
+                    6
+                  ],
+                  "textParts": [
+                    {
+                      "kind": "text",
+                      "text": "我对着毫无一物的房间里自言自语。 ",
+                      "codeOffset": 470,
+                      "rawText": "我对着毫无一物的房间里自言自语。 ",
+                      "rawHex": "ced2b6d4d7c5bac1ceded2bbceefb5c4b7bfbce4c0efd7d4d1d4d7d4d3efa1a320",
+                      "textEventIndex": 6,
+                      "segmentIndex": 0
+                    }
+                  ],
+                  "speakerRaw": null,
+                  "ruby": [],
+                  "controls": [],
+                  "boundary": {
+                    "codeOffset": 510,
+                    "control": "p"
+                  }
+                }
+              },
+              "nextEventId": "mjo-20a",
+              "textLineIndex": {
+                "zh-CN": 4
+              }
+            },
+            {
+              "eventId": "mjo-20a",
+              "kind": "line",
+              "source": {
+                "engine": "majiro",
+                "variantSourceId": "mjo/narcissu3/update.arc.unpacked/nard14",
+                "scriptPath": "archive/derived/scripts/narcissu3/update.arc.unpacked/nard14.script.json",
+                "textEventIndices": [
+                  7
+                ],
+                "codeOffsets": [
+                  522
+                ],
+                "nativeUnit": {
+                  "schema": "majiro-display-unit/v1",
+                  "codeOffset": 522,
+                  "endCodeOffset": 550,
+                  "bodyCodeOffset": 522,
+                  "codeOffsets": [
+                    522,
+                    548
+                  ],
+                  "textEventIndices": [
+                    7
+                  ],
+                  "textParts": [
+                    {
+                      "kind": "text",
+                      "text": "……明明不是那样的。 ",
+                      "codeOffset": 522,
+                      "rawText": "……明明不是那样的。 ",
+                      "rawHex": "a1ada1adc3f7c3f7b2bbcac7c4c7d1f9b5c4a1a320",
+                      "textEventIndex": 7,
+                      "segmentIndex": 0
+                    }
+                  ],
+                  "speakerRaw": null,
+                  "ruby": [],
+                  "controls": [],
+                  "boundary": {
+                    "codeOffset": 550,
+                    "control": "p"
+                  }
+                }
+              },
+              "nextEventId": "mjo-232",
+              "textLineIndex": {
+                "zh-CN": 5
+              }
+            },
+            {
+              "eventId": "mjo-232",
+              "kind": "line",
+              "source": {
+                "engine": "majiro",
+                "variantSourceId": "mjo/narcissu3/update.arc.unpacked/nard14",
+                "scriptPath": "archive/derived/scripts/narcissu3/update.arc.unpacked/nard14.script.json",
+                "textEventIndices": [
+                  8
+                ],
+                "codeOffsets": [
+                  562
+                ],
+                "nativeUnit": {
+                  "schema": "majiro-display-unit/v1",
+                  "codeOffset": 562,
+                  "endCodeOffset": 608,
+                  "bodyCodeOffset": 562,
+                  "codeOffsets": [
+                    562,
+                    606
+                  ],
+                  "textEventIndices": [
+                    8
+                  ],
+                  "textParts": [
+                    {
+                      "kind": "text",
+                      "text": "明明决定了要那样做，明明的确那样做了。 ",
+                      "codeOffset": 562,
+                      "rawText": "明明决定了要那样做，明明的确那样做了。 ",
+                      "rawHex": "c3f7c3f7bef6b6a8c1cbd2aac4c7d1f9d7f6a3acc3f7c3f7b5c4c8b7c4c7d1f9d7f6c1cba1a320",
+                      "textEventIndex": 8,
+                      "segmentIndex": 0
+                    }
+                  ],
+                  "speakerRaw": null,
+                  "ruby": [],
+                  "controls": [],
+                  "boundary": {
+                    "codeOffset": 608,
+                    "control": "p"
+                  }
+                }
+              },
+              "nextEventId": "mjo-26c",
+              "textLineIndex": {
+                "zh-CN": 6
+              }
+            },
+            {
+              "eventId": "mjo-26c",
+              "kind": "line",
+              "source": {
+                "engine": "majiro",
+                "variantSourceId": "mjo/narcissu3/update.arc.unpacked/nard14",
+                "scriptPath": "archive/derived/scripts/narcissu3/update.arc.unpacked/nard14.script.json",
+                "textEventIndices": [
+                  9
+                ],
+                "codeOffsets": [
+                  620
+                ],
+                "nativeUnit": {
+                  "schema": "majiro-display-unit/v1",
+                  "codeOffset": 620,
+                  "endCodeOffset": 652,
+                  "bodyCodeOffset": 620,
+                  "codeOffsets": [
+                    620,
+                    650
+                  ],
+                  "textEventIndices": [
+                    9
+                  ],
+                  "textParts": [
+                    {
+                      "kind": "text",
+                      "text": "——黑暗，寒冷的房间里。 ",
+                      "codeOffset": 620,
+                      "rawText": "——黑暗，寒冷的房间里。 ",
+                      "rawHex": "a1aaa1aabadab0b5a3acbaaec0e4b5c4b7bfbce4c0efa1a320",
+                      "textEventIndex": 9,
+                      "segmentIndex": 0
+                    }
+                  ],
+                  "speakerRaw": null,
+                  "ruby": [],
+                  "controls": [],
+                  "boundary": {
+                    "codeOffset": 652,
+                    "control": "p"
+                  }
+                }
+              },
+              "nextEventId": "mjo-298",
+              "textLineIndex": {
+                "zh-CN": 7
+              }
+            },
+            {
+              "eventId": "mjo-298",
+              "kind": "line",
+              "source": {
+                "engine": "majiro",
+                "variantSourceId": "mjo/narcissu3/update.arc.unpacked/nard14",
+                "scriptPath": "archive/derived/scripts/narcissu3/update.arc.unpacked/nard14.script.json",
+                "textEventIndices": [
+                  10
+                ],
+                "codeOffsets": [
+                  664
+                ],
+                "nativeUnit": {
+                  "schema": "majiro-display-unit/v1",
+                  "codeOffset": 664,
+                  "endCodeOffset": 692,
+                  "bodyCodeOffset": 664,
+                  "codeOffsets": [
+                    664,
+                    690
+                  ],
+                  "textEventIndices": [
+                    10
+                  ],
+                  "textParts": [
+                    {
+                      "kind": "text",
+                      "text": "我一个人胡思乱想着。 ",
+                      "codeOffset": 664,
+                      "rawText": "我一个人胡思乱想着。 ",
+                      "rawHex": "ced2d2bbb8f6c8cbbafacbbcc2d2cfebd7c5a1a320",
+                      "textEventIndex": 10,
+                      "segmentIndex": 0
+                    }
+                  ],
+                  "speakerRaw": null,
+                  "ruby": [],
+                  "controls": [],
+                  "boundary": {
+                    "codeOffset": 692,
+                    "control": "p"
+                  }
+                }
+              },
+              "nextEventId": "mjo-2c0",
+              "textLineIndex": {
+                "zh-CN": 8
+              }
+            },
+            {
+              "eventId": "mjo-2c0",
+              "kind": "line",
+              "source": {
+                "engine": "majiro",
+                "variantSourceId": "mjo/narcissu3/update.arc.unpacked/nard14",
+                "scriptPath": "archive/derived/scripts/narcissu3/update.arc.unpacked/nard14.script.json",
+                "textEventIndices": [
+                  11
+                ],
+                "codeOffsets": [
+                  704
+                ],
+                "nativeUnit": {
+                  "schema": "majiro-display-unit/v1",
+                  "codeOffset": 704,
+                  "endCodeOffset": 790,
+                  "bodyCodeOffset": 704,
+                  "codeOffsets": [
+                    704,
+                    788
+                  ],
+                  "textEventIndices": [
+                    11
+                  ],
+                  "textParts": [
+                    {
+                      "kind": "text",
+                      "text": "想着到今天为止的事，今天的事，明天的事，还有明天以后的事……实际上想了非常多。 ",
+                      "codeOffset": 704,
+                      "rawText": "想着到今天为止的事，今天的事，明天的事，还有明天以后的事……实际上想了非常多。 ",
+                      "rawHex": "cfebd7c5b5bdbdf1ccecceaad6b9b5c4cac2a3acbdf1ccecb5c4cac2a3acc3f7ccecb5c4cac2a3acbbb9d3d0c3f7ccecd2d4baf3b5c4cac2a1ada1adcab5bccac9cfcfebc1cbb7c7b3a3b6e0a1a320",
+                      "textEventIndex": 11,
+                      "segmentIndex": 0
+                    }
+                  ],
+                  "speakerRaw": null,
+                  "ruby": [],
+                  "controls": [],
+                  "boundary": {
+                    "codeOffset": 790,
+                    "control": "p"
+                  }
+                }
+              },
+              "nextEventId": "mjo-322",
+              "textLineIndex": {
+                "zh-CN": 9
+              }
+            },
+            {
+              "eventId": "mjo-322",
+              "kind": "line",
+              "source": {
+                "engine": "majiro",
+                "variantSourceId": "mjo/narcissu3/update.arc.unpacked/nard14",
+                "scriptPath": "archive/derived/scripts/narcissu3/update.arc.unpacked/nard14.script.json",
+                "textEventIndices": [
+                  12
+                ],
+                "codeOffsets": [
+                  802
+                ],
+                "nativeUnit": {
+                  "schema": "majiro-display-unit/v1",
+                  "codeOffset": 802,
+                  "endCodeOffset": 818,
+                  "bodyCodeOffset": 802,
+                  "codeOffsets": [
+                    802,
+                    816
+                  ],
+                  "textEventIndices": [
+                    12
+                  ],
+                  "textParts": [
+                    {
+                      "kind": "text",
+                      "text": "不过…… ",
+                      "codeOffset": 802,
+                      "rawText": "不过…… ",
+                      "rawHex": "b2bbb9fda1ada1ad20",
+                      "textEventIndex": 12,
+                      "segmentIndex": 0
+                    }
+                  ],
+                  "speakerRaw": null,
+                  "ruby": [],
+                  "controls": [],
+                  "boundary": {
+                    "codeOffset": 818,
+                    "control": "p"
+                  }
+                }
+              },
+              "nextEventId": "mjo-33e",
+              "textLineIndex": {
+                "zh-CN": 10
+              }
+            },
+            {
+              "eventId": "mjo-33e",
+              "kind": "line",
+              "source": {
+                "engine": "majiro",
+                "variantSourceId": "mjo/narcissu3/update.arc.unpacked/nard14",
+                "scriptPath": "archive/derived/scripts/narcissu3/update.arc.unpacked/nard14.script.json",
+                "textEventIndices": [
+                  13
+                ],
+                "codeOffsets": [
+                  830
+                ],
+                "nativeUnit": {
+                  "schema": "majiro-display-unit/v1",
+                  "codeOffset": 830,
+                  "endCodeOffset": 866,
+                  "bodyCodeOffset": 830,
+                  "codeOffsets": [
+                    830,
+                    864
+                  ],
+                  "textEventIndices": [
+                    13
+                  ],
+                  "textParts": [
+                    {
+                      "kind": "text",
+                      "text": "果然，想得最多的是今天的事。 ",
+                      "codeOffset": 830,
+                      "rawText": "果然，想得最多的是今天的事。 ",
+                      "rawHex": "b9fbc8bba3accfebb5c3d7eeb6e0b5c4cac7bdf1ccecb5c4cac2a1a320",
+                      "textEventIndex": 13,
+                      "segmentIndex": 0
+                    }
+                  ],
+                  "speakerRaw": null,
+                  "ruby": [],
+                  "controls": [],
+                  "boundary": {
+                    "codeOffset": 866,
+                    "control": "p"
+                  }
+                }
+              },
+              "nextEventId": "mjo-36e",
+              "textLineIndex": {
+                "zh-CN": 11
+              }
+            },
+            {
+              "eventId": "mjo-36e",
+              "kind": "line",
+              "source": {
+                "engine": "majiro",
+                "variantSourceId": "mjo/narcissu3/update.arc.unpacked/nard14",
+                "scriptPath": "archive/derived/scripts/narcissu3/update.arc.unpacked/nard14.script.json",
+                "textEventIndices": [
+                  14
+                ],
+                "codeOffsets": [
+                  878
+                ],
+                "nativeUnit": {
+                  "schema": "majiro-display-unit/v1",
+                  "codeOffset": 878,
+                  "endCodeOffset": 906,
+                  "bodyCodeOffset": 878,
+                  "codeOffsets": [
+                    878,
+                    904
+                  ],
+                  "textEventIndices": [
+                    14
+                  ],
+                  "textParts": [
+                    {
+                      "kind": "text",
+                      "text": "嘛，那也是当然的吧。 ",
+                      "codeOffset": 878,
+                      "rawText": "嘛，那也是当然的吧。 ",
+                      "rawHex": "c2efa3acc4c7d2b2cac7b5b1c8bbb5c4b0c9a1a320",
+                      "textEventIndex": 14,
+                      "segmentIndex": 0
+                    }
+                  ],
+                  "speakerRaw": null,
+                  "ruby": [],
+                  "controls": [],
+                  "boundary": {
+                    "codeOffset": 906,
+                    "control": "p"
+                  }
+                }
+              },
+              "nextEventId": "mjo-396",
+              "textLineIndex": {
+                "zh-CN": 12
+              }
+            },
+            {
+              "eventId": "mjo-396",
+              "kind": "line",
+              "source": {
+                "engine": "majiro",
+                "variantSourceId": "mjo/narcissu3/update.arc.unpacked/nard14",
+                "scriptPath": "archive/derived/scripts/narcissu3/update.arc.unpacked/nard14.script.json",
+                "textEventIndices": [
+                  15
+                ],
+                "codeOffsets": [
+                  918
+                ],
+                "nativeUnit": {
+                  "schema": "majiro-display-unit/v1",
+                  "codeOffset": 918,
+                  "endCodeOffset": 946,
+                  "bodyCodeOffset": 918,
+                  "codeOffsets": [
+                    918,
+                    944
+                  ],
+                  "textEventIndices": [
+                    15
+                  ],
+                  "textParts": [
+                    {
+                      "kind": "text",
+                      "text": "……那是痛苦的决断。 ",
+                      "codeOffset": 918,
+                      "rawText": "……那是痛苦的决断。 ",
+                      "rawHex": "a1ada1adc4c7cac7cdb4bfe0b5c4bef6b6cfa1a320",
+                      "textEventIndex": 15,
+                      "segmentIndex": 0
+                    }
+                  ],
+                  "speakerRaw": null,
+                  "ruby": [],
+                  "controls": [],
+                  "boundary": {
+                    "codeOffset": 946,
+                    "control": "p"
+                  }
+                }
+              },
+              "nextEventId": "mjo-3be",
+              "textLineIndex": {
+                "zh-CN": 13
+              }
+            },
+            {
+              "eventId": "mjo-3be",
+              "kind": "line",
+              "source": {
+                "engine": "majiro",
+                "variantSourceId": "mjo/narcissu3/update.arc.unpacked/nard14",
+                "scriptPath": "archive/derived/scripts/narcissu3/update.arc.unpacked/nard14.script.json",
+                "textEventIndices": [
+                  16
+                ],
+                "codeOffsets": [
+                  958
+                ],
+                "nativeUnit": {
+                  "schema": "majiro-display-unit/v1",
+                  "codeOffset": 958,
+                  "endCodeOffset": 1016,
+                  "bodyCodeOffset": 958,
+                  "codeOffsets": [
+                    958,
+                    1014
+                  ],
+                  "textEventIndices": [
+                    16
+                  ],
+                  "textParts": [
+                    {
+                      "kind": "text",
+                      "text": "然后真正痛苦的是，说的人和听的人……都是那么痛苦。 ",
+                      "codeOffset": 958,
+                      "rawText": "然后真正痛苦的是，说的人和听的人……都是那么痛苦。 ",
+                      "rawHex": "c8bbbaf3d5e6d5fdcdb4bfe0b5c4cac7a3accbb5b5c4c8cbbacdccfdb5c4c8cba1ada1adb6bccac7c4c7c3b4cdb4bfe0a1a320",
+                      "textEventIndex": 16,
+                      "segmentIndex": 0
+                    }
+                  ],
+                  "speakerRaw": null,
+                  "ruby": [],
+                  "controls": [],
+                  "boundary": {
+                    "codeOffset": 1016,
+                    "control": "p"
+                  }
+                }
+              },
+              "nextEventId": "mjo-404",
+              "textLineIndex": {
+                "zh-CN": 14
+              }
+            },
+            {
+              "eventId": "mjo-404",
+              "kind": "line",
+              "source": {
+                "engine": "majiro",
+                "variantSourceId": "mjo/narcissu3/update.arc.unpacked/nard14",
+                "scriptPath": "archive/derived/scripts/narcissu3/update.arc.unpacked/nard14.script.json",
+                "textEventIndices": [
+                  17
+                ],
+                "codeOffsets": [
+                  1028
+                ],
+                "nativeUnit": {
+                  "schema": "majiro-display-unit/v1",
+                  "codeOffset": 1028,
+                  "endCodeOffset": 1060,
+                  "bodyCodeOffset": 1028,
+                  "codeOffsets": [
+                    1028,
+                    1058
+                  ],
+                  "textEventIndices": [
+                    17
+                  ],
+                  "textParts": [
+                    {
+                      "kind": "text",
+                      "text": "不过这样就好了……一定。 ",
+                      "codeOffset": 1028,
+                      "rawText": "不过这样就好了……一定。 ",
+                      "rawHex": "b2bbb9fdd5e2d1f9becdbac3c1cba1ada1add2bbb6a8a1a320",
+                      "textEventIndex": 17,
+                      "segmentIndex": 0
+                    }
+                  ],
+                  "speakerRaw": null,
+                  "ruby": [],
+                  "controls": [],
+                  "boundary": {
+                    "codeOffset": 1060,
+                    "control": "p"
+                  }
+                }
+              },
+              "nextEventId": "mjo-430",
+              "textLineIndex": {
+                "zh-CN": 15
+              }
+            },
+            {
+              "eventId": "mjo-430",
+              "kind": "line",
+              "source": {
+                "engine": "majiro",
+                "variantSourceId": "mjo/narcissu3/update.arc.unpacked/nard14",
+                "scriptPath": "archive/derived/scripts/narcissu3/update.arc.unpacked/nard14.script.json",
+                "textEventIndices": [
+                  18
+                ],
+                "codeOffsets": [
+                  1072
+                ],
+                "nativeUnit": {
+                  "schema": "majiro-display-unit/v1",
+                  "codeOffset": 1072,
+                  "endCodeOffset": 1102,
+                  "bodyCodeOffset": 1072,
+                  "codeOffsets": [
+                    1072,
+                    1100
+                  ],
+                  "textEventIndices": [
+                    18
+                  ],
+                  "textParts": [
+                    {
+                      "kind": "text",
+                      "text": "那样做也是为了那个人。 ",
+                      "codeOffset": 1072,
+                      "rawText": "那样做也是为了那个人。 ",
+                      "rawHex": "c4c7d1f9d7f6d2b2cac7ceaac1cbc4c7b8f6c8cba1a320",
+                      "textEventIndex": 18,
+                      "segmentIndex": 0
+                    }
+                  ],
+                  "speakerRaw": null,
+                  "ruby": [],
+                  "controls": [],
+                  "boundary": {
+                    "codeOffset": 1102,
+                    "control": "p"
+                  }
+                }
+              },
+              "nextEventId": "mjo-45a",
+              "textLineIndex": {
+                "zh-CN": 16
+              }
+            },
+            {
+              "eventId": "mjo-45a",
+              "kind": "line",
+              "source": {
+                "engine": "majiro",
+                "variantSourceId": "mjo/narcissu3/update.arc.unpacked/nard14",
+                "scriptPath": "archive/derived/scripts/narcissu3/update.arc.unpacked/nard14.script.json",
+                "textEventIndices": [
+                  19
+                ],
+                "codeOffsets": [
+                  1114
+                ],
+                "nativeUnit": {
+                  "schema": "majiro-display-unit/v1",
+                  "codeOffset": 1114,
+                  "endCodeOffset": 1176,
+                  "bodyCodeOffset": 1114,
+                  "codeOffsets": [
+                    1114,
+                    1174
+                  ],
+                  "textEventIndices": [
+                    19
+                  ],
+                  "textParts": [
+                    {
+                      "kind": "text",
+                      "text": "我那样劝说自己，这是正确的，我告诉自己做了正确的判断。 ",
+                      "codeOffset": 1114,
+                      "rawText": "我那样劝说自己，这是正确的，我告诉自己做了正确的判断。 ",
+                      "rawHex": "ced2c4c7d1f9c8b0cbb5d7d4bcbaa3acd5e2cac7d5fdc8b7b5c4a3acced2b8e6cbdfd7d4bcbad7f6c1cbd5fdc8b7b5c4c5d0b6cfa1a320",
+                      "textEventIndex": 19,
+                      "segmentIndex": 0
+                    }
+                  ],
+                  "speakerRaw": null,
+                  "ruby": [],
+                  "controls": [],
+                  "boundary": {
+                    "codeOffset": 1176,
+                    "control": "p"
+                  }
+                }
+              },
+              "nextEventId": "mjo-4a4",
+              "textLineIndex": {
+                "zh-CN": 17
+              }
+            },
+            {
+              "eventId": "mjo-4a4",
+              "kind": "line",
+              "source": {
+                "engine": "majiro",
+                "variantSourceId": "mjo/narcissu3/update.arc.unpacked/nard14",
+                "scriptPath": "archive/derived/scripts/narcissu3/update.arc.unpacked/nard14.script.json",
+                "textEventIndices": [
+                  20
+                ],
+                "codeOffsets": [
+                  1188
+                ],
+                "nativeUnit": {
+                  "schema": "majiro-display-unit/v1",
+                  "codeOffset": 1188,
+                  "endCodeOffset": 1206,
+                  "bodyCodeOffset": 1188,
+                  "codeOffsets": [
+                    1188,
+                    1204
+                  ],
+                  "textEventIndices": [
+                    20
+                  ],
+                  "textParts": [
+                    {
+                      "kind": "text",
+                      "text": "——明天。 ",
+                      "codeOffset": 1188,
+                      "rawText": "——明天。 ",
+                      "rawHex": "a1aaa1aac3f7cceca1a320",
+                      "textEventIndex": 20,
+                      "segmentIndex": 0
+                    }
+                  ],
+                  "speakerRaw": null,
+                  "ruby": [],
+                  "controls": [],
+                  "boundary": {
+                    "codeOffset": 1206,
+                    "control": "p"
+                  }
+                }
+              },
+              "nextEventId": "mjo-4c2",
+              "textLineIndex": {
+                "zh-CN": 18
+              }
+            },
+            {
+              "eventId": "mjo-4c2",
+              "kind": "line",
+              "source": {
+                "engine": "majiro",
+                "variantSourceId": "mjo/narcissu3/update.arc.unpacked/nard14",
+                "scriptPath": "archive/derived/scripts/narcissu3/update.arc.unpacked/nard14.script.json",
+                "textEventIndices": [
+                  21
+                ],
+                "codeOffsets": [
+                  1218
+                ],
+                "nativeUnit": {
+                  "schema": "majiro-display-unit/v1",
+                  "codeOffset": 1218,
+                  "endCodeOffset": 1242,
+                  "bodyCodeOffset": 1218,
+                  "codeOffsets": [
+                    1218,
+                    1240
+                  ],
+                  "textEventIndices": [
+                    21
+                  ],
+                  "textParts": [
+                    {
+                      "kind": "text",
+                      "text": "我就要去７楼了。 ",
+                      "codeOffset": 1218,
+                      "rawText": "我就要去７楼了。 ",
+                      "rawHex": "ced2becdd2aac8a5a3b7c2a5c1cba1a320",
+                      "textEventIndex": 21,
+                      "segmentIndex": 0
+                    }
+                  ],
+                  "speakerRaw": null,
+                  "ruby": [],
+                  "controls": [],
+                  "boundary": {
+                    "codeOffset": 1242,
+                    "control": "p"
+                  }
+                }
+              },
+              "nextEventId": "mjo-4e6",
+              "textLineIndex": {
+                "zh-CN": 19
+              }
+            },
+            {
+              "eventId": "mjo-4e6",
+              "kind": "line",
+              "source": {
+                "engine": "majiro",
+                "variantSourceId": "mjo/narcissu3/update.arc.unpacked/nard14",
+                "scriptPath": "archive/derived/scripts/narcissu3/update.arc.unpacked/nard14.script.json",
+                "textEventIndices": [
+                  22
+                ],
+                "codeOffsets": [
+                  1254
+                ],
+                "nativeUnit": {
+                  "schema": "majiro-display-unit/v1",
+                  "codeOffset": 1254,
+                  "endCodeOffset": 1324,
+                  "bodyCodeOffset": 1254,
+                  "codeOffsets": [
+                    1254,
+                    1322
+                  ],
+                  "textEventIndices": [
+                    22
+                  ],
+                  "textParts": [
+                    {
+                      "kind": "text",
+                      "text": "那在某种意义上，和走向比卷云所漂浮的天空还要高的地方是一样的。 ",
+                      "codeOffset": 1254,
+                      "rawText": "那在某种意义上，和走向比卷云所漂浮的天空还要高的地方是一样的。 ",
+                      "rawHex": "c4c7d4dac4b3d6d6d2e2d2e5c9cfa3acbacdd7dfcff2b1c8beedd4c6cbf9c6afb8a1b5c4ccecbfd5bbb9d2aab8dfb5c4b5d8b7bdcac7d2bbd1f9b5c4a1a320",
+                      "textEventIndex": 22,
+                      "segmentIndex": 0
+                    }
+                  ],
+                  "speakerRaw": null,
+                  "ruby": [],
+                  "controls": [],
+                  "boundary": {
+                    "codeOffset": 1324,
+                    "control": "p"
+                  }
+                }
+              },
+              "nextEventId": "mjo-538",
+              "textLineIndex": {
+                "zh-CN": 20
+              }
+            },
+            {
+              "eventId": "mjo-538",
+              "kind": "line",
+              "source": {
+                "engine": "majiro",
+                "variantSourceId": "mjo/narcissu3/update.arc.unpacked/nard14",
+                "scriptPath": "archive/derived/scripts/narcissu3/update.arc.unpacked/nard14.script.json",
+                "textEventIndices": [
+                  23
+                ],
+                "codeOffsets": [
+                  1336
+                ],
+                "nativeUnit": {
+                  "schema": "majiro-display-unit/v1",
+                  "codeOffset": 1336,
+                  "endCodeOffset": 1384,
+                  "bodyCodeOffset": 1336,
+                  "codeOffsets": [
+                    1336,
+                    1382
+                  ],
+                  "textEventIndices": [
+                    23
+                  ],
+                  "textParts": [
+                    {
+                      "kind": "text",
+                      "text": "对我来说那是那非常讽刺，是个恶劣的笑话。 ",
+                      "codeOffset": 1336,
+                      "rawText": "对我来说那是那非常讽刺，是个恶劣的笑话。 ",
+                      "rawHex": "b6d4ced2c0b4cbb5c4c7cac7c4c7b7c7b3a3b7edb4cca3accac7b8f6b6f1c1d3b5c4d0a6bbb0a1a320",
+                      "textEventIndex": 23,
+                      "segmentIndex": 0
+                    }
+                  ],
+                  "speakerRaw": null,
+                  "ruby": [],
+                  "controls": [],
+                  "boundary": {
+                    "codeOffset": 1384,
+                    "control": "p"
+                  }
+                }
+              },
+              "nextEventId": "mjo-574",
+              "textLineIndex": {
+                "zh-CN": 21
+              }
+            },
+            {
+              "eventId": "mjo-574",
+              "kind": "line",
+              "source": {
+                "engine": "majiro",
+                "variantSourceId": "mjo/narcissu3/update.arc.unpacked/nard14",
+                "scriptPath": "archive/derived/scripts/narcissu3/update.arc.unpacked/nard14.script.json",
+                "textEventIndices": [
+                  24
+                ],
+                "codeOffsets": [
+                  1396
+                ],
+                "nativeUnit": {
+                  "schema": "majiro-display-unit/v1",
+                  "codeOffset": 1396,
+                  "endCodeOffset": 1460,
+                  "bodyCodeOffset": 1396,
+                  "codeOffsets": [
+                    1396,
+                    1458
+                  ],
+                  "textEventIndices": [
+                    24
+                  ],
+                  "textParts": [
+                    {
+                      "kind": "text",
+                      "text": "……我不能够按照正规的做法，一个一个地抵消到卷云的高度。 ",
+                      "codeOffset": 1396,
+                      "rawText": "……我不能够按照正规的做法，一个一个地抵消到卷云的高度。 ",
+                      "rawHex": "a1ada1adced2b2bbc4dcb9bbb0b4d5d5d5fdb9e6b5c4d7f6b7a8a3acd2bbb8f6d2bbb8f6b5d8b5d6cffbb5bdbeedd4c6b5c4b8dfb6c8a1a320",
+                      "textEventIndex": 24,
+                      "segmentIndex": 0
+                    }
+                  ],
+                  "speakerRaw": null,
+                  "ruby": [],
+                  "controls": [],
+                  "boundary": {
+                    "codeOffset": 1460,
+                    "control": "p"
+                  }
+                }
+              },
+              "nextEventId": "mjo-5c0",
+              "textLineIndex": {
+                "zh-CN": 22
+              }
+            },
+            {
+              "eventId": "mjo-5c0",
+              "kind": "line",
+              "source": {
+                "engine": "majiro",
+                "variantSourceId": "mjo/narcissu3/update.arc.unpacked/nard14",
+                "scriptPath": "archive/derived/scripts/narcissu3/update.arc.unpacked/nard14.script.json",
+                "textEventIndices": [
+                  25
+                ],
+                "codeOffsets": [
+                  1472
+                ],
+                "nativeUnit": {
+                  "schema": "majiro-display-unit/v1",
+                  "codeOffset": 1472,
+                  "endCodeOffset": 1518,
+                  "bodyCodeOffset": 1472,
+                  "codeOffsets": [
+                    1472,
+                    1516
+                  ],
+                  "textEventIndices": [
+                    25
+                  ],
+                  "textParts": [
+                    {
+                      "kind": "text",
+                      "text": "那样的我却，要到比卷云还高的地方去…… ",
+                      "codeOffset": 1472,
+                      "rawText": "那样的我却，要到比卷云还高的地方去…… ",
+                      "rawHex": "c4c7d1f9b5c4ced2c8b4a3acd2aab5bdb1c8beedd4c6bbb9b8dfb5c4b5d8b7bdc8a5a1ada1ad20",
+                      "textEventIndex": 25,
+                      "segmentIndex": 0
+                    }
+                  ],
+                  "speakerRaw": null,
+                  "ruby": [],
+                  "controls": [],
+                  "boundary": {
+                    "codeOffset": 1518,
+                    "control": "p"
+                  }
+                }
+              },
+              "nextEventId": "mjo-5fa",
+              "textLineIndex": {
+                "zh-CN": 23
+              }
+            },
+            {
+              "eventId": "mjo-5fa",
+              "kind": "line",
+              "source": {
+                "engine": "majiro",
+                "variantSourceId": "mjo/narcissu3/update.arc.unpacked/nard14",
+                "scriptPath": "archive/derived/scripts/narcissu3/update.arc.unpacked/nard14.script.json",
+                "textEventIndices": [
+                  26
+                ],
+                "codeOffsets": [
+                  1530
+                ],
+                "nativeUnit": {
+                  "schema": "majiro-display-unit/v1",
+                  "codeOffset": 1530,
+                  "endCodeOffset": 1588,
+                  "bodyCodeOffset": 1530,
+                  "codeOffsets": [
+                    1530,
+                    1586
+                  ],
+                  "textEventIndices": [
+                    26
+                  ],
+                  "textParts": [
+                    {
+                      "kind": "text",
+                      "text": "明天，还没有到达到卷云的高度的我，就要去７楼了—— ",
+                      "codeOffset": 1530,
+                      "rawText": "明天，还没有到达到卷云的高度的我，就要去７楼了—— ",
+                      "rawHex": "c3f7cceca3acbbb9c3bbd3d0b5bdb4efb5bdbeedd4c6b5c4b8dfb6c8b5c4ced2a3acbecdd2aac8a5a3b7c2a5c1cba1aaa1aa20",
+                      "textEventIndex": 26,
+                      "segmentIndex": 0
+                    }
+                  ],
+                  "speakerRaw": null,
+                  "ruby": [],
+                  "controls": [],
+                  "boundary": {
+                    "codeOffset": 1588,
+                    "control": "p"
+                  }
+                }
+              },
+              "nextEventId": "mjo-640",
+              "textLineIndex": {
+                "zh-CN": 24
+              }
+            },
+            {
+              "eventId": "mjo-640",
+              "kind": "line",
+              "source": {
+                "engine": "majiro",
+                "variantSourceId": "mjo/narcissu3/update.arc.unpacked/nard14",
+                "scriptPath": "archive/derived/scripts/narcissu3/update.arc.unpacked/nard14.script.json",
+                "textEventIndices": [
+                  27
+                ],
+                "codeOffsets": [
+                  1600
+                ],
+                "nativeUnit": {
+                  "schema": "majiro-display-unit/v1",
+                  "codeOffset": 1600,
+                  "endCodeOffset": 1648,
+                  "bodyCodeOffset": 1600,
+                  "codeOffsets": [
+                    1600,
+                    1646
+                  ],
+                  "textEventIndices": [
+                    27
+                  ],
+                  "textParts": [
+                    {
+                      "kind": "text",
+                      "text": "那是远离地上的生活７０００米以上的地方。 ",
+                      "codeOffset": 1600,
+                      "rawText": "那是远离地上的生活７０００米以上的地方。 ",
+                      "rawHex": "c4c7cac7d4b6c0ebb5d8c9cfb5c4c9fabbeea3b7a3b0a3b0a3b0c3d7d2d4c9cfb5c4b5d8b7bda1a320",
+                      "textEventIndex": 27,
+                      "segmentIndex": 0
+                    }
+                  ],
+                  "speakerRaw": null,
+                  "ruby": [],
+                  "controls": [],
+                  "boundary": {
+                    "codeOffset": 1648,
+                    "control": "p"
+                  }
+                }
+              },
+              "nextEventId": "mjo-67c",
+              "textLineIndex": {
+                "zh-CN": 25
+              }
+            },
+            {
+              "eventId": "mjo-67c",
+              "kind": "line",
+              "source": {
+                "engine": "majiro",
+                "variantSourceId": "mjo/narcissu3/update.arc.unpacked/nard14",
+                "scriptPath": "archive/derived/scripts/narcissu3/update.arc.unpacked/nard14.script.json",
+                "textEventIndices": [
+                  28
+                ],
+                "codeOffsets": [
+                  1660
+                ],
+                "nativeUnit": {
+                  "schema": "majiro-display-unit/v1",
+                  "codeOffset": 1660,
+                  "endCodeOffset": 1722,
+                  "bodyCodeOffset": 1660,
+                  "codeOffsets": [
+                    1660,
+                    1720
+                  ],
+                  "textEventIndices": [
+                    28
+                  ],
+                  "textParts": [
+                    {
+                      "kind": "text",
+                      "text": "我将要去那里，去那高空７０００米以上的接近死亡的地方。 ",
+                      "codeOffset": 1660,
+                      "rawText": "我将要去那里，去那高空７０００米以上的接近死亡的地方。 ",
+                      "rawHex": "ced2bdabd2aac8a5c4c7c0efa3acc8a5c4c7b8dfbfd5a3b7a3b0a3b0a3b0c3d7d2d4c9cfb5c4bdd3bdfccbc0cdf6b5c4b5d8b7bda1a320",
+                      "textEventIndex": 28,
+                      "segmentIndex": 0
+                    }
+                  ],
+                  "speakerRaw": null,
+                  "ruby": [],
+                  "controls": [],
+                  "boundary": {
+                    "codeOffset": 1722,
+                    "control": "p"
+                  }
+                }
+              },
+              "nextEventId": "mjo-6c6",
+              "textLineIndex": {
+                "zh-CN": 26
+              }
+            },
+            {
+              "eventId": "mjo-6c6",
+              "kind": "line",
+              "source": {
+                "engine": "majiro",
+                "variantSourceId": "mjo/narcissu3/update.arc.unpacked/nard14",
+                "scriptPath": "archive/derived/scripts/narcissu3/update.arc.unpacked/nard14.script.json",
+                "textEventIndices": [
+                  29
+                ],
+                "codeOffsets": [
+                  1734
+                ],
+                "nativeUnit": {
+                  "schema": "majiro-display-unit/v1",
+                  "codeOffset": 1734,
+                  "endCodeOffset": 1774,
+                  "bodyCodeOffset": 1734,
+                  "codeOffsets": [
+                    1734,
+                    1772
+                  ],
+                  "textEventIndices": [
+                    29
+                  ],
+                  "textParts": [
+                    {
+                      "kind": "text",
+                      "text": "——明天，那是我上去７楼的日子。 ",
+                      "codeOffset": 1734,
+                      "rawText": "——明天，那是我上去７楼的日子。 ",
+                      "rawHex": "a1aaa1aac3f7cceca3acc4c7cac7ced2c9cfc8a5a3b7c2a5b5c4c8d5d7d3a1a320",
+                      "textEventIndex": 29,
+                      "segmentIndex": 0
+                    }
+                  ],
+                  "speakerRaw": null,
+                  "ruby": [],
+                  "controls": [],
+                  "boundary": {
+                    "codeOffset": 1774,
+                    "control": "p"
+                  }
+                }
+              },
+              "nextEventId": "mjo-6fa",
+              "textLineIndex": {
+                "zh-CN": 27
+              }
+            },
+            {
+              "eventId": "mjo-6fa",
+              "kind": "line",
+              "source": {
+                "engine": "majiro",
+                "variantSourceId": "mjo/narcissu3/update.arc.unpacked/nard14",
+                "scriptPath": "archive/derived/scripts/narcissu3/update.arc.unpacked/nard14.script.json",
+                "textEventIndices": [
+                  30
+                ],
+                "codeOffsets": [
+                  1786
+                ],
+                "nativeUnit": {
+                  "schema": "majiro-display-unit/v1",
+                  "codeOffset": 1786,
+                  "endCodeOffset": 1828,
+                  "bodyCodeOffset": 1786,
+                  "codeOffsets": [
+                    1786,
+                    1826
+                  ],
+                  "textEventIndices": [
+                    30
+                  ],
+                  "textParts": [
+                    {
+                      "kind": "text",
+                      "text": "还有，是我不得不和哥哥诀别的日子。 ",
+                      "codeOffset": 1786,
+                      "rawText": "还有，是我不得不和哥哥诀别的日子。 ",
+                      "rawHex": "bbb9d3d0a3accac7ced2b2bbb5c3b2bbbacdb8e7b8e7bef7b1f0b5c4c8d5d7d3a1a320",
+                      "textEventIndex": 30,
+                      "segmentIndex": 0
+                    }
+                  ],
+                  "speakerRaw": null,
+                  "ruby": [],
+                  "controls": [],
+                  "boundary": {
+                    "codeOffset": 1828,
+                    "control": "p"
+                  }
+                }
+              },
+              "nextEventId": "mjo-730",
+              "textLineIndex": {
+                "zh-CN": 28
+              }
+            },
+            {
+              "eventId": "mjo-730",
+              "kind": "line",
+              "source": {
+                "engine": "majiro",
+                "variantSourceId": "mjo/narcissu3/update.arc.unpacked/nard14",
+                "scriptPath": "archive/derived/scripts/narcissu3/update.arc.unpacked/nard14.script.json",
+                "textEventIndices": [
+                  31
+                ],
+                "codeOffsets": [
+                  1840
+                ],
+                "nativeUnit": {
+                  "schema": "majiro-display-unit/v1",
+                  "codeOffset": 1840,
+                  "endCodeOffset": 1903,
+                  "bodyCodeOffset": 1840,
+                  "codeOffsets": [
+                    1840,
+                    1901
+                  ],
+                  "textEventIndices": [
+                    31
+                  ],
+                  "textParts": [
+                    {
+                      "kind": "text",
+                      "text": "那么悲伤的日子，那么悲伤的时刻，已经马上就要来临了——  ",
+                      "codeOffset": 1840,
+                      "rawText": "那么悲伤的日子，那么悲伤的时刻，已经马上就要来临了——  ",
+                      "rawHex": "c4c7c3b4b1afc9cbb5c4c8d5d7d3a3acc4c7c3b4b1afc9cbb5c4cab1bfcca3acd2d1beadc2edc9cfbecdd2aac0b4c1d9c1cba1aaa1aa2020",
+                      "textEventIndex": 31,
+                      "segmentIndex": 0
+                    }
+                  ],
+                  "speakerRaw": null,
+                  "ruby": [],
+                  "controls": [],
+                  "boundary": {
+                    "codeOffset": 1903,
+                    "control": "p"
+                  }
+                }
+              },
+              "nextEventId": "end-001",
+              "textLineIndex": {
+                "zh-CN": 29
+              }
+            },
+            {
+              "eventId": "end-001",
+              "kind": "end",
+              "cues": [
+                {
+                  "cueId": "cue-fb5ad90389e72031",
+                  "kind": "image",
+                  "timing": "scene",
+                  "mediaId": "asset/a-1e25df50e807fd1b",
+                  "resolverId": "research-media-v1",
+                  "raw": {
+                    "sourceKey": "black",
+                    "codeOffset": 1929,
+                    "playbackPath": "derived/images/narcissu3/fastdata.arc.unpacked/black.png",
+                    "targetEventId": "end-001"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "media": [
+    {
+      "mediaId": "asset/a-796d0325dd501200",
+      "role": "image",
+      "url": "/corpus/archive/derived/images/narcissu3/data1.arc.unpacked/n3d_ck_c01.png",
+      "mimeType": "image/png"
+    },
+    {
+      "mediaId": "asset/a-3d4ebd0ad56cbb99",
+      "role": "image",
+      "url": "/corpus/archive/derived/images/narcissu3/data1.arc.unpacked/n3d_ck_c02.png",
+      "mimeType": "image/png"
+    },
+    {
+      "mediaId": "asset/a-1e25df50e807fd1b",
+      "role": "image",
+      "url": "/corpus/archive/derived/images/narcissu3/fastdata.arc.unpacked/black.png",
+      "mimeType": "image/png"
+    },
+    {
+      "mediaId": "asset/a-1e7559daa9bfc1b2",
+      "role": "image",
+      "url": "/corpus/archive/derived/images/narcissu3/data1.arc.unpacked/b3.png",
+      "mimeType": "image/png"
+    },
+    {
+      "mediaId": "asset/a-9cd8b7329b470941",
+      "role": "voice",
+      "url": "/corpus/archive/raw/narcissu3/voice.arc.unpacked/n3tisa_0986.ogg",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "asset/a-ed4b45158ad23073",
+      "role": "bgm",
+      "url": "/corpus/archive/raw/narcissu3/stream.arc.unpacked/2sou01.ogg",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "asset/a-de7346382f2b9682",
+      "role": "voice",
+      "url": "/corpus/archive/raw/narcissu3/voice.arc.unpacked/n3tisa_0987.ogg",
+      "mimeType": "audio/ogg"
+    }
+  ]
+}

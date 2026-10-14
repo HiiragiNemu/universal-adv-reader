@@ -1,0 +1,3537 @@
+{
+  "schema": "kana-native-chapter-plan/v1",
+  "sourceRoot": "A:\\KANA",
+  "counts": {
+    "scriptMembersPerLanguage": 60,
+    "bilingualScriptMembers": 120,
+    "narrativeScripts": 52,
+    "excludedScripts": 8,
+    "bilingualInstructions": 642492,
+    "bilingualTextEvents": 32825,
+    "narrativeNativeTitleEvents": 95,
+    "narrativeNativeSections": 101,
+    "scriptsContainingMultipleNativeTitles": 19,
+    "japaneseNarrativeVisibleTextAndChoiceUnits": 16467,
+    "chineseNarrativeVisibleTextAndChoiceUnits": 16464,
+    "japaneseTextEvents": 16423,
+    "chineseTextEvents": 16402,
+    "sourceArchiveComparisonFailures": 0
+  },
+  "navigationOrderEvidence": "First explicit narrative call/load occurrence in the original MAIN instruction stream; includes alternative branches, not a claim of one linear playthrough.",
+  "nativeMainFirstOccurrenceOrder": [
+    "EV00",
+    "EV01",
+    "EV11",
+    "EV21",
+    "EV22",
+    "EV23",
+    "EV24",
+    "EV242",
+    "EV25",
+    "EV26",
+    "EV31",
+    "EV32",
+    "EV33",
+    "EV341",
+    "EV341A",
+    "EV341B",
+    "EV342",
+    "EV36",
+    "EV37",
+    "EV41",
+    "EV42",
+    "EV43",
+    "EV432",
+    "EV44",
+    "EV45",
+    "EV46",
+    "EV462A",
+    "EV462B",
+    "EV463",
+    "EV47A",
+    "EV47B",
+    "EV472",
+    "EV473",
+    "EV48",
+    "EV482A",
+    "EV482B",
+    "EV49A",
+    "EV49B",
+    "EV49B2",
+    "EV49B3",
+    "EV494",
+    "EV40A",
+    "EV40B",
+    "EV4A",
+    "ED1",
+    "ED2",
+    "ED3",
+    "ED4",
+    "ED4B",
+    "ED5",
+    "ED5B",
+    "ED6"
+  ],
+  "mainCrossScriptTransfers": [
+    {
+      "instructionIndex": 21,
+      "kind": "call-script",
+      "target": "EV00"
+    },
+    {
+      "instructionIndex": 23,
+      "kind": "call-script",
+      "target": "EV01"
+    },
+    {
+      "instructionIndex": 24,
+      "kind": "load-script",
+      "target": "TITLE"
+    },
+    {
+      "instructionIndex": 27,
+      "kind": "call-script",
+      "target": "EV11"
+    },
+    {
+      "instructionIndex": 30,
+      "kind": "call-script",
+      "target": "EV21"
+    },
+    {
+      "instructionIndex": 33,
+      "kind": "call-script",
+      "target": "EV22"
+    },
+    {
+      "instructionIndex": 36,
+      "kind": "call-script",
+      "target": "EV23"
+    },
+    {
+      "instructionIndex": 39,
+      "kind": "call-script",
+      "target": "EV24"
+    },
+    {
+      "instructionIndex": 46,
+      "kind": "call-script",
+      "target": "EV242"
+    },
+    {
+      "instructionIndex": 49,
+      "kind": "call-script",
+      "target": "EV25"
+    },
+    {
+      "instructionIndex": 52,
+      "kind": "call-script",
+      "target": "EV26"
+    },
+    {
+      "instructionIndex": 55,
+      "kind": "call-script",
+      "target": "EV31"
+    },
+    {
+      "instructionIndex": 58,
+      "kind": "call-script",
+      "target": "EV32"
+    },
+    {
+      "instructionIndex": 61,
+      "kind": "call-script",
+      "target": "EV33"
+    },
+    {
+      "instructionIndex": 69,
+      "kind": "call-script",
+      "target": "EV341"
+    },
+    {
+      "instructionIndex": 76,
+      "kind": "call-script",
+      "target": "EV341A"
+    },
+    {
+      "instructionIndex": 79,
+      "kind": "call-script",
+      "target": "EV341B"
+    },
+    {
+      "instructionIndex": 82,
+      "kind": "call-script",
+      "target": "EV342"
+    },
+    {
+      "instructionIndex": 85,
+      "kind": "call-script",
+      "target": "EV36"
+    },
+    {
+      "instructionIndex": 88,
+      "kind": "call-script",
+      "target": "EV37"
+    },
+    {
+      "instructionIndex": 91,
+      "kind": "call-script",
+      "target": "EV41"
+    },
+    {
+      "instructionIndex": 94,
+      "kind": "call-script",
+      "target": "EV42"
+    },
+    {
+      "instructionIndex": 97,
+      "kind": "call-script",
+      "target": "EV43"
+    },
+    {
+      "instructionIndex": 100,
+      "kind": "call-script",
+      "target": "EV432"
+    },
+    {
+      "instructionIndex": 103,
+      "kind": "call-script",
+      "target": "EV44"
+    },
+    {
+      "instructionIndex": 106,
+      "kind": "call-script",
+      "target": "EV45"
+    },
+    {
+      "instructionIndex": 109,
+      "kind": "call-script",
+      "target": "EV46"
+    },
+    {
+      "instructionIndex": 118,
+      "kind": "call-script",
+      "target": "EV462A"
+    },
+    {
+      "instructionIndex": 121,
+      "kind": "call-script",
+      "target": "EV462B"
+    },
+    {
+      "instructionIndex": 124,
+      "kind": "call-script",
+      "target": "EV463"
+    },
+    {
+      "instructionIndex": 127,
+      "kind": "call-script",
+      "target": "EV47A"
+    },
+    {
+      "instructionIndex": 130,
+      "kind": "call-script",
+      "target": "EV47B"
+    },
+    {
+      "instructionIndex": 133,
+      "kind": "call-script",
+      "target": "EV472"
+    },
+    {
+      "instructionIndex": 140,
+      "kind": "call-script",
+      "target": "EV473"
+    },
+    {
+      "instructionIndex": 143,
+      "kind": "call-script",
+      "target": "EV48"
+    },
+    {
+      "instructionIndex": 152,
+      "kind": "call-script",
+      "target": "EV482A"
+    },
+    {
+      "instructionIndex": 155,
+      "kind": "call-script",
+      "target": "EV482B"
+    },
+    {
+      "instructionIndex": 158,
+      "kind": "call-script",
+      "target": "EV49A"
+    },
+    {
+      "instructionIndex": 161,
+      "kind": "call-script",
+      "target": "EV49B"
+    },
+    {
+      "instructionIndex": 168,
+      "kind": "call-script",
+      "target": "EV49B2"
+    },
+    {
+      "instructionIndex": 171,
+      "kind": "call-script",
+      "target": "EV49B3"
+    },
+    {
+      "instructionIndex": 174,
+      "kind": "call-script",
+      "target": "EV494"
+    },
+    {
+      "instructionIndex": 183,
+      "kind": "call-script",
+      "target": "EV40A"
+    },
+    {
+      "instructionIndex": 186,
+      "kind": "call-script",
+      "target": "EV40B"
+    },
+    {
+      "instructionIndex": 189,
+      "kind": "call-script",
+      "target": "EV4A"
+    },
+    {
+      "instructionIndex": 204,
+      "kind": "call-script",
+      "target": "ED1"
+    },
+    {
+      "instructionIndex": 205,
+      "kind": "call-script",
+      "target": "STAFF_K"
+    },
+    {
+      "instructionIndex": 206,
+      "kind": "load-script",
+      "target": "TITLE"
+    },
+    {
+      "instructionIndex": 208,
+      "kind": "call-script",
+      "target": "ED2"
+    },
+    {
+      "instructionIndex": 209,
+      "kind": "call-script",
+      "target": "STAFF_K"
+    },
+    {
+      "instructionIndex": 210,
+      "kind": "load-script",
+      "target": "TITLE"
+    },
+    {
+      "instructionIndex": 212,
+      "kind": "call-script",
+      "target": "ED3"
+    },
+    {
+      "instructionIndex": 213,
+      "kind": "call-script",
+      "target": "STAFF_K"
+    },
+    {
+      "instructionIndex": 214,
+      "kind": "load-script",
+      "target": "TITLE"
+    },
+    {
+      "instructionIndex": 216,
+      "kind": "call-script",
+      "target": "ED4"
+    },
+    {
+      "instructionIndex": 220,
+      "kind": "call-script",
+      "target": "STAFF_C"
+    },
+    {
+      "instructionIndex": 225,
+      "kind": "call-script",
+      "target": "ED4B"
+    },
+    {
+      "instructionIndex": 226,
+      "kind": "load-script",
+      "target": "TITLE"
+    },
+    {
+      "instructionIndex": 228,
+      "kind": "call-script",
+      "target": "ED5"
+    },
+    {
+      "instructionIndex": 236,
+      "kind": "call-script",
+      "target": "ED5B"
+    },
+    {
+      "instructionIndex": 237,
+      "kind": "load-script",
+      "target": "TITLE"
+    },
+    {
+      "instructionIndex": 239,
+      "kind": "call-script",
+      "target": "ED6"
+    },
+    {
+      "instructionIndex": 240,
+      "kind": "load-script",
+      "target": "TITLE"
+    },
+    {
+      "instructionIndex": 260,
+      "kind": "load-script",
+      "target": "Title"
+    },
+    {
+      "instructionIndex": 261,
+      "kind": "call-script",
+      "target": "STAFF_K"
+    },
+    {
+      "instructionIndex": 402,
+      "kind": "load-script",
+      "target": "TITLE"
+    }
+  ],
+  "scripts": [
+    {
+      "scriptId": "EV00",
+      "canonicalStoryId": "kana-okaeri/ev00",
+      "normalInstructionBoundary": 166,
+      "originalSectionId": "main",
+      "nativeTitleCount": 1,
+      "hasUntitledOpening": false,
+      "sections": [
+        {
+          "sectionId": "native-title-11",
+          "legacySectionId": "main",
+          "order": 1,
+          "title": {
+            "ja-JP": "はじまり",
+            "zh-CN": "开始"
+          },
+          "titleKind": "native-title-opcode",
+          "sourceInstructionStart": 11,
+          "sourceInstructionEndExclusive": 166,
+          "japaneseOffset": 79,
+          "chineseOffset": 79,
+          "firstEventId": "ikura-4f",
+          "firstTextInstructionIndex": 11,
+          "firstJapaneseTextIndex": 0,
+          "japaneseMessageCount": 0,
+          "chineseMessageCount": 0,
+          "choiceLabelCount": 2,
+          "japaneseCharacterCount": 20,
+          "chineseCharacterCount": 18,
+          "nativeTitleRawHex": {
+            "ja-JP": "82cd82b682dc82e8",
+            "zh-CN": "bfaacabc"
+          }
+        }
+      ]
+    },
+    {
+      "scriptId": "EV01",
+      "canonicalStoryId": "kana-okaeri/ev01",
+      "normalInstructionBoundary": 1940,
+      "originalSectionId": "main",
+      "nativeTitleCount": 0,
+      "hasUntitledOpening": true,
+      "sections": [
+        {
+          "sectionId": "native-opening",
+          "legacySectionId": "main",
+          "order": 1,
+          "title": {
+            "zh-CN": "开始",
+            "ja-JP": "はじまり"
+          },
+          "titleKind": "inherited-opening-title",
+          "sourceInstructionStart": 0,
+          "sourceInstructionEndExclusive": 1940,
+          "japaneseOffset": 0,
+          "chineseOffset": 0,
+          "firstEventId": "ikura-6c",
+          "firstTextInstructionIndex": 17,
+          "firstJapaneseTextIndex": 0,
+          "japaneseMessageCount": 273,
+          "chineseMessageCount": 273,
+          "choiceLabelCount": 0,
+          "japaneseCharacterCount": 5507,
+          "chineseCharacterCount": 4815,
+          "nativeTitleRawHex": null
+        }
+      ]
+    },
+    {
+      "scriptId": "EV11",
+      "canonicalStoryId": "kana-okaeri/ev11",
+      "normalInstructionBoundary": 705,
+      "originalSectionId": "main",
+      "nativeTitleCount": 0,
+      "hasUntitledOpening": true,
+      "sections": [
+        {
+          "sectionId": "native-opening",
+          "legacySectionId": "main",
+          "order": 1,
+          "title": {
+            "zh-CN": "妹妹",
+            "ja-JP": "妹"
+          },
+          "titleKind": "inherited-opening-title",
+          "sourceInstructionStart": 0,
+          "sourceInstructionEndExclusive": 705,
+          "japaneseOffset": 0,
+          "chineseOffset": 0,
+          "firstEventId": "ikura-3c",
+          "firstTextInstructionIndex": 9,
+          "firstJapaneseTextIndex": 0,
+          "japaneseMessageCount": 122,
+          "chineseMessageCount": 122,
+          "choiceLabelCount": 0,
+          "japaneseCharacterCount": 2763,
+          "chineseCharacterCount": 2469,
+          "nativeTitleRawHex": null
+        }
+      ]
+    },
+    {
+      "scriptId": "EV21",
+      "canonicalStoryId": "kana-okaeri/ev21",
+      "normalInstructionBoundary": 3190,
+      "originalSectionId": "main",
+      "nativeTitleCount": 7,
+      "hasUntitledOpening": false,
+      "sections": [
+        {
+          "sectionId": "native-title-3",
+          "legacySectionId": "main",
+          "order": 1,
+          "title": {
+            "ja-JP": "幼少期・初夏の日",
+            "zh-CN": "少年期·夏初的某日"
+          },
+          "titleKind": "native-title-opcode",
+          "sourceInstructionStart": 3,
+          "sourceInstructionEndExclusive": 286,
+          "japaneseOffset": 23,
+          "chineseOffset": 23,
+          "firstEventId": "ikura-17",
+          "firstTextInstructionIndex": 3,
+          "firstJapaneseTextIndex": 0,
+          "japaneseMessageCount": 60,
+          "chineseMessageCount": 60,
+          "choiceLabelCount": 0,
+          "japaneseCharacterCount": 1305,
+          "chineseCharacterCount": 1098,
+          "nativeTitleRawHex": {
+            "ja-JP": "97638fad8afa81458f8989c482cc93fa",
+            "zh-CN": "c9d9c4eac6daa1a4cfc4b3f5b5c4c4b3c8d5"
+          }
+        },
+        {
+          "sectionId": "native-title-286",
+          "legacySectionId": "main",
+          "order": 2,
+          "title": {
+            "ja-JP": "幼少期・ミルクを飲む",
+            "zh-CN": "少年期，喝牛奶"
+          },
+          "titleKind": "native-title-opcode",
+          "sourceInstructionStart": 286,
+          "sourceInstructionEndExclusive": 744,
+          "japaneseOffset": 3848,
+          "chineseOffset": 4317,
+          "firstEventId": "ikura-f08",
+          "firstTextInstructionIndex": 286,
+          "firstJapaneseTextIndex": 61,
+          "japaneseMessageCount": 86,
+          "chineseMessageCount": 86,
+          "choiceLabelCount": 0,
+          "japaneseCharacterCount": 1799,
+          "chineseCharacterCount": 1524,
+          "nativeTitleRawHex": {
+            "ja-JP": "97638fad8afa8145837e838b834e82f088f982de",
+            "zh-CN": "c9d9c4eac6daa3acbac8c5a3c4cc"
+          }
+        },
+        {
+          "sectionId": "native-title-744",
+          "legacySectionId": "main",
+          "order": 3,
+          "title": {
+            "ja-JP": "幼少期・花輪を編む",
+            "zh-CN": "少年期·编花环"
+          },
+          "titleKind": "native-title-opcode",
+          "sourceInstructionStart": 744,
+          "sourceInstructionEndExclusive": 1104,
+          "japaneseOffset": 9590,
+          "chineseOffset": 10706,
+          "firstEventId": "ikura-2576",
+          "firstTextInstructionIndex": 744,
+          "firstJapaneseTextIndex": 148,
+          "japaneseMessageCount": 65,
+          "chineseMessageCount": 65,
+          "choiceLabelCount": 0,
+          "japaneseCharacterCount": 1387,
+          "chineseCharacterCount": 1112,
+          "nativeTitleRawHex": {
+            "ja-JP": "97638fad8afa814589d497d682f095d282de",
+            "zh-CN": "c9d9c4eac6daa1a4b1e0bba8bbb7"
+          }
+        },
+        {
+          "sectionId": "native-title-1104",
+          "legacySectionId": "main",
+          "order": 4,
+          "title": {
+            "ja-JP": "幼少期・加奈遭難",
+            "zh-CN": "少年期·加奈遇难"
+          },
+          "titleKind": "native-title-opcode",
+          "sourceInstructionStart": 1104,
+          "sourceInstructionEndExclusive": 1842,
+          "japaneseOffset": 14153,
+          "chineseOffset": 15644,
+          "firstEventId": "ikura-3749",
+          "firstTextInstructionIndex": 1104,
+          "firstJapaneseTextIndex": 214,
+          "japaneseMessageCount": 157,
+          "chineseMessageCount": 157,
+          "choiceLabelCount": 2,
+          "japaneseCharacterCount": 3340,
+          "chineseCharacterCount": 2726,
+          "nativeTitleRawHex": {
+            "ja-JP": "97638fad8afa814589c193de919893ef",
+            "zh-CN": "c9d9c4eac6daa1a4bcd3c4ced3f6c4d1"
+          }
+        },
+        {
+          "sectionId": "native-title-1842",
+          "legacySectionId": "main",
+          "order": 5,
+          "title": {
+            "ja-JP": "幼少期・滝見弁当",
+            "zh-CN": "少年期·瀑布旁的便当"
+          },
+          "titleKind": "native-title-opcode",
+          "sourceInstructionStart": 1842,
+          "sourceInstructionEndExclusive": 2386,
+          "japaneseOffset": 23971,
+          "chineseOffset": 26514,
+          "firstEventId": "ikura-5da3",
+          "firstTextInstructionIndex": 1842,
+          "firstJapaneseTextIndex": 372,
+          "japaneseMessageCount": 101,
+          "chineseMessageCount": 101,
+          "choiceLabelCount": 0,
+          "japaneseCharacterCount": 1882,
+          "chineseCharacterCount": 1606,
+          "nativeTitleRawHex": {
+            "ja-JP": "97638fad8afa814591ea8ca995d99396",
+            "zh-CN": "c9d9c4eac6daa1a4c6d9b2bcc5d4b5c4b1e3b5b1"
+          }
+        },
+        {
+          "sectionId": "native-title-2386",
+          "legacySectionId": "main",
+          "order": 6,
+          "title": {
+            "ja-JP": "幼少期・森の出来事",
+            "zh-CN": "少年期·森林事件"
+          },
+          "titleKind": "native-title-opcode",
+          "sourceInstructionStart": 2386,
+          "sourceInstructionEndExclusive": 2974,
+          "japaneseOffset": 30476,
+          "chineseOffset": 33692,
+          "firstEventId": "ikura-770c",
+          "firstTextInstructionIndex": 2386,
+          "firstJapaneseTextIndex": 474,
+          "japaneseMessageCount": 108,
+          "chineseMessageCount": 108,
+          "choiceLabelCount": 0,
+          "japaneseCharacterCount": 1930,
+          "chineseCharacterCount": 1583,
+          "nativeTitleRawHex": {
+            "ja-JP": "97638fad8afa8145905882cc8f6f97888e96",
+            "zh-CN": "c9d9c4eac6daa1a4c9adc1d6cac2bcfe"
+          }
+        },
+        {
+          "sectionId": "native-title-2974",
+          "legacySectionId": "main",
+          "order": 7,
+          "title": {
+            "ja-JP": "幼少期・気が付けば……",
+            "zh-CN": "少年期·当意识回归时……"
+          },
+          "titleKind": "native-title-opcode",
+          "sourceInstructionStart": 2974,
+          "sourceInstructionEndExclusive": 3190,
+          "japaneseOffset": 37198,
+          "chineseOffset": 41060,
+          "firstEventId": "ikura-914e",
+          "firstTextInstructionIndex": 2974,
+          "firstJapaneseTextIndex": 583,
+          "japaneseMessageCount": 12,
+          "chineseMessageCount": 12,
+          "choiceLabelCount": 0,
+          "japaneseCharacterCount": 310,
+          "chineseCharacterCount": 270,
+          "nativeTitleRawHex": {
+            "ja-JP": "97638fad8afa81458b4382aa957482af82ce81638163",
+            "zh-CN": "c9d9c4eac6daa1a4b5b1d2e2cab6bbd8b9e9cab1a1ada1ad"
+          }
+        }
+      ]
+    },
+    {
+      "scriptId": "EV22",
+      "canonicalStoryId": "kana-okaeri/ev22",
+      "normalInstructionBoundary": 1036,
+      "originalSectionId": "main",
+      "nativeTitleCount": 2,
+      "hasUntitledOpening": false,
+      "sections": [
+        {
+          "sectionId": "native-title-11",
+          "legacySectionId": "main",
+          "order": 1,
+          "title": {
+            "ja-JP": "幼少期・リンゴを剥いて",
+            "zh-CN": "少年期·削苹果"
+          },
+          "titleKind": "native-title-opcode",
+          "sourceInstructionStart": 11,
+          "sourceInstructionEndExclusive": 667,
+          "japaneseOffset": 71,
+          "chineseOffset": 71,
+          "firstEventId": "ikura-47",
+          "firstTextInstructionIndex": 11,
+          "firstJapaneseTextIndex": 0,
+          "japaneseMessageCount": 115,
+          "chineseMessageCount": 115,
+          "choiceLabelCount": 0,
+          "japaneseCharacterCount": 2281,
+          "chineseCharacterCount": 1891,
+          "nativeTitleRawHex": {
+            "ja-JP": "97638fad8afa8145838a8393835382f0948d82a282c4",
+            "zh-CN": "c9d9c4eac6daa1a4cff7c6bbb9fb"
+          }
+        },
+        {
+          "sectionId": "native-title-667",
+          "legacySectionId": "main",
+          "order": 2,
+          "title": {
+            "ja-JP": "幼少期・退院とやくそく",
+            "zh-CN": "少年期·退院时的约定"
+          },
+          "titleKind": "native-title-opcode",
+          "sourceInstructionStart": 667,
+          "sourceInstructionEndExclusive": 1036,
+          "japaneseOffset": 7939,
+          "chineseOffset": 8731,
+          "firstEventId": "ikura-1f03",
+          "firstTextInstructionIndex": 667,
+          "firstJapaneseTextIndex": 116,
+          "japaneseMessageCount": 42,
+          "chineseMessageCount": 42,
+          "choiceLabelCount": 0,
+          "japaneseCharacterCount": 817,
+          "chineseCharacterCount": 707,
+          "nativeTitleRawHex": {
+            "ja-JP": "97638fad8afa814591de894082c682e282ad82bb82ad",
+            "zh-CN": "c9d9c4eac6daa1a4cdcbd4bacab1b5c4d4bcb6a8"
+          }
+        }
+      ]
+    },
+    {
+      "scriptId": "EV23",
+      "canonicalStoryId": "kana-okaeri/ev23",
+      "normalInstructionBoundary": 2193,
+      "originalSectionId": "main",
+      "nativeTitleCount": 5,
+      "hasUntitledOpening": false,
+      "sections": [
+        {
+          "sectionId": "native-title-18",
+          "legacySectionId": "main",
+          "order": 1,
+          "title": {
+            "ja-JP": "幼少期・おさななじみ",
+            "zh-CN": "少年期·青梅竹马"
+          },
+          "titleKind": "native-title-opcode",
+          "sourceInstructionStart": 18,
+          "sourceInstructionEndExclusive": 527,
+          "japaneseOffset": 111,
+          "chineseOffset": 111,
+          "firstEventId": "ikura-6f",
+          "firstTextInstructionIndex": 18,
+          "firstJapaneseTextIndex": 0,
+          "japaneseMessageCount": 98,
+          "chineseMessageCount": 98,
+          "choiceLabelCount": 0,
+          "japaneseCharacterCount": 2278,
+          "chineseCharacterCount": 1925,
+          "nativeTitleRawHex": {
+            "ja-JP": "97638fad8afa814582a882b382c882c882b682dd",
+            "zh-CN": "c9d9c4eac6daa1a4c7e0c3b7d6f1c2ed"
+          }
+        },
+        {
+          "sectionId": "native-title-527",
+          "legacySectionId": "main",
+          "order": 2,
+          "title": {
+            "ja-JP": "幼少期・鹿島夕美の問題発言",
+            "zh-CN": "少年期·鹿岛夕美的问题发言"
+          },
+          "titleKind": "native-title-opcode",
+          "sourceInstructionStart": 527,
+          "sourceInstructionEndExclusive": 1098,
+          "japaneseOffset": 7046,
+          "chineseOffset": 7810,
+          "firstEventId": "ikura-1b86",
+          "firstTextInstructionIndex": 527,
+          "firstJapaneseTextIndex": 99,
+          "japaneseMessageCount": 102,
+          "chineseMessageCount": 102,
+          "choiceLabelCount": 2,
+          "japaneseCharacterCount": 2267,
+          "chineseCharacterCount": 1859,
+          "nativeTitleRawHex": {
+            "ja-JP": "97638fad8afa81458ead9387975b94fc82cc96e291e894ad8cbe",
+            "zh-CN": "c9d9c4eac6daa1a4c2b9b5bacfa6c3c0b5c4cecacce2b7a2d1d4"
+          }
+        },
+        {
+          "sectionId": "native-title-1098",
+          "legacySectionId": "main",
+          "order": 3,
+          "title": {
+            "ja-JP": "幼少期・夕美の親切攻撃",
+            "zh-CN": "少年期·夕美的亲切攻击"
+          },
+          "titleKind": "native-title-opcode",
+          "sourceInstructionStart": 1098,
+          "sourceInstructionEndExclusive": 1408,
+          "japaneseOffset": 14267,
+          "chineseOffset": 15710,
+          "firstEventId": "ikura-37bb",
+          "firstTextInstructionIndex": 1098,
+          "firstJapaneseTextIndex": 202,
+          "japaneseMessageCount": 64,
+          "chineseMessageCount": 64,
+          "choiceLabelCount": 0,
+          "japaneseCharacterCount": 1353,
+          "chineseCharacterCount": 1116,
+          "nativeTitleRawHex": {
+            "ja-JP": "97638fad8afa8145975b94fc82cc906590d88d558c82",
+            "zh-CN": "c9d9c4eac6daa1a4cfa6c3c0b5c4c7d7c7d0b9a5bbf7"
+          }
+        },
+        {
+          "sectionId": "native-title-1408",
+          "legacySectionId": "main",
+          "order": 4,
+          "title": {
+            "ja-JP": "幼少期・帰宅時にて",
+            "zh-CN": "少年期·回家时"
+          },
+          "titleKind": "native-title-opcode",
+          "sourceInstructionStart": 1408,
+          "sourceInstructionEndExclusive": 1846,
+          "japaneseOffset": 18416,
+          "chineseOffset": 20237,
+          "firstEventId": "ikura-47f0",
+          "firstTextInstructionIndex": 1408,
+          "firstJapaneseTextIndex": 267,
+          "japaneseMessageCount": 80,
+          "chineseMessageCount": 80,
+          "choiceLabelCount": 0,
+          "japaneseCharacterCount": 1807,
+          "chineseCharacterCount": 1498,
+          "nativeTitleRawHex": {
+            "ja-JP": "97638fad8afa81458b4191ee8e9e82c982c4",
+            "zh-CN": "c9d9c4eac6daa1a4bbd8bcd2cab1"
+          }
+        },
+        {
+          "sectionId": "native-title-1846",
+          "legacySectionId": "main",
+          "order": 5,
+          "title": {
+            "ja-JP": "幼少期・鹿島夕美との決別",
+            "zh-CN": "少年期·和鹿岛夕美的诀裂"
+          },
+          "titleKind": "native-title-opcode",
+          "sourceInstructionStart": 1846,
+          "sourceInstructionEndExclusive": 2193,
+          "japaneseOffset": 23934,
+          "chineseOffset": 26378,
+          "firstEventId": "ikura-5d7e",
+          "firstTextInstructionIndex": 1846,
+          "firstJapaneseTextIndex": 348,
+          "japaneseMessageCount": 34,
+          "chineseMessageCount": 34,
+          "choiceLabelCount": 0,
+          "japaneseCharacterCount": 822,
+          "chineseCharacterCount": 716,
+          "nativeTitleRawHex": {
+            "ja-JP": "97638fad8afa81458ead9387975b94fc82c682cc8c8895ca",
+            "zh-CN": "c9d9c4eac6daa1a4bacdc2b9b5bacfa6c3c0b5c4bef7c1d1"
+          }
+        }
+      ]
+    },
+    {
+      "scriptId": "EV24",
+      "canonicalStoryId": "kana-okaeri/ev24",
+      "normalInstructionBoundary": 672,
+      "originalSectionId": "main",
+      "nativeTitleCount": 1,
+      "hasUntitledOpening": false,
+      "sections": [
+        {
+          "sectionId": "native-title-11",
+          "legacySectionId": "main",
+          "order": 1,
+          "title": {
+            "ja-JP": "幼少期・お見舞いの日々",
+            "zh-CN": "少年期·探病的日子"
+          },
+          "titleKind": "native-title-opcode",
+          "sourceInstructionStart": 11,
+          "sourceInstructionEndExclusive": 672,
+          "japaneseOffset": 71,
+          "chineseOffset": 71,
+          "firstEventId": "ikura-47",
+          "firstTextInstructionIndex": 11,
+          "firstJapaneseTextIndex": 0,
+          "japaneseMessageCount": 108,
+          "chineseMessageCount": 108,
+          "choiceLabelCount": 3,
+          "japaneseCharacterCount": 2492,
+          "chineseCharacterCount": 2142,
+          "nativeTitleRawHex": {
+            "ja-JP": "97638fad8afa814582a88ca9959182a282cc93fa8158",
+            "zh-CN": "c9d9c4eac6daa1a4ccbdb2a1b5c4c8d5d7d3"
+          }
+        }
+      ]
+    },
+    {
+      "scriptId": "EV242",
+      "canonicalStoryId": "kana-okaeri/ev242",
+      "normalInstructionBoundary": 685,
+      "originalSectionId": "main",
+      "nativeTitleCount": 1,
+      "hasUntitledOpening": false,
+      "sections": [
+        {
+          "sectionId": "native-title-11",
+          "legacySectionId": "main",
+          "order": 1,
+          "title": {
+            "ja-JP": "幼少期・謎のプレゼント",
+            "zh-CN": "幼少期·迷之礼物"
+          },
+          "titleKind": "native-title-opcode",
+          "sourceInstructionStart": 11,
+          "sourceInstructionEndExclusive": 685,
+          "japaneseOffset": 71,
+          "chineseOffset": 71,
+          "firstEventId": "ikura-47",
+          "firstTextInstructionIndex": 11,
+          "firstJapaneseTextIndex": 0,
+          "japaneseMessageCount": 97,
+          "chineseMessageCount": 97,
+          "choiceLabelCount": 2,
+          "japaneseCharacterCount": 2265,
+          "chineseCharacterCount": 1897,
+          "nativeTitleRawHex": {
+            "ja-JP": "97638fad8afa814593e482cc8376838c835b83938367",
+            "zh-CN": "d3d7c9d9c6daa1a4c3d4d6aec0f1ceef"
+          }
+        }
+      ]
+    },
+    {
+      "scriptId": "EV25",
+      "canonicalStoryId": "kana-okaeri/ev25",
+      "normalInstructionBoundary": 1247,
+      "originalSectionId": "main",
+      "nativeTitleCount": 2,
+      "hasUntitledOpening": false,
+      "sections": [
+        {
+          "sectionId": "native-title-11",
+          "legacySectionId": "main",
+          "order": 1,
+          "title": {
+            "ja-JP": "幼少期・窓の下から見る光景",
+            "zh-CN": "少年期·窗户下的光景"
+          },
+          "titleKind": "native-title-opcode",
+          "sourceInstructionStart": 11,
+          "sourceInstructionEndExclusive": 725,
+          "japaneseOffset": 71,
+          "chineseOffset": 71,
+          "firstEventId": "ikura-47",
+          "firstTextInstructionIndex": 11,
+          "firstJapaneseTextIndex": 0,
+          "japaneseMessageCount": 143,
+          "chineseMessageCount": 143,
+          "choiceLabelCount": 2,
+          "japaneseCharacterCount": 2925,
+          "chineseCharacterCount": 2482,
+          "nativeTitleRawHex": {
+            "ja-JP": "97638fad8afa8145918b82cc89ba82a982e78ca982e98cf58c69",
+            "zh-CN": "c9d9c4eac6daa1a4b4b0bba7cfc2b5c4b9e2beb0"
+          }
+        },
+        {
+          "sectionId": "native-title-725",
+          "legacySectionId": "main",
+          "order": 2,
+          "title": {
+            "ja-JP": "幼少期・謝罪と抱擁",
+            "zh-CN": "少年期·道歉和拥抱"
+          },
+          "titleKind": "native-title-opcode",
+          "sourceInstructionStart": 725,
+          "sourceInstructionEndExclusive": 1247,
+          "japaneseOffset": 9304,
+          "chineseOffset": 10426,
+          "firstEventId": "ikura-2458",
+          "firstTextInstructionIndex": 725,
+          "firstJapaneseTextIndex": 144,
+          "japaneseMessageCount": 82,
+          "chineseMessageCount": 82,
+          "choiceLabelCount": 0,
+          "japaneseCharacterCount": 1573,
+          "chineseCharacterCount": 1327,
+          "nativeTitleRawHex": {
+            "ja-JP": "97638fad8afa81458ed38ddf82c695f89769",
+            "zh-CN": "c9d9c4eac6daa1a4b5c0c7b8bacdd3b5b1a7"
+          }
+        }
+      ]
+    },
+    {
+      "scriptId": "EV26",
+      "canonicalStoryId": "kana-okaeri/ev26",
+      "normalInstructionBoundary": 1975,
+      "originalSectionId": "main",
+      "nativeTitleCount": 3,
+      "hasUntitledOpening": false,
+      "sections": [
+        {
+          "sectionId": "native-title-11",
+          "legacySectionId": "main",
+          "order": 1,
+          "title": {
+            "ja-JP": "幼少期・授業参観特別参加",
+            "zh-CN": "少年期·授业参观特别参加"
+          },
+          "titleKind": "native-title-opcode",
+          "sourceInstructionStart": 11,
+          "sourceInstructionEndExclusive": 296,
+          "japaneseOffset": 71,
+          "chineseOffset": 71,
+          "firstEventId": "ikura-47",
+          "firstTextInstructionIndex": 11,
+          "firstJapaneseTextIndex": 0,
+          "japaneseMessageCount": 49,
+          "chineseMessageCount": 49,
+          "choiceLabelCount": 0,
+          "japaneseCharacterCount": 1191,
+          "chineseCharacterCount": 1047,
+          "nativeTitleRawHex": {
+            "ja-JP": "97638fad8afa81458ef68bc68e518acf93c195ca8e5189c1",
+            "zh-CN": "c9d9c4eac6daa1a4cadad2b5b2ceb9dbccd8b1f0b2cebcd3"
+          }
+        },
+        {
+          "sectionId": "native-title-296",
+          "legacySectionId": "main",
+          "order": 2,
+          "title": {
+            "ja-JP": "幼少期・四天王乱入",
+            "zh-CN": "少年期·四天王乱入"
+          },
+          "titleKind": "native-title-opcode",
+          "sourceInstructionStart": 296,
+          "sourceInstructionEndExclusive": 903,
+          "japaneseOffset": 3858,
+          "chineseOffset": 4309,
+          "firstEventId": "ikura-f12",
+          "firstTextInstructionIndex": 296,
+          "firstJapaneseTextIndex": 50,
+          "japaneseMessageCount": 110,
+          "chineseMessageCount": 110,
+          "choiceLabelCount": 0,
+          "japaneseCharacterCount": 2147,
+          "chineseCharacterCount": 1856,
+          "nativeTitleRawHex": {
+            "ja-JP": "97638fad8afa81458e6c935689a4979093fc",
+            "zh-CN": "c9d9c4eac6daa1a4cbc4cceccdf5c2d2c8eb"
+          }
+        },
+        {
+          "sectionId": "native-title-903",
+          "legacySectionId": "main",
+          "order": 3,
+          "title": {
+            "ja-JP": "幼少期・猫",
+            "zh-CN": "少年期·猫"
+          },
+          "titleKind": "native-title-opcode",
+          "sourceInstructionStart": 903,
+          "sourceInstructionEndExclusive": 1975,
+          "japaneseOffset": 11497,
+          "chineseOffset": 12735,
+          "firstEventId": "ikura-2ce9",
+          "firstTextInstructionIndex": 903,
+          "firstJapaneseTextIndex": 161,
+          "japaneseMessageCount": 181,
+          "chineseMessageCount": 181,
+          "choiceLabelCount": 0,
+          "japaneseCharacterCount": 3287,
+          "chineseCharacterCount": 2834,
+          "nativeTitleRawHex": {
+            "ja-JP": "97638fad8afa8145944c",
+            "zh-CN": "c9d9c4eac6daa1a4c3a8"
+          }
+        }
+      ]
+    },
+    {
+      "scriptId": "EV31",
+      "canonicalStoryId": "kana-okaeri/ev31",
+      "normalInstructionBoundary": 5452,
+      "originalSectionId": "main",
+      "nativeTitleCount": 5,
+      "hasUntitledOpening": false,
+      "sections": [
+        {
+          "sectionId": "native-title-13",
+          "legacySectionId": "main",
+          "order": 1,
+          "title": {
+            "ja-JP": "中等期・自転車通学の光景",
+            "zh-CN": "中等期·骑车上学的情景"
+          },
+          "titleKind": "native-title-opcode",
+          "sourceInstructionStart": 13,
+          "sourceInstructionEndExclusive": 674,
+          "japaneseOffset": 89,
+          "chineseOffset": 89,
+          "firstEventId": "ikura-59",
+          "firstTextInstructionIndex": 13,
+          "firstJapaneseTextIndex": 0,
+          "japaneseMessageCount": 138,
+          "chineseMessageCount": 138,
+          "choiceLabelCount": 3,
+          "japaneseCharacterCount": 3151,
+          "chineseCharacterCount": 2793,
+          "nativeTitleRawHex": {
+            "ja-JP": "928693998afa81458ea9935d8ed492ca8a7782cc8cf58c69",
+            "zh-CN": "d6d0b5c8c6daa1a4c6efb3b5c9cfd1a7b5c4c7e9beb0"
+          }
+        },
+        {
+          "sectionId": "native-title-674",
+          "legacySectionId": "main",
+          "order": 2,
+          "title": {
+            "ja-JP": "中等期・伊藤勇太との出会い",
+            "zh-CN": "中等期·和伊藤勇太的相遇。"
+          },
+          "titleKind": "native-title-opcode",
+          "sourceInstructionStart": 674,
+          "sourceInstructionEndExclusive": 2224,
+          "japaneseOffset": 9411,
+          "chineseOffset": 10723,
+          "firstEventId": "ikura-24c3",
+          "firstTextInstructionIndex": 674,
+          "firstJapaneseTextIndex": 139,
+          "japaneseMessageCount": 278,
+          "chineseMessageCount": 278,
+          "choiceLabelCount": 5,
+          "japaneseCharacterCount": 6129,
+          "chineseCharacterCount": 5361,
+          "nativeTitleRawHex": {
+            "ja-JP": "928693998afa814588c993a1974591be82c682cc8f6f89ef82a2",
+            "zh-CN": "d6d0b5c8c6daa1a4bacdd2c1ccd9d3c2ccabb5c4cfe0d3f6a1a3"
+          }
+        },
+        {
+          "sectionId": "native-title-2224",
+          "legacySectionId": "main",
+          "order": 3,
+          "title": {
+            "ja-JP": "中等期・帰宅途中で公園",
+            "zh-CN": "中等期·回家途中的公园"
+          },
+          "titleKind": "native-title-opcode",
+          "sourceInstructionStart": 2224,
+          "sourceInstructionEndExclusive": 3073,
+          "japaneseOffset": 29460,
+          "chineseOffset": 33213,
+          "firstEventId": "ikura-7314",
+          "firstTextInstructionIndex": 2224,
+          "firstJapaneseTextIndex": 418,
+          "japaneseMessageCount": 152,
+          "chineseMessageCount": 152,
+          "choiceLabelCount": 3,
+          "japaneseCharacterCount": 3344,
+          "chineseCharacterCount": 2868,
+          "nativeTitleRawHex": {
+            "ja-JP": "928693998afa81458b4191ee9372928682c58cf68980",
+            "zh-CN": "d6d0b5c8c6daa1a4bbd8bcd2cdbed6d0b5c4b9abd4b0"
+          }
+        },
+        {
+          "sectionId": "native-title-3073",
+          "legacySectionId": "main",
+          "order": 4,
+          "title": {
+            "ja-JP": "中等期・帰宅途中で水族館",
+            "zh-CN": "中等期·回家路上的水族館"
+          },
+          "titleKind": "native-title-opcode",
+          "sourceInstructionStart": 3073,
+          "sourceInstructionEndExclusive": 4391,
+          "japaneseOffset": 40339,
+          "chineseOffset": 45322,
+          "firstEventId": "ikura-9d93",
+          "firstTextInstructionIndex": 3073,
+          "firstJapaneseTextIndex": 571,
+          "japaneseMessageCount": 240,
+          "chineseMessageCount": 240,
+          "choiceLabelCount": 3,
+          "japaneseCharacterCount": 5411,
+          "chineseCharacterCount": 4672,
+          "nativeTitleRawHex": {
+            "ja-JP": "928693998afa81458b4191ee9372928682c5908591b08ad9",
+            "zh-CN": "d6d0b5c8c6daa1a4bbd8bcd2c2b7c9cfb5c4cbaed7e5f05e"
+          }
+        },
+        {
+          "sectionId": "native-title-4391",
+          "legacySectionId": "main",
+          "order": 5,
+          "title": {
+            "ja-JP": "中等期・帰宅途中で本屋さん",
+            "zh-CN": "中等期·回家途中的书店"
+          },
+          "titleKind": "native-title-opcode",
+          "sourceInstructionStart": 4391,
+          "sourceInstructionEndExclusive": 5452,
+          "japaneseOffset": 57471,
+          "chineseOffset": 64473,
+          "firstEventId": "ikura-e07f",
+          "firstTextInstructionIndex": 4391,
+          "firstJapaneseTextIndex": 812,
+          "japaneseMessageCount": 171,
+          "chineseMessageCount": 171,
+          "choiceLabelCount": 3,
+          "japaneseCharacterCount": 3249,
+          "chineseCharacterCount": 2840,
+          "nativeTitleRawHex": {
+            "ja-JP": "928693998afa81458b4191ee9372928682c5967b89ae82b382f1",
+            "zh-CN": "d6d0b5c8c6daa1a4bbd8bcd2cdbed6d0b5c4cae9b5ea"
+          }
+        }
+      ]
+    },
+    {
+      "scriptId": "EV32",
+      "canonicalStoryId": "kana-okaeri/ev32",
+      "normalInstructionBoundary": 3140,
+      "originalSectionId": "main",
+      "nativeTitleCount": 4,
+      "hasUntitledOpening": false,
+      "sections": [
+        {
+          "sectionId": "native-title-11",
+          "legacySectionId": "main",
+          "order": 1,
+          "title": {
+            "ja-JP": "中等期・夏",
+            "zh-CN": "中等期·夏"
+          },
+          "titleKind": "native-title-opcode",
+          "sourceInstructionStart": 11,
+          "sourceInstructionEndExclusive": 130,
+          "japaneseOffset": 71,
+          "chineseOffset": 71,
+          "firstEventId": "ikura-47",
+          "firstTextInstructionIndex": 11,
+          "firstJapaneseTextIndex": 0,
+          "japaneseMessageCount": 12,
+          "chineseMessageCount": 12,
+          "choiceLabelCount": 3,
+          "japaneseCharacterCount": 329,
+          "chineseCharacterCount": 298,
+          "nativeTitleRawHex": {
+            "ja-JP": "928693998afa814589c4",
+            "zh-CN": "d6d0b5c8c6daa1a4cfc4"
+          }
+        },
+        {
+          "sectionId": "native-title-130",
+          "legacySectionId": "main",
+          "order": 2,
+          "title": {
+            "ja-JP": "中等期・帰宅途中に喫茶店",
+            "zh-CN": "中等期·回家途中去咖啡厅"
+          },
+          "titleKind": "native-title-opcode",
+          "sourceInstructionStart": 130,
+          "sourceInstructionEndExclusive": 1033,
+          "japaneseOffset": 1375,
+          "chineseOffset": 1517,
+          "firstEventId": "ikura-55f",
+          "firstTextInstructionIndex": 130,
+          "firstJapaneseTextIndex": 13,
+          "japaneseMessageCount": 198,
+          "chineseMessageCount": 198,
+          "choiceLabelCount": 3,
+          "japaneseCharacterCount": 3451,
+          "chineseCharacterCount": 3019,
+          "nativeTitleRawHex": {
+            "ja-JP": "928693998afa81458b4191ee9372928682c98b6992839358",
+            "zh-CN": "d6d0b5c8c6daa1a4bbd8bcd2cdbed6d0c8a5bfa7b7c8ccfc"
+          }
+        },
+        {
+          "sectionId": "native-title-1033",
+          "legacySectionId": "main",
+          "order": 3,
+          "title": {
+            "ja-JP": "中等期・帰宅途中に図書館",
+            "zh-CN": "中等期·回家路上的图书馆"
+          },
+          "titleKind": "native-title-opcode",
+          "sourceInstructionStart": 1033,
+          "sourceInstructionEndExclusive": 1768,
+          "japaneseOffset": 12878,
+          "chineseOffset": 14521,
+          "firstEventId": "ikura-324e",
+          "firstTextInstructionIndex": 1033,
+          "firstJapaneseTextIndex": 212,
+          "japaneseMessageCount": 138,
+          "chineseMessageCount": 138,
+          "choiceLabelCount": 3,
+          "japaneseCharacterCount": 2337,
+          "chineseCharacterCount": 2091,
+          "nativeTitleRawHex": {
+            "ja-JP": "928693998afa81458b4191ee9372928682c9907d8f918ad9",
+            "zh-CN": "d6d0b5c8c6daa1a4bbd8bcd2c2b7c9cfb5c4cdbccae9b9dd"
+          }
+        },
+        {
+          "sectionId": "native-title-1768",
+          "legacySectionId": "main",
+          "order": 4,
+          "title": {
+            "ja-JP": "中等期・帰宅途中にゲーセン",
+            "zh-CN": "中等期·回家路上的游戏中心"
+          },
+          "titleKind": "native-title-opcode",
+          "sourceInstructionStart": 1768,
+          "sourceInstructionEndExclusive": 3140,
+          "japaneseOffset": 21560,
+          "chineseOffset": 24237,
+          "firstEventId": "ikura-5438",
+          "firstTextInstructionIndex": 1768,
+          "firstJapaneseTextIndex": 351,
+          "japaneseMessageCount": 226,
+          "chineseMessageCount": 226,
+          "choiceLabelCount": 3,
+          "japaneseCharacterCount": 4378,
+          "chineseCharacterCount": 3780,
+          "nativeTitleRawHex": {
+            "ja-JP": "928693998afa81458b4191ee9372928682c98351815b835a8393",
+            "zh-CN": "d6d0b5c8c6daa1a4bbd8bcd2c2b7c9cfb5c4d3cecfb7d6d0d0c4"
+          }
+        }
+      ]
+    },
+    {
+      "scriptId": "EV33",
+      "canonicalStoryId": "kana-okaeri/ev33",
+      "normalInstructionBoundary": 2668,
+      "originalSectionId": "main",
+      "nativeTitleCount": 3,
+      "hasUntitledOpening": false,
+      "sections": [
+        {
+          "sectionId": "native-title-11",
+          "legacySectionId": "main",
+          "order": 1,
+          "title": {
+            "ja-JP": "中等期・夏祭り",
+            "zh-CN": "中等期·夏日祭"
+          },
+          "titleKind": "native-title-opcode",
+          "sourceInstructionStart": 11,
+          "sourceInstructionEndExclusive": 1049,
+          "japaneseOffset": 71,
+          "chineseOffset": 71,
+          "firstEventId": "ikura-47",
+          "firstTextInstructionIndex": 11,
+          "firstJapaneseTextIndex": 0,
+          "japaneseMessageCount": 179,
+          "chineseMessageCount": 179,
+          "choiceLabelCount": 3,
+          "japaneseCharacterCount": 3518,
+          "chineseCharacterCount": 2927,
+          "nativeTitleRawHex": {
+            "ja-JP": "928693998afa814589c48dd582e8",
+            "zh-CN": "d6d0b5c8c6daa1a4cfc4c8d5bcc0"
+          }
+        },
+        {
+          "sectionId": "native-title-1049",
+          "legacySectionId": "main",
+          "order": 2,
+          "title": {
+            "ja-JP": "中等期・鹿島夕美と再会",
+            "zh-CN": "中等期·与鹿岛夕美的再会"
+          },
+          "titleKind": "native-title-opcode",
+          "sourceInstructionStart": 1049,
+          "sourceInstructionEndExclusive": 1662,
+          "japaneseOffset": 12552,
+          "chineseOffset": 13666,
+          "firstEventId": "ikura-3108",
+          "firstTextInstructionIndex": 1049,
+          "firstJapaneseTextIndex": 180,
+          "japaneseMessageCount": 97,
+          "chineseMessageCount": 97,
+          "choiceLabelCount": 2,
+          "japaneseCharacterCount": 1686,
+          "chineseCharacterCount": 1409,
+          "nativeTitleRawHex": {
+            "ja-JP": "928693998afa81458ead9387975b94fc82c68dc489ef",
+            "zh-CN": "d6d0b5c8c6daa1a4d3ebc2b9b5bacfa6c3c0b5c4d4d9bbe1"
+          }
+        },
+        {
+          "sectionId": "native-title-1662",
+          "legacySectionId": "main",
+          "order": 3,
+          "title": {
+            "ja-JP": "中等期・お祭りが終わって",
+            "zh-CN": "中等期·祭典结束"
+          },
+          "titleKind": "native-title-opcode",
+          "sourceInstructionStart": 1662,
+          "sourceInstructionEndExclusive": 2668,
+          "japaneseOffset": 19262,
+          "chineseOffset": 20916,
+          "firstEventId": "ikura-4b3e",
+          "firstTextInstructionIndex": 1662,
+          "firstJapaneseTextIndex": 278,
+          "japaneseMessageCount": 153,
+          "chineseMessageCount": 153,
+          "choiceLabelCount": 3,
+          "japaneseCharacterCount": 2800,
+          "chineseCharacterCount": 2275,
+          "nativeTitleRawHex": {
+            "ja-JP": "928693998afa814582a88dd582e882aa8f4982ed82c182c4",
+            "zh-CN": "d6d0b5c8c6daa1a4bcc0b5e4bde1caf8"
+          }
+        }
+      ]
+    },
+    {
+      "scriptId": "EV341",
+      "canonicalStoryId": "kana-okaeri/ev341",
+      "normalInstructionBoundary": 944,
+      "originalSectionId": "main",
+      "nativeTitleCount": 1,
+      "hasUntitledOpening": false,
+      "sections": [
+        {
+          "sectionId": "native-title-14",
+          "legacySectionId": "main",
+          "order": 1,
+          "title": {
+            "ja-JP": "中等期・伊藤勇太と会う",
+            "zh-CN": "中等期·和伊藤勇太见面"
+          },
+          "titleKind": "native-title-opcode",
+          "sourceInstructionStart": 14,
+          "sourceInstructionEndExclusive": 944,
+          "japaneseOffset": 87,
+          "chineseOffset": 87,
+          "firstEventId": "ikura-57",
+          "firstTextInstructionIndex": 14,
+          "firstJapaneseTextIndex": 0,
+          "japaneseMessageCount": 149,
+          "chineseMessageCount": 149,
+          "choiceLabelCount": 2,
+          "japaneseCharacterCount": 3724,
+          "chineseCharacterCount": 3093,
+          "nativeTitleRawHex": {
+            "ja-JP": "928693998afa814588c993a1974591be82c689ef82a4",
+            "zh-CN": "d6d0b5c8c6daa1a4bacdd2c1ccd9d3c2ccabbcfbc3e6"
+          }
+        }
+      ]
+    },
+    {
+      "scriptId": "EV341A",
+      "canonicalStoryId": "kana-okaeri/ev341a",
+      "normalInstructionBoundary": 1330,
+      "originalSectionId": "main",
+      "nativeTitleCount": 1,
+      "hasUntitledOpening": false,
+      "sections": [
+        {
+          "sectionId": "native-title-14",
+          "legacySectionId": "main",
+          "order": 1,
+          "title": {
+            "ja-JP": "中等期・勇太と加奈の登校",
+            "zh-CN": "中等期·勇太和加奈的上学"
+          },
+          "titleKind": "native-title-opcode",
+          "sourceInstructionStart": 14,
+          "sourceInstructionEndExclusive": 1330,
+          "japaneseOffset": 87,
+          "chineseOffset": 87,
+          "firstEventId": "ikura-57",
+          "firstTextInstructionIndex": 14,
+          "firstJapaneseTextIndex": 0,
+          "japaneseMessageCount": 219,
+          "chineseMessageCount": 219,
+          "choiceLabelCount": 0,
+          "japaneseCharacterCount": 4325,
+          "chineseCharacterCount": 3725,
+          "nativeTitleRawHex": {
+            "ja-JP": "928693998afa8145974591be82c689c193de82cc936f8d5a",
+            "zh-CN": "d6d0b5c8c6daa1a4d3c2ccabbacdbcd3c4ceb5c4c9cfd1a7"
+          }
+        }
+      ]
+    },
+    {
+      "scriptId": "EV341B",
+      "canonicalStoryId": "kana-okaeri/ev341b",
+      "normalInstructionBoundary": 1039,
+      "originalSectionId": "main",
+      "nativeTitleCount": 1,
+      "hasUntitledOpening": false,
+      "sections": [
+        {
+          "sectionId": "native-title-11",
+          "legacySectionId": "main",
+          "order": 1,
+          "title": {
+            "ja-JP": "中等期・病院に戻る日",
+            "zh-CN": "中等期·回医院的日子"
+          },
+          "titleKind": "native-title-opcode",
+          "sourceInstructionStart": 11,
+          "sourceInstructionEndExclusive": 1039,
+          "japaneseOffset": 71,
+          "chineseOffset": 71,
+          "firstEventId": "ikura-47",
+          "firstTextInstructionIndex": 11,
+          "firstJapaneseTextIndex": 0,
+          "japaneseMessageCount": 161,
+          "chineseMessageCount": 161,
+          "choiceLabelCount": 0,
+          "japaneseCharacterCount": 3501,
+          "chineseCharacterCount": 2933,
+          "nativeTitleRawHex": {
+            "ja-JP": "928693998afa81459561894082c996df82e993fa",
+            "zh-CN": "d6d0b5c8c6daa1a4bbd8d2bdd4bab5c4c8d5d7d3"
+          }
+        }
+      ]
+    },
+    {
+      "scriptId": "EV342",
+      "canonicalStoryId": "kana-okaeri/ev342",
+      "normalInstructionBoundary": 6374,
+      "originalSectionId": "main",
+      "nativeTitleCount": 7,
+      "hasUntitledOpening": false,
+      "sections": [
+        {
+          "sectionId": "native-title-11",
+          "legacySectionId": "main",
+          "order": 1,
+          "title": {
+            "ja-JP": "中等期・霧原須摩子",
+            "zh-CN": "中等期·雾原须摩子"
+          },
+          "titleKind": "native-title-opcode",
+          "sourceInstructionStart": 11,
+          "sourceInstructionEndExclusive": 821,
+          "japaneseOffset": 71,
+          "chineseOffset": 71,
+          "firstEventId": "ikura-47",
+          "firstTextInstructionIndex": 11,
+          "firstJapaneseTextIndex": 0,
+          "japaneseMessageCount": 147,
+          "chineseMessageCount": 147,
+          "choiceLabelCount": 0,
+          "japaneseCharacterCount": 3653,
+          "chineseCharacterCount": 3000,
+          "nativeTitleRawHex": {
+            "ja-JP": "928693998afa814596b68cb4907b96808e71",
+            "zh-CN": "d6d0b5c8c6daa1a4ceedd4add0ebc4a6d7d3"
+          }
+        },
+        {
+          "sectionId": "native-title-821",
+          "legacySectionId": "main",
+          "order": 2,
+          "title": {
+            "ja-JP": "中等期・ホスピスについて",
+            "zh-CN": "中等期·关于疗养院"
+          },
+          "titleKind": "native-title-opcode",
+          "sourceInstructionStart": 821,
+          "sourceInstructionEndExclusive": 1388,
+          "japaneseOffset": 11145,
+          "chineseOffset": 12207,
+          "firstEventId": "ikura-2b89",
+          "firstTextInstructionIndex": 821,
+          "firstJapaneseTextIndex": 148,
+          "japaneseMessageCount": 97,
+          "chineseMessageCount": 97,
+          "choiceLabelCount": 2,
+          "japaneseCharacterCount": 2004,
+          "chineseCharacterCount": 1667,
+          "nativeTitleRawHex": {
+            "ja-JP": "928693998afa8145837a83588373835882c982c282a282c4",
+            "zh-CN": "d6d0b5c8c6daa1a4b9d8d3dac1c6d1f8d4ba"
+          }
+        },
+        {
+          "sectionId": "native-title-1388",
+          "legacySectionId": "main",
+          "order": 3,
+          "title": {
+            "ja-JP": "中等期・須摩子との交流",
+            "zh-CN": "中等期·与须摩子的交流。"
+          },
+          "titleKind": "native-title-opcode",
+          "sourceInstructionStart": 1388,
+          "sourceInstructionEndExclusive": 2328,
+          "japaneseOffset": 17935,
+          "chineseOffset": 19642,
+          "firstEventId": "ikura-460f",
+          "firstTextInstructionIndex": 1388,
+          "firstJapaneseTextIndex": 246,
+          "japaneseMessageCount": 147,
+          "chineseMessageCount": 147,
+          "choiceLabelCount": 0,
+          "japaneseCharacterCount": 3331,
+          "chineseCharacterCount": 2707,
+          "nativeTitleRawHex": {
+            "ja-JP": "928693998afa8145907b96808e7182c682cc8cf097ac",
+            "zh-CN": "d6d0b5c8c6daa1a4d3ebd0ebc4a6d7d3b5c4bdbbc1f7a1a3"
+          }
+        },
+        {
+          "sectionId": "native-title-2328",
+          "legacySectionId": "main",
+          "order": 4,
+          "title": {
+            "ja-JP": "中等期・強襲、霧原香奈",
+            "zh-CN": "中等期·强袭、雾原香奈"
+          },
+          "titleKind": "native-title-opcode",
+          "sourceInstructionStart": 2328,
+          "sourceInstructionEndExclusive": 4002,
+          "japaneseOffset": 29156,
+          "chineseOffset": 31815,
+          "firstEventId": "ikura-71e4",
+          "firstTextInstructionIndex": 2328,
+          "firstJapaneseTextIndex": 394,
+          "japaneseMessageCount": 257,
+          "chineseMessageCount": 257,
+          "choiceLabelCount": 0,
+          "japaneseCharacterCount": 5667,
+          "chineseCharacterCount": 4608,
+          "nativeTitleRawHex": {
+            "ja-JP": "928693998afa81458bad8f50814196b68cb48d8193de",
+            "zh-CN": "d6d0b5c8c6daa1a4c7bfcfaea1a2ceedd4adcfe3c4ce"
+          }
+        },
+        {
+          "sectionId": "native-title-4002",
+          "legacySectionId": "main",
+          "order": 5,
+          "title": {
+            "ja-JP": "中等期・三人乗りはやめよう",
+            "zh-CN": "中等期·三人乘车"
+          },
+          "titleKind": "native-title-opcode",
+          "sourceInstructionStart": 4002,
+          "sourceInstructionEndExclusive": 4316,
+          "japaneseOffset": 48710,
+          "chineseOffset": 52992,
+          "firstEventId": "ikura-be46",
+          "firstTextInstructionIndex": 4002,
+          "firstJapaneseTextIndex": 652,
+          "japaneseMessageCount": 47,
+          "chineseMessageCount": 47,
+          "choiceLabelCount": 0,
+          "japaneseCharacterCount": 981,
+          "chineseCharacterCount": 799,
+          "nativeTitleRawHex": {
+            "ja-JP": "928693998afa81458e4f906c8fe682e882cd82e282df82e682a4",
+            "zh-CN": "d6d0b5c8c6daa1a4c8fdc8cbb3cbb3b5"
+          }
+        },
+        {
+          "sectionId": "native-title-4316",
+          "legacySectionId": "main",
+          "order": 6,
+          "title": {
+            "ja-JP": "中等期・母と子と",
+            "zh-CN": "中等期·母与子与……"
+          },
+          "titleKind": "native-title-opcode",
+          "sourceInstructionStart": 4316,
+          "sourceInstructionEndExclusive": 5660,
+          "japaneseOffset": 52320,
+          "chineseOffset": 56847,
+          "firstEventId": "ikura-cc60",
+          "firstTextInstructionIndex": 4316,
+          "firstJapaneseTextIndex": 700,
+          "japaneseMessageCount": 187,
+          "chineseMessageCount": 187,
+          "choiceLabelCount": 2,
+          "japaneseCharacterCount": 3946,
+          "chineseCharacterCount": 3215,
+          "nativeTitleRawHex": {
+            "ja-JP": "928693998afa814595ea82c68e7182c6",
+            "zh-CN": "d6d0b5c8c6daa1a4c4b8d3ebd7d3d3eba1ada1ad"
+          }
+        },
+        {
+          "sectionId": "native-title-5660",
+          "legacySectionId": "main",
+          "order": 7,
+          "title": {
+            "ja-JP": "中等期・須摩子の死",
+            "zh-CN": "中等期·须摩子之死"
+          },
+          "titleKind": "native-title-opcode",
+          "sourceInstructionStart": 5660,
+          "sourceInstructionEndExclusive": 6374,
+          "japaneseOffset": 66944,
+          "chineseOffset": 72638,
+          "firstEventId": "ikura-10580",
+          "firstTextInstructionIndex": 5660,
+          "firstJapaneseTextIndex": 888,
+          "japaneseMessageCount": 99,
+          "chineseMessageCount": 99,
+          "choiceLabelCount": 0,
+          "japaneseCharacterCount": 2201,
+          "chineseCharacterCount": 1766,
+          "nativeTitleRawHex": {
+            "ja-JP": "928693998afa8145907b96808e7182cc8e80",
+            "zh-CN": "d6d0b5c8c6daa1a4d0ebc4a6d7d3d6aecbc0"
+          }
+        }
+      ]
+    },
+    {
+      "scriptId": "EV36",
+      "canonicalStoryId": "kana-okaeri/ev36",
+      "normalInstructionBoundary": 924,
+      "originalSectionId": "main",
+      "nativeTitleCount": 1,
+      "hasUntitledOpening": false,
+      "sections": [
+        {
+          "sectionId": "native-title-11",
+          "legacySectionId": "main",
+          "order": 1,
+          "title": {
+            "ja-JP": "中等期・勇太と加奈の交際？",
+            "zh-CN": "中等期·勇太和加奈的交往？"
+          },
+          "titleKind": "native-title-opcode",
+          "sourceInstructionStart": 11,
+          "sourceInstructionEndExclusive": 924,
+          "japaneseOffset": 71,
+          "chineseOffset": 71,
+          "firstEventId": "ikura-47",
+          "firstTextInstructionIndex": 11,
+          "firstJapaneseTextIndex": 0,
+          "japaneseMessageCount": 151,
+          "chineseMessageCount": 151,
+          "choiceLabelCount": 2,
+          "japaneseCharacterCount": 4013,
+          "chineseCharacterCount": 3513,
+          "nativeTitleRawHex": {
+            "ja-JP": "928693998afa8145974591be82c689c193de82cc8cf08ddb8148",
+            "zh-CN": "d6d0b5c8c6daa1a4d3c2ccabbacdbcd3c4ceb5c4bdbbcdf9a3bf"
+          }
+        }
+      ]
+    },
+    {
+      "scriptId": "EV37",
+      "canonicalStoryId": "kana-okaeri/ev37",
+      "normalInstructionBoundary": 2772,
+      "originalSectionId": "main",
+      "nativeTitleCount": 1,
+      "hasUntitledOpening": false,
+      "sections": [
+        {
+          "sectionId": "native-title-10",
+          "legacySectionId": "main",
+          "order": 1,
+          "title": {
+            "ja-JP": "中等期・俺の初恋について",
+            "zh-CN": "中等期·关于我的初恋"
+          },
+          "titleKind": "native-title-opcode",
+          "sourceInstructionStart": 10,
+          "sourceInstructionEndExclusive": 2772,
+          "japaneseOffset": 67,
+          "chineseOffset": 67,
+          "firstEventId": "ikura-43",
+          "firstTextInstructionIndex": 10,
+          "firstJapaneseTextIndex": 0,
+          "japaneseMessageCount": 471,
+          "chineseMessageCount": 471,
+          "choiceLabelCount": 5,
+          "japaneseCharacterCount": 9619,
+          "chineseCharacterCount": 8011,
+          "nativeTitleRawHex": {
+            "ja-JP": "928693998afa814589b482cc8f8997f682c982c282a282c4",
+            "zh-CN": "d6d0b5c8c6daa1a4b9d8d3daced2b5c4b3f5c1b5"
+          }
+        }
+      ]
+    },
+    {
+      "scriptId": "EV41",
+      "canonicalStoryId": "kana-okaeri/ev41",
+      "normalInstructionBoundary": 5277,
+      "originalSectionId": "main",
+      "nativeTitleCount": 3,
+      "hasUntitledOpening": false,
+      "sections": [
+        {
+          "sectionId": "native-title-13",
+          "legacySectionId": "main",
+          "order": 1,
+          "title": {
+            "ja-JP": "高等期・卒業式と鹿島夕美",
+            "zh-CN": "高中时期·毕业典礼和鹿岛夕美"
+          },
+          "titleKind": "native-title-opcode",
+          "sourceInstructionStart": 13,
+          "sourceInstructionEndExclusive": 1169,
+          "japaneseOffset": 89,
+          "chineseOffset": 89,
+          "firstEventId": "ikura-59",
+          "firstTextInstructionIndex": 13,
+          "firstJapaneseTextIndex": 0,
+          "japaneseMessageCount": 189,
+          "chineseMessageCount": 189,
+          "choiceLabelCount": 2,
+          "japaneseCharacterCount": 4388,
+          "chineseCharacterCount": 3752,
+          "nativeTitleRawHex": {
+            "ja-JP": "8d8293998afa814591b28bc68eae82c68ead9387975b94fc",
+            "zh-CN": "b8dfd6d0cab1c6daa1a4b1cfd2b5b5e4c0f1bacdc2b9b5bacfa6c3c0"
+          }
+        },
+        {
+          "sectionId": "native-title-1169",
+          "legacySectionId": "main",
+          "order": 2,
+          "title": {
+            "ja-JP": "高等期・学校案内",
+            "zh-CN": "高中时期·学校导游"
+          },
+          "titleKind": "native-title-opcode",
+          "sourceInstructionStart": 1169,
+          "sourceInstructionEndExclusive": 3436,
+          "japaneseOffset": 14354,
+          "chineseOffset": 16018,
+          "firstEventId": "ikura-3812",
+          "firstTextInstructionIndex": 1169,
+          "firstJapaneseTextIndex": 190,
+          "japaneseMessageCount": 350,
+          "chineseMessageCount": 350,
+          "choiceLabelCount": 12,
+          "japaneseCharacterCount": 7543,
+          "chineseCharacterCount": 6549,
+          "nativeTitleRawHex": {
+            "ja-JP": "8d8293998afa81458a778d5a88c493e0",
+            "zh-CN": "b8dfd6d0cab1c6daa1a4d1a7d0a3b5bcd3ce"
+          }
+        },
+        {
+          "sectionId": "native-title-3436",
+          "legacySectionId": "main",
+          "order": 3,
+          "title": {
+            "ja-JP": "高等期・残された月日",
+            "zh-CN": "高中时期·剩下的每天"
+          },
+          "titleKind": "native-title-opcode",
+          "sourceInstructionStart": 3436,
+          "sourceInstructionEndExclusive": 5277,
+          "japaneseOffset": 41363,
+          "chineseOffset": 46013,
+          "firstEventId": "ikura-a193",
+          "firstTextInstructionIndex": 3436,
+          "firstJapaneseTextIndex": 541,
+          "japaneseMessageCount": 273,
+          "chineseMessageCount": 273,
+          "choiceLabelCount": 0,
+          "japaneseCharacterCount": 5422,
+          "chineseCharacterCount": 4646,
+          "nativeTitleRawHex": {
+            "ja-JP": "8d8293998afa81458e6382b382ea82bd8c8e93fa",
+            "zh-CN": "b8dfd6d0cab1c6daa1a4caa3cfc2b5c4c3bfccec"
+          }
+        }
+      ]
+    },
+    {
+      "scriptId": "EV42",
+      "canonicalStoryId": "kana-okaeri/ev42",
+      "normalInstructionBoundary": 2288,
+      "originalSectionId": "main",
+      "nativeTitleCount": 1,
+      "hasUntitledOpening": false,
+      "sections": [
+        {
+          "sectionId": "native-title-11",
+          "legacySectionId": "main",
+          "order": 1,
+          "title": {
+            "ja-JP": "高等期・コンパ",
+            "zh-CN": "高中时期·联欢会"
+          },
+          "titleKind": "native-title-opcode",
+          "sourceInstructionStart": 11,
+          "sourceInstructionEndExclusive": 2288,
+          "japaneseOffset": 71,
+          "chineseOffset": 71,
+          "firstEventId": "ikura-47",
+          "firstTextInstructionIndex": 11,
+          "firstJapaneseTextIndex": 0,
+          "japaneseMessageCount": 368,
+          "chineseMessageCount": 368,
+          "choiceLabelCount": 0,
+          "japaneseCharacterCount": 8133,
+          "chineseCharacterCount": 7061,
+          "nativeTitleRawHex": {
+            "ja-JP": "8d8293998afa8145835283938370",
+            "zh-CN": "b8dfd6d0cab1c6daa1a4c1aabbb6bbe1"
+          }
+        }
+      ]
+    },
+    {
+      "scriptId": "EV43",
+      "canonicalStoryId": "kana-okaeri/ev43",
+      "normalInstructionBoundary": 529,
+      "originalSectionId": "main",
+      "nativeTitleCount": 1,
+      "hasUntitledOpening": false,
+      "sections": [
+        {
+          "sectionId": "native-title-11",
+          "legacySectionId": "main",
+          "order": 1,
+          "title": {
+            "ja-JP": "高等期・加奈の視線",
+            "zh-CN": "高等期·加奈的视线"
+          },
+          "titleKind": "native-title-opcode",
+          "sourceInstructionStart": 11,
+          "sourceInstructionEndExclusive": 529,
+          "japaneseOffset": 71,
+          "chineseOffset": 71,
+          "firstEventId": "ikura-47",
+          "firstTextInstructionIndex": 11,
+          "firstJapaneseTextIndex": 0,
+          "japaneseMessageCount": 75,
+          "chineseMessageCount": 75,
+          "choiceLabelCount": 0,
+          "japaneseCharacterCount": 1728,
+          "chineseCharacterCount": 1516,
+          "nativeTitleRawHex": {
+            "ja-JP": "8d8293998afa814589c193de82cc8e8b90fc",
+            "zh-CN": "b8dfb5c8c6daa1a4bcd3c4ceb5c4cad3cfdf"
+          }
+        }
+      ]
+    },
+    {
+      "scriptId": "EV432",
+      "canonicalStoryId": "kana-okaeri/ev432",
+      "normalInstructionBoundary": 1906,
+      "originalSectionId": "main",
+      "nativeTitleCount": 4,
+      "hasUntitledOpening": false,
+      "sections": [
+        {
+          "sectionId": "native-title-3",
+          "legacySectionId": "main",
+          "order": 1,
+          "title": {
+            "ja-JP": "高等期・夕美とのデート",
+            "zh-CN": "高中时期·和夕美的约会"
+          },
+          "titleKind": "native-title-opcode",
+          "sourceInstructionStart": 3,
+          "sourceInstructionEndExclusive": 331,
+          "japaneseOffset": 23,
+          "chineseOffset": 23,
+          "firstEventId": "ikura-17",
+          "firstTextInstructionIndex": 3,
+          "firstJapaneseTextIndex": 0,
+          "japaneseMessageCount": 51,
+          "chineseMessageCount": 51,
+          "choiceLabelCount": 0,
+          "japaneseCharacterCount": 920,
+          "chineseCharacterCount": 853,
+          "nativeTitleRawHex": {
+            "ja-JP": "8d8293998afa8145975b94fc82c682cc8366815b8367",
+            "zh-CN": "b8dfd6d0cab1c6daa1a4bacdcfa6c3c0b5c4d4bcbbe1"
+          }
+        },
+        {
+          "sectionId": "native-title-331",
+          "legacySectionId": "main",
+          "order": 2,
+          "title": {
+            "ja-JP": "高等期・夕美ちゃん人形",
+            "zh-CN": "高中时期·小夕美人偶"
+          },
+          "titleKind": "native-title-opcode",
+          "sourceInstructionStart": 331,
+          "sourceInstructionEndExclusive": 1010,
+          "japaneseOffset": 3593,
+          "chineseOffset": 4082,
+          "firstEventId": "ikura-e09",
+          "firstTextInstructionIndex": 331,
+          "firstJapaneseTextIndex": 52,
+          "japaneseMessageCount": 100,
+          "chineseMessageCount": 100,
+          "choiceLabelCount": 0,
+          "japaneseCharacterCount": 1950,
+          "chineseCharacterCount": 1718,
+          "nativeTitleRawHex": {
+            "ja-JP": "8d8293998afa8145975b94fc82bf82e182f1906c8c60",
+            "zh-CN": "b8dfd6d0cab1c6daa1a4d0a1cfa6c3c0c8cbc5bc"
+          }
+        },
+        {
+          "sectionId": "native-title-1010",
+          "legacySectionId": "main",
+          "order": 3,
+          "title": {
+            "ja-JP": "高等期・デートから帰宅",
+            "zh-CN": "高等期·约会后回家"
+          },
+          "titleKind": "native-title-opcode",
+          "sourceInstructionStart": 1010,
+          "sourceInstructionEndExclusive": 1099,
+          "japaneseOffset": 11018,
+          "chineseOffset": 12366,
+          "firstEventId": "ikura-2b0a",
+          "firstTextInstructionIndex": 1010,
+          "firstJapaneseTextIndex": 153,
+          "japaneseMessageCount": 15,
+          "chineseMessageCount": 15,
+          "choiceLabelCount": 0,
+          "japaneseCharacterCount": 334,
+          "chineseCharacterCount": 293,
+          "nativeTitleRawHex": {
+            "ja-JP": "8d8293998afa81458366815b836782a982e78b4191ee",
+            "zh-CN": "b8dfb5c8c6daa1a4d4bcbbe1baf3bbd8bcd2"
+          }
+        },
+        {
+          "sectionId": "native-title-1099",
+          "legacySectionId": "main",
+          "order": 4,
+          "title": {
+            "ja-JP": "高等期・遠い昔の精算",
+            "zh-CN": "高中时期·遥远过去的清算"
+          },
+          "titleKind": "native-title-opcode",
+          "sourceInstructionStart": 1099,
+          "sourceInstructionEndExclusive": 1906,
+          "japaneseOffset": 12134,
+          "chineseOffset": 13614,
+          "firstEventId": "ikura-2f66",
+          "firstTextInstructionIndex": 1099,
+          "firstJapaneseTextIndex": 169,
+          "japaneseMessageCount": 129,
+          "chineseMessageCount": 129,
+          "choiceLabelCount": 0,
+          "japaneseCharacterCount": 2332,
+          "chineseCharacterCount": 2066,
+          "nativeTitleRawHex": {
+            "ja-JP": "8d8293998afa8145899382a290cc82cc90b88e5a",
+            "zh-CN": "b8dfd6d0cab1c6daa1a4d2a3d4b6b9fdc8a5b5c4c7e5cbe3"
+          }
+        }
+      ]
+    },
+    {
+      "scriptId": "EV44",
+      "canonicalStoryId": "kana-okaeri/ev44",
+      "normalInstructionBoundary": 3056,
+      "originalSectionId": "main",
+      "nativeTitleCount": 3,
+      "hasUntitledOpening": false,
+      "sections": [
+        {
+          "sectionId": "native-title-11",
+          "legacySectionId": "main",
+          "order": 1,
+          "title": {
+            "ja-JP": "高等期・夕美との蜜月",
+            "zh-CN": "高等期·和夕美的蜜月"
+          },
+          "titleKind": "native-title-opcode",
+          "sourceInstructionStart": 11,
+          "sourceInstructionEndExclusive": 1820,
+          "japaneseOffset": 71,
+          "chineseOffset": 71,
+          "firstEventId": "ikura-47",
+          "firstTextInstructionIndex": 11,
+          "firstJapaneseTextIndex": 0,
+          "japaneseMessageCount": 266,
+          "chineseMessageCount": 266,
+          "choiceLabelCount": 0,
+          "japaneseCharacterCount": 5576,
+          "chineseCharacterCount": 4639,
+          "nativeTitleRawHex": {
+            "ja-JP": "8d8293998afa8145975b94fc82c682cc96a88c8e",
+            "zh-CN": "b8dfb5c8c6daa1a4bacdcfa6c3c0b5c4c3dbd4c2"
+          }
+        },
+        {
+          "sectionId": "native-title-1820",
+          "legacySectionId": "main",
+          "order": 2,
+          "title": {
+            "ja-JP": "高等期・目撃",
+            "zh-CN": "高等期。目击。"
+          },
+          "titleKind": "native-title-opcode",
+          "sourceInstructionStart": 1820,
+          "sourceInstructionEndExclusive": 2269,
+          "japaneseOffset": 20514,
+          "chineseOffset": 22239,
+          "firstEventId": "ikura-5022",
+          "firstTextInstructionIndex": 1820,
+          "firstJapaneseTextIndex": 267,
+          "japaneseMessageCount": 62,
+          "chineseMessageCount": 62,
+          "choiceLabelCount": 0,
+          "japaneseCharacterCount": 1081,
+          "chineseCharacterCount": 918,
+          "nativeTitleRawHex": {
+            "ja-JP": "8d8293998afa814596da8c82",
+            "zh-CN": "b8dfb5c8c6daa1a3c4bfbbf7a1a3"
+          }
+        },
+        {
+          "sectionId": "native-title-2269",
+          "legacySectionId": "main",
+          "order": 3,
+          "title": {
+            "ja-JP": "高等期・加奈のアルバム",
+            "zh-CN": "高等期。加奈的相簿"
+          },
+          "titleKind": "native-title-opcode",
+          "sourceInstructionStart": 2269,
+          "sourceInstructionEndExclusive": 3056,
+          "japaneseOffset": 25082,
+          "chineseOffset": 27156,
+          "firstEventId": "ikura-61fa",
+          "firstTextInstructionIndex": 2269,
+          "firstJapaneseTextIndex": 330,
+          "japaneseMessageCount": 115,
+          "chineseMessageCount": 115,
+          "choiceLabelCount": 2,
+          "japaneseCharacterCount": 2287,
+          "chineseCharacterCount": 1871,
+          "nativeTitleRawHex": {
+            "ja-JP": "8d8293998afa814589c193de82cc8341838b836f8380",
+            "zh-CN": "b8dfb5c8c6daa1a3bcd3c4ceb5c4cfe0b2be"
+          }
+        }
+      ]
+    },
+    {
+      "scriptId": "EV45",
+      "canonicalStoryId": "kana-okaeri/ev45",
+      "normalInstructionBoundary": 2087,
+      "originalSectionId": "main",
+      "nativeTitleCount": 2,
+      "hasUntitledOpening": false,
+      "sections": [
+        {
+          "sectionId": "native-title-14",
+          "legacySectionId": "main",
+          "order": 1,
+          "title": {
+            "ja-JP": "高等期・勇太とお見舞い",
+            "zh-CN": "高等期·和勇太去探病。"
+          },
+          "titleKind": "native-title-opcode",
+          "sourceInstructionStart": 14,
+          "sourceInstructionEndExclusive": 926,
+          "japaneseOffset": 87,
+          "chineseOffset": 87,
+          "firstEventId": "ikura-57",
+          "firstTextInstructionIndex": 14,
+          "firstJapaneseTextIndex": 0,
+          "japaneseMessageCount": 127,
+          "chineseMessageCount": 127,
+          "choiceLabelCount": 2,
+          "japaneseCharacterCount": 2443,
+          "chineseCharacterCount": 2075,
+          "nativeTitleRawHex": {
+            "ja-JP": "8d8293998afa8145974591be82c682a88ca9959182a2",
+            "zh-CN": "b8dfb5c8c6daa1a4bacdd3c2ccabc8a5ccbdb2a1a1a3"
+          }
+        },
+        {
+          "sectionId": "native-title-926",
+          "legacySectionId": "main",
+          "order": 2,
+          "title": {
+            "ja-JP": "高等期・夕美との情事",
+            "zh-CN": "高等期。和夕美的情事。"
+          },
+          "titleKind": "native-title-opcode",
+          "sourceInstructionStart": 926,
+          "sourceInstructionEndExclusive": 2087,
+          "japaneseOffset": 9889,
+          "chineseOffset": 10728,
+          "firstEventId": "ikura-26a1",
+          "firstTextInstructionIndex": 926,
+          "firstJapaneseTextIndex": 128,
+          "japaneseMessageCount": 155,
+          "chineseMessageCount": 155,
+          "choiceLabelCount": 0,
+          "japaneseCharacterCount": 3090,
+          "chineseCharacterCount": 2552,
+          "nativeTitleRawHex": {
+            "ja-JP": "8d8293998afa8145975b94fc82c682cc8fee8e96",
+            "zh-CN": "b8dfb5c8c6daa1a3bacdcfa6c3c0b5c4c7e9cac2a1a3"
+          }
+        }
+      ]
+    },
+    {
+      "scriptId": "EV46",
+      "canonicalStoryId": "kana-okaeri/ev46",
+      "normalInstructionBoundary": 4489,
+      "originalSectionId": "main",
+      "nativeTitleCount": 3,
+      "hasUntitledOpening": false,
+      "sections": [
+        {
+          "sectionId": "native-title-10",
+          "legacySectionId": "main",
+          "order": 1,
+          "title": {
+            "ja-JP": "高等期・加奈と一緒に……",
+            "zh-CN": "高等期·和加奈一起……"
+          },
+          "titleKind": "native-title-opcode",
+          "sourceInstructionStart": 10,
+          "sourceInstructionEndExclusive": 895,
+          "japaneseOffset": 67,
+          "chineseOffset": 67,
+          "firstEventId": "ikura-43",
+          "firstTextInstructionIndex": 10,
+          "firstJapaneseTextIndex": 0,
+          "japaneseMessageCount": 128,
+          "chineseMessageCount": 128,
+          "choiceLabelCount": 2,
+          "japaneseCharacterCount": 2499,
+          "chineseCharacterCount": 2137,
+          "nativeTitleRawHex": {
+            "ja-JP": "8d8293998afa814589c193de82c688ea8f8f82c981638163",
+            "zh-CN": "b8dfb5c8c6daa1a4bacdbcd3c4ced2bbc6f0a1ada1ad"
+          }
+        },
+        {
+          "sectionId": "native-title-895",
+          "legacySectionId": "main",
+          "order": 2,
+          "title": {
+            "ja-JP": "高等期・加奈と街へ",
+            "zh-CN": "高等期·和加奈上街。"
+          },
+          "titleKind": "native-title-opcode",
+          "sourceInstructionStart": 895,
+          "sourceInstructionEndExclusive": 3012,
+          "japaneseOffset": 9636,
+          "chineseOffset": 10500,
+          "firstEventId": "ikura-25a4",
+          "firstTextInstructionIndex": 895,
+          "firstJapaneseTextIndex": 129,
+          "japaneseMessageCount": 346,
+          "chineseMessageCount": 346,
+          "choiceLabelCount": 6,
+          "japaneseCharacterCount": 6438,
+          "chineseCharacterCount": 5533,
+          "nativeTitleRawHex": {
+            "ja-JP": "8d8293998afa814589c193de82c68a5882d6",
+            "zh-CN": "b8dfb5c8c6daa1a4bacdbcd3c4cec9cfbdd6a1a3"
+          }
+        },
+        {
+          "sectionId": "native-title-3012",
+          "legacySectionId": "main",
+          "order": 3,
+          "title": {
+            "ja-JP": "高等期・禁断の想い",
+            "zh-CN": "高等期。禁断的想法。"
+          },
+          "titleKind": "native-title-opcode",
+          "sourceInstructionStart": 3012,
+          "sourceInstructionEndExclusive": 4489,
+          "japaneseOffset": 33731,
+          "chineseOffset": 36994,
+          "firstEventId": "ikura-83c3",
+          "firstTextInstructionIndex": 3012,
+          "firstJapaneseTextIndex": 476,
+          "japaneseMessageCount": 192,
+          "chineseMessageCount": 192,
+          "choiceLabelCount": 0,
+          "japaneseCharacterCount": 3408,
+          "chineseCharacterCount": 2861,
+          "nativeTitleRawHex": {
+            "ja-JP": "8d8293998afa81458bd6926682cc917a82a2",
+            "zh-CN": "b8dfb5c8c6daa1a3bdfbb6cfb5c4cfebb7a8a1a3"
+          }
+        }
+      ]
+    },
+    {
+      "scriptId": "EV462A",
+      "canonicalStoryId": "kana-okaeri/ev462a",
+      "normalInstructionBoundary": 1230,
+      "originalSectionId": "main",
+      "nativeTitleCount": 1,
+      "hasUntitledOpening": false,
+      "sections": [
+        {
+          "sectionId": "native-title-11",
+          "legacySectionId": "main",
+          "order": 1,
+          "title": {
+            "ja-JP": "高等期・加奈が体操服で……",
+            "zh-CN": "高等期·加奈穿着体操服……"
+          },
+          "titleKind": "native-title-opcode",
+          "sourceInstructionStart": 11,
+          "sourceInstructionEndExclusive": 1230,
+          "japaneseOffset": 71,
+          "chineseOffset": 71,
+          "firstEventId": "ikura-47",
+          "firstTextInstructionIndex": 11,
+          "firstJapaneseTextIndex": 0,
+          "japaneseMessageCount": 206,
+          "chineseMessageCount": 206,
+          "choiceLabelCount": 0,
+          "japaneseCharacterCount": 4178,
+          "chineseCharacterCount": 3356,
+          "nativeTitleRawHex": {
+            "ja-JP": "8d8293998afa814589c193de82aa91cc9180959e82c581638163",
+            "zh-CN": "b8dfb5c8c6daa1a4bcd3c4ceb4a9d7c5cce5b2d9b7fea1ada1ad"
+          }
+        }
+      ]
+    },
+    {
+      "scriptId": "EV462B",
+      "canonicalStoryId": "kana-okaeri/ev462b",
+      "normalInstructionBoundary": 1386,
+      "originalSectionId": "main",
+      "nativeTitleCount": 1,
+      "hasUntitledOpening": false,
+      "sections": [
+        {
+          "sectionId": "native-title-11",
+          "legacySectionId": "main",
+          "order": 1,
+          "title": {
+            "ja-JP": "高等期・アルバムを見る",
+            "zh-CN": "高等期·看相簿"
+          },
+          "titleKind": "native-title-opcode",
+          "sourceInstructionStart": 11,
+          "sourceInstructionEndExclusive": 1386,
+          "japaneseOffset": 71,
+          "chineseOffset": 71,
+          "firstEventId": "ikura-47",
+          "firstTextInstructionIndex": 11,
+          "firstJapaneseTextIndex": 0,
+          "japaneseMessageCount": 205,
+          "chineseMessageCount": 205,
+          "choiceLabelCount": 0,
+          "japaneseCharacterCount": 3707,
+          "chineseCharacterCount": 3065,
+          "nativeTitleRawHex": {
+            "ja-JP": "8d8293998afa81458341838b836f838082f08ca982e9",
+            "zh-CN": "b8dfb5c8c6daa1a4bfb4cfe0b2be"
+          }
+        }
+      ]
+    },
+    {
+      "scriptId": "EV463",
+      "canonicalStoryId": "kana-okaeri/ev463",
+      "normalInstructionBoundary": 1175,
+      "originalSectionId": "main",
+      "nativeTitleCount": 1,
+      "hasUntitledOpening": false,
+      "sections": [
+        {
+          "sectionId": "native-title-11",
+          "legacySectionId": "main",
+          "order": 1,
+          "title": {
+            "ja-JP": "高等期・加奈の自慰",
+            "zh-CN": "高等期·加奈的自慰"
+          },
+          "titleKind": "native-title-opcode",
+          "sourceInstructionStart": 11,
+          "sourceInstructionEndExclusive": 1175,
+          "japaneseOffset": 71,
+          "chineseOffset": 71,
+          "firstEventId": "ikura-47",
+          "firstTextInstructionIndex": 11,
+          "firstJapaneseTextIndex": 0,
+          "japaneseMessageCount": 158,
+          "chineseMessageCount": 158,
+          "choiceLabelCount": 0,
+          "japaneseCharacterCount": 2946,
+          "chineseCharacterCount": 2339,
+          "nativeTitleRawHex": {
+            "ja-JP": "8d8293998afa814589c193de82cc8ea988d4",
+            "zh-CN": "b8dfb5c8c6daa1a4bcd3c4ceb5c4d7d4cebf"
+          }
+        }
+      ]
+    },
+    {
+      "scriptId": "EV47A",
+      "canonicalStoryId": "kana-okaeri/ev47a",
+      "normalInstructionBoundary": 1546,
+      "originalSectionId": "main",
+      "nativeTitleCount": 1,
+      "hasUntitledOpening": false,
+      "sections": [
+        {
+          "sectionId": "native-title-13",
+          "legacySectionId": "main",
+          "order": 1,
+          "title": {
+            "ja-JP": "高等期・アポトーシス",
+            "zh-CN": "高等期·细胞程序性死亡。"
+          },
+          "titleKind": "native-title-opcode",
+          "sourceInstructionStart": 13,
+          "sourceInstructionEndExclusive": 1546,
+          "japaneseOffset": 89,
+          "chineseOffset": 89,
+          "firstEventId": "ikura-59",
+          "firstTextInstructionIndex": 13,
+          "firstJapaneseTextIndex": 0,
+          "japaneseMessageCount": 240,
+          "chineseMessageCount": 240,
+          "choiceLabelCount": 2,
+          "japaneseCharacterCount": 5236,
+          "chineseCharacterCount": 4578,
+          "nativeTitleRawHex": {
+            "ja-JP": "8d8293998afa81458341837c8367815b83568358",
+            "zh-CN": "b8dfb5c8c6daa1a4cfb8b0fbb3ccd0f2d0d4cbc0cdf6a1a3"
+          }
+        }
+      ]
+    },
+    {
+      "scriptId": "EV47B",
+      "canonicalStoryId": "kana-okaeri/ev47b",
+      "normalInstructionBoundary": 799,
+      "originalSectionId": "main",
+      "nativeTitleCount": 1,
+      "hasUntitledOpening": false,
+      "sections": [
+        {
+          "sectionId": "native-title-10",
+          "legacySectionId": "main",
+          "order": 1,
+          "title": {
+            "ja-JP": "高等期・とりあえず和解",
+            "zh-CN": "高等期·总之先和解。"
+          },
+          "titleKind": "native-title-opcode",
+          "sourceInstructionStart": 10,
+          "sourceInstructionEndExclusive": 799,
+          "japaneseOffset": 67,
+          "chineseOffset": 67,
+          "firstEventId": "ikura-43",
+          "firstTextInstructionIndex": 10,
+          "firstJapaneseTextIndex": 0,
+          "japaneseMessageCount": 103,
+          "chineseMessageCount": 103,
+          "choiceLabelCount": 0,
+          "japaneseCharacterCount": 2174,
+          "chineseCharacterCount": 1923,
+          "nativeTitleRawHex": {
+            "ja-JP": "8d8293998afa814582c682e882a082a682b8986189f0",
+            "zh-CN": "b8dfb5c8c6daa1a4d7dcd6aecfc8bacdbde2a1a3"
+          }
+        }
+      ]
+    },
+    {
+      "scriptId": "EV472",
+      "canonicalStoryId": "kana-okaeri/ev472",
+      "normalInstructionBoundary": 583,
+      "originalSectionId": "main",
+      "nativeTitleCount": 1,
+      "hasUntitledOpening": false,
+      "sections": [
+        {
+          "sectionId": "native-title-11",
+          "legacySectionId": "main",
+          "order": 1,
+          "title": {
+            "ja-JP": "高等期・加奈について考える",
+            "zh-CN": "高等期·关于加奈的思考"
+          },
+          "titleKind": "native-title-opcode",
+          "sourceInstructionStart": 11,
+          "sourceInstructionEndExclusive": 583,
+          "japaneseOffset": 71,
+          "chineseOffset": 71,
+          "firstEventId": "ikura-47",
+          "firstTextInstructionIndex": 11,
+          "firstJapaneseTextIndex": 0,
+          "japaneseMessageCount": 71,
+          "chineseMessageCount": 71,
+          "choiceLabelCount": 0,
+          "japaneseCharacterCount": 1569,
+          "chineseCharacterCount": 1245,
+          "nativeTitleRawHex": {
+            "ja-JP": "8d8293998afa814589c193de82c982c282a282c48d6c82a682e9",
+            "zh-CN": "b8dfb5c8c6daa1a4b9d8d3dabcd3c4ceb5c4cbbcbfbc"
+          }
+        }
+      ]
+    },
+    {
+      "scriptId": "EV473",
+      "canonicalStoryId": "kana-okaeri/ev473",
+      "normalInstructionBoundary": 1732,
+      "originalSectionId": "main",
+      "nativeTitleCount": 2,
+      "hasUntitledOpening": false,
+      "sections": [
+        {
+          "sectionId": "native-title-14",
+          "legacySectionId": "main",
+          "order": 1,
+          "title": {
+            "ja-JP": "高等期・夕美との溝",
+            "zh-CN": "高等期·与夕美的鸿沟"
+          },
+          "titleKind": "native-title-opcode",
+          "sourceInstructionStart": 14,
+          "sourceInstructionEndExclusive": 280,
+          "japaneseOffset": 87,
+          "chineseOffset": 87,
+          "firstEventId": "ikura-57",
+          "firstTextInstructionIndex": 14,
+          "firstJapaneseTextIndex": 0,
+          "japaneseMessageCount": 44,
+          "chineseMessageCount": 44,
+          "choiceLabelCount": 0,
+          "japaneseCharacterCount": 905,
+          "chineseCharacterCount": 779,
+          "nativeTitleRawHex": {
+            "ja-JP": "8d8293998afa8145975b94fc82c682cc8d61",
+            "zh-CN": "b8dfb5c8c6daa1a4d3ebcfa6c3c0b5c4bae8b9b5"
+          }
+        },
+        {
+          "sectionId": "native-title-280",
+          "legacySectionId": "main",
+          "order": 2,
+          "title": {
+            "ja-JP": "高等期・加奈の錯乱",
+            "zh-CN": "高等期。加奈的错乱。"
+          },
+          "titleKind": "native-title-opcode",
+          "sourceInstructionStart": 280,
+          "sourceInstructionEndExclusive": 1732,
+          "japaneseOffset": 3230,
+          "chineseOffset": 3571,
+          "firstEventId": "ikura-c9e",
+          "firstTextInstructionIndex": 280,
+          "firstJapaneseTextIndex": 45,
+          "japaneseMessageCount": 209,
+          "chineseMessageCount": 209,
+          "choiceLabelCount": 2,
+          "japaneseCharacterCount": 4756,
+          "chineseCharacterCount": 3907,
+          "nativeTitleRawHex": {
+            "ja-JP": "8d8293998afa814589c193de82cc8df69790",
+            "zh-CN": "b8dfb5c8c6daa1a3bcd3c4ceb5c4b4edc2d2a1a3"
+          }
+        }
+      ]
+    },
+    {
+      "scriptId": "EV48",
+      "canonicalStoryId": "kana-okaeri/ev48",
+      "normalInstructionBoundary": 679,
+      "originalSectionId": "main",
+      "nativeTitleCount": 1,
+      "hasUntitledOpening": false,
+      "sections": [
+        {
+          "sectionId": "native-title-10",
+          "legacySectionId": "main",
+          "order": 1,
+          "title": {
+            "ja-JP": "高等期・家族で",
+            "zh-CN": "高等期·和家人一起。"
+          },
+          "titleKind": "native-title-opcode",
+          "sourceInstructionStart": 10,
+          "sourceInstructionEndExclusive": 679,
+          "japaneseOffset": 67,
+          "chineseOffset": 67,
+          "firstEventId": "ikura-43",
+          "firstTextInstructionIndex": 10,
+          "firstJapaneseTextIndex": 0,
+          "japaneseMessageCount": 78,
+          "chineseMessageCount": 78,
+          "choiceLabelCount": 0,
+          "japaneseCharacterCount": 1709,
+          "chineseCharacterCount": 1418,
+          "nativeTitleRawHex": {
+            "ja-JP": "8d8293998afa814589c691b082c5",
+            "zh-CN": "b8dfb5c8c6daa1a4bacdbcd2c8cbd2bbc6f0a1a3"
+          }
+        }
+      ]
+    },
+    {
+      "scriptId": "EV482A",
+      "canonicalStoryId": "kana-okaeri/ev482a",
+      "normalInstructionBoundary": 708,
+      "originalSectionId": "main",
+      "nativeTitleCount": 0,
+      "hasUntitledOpening": true,
+      "sections": [
+        {
+          "sectionId": "native-opening",
+          "legacySectionId": "main",
+          "order": 1,
+          "title": {
+            "zh-CN": "高等期·和家人一起。",
+            "ja-JP": "高等期・家族で"
+          },
+          "titleKind": "inherited-opening-title",
+          "sourceInstructionStart": 0,
+          "sourceInstructionEndExclusive": 708,
+          "japaneseOffset": 0,
+          "chineseOffset": 0,
+          "firstEventId": "ikura-79",
+          "firstTextInstructionIndex": 18,
+          "firstJapaneseTextIndex": 0,
+          "japaneseMessageCount": 87,
+          "chineseMessageCount": 87,
+          "choiceLabelCount": 0,
+          "japaneseCharacterCount": 1801,
+          "chineseCharacterCount": 1496,
+          "nativeTitleRawHex": null
+        }
+      ]
+    },
+    {
+      "scriptId": "EV482B",
+      "canonicalStoryId": "kana-okaeri/ev482b",
+      "normalInstructionBoundary": 3609,
+      "originalSectionId": "main",
+      "nativeTitleCount": 5,
+      "hasUntitledOpening": true,
+      "sections": [
+        {
+          "sectionId": "native-opening",
+          "legacySectionId": "main",
+          "order": 1,
+          "title": {
+            "zh-CN": "高等期·和家人一起。",
+            "ja-JP": "高等期・家族で"
+          },
+          "titleKind": "inherited-opening-title",
+          "sourceInstructionStart": 0,
+          "sourceInstructionEndExclusive": 794,
+          "japaneseOffset": 0,
+          "chineseOffset": 0,
+          "firstEventId": "ikura-79",
+          "firstTextInstructionIndex": 18,
+          "firstJapaneseTextIndex": 0,
+          "japaneseMessageCount": 132,
+          "chineseMessageCount": 132,
+          "choiceLabelCount": 2,
+          "japaneseCharacterCount": 2597,
+          "chineseCharacterCount": 2192,
+          "nativeTitleRawHex": null
+        },
+        {
+          "sectionId": "native-title-794",
+          "legacySectionId": "main",
+          "order": 2,
+          "title": {
+            "ja-JP": "高等期・叔父と話す",
+            "zh-CN": "高等期。和叔父的谈话。"
+          },
+          "titleKind": "native-title-opcode",
+          "sourceInstructionStart": 794,
+          "sourceInstructionEndExclusive": 1097,
+          "japaneseOffset": 9503,
+          "chineseOffset": 10282,
+          "firstEventId": "ikura-251f",
+          "firstTextInstructionIndex": 794,
+          "firstJapaneseTextIndex": 132,
+          "japaneseMessageCount": 45,
+          "chineseMessageCount": 45,
+          "choiceLabelCount": 0,
+          "japaneseCharacterCount": 1185,
+          "chineseCharacterCount": 941,
+          "nativeTitleRawHex": {
+            "ja-JP": "8d8293998afa81458f66958382c6986282b7",
+            "zh-CN": "b8dfb5c8c6daa1a3bacdcae5b8b8b5c4ccb8bbb0a1a3"
+          }
+        },
+        {
+          "sectionId": "native-title-1097",
+          "legacySectionId": "main",
+          "order": 3,
+          "title": {
+            "ja-JP": "高等期・最後まで……",
+            "zh-CN": "高等期。直到最后……"
+          },
+          "titleKind": "native-title-opcode",
+          "sourceInstructionStart": 1097,
+          "sourceInstructionEndExclusive": 1698,
+          "japaneseOffset": 13167,
+          "chineseOffset": 14227,
+          "firstEventId": "ikura-336f",
+          "firstTextInstructionIndex": 1097,
+          "firstJapaneseTextIndex": 178,
+          "japaneseMessageCount": 86,
+          "chineseMessageCount": 86,
+          "choiceLabelCount": 0,
+          "japaneseCharacterCount": 1881,
+          "chineseCharacterCount": 1653,
+          "nativeTitleRawHex": {
+            "ja-JP": "8d8293998afa81458dc58ce382dc82c581638163",
+            "zh-CN": "b8dfb5c8c6daa1a3d6b1b5bdd7eebaf3a1ada1ad"
+          }
+        },
+        {
+          "sectionId": "native-title-1698",
+          "legacySectionId": "main",
+          "order": 4,
+          "title": {
+            "ja-JP": "高等期・夕美との別れ",
+            "zh-CN": "高等期。和夕美分手。"
+          },
+          "titleKind": "native-title-opcode",
+          "sourceInstructionStart": 1698,
+          "sourceInstructionEndExclusive": 2178,
+          "japaneseOffset": 19978,
+          "chineseOffset": 21817,
+          "firstEventId": "ikura-4e0a",
+          "firstTextInstructionIndex": 1698,
+          "firstJapaneseTextIndex": 265,
+          "japaneseMessageCount": 90,
+          "chineseMessageCount": 90,
+          "choiceLabelCount": 0,
+          "japaneseCharacterCount": 2235,
+          "chineseCharacterCount": 1829,
+          "nativeTitleRawHex": {
+            "ja-JP": "8d8293998afa8145975b94fc82c682cc95ca82ea",
+            "zh-CN": "b8dfb5c8c6daa1a3bacdcfa6c3c0b7d6cad6a1a3"
+          }
+        },
+        {
+          "sectionId": "native-title-2178",
+          "legacySectionId": "main",
+          "order": 5,
+          "title": {
+            "ja-JP": "高等期・家族の混乱",
+            "zh-CN": "高等期。家族的混乱。"
+          },
+          "titleKind": "native-title-opcode",
+          "sourceInstructionStart": 2178,
+          "sourceInstructionEndExclusive": 2863,
+          "japaneseOffset": 26514,
+          "chineseOffset": 29015,
+          "firstEventId": "ikura-6792",
+          "firstTextInstructionIndex": 2178,
+          "firstJapaneseTextIndex": 356,
+          "japaneseMessageCount": 118,
+          "chineseMessageCount": 118,
+          "choiceLabelCount": 2,
+          "japaneseCharacterCount": 2900,
+          "chineseCharacterCount": 2458,
+          "nativeTitleRawHex": {
+            "ja-JP": "8d8293998afa814589c691b082cc8dac9790",
+            "zh-CN": "b8dfb5c8c6daa1a3bcd2d7e5b5c4bbecc2d2a1a3"
+          }
+        },
+        {
+          "sectionId": "native-title-2863",
+          "legacySectionId": "main",
+          "order": 6,
+          "title": {
+            "ja-JP": "高等期・海の約束",
+            "zh-CN": "高等期。海的约定。"
+          },
+          "titleKind": "native-title-opcode",
+          "sourceInstructionStart": 2863,
+          "sourceInstructionEndExclusive": 3609,
+          "japaneseOffset": 35471,
+          "chineseOffset": 39059,
+          "firstEventId": "ikura-8a8f",
+          "firstTextInstructionIndex": 2863,
+          "firstJapaneseTextIndex": 475,
+          "japaneseMessageCount": 105,
+          "chineseMessageCount": 105,
+          "choiceLabelCount": 0,
+          "japaneseCharacterCount": 2184,
+          "chineseCharacterCount": 1844,
+          "nativeTitleRawHex": {
+            "ja-JP": "8d8293998afa81458a4382cc96f191a9",
+            "zh-CN": "b8dfb5c8c6daa1a3baa3b5c4d4bcb6a8a1a3"
+          }
+        }
+      ]
+    },
+    {
+      "scriptId": "EV49A",
+      "canonicalStoryId": "kana-okaeri/ev49a",
+      "normalInstructionBoundary": 2774,
+      "originalSectionId": "main",
+      "nativeTitleCount": 3,
+      "hasUntitledOpening": false,
+      "sections": [
+        {
+          "sectionId": "native-title-11",
+          "legacySectionId": "main",
+          "order": 1,
+          "title": {
+            "ja-JP": "高等期・加奈と歩く",
+            "zh-CN": "高等期·和加奈散步"
+          },
+          "titleKind": "native-title-opcode",
+          "sourceInstructionStart": 11,
+          "sourceInstructionEndExclusive": 567,
+          "japaneseOffset": 71,
+          "chineseOffset": 71,
+          "firstEventId": "ikura-47",
+          "firstTextInstructionIndex": 11,
+          "firstJapaneseTextIndex": 0,
+          "japaneseMessageCount": 93,
+          "chineseMessageCount": 93,
+          "choiceLabelCount": 0,
+          "japaneseCharacterCount": 1717,
+          "chineseCharacterCount": 1455,
+          "nativeTitleRawHex": {
+            "ja-JP": "8d8293998afa814589c193de82c695e082ad",
+            "zh-CN": "b8dfb5c8c6daa1a4bacdbcd3c4cec9a2b2bd"
+          }
+        },
+        {
+          "sectionId": "native-title-567",
+          "legacySectionId": "main",
+          "order": 2,
+          "title": {
+            "ja-JP": "高等期・退院パーティー",
+            "zh-CN": "高等期·出院派对。"
+          },
+          "titleKind": "native-title-opcode",
+          "sourceInstructionStart": 567,
+          "sourceInstructionEndExclusive": 880,
+          "japaneseOffset": 6367,
+          "chineseOffset": 6951,
+          "firstEventId": "ikura-18df",
+          "firstTextInstructionIndex": 567,
+          "firstJapaneseTextIndex": 94,
+          "japaneseMessageCount": 58,
+          "chineseMessageCount": 58,
+          "choiceLabelCount": 0,
+          "japaneseCharacterCount": 1295,
+          "chineseCharacterCount": 1038,
+          "nativeTitleRawHex": {
+            "ja-JP": "8d8293998afa814591de89408370815b83658342815b",
+            "zh-CN": "b8dfb5c8c6daa1a4b3f6d4bac5c9b6d4a1a3"
+          }
+        },
+        {
+          "sectionId": "native-title-880",
+          "legacySectionId": "main",
+          "order": 3,
+          "title": {
+            "ja-JP": "高等期・加奈と……",
+            "zh-CN": "高等期。和加奈……"
+          },
+          "titleKind": "native-title-opcode",
+          "sourceInstructionStart": 880,
+          "sourceInstructionEndExclusive": 2774,
+          "japaneseOffset": 10555,
+          "chineseOffset": 11458,
+          "firstEventId": "ikura-293b",
+          "firstTextInstructionIndex": 880,
+          "firstJapaneseTextIndex": 153,
+          "japaneseMessageCount": 285,
+          "chineseMessageCount": 285,
+          "choiceLabelCount": 2,
+          "japaneseCharacterCount": 5721,
+          "chineseCharacterCount": 4682,
+          "nativeTitleRawHex": {
+            "ja-JP": "8d8293998afa814589c193de82c681638163",
+            "zh-CN": "b8dfb5c8c6daa1a3bacdbcd3c4cea1ada1ad"
+          }
+        }
+      ]
+    },
+    {
+      "scriptId": "EV49B",
+      "canonicalStoryId": "kana-okaeri/ev49b",
+      "normalInstructionBoundary": 1399,
+      "originalSectionId": "main",
+      "nativeTitleCount": 1,
+      "hasUntitledOpening": false,
+      "sections": [
+        {
+          "sectionId": "native-title-11",
+          "legacySectionId": "main",
+          "order": 1,
+          "title": {
+            "ja-JP": "高等期・加奈、突然の帰還",
+            "zh-CN": "高等期·加奈、意外归来"
+          },
+          "titleKind": "native-title-opcode",
+          "sourceInstructionStart": 11,
+          "sourceInstructionEndExclusive": 1399,
+          "japaneseOffset": 71,
+          "chineseOffset": 71,
+          "firstEventId": "ikura-47",
+          "firstTextInstructionIndex": 11,
+          "firstJapaneseTextIndex": 0,
+          "japaneseMessageCount": 182,
+          "chineseMessageCount": 181,
+          "choiceLabelCount": 2,
+          "japaneseCharacterCount": 4610,
+          "chineseCharacterCount": 3677,
+          "nativeTitleRawHex": {
+            "ja-JP": "8d8293998afa814589c193de814193cb915282cc8b418ad2",
+            "zh-CN": "b8dfb5c8c6daa1a4bcd3c4cea1a2d2e2cde2b9e9c0b4"
+          }
+        }
+      ]
+    },
+    {
+      "scriptId": "EV49B2",
+      "canonicalStoryId": "kana-okaeri/ev49b2",
+      "normalInstructionBoundary": 1110,
+      "originalSectionId": "main",
+      "nativeTitleCount": 1,
+      "hasUntitledOpening": false,
+      "sections": [
+        {
+          "sectionId": "native-title-11",
+          "legacySectionId": "main",
+          "order": 1,
+          "title": {
+            "ja-JP": "高等期・海へ",
+            "zh-CN": "高等期·去大海"
+          },
+          "titleKind": "native-title-opcode",
+          "sourceInstructionStart": 11,
+          "sourceInstructionEndExclusive": 1110,
+          "japaneseOffset": 71,
+          "chineseOffset": 71,
+          "firstEventId": "ikura-47",
+          "firstTextInstructionIndex": 11,
+          "firstJapaneseTextIndex": 0,
+          "japaneseMessageCount": 164,
+          "chineseMessageCount": 164,
+          "choiceLabelCount": 0,
+          "japaneseCharacterCount": 3649,
+          "chineseCharacterCount": 3022,
+          "nativeTitleRawHex": {
+            "ja-JP": "8d8293998afa81458a4382d6",
+            "zh-CN": "b8dfb5c8c6daa1a4c8a5b4f3baa3"
+          }
+        }
+      ]
+    },
+    {
+      "scriptId": "EV49B3",
+      "canonicalStoryId": "kana-okaeri/ev49b3",
+      "normalInstructionBoundary": 3498,
+      "originalSectionId": "main",
+      "nativeTitleCount": 2,
+      "hasUntitledOpening": false,
+      "sections": [
+        {
+          "sectionId": "native-title-11",
+          "legacySectionId": "main",
+          "order": 1,
+          "title": {
+            "ja-JP": "高等期・家の二人",
+            "zh-CN": "高等期·家中的两人"
+          },
+          "titleKind": "native-title-opcode",
+          "sourceInstructionStart": 11,
+          "sourceInstructionEndExclusive": 895,
+          "japaneseOffset": 71,
+          "chineseOffset": 71,
+          "firstEventId": "ikura-47",
+          "firstTextInstructionIndex": 11,
+          "firstJapaneseTextIndex": 0,
+          "japaneseMessageCount": 134,
+          "chineseMessageCount": 134,
+          "choiceLabelCount": 0,
+          "japaneseCharacterCount": 2769,
+          "chineseCharacterCount": 2301,
+          "nativeTitleRawHex": {
+            "ja-JP": "8d8293998afa814589c682cc93f1906c",
+            "zh-CN": "b8dfb5c8c6daa1a4bcd2d6d0b5c4c1bdc8cb"
+          }
+        },
+        {
+          "sectionId": "native-title-895",
+          "legacySectionId": "main",
+          "order": 2,
+          "title": {
+            "ja-JP": "高等期・二人の一夜",
+            "zh-CN": "高等期·两人的一夜"
+          },
+          "titleKind": "native-title-opcode",
+          "sourceInstructionStart": 895,
+          "sourceInstructionEndExclusive": 3498,
+          "japaneseOffset": 9946,
+          "chineseOffset": 10833,
+          "firstEventId": "ikura-26da",
+          "firstTextInstructionIndex": 895,
+          "firstJapaneseTextIndex": 135,
+          "japaneseMessageCount": 401,
+          "chineseMessageCount": 401,
+          "choiceLabelCount": 2,
+          "japaneseCharacterCount": 8148,
+          "chineseCharacterCount": 6913,
+          "nativeTitleRawHex": {
+            "ja-JP": "8d8293998afa814593f1906c82cc88ea96e9",
+            "zh-CN": "b8dfb5c8c6daa1a4c1bdc8cbb5c4d2bbd2b9"
+          }
+        }
+      ]
+    },
+    {
+      "scriptId": "EV494",
+      "canonicalStoryId": "kana-okaeri/ev494",
+      "normalInstructionBoundary": 413,
+      "originalSectionId": "main",
+      "nativeTitleCount": 1,
+      "hasUntitledOpening": false,
+      "sections": [
+        {
+          "sectionId": "native-title-11",
+          "legacySectionId": "main",
+          "order": 1,
+          "title": {
+            "ja-JP": "高等期・病院に戻って……",
+            "zh-CN": "高等期·回到医院……"
+          },
+          "titleKind": "native-title-opcode",
+          "sourceInstructionStart": 11,
+          "sourceInstructionEndExclusive": 413,
+          "japaneseOffset": 71,
+          "chineseOffset": 71,
+          "firstEventId": "ikura-47",
+          "firstTextInstructionIndex": 11,
+          "firstJapaneseTextIndex": 0,
+          "japaneseMessageCount": 39,
+          "chineseMessageCount": 39,
+          "choiceLabelCount": 0,
+          "japaneseCharacterCount": 828,
+          "chineseCharacterCount": 707,
+          "nativeTitleRawHex": {
+            "ja-JP": "8d8293998afa81459561894082c996df82c182c481638163",
+            "zh-CN": "b8dfb5c8c6daa1a4bbd8b5bdd2bdd4baa1ada1ad"
+          }
+        }
+      ]
+    },
+    {
+      "scriptId": "EV40A",
+      "canonicalStoryId": "kana-okaeri/ev40a",
+      "normalInstructionBoundary": 1881,
+      "originalSectionId": "main",
+      "nativeTitleCount": 2,
+      "hasUntitledOpening": false,
+      "sections": [
+        {
+          "sectionId": "native-title-11",
+          "legacySectionId": "main",
+          "order": 1,
+          "title": {
+            "ja-JP": "高等期・最後の通告",
+            "zh-CN": "高等期·最后的通告"
+          },
+          "titleKind": "native-title-opcode",
+          "sourceInstructionStart": 11,
+          "sourceInstructionEndExclusive": 869,
+          "japaneseOffset": 71,
+          "chineseOffset": 71,
+          "firstEventId": "ikura-47",
+          "firstTextInstructionIndex": 11,
+          "firstJapaneseTextIndex": 0,
+          "japaneseMessageCount": 154,
+          "chineseMessageCount": 154,
+          "choiceLabelCount": 0,
+          "japaneseCharacterCount": 3812,
+          "chineseCharacterCount": 3325,
+          "nativeTitleRawHex": {
+            "ja-JP": "8d8293998afa81458dc58ce382cc92ca8d90",
+            "zh-CN": "b8dfb5c8c6daa1a4d7eebaf3b5c4cda8b8e6"
+          }
+        },
+        {
+          "sectionId": "native-title-869",
+          "legacySectionId": "main",
+          "order": 2,
+          "title": {
+            "ja-JP": "高等期・夕美への懇願",
+            "zh-CN": "高等期·对夕美的恳求"
+          },
+          "titleKind": "native-title-opcode",
+          "sourceInstructionStart": 869,
+          "sourceInstructionEndExclusive": 1881,
+          "japaneseOffset": 11659,
+          "chineseOffset": 13110,
+          "firstEventId": "ikura-2d8b",
+          "firstTextInstructionIndex": 869,
+          "firstJapaneseTextIndex": 155,
+          "japaneseMessageCount": 147,
+          "chineseMessageCount": 147,
+          "choiceLabelCount": 2,
+          "japaneseCharacterCount": 2767,
+          "chineseCharacterCount": 2410,
+          "nativeTitleRawHex": {
+            "ja-JP": "8d8293998afa8145975b94fc82d682cc8da78ae8",
+            "zh-CN": "b8dfb5c8c6daa1a4b6d4cfa6c3c0b5c4bfd2c7f3"
+          }
+        }
+      ]
+    },
+    {
+      "scriptId": "EV40B",
+      "canonicalStoryId": "kana-okaeri/ev40b",
+      "normalInstructionBoundary": 1703,
+      "originalSectionId": "main",
+      "nativeTitleCount": 1,
+      "hasUntitledOpening": false,
+      "sections": [
+        {
+          "sectionId": "native-title-11",
+          "legacySectionId": "main",
+          "order": 1,
+          "title": {
+            "ja-JP": "高等期・慟哭の日々",
+            "zh-CN": "高等期·恸哭的日子"
+          },
+          "titleKind": "native-title-opcode",
+          "sourceInstructionStart": 11,
+          "sourceInstructionEndExclusive": 1703,
+          "japaneseOffset": 71,
+          "chineseOffset": 71,
+          "firstEventId": "ikura-47",
+          "firstTextInstructionIndex": 11,
+          "firstJapaneseTextIndex": 0,
+          "japaneseMessageCount": 259,
+          "chineseMessageCount": 259,
+          "choiceLabelCount": 0,
+          "japaneseCharacterCount": 5772,
+          "chineseCharacterCount": 4841,
+          "nativeTitleRawHex": {
+            "ja-JP": "8d8293998afa81459cd49a4c82cc93fa8158",
+            "zh-CN": "b8dfb5c8c6daa1a4e2fabfdeb5c4c8d5d7d3"
+          }
+        }
+      ]
+    },
+    {
+      "scriptId": "EV4A",
+      "canonicalStoryId": "kana-okaeri/ev4a",
+      "normalInstructionBoundary": 1367,
+      "originalSectionId": "main",
+      "nativeTitleCount": 1,
+      "hasUntitledOpening": false,
+      "sections": [
+        {
+          "sectionId": "native-title-11",
+          "legacySectionId": "main",
+          "order": 1,
+          "title": {
+            "ja-JP": "高等期・移植手術",
+            "zh-CN": "高等期·移植手术"
+          },
+          "titleKind": "native-title-opcode",
+          "sourceInstructionStart": 11,
+          "sourceInstructionEndExclusive": 1367,
+          "japaneseOffset": 71,
+          "chineseOffset": 71,
+          "firstEventId": "ikura-47",
+          "firstTextInstructionIndex": 11,
+          "firstJapaneseTextIndex": 0,
+          "japaneseMessageCount": 210,
+          "chineseMessageCount": 210,
+          "choiceLabelCount": 0,
+          "japaneseCharacterCount": 4837,
+          "chineseCharacterCount": 3991,
+          "nativeTitleRawHex": {
+            "ja-JP": "8d8293998afa814588da90418ee88f70",
+            "zh-CN": "b8dfb5c8c6daa1a4d2c6d6b2cad6caf5"
+          }
+        }
+      ]
+    },
+    {
+      "scriptId": "ED1",
+      "canonicalStoryId": "kana-okaeri/ed1",
+      "normalInstructionBoundary": 4797,
+      "originalSectionId": "main",
+      "nativeTitleCount": 1,
+      "hasUntitledOpening": false,
+      "sections": [
+        {
+          "sectionId": "native-title-12",
+          "legacySectionId": "main",
+          "order": 1,
+          "title": {
+            "ja-JP": "はじまりのさよなら",
+            "zh-CN": "初次别离"
+          },
+          "titleKind": "native-title-opcode",
+          "sourceInstructionStart": 12,
+          "sourceInstructionEndExclusive": 4797,
+          "japaneseOffset": 76,
+          "chineseOffset": 76,
+          "firstEventId": "ikura-4c",
+          "firstTextInstructionIndex": 12,
+          "firstJapaneseTextIndex": 0,
+          "japaneseMessageCount": 844,
+          "chineseMessageCount": 844,
+          "choiceLabelCount": 0,
+          "japaneseCharacterCount": 16247,
+          "chineseCharacterCount": 14247,
+          "nativeTitleRawHex": {
+            "ja-JP": "82cd82b682dc82e882cc82b382e682c882e7",
+            "zh-CN": "b3f5b4ceb1f0c0eb"
+          }
+        }
+      ]
+    },
+    {
+      "scriptId": "ED2",
+      "canonicalStoryId": "kana-okaeri/ed2",
+      "normalInstructionBoundary": 1559,
+      "originalSectionId": "main",
+      "nativeTitleCount": 1,
+      "hasUntitledOpening": false,
+      "sections": [
+        {
+          "sectionId": "native-title-14",
+          "legacySectionId": "main",
+          "order": 1,
+          "title": {
+            "ja-JP": "追憶",
+            "zh-CN": "追忆"
+          },
+          "titleKind": "native-title-opcode",
+          "sourceInstructionStart": 14,
+          "sourceInstructionEndExclusive": 1559,
+          "japaneseOffset": 94,
+          "chineseOffset": 94,
+          "firstEventId": "ikura-5e",
+          "firstTextInstructionIndex": 14,
+          "firstJapaneseTextIndex": 0,
+          "japaneseMessageCount": 242,
+          "chineseMessageCount": 242,
+          "choiceLabelCount": 0,
+          "japaneseCharacterCount": 5386,
+          "chineseCharacterCount": 4572,
+          "nativeTitleRawHex": {
+            "ja-JP": "92c789af",
+            "zh-CN": "d7b7d2e4"
+          }
+        }
+      ]
+    },
+    {
+      "scriptId": "ED3",
+      "canonicalStoryId": "kana-okaeri/ed3",
+      "normalInstructionBoundary": 4742,
+      "originalSectionId": "main",
+      "nativeTitleCount": 1,
+      "hasUntitledOpening": false,
+      "sections": [
+        {
+          "sectionId": "native-title-12",
+          "legacySectionId": "main",
+          "order": 1,
+          "title": {
+            "ja-JP": "迷路から",
+            "zh-CN": "迷途归来。"
+          },
+          "titleKind": "native-title-opcode",
+          "sourceInstructionStart": 12,
+          "sourceInstructionEndExclusive": 4742,
+          "japaneseOffset": 76,
+          "chineseOffset": 76,
+          "firstEventId": "ikura-4c",
+          "firstTextInstructionIndex": 12,
+          "firstJapaneseTextIndex": 0,
+          "japaneseMessageCount": 729,
+          "chineseMessageCount": 729,
+          "choiceLabelCount": 0,
+          "japaneseCharacterCount": 15749,
+          "chineseCharacterCount": 13341,
+          "nativeTitleRawHex": {
+            "ja-JP": "96c0984882a982e7",
+            "zh-CN": "c3d4cdbeb9e9c0b4a1a3"
+          }
+        }
+      ]
+    },
+    {
+      "scriptId": "ED4",
+      "canonicalStoryId": "kana-okaeri/ed4",
+      "normalInstructionBoundary": 2297,
+      "originalSectionId": "main",
+      "nativeTitleCount": 1,
+      "hasUntitledOpening": false,
+      "sections": [
+        {
+          "sectionId": "native-title-12",
+          "legacySectionId": "main",
+          "order": 1,
+          "title": {
+            "ja-JP": "雪",
+            "zh-CN": "雪"
+          },
+          "titleKind": "native-title-opcode",
+          "sourceInstructionStart": 12,
+          "sourceInstructionEndExclusive": 2297,
+          "japaneseOffset": 76,
+          "chineseOffset": 76,
+          "firstEventId": "ikura-4c",
+          "firstTextInstructionIndex": 12,
+          "firstJapaneseTextIndex": 0,
+          "japaneseMessageCount": 339,
+          "chineseMessageCount": 339,
+          "choiceLabelCount": 0,
+          "japaneseCharacterCount": 7338,
+          "chineseCharacterCount": 6041,
+          "nativeTitleRawHex": {
+            "ja-JP": "90e1",
+            "zh-CN": "d1a9"
+          }
+        }
+      ]
+    },
+    {
+      "scriptId": "ED4B",
+      "canonicalStoryId": "kana-okaeri/ed4b",
+      "normalInstructionBoundary": 334,
+      "originalSectionId": "main",
+      "nativeTitleCount": 0,
+      "hasUntitledOpening": true,
+      "sections": [
+        {
+          "sectionId": "native-opening",
+          "legacySectionId": "main",
+          "order": 1,
+          "title": {
+            "zh-CN": "雪",
+            "ja-JP": "雪"
+          },
+          "titleKind": "inherited-opening-title",
+          "sourceInstructionStart": 0,
+          "sourceInstructionEndExclusive": 334,
+          "japaneseOffset": 0,
+          "chineseOffset": 0,
+          "firstEventId": "ikura-63",
+          "firstTextInstructionIndex": 15,
+          "firstJapaneseTextIndex": 0,
+          "japaneseMessageCount": 22,
+          "chineseMessageCount": 22,
+          "choiceLabelCount": 0,
+          "japaneseCharacterCount": 471,
+          "chineseCharacterCount": 404,
+          "nativeTitleRawHex": null
+        }
+      ]
+    },
+    {
+      "scriptId": "ED5",
+      "canonicalStoryId": "kana-okaeri/ed5",
+      "normalInstructionBoundary": 3302,
+      "originalSectionId": "main",
+      "nativeTitleCount": 0,
+      "hasUntitledOpening": true,
+      "sections": [
+        {
+          "sectionId": "native-opening",
+          "legacySectionId": "main",
+          "order": 1,
+          "title": {
+            "zh-CN": "追忆",
+            "ja-JP": "おもいで"
+          },
+          "titleKind": "inherited-opening-title",
+          "sourceInstructionStart": 0,
+          "sourceInstructionEndExclusive": 3302,
+          "japaneseOffset": 0,
+          "chineseOffset": 0,
+          "firstEventId": "ikura-60",
+          "firstTextInstructionIndex": 15,
+          "firstJapaneseTextIndex": 0,
+          "japaneseMessageCount": 530,
+          "chineseMessageCount": 528,
+          "choiceLabelCount": 0,
+          "japaneseCharacterCount": 12510,
+          "chineseCharacterCount": 9885,
+          "nativeTitleRawHex": null
+        }
+      ]
+    },
+    {
+      "scriptId": "ED5B",
+      "canonicalStoryId": "kana-okaeri/ed5b",
+      "normalInstructionBoundary": 227,
+      "originalSectionId": "main",
+      "nativeTitleCount": 1,
+      "hasUntitledOpening": false,
+      "sections": [
+        {
+          "sectionId": "native-title-2",
+          "legacySectionId": "main",
+          "order": 1,
+          "title": {
+            "ja-JP": "おもいで",
+            "zh-CN": "追忆"
+          },
+          "titleKind": "native-title-opcode",
+          "sourceInstructionStart": 2,
+          "sourceInstructionEndExclusive": 227,
+          "japaneseOffset": 19,
+          "chineseOffset": 19,
+          "firstEventId": "ikura-13",
+          "firstTextInstructionIndex": 2,
+          "firstJapaneseTextIndex": 0,
+          "japaneseMessageCount": 10,
+          "chineseMessageCount": 10,
+          "choiceLabelCount": 0,
+          "japaneseCharacterCount": 249,
+          "chineseCharacterCount": 206,
+          "nativeTitleRawHex": {
+            "ja-JP": "82a882e082a282c5",
+            "zh-CN": "d7b7d2e4"
+          }
+        }
+      ]
+    },
+    {
+      "scriptId": "ED6",
+      "canonicalStoryId": "kana-okaeri/ed6",
+      "normalInstructionBoundary": 719,
+      "originalSectionId": "main",
+      "nativeTitleCount": 1,
+      "hasUntitledOpening": false,
+      "sections": [
+        {
+          "sectionId": "native-title-2",
+          "legacySectionId": "main",
+          "order": 1,
+          "title": {
+            "ja-JP": "今を生きる",
+            "zh-CN": "活在当下"
+          },
+          "titleKind": "native-title-opcode",
+          "sourceInstructionStart": 2,
+          "sourceInstructionEndExclusive": 719,
+          "japaneseOffset": 19,
+          "chineseOffset": 19,
+          "firstEventId": "ikura-13",
+          "firstTextInstructionIndex": 2,
+          "firstJapaneseTextIndex": 0,
+          "japaneseMessageCount": 104,
+          "chineseMessageCount": 104,
+          "choiceLabelCount": 0,
+          "japaneseCharacterCount": 2464,
+          "chineseCharacterCount": 2065,
+          "nativeTitleRawHex": {
+            "ja-JP": "8da182f090b682ab82e9",
+            "zh-CN": "bbeed4dab5b1cfc2"
+          }
+        }
+      ]
+    }
+  ]
+}

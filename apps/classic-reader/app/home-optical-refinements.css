@@ -1,0 +1,1124 @@
+
+/* Replace the old independent paper veil and panel-local grains with one display. */
+html body #magi-home-display:is(.magi-home-dark-root,.magi-home-frost-root)::before,
+html body #magi-home-display:is(.magi-home-dark-root,.magi-home-frost-root)::after,
+html body #magi-home-display:is(.magi-home-dark-root,.magi-home-frost-root) :is(.magi-home-sidebar,.magi-home-toolbar-shell,.magi-folder-source-card,.magi-folder-source-card > button,.magi-brand-panel)::before,
+html body #magi-home-display:is(.magi-home-dark-root,.magi-home-frost-root) :is(.magi-home-sidebar,.magi-home-toolbar-shell,.magi-folder-source-card,.magi-folder-source-card > button,.magi-brand-panel)::after { content: none !important; }
+html body #magi-home-display:is(.magi-home-dark-root,.magi-home-frost-root),
+html body #magi-home-display:is(.magi-home-dark-root,.magi-home-frost-root) * {
+  transition-property: none !important;
+}
+html body #magi-home-display.magi-home-frost-root {
+  --home-optical-field:
+    radial-gradient(ellipse 28vw 23vh at 76vw 35vh, rgba(12,107,109,.42), transparent 78%),
+    radial-gradient(ellipse 23vw 38vh at 50vw 72vh, rgba(0,61,68,.35), transparent 76%),
+    radial-gradient(ellipse 24vw 30vh at 40vw 24vh, rgba(0,5,14,.64), transparent 84%),
+    linear-gradient(106deg, #010910 0%, #01101a 19%, #012029 45%, #012e34 74%, #001018 100%);
+  background: var(--home-optical-field) !important;
+  color: #c3d8cd !important;
+}
+html body #magi-home-display.magi-home-frost-root :is(.magi-home-sidebar,.magi-home-toolbar-shell,.magi-home-story-scroll,.magi-home-light-sidebar,.magi-brand-panel,main) {
+  background: var(--home-optical-field) !important; background-attachment: fixed !important;
+  background-size: 100vw 100dvh !important; background-position: 0 0 !important;
+  background-repeat: no-repeat !important; backdrop-filter: none !important; filter: none !important;
+  box-shadow: none !important;
+}
+html body #magi-home-display.magi-home-frost-root :is(.magi-folder-source-card,.magi-folder-source-card > button,.magi-home-category-trigger,.magi-home-category-filter,.magi-home-search-shell) {
+  background: rgba(1,18,24,.25) !important; border-color: #698c8280 !important;
+  box-shadow: inset 0 1px #b2d7c614 !important; backdrop-filter: none !important;
+}
+html body #magi-home-display.magi-home-frost-root :is(.magi-folder-source-card > button,.magi-home-category-trigger) {
+  color: #c3d8cd !important; text-shadow: .4px 0 #80ddc84d,0 0 3px #c5e4d02e !important;
+}
+html body #magi-home-display.magi-home-frost-root .magi-home-category-trigger[data-selected='true'],
+html body #magi-home-display.magi-home-frost-root .magi-home-category-filter[data-selected='true'] {
+  background: linear-gradient(90deg,#87b8a85c,#14383d66 30%) !important;
+  border-color: #a0c9b9 !important; box-shadow: inset 2px 0 #bddbcc,0 0 6px #a4d0be42 !important;
+}
+
+/* Shared CRT phosphor fields match Reader; the outside overscan is black. */
+html:has(#magi-home-display.magi-home-dark-root:not(.magi-home-frost-root)) {
+  --magi-tube-field: radial-gradient(ellipse 60vw 62vh at 51vw 46vh,#293922 0%,#1c2a17 40%,#10190c 72%,#030702 100%);
+  --magi-tube-ink: #a7ff54; --magi-tube-recess: #091006; --magi-tube-fringe: rgba(27,178,11,.65);
+  --magi-tube-scan: .28; --home-optical-shadow: .9px 0 var(--magi-tube-fringe),0 0 3px #a7ff545c;
+  --home-crt-ink: var(--magi-tube-ink); --home-crt-edge: #879d6599; --home-crt-paper: #12200e;
+}
+html[data-night-phosphor='amber']:has(#magi-home-display.magi-home-dark-root:not(.magi-home-frost-root)) {
+  --magi-tube-field: radial-gradient(ellipse 60vw 62vh at 51vw 46vh,#433337 0%,#2c2024 40%,#190f13 72%,#070305 100%);
+  --magi-tube-ink: #fff077; --magi-tube-recess: #100a0d; --magi-tube-fringe: rgba(255,58,8,.82);
+  --magi-tube-scan: .42; --home-optical-shadow: 1.15px 0 0 #140a0c,2.6px .12px .12px #ff410de8,-.2px 0 .12px #fffad355,0 0 3.5px #ffa72d40;
+  --home-crt-edge: #b9a05b99; --home-crt-paper: #21191b;
+}
+html:has(#magi-home-display.magi-home-dark-root:not(.magi-home-frost-root)),
+html:has(#magi-home-display.magi-home-dark-root:not(.magi-home-frost-root)) body,
+html:has(#magi-home-display.magi-home-dark-root:not(.magi-home-frost-root)) .magi-site-font-scope { background: #000 !important; }
+html:has(#magi-home-display.magi-home-dark-root:not(.magi-home-frost-root)) :is(.magi-balloon-rain) { display: none !important; }
+html body #magi-home-display.magi-home-dark-root:not(.magi-home-frost-root) {
+  padding: 7px; border-radius: 28px / 24px; background: var(--magi-tube-field) !important;
+  color: var(--magi-tube-ink) !important;
+  --magi-tree-line: var(--home-crt-edge); --magi-tree-node: var(--magi-tube-ink);
+}
+html body #magi-home-display.magi-home-dark-root:not(.magi-home-frost-root):has(.magi-reader-tube-surface[data-lens-ready='true']) { filter: url('#magi-reader-tube-curve'); }
+html body #magi-home-display.magi-home-dark-root:not(.magi-home-frost-root) :is(.magi-home-sidebar,.magi-home-toolbar-shell,.magi-brand-panel,main,.magi-folder-source-card,.magi-folder-source-card > button,.magi-home-category-trigger,.magi-home-category-filter,.magi-home-search-shell,.magi-home-theme-switcher,.magi-home-review-panel,.magi-home-section-statistics) {
+  background: transparent !important; background-image: none !important;
+  box-shadow: none !important; border-color: var(--home-crt-edge) !important; border-radius: 0 !important;
+  color: var(--magi-tube-ink) !important; backdrop-filter: none !important; filter: none !important;
+}
+html body #magi-home-display.magi-home-dark-root:not(.magi-home-frost-root) :is(button,input,a,span,p,h1,h2,h3,label,strong) {
+  color: var(--magi-tube-ink) !important; -webkit-text-fill-color: currentColor !important;
+  text-shadow: var(--home-optical-shadow) !important;
+  border-color: var(--home-crt-edge) !important;
+}
+html body #magi-home-display.magi-home-dark-root:not(.magi-home-frost-root) :is(button,input) {
+  background: transparent !important; box-shadow: none !important; border-radius: 0 !important;
+}
+html body #magi-home-display.magi-home-dark-root:not(.magi-home-frost-root) :is(.magi-home-category-trigger[data-selected='true'],.magi-home-category-filter[data-selected='true'],button[aria-pressed='true']) {
+  background: var(--magi-tube-ink) !important; color: var(--magi-tube-recess) !important;
+  -webkit-text-fill-color: currentColor !important; text-shadow: .85px 0 #ffffffc4 !important;
+  border-color: var(--magi-tube-ink) !important; box-shadow: 0 0 4px #ffef8633 !important;
+}
+html body #magi-home-display.magi-home-dark-root:not(.magi-home-frost-root) :is(.magi-home-category-trigger[data-selected='true'],.magi-home-category-filter[data-selected='true'],button[aria-pressed='true']) :is(span,svg,strong) {
+  background: transparent !important; color: var(--magi-tube-recess) !important;
+  -webkit-text-fill-color: currentColor !important; text-shadow: .85px 0 #ffffffc4 !important;
+}
+html body #magi-home-display.magi-home-dark-root:not(.magi-home-frost-root) :is(.magi-madeinmagius-logo,.magi-madeinmagius-text)::before,
+html body #magi-home-display.magi-home-dark-root:not(.magi-home-frost-root) :is(.magi-madeinmagius-logo,.magi-madeinmagius-text)::after { content: none !important; }
+html body #magi-home-display.magi-home-dark-root:not(.magi-home-frost-root) :is(.magi-madeinmagius-logo,.magi-madeinmagius-text,.magi-madeinmagius-text span,.magi-madeinmagius-text strong) {
+  background: transparent !important; filter: none !important; -webkit-text-stroke: 0 !important;
+  opacity: 1 !important; font-style: normal !important;
+}
+html[data-night-phosphor][data-night-pixel-font='true'] body #magi-home-display.magi-home-dark-root:not(.magi-home-frost-root),
+html[data-night-phosphor][data-night-pixel-font='true'] body #magi-home-display.magi-home-dark-root:not(.magi-home-frost-root) :is(button,input,a,span,p,h1,h2,h3,b,strong,label) {
+  font-family: var(--magi-night-pixel-font) !important; font-weight: 400 !important; font-synthesis: none !important;
+}
+html body #magi-home-display.magi-home-dark-root:not(.magi-home-frost-root) .magi-home-category-branch-line { stroke: var(--magi-tube-ink) !important; }
+html body #magi-home-display.magi-home-dark-root:not(.magi-home-frost-root) .magi-home-category-filter-anchor-glyph {
+  background: var(--magi-tube-ink) !important; border-color: var(--magi-tube-ink) !important;
+  box-shadow: 0 0 4px var(--magi-tube-ink) !important;
+}
+@media(max-width:767px) {
+  html body #magi-home-display.magi-home-dark-root:not(.magi-home-frost-root) { border-radius: 10px / 8px; }
+}
+
+/* Discard the remaining blue button skins, not the connection geometry. */
+html body #magi-home-display.magi-home-dark-root:not(.magi-home-frost-root) button::before,
+html body #magi-home-display.magi-home-dark-root:not(.magi-home-frost-root) button::after,
+html body #magi-home-display.magi-home-dark-root:not(.magi-home-frost-root) :is(.magi-home-search-shell,.magi-home-theme-switcher,.magi-home-category-filter,.magi-home-review-panel)::before,
+html body #magi-home-display.magi-home-dark-root:not(.magi-home-frost-root) :is(.magi-home-search-shell,.magi-home-theme-switcher,.magi-home-category-filter,.magi-home-review-panel)::after { content: none !important; }
+html body #magi-home-display.magi-home-dark-root:not(.magi-home-frost-root) :is(.magi-home-review-panel,.magi-home-section-statistics) :is(span,button,a,div) {
+  background: transparent !important; box-shadow: none !important;
+  border-color: var(--home-crt-edge) !important; border-radius: 0 !important;
+}
+html body #magi-home-display.magi-home-dark-root:not(.magi-home-frost-root) .magi-home-review-progress {
+  background: #121013 !important; border-color: var(--home-crt-edge) !important;
+}
+html body #magi-home-display.magi-home-dark-root:not(.magi-home-frost-root) .magi-home-review-progress > div {
+  background: var(--magi-tube-ink) !important;
+}
+
+
+/* NIGHT_PORTAL_V4_START: only actual night Reader / home windows.
+   Cards use grey/white secondary ink; the yellow phosphor strip stays inverse. */
+html:has(:is(#magi-reader-display.magi-reader-theme-dark:not(.magi-reader-theme-frost),#magi-home-display.magi-home-dark-root:not(.magi-home-frost-root))) body .magi-floating-window[data-reader-theme='dark'] {
+  --magi-night-window-ink: #bded9d; --magi-night-window-line: #87af66;
+  --magi-night-window-strip: #a7ff54; --magi-night-window-dark: #10120e;
+  --magi-night-window-panel: #242824; --magi-night-window-muted: #c9cec4;
+  color: var(--magi-night-window-muted) !important; border-color: var(--magi-night-window-line) !important;
+  background: #141615 !important; border-radius: 0 !important;
+  filter: none !important; backdrop-filter: none !important;
+}
+html[data-night-phosphor='amber']:has(:is(#magi-reader-display.magi-reader-theme-dark:not(.magi-reader-theme-frost),#magi-home-display.magi-home-dark-root:not(.magi-home-frost-root))) body .magi-floating-window[data-reader-theme='dark'] {
+  --magi-night-window-ink: #fff077; --magi-night-window-line: #bfa34f;
+  --magi-night-window-strip: #fff077; --magi-night-window-dark: #17120d;
+  --magi-night-window-panel: #292627; --magi-night-window-muted: #e6e0cf;
+  background: #201a1c !important;
+}
+html:has(:is(#magi-reader-display.magi-reader-theme-dark:not(.magi-reader-theme-frost),#magi-home-display.magi-home-dark-root:not(.magi-home-frost-root))) body .magi-floating-window[data-reader-theme='dark'] :is(.magi-floating-window-body,.magi-floating-window-footer) {
+  color: var(--magi-night-window-muted) !important; background: transparent !important;
+  border-color: var(--magi-night-window-line) !important; box-shadow: none !important;
+}
+html:has(:is(#magi-reader-display.magi-reader-theme-dark:not(.magi-reader-theme-frost),#magi-home-display.magi-home-dark-root:not(.magi-home-frost-root))) body .magi-floating-window[data-reader-theme='dark'] :is([data-reader-font-settings],[data-exedra-font-settings],fieldset,details) {
+  background: transparent !important; color: var(--magi-night-window-muted) !important;
+  border-color: var(--magi-night-window-line) !important; border-radius: 0 !important; box-shadow: none !important;
+}
+html:has(:is(#magi-reader-display.magi-reader-theme-dark:not(.magi-reader-theme-frost),#magi-home-display.magi-home-dark-root:not(.magi-home-frost-root))) body .magi-floating-window[data-reader-theme='dark'] :is([data-reader-font-bundle],[data-exedra-font],.magi-floating-link) {
+  background: var(--magi-night-window-panel) !important; color: var(--magi-night-window-muted) !important;
+  border-color: var(--magi-night-window-line) !important; border-radius: 0 !important;
+  box-shadow: inset 0 1px #ffffff12 !important; filter: none !important;
+}
+html:has(:is(#magi-reader-display.magi-reader-theme-dark:not(.magi-reader-theme-frost),#magi-home-display.magi-home-dark-root:not(.magi-home-frost-root))) body .magi-floating-window[data-reader-theme='dark'] .magi-floating-link > div:first-child {
+  background: #383637 !important; color: var(--magi-night-window-ink) !important;
+  border: 1px solid var(--magi-night-window-line) !important; border-radius: 0 !important;
+  box-shadow: none !important; filter: none !important;
+}
+html:has(:is(#magi-reader-display.magi-reader-theme-dark:not(.magi-reader-theme-frost),#magi-home-display.magi-home-dark-root:not(.magi-home-frost-root))) body .magi-floating-window[data-reader-theme='dark'] .magi-floating-link-title {
+  color: var(--magi-night-window-ink) !important;
+}
+html:has(:is(#magi-reader-display.magi-reader-theme-dark:not(.magi-reader-theme-frost),#magi-home-display.magi-home-dark-root:not(.magi-home-frost-root))) body .magi-floating-window[data-reader-theme='dark'] .magi-floating-link-subtitle {
+  color: var(--magi-night-window-muted) !important;
+}
+html:has(:is(#magi-reader-display.magi-reader-theme-dark:not(.magi-reader-theme-frost),#magi-home-display.magi-home-dark-root:not(.magi-home-frost-root))) body .magi-floating-window[data-reader-theme='dark'] .magi-floating-window-body :is(h2,h3,h4,summary,label,legend,p,span,small,output,a:not(.magi-floating-link)) {
+  color: inherit !important; -webkit-text-fill-color: currentColor !important; background: transparent !important;
+  border-color: var(--magi-night-window-line) !important; text-shadow: .3px 0 #ffffff30 !important;
+}
+html:has(:is(#magi-reader-display.magi-reader-theme-dark:not(.magi-reader-theme-frost),#magi-home-display.magi-home-dark-root:not(.magi-home-frost-root))) body .magi-floating-window[data-reader-theme='dark'] .magi-floating-window-body :is(h2,h3,h4,summary,legend) {
+  color: var(--magi-night-window-ink) !important;
+}
+html:has(:is(#magi-reader-display.magi-reader-theme-dark:not(.magi-reader-theme-frost),#magi-home-display.magi-home-dark-root:not(.magi-home-frost-root))) body .magi-floating-window[data-reader-theme='dark'] .magi-floating-window-body :is(button,input,textarea,select) {
+  color: var(--magi-night-window-ink) !important; -webkit-text-fill-color: currentColor !important;
+  background: var(--magi-night-window-panel) !important; border-color: var(--magi-night-window-line) !important;
+  accent-color: var(--magi-night-window-strip) !important; caret-color: var(--magi-night-window-strip) !important;
+  border-radius: 0 !important; box-shadow: none !important; filter: none !important;
+  text-shadow: .4px 0 #ffffff30 !important; outline-color: var(--magi-night-window-strip) !important;
+}
+html:has(:is(#magi-reader-display.magi-reader-theme-dark:not(.magi-reader-theme-frost),#magi-home-display.magi-home-dark-root:not(.magi-home-frost-root))) body .magi-floating-window[data-reader-theme='dark'] .magi-floating-window-body :is(button,input,textarea,select):is(:hover,:focus-visible):not(:disabled) {
+  border-color: var(--magi-night-window-strip) !important;
+  box-shadow: inset 0 0 0 1px var(--magi-night-window-line) !important;
+}
+html:has(:is(#magi-reader-display.magi-reader-theme-dark:not(.magi-reader-theme-frost),#magi-home-display.magi-home-dark-root:not(.magi-home-frost-root))) body .magi-floating-window[data-reader-theme='dark'] .magi-floating-window-body button[aria-pressed='true'] {
+  color: var(--magi-night-window-dark) !important; background: var(--magi-night-window-strip) !important;
+  text-shadow: 1.2px 0 .12px #fffef0 !important;
+}
+html:has(:is(#magi-reader-display.magi-reader-theme-dark:not(.magi-reader-theme-frost),#magi-home-display.magi-home-dark-root:not(.magi-home-frost-root))) body .magi-floating-window[data-reader-theme='dark'] .magi-floating-window-titlebar {
+  color: var(--magi-night-window-dark) !important; background: var(--magi-night-window-strip) !important;
+  border-color: var(--magi-night-window-line) !important; border-radius: 0 !important;
+  text-shadow: none !important; filter: none !important;
+}
+html:has(:is(#magi-reader-display.magi-reader-theme-dark:not(.magi-reader-theme-frost),#magi-home-display.magi-home-dark-root:not(.magi-home-frost-root))) body .magi-floating-window[data-reader-theme='dark'] .magi-floating-window-titlebar :is(h2,div,span,button,svg) {
+  color: var(--magi-night-window-dark) !important; -webkit-text-fill-color: currentColor !important;
+  background: transparent !important; background-image: none !important;
+  border-color: var(--magi-night-window-dark) !important; box-shadow: none !important;
+  opacity: 1 !important; filter: none !important; text-shadow: none !important;
+}
+html[data-night-phosphor='amber']:has(:is(#magi-reader-display.magi-reader-theme-dark:not(.magi-reader-theme-frost),#magi-home-display.magi-home-dark-root:not(.magi-home-frost-root))) body .magi-floating-window[data-reader-theme='dark'] .magi-floating-window-titlebar :is(.magi-floating-window-title,.magi-floating-window-system-label) {
+  text-shadow: 1.35px 0 .12px #fffef1,2.05px .1px .25px #ffffd999 !important;
+}
+/* NIGHT_PORTAL_V4_END */
+/* U4_HOME_REVIEW_START — direct owner feedback: coherent cold controls,
+   bounded mobile hit targets and font-relative phosphor registration. */
+html body #magi-home-display .magi-home-category-branch-line-hit {
+  /* Chromium's SVG focus outline surrounds the path's whole bounding box. */
+  outline: none !important;
+}
+html body #magi-home-display svg g:has(> .magi-home-category-branch-line-hit:focus-visible) > .magi-home-category-branch-line {
+  stroke-dasharray: 3 2 !important; stroke-width: 2px !important;
+}
+html body #magi-home-display.magi-home-frost-root {
+  --home-cold-ink: #9adccc; --home-cold-lit: #43e1c3; --home-cold-edge: #438f93;
+  --magi-category-branch-selected-line: #42dfc4;
+  --magi-category-branch-line: #328e9a;
+  --magi-tree-line: #378792; --magi-tree-node: #43bdc0;
+}
+html body #magi-home-display.magi-home-frost-root :is(.magi-home-toolbar-shell button:not(.magi-home-category-select-box):not(.magi-home-category-filter-anchor-dot):not(.magi-home-category-filter-hit),.magi-home-toolbar-shell label,.magi-home-search-shell,.magi-home-theme-switcher,.magi-home-section-statistics span,.magi-home-review-panel button) {
+  color: var(--home-cold-ink) !important; -webkit-text-fill-color: currentColor !important;
+  background: rgba(3,24,32,.62) !important; background-image: none !important;
+  border: 1px solid var(--home-cold-edge) !important; border-image: none !important;
+  box-shadow: none !important; border-radius: 1px !important;
+  text-shadow: .025em 0 #47a9c5,0 0 .15em #47c4b733 !important;
+}
+html body #magi-home-display.magi-home-frost-root :is(.magi-home-toolbar-shell button:not(.magi-home-category-select-box):not(.magi-home-category-filter-anchor-dot):not(.magi-home-category-filter-hit),.magi-home-category-trigger):is(:hover,:focus-visible,[aria-pressed='true'],[data-selected='true']) {
+  background: rgba(15,106,110,.38) !important; color: #a0e4d6 !important;
+  border-color: #36c4c2 !important; box-shadow: inset 0 0 8px #27b9c02e,0 0 9px #1bbfc12e !important;
+}
+html body #magi-home-display.magi-home-frost-root :is(.magi-folder-source-card,.magi-story-source-link,.magi-home-episode-link) {
+  color: var(--home-cold-ink) !important; background: rgba(2,21,29,.42) !important;
+  border: 1px solid #3b777e !important; border-image: none !important; border-radius: 1px !important;
+  box-shadow: none !important; filter: none !important; clip-path: none !important;
+}
+html body #magi-home-display.magi-home-frost-root :is(.magi-folder-source-card > div,.magi-home-story-heading-row,.magi-home-story-primary-link,.magi-home-story-primary-link > div,.magi-home-episode-list) {
+  background: transparent !important; background-image: none !important;
+  box-shadow: none !important; border-color: #3b777e !important;
+}
+html body #magi-home-display.magi-home-frost-root :is(.magi-folder-heading-flow,.magi-home-story-heading-row,.magi-home-episode-link) :is(span,strong,a,div) {
+  color: inherit !important; -webkit-text-fill-color: currentColor !important;
+  text-shadow: .02em 0 #42999c,0 0 .12em #3aaabb33 !important;
+}
+html body #magi-home-display.magi-home-frost-root :is(.magi-home-story-toggle,.magi-home-status-badge,.magi-source-status-badge,.magi-official-tw-badge) {
+  color: #8ad7d1 !important; background: #09272e !important;
+  border-color: #39848a !important; box-shadow: none !important;
+}
+html body #magi-home-display.magi-home-frost-root :is(.magi-home-story-tree-node[data-tree-state='open'] > .magi-story-source-link > .magi-home-story-heading-row,.magi-home-episode-link:hover) {
+  background: rgba(15,111,113,.3) !important; color: #60dfcf !important;
+}
+html body #magi-home-display.magi-home-frost-root :is(button,.magi-folder-source-card,.magi-story-source-link,.magi-home-episode-link,.magi-home-story-heading-row)::before,
+html body #magi-home-display.magi-home-frost-root :is(button,.magi-folder-source-card,.magi-story-source-link,.magi-home-episode-link,.magi-home-story-heading-row)::after,
+html body #magi-home-display.magi-home-frost-root .magi-home-category-nav::before,
+html body #magi-home-display.magi-home-frost-root .magi-home-category-nav::after {
+  content: none !important;
+}
+html body #magi-home-display.magi-home-frost-root .magi-home-category-filter {
+  background: #06212dc9 !important; border-color: #377c84 !important;
+  color: #9bd2ce !important; box-shadow: none !important;
+}
+html body #magi-home-display.magi-home-frost-root .magi-home-category-filter[data-selected='true'] {
+  color: #50e2c8 !important; background: linear-gradient(100deg,#116e6d70,#06313e99 65%) !important;
+  border-color: #3dd4c4 !important; box-shadow: inset 0 0 13px #21c6b42e,0 0 14px #18baa236 !important;
+}
+html body #magi-home-display.magi-home-frost-root .magi-home-category-filter::before,
+html body #magi-home-display.magi-home-frost-root .magi-home-category-filter::after { content: none !important; }
+html body #magi-home-display.magi-home-frost-root :is(.magi-home-category-select-square,.magi-home-category-filter-anchor-glyph) {
+  width: 7px !important; height: 7px !important; border: 1px solid #398d92 !important;
+  background: #071e29 !important; box-shadow: none !important; transform: none !important;
+}
+html body #magi-home-display.magi-home-frost-root :is([aria-pressed='true'] > .magi-home-category-select-square,[data-selected='true'] > .magi-home-category-filter-anchor-glyph) {
+  background: #34d2b9 !important; border-color: #55e9d5 !important;
+  box-shadow: 0 0 4px #2dddc4b3,0 0 12px #2fc5cb70 !important;
+}
+html body #magi-home-display.magi-home-frost-root .magi-home-category-branch-line[data-selected='true'] {
+  stroke: #3cd4c4 !important; filter: drop-shadow(0 0 2px #21c6b9a8) !important;
+}
+html body #magi-home-display.magi-home-frost-root .magi-home-category-branch-echo[data-selected='true'] {
+  stroke: #23bcb3 !important; opacity: .25 !important;
+}
+html body #magi-home-display.magi-home-frost-root :is(.magi-home-category-filter-hit,.magi-home-category-filter-anchor-dot) {
+  background: transparent !important; box-shadow: none !important;
+}
+/* Portal content is outside #magi-home-display: scope through the active root. */
+html:has(#magi-home-display.magi-home-frost-root) body .magi-floating-window[data-reader-theme='frost'] {
+  --magi-night-window-line: #468e96; color: #9ed7d1 !important;
+  background: #062029 !important; border-color: #468e96 !important;
+}
+html:has(#magi-home-display.magi-home-frost-root) body .magi-floating-window[data-reader-theme='frost'] :is(button,a,input,select,fieldset,details,.magi-floating-link,.magi-floating-link > div,.magi-floating-window-titlebar) {
+  color: #9ed7d1 !important; border-color: #468e96 !important; background: #092b33 !important;
+  background-image: none !important; box-shadow: none !important;
+}
+html:has(#magi-home-display.magi-home-frost-root) body .magi-floating-window[data-reader-theme='frost'] :is(h2,h3,h4,p,span,small,strong,label,summary) {
+  color: inherit !important; -webkit-text-fill-color: currentColor !important;
+  text-shadow: .02em 0 #3b9caf !important; background-color: transparent !important;
+}
+html body #magi-home-display.magi-home-dark-root:not(.magi-home-frost-root) {
+  --home-optical-shadow: calc(-1 * clamp(.25px,.045em,.9px)) 0 #d3f568a6,clamp(.35px,.065em,1.55px) 0 #399622b3,0 0 .12em #81cc3633;
+}
+html[data-night-phosphor='amber'] body #magi-home-display.magi-home-dark-root:not(.magi-home-frost-root) {
+  --home-optical-shadow: clamp(.25px,.05em,1.15px) 0 #140a0c,clamp(.45px,.105em,2.6px) .007em .006em #ff410dcc,0 0 .14em #ffa72d26;
+}
+html body #magi-home-display.magi-home-dark-root:not(.magi-home-frost-root) :is(.magi-madeinmagius-text,.magi-madeinmagius-text span,.magi-madeinmagius-text strong) {
+  font-family: var(--magi-night-pixel-font) !important; font-weight: 400 !important;
+  font-style: normal !important; text-transform: none !important;
+}
+/* A hit target is not a luminous plate. Only its small glyph lights up. */
+html body #magi-home-display.magi-home-dark-root:not(.magi-home-frost-root) :is(.magi-home-category-select-box,.magi-home-category-filter-anchor-dot,.magi-home-category-filter-hit) {
+  background: transparent !important; box-shadow: none !important;
+}
+html body #magi-home-display.magi-home-dark-root:not(.magi-home-frost-root) .magi-home-category-filter-anchor-glyph {
+  background: transparent !important; box-shadow: none !important;
+}
+html body #magi-home-display.magi-home-dark-root:not(.magi-home-frost-root) :is([aria-pressed='true'] > .magi-home-category-select-square,[data-selected='true'] > .magi-home-category-filter-anchor-glyph) {
+  background: var(--magi-tube-ink) !important; box-shadow: 0 0 3px var(--magi-tube-ink) !important;
+}
+/* Both axes, including Chromium's native mobile-overflow scrollbar. */
+html body #magi-home-display.magi-home-dark-root {
+  --home-scroll-thumb: #3d9d99; --home-scroll-track: #07242b;
+}
+html body #magi-home-display.magi-home-dark-root:not(.magi-home-frost-root) {
+  --home-scroll-thumb: #8ab83f; --home-scroll-track: #121c0c;
+}
+html[data-night-phosphor='amber'] body #magi-home-display.magi-home-dark-root:not(.magi-home-frost-root) {
+  --home-scroll-thumb: #c7a14d; --home-scroll-track: #281d15;
+}
+html body #magi-home-display.magi-home-dark-root * {
+  scrollbar-color: var(--home-scroll-thumb) var(--home-scroll-track) !important; scrollbar-width: thin;
+}
+html body #magi-home-display.magi-home-dark-root *::-webkit-scrollbar { width: 7px !important; height: 7px !important; }
+html body #magi-home-display.magi-home-dark-root *::-webkit-scrollbar-track,
+html body #magi-home-display.magi-home-dark-root *::-webkit-scrollbar-corner { background: var(--home-scroll-track) !important; }
+html body #magi-home-display.magi-home-dark-root *::-webkit-scrollbar-thumb { background: var(--home-scroll-thumb) !important; border: 1px solid var(--home-scroll-track) !important; border-radius: 1px !important; }
+html body #magi-home-display.magi-home-dark-root *::-webkit-scrollbar-button { display: none !important; }
+@media(max-width:767px) {
+  html body #magi-home-display.magi-home-dark-root .magi-home-mobile-category-nav {
+    width: 100% !important; max-width: 100% !important; margin: 0 !important;
+    padding: 6px !important; transform: none !important;
+    grid-template-columns: repeat(5,minmax(0,1fr)) !important;
+    column-gap: 3px !important; row-gap: 18px !important;
+  }
+  html body #magi-home-display.magi-home-dark-root .magi-home-mobile-category-nav[data-mobile-layout='single-row'] {
+    grid-template-columns: repeat(5,minmax(0,1fr)) !important;
+  }
+  html body #magi-home-display.magi-home-dark-root .magi-home-mobile-category-nav :is(.magi-home-category-node,.magi-home-category-trigger) {
+    width: 100% !important; min-width: 0 !important; max-width: 100% !important;
+  }
+  html body #magi-home-display.magi-home-dark-root .magi-home-mobile-category-nav .magi-home-category-trigger {
+    padding: 5px 1px !important; gap: 0 !important; min-height: 30px !important;
+    font-size: 12px !important; white-space: nowrap !important; justify-content: center !important;
+  }
+  html body #magi-home-display.magi-home-dark-root .magi-home-mobile-category-nav .magi-home-category-trigger > svg { display: none !important; }
+  html body #magi-home-display.magi-home-dark-root .magi-home-mobile-source-filter-row {
+    grid-template-columns: repeat(4,minmax(0,1fr)) !important;
+    padding-top: 28px !important; min-width: 0 !important; gap: 4px !important;
+  }
+  html body #magi-home-display.magi-home-dark-root .magi-home-mobile-source-filter {
+    width: 100% !important; min-width: 0 !important; min-height: 30px !important;
+    padding: 4px 1px !important; font-size: 11px !important;
+  }
+  html body #magi-home-display.magi-home-dark-root .magi-home-mobile-source-anchor-dot {
+    width: 24px !important; height: 24px !important; min-width: 24px !important; min-height: 24px !important;
+    top: -27px !important; padding: 0 !important; border: 0 !important;
+    background: transparent !important; box-shadow: none !important;
+  }
+  html body #magi-home-display.magi-home-dark-root .magi-home-mobile-category-select-box {
+    position: absolute !important; width: 22px !important; height: 22px !important; min-width: 22px !important; min-height: 22px !important;
+    padding: 0 !important; border: 0 !important; background: transparent !important; box-shadow: none !important;
+  }
+  html body #magi-home-display.magi-home-dark-root .magi-home-mobile-category-select-box--below { bottom: -15px !important; }
+  html body #magi-home-display.magi-home-dark-root .magi-home-mobile-category-select-box--above { top: -15px !important; }
+}
+/* U4_HOME_REVIEW_END */
+
+html body #magi-home-display.magi-home-frost-root :is(.magi-home-category-filter-label,.magi-home-mobile-source-filter-label) {
+  color: inherit !important; -webkit-text-fill-color: currentColor !important;
+  text-shadow: .03em 0 #26bac3,0 0 .18em #2ec6a980 !important;
+}
+html body #magi-home-display.magi-home-dark-root :is(.magi-home-category-select-box,.magi-home-category-filter-anchor-dot,.magi-home-category-filter-hit) {
+  outline: none !important;
+}
+html body #magi-home-display.magi-home-dark-root :is(.magi-home-category-select-box,.magi-home-category-filter-anchor-dot):focus-visible > span {
+  outline: 1px solid currentColor !important; outline-offset: 3px !important;
+}
+html body #magi-home-display.magi-home-dark-root .magi-home-category-filter:has(> .magi-home-category-filter-hit:focus-visible) {
+  outline: 1px dashed currentColor !important; outline-offset: 2px !important;
+}
+
+/* Cold UI lettering follows the supplied NO DATA terminal, not white lamps. */
+html body #magi-home-display.magi-home-frost-root :is(.magi-folder-heading-flow,.magi-home-category-trigger,.magi-home-story-heading-row,.magi-home-episode-link,.magi-home-review-panel h2,.magi-home-review-panel h3,.magi-home-section-statistics) {
+  color: #9adccc !important; -webkit-text-fill-color: currentColor !important;
+  text-shadow: -.025em 0 #8abf6180,.035em 0 #248ea973,0 0 .16em #28c9a866 !important;
+}
+html:has(#magi-home-display.magi-home-frost-root) body .magi-floating-window[data-reader-theme='frost'] {
+  color: #9adccc !important;
+}
+html:has(#magi-home-display.magi-home-frost-root) body .magi-floating-window[data-reader-theme='frost'] :is(.magi-retro-window-close,button[aria-label^='关闭']) {
+  width: 30px !important; height: 30px !important; min-width: 30px !important; min-height: 30px !important;
+  padding: 7px !important; border: 1px solid #38a78e !important; border-radius: 0 !important;
+  background: #052731 !important; color: #4adeb4 !important;
+  box-shadow: inset 0 0 4px #2eac8726,0 0 5px #21bf9a29 !important;
+}
+html:has(#magi-home-display.magi-home-frost-root) body .magi-floating-window[data-reader-theme='frost'] button[aria-label^='关闭'] svg {
+  width: 14px !important; height: 14px !important; stroke-width: 1.5 !important;
+  filter: drop-shadow(0 0 1px #24d9a785) !important;
+}
+html body #magi-home-display.magi-home-dark-root:not(.magi-home-frost-root) :is(.magi-home-category-select-box[aria-pressed],.magi-home-category-filter-anchor-dot[aria-pressed],.magi-home-category-filter-hit[aria-pressed]) {
+  background: transparent !important; box-shadow: none !important;
+}
+html:has(#magi-home-display.magi-home-frost-root) body .magi-floating-window[data-reader-theme='frost'] :is(.magi-floating-link-title,.magi-floating-link-subtitle,.magi-floating-window-system-label,.magi-floating-window-title) {
+  color: #9adccc !important; -webkit-text-fill-color: currentColor !important;
+  text-shadow: -.025em 0 #8abf6180,.035em 0 #248ea973,0 0 .16em #28c9a866 !important;
+}
+html:has(#magi-home-display.magi-home-frost-root) body .magi-floating-window[data-reader-theme='frost'] .magi-floating-link {
+  border-radius: 0 !important; box-shadow: none !important;
+}
+html body #magi-home-display.magi-home-dark-root:not(.magi-home-frost-root) :is(.magi-home-category-select-square,.magi-home-category-filter-anchor-glyph) {
+  width: 7px !important; height: 7px !important; border-radius: 0 !important; transform: none !important;
+}
+
+/* U4_FINAL_HOME_SYNC_START */
+
+html:has(:is(#magi-reader-display.magi-reader-theme-dark:not(.magi-reader-theme-frost),#magi-home-display.magi-home-dark-root:not(.magi-home-frost-root))) body .magi-floating-window[data-reader-theme='dark'] .magi-floating-window-body :is(p,small,[role='status'],.magi-floating-link-subtitle) {
+  text-shadow: 1.45px 0 .18px rgb(38,141,255),-.55px 0 .2px rgba(103,255,235,.72) !important;
+}
+
+html:has(:is(#magi-reader-display.magi-reader-theme-dark:not(.magi-reader-theme-frost),#magi-home-display.magi-home-dark-root:not(.magi-home-frost-root))) body .magi-floating-window[data-reader-theme='dark'] .magi-floating-window-body :is(p,small,[role='status']) > span {
+  text-shadow: inherit !important;
+}
+
+html[data-night-phosphor='amber']:has(:is(#magi-reader-display.magi-reader-theme-dark:not(.magi-reader-theme-frost),#magi-home-display.magi-home-dark-root:not(.magi-home-frost-root))) body .magi-floating-window[data-reader-theme='dark'] .magi-floating-window-titlebar :is(.magi-floating-window-title,.magi-floating-window-system-label) {
+  text-shadow: clamp(.08px,calc(.14em - 1.03px),1.7px) 0 .007em #fffef1,clamp(.12px,calc(.21em - 1.52px),2.6px) .006em .015em #ffffd980 !important;
+}
+/* One cold vector-like wordmark. Hidden legacy script letters never regain paint. */
+html body #magi-home-display.magi-home-frost-root .magi-madeinmagius-text > :is(span,strong) { display: none !important; }
+html body #magi-home-display.magi-home-frost-root .magi-madeinmagius-text::before {
+  content: 'MADE IN MAGIUS' !important; display: block !important; position: static !important;
+  color: transparent !important; -webkit-text-fill-color: transparent !important;
+  -webkit-text-stroke: .6px #9adccc !important;
+  font: 400 clamp(12px,3.5vw,18px)/1.25 'Bahnschrift','Arial Narrow',sans-serif !important;
+  font-style: normal !important; letter-spacing: .14em !important; text-transform: uppercase !important;
+  opacity: 1 !important; transform: none !important;
+  text-shadow: var(--magi-cold-text-echo) !important;
+}
+html body #magi-home-display.magi-home-frost-root :is(.magi-madeinmagius-logo,.magi-madeinmagius-text)::after { content: none !important; }
+
+html body #magi-home-display.magi-home-frost-root { --magi-cold-text-echo: clamp(-1.4px,calc(.75px - .13em),-.08px) .025em .055em #50bbaf70,.04em .015em .025em #70d6d44d,0 0 .11em #78d8c966; }
+html body #magi-home-display.magi-home-frost-root :is(.magi-home-category-trigger,.magi-home-category-filter,.magi-folder-heading-flow,.magi-home-story-heading-row,.magi-home-toolbar-controls) { text-shadow: var(--magi-cold-text-echo) !important; }
+html[data-night-phosphor='green'] body #magi-home-display.magi-home-dark-root:not(.magi-home-frost-root) { --home-optical-shadow: clamp(-1.8px,calc(.91px - .124em),-.08px) 0 .016em rgba(255,232,82,.88),clamp(.1px,calc(.16em - 1.17px),2.3px) 0 .018em rgba(52,249,22,.82),0 0 .12em rgba(166,247,82,.24); }
+html[data-night-phosphor='amber'] body #magi-home-display.magi-home-dark-root:not(.magi-home-frost-root) { --home-optical-shadow: clamp(.05px,calc(.12em - .89px),1.65px) 0 0 #140a0c,clamp(.08px,calc(.27em - 2px),3.6px) .007em .007em #ff410de8,-.012em 0 .007em #fffad355,0 0 .16em #ffa72d35; }
+/* U4_FINAL_HOME_SYNC_END */
+
+/* HOME_THEME_PROGRESS: one palette per mode; preserve data and optical lettering. */
+html body #magi-home-display {
+  --home-selection: #3e899b;
+}
+html body #magi-home-display.magi-home-paper-root { --home-selection: #b65240; }
+html body #magi-home-display.magi-home-green-root { --home-selection: #40846c; }
+html body :is(#magi-home-display.magi-home-dark-root,.magi-site-settings-window[data-reader-theme='dark']) {
+  --home-panel: #0d2520;
+  --home-expanded: #091d18;
+  --home-edge: #4e8d75;
+  --home-selection: #65c8ab;
+  --home-progress-human: rgba(90, 159, 92, .47);
+  --home-progress-reviewed: rgba(49, 153, 136, .42);
+  --home-filter-fill: #32664b;
+  --home-filter-ink: #cbf3ce;
+  --home-pending-fill: #275d43;
+  --home-pending-edge: #8add9e;
+  --home-pending-ink: #d6f3cb;
+  --home-verified-fill: #185d55;
+  --home-verified-edge: #79e6d5;
+  --home-verified-ink: #c6f5e9;
+  --home-progress-feather: 24px;
+}
+html[data-night-phosphor='amber'] body :is(#magi-home-display.magi-home-dark-root:not(.magi-home-frost-root),.magi-site-settings-window[data-reader-theme='dark']) {
+  --home-panel: #291b12;
+  --home-expanded: #1b100c;
+  --home-edge: #95603e;
+  --home-selection: #e77861;
+  --home-progress-human: rgba(171, 125, 45, .46);
+  --home-progress-reviewed: rgba(173, 76, 48, .40);
+  --home-filter-fill: #78572b;
+  --home-filter-ink: #f5daa1;
+  --home-pending-fill: #81521f;
+  --home-pending-edge: #f8b85c;
+  --home-pending-ink: #ffe3a8;
+  --home-verified-fill: #853c2d;
+  --home-verified-edge: #ff9577;
+  --home-verified-ink: #ffdbc4;
+}
+html body #magi-home-display.magi-home-frost-root {
+  --home-panel: #0d252b;
+  --home-expanded: #0a1e24;
+  --home-edge: #447878;
+  --home-selection: #74c3cd;
+  --home-progress-human: rgba(68, 119, 105, .30);
+  --home-progress-reviewed: rgba(57, 108, 121, .31);
+  --home-filter-fill: #3a7374;
+  --home-filter-ink: #bbdfd8;
+  --home-progress-feather: 32px;
+}
+
+/* The expanded gutter is a separate element, not the story card's surface. */
+html body #magi-home-display.magi-home-shell.magi-home-dark-root:not(.magi-home-frost-root)[data-theme='dark'] .magi-home-folder-body {
+  background: var(--home-expanded) !important;
+  border-color: var(--home-edge) !important;
+}
+html body #magi-home-display.magi-home-shell.magi-home-dark-root:not(.magi-home-frost-root)[data-theme='dark'] :is(.magi-folder-source-card,.magi-story-source-link) {
+  background: var(--home-panel) !important;
+  border-color: var(--home-edge) !important;
+  outline-color: var(--home-edge) !important;
+  box-shadow: inset 0 0 6px color-mix(in srgb,var(--home-edge) 14%,transparent) !important;
+  --magi-human-frame-color: var(--home-edge) !important;
+}
+html body #magi-home-display.magi-home-shell.magi-home-dark-root:not(.magi-home-frost-root)[data-theme='dark'] :is(.magi-folder-source-card > button,.magi-home-story-heading-row) {
+  /* Human share first, reviewed share second; pending is the unfilled remainder.
+     Soft stops end at the real percentages, not at a clipped overlay boundary. */
+  background:
+    linear-gradient(90deg,var(--home-progress-human) 0%,var(--home-progress-human) max(0%,calc(var(--magi-folder-human-progress-end,0%) - var(--home-progress-feather))),transparent var(--magi-folder-human-progress-end,0%)),
+    linear-gradient(90deg,var(--home-progress-reviewed) 0%,var(--home-progress-reviewed) max(0%,calc(var(--magi-folder-translated-progress-end,0%) - var(--home-progress-feather))),transparent var(--magi-folder-translated-progress-end,0%)),
+    var(--home-panel) !important;
+  border-color: var(--home-edge) !important;
+  outline-color: var(--home-edge) !important;
+  box-shadow: none !important;
+}
+/* Retire conflicting status paint layers, including the hard frost segment fill. */
+html body #magi-home-display.magi-home-shell.magi-home-dark-root:not(.magi-home-frost-root)[data-theme='dark'] :is(.magi-folder-source-card > button,.magi-story-source-link)::before,
+html body #magi-home-display.magi-home-shell.magi-home-dark-root:not(.magi-home-frost-root)[data-theme='dark'] :is(.magi-folder-source-card > button,.magi-story-source-link)::after {
+  content: none !important;
+}
+html body #magi-home-display.magi-home-shell.magi-home-dark-root:not(.magi-home-frost-root)[data-theme='dark'] :is(.magi-home-folder-tree,.magi-home-story-tree-node,.magi-home-episode-list) {
+  background-color: transparent !important;
+  border-color: var(--home-edge) !important;
+}
+html body #magi-home-display.magi-home-shell.magi-home-dark-root:not(.magi-home-frost-root)[data-theme='dark'] :is(.magi-home-folder-tree,.magi-home-story-tree-node,.magi-home-episode-list)::before,
+html body #magi-home-display.magi-home-shell.magi-home-dark-root:not(.magi-home-frost-root)[data-theme='dark'] :is(.magi-home-folder-tree,.magi-home-story-tree-node,.magi-home-episode-list)::after {
+  background-color: var(--home-edge) !important;
+  border-color: var(--home-edge) !important;
+}
+html body #magi-home-display.magi-home-shell.magi-home-dark-root:not(.magi-home-frost-root)[data-theme='dark'] .magi-home-story-tree-junction {
+  background: var(--home-expanded) !important;
+  border-color: var(--home-edge) !important;
+  box-shadow: 0 0 3px color-mix(in srgb,var(--home-edge) 45%,transparent) !important;
+}
+
+/* Small, solid capsules. Text, edge and bloom all use the capsule's own hue. */
+html body #magi-home-display.magi-home-shell.magi-home-dark-root:not(.magi-home-frost-root)[data-theme='dark'] :is(.magi-home-status-badge,.magi-source-status-badge,.magi-official-tw-badge) {
+  --badge-fill: var(--home-pending-fill);
+  --badge-edge: var(--home-pending-edge);
+  --badge-ink: var(--home-pending-ink);
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  box-sizing: border-box !important;
+  width: auto !important;
+  min-width: 0 !important;
+  height: 20px !important;
+  min-height: 20px !important;
+  padding: 1px 6px !important;
+  border: 1px solid var(--badge-edge) !important;
+  border-radius: 999px !important;
+  background: var(--badge-fill) !important;
+  color: var(--badge-ink) !important;
+  -webkit-text-fill-color: var(--badge-ink) !important;
+  font-size: 10px !important;
+  line-height: 16px !important;
+  letter-spacing: 0 !important;
+  white-space: nowrap !important;
+  vertical-align: middle !important;
+  text-align: center !important;
+  transform: none !important;
+  filter: none !important;
+  text-shadow: 0 0 2px color-mix(in srgb,var(--badge-ink) 25%,transparent) !important;
+  box-shadow: inset 0 1px 0 color-mix(in srgb,var(--badge-edge) 35%,transparent),0 0 5px var(--badge-edge),0 0 12px color-mix(in srgb,var(--badge-edge) 65%,transparent) !important;
+}
+html body #magi-home-display.magi-home-shell.magi-home-dark-root:not(.magi-home-frost-root)[data-theme='dark'] :is(.magi-home-status-badge-verified,.magi-source-status-badge-exedra-human,.magi-official-tw-badge) {
+  --badge-fill: var(--home-verified-fill);
+  --badge-edge: var(--home-verified-edge);
+  --badge-ink: var(--home-verified-ink);
+}
+
+/* Selected rails retain progress; selected no longer means an opaque full fill. */
+html body #magi-home-display.magi-home-shell.magi-home-dark-root:not(.magi-home-frost-root)[data-theme='dark'] .magi-home-category-filter {
+  background: var(--home-expanded) !important;
+  color: var(--home-filter-ink) !important;
+  -webkit-text-fill-color: currentColor !important;
+  border-color: var(--home-edge) !important;
+  box-shadow: inset 0 0 3px color-mix(in srgb,var(--home-edge) 30%,transparent) !important;
+}
+html body #magi-home-display.magi-home-shell.magi-home-dark-root:not(.magi-home-frost-root)[data-theme='dark'] .magi-home-category-filter[data-selected='true'] {
+  border-color: var(--home-selection) !important;
+}
+html body #magi-home-display.magi-home-shell.magi-home-dark-root:not(.magi-home-frost-root)[data-theme='dark'] .magi-home-category-filter::before {
+  content: '' !important;
+  display: block !important;
+  position: absolute !important;
+  inset: 1px !important;
+  width: calc(100% - 2px) !important;
+  inline-size: calc(100% - 2px) !important;
+  height: calc(100% - 2px) !important;
+  background: linear-gradient(90deg,var(--home-filter-fill) 0%,var(--home-filter-fill) max(0%,calc(var(--magi-category-filter-progress,0%) - 10px)),transparent var(--magi-category-filter-progress,0%)) !important;
+  mask: none !important;
+  clip-path: none !important;
+  opacity: 1 !important;
+  filter: none !important;
+  mix-blend-mode: normal !important;
+  z-index: 0 !important;
+  pointer-events: none !important;
+}
+html body #magi-home-display.magi-home-shell.magi-home-dark-root:not(.magi-home-frost-root)[data-theme='dark'] .magi-home-category-filter::after { content: none !important; }
+html body #magi-home-display.magi-home-shell.magi-home-dark-root:not(.magi-home-frost-root)[data-theme='dark'] .magi-home-category-filter-label {
+  color: var(--home-filter-ink) !important;
+  -webkit-text-fill-color: currentColor !important;
+}
+html body #magi-home-display.magi-home-shell.magi-home-dark-root:not(.magi-home-frost-root)[data-theme='dark'] .magi-home-category-filter-anchor-dot {
+  width: 28px !important; height: 28px !important; min-width: 28px !important; min-height: 28px !important;
+  padding: 0 !important; background: transparent !important; box-shadow: none !important;
+}
+html body #magi-home-display.magi-home-shell.magi-home-dark-root:not(.magi-home-frost-root)[data-theme='dark'] .magi-home-category-filter-anchor-glyph {
+  width: 18px !important; height: 18px !important; min-width: 18px !important; min-height: 18px !important;
+  border: 2px solid currentColor !important; transform: none !important;
+}
+html body #magi-home-display.magi-home-shell.magi-home-dark-root:not(.magi-home-frost-root)[data-theme='dark'] .magi-home-category-filter-anchor-dot[data-selected='true'] .magi-home-category-filter-anchor-glyph {
+  background: currentColor !important; box-shadow: 0 0 4px currentColor !important;
+}
+
+/* Complete shares end cleanly; only incomplete values use a soft edge. */
+html body #magi-home-display.magi-home-shell.magi-home-dark-root:not(.magi-home-frost-root)[data-theme='dark']
+  :is(.magi-folder-source-card,.magi-story-source-link)[style*='--magi-folder-human-progress-end: 100%'],
+html body #magi-home-display.magi-home-shell.magi-home-dark-root:not(.magi-home-frost-root)[data-theme='dark']
+  :is(.magi-folder-source-card,.magi-story-source-link)[style*='--magi-folder-translated-progress-end: 100%'] {
+  --home-progress-feather: 0px !important;
+}
+
+/* Day and frost 100% cards also end as a solid fill, without a trailing fade. */
+html body #magi-home-display:is(.magi-home-light-root,.magi-home-paper-root,.magi-home-frost-root)
+  :is(.magi-folder-source-card,.magi-story-source-link)[style*='--magi-folder-human-progress-end: 100%'],
+html body #magi-home-display:is(.magi-home-light-root,.magi-home-paper-root,.magi-home-frost-root)
+  :is(.magi-folder-source-card,.magi-story-source-link)[style*='--magi-folder-translated-progress-end: 100%'] {
+  --magi-folder-progress-feather: 0px !important;
+}
+
+/* Night sidebar returns to its original solid yellow phosphor; its rail is not
+   a second progress meter. Frost keeps the cool, low-luminance progress rail. */
+html[data-night-phosphor='green'] body #magi-home-display.magi-home-shell.magi-home-dark-root:not(.magi-home-frost-root)[data-theme='dark'] .magi-home-category-filter[data-selected='true'],
+html[data-night-phosphor='amber'] body #magi-home-display.magi-home-shell.magi-home-dark-root:not(.magi-home-frost-root)[data-theme='dark'] .magi-home-category-filter[data-selected='true'] {
+  background: #a7ff54 !important;
+  border-color: #a7ff54 !important;
+  color: #142513 !important;
+  -webkit-text-fill-color: currentColor !important;
+  box-shadow: 0 0 7px rgba(167,255,84,.55) !important;
+}
+html[data-night-phosphor='amber'] body #magi-home-display.magi-home-shell.magi-home-dark-root:not(.magi-home-frost-root)[data-theme='dark'] .magi-home-category-filter[data-selected='true'] {
+  background: #fff077 !important;
+  border-color: #fff077 !important;
+  box-shadow: 0 0 7px rgba(255,240,119,.55) !important;
+}
+html[data-night-phosphor='green'] body #magi-home-display.magi-home-shell.magi-home-dark-root:not(.magi-home-frost-root)[data-theme='dark'] .magi-home-category-filter::before,
+html[data-night-phosphor='amber'] body #magi-home-display.magi-home-shell.magi-home-dark-root:not(.magi-home-frost-root)[data-theme='dark'] .magi-home-category-filter::before {
+  content: none !important;
+}
+html[data-night-phosphor='green'] body #magi-home-display.magi-home-shell.magi-home-dark-root:not(.magi-home-frost-root)[data-theme='dark'] .magi-home-category-filter-label,
+html[data-night-phosphor='amber'] body #magi-home-display.magi-home-shell.magi-home-dark-root:not(.magi-home-frost-root)[data-theme='dark'] .magi-home-category-filter-label {
+  color: #142513 !important;
+  -webkit-text-fill-color: currentColor !important;
+  text-shadow: none !important;
+}
+
+/* Frost cards are intentionally dim; only their edges carry the cool bloom. */
+html body #magi-home-display.magi-home-shell.magi-home-frost-root.magi-home-dark-root
+  :is(.magi-folder-source-card,.magi-story-source-link) {
+  background-color: #0b2329 !important;
+  border-color: #4e8d92 !important;
+  box-shadow: inset 0 0 4px rgba(78,141,146,.18), 0 0 4px rgba(78,141,146,.28) !important;
+}
+
+/* The 100% state is a solid endpoint in every theme, including the original
+   day-mode cards. Override the pseudo's own feather variable directly. */
+html body #magi-home-display:is(.magi-home-light-root,.magi-home-paper-root,.magi-home-frost-root,.magi-home-dark-root)
+  :is(.magi-folder-source-card,.magi-story-source-link)[style*='--magi-folder-human-progress-end: 100%'] > button::after,
+html body #magi-home-display:is(.magi-home-light-root,.magi-home-paper-root,.magi-home-frost-root,.magi-home-dark-root)
+  .magi-story-source-link[style*='--magi-folder-human-progress-end: 100%']::after,
+html body #magi-home-display:is(.magi-home-light-root,.magi-home-paper-root,.magi-home-frost-root,.magi-home-dark-root)
+  :is(.magi-folder-source-card,.magi-story-source-link)[style*='--magi-folder-translated-progress-end: 100%'] > button::after,
+html body #magi-home-display:is(.magi-home-light-root,.magi-home-paper-root,.magi-home-frost-root,.magi-home-dark-root)
+  .magi-story-source-link[style*='--magi-folder-translated-progress-end: 100%']::after {
+  --magi-folder-progress-feather: 0px !important;
+  --magi-folder-progress-feather-mid: 0px !important;
+  --magi-folder-progress-feather-near: 0px !important;
+}
+
+/* A complete card is already at its endpoint; do not animate it on mount or
+   when its source state is refreshed. Incomplete cards retain the normal
+   progress transition. */
+html body #magi-home-display:is(.magi-home-light-root,.magi-home-paper-root,.magi-home-frost-root,.magi-home-dark-root)
+  :is(.magi-folder-source-card,.magi-story-source-link)[style*='--magi-folder-human-progress-end: 100%'],
+html body #magi-home-display:is(.magi-home-light-root,.magi-home-paper-root,.magi-home-frost-root,.magi-home-dark-root)
+  :is(.magi-folder-source-card,.magi-story-source-link)[style*='--magi-folder-translated-progress-end: 100%'] {
+  transition: none !important;
+}
+html body #magi-home-display:is(.magi-home-light-root,.magi-home-paper-root,.magi-home-frost-root,.magi-home-dark-root)
+  :is(.magi-folder-source-card,.magi-story-source-link)[style*='--magi-folder-human-progress-end: 100%'] > button,
+html body #magi-home-display:is(.magi-home-light-root,.magi-home-paper-root,.magi-home-frost-root,.magi-home-dark-root)
+  :is(.magi-folder-source-card,.magi-story-source-link)[style*='--magi-folder-translated-progress-end: 100%'] > button {
+  transition: none !important;
+}
+html body #magi-home-display:is(.magi-home-light-root,.magi-home-paper-root,.magi-home-frost-root,.magi-home-dark-root)
+  :is(.magi-folder-source-card,.magi-story-source-link)[style*='--magi-folder-human-progress-end: 100%'] > button::after,
+html body #magi-home-display:is(.magi-home-light-root,.magi-home-paper-root,.magi-home-frost-root,.magi-home-dark-root)
+  :is(.magi-folder-source-card,.magi-story-source-link)[style*='--magi-folder-translated-progress-end: 100%'] > button::after,
+html body #magi-home-display:is(.magi-home-light-root,.magi-home-paper-root,.magi-home-frost-root,.magi-home-dark-root)
+  .magi-story-source-link[style*='--magi-folder-human-progress-end: 100%']::after,
+html body #magi-home-display:is(.magi-home-light-root,.magi-home-paper-root,.magi-home-frost-root,.magi-home-dark-root)
+  .magi-story-source-link[style*='--magi-folder-translated-progress-end: 100%']::after {
+  transition: none !important;
+}
+
+/* Replace the original border/ring, not a red outline outside an old blue ring. */
+html body #magi-home-display .magi-other-text-record[data-selected='true'] {
+  --tw-ring-color: transparent !important;
+  border-color: var(--home-selection) !important;
+  outline: none !important;
+  box-shadow: 0 0 0 1px var(--home-selection) !important;
+  scroll-margin-top: 24px;
+}
+html body #magi-home-display .magi-other-text-record[data-selected='true']::before,
+html body #magi-home-display .magi-other-text-record[data-selected='true']::after { content: none !important; }
+
+/* Home settings are portalled: scope explicitly to this home, not the Reader. */
+html:has(#magi-home-display.magi-home-shell.magi-home-dark-root:not(.magi-home-frost-root)[data-theme='dark']) body .magi-site-settings-window[data-reader-theme='dark'] :is(section,fieldset) {
+  border-color: var(--home-edge) !important;
+  background: var(--home-expanded) !important;
+  outline-color: var(--home-edge) !important;
+  box-shadow: none !important;
+}
+
+/* FINAL_OPTICAL_ACCEPTANCE_20260913: preserve the requested phosphor bloom,
+   sidebar aberration, cold-film material and hover response. */
+
+/* Status capsules keep their compact geometry but recover the former lamp
+   intensity. The bloom comes from the capsule hue, never a cross-theme hue. */
+html body #magi-home-display.magi-home-shell.magi-home-dark-root:not(.magi-home-frost-root)[data-theme='dark']
+  :is(.magi-home-status-badge,.magi-source-status-badge,.magi-official-tw-badge) {
+  text-shadow:
+    0 0 1px color-mix(in srgb,var(--badge-ink) 92%,white),
+    0 0 4px color-mix(in srgb,var(--badge-ink) 62%,transparent) !important;
+  box-shadow:
+    inset 0 0 6px color-mix(in srgb,var(--badge-edge) 48%,transparent),
+    inset 0 1px 0 color-mix(in srgb,var(--badge-edge) 54%,white),
+    0 0 3px var(--badge-edge),
+    0 0 9px color-mix(in srgb,var(--badge-edge) 92%,transparent),
+    0 0 18px color-mix(in srgb,var(--badge-edge) 68%,transparent) !important;
+}
+
+/* A selected connector is an illuminated phosphor cell, not a black block. */
+html body #magi-home-display.magi-home-shell.magi-home-dark-root:not(.magi-home-frost-root)[data-theme='dark']
+  .magi-home-category-filter-anchor-dot[data-selected='true'] {
+  color: var(--magi-tube-ink) !important;
+  filter: none !important;
+}
+html body #magi-home-display.magi-home-shell.magi-home-dark-root:not(.magi-home-frost-root)[data-theme='dark']
+  .magi-home-category-filter-anchor-dot[data-selected='true'] .magi-home-category-filter-anchor-glyph {
+  background: var(--magi-tube-ink) !important;
+  border-color: color-mix(in srgb,var(--magi-tube-ink) 62%,white) !important;
+  box-shadow:
+    0 0 2px color-mix(in srgb,var(--magi-tube-ink) 72%,white),
+    0 0 7px var(--magi-tube-ink),
+    0 0 14px color-mix(in srgb,var(--magi-tube-ink) 58%,transparent) !important;
+}
+
+/* Black lettering on the amber lamp has a red core and a white right-hand
+   optical echo. Green uses the same geometry with a quieter green core. */
+html[data-night-phosphor='amber'] body #magi-home-display.magi-home-shell.magi-home-dark-root:not(.magi-home-frost-root)[data-theme='dark']
+  .magi-home-category-filter-label {
+  color: #16090c !important;
+  -webkit-text-fill-color: #16090c !important;
+  text-shadow:
+    0 0 .58px rgba(189,43,19,.96),
+    .92px .02px .22px rgba(255,255,248,.94),
+    1.45px .03px .32px rgba(255,255,255,.44) !important;
+}
+html[data-night-phosphor='green'] body #magi-home-display.magi-home-shell.magi-home-dark-root:not(.magi-home-frost-root)[data-theme='dark']
+  .magi-home-category-filter-label {
+  color: #10220e !important;
+  -webkit-text-fill-color: #10220e !important;
+  text-shadow:
+    0 0 .52px rgba(38,119,25,.86),
+    .84px .02px .2px rgba(255,255,248,.86) !important;
+}
+
+/* Amber glyph bodies retain a pale centre while their red/orange fringe stays
+   visible. The selected black labels above deliberately use their own stack. */
+html[data-night-phosphor='amber'] body #magi-home-display.magi-home-dark-root:not(.magi-home-frost-root) {
+  --home-optical-shadow:
+    0 0 .055em rgba(255,255,241,.94),
+    .045em .006em .012em rgba(255,63,14,.92),
+    .095em .009em .026em rgba(255,120,25,.6),
+    0 0 .18em rgba(255,167,45,.34);
+}
+
+/* The green tube uses the amber tube's two grain layers at exactly 75% of its
+   .66 opacity, with a restrained green tint. */
+html[data-night-phosphor='green'] #magi-home-display.magi-home-dark-root:not(.magi-home-frost-root) .magi-reader-tube-grain {
+  display: block;
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  pointer-events: none;
+  background:
+    url('/textures/magi-lofi-grain.png') 7px 13px / 384px 384px repeat,
+    url('/textures/magi-lofi-grain.png') 7px 13px / 384px 384px repeat;
+  background-blend-mode: screen;
+  mix-blend-mode: screen;
+  opacity: .495;
+  filter: sepia(.2) hue-rotate(42deg) saturate(.72);
+}
+
+/* Night wordmark returns an obvious hover lamp response. */
+html[data-night-phosphor='green'] body #magi-home-display.magi-home-dark-root:not(.magi-home-frost-root)
+  .magi-madeinmagius-logo:is(:hover,:focus-visible),
+html[data-night-phosphor='amber'] body #magi-home-display.magi-home-dark-root:not(.magi-home-frost-root)
+  .magi-madeinmagius-logo:is(:hover,:focus-visible) {
+  filter:
+    brightness(1.22)
+    drop-shadow(0 0 2px color-mix(in srgb,var(--magi-tube-ink) 70%,white))
+    drop-shadow(0 0 7px var(--magi-tube-ink))
+    drop-shadow(0 0 15px color-mix(in srgb,var(--magi-tube-ink) 62%,transparent)) !important;
+}
+html body #magi-home-display.magi-home-dark-root:not(.magi-home-frost-root)
+  .magi-madeinmagius-logo:is(:hover,:focus-visible) :is(.magi-madeinmagius-text,.magi-madeinmagius-text span,.magi-madeinmagius-text strong) {
+  color: color-mix(in srgb,var(--magi-tube-ink) 78%,white) !important;
+  -webkit-text-fill-color: currentColor !important;
+  text-shadow:
+    0 0 1px white,
+    0 0 5px var(--magi-tube-ink),
+    0 0 12px color-mix(in srgb,var(--magi-tube-ink) 72%,transparent) !important;
+}
+
+/* Cold-film cards retain a readable exposed-emulsion body; the perimeter emits
+   with a soft phosphor halo instead of a hard neon ring. */
+html body #magi-home-display.magi-home-shell.magi-home-frost-root.magi-home-dark-root
+  :is(.magi-folder-source-card,.magi-story-source-link) {
+  background:
+    linear-gradient(145deg,rgba(24,58,62,.92),rgba(8,29,35,.96)) !important;
+  border-color: rgba(137,224,214,.78) !important;
+  border-radius: 2px !important;
+  outline: 1px solid rgba(205,255,245,.24) !important;
+  outline-offset: -2px !important;
+  box-shadow:
+    inset 0 0 11px rgba(78,183,177,.22),
+    inset 0 1px rgba(234,255,250,.36),
+    0 0 1px rgba(238,255,249,.96),
+    0 0 7px rgba(93,232,215,.56),
+    0 0 17px rgba(64,200,192,.34),
+    0 0 28px rgba(29,127,137,.18) !important;
+}
+html body #magi-home-display.magi-home-shell.magi-home-frost-root.magi-home-dark-root
+  [data-translation-origin][data-translation-status='complete'] {
+  --cold-fill-alpha: .13 !important;
+}
+html body #magi-home-display.magi-home-shell.magi-home-frost-root.magi-home-dark-root
+  .magi-folder-source-card[data-translation-origin='mixed'][data-translation-status]
+  > .magi-folder-heading-flow {
+  background:
+    linear-gradient(90deg,
+      hsl(161 34% 48% / .11) 0 var(--cold-human-end),
+      hsl(199 34% 48% / .11) var(--cold-human-end) var(--cold-reviewed-end),
+      hsl(180 25% 62% / .11) var(--cold-reviewed-end) var(--cold-official-end),
+      hsl(215 17% 42% / .08) var(--cold-official-end) var(--cold-pending-end),
+      transparent var(--cold-pending-end) 100%),
+    linear-gradient(145deg,rgba(24,58,62,.9),rgba(8,29,35,.94)) !important;
+}
+
+/* Microfilm projection: a narrow white/cyan core plus a broad, low-alpha
+   phosphor halo. It raises local emission without sacrificing glyph edges. */
+html body #magi-home-display.magi-home-frost-root {
+  --magi-cold-text-echo:
+    -.022em 0 .018em rgba(164,226,203,.58),
+    .028em 0 .022em rgba(58,174,197,.54),
+    0 0 .055em rgba(236,255,248,.58),
+    0 0 .19em rgba(74,221,201,.42),
+    0 0 .38em rgba(39,144,157,.2);
+}
+html body #magi-home-display.magi-home-frost-root
+  :is(.magi-folder-heading-flow,.magi-home-story-heading-row,.magi-home-episode-link,.magi-home-category-trigger,.magi-home-category-filter-label,.magi-home-toolbar-controls,.magi-home-section-statistics),
+html body #magi-home-display.magi-home-frost-root
+  :is(.magi-folder-heading-flow,.magi-home-story-heading-row,.magi-home-episode-link,.magi-home-category-trigger,.magi-home-category-filter-label,.magi-home-toolbar-controls,.magi-home-section-statistics)
+  :is(span,strong,a,div) {
+  text-shadow: var(--magi-cold-text-echo) !important;
+}
+
+/* Search index telemetry lives inside the search control so it never changes
+   toolbar geometry.  Both the status ink and the meter inherit the active
+   phosphor palette instead of the browser's blue default. */
+:root {
+  --magi-index-ink: currentColor;
+  --magi-index-track: color-mix(in srgb, currentColor 18%, transparent);
+  --magi-index-fill: currentColor;
+}
+
+.magi-home-search-index-status {
+  position: absolute;
+  inset: 5px 5px 5px 2.25rem;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  min-width: 0;
+  border-radius: 3px;
+  font-family: inherit;
+  font-size: clamp(10px, .85rem, 14px);
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--magi-index-ink);
+  text-shadow: 0 0 0.35em color-mix(in srgb, var(--magi-index-fill) 62%, transparent);
+}
+@layer reader-visual-revision {
+  html body #magi-home-display.magi-home-shell .magi-home-search-shell:is([data-index-status='loading'],[data-index-status='ready'],[data-index-status='error']) .magi-home-search-input,
+  html body #magi-home-display.magi-home-shell .magi-home-search-shell:is([data-index-status='loading'],[data-index-status='ready'],[data-index-status='error']) .magi-home-search-input::placeholder {
+    color: transparent !important;
+    -webkit-text-fill-color: transparent !important;
+    -webkit-text-stroke-color: transparent !important;
+    caret-color: transparent;
+    text-indent: -9999px !important;
+    text-shadow: none !important;
+    transition: none !important;
+  }
+}
+.magi-home-search-index-label { position: relative; z-index: 1; white-space: nowrap; }
+
+.magi-home-search-index-progress {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: auto;
+  height: auto;
+  overflow: hidden;
+  border: 1px solid color-mix(in srgb, var(--magi-index-fill) 55%, transparent);
+  background: var(--magi-index-track);
+  box-shadow: 0 0 0.45em color-mix(in srgb, var(--magi-index-fill) 48%, transparent);
+}
+
+.magi-home-search-index-progress::after {
+  display: block;
+  width: var(--magi-index-progress, 0%);
+  height: 100%;
+  background: var(--magi-index-fill);
+  opacity: .25;
+  box-shadow: 0 0 0.5em color-mix(in srgb, var(--magi-index-fill) 82%, transparent);
+  content: '';
+  transition: width 180ms linear;
+}
+
+.magi-home-light-root {
+  --magi-index-ink: #3d494b;
+  --magi-index-track: rgba(74, 89, 92, 0.16);
+  --magi-index-fill: #637b80;
+}
+
+.magi-home-paper-root {
+  --magi-index-ink: #634b27;
+  --magi-index-track: rgba(108, 76, 25, 0.18);
+  --magi-index-fill: #a97c32;
+}
+
+.magi-home-green-root {
+  --magi-index-ink: #235c3d;
+  --magi-index-track: rgba(37, 102, 63, 0.18);
+  --magi-index-fill: #4f9b68;
+}
+
+.magi-home-dark-root:not(.magi-home-frost-root) {
+  --magi-index-ink: var(--magi-tube-ink, #bfffe4);
+  --magi-index-track: rgba(63, 221, 167, 0.17);
+  --magi-index-fill: var(--magi-tube-ink, #67f4bd);
+}
+
+.magi-home-frost-root {
+  --magi-index-ink: #bde6dc;
+  --magi-index-track: rgba(151, 221, 211, 0.16);
+  --magi-index-fill: #8ee8d5;
+}
+
+/* Keep the capsule itself exposed; the glow is a halo around a lit body, not
+   a dark pill with an isolated outline. */
+html[data-night-phosphor='green'] body #magi-home-display.magi-home-shell.magi-home-dark-root:not(.magi-home-frost-root)[data-theme='dark']
+  :is(.magi-home-status-badge,.magi-source-status-badge,.magi-official-tw-badge) {
+  --badge-fill: #3e8a61;
+  --badge-edge: #9af0ad;
+  background: radial-gradient(ellipse at 28% 24%, rgba(213,255,213,.4), transparent 58%), var(--badge-fill) !important;
+}
+
+html[data-night-phosphor='amber'] body #magi-home-display.magi-home-shell.magi-home-dark-root:not(.magi-home-frost-root)[data-theme='dark']
+  :is(.magi-home-status-badge,.magi-source-status-badge,.magi-official-tw-badge) {
+  --badge-fill: #a8642a;
+  --badge-edge: #ffd17b;
+  background: radial-gradient(ellipse at 28% 24%, rgba(255,236,171,.42), transparent 58%), var(--badge-fill) !important;
+}
+
+html[data-night-phosphor='green'] body #magi-home-display.magi-home-shell.magi-home-dark-root:not(.magi-home-frost-root)[data-theme='dark']
+  :is(.magi-home-status-badge-verified,.magi-source-status-badge-exedra-human,.magi-official-tw-badge) {
+  --badge-fill: #2f8b7a;
+  --badge-edge: #a4fff0;
+}
+
+html[data-night-phosphor='amber'] body #magi-home-display.magi-home-shell.magi-home-dark-root:not(.magi-home-frost-root)[data-theme='dark']
+  :is(.magi-home-status-badge-verified,.magi-source-status-badge-exedra-human,.magi-official-tw-badge) {
+  --badge-fill: #a64b3c;
+  --badge-edge: #ffac91;
+}
+
+/* The legacy review-heading rule carries a higher :is() specificity. Keep
+   the cold microfilm echo on the actual folder heading itself as well as its
+   descendants, including the button's direct text layer. */
+html body #magi-home-display.magi-home-shell.magi-home-frost-root.magi-home-dark-root
+  .magi-folder-source-card > .magi-folder-heading-flow {
+  text-shadow: var(--magi-cold-text-echo) !important;
+}
+
+/* Green phosphor chromatic spread: a restrained yellow lead on the left and
+   green return on the right, intentionally below amber-mode intensity. */
+html[data-night-phosphor='green'] body #magi-home-display.magi-home-dark-root:not(.magi-home-frost-root) {
+  --home-optical-shadow:
+    -.032em 0 .012em rgba(255,232,82,.58),
+    .042em 0 .016em rgba(52,249,22,.56),
+    0 0 .11em rgba(166,247,82,.18);
+}
+
+/* Large night phosphor plates need the same channel separation as glyphs.
+   Offset shadows stay at the perimeter, leaving the solid face readable. */
+html[data-night-phosphor='green'] body #magi-home-display.magi-home-dark-root:not(.magi-home-frost-root)
+  :is(.magi-home-category-filter[data-selected='true'],.magi-home-category-trigger[data-selected='true'],.magi-home-toolbar-controls button[aria-pressed='true'],.magi-home-theme-switcher button[aria-pressed='true']) {
+  box-shadow:
+    -1.15px 0 0 rgba(255,232,82,.58),
+    1.35px 0 .35px rgba(52,249,22,.54),
+    0 0 7px rgba(166,247,82,.62),
+    0 0 16px rgba(105,235,76,.28) !important;
+}
+html[data-night-phosphor='amber'] body #magi-home-display.magi-home-dark-root:not(.magi-home-frost-root)
+  :is(.magi-home-category-filter[data-selected='true'],.magi-home-category-trigger[data-selected='true'],.magi-home-toolbar-controls button[aria-pressed='true'],.magi-home-theme-switcher button[aria-pressed='true']) {
+  box-shadow:
+    -1.15px 0 0 rgba(255,72,34,.68),
+    1.35px 0 .35px rgba(255,250,198,.62),
+    0 0 7px rgba(255,182,65,.66),
+    0 0 16px rgba(255,104,45,.3) !important;
+}
+
+/* The shared reader layer marks panel geometry as important.  Extend that
+   layer here so frost cards and their title plates use the new exposed-film
+   body and glow in the live bundle as well as in isolated screenshots. */
+@layer reader-visual-revision {
+  html body #magi-home-display.magi-home-shell.magi-home-frost-root.magi-home-dark-root
+    :is(.magi-folder-source-card,.magi-story-source-link) {
+    background:
+      linear-gradient(145deg,rgba(24,58,62,.92),rgba(8,29,35,.96)) !important;
+    background-color: transparent !important;
+    background-image: linear-gradient(145deg,rgba(24,58,62,.92),rgba(8,29,35,.96)) !important;
+    border-color: rgba(137,224,214,.78) !important;
+    border-radius: 2px !important;
+    outline: 1px solid rgba(205,255,245,.24) !important;
+    outline-offset: -2px !important;
+    box-shadow:
+      inset 0 0 11px rgba(78,183,177,.22),
+      inset 0 1px rgba(234,255,250,.36),
+      0 0 1px rgba(238,255,249,.96),
+      0 0 7px rgba(93,232,215,.56),
+      0 0 17px rgba(64,200,192,.34),
+      0 0 28px rgba(29,127,137,.18) !important;
+  }
+  html body #magi-home-display.magi-home-shell.magi-home-frost-root.magi-home-dark-root
+    .magi-folder-source-card > .magi-folder-heading-flow,
+  html body #magi-home-display.magi-home-shell.magi-home-frost-root.magi-home-dark-root
+    .magi-story-source-link > .magi-home-story-heading-row {
+    background: linear-gradient(145deg,rgba(24,58,62,.9),rgba(8,29,35,.94)) !important;
+    background-color: transparent !important;
+    background-image: linear-gradient(145deg,rgba(24,58,62,.9),rgba(8,29,35,.94)) !important;
+    border-color: rgba(137,224,214,.72) !important;
+    box-shadow: inset 0 0 9px rgba(78,183,177,.18),0 0 7px rgba(93,232,215,.24) !important;
+    text-shadow: var(--magi-cold-text-echo) !important;
+  }
+  html body #magi-home-display.magi-home-frost-root .magi-reader-film-surface {
+    --magi-reader-left-material-fade: linear-gradient(90deg,rgba(0,0,0,.70),rgba(0,0,0,.84) 16%,#000 34%) !important;
+  }
+
+  /* Layered CRT rules mark selected plates as important, so the channel split
+     for a large green/amber block lives in that same layer. */
+  html[data-night-phosphor='green'] body #magi-home-display.magi-home-dark-root:not(.magi-home-frost-root)
+    :is(.magi-home-category-filter[data-selected='true'],.magi-home-category-trigger[data-selected='true'],.magi-home-toolbar-controls button[aria-pressed='true'],.magi-home-theme-switcher button[aria-pressed='true']) {
+    box-shadow:
+      -1.15px 0 0 rgba(255,232,82,.58),
+      1.35px 0 .35px rgba(52,249,22,.54),
+      0 0 7px rgba(166,247,82,.62),
+      0 0 16px rgba(105,235,76,.28) !important;
+  }
+  html[data-night-phosphor='amber'] body #magi-home-display.magi-home-dark-root:not(.magi-home-frost-root)
+    :is(.magi-home-category-filter[data-selected='true'],.magi-home-category-trigger[data-selected='true'],.magi-home-toolbar-controls button[aria-pressed='true'],.magi-home-theme-switcher button[aria-pressed='true']) {
+    box-shadow:
+      -1.15px 0 0 rgba(255,72,34,.68),
+      1.35px 0 .35px rgba(255,250,198,.62),
+      0 0 7px rgba(255,182,65,.66),
+      0 0 16px rgba(255,104,45,.3) !important;
+  }
+  html[data-night-phosphor='green'] body #magi-home-display.magi-home-shell.magi-home-dark-root:not(.magi-home-frost-root)[data-theme='dark'] .magi-home-category-filter[data-selected='true'] {
+    background: #a7ff54 !important;
+    border-color: #a7ff54 !important;
+    color: #142513 !important;
+    -webkit-text-fill-color: currentColor !important;
+  }
+  html[data-night-phosphor='amber'] body #magi-home-display.magi-home-shell.magi-home-dark-root:not(.magi-home-frost-root)[data-theme='dark'] .magi-home-category-filter[data-selected='true'] {
+    background: #fff077 !important;
+    border-color: #fff077 !important;
+    color: #261710 !important;
+    -webkit-text-fill-color: currentColor !important;
+  }
+}
+
+/* HMR touch 2026-09-13 */
+
+/* layer touch 2026-09-13 */
+
+/* CRT layer touch 2026-09-13 */
+
+/* source-bound-progress-20261014: keep every summary and action in normal flow. */
+.magi-home-review-panel .magi-home-review-panel-layout { display:grid; grid-template-columns:minmax(0,1fr); gap:1rem; align-items:start; }
+.magi-home-review-panel .magi-home-review-intro { min-width:0; width:auto; max-width:100%; flex:none; }
+.magi-home-review-panel .magi-home-review-summary,
+.magi-home-review-panel .magi-home-review-scope { width:auto; max-width:100%; white-space:normal; overflow-wrap:anywhere; line-height:1.7; }
+.magi-home-review-panel .magi-home-review-toolbar { display:flex; flex-wrap:wrap; justify-content:flex-start; align-items:center; gap:.75rem; width:100%; min-width:0; max-width:none; flex:none; }
+.magi-home-review-panel .magi-home-review-meter { flex:1 1 13rem; min-width:min(13rem,100%); max-width:24rem; }
+.magi-home-review-panel .magi-home-review-action { max-width:100%; white-space:normal; overflow-wrap:anywhere; }
+.magi-home-review-panel .magi-home-review-tail-actions { display:flex; flex-wrap:wrap; gap:.6rem; }
+@media(max-width:600px){.magi-home-review-panel .magi-home-review-meter {flex-basis:100%;max-width:none}.magi-home-review-panel .magi-home-review-action {flex:1 1 10rem;}}

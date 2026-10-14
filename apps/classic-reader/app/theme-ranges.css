@@ -1,0 +1,20 @@
+@layer reader-visual-revision {
+  html[data-reader-theme='paper'] { --magi-range-ink:#8b682c; }
+  html[data-reader-theme='light'] { --magi-range-ink:#657679; }
+  html[data-reader-theme='green'] { --magi-range-ink:#327e5c; }
+  html[data-reader-theme='frost'] { --magi-range-ink:#a1dcca; }
+  html[data-reader-theme='dark'][data-night-phosphor='green'] { --magi-range-ink:#a7ef61; }
+  html[data-reader-theme='dark'][data-night-phosphor='amber'] { --magi-range-ink:#ead16f; }
+  html[data-reader-theme] body input[type='range'] {
+    accent-color: var(--magi-range-ink) !important;
+    color: var(--magi-range-ink) !important;
+  }
+  html[data-reader-theme] body input[type='range']::-webkit-slider-thumb {
+    background-color: var(--magi-range-ink) !important;
+    border-color: var(--magi-range-ink) !important;
+  }
+  html[data-reader-theme] body input[type='range']::-moz-range-thumb {
+    background-color: var(--magi-range-ink) !important;
+    border-color: var(--magi-range-ink) !important;
+  }
+}

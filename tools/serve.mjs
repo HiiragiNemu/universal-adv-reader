@@ -77,7 +77,12 @@ const server = createServer(async (request, response) => {
     if (pathname.endsWith('/')) pathname += 'index.html';
 
     const corpusRequest = pathname.startsWith('/corpus/');
-    const activeRoot = corpusRequest ? corpusRoot : repositoryRoot;
+    const readerTextureRequest = pathname.startsWith('/textures/');
+    const activeRoot = corpusRequest
+      ? corpusRoot
+      : readerTextureRequest
+        ? path.resolve(repositoryRoot, 'apps', 'web')
+        : repositoryRoot;
     const mountedPath = corpusRequest ? pathname.slice('/corpus'.length) : pathname;
     const candidate = path.resolve(activeRoot, `.${mountedPath}`);
     const rootPrefix = `${activeRoot}${path.sep}`;

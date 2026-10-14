@@ -73,24 +73,6 @@
           "preferredVariantId": "kana/ev00/zh-ja"
         }
       ]
-    },
-    {
-      "corpusId": "architecture-demo",
-      "title": "通用 ADV 架构演示",
-      "adapterId": "adv-ir-v1",
-      "sourceFormat": "adv-story/v1",
-      "features": ["text", "choices", "branches", "voice", "images", "deep-links"],
-      "stories": [
-        {
-          "canonicalStoryId": "demo/arrival",
-          "title": "到站之前",
-          "folderId": "architecture",
-          "folderTitle": "架构样例",
-          "source": "./data/demo-story.json",
-          "mediaManifest": "./data/media.json",
-          "preferredVariantId": "demo/default"
-        }
-      ]
     }
   ]
 }

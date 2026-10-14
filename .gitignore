@@ -5,3 +5,29 @@ Thumbs.db
 *.log
 work/
 reports/verification/*.tmp.json
+
+# Exclude credentials, generated output and temporary browser/deploy evidence.
+.env
+.env.*
+!.env.example
+.dev.vars
+.dev.vars.*
+.wrangler/
+**/.next/
+**/out/
+**/*.tsbuildinfo
+reports/verification/cloudflare-20261014/
+
+# Keep investigation snapshots and generated receipts on the maintainer machine.
+/reports/
+/-
+**/__pycache__/
+*.pyc
+*.pyo
+
+# Fonts are separately supplied assets, not part of the public source repository.
+*.ttf
+*.otf
+*.woff
+*.woff2
+*.ttc

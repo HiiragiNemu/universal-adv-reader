@@ -1,0 +1,75 @@
+@layer reader-visual-revision {
+  .magi-reader-font-progress-track { display: none; }
+
+  html:is([data-reader-theme='dark'],[data-reader-theme='frost']) body
+    #magi-reader-display.magi-reader-root .magi-reader-font-ruler {
+    --font-track-ink: var(--magi-tube-ink, #a7ff54);
+    --font-track-radius: 0px;
+    --font-track-dark: #0a140b;
+    --font-track-segments: repeating-linear-gradient(90deg,rgba(0,0,0,.4) 0 1px,transparent 1px 8px);
+    --font-track-fill: var(--font-track-segments),var(--font-track-ink);
+  }
+  html[data-reader-theme='frost'] body #magi-reader-display.magi-reader-root .magi-reader-font-ruler {
+    --font-track-ink: #83ebd7;
+    --font-track-radius: 6px;
+    --font-track-dark: #102d31;
+    --font-track-segments: linear-gradient(transparent,transparent);
+    --font-track-fill: linear-gradient(180deg,#c4ffeb,#7ae1ce 40%,#38a999);
+  }
+  html:is([data-reader-theme='dark'],[data-reader-theme='frost']) body
+    #magi-reader-display.magi-reader-root .magi-reader-font-progress-track {
+    display: block; grid-column: 1; grid-row: 2; align-self: center;
+    height: 8px; margin-inline: 8px; border-radius: var(--font-track-radius) !important;
+    background: var(--font-track-segments),var(--font-track-dark) !important;
+    box-shadow: 0 0 0 1px color-mix(in srgb,var(--font-track-ink) 35%,transparent);
+    pointer-events: none;
+  }
+  html:is([data-reader-theme='dark'],[data-reader-theme='frost']) body
+    #magi-reader-display.magi-reader-root .magi-reader-font-progress-fill {
+    display: block; height: 100%; border-radius: inherit !important;
+    background: var(--font-track-fill) !important;
+    box-shadow: inset 0 0 2px rgba(230,255,241,.5),
+      0 0 4px color-mix(in srgb,var(--font-track-ink) 80%,transparent),
+      0 0 11px color-mix(in srgb,var(--font-track-ink) 55%,transparent);
+    pointer-events: none;
+  }
+  .magi-reader-font-progress-fill[data-empty='true'] { visibility: hidden; }
+
+  /* Keep the native accessible range and existing curved pointer mapping.
+     Only its painted track is replaced, so keyboard and touch remain native. */
+  html:is([data-reader-theme='dark'],[data-reader-theme='frost']) body
+    #magi-reader-display.magi-reader-root .magi-reader-font-ruler-input {
+    grid-column: 1; grid-row: 2; position: relative; z-index: 1;
+    appearance: none !important; -webkit-appearance: none !important;
+    background: transparent !important; border: 0 !important;
+    padding: 0 !important; height: 16px !important; filter: none !important;
+    box-shadow: none !important;
+  }
+  html:is([data-reader-theme='dark'],[data-reader-theme='frost']) body
+    #magi-reader-display.magi-reader-root .magi-reader-font-ruler-input::-webkit-slider-runnable-track {
+    height: 10px !important; border: 0 !important;
+    background: transparent !important; box-shadow: none !important;
+  }
+  html:is([data-reader-theme='dark'],[data-reader-theme='frost']) body
+    #magi-reader-display.magi-reader-root .magi-reader-font-ruler-input::-moz-range-track {
+    height: 10px !important; border: 0 !important;
+    background: transparent !important; box-shadow: none !important;
+  }
+  html:is([data-reader-theme='dark'],[data-reader-theme='frost']) body
+    #magi-reader-display.magi-reader-root .magi-reader-font-ruler-input::-webkit-slider-thumb {
+    appearance: none !important; -webkit-appearance: none !important;
+    width: 16px !important; height: 16px !important; margin-top: -3px !important;
+    border: 1px solid var(--font-track-ink) !important;
+    border-radius: var(--font-track-radius) !important;
+    background: var(--font-track-fill) !important;
+    box-shadow: 0 0 4px var(--font-track-ink),0 0 10px color-mix(in srgb,var(--font-track-ink) 60%,transparent) !important;
+  }
+  html:is([data-reader-theme='dark'],[data-reader-theme='frost']) body
+    #magi-reader-display.magi-reader-root .magi-reader-font-ruler-input::-moz-range-thumb {
+    width: 16px !important; height: 16px !important;
+    border: 1px solid var(--font-track-ink) !important;
+    border-radius: var(--font-track-radius) !important;
+    background: var(--font-track-fill) !important;
+    box-shadow: 0 0 4px var(--font-track-ink),0 0 10px color-mix(in srgb,var(--font-track-ink) 60%,transparent) !important;
+  }
+}

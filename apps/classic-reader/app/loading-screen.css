@@ -1,0 +1,248 @@
+/* Loading-only paint: no selectors reach the accepted home/Reader surfaces. */
+.magi-loading-screen {
+  --loading-day-curve-off: var(--loading-desktop-day-curve-off);
+  --loading-day-curve-on: var(--loading-desktop-day-curve-on);
+  --loading-frost-curve-off: var(--loading-desktop-frost-curve-off);
+  --loading-frost-curve-on: var(--loading-desktop-frost-curve-on);
+  --loading-green-curve: var(--loading-desktop-green-curve);
+  --loading-amber-curve: var(--loading-desktop-amber-curve);
+  --loading-paper: #f3ead4;
+  --loading-ink: #443823;
+  --loading-secondary: #655035;
+  position: fixed;
+  inset: 0;
+  z-index: 20;
+  display: grid;
+  place-items: center;
+  min-height: 100dvh;
+  overflow: hidden;
+  isolation: isolate;
+  background: var(--loading-paper);
+  color: var(--loading-ink);
+  font-family: ui-monospace, Consolas, monospace;
+}
+@media (max-width: 767px) {
+  .magi-loading-screen {
+    --loading-day-curve-off: var(--loading-mobile-day-curve-off);
+    --loading-day-curve-on: var(--loading-mobile-day-curve-on);
+    --loading-frost-curve-off: var(--loading-mobile-frost-curve-off);
+    --loading-frost-curve-on: var(--loading-mobile-frost-curve-on);
+    --loading-green-curve: var(--loading-mobile-green-curve);
+    --loading-amber-curve: var(--loading-mobile-amber-curve);
+  }
+}
+html[data-loading-theme='light'] .magi-loading-screen {
+  --loading-paper: #f6f6f6;
+  --loading-ink: #252525;
+  --loading-secondary: #4d4d4d;
+}
+html[data-loading-theme='green'] .magi-loading-screen {
+  --loading-paper: #e0edcc;
+  --loading-ink: #244b31;
+  --loading-secondary: #3f6144;
+}
+.magi-loading-plate {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: min(96vw, 122dvh, 1320px);
+  aspect-ratio: 1000 / 760;
+  container-type: inline-size;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.magi-loading-chart { position: absolute; inset: 0; display: block; width: 100%; height: 100%; }
+.magi-loading-ident {
+  position: relative;
+  width: min(78vw, 54dvh, 500px);
+  text-align: center;
+}
+html:not([data-loading-theme='dark']):not([data-loading-theme='frost']) .magi-loading-screen .magi-loading-ident {
+  position: absolute;
+  left: 50%; top: 18.5%;
+  transform: translateX(-50%);
+  width: min(30.5cqi, 56vw, 32dvh, 310px);
+  /* Logo field ends where the lower scale begins; the wordmark uses the
+     remaining space below the emblem instead of an arbitrary top gap. */
+  height: 58.2105263158%;
+}
+.magi-loading-screen .magi-loading-brand {
+  margin: 0;
+  padding: 0;
+  color: var(--loading-ink);
+  text-shadow: none;
+}
+.magi-loading-brand svg { display: block; width: 100%; height: auto; fill: var(--loading-ink); }
+.magi-loading-brand .magi-loading-wordmark { width: 40%; margin: 2px auto 0; }
+html:not([data-loading-theme='dark']):not([data-loading-theme='frost']) .magi-loading-screen .magi-loading-brand {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+html:not([data-loading-theme='dark']):not([data-loading-theme='frost']) .magi-loading-screen .magi-loading-brand svg {
+  flex: none;
+}
+html:not([data-loading-theme='dark']):not([data-loading-theme='frost']) .magi-loading-screen .magi-loading-wordmark {
+  width: 60%;
+  margin: auto 0;
+}
+/* Desktop: lower the emblem away from the top scale and put the wordmark
+   directly underneath it. Preserve the accepted portrait arrangement. */
+@media (min-width: 768px) {
+  html:not([data-loading-theme='dark']):not([data-loading-theme='frost']) .magi-loading-screen .magi-loading-ident {
+    top: 21.5%;
+  }
+  html:not([data-loading-theme='dark']):not([data-loading-theme='frost']) .magi-loading-screen .magi-loading-wordmark {
+    width: 66%;
+    margin: 0;
+  }
+}
+.magi-loading-brand .magi-loading-link {
+  fill: var(--loading-secondary);
+}
+.magi-loading-status {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(10px, 1.5cqi, 20px);
+  margin-top: 1.8cqi;
+  font-size: clamp(12px, 1.25cqi, 16px);
+  line-height: 1.6;
+  color: var(--loading-ink);
+  white-space: nowrap;
+  position: relative;
+}
+.magi-loading-english { letter-spacing: .15em; }
+html:not([data-loading-theme='dark']):not([data-loading-theme='frost']) .magi-loading-screen .magi-loading-status {
+  /* Same coordinates as the lower scale: x=330, y=583, w=340, h=35
+     in the 1000 x 760 chart. The label shares its centre at (500, 600.5). */
+  position: absolute;
+  left: 33%; top: 76.7105263158%;
+  width: 34%; height: 4.6052631579%;
+  margin: 0;
+  line-height: 1;
+  font-size: clamp(10px, 1.65cqi, 18px);
+}
+html:is([data-loading-theme='dark'], [data-loading-theme='frost']) .magi-loading-screen {
+  --loading-paper: #082611;
+  --loading-ink: #a7ff54;
+  --loading-secondary: #84d644;
+  --loading-glow: #8ded4566;
+  --loading-scan-opacity: .28;
+}
+html[data-loading-theme='dark'][data-loading-phosphor='amber'] .magi-loading-screen {
+  --loading-paper: #2c2409;
+  --loading-ink: #ffe96e;
+  --loading-secondary: #d5bb49;
+  --loading-glow: #efcc4866;
+  --loading-scan-opacity: .42;
+}
+html[data-loading-theme='frost'] .magi-loading-screen {
+  --loading-paper: #082b31;
+  --loading-ink: #b0ffec;
+  --loading-secondary: #77d9c7;
+  --loading-glow: #77dfd066;
+  --loading-scan-opacity: .18;
+}
+html:is([data-loading-theme='dark'], [data-loading-theme='frost']) .magi-loading-screen .magi-loading-brand svg {
+  filter: drop-shadow(0 0 3px var(--loading-glow)) drop-shadow(0 0 12px var(--loading-glow));
+}
+html:is([data-loading-theme='dark'], [data-loading-theme='frost']) .magi-loading-screen .magi-loading-status {
+  text-shadow: 0 0 7px var(--loading-glow);
+}
+@media (max-width: 600px) and (min-height: 480px) {
+  /* Preserve the original full-size logo and centre chart. Move only the four
+     small measuring targets into the unused space above/below the centre. */
+  .magi-loading-plate { width: clamp(640px, 188vw, 820px); }
+  .magi-loading-chart { overflow: visible; }
+  .magi-loading-chart .magi-loading-chart-border { x: 250px; y: -110px; width: 500px; height: 980px; }
+  .magi-loading-chart [data-loading-target='0'] { transform: translate(330px,-42px) scale(.62); }
+  .magi-loading-chart [data-loading-target='1'] { transform: translate(670px,-42px) scale(.62); }
+  .magi-loading-chart [data-loading-target='2'] { transform: translate(330px,802px) scale(.62); }
+  .magi-loading-chart [data-loading-target='3'] { transform: translate(670px,802px) scale(.62); }
+  .magi-loading-status { flex-direction: column; gap: 2px; margin-top: 2.2cqi; }
+}
+/* Short portrait: move only the measuring targets inward. The logo and
+   central chart keep their original size; no second chart or resize listener. */
+@media (max-width: 600px) and (min-height: 480px) and (max-height: 740px) {
+  .magi-loading-chart .magi-loading-chart-border { y: 38px; height: 684px; }
+  .magi-loading-chart [data-loading-target='0'] { transform: translate(330px,86px) scale(.62); }
+  .magi-loading-chart [data-loading-target='1'] { transform: translate(670px,86px) scale(.62); }
+  .magi-loading-chart [data-loading-target='2'] { transform: translate(330px,674px) scale(.62); }
+  .magi-loading-chart [data-loading-target='3'] { transform: translate(670px,674px) scale(.62); }
+}
+@media (max-height: 479px) {
+  .magi-loading-status { margin-top: 1.2cqi; font-size: 10px; gap: 8px; }
+}
+
+/* Hide the server-rendered day card before the client even starts. */
+html:is([data-loading-theme='dark'], [data-loading-theme='frost']) .magi-loading-chart { display: none; }
+
+/* No private loader defaults: these flags are written before first paint and
+   remain owned by the provider throughout hydration and route changes. */
+.magi-loading-screen {
+  --loading-curve: var(--loading-day-curve-off);
+  --loading-registration: var(--loading-day-registration);
+  --magi-tube-scan: .28;
+  filter: none;
+}
+html[data-screen-registration='true'] .magi-loading-screen {
+  --loading-curve: var(--loading-day-curve-on);
+  filter: var(--loading-registration);
+}
+html[data-reader-theme='dark'] .magi-loading-screen {
+  --loading-curve: var(--loading-green-curve);
+  --loading-registration: var(--loading-green-registration);
+  --magi-tube-scan: .28;
+}
+html[data-reader-theme='dark'][data-night-phosphor='amber'] .magi-loading-screen {
+  --loading-curve: var(--loading-amber-curve);
+  --loading-registration: var(--loading-amber-registration);
+  --magi-tube-scan: .42;
+}
+html[data-reader-theme='frost'] .magi-loading-screen {
+  --loading-curve: var(--loading-frost-curve-off);
+  filter: var(--magi-frost-glass-filter);
+}
+html[data-reader-theme='frost'][data-screen-registration='true'] .magi-loading-screen {
+  --loading-curve: var(--loading-frost-curve-on);
+  filter: var(--loading-registration) var(--magi-frost-glass-filter);
+}
+html[data-screen-curvature='true'] .magi-loading-screen {
+  border-radius: clamp(22px,2.2vw,42px) / clamp(20px,3vh,34px);
+  clip-path: inset(0 round clamp(22px,2.2vw,42px) / clamp(20px,3vh,34px));
+  filter: var(--loading-curve);
+}
+html[data-reader-theme='frost'][data-screen-curvature='true'] .magi-loading-screen {
+  filter: var(--loading-curve) var(--magi-frost-glass-filter);
+}
+/* iOS keeps the accepted native flat route, including the loading viewport. */
+html[data-ios-flat='true'][data-reader-theme] .magi-loading-screen {
+  filter: var(--magi-ios-flat-filter) !important;
+}
+.magi-loading-filter-defs { position: absolute; pointer-events: none; }
+.magi-loading-screen > :is(.magi-reader-film-surface,.magi-glass-refraction,
+  .magi-reader-tube-phosphor,.magi-reader-tube-grain,.magi-screen-scanlines,.magi-reader-tube-surface,
+  .magi-night-phosphor,.magi-night-grain,.magi-night-surface,.magi-screen-bezel) { position: absolute !important; }
+html:not([data-reader-theme='frost']) .magi-loading-screen > :is(.magi-reader-film-surface,.magi-glass-refraction) { display: none; }
+html:not([data-reader-theme='dark']) .magi-loading-screen > :is(.magi-night-phosphor,.magi-night-grain,.magi-night-surface) { display: none; }
+html[data-reader-theme='dark'] .magi-loading-screen > :is(.magi-reader-tube-phosphor,.magi-reader-tube-grain,.magi-screen-scanlines,.magi-reader-tube-surface) { display: none; }
+html[data-screen-scanlines='false'] .magi-loading-screen > .magi-screen-scanlines { display: none; }
+html[data-screen-noise='false'] .magi-loading-screen > :is(.magi-reader-tube-phosphor,.magi-reader-tube-grain) { display: none; }
+html[data-screen-curvature='false'] .magi-loading-screen > :is(.magi-screen-bezel,.magi-reader-tube-surface) { display: none; }
+html[data-reader-theme='frost'] .magi-loading-screen :is(.magi-loading-ident,.magi-loading-status) {
+  mask-image: url('/textures/frost-phosphor-ink-mask.svg');
+  mask-size: 509px 383px; mask-repeat: repeat; mask-mode: alpha;
+}
+html[data-screen-pixel-font='true'] .magi-loading-screen .magi-loading-status,
+html[data-screen-pixel-font='true'] .magi-loading-screen .magi-loading-status span {
+  font-family: ui-monospace, monospace !important;
+  font-synthesis: none;
+}
+.magi-loading-screen .magi-balloon-host { position: absolute; inset: 0; z-index: 2; pointer-events: none; mix-blend-mode: multiply; }
+.magi-loading-screen .magi-balloon-rain[data-balloon-enabled='true'] { position: absolute; inset: 0; display: block !important; }
+html:is([data-reader-theme='dark'],[data-reader-theme='frost']) .magi-loading-screen .magi-balloon-host { mix-blend-mode: screen; }

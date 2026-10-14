@@ -1,0 +1,59 @@
+{
+  "version": 2,
+  "sha256": "26a397b8b82930a60d7b5e14aa6b6d68262bfa0a4bdf267705dca8987973a3eb",
+  "bytes": 12498432,
+  "entries": 856,
+  "object_key": "search/exedra/26a397b8b82930a60d7b5e14aa6b6d68262bfa0a4bdf267705dca8987973a3eb.json",
+  "story_index_sha256": "3b0aa615c39a322ff24acc9e6042b3d5a0edfc817900baa9a77d6e9342d3d862",
+  "chunk_bytes": 1048576,
+  "chunks": [
+    {
+      "bytes": 1048576,
+      "sha256": "8e808af577c93d6455c46d3082db48536d8ce1e17f9d0bf8225eaa817ca2876e"
+    },
+    {
+      "bytes": 1048576,
+      "sha256": "617adee72e04045349cb7461ecaf20a4f043722c79c8ad5e483ec15e9f65c3f4"
+    },
+    {
+      "bytes": 1048576,
+      "sha256": "2179961047feae8324227ebfc98754dfa17a464bf949ad07db49b3c32b5baafe"
+    },
+    {
+      "bytes": 1048576,
+      "sha256": "d108ba41993f3966586c3039b699a54dc1a2a2a1b1eedbe8aa2fd8a40555ed25"
+    },
+    {
+      "bytes": 1048576,
+      "sha256": "cc054e0606478c6ad1565a993e0d504c648b9065696f6a60b127bded4dc32131"
+    },
+    {
+      "bytes": 1048576,
+      "sha256": "48bc70d8a19718bf69162b456cb79915d25d1847bb3d235dfd8162eeece57146"
+    },
+    {
+      "bytes": 1048576,
+      "sha256": "85b3e79efc56acc1e7010e76494243146264651bdd4a261874c6babbccffa0ef"
+    },
+    {
+      "bytes": 1048576,
+      "sha256": "2247f1cb0f8bc62842138ed0bdecbeefedf532b0e62bc822eec640b6b6e215c9"
+    },
+    {
+      "bytes": 1048576,
+      "sha256": "a4213038c1818cf62f188c31f3ed066af0c0cff117745bffed99d1d030e59c88"
+    },
+    {
+      "bytes": 1048576,
+      "sha256": "2931aaa2b281c06824c0f15bf97e6de2b57fe2e9e1a04a2a2d360678d66c2b3f"
+    },
+    {
+      "bytes": 1048576,
+      "sha256": "d056bc3746fedb111262ab151d9b309e279c7aed28b01555bf0a4d3f310e1dec"
+    },
+    {
+      "bytes": 964096,
+      "sha256": "5cda479e1ccb879681082a473329852cd230aa27be9e2546e40c61394fd13f2c"
+    }
+  ]
+}

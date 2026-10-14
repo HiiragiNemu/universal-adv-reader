@@ -35,14 +35,13 @@ packages/bridge
 packages/adapters
   one adapter per declared source format
 
-packages/ui-shell
-  classic inherited shell -> stable/default
-  next research shell -> experimental/manual acceptance
+apps/web/classic
+  independently authored Classic microform presentation
 ```
 
-Both UI shells implement `ui-shell/1.0.0` and consume the same eight semantic slots: `shell`, `navigation`, `catalog`, `reader`, `sidebar-tree`, `floating-tools`, `pager`, and `media`. `ReaderSession`, AdvIR, media, and bridge are read-only shell inputs; shells may only dispatch append-only `navigate`, `reader`, `media`, and `bridge` commands. `classic` remains the default. `next` targets a React contract-first runtime and can be selected with `?ui=next` for comparison, but it is not persisted and promotion is an explicit human-acceptance operation rather than an automatic migration.
-
-The Next contract defines compact `0-639`, mobile `640-767`, desktop `768-1279`, wide `>=1280`, and short-viewport `height<=511` ranges. Its token namespaces are `primitive`, `semantic`, `state`, `texture`, and `motion`. Accepted inherited theme recipes are `yellow`, `eye-care`, and `white`; `night` and `cold-frost` remain pending.
+The web application has one direct Classic architecture. ReaderSession, AdvIR,
+media routing, and bridge state remain application inputs rather than UI-owned
+data. Responsive behavior is implemented directly by the Classic stylesheet.
 
 ## Stable identity
 

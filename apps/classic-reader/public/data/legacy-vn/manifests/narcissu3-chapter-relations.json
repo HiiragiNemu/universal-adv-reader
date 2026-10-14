@@ -1,0 +1,4489 @@
+{
+  "schema": "narcissu3-cross-chapter-locations/v1",
+  "method": "byte-bound-native-call-sequence-and-reviewed-bilingual-scene",
+  "sourceHashes": {
+    "archive/derived/scripts/narcissu3/update.arc.unpacked/nara03.plain.mjo": "e751480b97c3dd5787357f2c8c0fef896a89f2437b6699f999bd945a4421673a",
+    "archive/derived/scripts/narcissu3/update.arc.unpacked/nara03.script.json": "56d229fb129ec08c4e963e24c33edf1fb25d390d78fea2038c3093de7270ad21",
+    "archive/derived/scripts/narcissu3/scenario.arc.unpacked/nara03.plain.mjo": "593fcb46fda34dedd1ebb5007e22c4645addfd5c0e0a8402f65cd064fec4386d",
+    "archive/derived/scripts/narcissu3/scenario.arc.unpacked/nara03.script.json": "071c537747bf4f418b264b1709eda19e333d86cc41db0ae6439a2c2449d8124e",
+    "archive/derived/scripts/narcissu3/update.arc.unpacked/nar3_06.plain.mjo": "f112f2f393b2af741af120affd62ec4d6d551e5a8d86467fb8210b7e90b2f700",
+    "archive/derived/scripts/narcissu3/update.arc.unpacked/nar3_06.script.json": "16b14b4be65757de263ea69fec59a3478a2d1ee36ea6c60e52d008bbab1e2d46",
+    "archive/derived/scripts/narcissu3/scenario.arc.unpacked/nar3_07.plain.mjo": "231237999ce5af7ef38a7524023cd65df5f6fbf786d1e8f642bb9513ce1010b9",
+    "archive/derived/scripts/narcissu3/scenario.arc.unpacked/nar3_07.script.json": "8cb89698985deeb91be8c14ee0d45506ffbf6d94bcf52d5c3891175241e1ec15"
+  },
+  "explanation": "The 46 Chinese text units at the end of nar3_06 correspond to the 45 Japanese units at the start of nar3_07; the first two Chinese units form one Japanese paragraph. All following dialogue and narration were reviewed in order. This supplies location links only, never ordinal same-file pairing or substituted source text.",
+  "nativeVoiceCalls": {
+    "cn": [
+      {
+        "eventId": "mjo-53af",
+        "codeOffset": 21377,
+        "sourceKey": "n3iri_0194",
+        "mediaId": "asset/a-906b832e5bac4a93"
+      },
+      {
+        "eventId": "mjo-57fd",
+        "codeOffset": 22479,
+        "sourceKey": "n3iri_0195",
+        "mediaId": "asset/a-7c5a5238d847e054"
+      },
+      {
+        "eventId": "mjo-5892",
+        "codeOffset": 22628,
+        "sourceKey": "n3iri_0196",
+        "mediaId": "asset/a-278297555954e6ad"
+      },
+      {
+        "eventId": "mjo-592f",
+        "codeOffset": 22785,
+        "sourceKey": "n3iri_0197",
+        "mediaId": "asset/a-6953365aed671e8e"
+      },
+      {
+        "eventId": "mjo-5d72",
+        "codeOffset": 23876,
+        "sourceKey": "n3iri_0198",
+        "mediaId": "asset/a-e31d2afef0b75c37"
+      },
+      {
+        "eventId": "mjo-5e26",
+        "codeOffset": 24056,
+        "sourceKey": "n3iri_0199",
+        "mediaId": "asset/a-ce31ea096c993308"
+      }
+    ],
+    "jp": [
+      {
+        "eventId": "mjo-304",
+        "codeOffset": 726,
+        "sourceKey": "n3iri_0194",
+        "mediaId": "asset/a-906b832e5bac4a93"
+      },
+      {
+        "eventId": "mjo-898",
+        "codeOffset": 2154,
+        "sourceKey": "n3iri_0195",
+        "mediaId": "asset/a-7c5a5238d847e054"
+      },
+      {
+        "eventId": "mjo-93b",
+        "codeOffset": 2317,
+        "sourceKey": "n3iri_0196",
+        "mediaId": "asset/a-278297555954e6ad"
+      },
+      {
+        "eventId": "mjo-9ec",
+        "codeOffset": 2494,
+        "sourceKey": "n3iri_0197",
+        "mediaId": "asset/a-6953365aed671e8e"
+      },
+      {
+        "eventId": "mjo-f16",
+        "codeOffset": 3816,
+        "sourceKey": "n3iri_0198",
+        "mediaId": "asset/a-e31d2afef0b75c37"
+      },
+      {
+        "eventId": "mjo-fd6",
+        "codeOffset": 4008,
+        "sourceKey": "n3iri_0199",
+        "mediaId": "asset/a-ce31ea096c993308"
+      }
+    ]
+  },
+  "sameChapterRelocationExplanation": "Three complete native text units in nara03 have the same two byte-bound native voice operands surrounding Eiji's matching landlord instructions, but occupy different positions. Location links preserve the full order of both versions; they never override existing stronger message anchors.",
+  "additionalNativeVoiceCalls": {
+    "ciRelocation": {
+      "cn": [
+        {
+          "eventId": "mjo-213d",
+          "codeOffset": 8482,
+          "sourceKey": "n3kai_0198",
+          "mediaId": "asset/a-28f5819c5ce7fec4"
+        },
+        {
+          "eventId": "mjo-221f",
+          "codeOffset": 8708,
+          "sourceKey": "n3kai_0199",
+          "mediaId": "asset/a-95a5f07ec90765c3"
+        }
+      ],
+      "jp": [
+        {
+          "eventId": "mjo-32d1",
+          "codeOffset": 12965,
+          "sourceKey": "n3kai_0198",
+          "mediaId": "asset/a-28f5819c5ce7fec4"
+        },
+        {
+          "eventId": "mjo-3407",
+          "codeOffset": 13275,
+          "sourceKey": "n3kai_0199",
+          "mediaId": "asset/a-95a5f07ec90765c3"
+        }
+      ]
+    }
+  },
+  "sourceBlocks": [
+    {
+      "storyId": "narcissu-3rd/nar3_06",
+      "variantId": "mjo/narcissu3/update.arc.unpacked/nar3_06",
+      "locale": "zh-CN",
+      "events": [
+        {
+          "eventId": "mjo-51e0",
+          "text": "―几天后。",
+          "source": {
+            "schema": "majiro-display-unit/v1",
+            "codeOffset": 20960,
+            "endCodeOffset": 20977,
+            "bodyCodeOffset": 20960,
+            "codeOffsets": [
+              20960,
+              20975
+            ],
+            "textEventIndices": [
+              341
+            ],
+            "textParts": [
+              {
+                "kind": "text",
+                "text": "―几天后。",
+                "codeOffset": 20960,
+                "rawText": "―几天后。",
+                "rawHex": "a844bcb8ccecbaf3a1a3",
+                "textEventIndex": 341,
+                "segmentIndex": 0
+              }
+            ],
+            "speakerRaw": null,
+            "ruby": [],
+            "controls": [],
+            "boundary": {
+              "codeOffset": 20977,
+              "control": "p"
+            }
+          }
+        },
+        {
+          "eventId": "mjo-5201",
+          "text": "离国境越来越近了。",
+          "source": {
+            "schema": "majiro-display-unit/v1",
+            "codeOffset": 20993,
+            "endCodeOffset": 21018,
+            "bodyCodeOffset": 20993,
+            "codeOffsets": [
+              20993,
+              21016
+            ],
+            "textEventIndices": [
+              342
+            ],
+            "textParts": [
+              {
+                "kind": "text",
+                "text": "离国境越来越近了。",
+                "codeOffset": 20993,
+                "rawText": "离国境越来越近了。",
+                "rawHex": "c0ebb9fabeb3d4bdc0b4d4bdbdfcc1cba1a3",
+                "textEventIndex": 342,
+                "segmentIndex": 0
+              }
+            ],
+            "speakerRaw": null,
+            "ruby": [],
+            "controls": [],
+            "boundary": {
+              "codeOffset": 21018,
+              "control": "p"
+            }
+          }
+        },
+        {
+          "eventId": "mjo-522a",
+          "text": "我们今天也依然在森林中行走。",
+          "source": {
+            "schema": "majiro-display-unit/v1",
+            "codeOffset": 21034,
+            "endCodeOffset": 21069,
+            "bodyCodeOffset": 21034,
+            "codeOffsets": [
+              21034,
+              21067
+            ],
+            "textEventIndices": [
+              343
+            ],
+            "textParts": [
+              {
+                "kind": "text",
+                "text": "我们今天也依然在森林中行走。",
+                "codeOffset": 21034,
+                "rawText": "我们今天也依然在森林中行走。",
+                "rawHex": "ced2c3c7bdf1ccecd2b2d2c0c8bbd4dac9adc1d6d6d0d0d0d7dfa1a3",
+                "textEventIndex": 343,
+                "segmentIndex": 0
+              }
+            ],
+            "speakerRaw": null,
+            "ruby": [],
+            "controls": [],
+            "boundary": {
+              "codeOffset": 21069,
+              "control": "p"
+            }
+          }
+        },
+        {
+          "eventId": "mjo-5292",
+          "text": "然后，公主跟往常一样吃着抢回来的面包。",
+          "source": {
+            "schema": "majiro-display-unit/v1",
+            "codeOffset": 21138,
+            "endCodeOffset": 21183,
+            "bodyCodeOffset": 21138,
+            "codeOffsets": [
+              21138,
+              21181
+            ],
+            "textEventIndices": [
+              344
+            ],
+            "textParts": [
+              {
+                "kind": "text",
+                "text": "然后，公主跟往常一样吃着抢回来的面包。",
+                "codeOffset": 21138,
+                "rawText": "然后，公主跟往常一样吃着抢回来的面包。",
+                "rawHex": "c8bbbaf3a3acb9abd6f7b8facdf9b3a3d2bbd1f9b3d4d7c5c7c0bbd8c0b4b5c4c3e6b0fca1a3",
+                "textEventIndex": 344,
+                "segmentIndex": 0
+              }
+            ],
+            "speakerRaw": null,
+            "ruby": [],
+            "controls": [],
+            "boundary": {
+              "codeOffset": 21183,
+              "control": "p"
+            }
+          }
+        },
+        {
+          "eventId": "mjo-52cf",
+          "text": "以前的话，是直接大口大口的吃，而现在，则是先拨开一小片，再一片片放进嘴里。",
+          "source": {
+            "schema": "majiro-display-unit/v1",
+            "codeOffset": 21199,
+            "endCodeOffset": 21280,
+            "bodyCodeOffset": 21199,
+            "codeOffsets": [
+              21199,
+              21278
+            ],
+            "textEventIndices": [
+              345
+            ],
+            "textParts": [
+              {
+                "kind": "text",
+                "text": "以前的话，是直接大口大口的吃，而现在，则是先拨开一小片，再一片片放进嘴里。",
+                "codeOffset": 21199,
+                "rawText": "以前的话，是直接大口大口的吃，而现在，则是先拨开一小片，再一片片放进嘴里。",
+                "rawHex": "d2d4c7b0b5c4bbb0a3accac7d6b1bdd3b4f3bfdab4f3bfdab5c4b3d4a3acb6f8cfd6d4daa3acd4f2cac7cfc8b2a6bfaad2bbd0a1c6aca3acd4d9d2bbc6acc6acb7c5bdf8d7ecc0efa1a3",
+                "textEventIndex": 345,
+                "segmentIndex": 0
+              }
+            ],
+            "speakerRaw": null,
+            "ruby": [],
+            "controls": [],
+            "boundary": {
+              "codeOffset": 21280,
+              "control": "p"
+            }
+          }
+        },
+        {
+          "eventId": "mjo-5330",
+          "text": "那一张一合忙碌的吃着面包的样子，看起来总觉得让人感到欣慰。",
+          "source": {
+            "schema": "majiro-display-unit/v1",
+            "codeOffset": 21296,
+            "endCodeOffset": 21361,
+            "bodyCodeOffset": 21296,
+            "codeOffsets": [
+              21296,
+              21359
+            ],
+            "textEventIndices": [
+              346
+            ],
+            "textParts": [
+              {
+                "kind": "text",
+                "text": "那一张一合忙碌的吃着面包的样子，看起来总觉得让人感到欣慰。",
+                "codeOffset": 21296,
+                "rawText": "那一张一合忙碌的吃着面包的样子，看起来总觉得让人感到欣慰。",
+                "rawHex": "c4c7d2bbd5c5d2bbbacfc3a6c2b5b5c4b3d4d7c5c3e6b0fcb5c4d1f9d7d3a3acbfb4c6f0c0b4d7dcbef5b5c3c8c3c8cbb8d0b5bdd0c0cebfa1a3",
+                "textEventIndex": 346,
+                "segmentIndex": 0
+              }
+            ],
+            "speakerRaw": null,
+            "ruby": [],
+            "controls": [],
+            "boundary": {
+              "codeOffset": 21361,
+              "control": "p"
+            }
+          }
+        },
+        {
+          "eventId": "mjo-53af",
+          "text": "「什么？」",
+          "source": {
+            "schema": "majiro-display-unit/v1",
+            "codeOffset": 21408,
+            "endCodeOffset": 21440,
+            "bodyCodeOffset": 21423,
+            "codeOffsets": [
+              21408,
+              21423,
+              21438
+            ],
+            "textEventIndices": [
+              347,
+              348
+            ],
+            "textParts": [
+              {
+                "kind": "text",
+                "text": "「什么？」",
+                "codeOffset": 21423,
+                "rawText": "「什么？」",
+                "rawHex": "8175cab2c3b4a3bf8176",
+                "textEventIndex": 348,
+                "segmentIndex": 0
+              }
+            ],
+            "speakerRaw": {
+              "method": "native-name-slot",
+              "codeOffset": 21408,
+              "rawHex": "8343838a8358",
+              "text": "イリス",
+              "decodedText": "イリス"
+            },
+            "ruby": [],
+            "controls": [],
+            "boundary": {
+              "codeOffset": 21440,
+              "control": "p"
+            }
+          }
+        },
+        {
+          "eventId": "mjo-53df",
+          "text": "「不，没什么。」",
+          "source": {
+            "schema": "majiro-display-unit/v1",
+            "codeOffset": 21456,
+            "endCodeOffset": 21494,
+            "bodyCodeOffset": 21471,
+            "codeOffsets": [
+              21456,
+              21471,
+              21492
+            ],
+            "textEventIndices": [
+              349,
+              350
+            ],
+            "textParts": [
+              {
+                "kind": "text",
+                "text": "「不，没什么。」",
+                "codeOffset": 21471,
+                "rawText": "「不，没什么。」",
+                "rawHex": "8175b2bba3acc3bbcab2c3b4a1a38176",
+                "textEventIndex": 350,
+                "segmentIndex": 0
+              }
+            ],
+            "speakerRaw": {
+              "method": "native-name-slot",
+              "codeOffset": 21456,
+              "rawHex": "8ee5906c8cf6",
+              "text": "主人公",
+              "decodedText": "主人公"
+            },
+            "ruby": [],
+            "controls": [],
+            "boundary": {
+              "codeOffset": 21494,
+              "control": "p"
+            }
+          }
+        },
+        {
+          "eventId": "mjo-5406",
+          "text": "恐怕她本人并没发觉，那忙碌地吃着东西的样子，就像天真无邪的孩子那样。",
+          "source": {
+            "schema": "majiro-display-unit/v1",
+            "codeOffset": 21510,
+            "endCodeOffset": 21585,
+            "bodyCodeOffset": 21510,
+            "codeOffsets": [
+              21510,
+              21583
+            ],
+            "textEventIndices": [
+              351
+            ],
+            "textParts": [
+              {
+                "kind": "text",
+                "text": "恐怕她本人并没发觉，那忙碌地吃着东西的样子，就像天真无邪的孩子那样。",
+                "codeOffset": 21510,
+                "rawText": "恐怕她本人并没发觉，那忙碌地吃着东西的样子，就像天真无邪的孩子那样。",
+                "rawHex": "bfd6c5c2cbfdb1bec8cbb2a2c3bbb7a2bef5a3acc4c7c3a6c2b5b5d8b3d4d7c5b6abcef7b5c4d1f9d7d3a3acbecdcff1ccecd5e6ceded0b0b5c4baa2d7d3c4c7d1f9a1a3",
+                "textEventIndex": 351,
+                "segmentIndex": 0
+              }
+            ],
+            "speakerRaw": null,
+            "ruby": [],
+            "controls": [],
+            "boundary": {
+              "codeOffset": 21585,
+              "control": "p"
+            }
+          }
+        },
+        {
+          "eventId": "mjo-5461",
+          "text": "…从那时起已经过了几天了，其间这家伙又袭击了几个归途兵了。",
+          "source": {
+            "schema": "majiro-display-unit/v1",
+            "codeOffset": 21601,
+            "endCodeOffset": 21666,
+            "bodyCodeOffset": 21601,
+            "codeOffsets": [
+              21601,
+              21664
+            ],
+            "textEventIndices": [
+              352
+            ],
+            "textParts": [
+              {
+                "kind": "text",
+                "text": "…从那时起已经过了几天了，其间这家伙又袭击了几个归途兵了。",
+                "codeOffset": 21601,
+                "rawText": "…从那时起已经过了几天了，其间这家伙又袭击了几个归途兵了。",
+                "rawHex": "a1adb4d3c4c7cab1c6f0d2d1beadb9fdc1cbbcb8ccecc1cba3acc6e4bce4d5e2bcd2bbefd3d6cfaebbf7c1cbbcb8b8f6b9e9cdbeb1f8c1cba1a3",
+                "textEventIndex": 352,
+                "segmentIndex": 0
+              }
+            ],
+            "speakerRaw": null,
+            "ruby": [],
+            "controls": [],
+            "boundary": {
+              "codeOffset": 21666,
+              "control": "p"
+            }
+          }
+        },
+        {
+          "eventId": "mjo-54b2",
+          "text": "但是，并没有全都杀掉，跟前几天一样只抢夺了行李，就放跑了。",
+          "source": {
+            "schema": "majiro-display-unit/v1",
+            "codeOffset": 21682,
+            "endCodeOffset": 21747,
+            "bodyCodeOffset": 21682,
+            "codeOffsets": [
+              21682,
+              21745
+            ],
+            "textEventIndices": [
+              353
+            ],
+            "textParts": [
+              {
+                "kind": "text",
+                "text": "但是，并没有全都杀掉，跟前几天一样只抢夺了行李，就放跑了。",
+                "codeOffset": 21682,
+                "rawText": "但是，并没有全都杀掉，跟前几天一样只抢夺了行李，就放跑了。",
+                "rawHex": "b5abcac7a3acb2a2c3bbd3d0c8abb6bcc9b1b5f4a3acb8fac7b0bcb8ccecd2bbd1f9d6bbc7c0b6e1c1cbd0d0c0eea3acbecdb7c5c5dcc1cba1a3",
+                "textEventIndex": 353,
+                "segmentIndex": 0
+              }
+            ],
+            "speakerRaw": null,
+            "ruby": [],
+            "controls": [],
+            "boundary": {
+              "codeOffset": 21747,
+              "control": "p"
+            }
+          }
+        },
+        {
+          "eventId": "mjo-5503",
+          "text": "对于这种变化，我总觉得有点高兴。",
+          "source": {
+            "schema": "majiro-display-unit/v1",
+            "codeOffset": 21763,
+            "endCodeOffset": 21802,
+            "bodyCodeOffset": 21763,
+            "codeOffsets": [
+              21763,
+              21800
+            ],
+            "textEventIndices": [
+              354
+            ],
+            "textParts": [
+              {
+                "kind": "text",
+                "text": "对于这种变化，我总觉得有点高兴。",
+                "codeOffset": 21763,
+                "rawText": "对于这种变化，我总觉得有点高兴。",
+                "rawHex": "b6d4d3dad5e2d6d6b1e4bbafa3acced2d7dcbef5b5c3d3d0b5e3b8dfd0cba1a3",
+                "textEventIndex": 354,
+                "segmentIndex": 0
+              }
+            ],
+            "speakerRaw": null,
+            "ruby": [],
+            "controls": [],
+            "boundary": {
+              "codeOffset": 21802,
+              "control": "p"
+            }
+          }
+        },
+        {
+          "eventId": "mjo-553a",
+          "text": "相反，从这家伙被追杀中的立场来考虑，这并不是可以放手不管在一边高兴的事态。",
+          "source": {
+            "schema": "majiro-display-unit/v1",
+            "codeOffset": 21818,
+            "endCodeOffset": 21899,
+            "bodyCodeOffset": 21818,
+            "codeOffsets": [
+              21818,
+              21897
+            ],
+            "textEventIndices": [
+              355
+            ],
+            "textParts": [
+              {
+                "kind": "text",
+                "text": "相反，从这家伙被追杀中的立场来考虑，这并不是可以放手不管在一边高兴的事态。",
+                "codeOffset": 21818,
+                "rawText": "相反，从这家伙被追杀中的立场来考虑，这并不是可以放手不管在一边高兴的事态。",
+                "rawHex": "cfe0b7b4a3acb4d3d5e2bcd2bbefb1bbd7b7c9b1d6d0b5c4c1a2b3a1c0b4bfbcc2c7a3acd5e2b2a2b2bbcac7bfc9d2d4b7c5cad6b2bbb9dcd4dad2bbb1dfb8dfd0cbb5c4cac2ccaca1a3",
+                "textEventIndex": 355,
+                "segmentIndex": 0
+              }
+            ],
+            "speakerRaw": null,
+            "ruby": [],
+            "controls": [],
+            "boundary": {
+              "codeOffset": 21899,
+              "control": "p"
+            }
+          }
+        },
+        {
+          "eventId": "mjo-559b",
+          "text": "…恐怕追兵会在某个开阔的地方，等待着这家伙。",
+          "source": {
+            "schema": "majiro-display-unit/v1",
+            "codeOffset": 21915,
+            "endCodeOffset": 21966,
+            "bodyCodeOffset": 21915,
+            "codeOffsets": [
+              21915,
+              21964
+            ],
+            "textEventIndices": [
+              356
+            ],
+            "textParts": [
+              {
+                "kind": "text",
+                "text": "…恐怕追兵会在某个开阔的地方，等待着这家伙。",
+                "codeOffset": 21915,
+                "rawText": "…恐怕追兵会在某个开阔的地方，等待着这家伙。",
+                "rawHex": "a1adbfd6c5c2d7b7b1f8bbe1d4dac4b3b8f6bfaac0abb5c4b5d8b7bda3acb5c8b4fdd7c5d5e2bcd2bbefa1a3",
+                "textEventIndex": 356,
+                "segmentIndex": 0
+              }
+            ],
+            "speakerRaw": null,
+            "ruby": [],
+            "controls": [],
+            "boundary": {
+              "codeOffset": 21966,
+              "control": "p"
+            }
+          }
+        },
+        {
+          "eventId": "mjo-55de",
+          "text": "敌国残留下来的王族幸存者，对于这个国家来说，只会感到碍眼。",
+          "source": {
+            "schema": "majiro-display-unit/v1",
+            "codeOffset": 21982,
+            "endCodeOffset": 22047,
+            "bodyCodeOffset": 21982,
+            "codeOffsets": [
+              21982,
+              22045
+            ],
+            "textEventIndices": [
+              357
+            ],
+            "textParts": [
+              {
+                "kind": "text",
+                "text": "敌国残留下来的王族幸存者，对于这个国家来说，只会感到碍眼。",
+                "codeOffset": 21982,
+                "rawText": "敌国残留下来的王族幸存者，对于这个国家来说，只会感到碍眼。",
+                "rawHex": "b5d0b9fab2d0c1f4cfc2c0b4b5c4cdf5d7e5d0d2b4e6d5dfa3acb6d4d3dad5e2b8f6b9fabcd2c0b4cbb5a3acd6bbbbe1b8d0b5bdb0add1dba1a3",
+                "textEventIndex": 357,
+                "segmentIndex": 0
+              }
+            ],
+            "speakerRaw": null,
+            "ruby": [],
+            "controls": [],
+            "boundary": {
+              "codeOffset": 22047,
+              "control": "p"
+            }
+          }
+        },
+        {
+          "eventId": "mjo-562f",
+          "text": "像之前那样，连佣兵都雇上，追杀了过来就是最好的证据。",
+          "source": {
+            "schema": "majiro-display-unit/v1",
+            "codeOffset": 22063,
+            "endCodeOffset": 22122,
+            "bodyCodeOffset": 22063,
+            "codeOffsets": [
+              22063,
+              22120
+            ],
+            "textEventIndices": [
+              358
+            ],
+            "textParts": [
+              {
+                "kind": "text",
+                "text": "像之前那样，连佣兵都雇上，追杀了过来就是最好的证据。",
+                "codeOffset": 22063,
+                "rawText": "像之前那样，连佣兵都雇上，追杀了过来就是最好的证据。",
+                "rawHex": "cff1d6aec7b0c4c7d1f9a3acc1acd3b6b1f8b6bcb9cdc9cfa3acd7b7c9b1c1cbb9fdc0b4becdcac7d7eebac3b5c4d6a4bedda1a3",
+                "textEventIndex": 358,
+                "segmentIndex": 0
+              }
+            ],
+            "speakerRaw": null,
+            "ruby": [],
+            "controls": [],
+            "boundary": {
+              "codeOffset": 22122,
+              "control": "p"
+            }
+          }
+        },
+        {
+          "eventId": "mjo-567a",
+          "text": "而且，就算穿过了国境，踏入了其他国家，也并不能说就有了美好的将来。",
+          "source": {
+            "schema": "majiro-display-unit/v1",
+            "codeOffset": 22138,
+            "endCodeOffset": 22211,
+            "bodyCodeOffset": 22138,
+            "codeOffsets": [
+              22138,
+              22209
+            ],
+            "textEventIndices": [
+              359
+            ],
+            "textParts": [
+              {
+                "kind": "text",
+                "text": "而且，就算穿过了国境，踏入了其他国家，也并不能说就有了美好的将来。",
+                "codeOffset": 22138,
+                "rawText": "而且，就算穿过了国境，踏入了其他国家，也并不能说就有了美好的将来。",
+                "rawHex": "b6f8c7d2a3acbecdcbe3b4a9b9fdc1cbb9fabeb3a3accca4c8ebc1cbc6e4cbfbb9fabcd2a3acd2b2b2a2b2bbc4dccbb5becdd3d0c1cbc3c0bac3b5c4bdabc0b4a1a3",
+                "textEventIndex": 359,
+                "segmentIndex": 0
+              }
+            ],
+            "speakerRaw": null,
+            "ruby": [],
+            "controls": [],
+            "boundary": {
+              "codeOffset": 22211,
+              "control": "p"
+            }
+          }
+        },
+        {
+          "eventId": "mjo-56d3",
+          "text": "…不管怎样，继续做杀人的勾当，迟早会凄惨的死去。",
+          "source": {
+            "schema": "majiro-display-unit/v1",
+            "codeOffset": 22227,
+            "endCodeOffset": 22282,
+            "bodyCodeOffset": 22227,
+            "codeOffsets": [
+              22227,
+              22280
+            ],
+            "textEventIndices": [
+              360
+            ],
+            "textParts": [
+              {
+                "kind": "text",
+                "text": "…不管怎样，继续做杀人的勾当，迟早会凄惨的死去。",
+                "codeOffset": 22227,
+                "rawText": "…不管怎样，继续做杀人的勾当，迟早会凄惨的死去。",
+                "rawHex": "a1adb2bbb9dcd4f5d1f9a3acbcccd0f8d7f6c9b1c8cbb5c4b9b4b5b1a3acb3d9d4e7bbe1c6e0b2d2b5c4cbc0c8a5a1a3",
+                "textEventIndex": 360,
+                "segmentIndex": 0
+              }
+            ],
+            "speakerRaw": null,
+            "ruby": [],
+            "controls": [],
+            "boundary": {
+              "codeOffset": 22282,
+              "control": "p"
+            }
+          }
+        },
+        {
+          "eventId": "mjo-571a",
+          "text": "然而我跟这家伙，除了杀人以外就不知道其他的生存方法了。",
+          "source": {
+            "schema": "majiro-display-unit/v1",
+            "codeOffset": 22298,
+            "endCodeOffset": 22359,
+            "bodyCodeOffset": 22298,
+            "codeOffsets": [
+              22298,
+              22357
+            ],
+            "textEventIndices": [
+              361
+            ],
+            "textParts": [
+              {
+                "kind": "text",
+                "text": "然而我跟这家伙，除了杀人以外就不知道其他的生存方法了。",
+                "codeOffset": 22298,
+                "rawText": "然而我跟这家伙，除了杀人以外就不知道其他的生存方法了。",
+                "rawHex": "c8bbb6f8ced2b8fad5e2bcd2bbefa3acb3fdc1cbc9b1c8cbd2d4cde2becdb2bbd6aab5c0c6e4cbfbb5c4c9fab4e6b7bdb7a8c1cba1a3",
+                "textEventIndex": 361,
+                "segmentIndex": 0
+              }
+            ],
+            "speakerRaw": null,
+            "ruby": [],
+            "controls": [],
+            "boundary": {
+              "codeOffset": 22359,
+              "control": "p"
+            }
+          }
+        },
+        {
+          "eventId": "mjo-5767",
+          "text": "不停考虑着那样的事情，突然，这家伙细声嘟哝道。",
+          "source": {
+            "schema": "majiro-display-unit/v1",
+            "codeOffset": 22375,
+            "endCodeOffset": 22428,
+            "bodyCodeOffset": 22375,
+            "codeOffsets": [
+              22375,
+              22426
+            ],
+            "textEventIndices": [
+              362
+            ],
+            "textParts": [
+              {
+                "kind": "text",
+                "text": "不停考虑着那样的事情，突然，这家伙细声嘟哝道。",
+                "codeOffset": 22375,
+                "rawText": "不停考虑着那样的事情，突然，这家伙细声嘟哝道。",
+                "rawHex": "b2bbcda3bfbcc2c7d7c5c4c7d1f9b5c4cac2c7e9a3accdbbc8bba3acd5e2bcd2bbefcfb8c9f9e0bddfe6b5c0a1a3",
+                "textEventIndex": 362,
+                "segmentIndex": 0
+              }
+            ],
+            "speakerRaw": null,
+            "ruby": [],
+            "controls": [],
+            "boundary": {
+              "codeOffset": 22428,
+              "control": "p"
+            }
+          }
+        },
+        {
+          "eventId": "mjo-57fd",
+          "text": "「我活下去真的好吗？」",
+          "source": {
+            "schema": "majiro-display-unit/v1",
+            "codeOffset": 22510,
+            "endCodeOffset": 22554,
+            "bodyCodeOffset": 22525,
+            "codeOffsets": [
+              22510,
+              22525,
+              22552
+            ],
+            "textEventIndices": [
+              363,
+              364
+            ],
+            "textParts": [
+              {
+                "kind": "text",
+                "text": "「我活下去真的好吗？」",
+                "codeOffset": 22525,
+                "rawText": "「我活下去真的好吗？」",
+                "rawHex": "8175ced2bbeecfc2c8a5d5e6b5c4bac3c2f0a3bf8176",
+                "textEventIndex": 364,
+                "segmentIndex": 0
+              }
+            ],
+            "speakerRaw": {
+              "method": "native-name-slot",
+              "codeOffset": 22510,
+              "rawHex": "8343838a8358",
+              "text": "イリス",
+              "decodedText": "イリス"
+            },
+            "ruby": [],
+            "controls": [],
+            "boundary": {
+              "codeOffset": 22554,
+              "control": "p"
+            }
+          }
+        },
+        {
+          "eventId": "mjo-5839",
+          "text": "「怎么了，突然间？」",
+          "source": {
+            "schema": "majiro-display-unit/v1",
+            "codeOffset": 22570,
+            "endCodeOffset": 22612,
+            "bodyCodeOffset": 22585,
+            "codeOffsets": [
+              22570,
+              22585,
+              22610
+            ],
+            "textEventIndices": [
+              365,
+              366
+            ],
+            "textParts": [
+              {
+                "kind": "text",
+                "text": "「怎么了，突然间？」",
+                "codeOffset": 22585,
+                "rawText": "「怎么了，突然间？」",
+                "rawHex": "8175d4f5c3b4c1cba3accdbbc8bbbce4a3bf8176",
+                "textEventIndex": 366,
+                "segmentIndex": 0
+              }
+            ],
+            "speakerRaw": {
+              "method": "native-name-slot",
+              "codeOffset": 22570,
+              "rawHex": "8ee5906c8cf6",
+              "text": "主人公",
+              "decodedText": "主人公"
+            },
+            "ruby": [],
+            "controls": [],
+            "boundary": {
+              "codeOffset": 22612,
+              "control": "p"
+            }
+          }
+        },
+        {
+          "eventId": "mjo-5892",
+          "text": "「呐。我有活下去的权利么？」",
+          "source": {
+            "schema": "majiro-display-unit/v1",
+            "codeOffset": 22659,
+            "endCodeOffset": 22709,
+            "bodyCodeOffset": 22674,
+            "codeOffsets": [
+              22659,
+              22674,
+              22707
+            ],
+            "textEventIndices": [
+              367,
+              368
+            ],
+            "textParts": [
+              {
+                "kind": "text",
+                "text": "「呐。我有活下去的权利么？」",
+                "codeOffset": 22674,
+                "rawText": "「呐。我有活下去的权利么？」",
+                "rawHex": "8175c4c5a1a3ced2d3d0bbeecfc2c8a5b5c4c8a8c0fbc3b4a3bf8176",
+                "textEventIndex": 368,
+                "segmentIndex": 0
+              }
+            ],
+            "speakerRaw": {
+              "method": "native-name-slot",
+              "codeOffset": 22659,
+              "rawHex": "8343838a8358",
+              "text": "イリス",
+              "decodedText": "イリス"
+            },
+            "ruby": [],
+            "controls": [],
+            "boundary": {
+              "codeOffset": 22709,
+              "control": "p"
+            }
+          }
+        },
+        {
+          "eventId": "mjo-58d4",
+          "text": "「这个是谁都有的啊。」",
+          "source": {
+            "schema": "majiro-display-unit/v1",
+            "codeOffset": 22725,
+            "endCodeOffset": 22769,
+            "bodyCodeOffset": 22740,
+            "codeOffsets": [
+              22725,
+              22740,
+              22767
+            ],
+            "textEventIndices": [
+              369,
+              370
+            ],
+            "textParts": [
+              {
+                "kind": "text",
+                "text": "「这个是谁都有的啊。」",
+                "codeOffset": 22740,
+                "rawText": "「这个是谁都有的啊。」",
+                "rawHex": "8175d5e2b8f6cac7cbadb6bcd3d0b5c4b0a1a1a38176",
+                "textEventIndex": 370,
+                "segmentIndex": 0
+              }
+            ],
+            "speakerRaw": {
+              "method": "native-name-slot",
+              "codeOffset": 22725,
+              "rawHex": "8ee5906c8cf6",
+              "text": "主人公",
+              "decodedText": "主人公"
+            },
+            "ruby": [],
+            "controls": [],
+            "boundary": {
+              "codeOffset": 22769,
+              "control": "p"
+            }
+          }
+        },
+        {
+          "eventId": "mjo-592f",
+          "text": "「已经杀人十年的人也有么？」",
+          "source": {
+            "schema": "majiro-display-unit/v1",
+            "codeOffset": 22816,
+            "endCodeOffset": 22866,
+            "bodyCodeOffset": 22831,
+            "codeOffsets": [
+              22816,
+              22831,
+              22864
+            ],
+            "textEventIndices": [
+              371,
+              372
+            ],
+            "textParts": [
+              {
+                "kind": "text",
+                "text": "「已经杀人十年的人也有么？」",
+                "codeOffset": 22831,
+                "rawText": "「已经杀人十年的人也有么？」",
+                "rawHex": "8175d2d1beadc9b1c8cbcaaec4eab5c4c8cbd2b2d3d0c3b4a3bf8176",
+                "textEventIndex": 372,
+                "segmentIndex": 0
+              }
+            ],
+            "speakerRaw": {
+              "method": "native-name-slot",
+              "codeOffset": 22816,
+              "rawHex": "8343838a8358",
+              "text": "イリス",
+              "decodedText": "イリス"
+            },
+            "ruby": [],
+            "controls": [],
+            "boundary": {
+              "codeOffset": 22866,
+              "control": "p"
+            }
+          }
+        },
+        {
+          "eventId": "mjo-5971",
+          "text": "「可能吧，我也差不多。」",
+          "source": {
+            "schema": "majiro-display-unit/v1",
+            "codeOffset": 22882,
+            "endCodeOffset": 22928,
+            "bodyCodeOffset": 22897,
+            "codeOffsets": [
+              22882,
+              22897,
+              22926
+            ],
+            "textEventIndices": [
+              373,
+              374
+            ],
+            "textParts": [
+              {
+                "kind": "text",
+                "text": "「可能吧，我也差不多。」",
+                "codeOffset": 22897,
+                "rawText": "「可能吧，我也差不多。」",
+                "rawHex": "8175bfc9c4dcb0c9a3acced2d2b2b2eeb2bbb6e0a1a38176",
+                "textEventIndex": 374,
+                "segmentIndex": 0
+              }
+            ],
+            "speakerRaw": {
+              "method": "native-name-slot",
+              "codeOffset": 22882,
+              "rawHex": "8ee5906c8cf6",
+              "text": "主人公",
+              "decodedText": "主人公"
+            },
+            "ruby": [],
+            "controls": [],
+            "boundary": {
+              "codeOffset": 22928,
+              "control": "p"
+            }
+          }
+        },
+        {
+          "eventId": "mjo-59a0",
+          "text": "的确，我跟这家伙都是杀人犯，除此以外什么都不是，也不知道其他活下去的方法。",
+          "source": {
+            "schema": "majiro-display-unit/v1",
+            "codeOffset": 22944,
+            "endCodeOffset": 23025,
+            "bodyCodeOffset": 22944,
+            "codeOffsets": [
+              22944,
+              23023
+            ],
+            "textEventIndices": [
+              375
+            ],
+            "textParts": [
+              {
+                "kind": "text",
+                "text": "的确，我跟这家伙都是杀人犯，除此以外什么都不是，也不知道其他活下去的方法。",
+                "codeOffset": 22944,
+                "rawText": "的确，我跟这家伙都是杀人犯，除此以外什么都不是，也不知道其他活下去的方法。",
+                "rawHex": "b5c4c8b7a3acced2b8fad5e2bcd2bbefb6bccac7c9b1c8cbb7b8a3acb3fdb4cbd2d4cde2cab2c3b4b6bcb2bbcac7a3acd2b2b2bbd6aab5c0c6e4cbfbbbeecfc2c8a5b5c4b7bdb7a8a1a3",
+                "textEventIndex": 375,
+                "segmentIndex": 0
+              }
+            ],
+            "speakerRaw": null,
+            "ruby": [],
+            "controls": [],
+            "boundary": {
+              "codeOffset": 23025,
+              "control": "p"
+            }
+          }
+        },
+        {
+          "eventId": "mjo-5a01",
+          "text": "为了让我一个人活下去，数十条人命成为了我的粮食。反过来说，如果我们死了，那数十条人命就会生存下去。",
+          "source": {
+            "schema": "majiro-display-unit/v1",
+            "codeOffset": 23041,
+            "endCodeOffset": 23146,
+            "bodyCodeOffset": 23041,
+            "codeOffsets": [
+              23041,
+              23144
+            ],
+            "textEventIndices": [
+              376
+            ],
+            "textParts": [
+              {
+                "kind": "text",
+                "text": "为了让我一个人活下去，数十条人命成为了我的粮食。反过来说，如果我们死了，那数十条人命就会生存下去。",
+                "codeOffset": 23041,
+                "rawText": "为了让我一个人活下去，数十条人命成为了我的粮食。反过来说，如果我们死了，那数十条人命就会生存下去。",
+                "rawHex": "ceaac1cbc8c3ced2d2bbb8f6c8cbbbeecfc2c8a5a3accafdcaaeccf5c8cbc3fcb3c9ceaac1cbced2b5c4c1b8cab3a1a3b7b4b9fdc0b4cbb5a3acc8e7b9fbced2c3c7cbc0c1cba3acc4c7cafdcaaeccf5c8cbc3fcbecdbbe1c9fab4e6cfc2c8a5a1a3",
+                "textEventIndex": 376,
+                "segmentIndex": 0
+              }
+            ],
+            "speakerRaw": null,
+            "ruby": [],
+            "controls": [],
+            "boundary": {
+              "codeOffset": 23146,
+              "control": "p"
+            }
+          }
+        },
+        {
+          "eventId": "mjo-5a7a",
+          "text": "…如果神真的存在的话，我们的末路，应该都是合适我们的吧。",
+          "source": {
+            "schema": "majiro-display-unit/v1",
+            "codeOffset": 23162,
+            "endCodeOffset": 23225,
+            "bodyCodeOffset": 23162,
+            "codeOffsets": [
+              23162,
+              23223
+            ],
+            "textEventIndices": [
+              377
+            ],
+            "textParts": [
+              {
+                "kind": "text",
+                "text": "…如果神真的存在的话，我们的末路，应该都是合适我们的吧。",
+                "codeOffset": 23162,
+                "rawText": "…如果神真的存在的话，我们的末路，应该都是合适我们的吧。",
+                "rawHex": "a1adc8e7b9fbc9f1d5e6b5c4b4e6d4dab5c4bbb0a3acced2c3c7b5c4c4a9c2b7a3acd3a6b8c3b6bccac7bacfcacaced2c3c7b5c4b0c9a1a3",
+                "textEventIndex": 377,
+                "segmentIndex": 0
+              }
+            ],
+            "speakerRaw": null,
+            "ruby": [],
+            "controls": [],
+            "boundary": {
+              "codeOffset": 23225,
+              "control": "p"
+            }
+          }
+        },
+        {
+          "eventId": "mjo-5b01",
+          "text": "「（但是，这家伙……",
+          "source": {
+            "schema": "majiro-display-unit/v1",
+            "codeOffset": 23282,
+            "endCodeOffset": 23324,
+            "bodyCodeOffset": 23297,
+            "codeOffsets": [
+              23282,
+              23297,
+              23322
+            ],
+            "textEventIndices": [
+              378,
+              379
+            ],
+            "textParts": [
+              {
+                "kind": "text",
+                "text": "「（但是，这家伙……",
+                "codeOffset": 23297,
+                "rawText": "「（但是，这家伙……",
+                "rawHex": "8175a3a8b5abcac7a3acd5e2bcd2bbefa1ada1ad",
+                "textEventIndex": 379,
+                "segmentIndex": 0
+              }
+            ],
+            "speakerRaw": {
+              "method": "native-name-slot",
+              "codeOffset": 23282,
+              "rawHex": "8ee5906c8cf6",
+              "text": "主人公",
+              "decodedText": "主人公"
+            },
+            "ruby": [],
+            "controls": [],
+            "boundary": {
+              "codeOffset": 23324,
+              "control": "p"
+            }
+          }
+        },
+        {
+          "eventId": "mjo-5b22",
+          "text": "真的是那样的吗？）」",
+          "source": {
+            "schema": "majiro-display-unit/v1",
+            "codeOffset": 23330,
+            "endCodeOffset": 23357,
+            "bodyCodeOffset": 23330,
+            "codeOffsets": [
+              23330,
+              23355
+            ],
+            "textEventIndices": [
+              380
+            ],
+            "textParts": [
+              {
+                "kind": "text",
+                "text": "真的是那样的吗？）」",
+                "codeOffset": 23330,
+                "rawText": "真的是那样的吗？）」",
+                "rawHex": "d5e6b5c4cac7c4c7d1f9b5c4c2f0a3bfa3a98176",
+                "textEventIndex": 380,
+                "segmentIndex": 0
+              }
+            ],
+            "speakerRaw": null,
+            "ruby": [],
+            "controls": [],
+            "boundary": {
+              "codeOffset": 23357,
+              "control": "p"
+            }
+          }
+        },
+        {
+          "eventId": "mjo-5b4d",
+          "text": "望着下着雪的天空，忽然那么想道。",
+          "source": {
+            "schema": "majiro-display-unit/v1",
+            "codeOffset": 23373,
+            "endCodeOffset": 23412,
+            "bodyCodeOffset": 23373,
+            "codeOffsets": [
+              23373,
+              23410
+            ],
+            "textEventIndices": [
+              381
+            ],
+            "textParts": [
+              {
+                "kind": "text",
+                "text": "望着下着雪的天空，忽然那么想道。",
+                "codeOffset": 23373,
+                "rawText": "望着下着雪的天空，忽然那么想道。",
+                "rawHex": "cdfbd7c5cfc2d7c5d1a9b5c4ccecbfd5a3acbaf6c8bbc4c7c3b4cfebb5c0a1a3",
+                "textEventIndex": 381,
+                "segmentIndex": 0
+              }
+            ],
+            "speakerRaw": null,
+            "ruby": [],
+            "controls": [],
+            "boundary": {
+              "codeOffset": 23412,
+              "control": "p"
+            }
+          }
+        },
+        {
+          "eventId": "mjo-5b84",
+          "text": "毫不留情地杀人的她，和现在天真无邪地吃着东西的她。",
+          "source": {
+            "schema": "majiro-display-unit/v1",
+            "codeOffset": 23428,
+            "endCodeOffset": 23485,
+            "bodyCodeOffset": 23428,
+            "codeOffsets": [
+              23428,
+              23483
+            ],
+            "textEventIndices": [
+              382
+            ],
+            "textParts": [
+              {
+                "kind": "text",
+                "text": "毫不留情地杀人的她，和现在天真无邪地吃着东西的她。",
+                "codeOffset": 23428,
+                "rawText": "毫不留情地杀人的她，和现在天真无邪地吃着东西的她。",
+                "rawHex": "bac1b2bbc1f4c7e9b5d8c9b1c8cbb5c4cbfda3acbacdcfd6d4daccecd5e6ceded0b0b5d8b3d4d7c5b6abcef7b5c4cbfda1a3",
+                "textEventIndex": 382,
+                "segmentIndex": 0
+              }
+            ],
+            "speakerRaw": null,
+            "ruby": [],
+            "controls": [],
+            "boundary": {
+              "codeOffset": 23485,
+              "control": "p"
+            }
+          }
+        },
+        {
+          "eventId": "mjo-5bcd",
+          "text": "真不知道那边才是她真正的一面。",
+          "source": {
+            "schema": "majiro-display-unit/v1",
+            "codeOffset": 23501,
+            "endCodeOffset": 23538,
+            "bodyCodeOffset": 23501,
+            "codeOffsets": [
+              23501,
+              23536
+            ],
+            "textEventIndices": [
+              383
+            ],
+            "textParts": [
+              {
+                "kind": "text",
+                "text": "真不知道那边才是她真正的一面。",
+                "codeOffset": 23501,
+                "rawText": "真不知道那边才是她真正的一面。",
+                "rawHex": "d5e6b2bbd6aab5c0c4c7b1dfb2c5cac7cbfdd5e6d5fdb5c4d2bbc3e6a1a3",
+                "textEventIndex": 383,
+                "segmentIndex": 0
+              }
+            ],
+            "speakerRaw": null,
+            "ruby": [],
+            "controls": [],
+            "boundary": {
+              "codeOffset": 23538,
+              "control": "p"
+            }
+          }
+        },
+        {
+          "eventId": "mjo-5c02",
+          "text": "但是，谁都会有过失。在这个世界上“没办法的事”数也数不清。",
+          "source": {
+            "schema": "majiro-display-unit/v1",
+            "codeOffset": 23554,
+            "endCodeOffset": 23619,
+            "bodyCodeOffset": 23554,
+            "codeOffsets": [
+              23554,
+              23617
+            ],
+            "textEventIndices": [
+              384
+            ],
+            "textParts": [
+              {
+                "kind": "text",
+                "text": "但是，谁都会有过失。在这个世界上“没办法的事”数也数不清。",
+                "codeOffset": 23554,
+                "rawText": "但是，谁都会有过失。在这个世界上“没办法的事”数也数不清。",
+                "rawHex": "b5abcac7a3accbadb6bcbbe1d3d0b9fdcaa7a1a3d4dad5e2b8f6cac0bde7c9cfa1b0c3bbb0ecb7a8b5c4cac2a1b1cafdd2b2cafdb2bbc7e5a1a3",
+                "textEventIndex": 384,
+                "segmentIndex": 0
+              }
+            ],
+            "speakerRaw": null,
+            "ruby": [],
+            "controls": [],
+            "boundary": {
+              "codeOffset": 23619,
+              "control": "p"
+            }
+          }
+        },
+        {
+          "eventId": "mjo-5c53",
+          "text": "…就算是愚者，一千件里面也会做对一件事。",
+          "source": {
+            "schema": "majiro-display-unit/v1",
+            "codeOffset": 23635,
+            "endCodeOffset": 23682,
+            "bodyCodeOffset": 23635,
+            "codeOffsets": [
+              23635,
+              23680
+            ],
+            "textEventIndices": [
+              385
+            ],
+            "textParts": [
+              {
+                "kind": "text",
+                "text": "…就算是愚者，一千件里面也会做对一件事。",
+                "codeOffset": 23635,
+                "rawText": "…就算是愚者，一千件里面也会做对一件事。",
+                "rawHex": "a1adbecdcbe3cac7d3ded5dfa3acd2bbc7a7bcfec0efc3e6d2b2bbe1d7f6b6d4d2bbbcfecac2a1a3",
+                "textEventIndex": 385,
+                "segmentIndex": 0
+              }
+            ],
+            "speakerRaw": null,
+            "ruby": [],
+            "controls": [],
+            "boundary": {
+              "codeOffset": 23682,
+              "control": "p"
+            }
+          }
+        },
+        {
+          "eventId": "mjo-5c92",
+          "text": "而且，就算是贤者，在一万件事中也会做错一件。",
+          "source": {
+            "schema": "majiro-display-unit/v1",
+            "codeOffset": 23698,
+            "endCodeOffset": 23749,
+            "bodyCodeOffset": 23698,
+            "codeOffsets": [
+              23698,
+              23747
+            ],
+            "textEventIndices": [
+              386
+            ],
+            "textParts": [
+              {
+                "kind": "text",
+                "text": "而且，就算是贤者，在一万件事中也会做错一件。",
+                "codeOffset": 23698,
+                "rawText": "而且，就算是贤者，在一万件事中也会做错一件。",
+                "rawHex": "b6f8c7d2a3acbecdcbe3cac7cfcdd5dfa3acd4dad2bbcdf2bcfecac2d6d0d2b2bbe1d7f6b4edd2bbbcfea1a3",
+                "textEventIndex": 386,
+                "segmentIndex": 0
+              }
+            ],
+            "speakerRaw": null,
+            "ruby": [],
+            "controls": [],
+            "boundary": {
+              "codeOffset": 23749,
+              "control": "p"
+            }
+          }
+        },
+        {
+          "eventId": "mjo-5d0f",
+          "text": "「我说……你要不要试试种麦子」",
+          "source": {
+            "schema": "majiro-display-unit/v1",
+            "codeOffset": 23808,
+            "endCodeOffset": 23860,
+            "bodyCodeOffset": 23823,
+            "codeOffsets": [
+              23808,
+              23823,
+              23858
+            ],
+            "textEventIndices": [
+              387,
+              388
+            ],
+            "textParts": [
+              {
+                "kind": "text",
+                "text": "「我说……你要不要试试种麦子」",
+                "codeOffset": 23823,
+                "rawText": "「我说……你要不要试试种麦子」",
+                "rawHex": "8175ced2cbb5a1ada1adc4e3d2aab2bbd2aacad4cad4d6d6c2f3d7d38176",
+                "textEventIndex": 388,
+                "segmentIndex": 0
+              }
+            ],
+            "speakerRaw": {
+              "method": "native-name-slot",
+              "codeOffset": 23808,
+              "rawHex": "8ee5906c8cf6",
+              "text": "主人公",
+              "decodedText": "主人公"
+            },
+            "ruby": [],
+            "controls": [],
+            "boundary": {
+              "codeOffset": 23860,
+              "control": "p"
+            }
+          }
+        },
+        {
+          "eventId": "mjo-5d72",
+          "text": "「麦子？」",
+          "source": {
+            "schema": "majiro-display-unit/v1",
+            "codeOffset": 23907,
+            "endCodeOffset": 23939,
+            "bodyCodeOffset": 23922,
+            "codeOffsets": [
+              23907,
+              23922,
+              23937
+            ],
+            "textEventIndices": [
+              389,
+              390
+            ],
+            "textParts": [
+              {
+                "kind": "text",
+                "text": "「麦子？」",
+                "codeOffset": 23922,
+                "rawText": "「麦子？」",
+                "rawHex": "8175c2f3d7d3a3bf8176",
+                "textEventIndex": 390,
+                "segmentIndex": 0
+              }
+            ],
+            "speakerRaw": {
+              "method": "native-name-slot",
+              "codeOffset": 23907,
+              "rawHex": "8343838a8358",
+              "text": "イリス",
+              "decodedText": "イリス"
+            },
+            "ruby": [],
+            "controls": [],
+            "boundary": {
+              "codeOffset": 23939,
+              "control": "p"
+            }
+          }
+        },
+        {
+          "eventId": "mjo-5da2",
+          "text": "「嗯……」",
+          "source": {
+            "schema": "majiro-display-unit/v1",
+            "codeOffset": 23955,
+            "endCodeOffset": 23987,
+            "bodyCodeOffset": 23970,
+            "codeOffsets": [
+              23955,
+              23970,
+              23985
+            ],
+            "textEventIndices": [
+              391,
+              392
+            ],
+            "textParts": [
+              {
+                "kind": "text",
+                "text": "「嗯……」",
+                "codeOffset": 23970,
+                "rawText": "「嗯……」",
+                "rawHex": "8175e0c5a1ada1ad8176",
+                "textEventIndex": 392,
+                "segmentIndex": 0
+              }
+            ],
+            "speakerRaw": {
+              "method": "native-name-slot",
+              "codeOffset": 23955,
+              "rawHex": "8ee5906c8cf6",
+              "text": "主人公",
+              "decodedText": "主人公"
+            },
+            "ruby": [],
+            "controls": [],
+            "boundary": {
+              "codeOffset": 23987,
+              "control": "p"
+            }
+          }
+        },
+        {
+          "eventId": "mjo-5dc3",
+          "text": "不知不觉，竟然问了她这个问题。",
+          "source": {
+            "schema": "majiro-display-unit/v1",
+            "codeOffset": 24003,
+            "endCodeOffset": 24040,
+            "bodyCodeOffset": 24003,
+            "codeOffsets": [
+              24003,
+              24038
+            ],
+            "textEventIndices": [
+              393
+            ],
+            "textParts": [
+              {
+                "kind": "text",
+                "text": "不知不觉，竟然问了她这个问题。",
+                "codeOffset": 24003,
+                "rawText": "不知不觉，竟然问了她这个问题。",
+                "rawHex": "b2bbd6aab2bbbef5a3acbeb9c8bbcecac1cbcbfdd5e2b8f6cecacce2a1a3",
+                "textEventIndex": 393,
+                "segmentIndex": 0
+              }
+            ],
+            "speakerRaw": null,
+            "ruby": [],
+            "controls": [],
+            "boundary": {
+              "codeOffset": 24040,
+              "control": "p"
+            }
+          }
+        },
+        {
+          "eventId": "mjo-5e26",
+          "text": "「但是，你不是说不知道种植的方法」",
+          "source": {
+            "schema": "majiro-display-unit/v1",
+            "codeOffset": 24087,
+            "endCodeOffset": 24143,
+            "bodyCodeOffset": 24102,
+            "codeOffsets": [
+              24087,
+              24102,
+              24141
+            ],
+            "textEventIndices": [
+              394,
+              395
+            ],
+            "textParts": [
+              {
+                "kind": "text",
+                "text": "「但是，你不是说不知道种植的方法」",
+                "codeOffset": 24102,
+                "rawText": "「但是，你不是说不知道种植的方法」",
+                "rawHex": "8175b5abcac7a3acc4e3b2bbcac7cbb5b2bbd6aab5c0d6d6d6b2b5c4b7bdb7a88176",
+                "textEventIndex": 395,
+                "segmentIndex": 0
+              }
+            ],
+            "speakerRaw": {
+              "method": "native-name-slot",
+              "codeOffset": 24087,
+              "rawHex": "8343838a8358",
+              "text": "イリス",
+              "decodedText": "イリス"
+            },
+            "ruby": [],
+            "controls": [],
+            "boundary": {
+              "codeOffset": 24143,
+              "control": "p"
+            }
+          }
+        },
+        {
+          "eventId": "mjo-5e6e",
+          "text": "「…………」",
+          "source": {
+            "schema": "majiro-display-unit/v1",
+            "codeOffset": 24159,
+            "endCodeOffset": 24193,
+            "bodyCodeOffset": 24174,
+            "codeOffsets": [
+              24159,
+              24174,
+              24191
+            ],
+            "textEventIndices": [
+              396,
+              397
+            ],
+            "textParts": [
+              {
+                "kind": "text",
+                "text": "「…………」",
+                "codeOffset": 24174,
+                "rawText": "「…………」",
+                "rawHex": "8175a1ada1ada1ada1ad8176",
+                "textEventIndex": 397,
+                "segmentIndex": 0
+              }
+            ],
+            "speakerRaw": {
+              "method": "native-name-slot",
+              "codeOffset": 24159,
+              "rawHex": "8ee5906c8cf6",
+              "text": "主人公",
+              "decodedText": "主人公"
+            },
+            "ruby": [],
+            "controls": [],
+            "boundary": {
+              "codeOffset": 24193,
+              "control": "p"
+            }
+          }
+        },
+        {
+          "eventId": "mjo-5ea0",
+          "text": "「也是啊，把刚才的话忘了吧」",
+          "source": {
+            "schema": "majiro-display-unit/v1",
+            "codeOffset": 24209,
+            "endCodeOffset": 24259,
+            "bodyCodeOffset": 24224,
+            "codeOffsets": [
+              24209,
+              24224,
+              24257
+            ],
+            "textEventIndices": [
+              398,
+              399
+            ],
+            "textParts": [
+              {
+                "kind": "text",
+                "text": "「也是啊，把刚才的话忘了吧」",
+                "codeOffset": 24224,
+                "rawText": "「也是啊，把刚才的话忘了吧」",
+                "rawHex": "8175d2b2cac7b0a1a3acb0d1b8d5b2c5b5c4bbb0cdfcc1cbb0c98176",
+                "textEventIndex": 399,
+                "segmentIndex": 0
+              }
+            ],
+            "speakerRaw": {
+              "method": "native-name-slot",
+              "codeOffset": 24209,
+              "rawHex": "8ee5906c8cf6",
+              "text": "主人公",
+              "decodedText": "主人公"
+            },
+            "ruby": [],
+            "controls": [],
+            "boundary": {
+              "codeOffset": 24259,
+              "control": "p"
+            }
+          }
+        },
+        {
+          "eventId": "mjo-5ef6",
+          "text": "的确如此，详细的种植方法并不知道。我知道的，只有杀人的方法而已。",
+          "source": {
+            "schema": "majiro-display-unit/v1",
+            "codeOffset": 24310,
+            "endCodeOffset": 24381,
+            "bodyCodeOffset": 24310,
+            "codeOffsets": [
+              24310,
+              24379
+            ],
+            "textEventIndices": [
+              400
+            ],
+            "textParts": [
+              {
+                "kind": "text",
+                "text": "的确如此，详细的种植方法并不知道。我知道的，只有杀人的方法而已。",
+                "codeOffset": 24310,
+                "rawText": "的确如此，详细的种植方法并不知道。我知道的，只有杀人的方法而已。",
+                "rawHex": "b5c4c8b7c8e7b4cba3accfeacfb8b5c4d6d6d6b2b7bdb7a8b2a2b2bbd6aab5c0a1a3ced2d6aab5c0b5c4a3acd6bbd3d0c9b1c8cbb5c4b7bdb7a8b6f8d2d1a1a3",
+                "textEventIndex": 400,
+                "segmentIndex": 0
+              }
+            ],
+            "speakerRaw": null,
+            "ruby": [],
+            "controls": [],
+            "boundary": {
+              "codeOffset": 24381,
+              "control": "p"
+            }
+          }
+        },
+        {
+          "eventId": "mjo-5f5d",
+          "text": "但是，如果是适合种植的地方的话…",
+          "source": {
+            "schema": "majiro-display-unit/v1",
+            "codeOffset": 24413,
+            "endCodeOffset": 24452,
+            "bodyCodeOffset": 24413,
+            "codeOffsets": [
+              24413,
+              24450
+            ],
+            "textEventIndices": [
+              401
+            ],
+            "textParts": [
+              {
+                "kind": "text",
+                "text": "但是，如果是适合种植的地方的话…",
+                "codeOffset": 24413,
+                "rawText": "但是，如果是适合种植的地方的话…",
+                "rawHex": "b5abcac7a3acc8e7b9fbcac7cacabacfd6d6d6b2b5c4b5d8b7bdb5c4bbb0a1ad",
+                "textEventIndex": 401,
+                "segmentIndex": 0
+              }
+            ],
+            "speakerRaw": null,
+            "ruby": [],
+            "controls": [],
+            "boundary": {
+              "codeOffset": 24452,
+              "control": "p"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "storyId": "narcissu-3rd/nar3_07",
+      "variantId": "mjo/narcissu3/scenario.arc.unpacked/nar3_07",
+      "locale": "ja-JP",
+      "events": [
+        {
+          "eventId": "mjo-c5",
+          "text": "あれから数日後。\nまもなく国境が近づこうとする頃。",
+          "source": {
+            "schema": "majiro-display-unit/v1",
+            "codeOffset": 197,
+            "endCodeOffset": 269,
+            "bodyCodeOffset": 197,
+            "codeOffsets": [
+              197,
+              218,
+              220,
+              230,
+              267
+            ],
+            "textEventIndices": [
+              0
+            ],
+            "textParts": [
+              {
+                "kind": "text",
+                "text": "あれから数日後。",
+                "codeOffset": 197,
+                "rawText": "あれから数日後。",
+                "rawHex": "82a082ea82a982e7909493fa8ce38142",
+                "textEventIndex": 0,
+                "segmentIndex": 0
+              },
+              {
+                "kind": "linebreak",
+                "text": "\n",
+                "codeOffset": 220
+              },
+              {
+                "kind": "text",
+                "text": "まもなく国境が近づこうとする頃。",
+                "codeOffset": 230,
+                "rawText": "まもなく国境が近づこうとする頃。",
+                "rawHex": "82dc82e082c882ad8d918bab82aa8bdf82c382b182a482c682b782e98da08142",
+                "textEventIndex": 0,
+                "segmentIndex": 1
+              }
+            ],
+            "speakerRaw": null,
+            "ruby": [],
+            "controls": [
+              {
+                "codeOffset": 220,
+                "value": "n"
+              }
+            ],
+            "boundary": {
+              "codeOffset": 269,
+              "control": "p"
+            }
+          }
+        },
+        {
+          "eventId": "mjo-11d",
+          "text": "俺達は今日も、森の中にいた。",
+          "source": {
+            "schema": "majiro-display-unit/v1",
+            "codeOffset": 285,
+            "endCodeOffset": 320,
+            "bodyCodeOffset": 285,
+            "codeOffsets": [
+              285,
+              318
+            ],
+            "textEventIndices": [
+              1
+            ],
+            "textParts": [
+              {
+                "kind": "text",
+                "text": "俺達は今日も、森の中にいた。",
+                "codeOffset": 285,
+                "rawText": "俺達は今日も、森の中にいた。",
+                "rawHex": "89b4924282cd8da193fa82e08141905882cc928682c982a282bd8142",
+                "textEventIndex": 1,
+                "segmentIndex": 0
+              }
+            ],
+            "speakerRaw": null,
+            "ruby": [],
+            "controls": [],
+            "boundary": {
+              "codeOffset": 320,
+              "control": "p"
+            }
+          }
+        },
+        {
+          "eventId": "mjo-1a3",
+          "text": "そして、いつものように奪ったパンを食べる姫さま。",
+          "source": {
+            "schema": "majiro-display-unit/v1",
+            "codeOffset": 419,
+            "endCodeOffset": 474,
+            "bodyCodeOffset": 419,
+            "codeOffsets": [
+              419,
+              472
+            ],
+            "textEventIndices": [
+              2
+            ],
+            "textParts": [
+              {
+                "kind": "text",
+                "text": "そして、いつものように奪ったパンを食べる姫さま。",
+                "codeOffset": 419,
+                "rawText": "そして、いつものように奪ったパンを食べる姫さま。",
+                "rawHex": "82bb82b582c4814182a282c282e082cc82e682a482c9924482c182bd8370839382f0904882d782e9955082b382dc8142",
+                "textEventIndex": 2,
+                "segmentIndex": 0
+              }
+            ],
+            "speakerRaw": null,
+            "ruby": [],
+            "controls": [],
+            "boundary": {
+              "codeOffset": 474,
+              "control": "p"
+            }
+          }
+        },
+        {
+          "eventId": "mjo-1ea",
+          "text": "以前は、そのまま口に咥えていたが、\n今は、小さく千切りながら、一つずつ摘んで食べる。",
+          "source": {
+            "schema": "majiro-display-unit/v1",
+            "codeOffset": 490,
+            "endCodeOffset": 596,
+            "bodyCodeOffset": 490,
+            "codeOffsets": [
+              490,
+              529,
+              531,
+              541,
+              594
+            ],
+            "textEventIndices": [
+              3
+            ],
+            "textParts": [
+              {
+                "kind": "text",
+                "text": "以前は、そのまま口に咥えていたが、",
+                "codeOffset": 490,
+                "rawText": "以前は、そのまま口に咥えていたが、",
+                "rawHex": "88c8914f82cd814182bb82cc82dc82dc8cfb82c999f882a682c482a282bd82aa8141",
+                "textEventIndex": 3,
+                "segmentIndex": 0
+              },
+              {
+                "kind": "linebreak",
+                "text": "\n",
+                "codeOffset": 531
+              },
+              {
+                "kind": "text",
+                "text": "今は、小さく千切りながら、一つずつ摘んで食べる。",
+                "codeOffset": 541,
+                "rawText": "今は、小さく千切りながら、一つずつ摘んで食べる。",
+                "rawHex": "8da182cd81418fac82b382ad90e790d882e882c882aa82e7814188ea82c282b882c2934582f182c5904882d782e98142",
+                "textEventIndex": 3,
+                "segmentIndex": 1
+              }
+            ],
+            "speakerRaw": null,
+            "ruby": [],
+            "controls": [
+              {
+                "codeOffset": 531,
+                "value": "n"
+              }
+            ],
+            "boundary": {
+              "codeOffset": 596,
+              "control": "p"
+            }
+          }
+        },
+        {
+          "eventId": "mjo-264",
+          "text": "その、ぱくぱくと忙しなく食べる様子が、\n何となく微笑ましく思えて眺めていた。",
+          "source": {
+            "schema": "majiro-display-unit/v1",
+            "codeOffset": 612,
+            "endCodeOffset": 710,
+            "bodyCodeOffset": 612,
+            "codeOffsets": [
+              612,
+              655,
+              657,
+              667,
+              708
+            ],
+            "textEventIndices": [
+              4
+            ],
+            "textParts": [
+              {
+                "kind": "text",
+                "text": "その、ぱくぱくと忙しなく食べる様子が、",
+                "codeOffset": 612,
+                "rawText": "その、ぱくぱくと忙しなく食べる様子が、",
+                "rawHex": "82bb82cc814182cf82ad82cf82ad82c6965a82b582c882ad904882d782e9976c8e7182aa8141",
+                "textEventIndex": 4,
+                "segmentIndex": 0
+              },
+              {
+                "kind": "linebreak",
+                "text": "\n",
+                "codeOffset": 657
+              },
+              {
+                "kind": "text",
+                "text": "何となく微笑ましく思えて眺めていた。",
+                "codeOffset": 667,
+                "rawText": "何となく微笑ましく思えて眺めていた。",
+                "rawHex": "89bd82c682c882ad94f78fce82dc82b582ad8e7682a682c492ad82df82c482a282bd8142",
+                "textEventIndex": 4,
+                "segmentIndex": 1
+              }
+            ],
+            "speakerRaw": null,
+            "ruby": [],
+            "controls": [
+              {
+                "codeOffset": 657,
+                "value": "n"
+              }
+            ],
+            "boundary": {
+              "codeOffset": 710,
+              "control": "p"
+            }
+          }
+        },
+        {
+          "eventId": "mjo-304",
+          "text": "「…なに？」",
+          "source": {
+            "schema": "majiro-display-unit/v1",
+            "codeOffset": 757,
+            "endCodeOffset": 791,
+            "bodyCodeOffset": 772,
+            "codeOffsets": [
+              757,
+              772,
+              789
+            ],
+            "textEventIndices": [
+              5,
+              6
+            ],
+            "textParts": [
+              {
+                "kind": "text",
+                "text": "「…なに？」",
+                "codeOffset": 772,
+                "rawText": "「…なに？」",
+                "rawHex": "8175816382c882c981488176",
+                "textEventIndex": 6,
+                "segmentIndex": 0
+              }
+            ],
+            "speakerRaw": {
+              "method": "native-name-slot",
+              "codeOffset": 757,
+              "rawHex": "8343838a8358",
+              "text": "イリス",
+              "decodedText": "イリス"
+            },
+            "ruby": [],
+            "controls": [],
+            "boundary": {
+              "codeOffset": 791,
+              "control": "p"
+            }
+          }
+        },
+        {
+          "eventId": "mjo-336",
+          "text": "「いや、別になんでもない…」",
+          "source": {
+            "schema": "majiro-display-unit/v1",
+            "codeOffset": 807,
+            "endCodeOffset": 857,
+            "bodyCodeOffset": 822,
+            "codeOffsets": [
+              807,
+              822,
+              855
+            ],
+            "textEventIndices": [
+              7,
+              8
+            ],
+            "textParts": [
+              {
+                "kind": "text",
+                "text": "「いや、別になんでもない…」",
+                "codeOffset": 822,
+                "rawText": "「いや、別になんでもない…」",
+                "rawHex": "817582a282e2814195ca82c982c882f182c582e082c882a281638176",
+                "textEventIndex": 8,
+                "segmentIndex": 0
+              }
+            ],
+            "speakerRaw": {
+              "method": "native-name-slot",
+              "codeOffset": 807,
+              "rawHex": "8ee5906c8cf6",
+              "text": "主人公",
+              "decodedText": "主人公"
+            },
+            "ruby": [],
+            "controls": [],
+            "boundary": {
+              "codeOffset": 857,
+              "control": "p"
+            }
+          }
+        },
+        {
+          "eventId": "mjo-369",
+          "text": "恐らく、本人にも自覚はないのだろうが、\nそうやって忙しなく食べる姿は、無邪気な子供そのものだった。",
+          "source": {
+            "schema": "majiro-display-unit/v1",
+            "codeOffset": 873,
+            "endCodeOffset": 993,
+            "bodyCodeOffset": 873,
+            "codeOffsets": [
+              873,
+              916,
+              918,
+              928,
+              991
+            ],
+            "textEventIndices": [
+              9
+            ],
+            "textParts": [
+              {
+                "kind": "text",
+                "text": "恐らく、本人にも自覚はないのだろうが、",
+                "codeOffset": 873,
+                "rawText": "恐らく、本人にも自覚はないのだろうが、",
+                "rawHex": "8bb082e782ad8141967b906c82c982e08ea98a6f82cd82c882a282cc82be82eb82a482aa8141",
+                "textEventIndex": 9,
+                "segmentIndex": 0
+              },
+              {
+                "kind": "linebreak",
+                "text": "\n",
+                "codeOffset": 918
+              },
+              {
+                "kind": "text",
+                "text": "そうやって忙しなく食べる姿は、無邪気な子供そのものだった。",
+                "codeOffset": 928,
+                "rawText": "そうやって忙しなく食べる姿は、無邪気な子供そのものだった。",
+                "rawHex": "82bb82a482e282c182c4965a82b582c882ad904882d782e98e7082cd814196b38ed78b4382c88e718b9f82bb82cc82e082cc82be82c182bd8142",
+                "textEventIndex": 9,
+                "segmentIndex": 1
+              }
+            ],
+            "speakerRaw": null,
+            "ruby": [],
+            "controls": [
+              {
+                "codeOffset": 918,
+                "value": "n"
+              }
+            ],
+            "boundary": {
+              "codeOffset": 993,
+              "control": "p"
+            }
+          }
+        },
+        {
+          "eventId": "mjo-3f1",
+          "text": "…あれから数日が経ち、\nその間もこいつは、何人かの兵を襲った。",
+          "source": {
+            "schema": "majiro-display-unit/v1",
+            "codeOffset": 1009,
+            "endCodeOffset": 1093,
+            "bodyCodeOffset": 1009,
+            "codeOffsets": [
+              1009,
+              1036,
+              1038,
+              1048,
+              1091
+            ],
+            "textEventIndices": [
+              10
+            ],
+            "textParts": [
+              {
+                "kind": "text",
+                "text": "…あれから数日が経ち、",
+                "codeOffset": 1009,
+                "rawText": "…あれから数日が経ち、",
+                "rawHex": "816382a082ea82a982e7909493fa82aa8c6f82bf8141",
+                "textEventIndex": 10,
+                "segmentIndex": 0
+              },
+              {
+                "kind": "linebreak",
+                "text": "\n",
+                "codeOffset": 1038
+              },
+              {
+                "kind": "text",
+                "text": "その間もこいつは、何人かの兵を襲った。",
+                "codeOffset": 1048,
+                "rawText": "その間もこいつは、何人かの兵を襲った。",
+                "rawHex": "82bb82cc8ad482e082b182a282c282cd814189bd906c82a982cc95ba82f08f5082c182bd8142",
+                "textEventIndex": 10,
+                "segmentIndex": 1
+              }
+            ],
+            "speakerRaw": null,
+            "ruby": [],
+            "controls": [
+              {
+                "codeOffset": 1038,
+                "value": "n"
+              }
+            ],
+            "boundary": {
+              "codeOffset": 1093,
+              "control": "p"
+            }
+          }
+        },
+        {
+          "eventId": "mjo-455",
+          "text": "だが、その全てを殺してはいなかった。\n先日と同じように荷物だけ奪うと、そのまま逃がした。",
+          "source": {
+            "schema": "majiro-display-unit/v1",
+            "codeOffset": 1109,
+            "endCodeOffset": 1219,
+            "bodyCodeOffset": 1109,
+            "codeOffsets": [
+              1109,
+              1150,
+              1152,
+              1162,
+              1217
+            ],
+            "textEventIndices": [
+              11
+            ],
+            "textParts": [
+              {
+                "kind": "text",
+                "text": "だが、その全てを殺してはいなかった。",
+                "codeOffset": 1109,
+                "rawText": "だが、その全てを殺してはいなかった。",
+                "rawHex": "82be82aa814182bb82cc915382c482f08e4582b582c482cd82a282c882a982c182bd8142",
+                "textEventIndex": 11,
+                "segmentIndex": 0
+              },
+              {
+                "kind": "linebreak",
+                "text": "\n",
+                "codeOffset": 1152
+              },
+              {
+                "kind": "text",
+                "text": "先日と同じように荷物だけ奪うと、そのまま逃がした。",
+                "codeOffset": 1162,
+                "rawText": "先日と同じように荷物だけ奪うと、そのまま逃がした。",
+                "rawHex": "90e693fa82c693af82b682e682a482c989d795a882be82af924482a482c6814182bb82cc82dc82dc93a682aa82b582bd8142",
+                "textEventIndex": 11,
+                "segmentIndex": 1
+              }
+            ],
+            "speakerRaw": null,
+            "ruby": [],
+            "controls": [
+              {
+                "codeOffset": 1152,
+                "value": "n"
+              }
+            ],
+            "boundary": {
+              "codeOffset": 1219,
+              "control": "p"
+            }
+          }
+        },
+        {
+          "eventId": "mjo-4d3",
+          "text": "この変化を、俺は何となくうれしく思った。",
+          "source": {
+            "schema": "majiro-display-unit/v1",
+            "codeOffset": 1235,
+            "endCodeOffset": 1282,
+            "bodyCodeOffset": 1235,
+            "codeOffsets": [
+              1235,
+              1280
+            ],
+            "textEventIndices": [
+              12
+            ],
+            "textParts": [
+              {
+                "kind": "text",
+                "text": "この変化を、俺は何となくうれしく思った。",
+                "codeOffset": 1235,
+                "rawText": "この変化を、俺は何となくうれしく思った。",
+                "rawHex": "82b182cc95cf89bb82f0814189b482cd89bd82c682c882ad82a482ea82b582ad8e7682c182bd8142",
+                "textEventIndex": 12,
+                "segmentIndex": 0
+              }
+            ],
+            "speakerRaw": null,
+            "ruby": [],
+            "controls": [],
+            "boundary": {
+              "codeOffset": 1282,
+              "control": "p"
+            }
+          }
+        },
+        {
+          "eventId": "mjo-512",
+          "text": "その反面、あいつが追われる立場だということを考えると、\n手放しで喜べることでもなかった。",
+          "source": {
+            "schema": "majiro-display-unit/v1",
+            "codeOffset": 1298,
+            "endCodeOffset": 1408,
+            "bodyCodeOffset": 1298,
+            "codeOffsets": [
+              1298,
+              1357,
+              1359,
+              1369,
+              1406
+            ],
+            "textEventIndices": [
+              13
+            ],
+            "textParts": [
+              {
+                "kind": "text",
+                "text": "その反面、あいつが追われる立場だということを考えると、",
+                "codeOffset": 1298,
+                "rawText": "その反面、あいつが追われる立場だということを考えると、",
+                "rawHex": "82bb82cc94bd96ca814182a082a282c282aa92c782ed82ea82e997a78fea82be82c682a282a482b182c682f08d6c82a682e982c68141",
+                "textEventIndex": 13,
+                "segmentIndex": 0
+              },
+              {
+                "kind": "linebreak",
+                "text": "\n",
+                "codeOffset": 1359
+              },
+              {
+                "kind": "text",
+                "text": "手放しで喜べることでもなかった。",
+                "codeOffset": 1369,
+                "rawText": "手放しで喜べることでもなかった。",
+                "rawHex": "8ee895fa82b582c58aec82d782e982b182c682c582e082c882a982c182bd8142",
+                "textEventIndex": 13,
+                "segmentIndex": 1
+              }
+            ],
+            "speakerRaw": null,
+            "ruby": [],
+            "controls": [
+              {
+                "codeOffset": 1359,
+                "value": "n"
+              }
+            ],
+            "boundary": {
+              "codeOffset": 1408,
+              "control": "p"
+            }
+          }
+        },
+        {
+          "eventId": "mjo-590",
+          "text": "…恐らくどこか開けた場所で、こいつを待っているだろう。",
+          "source": {
+            "schema": "majiro-display-unit/v1",
+            "codeOffset": 1424,
+            "endCodeOffset": 1485,
+            "bodyCodeOffset": 1424,
+            "codeOffsets": [
+              1424,
+              1483
+            ],
+            "textEventIndices": [
+              14
+            ],
+            "textParts": [
+              {
+                "kind": "text",
+                "text": "…恐らくどこか開けた場所で、こいつを待っているだろう。",
+                "codeOffset": 1424,
+                "rawText": "…恐らくどこか開けた場所で、こいつを待っているだろう。",
+                "rawHex": "81638bb082e782ad82c782b182a98a4a82af82bd8fea8f8a82c5814182b182a282c282f091d282c182c482a282e982be82eb82a48142",
+                "textEventIndex": 14,
+                "segmentIndex": 0
+              }
+            ],
+            "speakerRaw": null,
+            "ruby": [],
+            "controls": [],
+            "boundary": {
+              "codeOffset": 1485,
+              "control": "p"
+            }
+          }
+        },
+        {
+          "eventId": "mjo-5dd",
+          "text": "敵対していた国の…皇族の生き残りならば、\nその国にとっては、目障り以外の何者でもない。",
+          "source": {
+            "schema": "majiro-display-unit/v1",
+            "codeOffset": 1501,
+            "endCodeOffset": 1609,
+            "bodyCodeOffset": 1501,
+            "codeOffsets": [
+              1501,
+              1546,
+              1548,
+              1558,
+              1607
+            ],
+            "textEventIndices": [
+              15
+            ],
+            "textParts": [
+              {
+                "kind": "text",
+                "text": "敵対していた国の…皇族の生き残りならば、",
+                "codeOffset": 1501,
+                "rawText": "敵対していた国の…皇族の生き残りならば、",
+                "rawHex": "934791ce82b582c482a282bd8d9182cc81638d6391b082cc90b682ab8e6382e882c882e782ce8141",
+                "textEventIndex": 15,
+                "segmentIndex": 0
+              },
+              {
+                "kind": "linebreak",
+                "text": "\n",
+                "codeOffset": 1548
+              },
+              {
+                "kind": "text",
+                "text": "その国にとっては、目障り以外の何者でもない。",
+                "codeOffset": 1558,
+                "rawText": "その国にとっては、目障り以外の何者でもない。",
+                "rawHex": "82bb82cc8d9182c982c682c182c482cd814196da8fe182e888c88a4f82cc89bd8ed282c582e082c882a28142",
+                "textEventIndex": 15,
+                "segmentIndex": 1
+              }
+            ],
+            "speakerRaw": null,
+            "ruby": [],
+            "controls": [
+              {
+                "codeOffset": 1548,
+                "value": "n"
+              }
+            ],
+            "boundary": {
+              "codeOffset": 1609,
+              "control": "p"
+            }
+          }
+        },
+        {
+          "eventId": "mjo-659",
+          "text": "以前に傭兵まで使って、追ってきたのが何よりの証拠だ。",
+          "source": {
+            "schema": "majiro-display-unit/v1",
+            "codeOffset": 1625,
+            "endCodeOffset": 1684,
+            "bodyCodeOffset": 1625,
+            "codeOffsets": [
+              1625,
+              1682
+            ],
+            "textEventIndices": [
+              16
+            ],
+            "textParts": [
+              {
+                "kind": "text",
+                "text": "以前に傭兵まで使って、追ってきたのが何よりの証拠だ。",
+                "codeOffset": 1625,
+                "rawText": "以前に傭兵まで使って、追ってきたのが何よりの証拠だ。",
+                "rawHex": "88c8914f82c9976295ba82dc82c58e6782c182c4814192c782c182c482ab82bd82cc82aa89bd82e682e882cc8fd88b9282be8142",
+                "textEventIndex": 16,
+                "segmentIndex": 0
+              }
+            ],
+            "speakerRaw": null,
+            "ruby": [],
+            "controls": [],
+            "boundary": {
+              "codeOffset": 1684,
+              "control": "p"
+            }
+          }
+        },
+        {
+          "eventId": "mjo-6a4",
+          "text": "仮に国境を越え、他領に入ったところで、\n決して未来が明るいとは言えなかった。",
+          "source": {
+            "schema": "majiro-display-unit/v1",
+            "codeOffset": 1700,
+            "endCodeOffset": 1798,
+            "bodyCodeOffset": 1700,
+            "codeOffsets": [
+              1700,
+              1743,
+              1745,
+              1755,
+              1796
+            ],
+            "textEventIndices": [
+              17
+            ],
+            "textParts": [
+              {
+                "kind": "text",
+                "text": "仮に国境を越え、他領に入ったところで、",
+                "codeOffset": 1700,
+                "rawText": "仮に国境を越え、他領に入ったところで、",
+                "rawHex": "89bc82c98d918bab82f0897a82a6814191bc97cc82c993fc82c182bd82c682b182eb82c58141",
+                "textEventIndex": 17,
+                "segmentIndex": 0
+              },
+              {
+                "kind": "linebreak",
+                "text": "\n",
+                "codeOffset": 1745
+              },
+              {
+                "kind": "text",
+                "text": "決して未来が明るいとは言えなかった。",
+                "codeOffset": 1755,
+                "rawText": "決して未来が明るいとは言えなかった。",
+                "rawHex": "8c8882b582c496a2978882aa96be82e982a282c682cd8cbe82a682c882a982c182bd8142",
+                "textEventIndex": 17,
+                "segmentIndex": 1
+              }
+            ],
+            "speakerRaw": null,
+            "ruby": [],
+            "controls": [
+              {
+                "codeOffset": 1745,
+                "value": "n"
+              }
+            ],
+            "boundary": {
+              "codeOffset": 1798,
+              "control": "p"
+            }
+          }
+        },
+        {
+          "eventId": "mjo-716",
+          "text": "…何より、人殺しを続けていては遅かれ早かれ、\n無残な死に方しか残されていない。",
+          "source": {
+            "schema": "majiro-display-unit/v1",
+            "codeOffset": 1814,
+            "endCodeOffset": 1914,
+            "bodyCodeOffset": 1814,
+            "codeOffsets": [
+              1814,
+              1863,
+              1865,
+              1875,
+              1912
+            ],
+            "textEventIndices": [
+              18
+            ],
+            "textParts": [
+              {
+                "kind": "text",
+                "text": "…何より、人殺しを続けていては遅かれ早かれ、",
+                "codeOffset": 1814,
+                "rawText": "…何より、人殺しを続けていては遅かれ早かれ、",
+                "rawHex": "816389bd82e682e88141906c8e4582b582f091b182af82c482a282c482cd927882a982ea918182a982ea8141",
+                "textEventIndex": 18,
+                "segmentIndex": 0
+              },
+              {
+                "kind": "linebreak",
+                "text": "\n",
+                "codeOffset": 1865
+              },
+              {
+                "kind": "text",
+                "text": "無残な死に方しか残されていない。",
+                "codeOffset": 1875,
+                "rawText": "無残な死に方しか残されていない。",
+                "rawHex": "96b38e6382c88e8082c995fb82b582a98e6382b382ea82c482a282c882a28142",
+                "textEventIndex": 18,
+                "segmentIndex": 1
+              }
+            ],
+            "speakerRaw": null,
+            "ruby": [],
+            "controls": [
+              {
+                "codeOffset": 1865,
+                "value": "n"
+              }
+            ],
+            "boundary": {
+              "codeOffset": 1914,
+              "control": "p"
+            }
+          }
+        },
+        {
+          "eventId": "mjo-78a",
+          "text": "そして俺もこいつも…人殺し以外に生き方を知らなかった…",
+          "source": {
+            "schema": "majiro-display-unit/v1",
+            "codeOffset": 1930,
+            "endCodeOffset": 1991,
+            "bodyCodeOffset": 1930,
+            "codeOffsets": [
+              1930,
+              1989
+            ],
+            "textEventIndices": [
+              19
+            ],
+            "textParts": [
+              {
+                "kind": "text",
+                "text": "そして俺もこいつも…人殺し以外に生き方を知らなかった…",
+                "codeOffset": 1930,
+                "rawText": "そして俺もこいつも…人殺し以外に生き方を知らなかった…",
+                "rawHex": "82bb82b582c489b482e082b182a282c282e08163906c8e4582b588c88a4f82c990b682ab95fb82f0926d82e782c882a982c182bd8163",
+                "textEventIndex": 19,
+                "segmentIndex": 0
+              }
+            ],
+            "speakerRaw": null,
+            "ruby": [],
+            "controls": [],
+            "boundary": {
+              "codeOffset": 1991,
+              "control": "p"
+            }
+          }
+        },
+        {
+          "eventId": "mjo-7d7",
+          "text": "とりとめもなく、そんなことを考えていると、\n不意に、こいつがぽつりと呟く。",
+          "source": {
+            "schema": "majiro-display-unit/v1",
+            "codeOffset": 2007,
+            "endCodeOffset": 2103,
+            "bodyCodeOffset": 2007,
+            "codeOffsets": [
+              2007,
+              2054,
+              2056,
+              2066,
+              2101
+            ],
+            "textEventIndices": [
+              20
+            ],
+            "textParts": [
+              {
+                "kind": "text",
+                "text": "とりとめもなく、そんなことを考えていると、",
+                "codeOffset": 2007,
+                "rawText": "とりとめもなく、そんなことを考えていると、",
+                "rawHex": "82c682e882c682df82e082c882ad814182bb82f182c882b182c682f08d6c82a682c482a282e982c68141",
+                "textEventIndex": 20,
+                "segmentIndex": 0
+              },
+              {
+                "kind": "linebreak",
+                "text": "\n",
+                "codeOffset": 2056
+              },
+              {
+                "kind": "text",
+                "text": "不意に、こいつがぽつりと呟く。",
+                "codeOffset": 2066,
+                "rawText": "不意に、こいつがぽつりと呟く。",
+                "rawHex": "957388d382c9814182b182a282c282aa82db82c282e882c699ea82ad8142",
+                "textEventIndex": 20,
+                "segmentIndex": 1
+              }
+            ],
+            "speakerRaw": null,
+            "ruby": [],
+            "controls": [
+              {
+                "codeOffset": 2056,
+                "value": "n"
+              }
+            ],
+            "boundary": {
+              "codeOffset": 2103,
+              "control": "p"
+            }
+          }
+        },
+        {
+          "eventId": "mjo-898",
+          "text": "「…わたし生きても良いのかな…」",
+          "source": {
+            "schema": "majiro-display-unit/v1",
+            "codeOffset": 2185,
+            "endCodeOffset": 2239,
+            "bodyCodeOffset": 2200,
+            "codeOffsets": [
+              2185,
+              2200,
+              2237
+            ],
+            "textEventIndices": [
+              21,
+              22
+            ],
+            "textParts": [
+              {
+                "kind": "text",
+                "text": "「…わたし生きても良いのかな…」",
+                "codeOffset": 2200,
+                "rawText": "「…わたし生きても良いのかな…」",
+                "rawHex": "8175816382ed82bd82b590b682ab82c482e097c782a282cc82a982c881638176",
+                "textEventIndex": 22,
+                "segmentIndex": 0
+              }
+            ],
+            "speakerRaw": {
+              "method": "native-name-slot",
+              "codeOffset": 2185,
+              "rawHex": "8343838a8358",
+              "text": "イリス",
+              "decodedText": "イリス"
+            },
+            "ruby": [],
+            "controls": [],
+            "boundary": {
+              "codeOffset": 2239,
+              "control": "p"
+            }
+          }
+        },
+        {
+          "eventId": "mjo-8de",
+          "text": "「…どうした、突然に？」",
+          "source": {
+            "schema": "majiro-display-unit/v1",
+            "codeOffset": 2255,
+            "endCodeOffset": 2301,
+            "bodyCodeOffset": 2270,
+            "codeOffsets": [
+              2255,
+              2270,
+              2299
+            ],
+            "textEventIndices": [
+              23,
+              24
+            ],
+            "textParts": [
+              {
+                "kind": "text",
+                "text": "「…どうした、突然に？」",
+                "codeOffset": 2270,
+                "rawText": "「…どうした、突然に？」",
+                "rawHex": "8175816382c782a482b582bd814193cb915282c981488176",
+                "textEventIndex": 24,
+                "segmentIndex": 0
+              }
+            ],
+            "speakerRaw": {
+              "method": "native-name-slot",
+              "codeOffset": 2255,
+              "rawHex": "8ee5906c8cf6",
+              "text": "主人公",
+              "decodedText": "主人公"
+            },
+            "ruby": [],
+            "controls": [],
+            "boundary": {
+              "codeOffset": 2301,
+              "control": "p"
+            }
+          }
+        },
+        {
+          "eventId": "mjo-93b",
+          "text": "「ねえ、わたしに生きる権利あると思う？」",
+          "source": {
+            "schema": "majiro-display-unit/v1",
+            "codeOffset": 2348,
+            "endCodeOffset": 2410,
+            "bodyCodeOffset": 2363,
+            "codeOffsets": [
+              2348,
+              2363,
+              2408
+            ],
+            "textEventIndices": [
+              25,
+              26
+            ],
+            "textParts": [
+              {
+                "kind": "text",
+                "text": "「ねえ、わたしに生きる権利あると思う？」",
+                "codeOffset": 2363,
+                "rawText": "「ねえ、わたしに生きる権利あると思う？」",
+                "rawHex": "817582cb82a6814182ed82bd82b582c990b682ab82e98ca0979882a082e982c68e7682a481488176",
+                "textEventIndex": 26,
+                "segmentIndex": 0
+              }
+            ],
+            "speakerRaw": {
+              "method": "native-name-slot",
+              "codeOffset": 2348,
+              "rawHex": "8343838a8358",
+              "text": "イリス",
+              "decodedText": "イリス"
+            },
+            "ruby": [],
+            "controls": [],
+            "boundary": {
+              "codeOffset": 2410,
+              "control": "p"
+            }
+          }
+        },
+        {
+          "eventId": "mjo-989",
+          "text": "「そりゃ、誰にだってあるだろ」",
+          "source": {
+            "schema": "majiro-display-unit/v1",
+            "codeOffset": 2426,
+            "endCodeOffset": 2478,
+            "bodyCodeOffset": 2441,
+            "codeOffsets": [
+              2426,
+              2441,
+              2476
+            ],
+            "textEventIndices": [
+              27,
+              28
+            ],
+            "textParts": [
+              {
+                "kind": "text",
+                "text": "「そりゃ、誰にだってあるだろ」",
+                "codeOffset": 2441,
+                "rawText": "「そりゃ、誰にだってあるだろ」",
+                "rawHex": "817582bb82e882e18141924e82c982be82c182c482a082e982be82eb8176",
+                "textEventIndex": 28,
+                "segmentIndex": 0
+              }
+            ],
+            "speakerRaw": {
+              "method": "native-name-slot",
+              "codeOffset": 2426,
+              "rawHex": "8ee5906c8cf6",
+              "text": "主人公",
+              "decodedText": "主人公"
+            },
+            "ruby": [],
+            "controls": [],
+            "boundary": {
+              "codeOffset": 2478,
+              "control": "p"
+            }
+          }
+        },
+        {
+          "eventId": "mjo-9ec",
+          "text": "「…十年も人殺しをやってきた者でも？」",
+          "source": {
+            "schema": "majiro-display-unit/v1",
+            "codeOffset": 2525,
+            "endCodeOffset": 2585,
+            "bodyCodeOffset": 2540,
+            "codeOffsets": [
+              2525,
+              2540,
+              2583
+            ],
+            "textEventIndices": [
+              29,
+              30
+            ],
+            "textParts": [
+              {
+                "kind": "text",
+                "text": "「…十年も人殺しをやってきた者でも？」",
+                "codeOffset": 2540,
+                "rawText": "「…十年も人殺しをやってきた者でも？」",
+                "rawHex": "817581638f5c944e82e0906c8e4582b582f082e282c182c482ab82bd8ed282c582e081488176",
+                "textEventIndex": 30,
+                "segmentIndex": 0
+              }
+            ],
+            "speakerRaw": {
+              "method": "native-name-slot",
+              "codeOffset": 2525,
+              "rawHex": "8343838a8358",
+              "text": "イリス",
+              "decodedText": "イリス"
+            },
+            "ruby": [],
+            "controls": [],
+            "boundary": {
+              "codeOffset": 2585,
+              "control": "p"
+            }
+          }
+        },
+        {
+          "eventId": "mjo-a38",
+          "text": "「たぶんな…俺だって似たようなもんだ」",
+          "source": {
+            "schema": "majiro-display-unit/v1",
+            "codeOffset": 2601,
+            "endCodeOffset": 2661,
+            "bodyCodeOffset": 2616,
+            "codeOffsets": [
+              2601,
+              2616,
+              2659
+            ],
+            "textEventIndices": [
+              31,
+              32
+            ],
+            "textParts": [
+              {
+                "kind": "text",
+                "text": "「たぶんな…俺だって似たようなもんだ」",
+                "codeOffset": 2616,
+                "rawText": "「たぶんな…俺だって似たようなもんだ」",
+                "rawHex": "817582bd82d482f182c8816389b482be82c182c48e9782bd82e682a482c882e082f182be8176",
+                "textEventIndex": 32,
+                "segmentIndex": 0
+              }
+            ],
+            "speakerRaw": {
+              "method": "native-name-slot",
+              "codeOffset": 2601,
+              "rawHex": "8ee5906c8cf6",
+              "text": "主人公",
+              "decodedText": "主人公"
+            },
+            "ruby": [],
+            "controls": [],
+            "boundary": {
+              "codeOffset": 2661,
+              "control": "p"
+            }
+          }
+        },
+        {
+          "eventId": "mjo-a75",
+          "text": "そう。俺もこいつも人殺し。\nそれ以外の何者でもなく、他に生きる術も知らない。",
+          "source": {
+            "schema": "majiro-display-unit/v1",
+            "codeOffset": 2677,
+            "endCodeOffset": 2775,
+            "bodyCodeOffset": 2677,
+            "codeOffsets": [
+              2677,
+              2708,
+              2710,
+              2720,
+              2773
+            ],
+            "textEventIndices": [
+              33
+            ],
+            "textParts": [
+              {
+                "kind": "text",
+                "text": "そう。俺もこいつも人殺し。",
+                "codeOffset": 2677,
+                "rawText": "そう。俺もこいつも人殺し。",
+                "rawHex": "82bb82a4814289b482e082b182a282c282e0906c8e4582b58142",
+                "textEventIndex": 33,
+                "segmentIndex": 0
+              },
+              {
+                "kind": "linebreak",
+                "text": "\n",
+                "codeOffset": 2710
+              },
+              {
+                "kind": "text",
+                "text": "それ以外の何者でもなく、他に生きる術も知らない。",
+                "codeOffset": 2720,
+                "rawText": "それ以外の何者でもなく、他に生きる術も知らない。",
+                "rawHex": "82bb82ea88c88a4f82cc89bd8ed282c582e082c882ad814191bc82c990b682ab82e98f7082e0926d82e782c882a28142",
+                "textEventIndex": 33,
+                "segmentIndex": 1
+              }
+            ],
+            "speakerRaw": null,
+            "ruby": [],
+            "controls": [
+              {
+                "codeOffset": 2710,
+                "value": "n"
+              }
+            ],
+            "boundary": {
+              "codeOffset": 2775,
+              "control": "p"
+            }
+          }
+        },
+        {
+          "eventId": "mjo-ae7",
+          "text": "我が身一人が生きる為に、数十人の命を糧としてきた者。\n逆に言えば、俺達が死ねば、数十人の命が生かされるだろう…",
+          "source": {
+            "schema": "majiro-display-unit/v1",
+            "codeOffset": 2791,
+            "endCodeOffset": 2923,
+            "bodyCodeOffset": 2791,
+            "codeOffsets": [
+              2791,
+              2848,
+              2850,
+              2860,
+              2921
+            ],
+            "textEventIndices": [
+              34
+            ],
+            "textParts": [
+              {
+                "kind": "text",
+                "text": "我が身一人が生きる為に、数十人の命を糧としてきた者。",
+                "codeOffset": 2791,
+                "rawText": "我が身一人が生きる為に、数十人の命を糧としてきた者。",
+                "rawHex": "89e482aa906788ea906c82aa90b682ab82e988d782c9814190948f5c906c82cc96bd82f097c682c682b582c482ab82bd8ed28142",
+                "textEventIndex": 34,
+                "segmentIndex": 0
+              },
+              {
+                "kind": "linebreak",
+                "text": "\n",
+                "codeOffset": 2850
+              },
+              {
+                "kind": "text",
+                "text": "逆に言えば、俺達が死ねば、数十人の命が生かされるだろう…",
+                "codeOffset": 2860,
+                "rawText": "逆に言えば、俺達が死ねば、数十人の命が生かされるだろう…",
+                "rawHex": "8b7482c98cbe82a682ce814189b4924282aa8e8082cb82ce814190948f5c906c82cc96bd82aa90b682a982b382ea82e982be82eb82a48163",
+                "textEventIndex": 34,
+                "segmentIndex": 1
+              }
+            ],
+            "speakerRaw": null,
+            "ruby": [],
+            "controls": [
+              {
+                "codeOffset": 2850,
+                "value": "n"
+              }
+            ],
+            "boundary": {
+              "codeOffset": 2923,
+              "control": "p"
+            }
+          }
+        },
+        {
+          "eventId": "mjo-b7b",
+          "text": "…もし神とやらがいるのならば、\nお互いに末路は、それにふさわしいものとなるだろう。",
+          "source": {
+            "schema": "majiro-display-unit/v1",
+            "codeOffset": 2939,
+            "endCodeOffset": 3043,
+            "bodyCodeOffset": 2939,
+            "codeOffsets": [
+              2939,
+              2974,
+              2976,
+              2986,
+              3041
+            ],
+            "textEventIndices": [
+              35
+            ],
+            "textParts": [
+              {
+                "kind": "text",
+                "text": "…もし神とやらがいるのならば、",
+                "codeOffset": 2939,
+                "rawText": "…もし神とやらがいるのならば、",
+                "rawHex": "816382e082b5905f82c682e282e782aa82a282e982cc82c882e782ce8141",
+                "textEventIndex": 35,
+                "segmentIndex": 0
+              },
+              {
+                "kind": "linebreak",
+                "text": "\n",
+                "codeOffset": 2976
+              },
+              {
+                "kind": "text",
+                "text": "お互いに末路は、それにふさわしいものとなるだろう。",
+                "codeOffset": 2986,
+                "rawText": "お互いに末路は、それにふさわしいものとなるだろう。",
+                "rawHex": "82a88cdd82a282c99696984882cd814182bb82ea82c982d382b382ed82b582a282e082cc82c682c882e982be82eb82a48142",
+                "textEventIndex": 35,
+                "segmentIndex": 1
+              }
+            ],
+            "speakerRaw": null,
+            "ruby": [],
+            "controls": [
+              {
+                "codeOffset": 2976,
+                "value": "n"
+              }
+            ],
+            "boundary": {
+              "codeOffset": 3043,
+              "control": "p"
+            }
+          }
+        },
+        {
+          "eventId": "mjo-c2b",
+          "text": "「（だが…こいつは…",
+          "source": {
+            "schema": "majiro-display-unit/v1",
+            "codeOffset": 3100,
+            "endCodeOffset": 3142,
+            "bodyCodeOffset": 3115,
+            "codeOffsets": [
+              3100,
+              3115,
+              3140
+            ],
+            "textEventIndices": [
+              36,
+              37
+            ],
+            "textParts": [
+              {
+                "kind": "text",
+                "text": "「（だが…こいつは…",
+                "codeOffset": 3115,
+                "rawText": "「（だが…こいつは…",
+                "rawHex": "8175816982be82aa816382b182a282c282cd8163",
+                "textEventIndex": 37,
+                "segmentIndex": 0
+              }
+            ],
+            "speakerRaw": {
+              "method": "native-name-slot",
+              "codeOffset": 3100,
+              "rawHex": "8ee5906c8cf6",
+              "text": "主人公",
+              "decodedText": "主人公"
+            },
+            "ruby": [],
+            "controls": [],
+            "boundary": {
+              "codeOffset": 3142,
+              "control": "p"
+            }
+          }
+        },
+        {
+          "eventId": "mjo-c4c",
+          "text": "本当にそうなのだろうか…）」",
+          "source": {
+            "schema": "majiro-display-unit/v1",
+            "codeOffset": 3148,
+            "endCodeOffset": 3183,
+            "bodyCodeOffset": 3148,
+            "codeOffsets": [
+              3148,
+              3181
+            ],
+            "textEventIndices": [
+              38
+            ],
+            "textParts": [
+              {
+                "kind": "text",
+                "text": "本当にそうなのだろうか…）」",
+                "codeOffset": 3148,
+                "rawText": "本当にそうなのだろうか…）」",
+                "rawHex": "967b939682c982bb82a482c882cc82be82eb82a482a98163816a8176",
+                "textEventIndex": 38,
+                "segmentIndex": 0
+              }
+            ],
+            "speakerRaw": null,
+            "ruby": [],
+            "controls": [],
+            "boundary": {
+              "codeOffset": 3183,
+              "control": "p"
+            }
+          }
+        },
+        {
+          "eventId": "mjo-c7f",
+          "text": "降り続く雪空を見上げ、ふと、そんな思いがよぎった。",
+          "source": {
+            "schema": "majiro-display-unit/v1",
+            "codeOffset": 3199,
+            "endCodeOffset": 3256,
+            "bodyCodeOffset": 3199,
+            "codeOffsets": [
+              3199,
+              3254
+            ],
+            "textEventIndices": [
+              39
+            ],
+            "textParts": [
+              {
+                "kind": "text",
+                "text": "降り続く雪空を見上げ、ふと、そんな思いがよぎった。",
+                "codeOffset": 3199,
+                "rawText": "降り続く雪空を見上げ、ふと、そんな思いがよぎった。",
+                "rawHex": "8d7e82e891b182ad90e18bf382f08ca98fe382b0814182d382c6814182bb82f182c88e7682a282aa82e682ac82c182bd8142",
+                "textEventIndex": 39,
+                "segmentIndex": 0
+              }
+            ],
+            "speakerRaw": null,
+            "ruby": [],
+            "controls": [],
+            "boundary": {
+              "codeOffset": 3256,
+              "control": "p"
+            }
+          }
+        },
+        {
+          "eventId": "mjo-cc8",
+          "text": "容赦なく人を殺すこいつと、\n今も無邪気にパンを食べるこいつ。",
+          "source": {
+            "schema": "majiro-display-unit/v1",
+            "codeOffset": 3272,
+            "endCodeOffset": 3354,
+            "bodyCodeOffset": 3272,
+            "codeOffsets": [
+              3272,
+              3303,
+              3305,
+              3315,
+              3352
+            ],
+            "textEventIndices": [
+              40
+            ],
+            "textParts": [
+              {
+                "kind": "text",
+                "text": "容赦なく人を殺すこいつと、",
+                "codeOffset": 3272,
+                "rawText": "容赦なく人を殺すこいつと、",
+                "rawHex": "97658ecd82c882ad906c82f08e4582b782b182a282c282c68141",
+                "textEventIndex": 40,
+                "segmentIndex": 0
+              },
+              {
+                "kind": "linebreak",
+                "text": "\n",
+                "codeOffset": 3305
+              },
+              {
+                "kind": "text",
+                "text": "今も無邪気にパンを食べるこいつ。",
+                "codeOffset": 3315,
+                "rawText": "今も無邪気にパンを食べるこいつ。",
+                "rawHex": "8da182e096b38ed78b4382c98370839382f0904882d782e982b182a282c28142",
+                "textEventIndex": 40,
+                "segmentIndex": 1
+              }
+            ],
+            "speakerRaw": null,
+            "ruby": [],
+            "controls": [
+              {
+                "codeOffset": 3305,
+                "value": "n"
+              }
+            ],
+            "boundary": {
+              "codeOffset": 3354,
+              "control": "p"
+            }
+          }
+        },
+        {
+          "eventId": "mjo-d2a",
+          "text": "どちらが本当の、こいつの姿なのかは分からない。",
+          "source": {
+            "schema": "majiro-display-unit/v1",
+            "codeOffset": 3370,
+            "endCodeOffset": 3423,
+            "bodyCodeOffset": 3370,
+            "codeOffsets": [
+              3370,
+              3421
+            ],
+            "textEventIndices": [
+              41
+            ],
+            "textParts": [
+              {
+                "kind": "text",
+                "text": "どちらが本当の、こいつの姿なのかは分からない。",
+                "codeOffset": 3370,
+                "rawText": "どちらが本当の、こいつの姿なのかは分からない。",
+                "rawHex": "82c782bf82e782aa967b939682cc814182b182a282c282cc8e7082c882cc82a982cd95aa82a982e782c882a28142",
+                "textEventIndex": 41,
+                "segmentIndex": 0
+              }
+            ],
+            "speakerRaw": null,
+            "ruby": [],
+            "controls": [],
+            "boundary": {
+              "codeOffset": 3423,
+              "control": "p"
+            }
+          }
+        },
+        {
+          "eventId": "mjo-d6f",
+          "text": "でも、きっと誰にでも過ちはある。\nこの世界には、”しょうがないこと”が無数に存在する。",
+          "source": {
+            "schema": "majiro-display-unit/v1",
+            "codeOffset": 3439,
+            "endCodeOffset": 3547,
+            "bodyCodeOffset": 3439,
+            "codeOffsets": [
+              3439,
+              3476,
+              3478,
+              3488,
+              3545
+            ],
+            "textEventIndices": [
+              42
+            ],
+            "textParts": [
+              {
+                "kind": "text",
+                "text": "でも、きっと誰にでも過ちはある。",
+                "codeOffset": 3439,
+                "rawText": "でも、きっと誰にでも過ちはある。",
+                "rawHex": "82c582e0814182ab82c182c6924e82c982c582e089df82bf82cd82a082e98142",
+                "textEventIndex": 42,
+                "segmentIndex": 0
+              },
+              {
+                "kind": "linebreak",
+                "text": "\n",
+                "codeOffset": 3478
+              },
+              {
+                "kind": "text",
+                "text": "この世界には、”しょうがないこと”が無数に存在する。",
+                "codeOffset": 3488,
+                "rawText": "この世界には、”しょうがないこと”が無数に存在する。",
+                "rawHex": "82b182cc90a28a4582c982cd8141816882b582e582a482aa82c882a282b182c6816882aa96b3909482c991b68ddd82b782e98142",
+                "textEventIndex": 42,
+                "segmentIndex": 1
+              }
+            ],
+            "speakerRaw": null,
+            "ruby": [],
+            "controls": [
+              {
+                "codeOffset": 3478,
+                "value": "n"
+              }
+            ],
+            "boundary": {
+              "codeOffset": 3547,
+              "control": "p"
+            }
+          }
+        },
+        {
+          "eventId": "mjo-deb",
+          "text": "…愚者でも、千に一つは正しいことをするという。",
+          "source": {
+            "schema": "majiro-display-unit/v1",
+            "codeOffset": 3563,
+            "endCodeOffset": 3616,
+            "bodyCodeOffset": 3563,
+            "codeOffsets": [
+              3563,
+              3614
+            ],
+            "textEventIndices": [
+              43
+            ],
+            "textParts": [
+              {
+                "kind": "text",
+                "text": "…愚者でも、千に一つは正しいことをするという。",
+                "codeOffset": 3563,
+                "rawText": "…愚者でも、千に一つは正しいことをするという。",
+                "rawHex": "81638bf08ed282c582e0814190e782c988ea82c282cd90b382b582a282b182c682f082b782e982c682a282a48142",
+                "textEventIndex": 43,
+                "segmentIndex": 0
+              }
+            ],
+            "speakerRaw": null,
+            "ruby": [],
+            "controls": [],
+            "boundary": {
+              "codeOffset": 3616,
+              "control": "p"
+            }
+          }
+        },
+        {
+          "eventId": "mjo-e30",
+          "text": "そして、賢者でも万に一つは過ちを犯すらしい…",
+          "source": {
+            "schema": "majiro-display-unit/v1",
+            "codeOffset": 3632,
+            "endCodeOffset": 3683,
+            "bodyCodeOffset": 3632,
+            "codeOffsets": [
+              3632,
+              3681
+            ],
+            "textEventIndices": [
+              44
+            ],
+            "textParts": [
+              {
+                "kind": "text",
+                "text": "そして、賢者でも万に一つは過ちを犯すらしい…",
+                "codeOffset": 3632,
+                "rawText": "そして、賢者でも万に一つは過ちを犯すらしい…",
+                "rawHex": "82bb82b582c481418cab8ed282c582e0969c82c988ea82c282cd89df82bf82f094c682b782e782b582a28163",
+                "textEventIndex": 44,
+                "segmentIndex": 0
+              }
+            ],
+            "speakerRaw": null,
+            "ruby": [],
+            "controls": [],
+            "boundary": {
+              "codeOffset": 3683,
+              "control": "p"
+            }
+          }
+        },
+        {
+          "eventId": "mjo-ead",
+          "text": "「なあお前……麦でも作ってみるか…」",
+          "source": {
+            "schema": "majiro-display-unit/v1",
+            "codeOffset": 3742,
+            "endCodeOffset": 3800,
+            "bodyCodeOffset": 3757,
+            "codeOffsets": [
+              3742,
+              3757,
+              3798
+            ],
+            "textEventIndices": [
+              45,
+              46
+            ],
+            "textParts": [
+              {
+                "kind": "text",
+                "text": "「なあお前……麦でも作ってみるか…」",
+                "codeOffset": 3757,
+                "rawText": "「なあお前……麦でも作ってみるか…」",
+                "rawHex": "817582c882a082a8914f81638163949e82c582e08dec82c182c482dd82e982a981638176",
+                "textEventIndex": 46,
+                "segmentIndex": 0
+              }
+            ],
+            "speakerRaw": {
+              "method": "native-name-slot",
+              "codeOffset": 3742,
+              "rawHex": "8ee5906c8cf6",
+              "text": "主人公",
+              "decodedText": "主人公"
+            },
+            "ruby": [],
+            "controls": [],
+            "boundary": {
+              "codeOffset": 3800,
+              "control": "p"
+            }
+          }
+        },
+        {
+          "eventId": "mjo-f16",
+          "text": "「…麦？」",
+          "source": {
+            "schema": "majiro-display-unit/v1",
+            "codeOffset": 3847,
+            "endCodeOffset": 3879,
+            "bodyCodeOffset": 3862,
+            "codeOffsets": [
+              3847,
+              3862,
+              3877
+            ],
+            "textEventIndices": [
+              47,
+              48
+            ],
+            "textParts": [
+              {
+                "kind": "text",
+                "text": "「…麦？」",
+                "codeOffset": 3862,
+                "rawText": "「…麦？」",
+                "rawHex": "81758163949e81488176",
+                "textEventIndex": 48,
+                "segmentIndex": 0
+              }
+            ],
+            "speakerRaw": {
+              "method": "native-name-slot",
+              "codeOffset": 3847,
+              "rawHex": "8343838a8358",
+              "text": "イリス",
+              "decodedText": "イリス"
+            },
+            "ruby": [],
+            "controls": [],
+            "boundary": {
+              "codeOffset": 3879,
+              "control": "p"
+            }
+          }
+        },
+        {
+          "eventId": "mjo-f46",
+          "text": "「ああ…」",
+          "source": {
+            "schema": "majiro-display-unit/v1",
+            "codeOffset": 3895,
+            "endCodeOffset": 3927,
+            "bodyCodeOffset": 3910,
+            "codeOffsets": [
+              3895,
+              3910,
+              3925
+            ],
+            "textEventIndices": [
+              49,
+              50
+            ],
+            "textParts": [
+              {
+                "kind": "text",
+                "text": "「ああ…」",
+                "codeOffset": 3910,
+                "rawText": "「ああ…」",
+                "rawHex": "817582a082a081638176",
+                "textEventIndex": 50,
+                "segmentIndex": 0
+              }
+            ],
+            "speakerRaw": {
+              "method": "native-name-slot",
+              "codeOffset": 3895,
+              "rawHex": "8ee5906c8cf6",
+              "text": "主人公",
+              "decodedText": "主人公"
+            },
+            "ruby": [],
+            "controls": [],
+            "boundary": {
+              "codeOffset": 3927,
+              "control": "p"
+            }
+          }
+        },
+        {
+          "eventId": "mjo-f67",
+          "text": "なんとなく、そんなことを口にしてしまった。",
+          "source": {
+            "schema": "majiro-display-unit/v1",
+            "codeOffset": 3943,
+            "endCodeOffset": 3992,
+            "bodyCodeOffset": 3943,
+            "codeOffsets": [
+              3943,
+              3990
+            ],
+            "textEventIndices": [
+              51
+            ],
+            "textParts": [
+              {
+                "kind": "text",
+                "text": "なんとなく、そんなことを口にしてしまった。",
+                "codeOffset": 3943,
+                "rawText": "なんとなく、そんなことを口にしてしまった。",
+                "rawHex": "82c882f182c682c882ad814182bb82f182c882b182c682f08cfb82c982b582c482b582dc82c182bd8142",
+                "textEventIndex": 51,
+                "segmentIndex": 0
+              }
+            ],
+            "speakerRaw": null,
+            "ruby": [],
+            "controls": [],
+            "boundary": {
+              "codeOffset": 3992,
+              "control": "p"
+            }
+          }
+        },
+        {
+          "eventId": "mjo-fd6",
+          "text": "「でも貴方、作り方は知らなかったんじゃないの？」",
+          "source": {
+            "schema": "majiro-display-unit/v1",
+            "codeOffset": 4039,
+            "endCodeOffset": 4109,
+            "bodyCodeOffset": 4054,
+            "codeOffsets": [
+              4039,
+              4054,
+              4107
+            ],
+            "textEventIndices": [
+              52,
+              53
+            ],
+            "textParts": [
+              {
+                "kind": "text",
+                "text": "「でも貴方、作り方は知らなかったんじゃないの？」",
+                "codeOffset": 4054,
+                "rawText": "「でも貴方、作り方は知らなかったんじゃないの？」",
+                "rawHex": "817582c582e08b4d95fb81418dec82e895fb82cd926d82e782c882a982c182bd82f182b682e182c882a282cc81488176",
+                "textEventIndex": 53,
+                "segmentIndex": 0
+              }
+            ],
+            "speakerRaw": {
+              "method": "native-name-slot",
+              "codeOffset": 4039,
+              "rawHex": "8343838a8358",
+              "text": "イリス",
+              "decodedText": "イリス"
+            },
+            "ruby": [],
+            "controls": [],
+            "boundary": {
+              "codeOffset": 4109,
+              "control": "p"
+            }
+          }
+        },
+        {
+          "eventId": "mjo-102c",
+          "text": "「……………」",
+          "source": {
+            "schema": "majiro-display-unit/v1",
+            "codeOffset": 4125,
+            "endCodeOffset": 4161,
+            "bodyCodeOffset": 4140,
+            "codeOffsets": [
+              4125,
+              4140,
+              4159
+            ],
+            "textEventIndices": [
+              54,
+              55
+            ],
+            "textParts": [
+              {
+                "kind": "text",
+                "text": "「……………」",
+                "codeOffset": 4140,
+                "rawText": "「……………」",
+                "rawHex": "8175816381638163816381638176",
+                "textEventIndex": 55,
+                "segmentIndex": 0
+              }
+            ],
+            "speakerRaw": {
+              "method": "native-name-slot",
+              "codeOffset": 4125,
+              "rawHex": "8ee5906c8cf6",
+              "text": "主人公",
+              "decodedText": "主人公"
+            },
+            "ruby": [],
+            "controls": [],
+            "boundary": {
+              "codeOffset": 4161,
+              "control": "p"
+            }
+          }
+        },
+        {
+          "eventId": "mjo-1060",
+          "text": "「そうだったな…忘れてくれ」",
+          "source": {
+            "schema": "majiro-display-unit/v1",
+            "codeOffset": 4177,
+            "endCodeOffset": 4227,
+            "bodyCodeOffset": 4192,
+            "codeOffsets": [
+              4177,
+              4192,
+              4225
+            ],
+            "textEventIndices": [
+              56,
+              57
+            ],
+            "textParts": [
+              {
+                "kind": "text",
+                "text": "「そうだったな…忘れてくれ」",
+                "codeOffset": 4192,
+                "rawText": "「そうだったな…忘れてくれ」",
+                "rawHex": "817582bb82a482be82c182bd82c88163965982ea82c482ad82ea8176",
+                "textEventIndex": 57,
+                "segmentIndex": 0
+              }
+            ],
+            "speakerRaw": {
+              "method": "native-name-slot",
+              "codeOffset": 4177,
+              "rawHex": "8ee5906c8cf6",
+              "text": "主人公",
+              "decodedText": "主人公"
+            },
+            "ruby": [],
+            "controls": [],
+            "boundary": {
+              "codeOffset": 4227,
+              "control": "p"
+            }
+          }
+        },
+        {
+          "eventId": "mjo-10c6",
+          "text": "確かに、詳しい作り方は知らない。\n俺が知っているのは、人の殺し方だけだった。",
+          "source": {
+            "schema": "majiro-display-unit/v1",
+            "codeOffset": 4294,
+            "endCodeOffset": 4392,
+            "bodyCodeOffset": 4294,
+            "codeOffsets": [
+              4294,
+              4331,
+              4333,
+              4343,
+              4390
+            ],
+            "textEventIndices": [
+              58
+            ],
+            "textParts": [
+              {
+                "kind": "text",
+                "text": "確かに、詳しい作り方は知らない。",
+                "codeOffset": 4294,
+                "rawText": "確かに、詳しい作り方は知らない。",
+                "rawHex": "8a6d82a982c981418fda82b582a28dec82e895fb82cd926d82e782c882a28142",
+                "textEventIndex": 58,
+                "segmentIndex": 0
+              },
+              {
+                "kind": "linebreak",
+                "text": "\n",
+                "codeOffset": 4333
+              },
+              {
+                "kind": "text",
+                "text": "俺が知っているのは、人の殺し方だけだった。",
+                "codeOffset": 4343,
+                "rawText": "俺が知っているのは、人の殺し方だけだった。",
+                "rawHex": "89b482aa926d82c182c482a282e982cc82cd8141906c82cc8e4582b595fb82be82af82be82c182bd8142",
+                "textEventIndex": 58,
+                "segmentIndex": 1
+              }
+            ],
+            "speakerRaw": null,
+            "ruby": [],
+            "controls": [
+              {
+                "codeOffset": 4333,
+                "value": "n"
+              }
+            ],
+            "boundary": {
+              "codeOffset": 4392,
+              "control": "p"
+            }
+          }
+        },
+        {
+          "eventId": "mjo-1138",
+          "text": "だが、それを作るに適した場所なら…",
+          "source": {
+            "schema": "majiro-display-unit/v1",
+            "codeOffset": 4408,
+            "endCodeOffset": 4449,
+            "bodyCodeOffset": 4408,
+            "codeOffsets": [
+              4408,
+              4447
+            ],
+            "textEventIndices": [
+              59
+            ],
+            "textParts": [
+              {
+                "kind": "text",
+                "text": "だが、それを作るに適した場所なら…",
+                "codeOffset": 4408,
+                "rawText": "だが、それを作るに適した場所なら…",
+                "rawHex": "82be82aa814182bb82ea82f08dec82e982c9934b82b582bd8fea8f8a82c882e78163",
+                "textEventIndex": 59,
+                "segmentIndex": 0
+              }
+            ],
+            "speakerRaw": null,
+            "ruby": [],
+            "controls": [],
+            "boundary": {
+              "codeOffset": 4449,
+              "control": "p"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "storyId": "narcissu-3rd/nara03",
+      "variantId": "mjo/narcissu3/update.arc.unpacked/nara03",
+      "locale": "zh-CN",
+      "events": [
+        {
+          "eventId": "mjo-213d",
+          "text": "「真是的！\n不用一一嘱咐这点东西我也懂啦」 ",
+          "source": {
+            "schema": "majiro-display-unit/v1",
+            "codeOffset": 8509,
+            "endCodeOffset": 8575,
+            "bodyCodeOffset": 8509,
+            "codeOffsets": [
+              8509,
+              8529,
+              8531,
+              8537,
+              8573
+            ],
+            "textEventIndices": [
+              112
+            ],
+            "textParts": [
+              {
+                "kind": "text",
+                "text": "「真是的！",
+                "codeOffset": 8509,
+                "rawText": "奀棡@「真是的！",
+                "rawHex": "8a43979e408175d5e6cac7b5c4a3a1",
+                "textEventIndex": 112,
+                "segmentIndex": 0
+              },
+              {
+                "kind": "linebreak",
+                "text": "\n",
+                "codeOffset": 8531
+              },
+              {
+                "kind": "text",
+                "text": "不用一一嘱咐这点东西我也懂啦」 ",
+                "codeOffset": 8537,
+                "rawText": "不用一一嘱咐这点东西我也懂啦」 ",
+                "rawHex": "b2bbd3c3d2bbd2bbd6f6b8c0d5e2b5e3b6abcef7ced2d2b2b6aec0b2817620",
+                "textEventIndex": 112,
+                "segmentIndex": 1
+              }
+            ],
+            "speakerRaw": {
+              "method": "native-inline-name-delimiter",
+              "codeOffset": 8509,
+              "rawHex": "8a43979e",
+              "text": "奀棡",
+              "decodedText": "海璃",
+              "delimiter": "@"
+            },
+            "ruby": [],
+            "controls": [
+              {
+                "codeOffset": 8531,
+                "value": "n"
+              }
+            ],
+            "boundary": {
+              "codeOffset": 8575,
+              "control": "p"
+            }
+          }
+        },
+        {
+          "eventId": "mjo-218b",
+          "text": "「还有，别忘记去房东家打声招呼。\n地址是街道对面的前数第三户。\n还有――」 ",
+          "source": {
+            "schema": "majiro-display-unit/v1",
+            "codeOffset": 8587,
+            "endCodeOffset": 8696,
+            "bodyCodeOffset": 8587,
+            "codeOffsets": [
+              8587,
+              8629,
+              8631,
+              8637,
+              8670,
+              8672,
+              8678,
+              8694
+            ],
+            "textEventIndices": [
+              113
+            ],
+            "textParts": [
+              {
+                "kind": "text",
+                "text": "「还有，别忘记去房东家打声招呼。",
+                "codeOffset": 8587,
+                "rawText": "塸帯@「还有，别忘记去房东家打声招呼。",
+                "rawHex": "89708ea1408175bbb9d3d0a3acb1f0cdfcbcc7c8a5b7bfb6abbcd2b4f2c9f9d5d0baf4a1a3",
+                "textEventIndex": 113,
+                "segmentIndex": 0
+              },
+              {
+                "kind": "linebreak",
+                "text": "\n",
+                "codeOffset": 8631
+              },
+              {
+                "kind": "text",
+                "text": "地址是街道对面的前数第三户。",
+                "codeOffset": 8637,
+                "rawText": "地址是街道对面的前数第三户。",
+                "rawHex": "b5d8d6b7cac7bdd6b5c0b6d4c3e6b5c4c7b0cafdb5dac8fdbba7a1a3",
+                "textEventIndex": 113,
+                "segmentIndex": 1
+              },
+              {
+                "kind": "linebreak",
+                "text": "\n",
+                "codeOffset": 8672
+              },
+              {
+                "kind": "text",
+                "text": "还有――」 ",
+                "codeOffset": 8678,
+                "rawText": "还有――」 ",
+                "rawHex": "bbb9d3d0a844a844817620",
+                "textEventIndex": 113,
+                "segmentIndex": 2
+              }
+            ],
+            "speakerRaw": {
+              "method": "native-inline-name-delimiter",
+              "codeOffset": 8587,
+              "rawHex": "89708ea1",
+              "text": "塸帯",
+              "decodedText": "英治",
+              "delimiter": "@"
+            },
+            "ruby": [],
+            "controls": [
+              {
+                "codeOffset": 8631,
+                "value": "n"
+              },
+              {
+                "codeOffset": 8672,
+                "value": "n"
+              }
+            ],
+            "boundary": {
+              "codeOffset": 8696,
+              "control": "p"
+            }
+          }
+        },
+        {
+          "eventId": "mjo-221f",
+          "text": "「…英治，你该不会是不信任我吧？」 ",
+          "source": {
+            "schema": "majiro-display-unit/v1",
+            "codeOffset": 8735,
+            "endCodeOffset": 8782,
+            "bodyCodeOffset": 8735,
+            "codeOffsets": [
+              8735,
+              8780
+            ],
+            "textEventIndices": [
+              114
+            ],
+            "textParts": [
+              {
+                "kind": "text",
+                "text": "「…英治，你该不会是不信任我吧？」 ",
+                "codeOffset": 8735,
+                "rawText": "奀棡@「…英治，你该不会是不信任我吧？」 ",
+                "rawHex": "8a43979e408175a1add3a2d6cea3acc4e3b8c3b2bbbbe1cac7b2bbd0c5c8ceced2b0c9a3bf817620",
+                "textEventIndex": 114,
+                "segmentIndex": 0
+              }
+            ],
+            "speakerRaw": {
+              "method": "native-inline-name-delimiter",
+              "codeOffset": 8735,
+              "rawHex": "8a43979e",
+              "text": "奀棡",
+              "decodedText": "海璃",
+              "delimiter": "@"
+            },
+            "ruby": [],
+            "controls": [],
+            "boundary": {
+              "codeOffset": 8782,
+              "control": "p"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "storyId": "narcissu-3rd/nara03",
+      "variantId": "mjo/narcissu3/scenario.arc.unpacked/nara03",
+      "locale": "ja-JP",
+      "events": [
+        {
+          "eventId": "mjo-32d1",
+          "text": "「もうっ！\n　いちいち言われなくても、それくらいわかってるよー」",
+          "source": {
+            "schema": "majiro-display-unit/v1",
+            "codeOffset": 12996,
+            "endCodeOffset": 13095,
+            "bodyCodeOffset": 13009,
+            "codeOffsets": [
+              12996,
+              13009,
+              13024,
+              13026,
+              13036,
+              13093
+            ],
+            "textEventIndices": [
+              221,
+              222
+            ],
+            "textParts": [
+              {
+                "kind": "text",
+                "text": "「もうっ！",
+                "codeOffset": 13009,
+                "rawText": "「もうっ！",
+                "rawHex": "817582e082a482c18149",
+                "textEventIndex": 222,
+                "segmentIndex": 0
+              },
+              {
+                "kind": "linebreak",
+                "text": "\n",
+                "codeOffset": 13026
+              },
+              {
+                "kind": "text",
+                "text": "　いちいち言われなくても、それくらいわかってるよー」",
+                "codeOffset": 13036,
+                "rawText": "　いちいち言われなくても、それくらいわかってるよー」",
+                "rawHex": "814082a282bf82a282bf8cbe82ed82ea82c882ad82c482e0814182bb82ea82ad82e782a282ed82a982c182c482e982e6815b8176",
+                "textEventIndex": 222,
+                "segmentIndex": 1
+              }
+            ],
+            "speakerRaw": {
+              "method": "native-name-slot",
+              "codeOffset": 12996,
+              "rawHex": "8a43979e",
+              "text": "海璃",
+              "decodedText": "海璃"
+            },
+            "ruby": [],
+            "controls": [
+              {
+                "codeOffset": 13026,
+                "value": "n"
+              }
+            ],
+            "boundary": {
+              "codeOffset": 13095,
+              "control": "p"
+            }
+          }
+        },
+        {
+          "eventId": "mjo-3344",
+          "text": "「それから、大家さんの家には忘れずに挨拶に行くこと。\n　場所は通り向かいの三軒先。\n　それと――」",
+          "source": {
+            "schema": "majiro-display-unit/v1",
+            "codeOffset": 13111,
+            "endCodeOffset": 13259,
+            "bodyCodeOffset": 13124,
+            "codeOffsets": [
+              13111,
+              13124,
+              13181,
+              13183,
+              13193,
+              13226,
+              13228,
+              13238,
+              13257
+            ],
+            "textEventIndices": [
+              223,
+              224
+            ],
+            "textParts": [
+              {
+                "kind": "text",
+                "text": "「それから、大家さんの家には忘れずに挨拶に行くこと。",
+                "codeOffset": 13124,
+                "rawText": "「それから、大家さんの家には忘れずに挨拶に行くこと。",
+                "rawHex": "817582bb82ea82a982e7814191e589c682b382f182cc89c682c982cd965982ea82b882c988a58e4182c98d7382ad82b182c68142",
+                "textEventIndex": 224,
+                "segmentIndex": 0
+              },
+              {
+                "kind": "linebreak",
+                "text": "\n",
+                "codeOffset": 13183
+              },
+              {
+                "kind": "text",
+                "text": "　場所は通り向かいの三軒先。",
+                "codeOffset": 13193,
+                "rawText": "　場所は通り向かいの三軒先。",
+                "rawHex": "81408fea8f8a82cd92ca82e88cfc82a982a282cc8e4f8cac90e68142",
+                "textEventIndex": 224,
+                "segmentIndex": 1
+              },
+              {
+                "kind": "linebreak",
+                "text": "\n",
+                "codeOffset": 13228
+              },
+              {
+                "kind": "text",
+                "text": "　それと――」",
+                "codeOffset": 13238,
+                "rawText": "　それと――」",
+                "rawHex": "814082bb82ea82c6815c815c8176",
+                "textEventIndex": 224,
+                "segmentIndex": 2
+              }
+            ],
+            "speakerRaw": {
+              "method": "native-name-slot",
+              "codeOffset": 13111,
+              "rawHex": "89708ea1",
+              "text": "英治",
+              "decodedText": "英治"
+            },
+            "ruby": [],
+            "controls": [
+              {
+                "codeOffset": 13183,
+                "value": "n"
+              },
+              {
+                "codeOffset": 13228,
+                "value": "n"
+              }
+            ],
+            "boundary": {
+              "codeOffset": 13259,
+              "control": "p"
+            }
+          }
+        },
+        {
+          "eventId": "mjo-3407",
+          "text": "「…英治くん、もしかしてわたしのこと信用してないの？」",
+          "source": {
+            "schema": "majiro-display-unit/v1",
+            "codeOffset": 13306,
+            "endCodeOffset": 13380,
+            "bodyCodeOffset": 13319,
+            "codeOffsets": [
+              13306,
+              13319,
+              13378
+            ],
+            "textEventIndices": [
+              225,
+              226
+            ],
+            "textParts": [
+              {
+                "kind": "text",
+                "text": "「…英治くん、もしかしてわたしのこと信用してないの？」",
+                "codeOffset": 13319,
+                "rawText": "「…英治くん、もしかしてわたしのこと信用してないの？」",
+                "rawHex": "8175816389708ea182ad82f1814182e082b582a982b582c482ed82bd82b582cc82b182c6904d977082b582c482c882a282cc81488176",
+                "textEventIndex": 226,
+                "segmentIndex": 0
+              }
+            ],
+            "speakerRaw": {
+              "method": "native-name-slot",
+              "codeOffset": 13306,
+              "rawHex": "8a43979e",
+              "text": "海璃",
+              "decodedText": "海璃"
+            },
+            "ruby": [],
+            "controls": [],
+            "boundary": {
+              "codeOffset": 13380,
+              "control": "p"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "byStory": {
+    "narcissu-3rd/nara03": [
+      {
+        "id": "ci-relocated-notice-cn",
+        "source_locale": "zh-CN",
+        "source_event_ids": [
+          "mjo-213d",
+          "mjo-218b",
+          "mjo-221f"
+        ],
+        "target_story_id": "legacy-narcissu-3rd-nara03",
+        "target_locale": "ja-JP",
+        "target_event_id": "mjo-32d1",
+        "message_cn": "中日版本将海璃与英治的这三句对话放在了本章不同的位置。",
+        "message_jp": "中国語版と日本語版では、海璃と英治のこの3つの台詞が、章内の異なる位置に配置されています。"
+      },
+      {
+        "id": "ci-relocated-notice-jp",
+        "source_locale": "ja-JP",
+        "source_event_ids": [
+          "mjo-32d1",
+          "mjo-3344",
+          "mjo-3407"
+        ],
+        "target_story_id": "legacy-narcissu-3rd-nara03",
+        "target_locale": "zh-CN",
+        "target_event_id": "mjo-213d",
+        "message_cn": "中日版本将海璃与英治的这三句对话放在了本章不同的位置。",
+        "message_jp": "中国語版と日本語版では、海璃と英治のこの3つの台詞が、章内の異なる位置に配置されています。"
+      }
+    ],
+    "narcissu-3rd/nar3_06": [
+      {
+        "id": "iris-border-scene-cn",
+        "source_locale": "zh-CN",
+        "source_event_ids": [
+          "mjo-51e0",
+          "mjo-5201",
+          "mjo-522a",
+          "mjo-5292",
+          "mjo-52cf",
+          "mjo-5330",
+          "mjo-53af",
+          "mjo-53df",
+          "mjo-5406",
+          "mjo-5461",
+          "mjo-54b2",
+          "mjo-5503",
+          "mjo-553a",
+          "mjo-559b",
+          "mjo-55de",
+          "mjo-562f",
+          "mjo-567a",
+          "mjo-56d3",
+          "mjo-571a",
+          "mjo-5767",
+          "mjo-57fd",
+          "mjo-5839",
+          "mjo-5892",
+          "mjo-58d4",
+          "mjo-592f",
+          "mjo-5971",
+          "mjo-59a0",
+          "mjo-5a01",
+          "mjo-5a7a",
+          "mjo-5b01",
+          "mjo-5b22",
+          "mjo-5b4d",
+          "mjo-5b84",
+          "mjo-5bcd",
+          "mjo-5c02",
+          "mjo-5c53",
+          "mjo-5c92",
+          "mjo-5d0f",
+          "mjo-5d72",
+          "mjo-5da2",
+          "mjo-5dc3",
+          "mjo-5e26",
+          "mjo-5e6e",
+          "mjo-5ea0",
+          "mjo-5ef6",
+          "mjo-5f5d"
+        ],
+        "target_story_id": "legacy-narcissu-3rd-nar3_07",
+        "target_locale": "ja-JP",
+        "target_event_id": "mjo-c5",
+        "message_cn": "中日版本的分章位置不同：本章末段的对应日文位于下一章开头。",
+        "message_jp": "章の区切りが異なります。この章の中国語末尾に対応する日本語は、次の章の冒頭にあります。"
+      }
+    ],
+    "narcissu-3rd/nar3_07": [
+      {
+        "id": "iris-border-scene-jp",
+        "source_locale": "ja-JP",
+        "source_event_ids": [
+          "mjo-c5",
+          "mjo-11d",
+          "mjo-1a3",
+          "mjo-1ea",
+          "mjo-264",
+          "mjo-304",
+          "mjo-336",
+          "mjo-369",
+          "mjo-3f1",
+          "mjo-455",
+          "mjo-4d3",
+          "mjo-512",
+          "mjo-590",
+          "mjo-5dd",
+          "mjo-659",
+          "mjo-6a4",
+          "mjo-716",
+          "mjo-78a",
+          "mjo-7d7",
+          "mjo-898",
+          "mjo-8de",
+          "mjo-93b",
+          "mjo-989",
+          "mjo-9ec",
+          "mjo-a38",
+          "mjo-a75",
+          "mjo-ae7",
+          "mjo-b7b",
+          "mjo-c2b",
+          "mjo-c4c",
+          "mjo-c7f",
+          "mjo-cc8",
+          "mjo-d2a",
+          "mjo-d6f",
+          "mjo-deb",
+          "mjo-e30",
+          "mjo-ead",
+          "mjo-f16",
+          "mjo-f46",
+          "mjo-f67",
+          "mjo-fd6",
+          "mjo-102c",
+          "mjo-1060",
+          "mjo-10c6",
+          "mjo-1138"
+        ],
+        "target_story_id": "legacy-narcissu-3rd-nar3_06",
+        "target_locale": "zh-CN",
+        "target_event_id": "mjo-51e0",
+        "message_cn": "中日版本的分章位置不同：本章日文开头的对应中文位于上一章末段。",
+        "message_jp": "章の区切りが異なります。この章の日本語冒頭に対応する中国語は、前の章の末尾にあります。"
+      }
+    ]
+  }
+}

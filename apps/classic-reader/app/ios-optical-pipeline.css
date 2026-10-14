@@ -1,0 +1,47 @@
+@layer reader-visual-revision {
+  /* Set before hydration, not after a scroll or a delayed feature probe.
+     Native blur processes the whole surface once; the existing ink rims,
+     material, scratches, phosphor and noise remain in that same surface.
+     No SVG URL graph, copied UI, forced repaint or scroll interception on iOS. */
+  html[data-ios-flat='true'] { --magi-ios-flat-filter: none; }
+  html[data-ios-flat='true'][data-screen-registration='true'] { --magi-ios-flat-filter: blur(.13px); }
+  html[data-ios-flat='true']:is([data-reader-theme='light'],[data-reader-theme='paper'],[data-reader-theme='green']) {
+    --magi-ios-flat-filter: var(--magi-flat-day-filter);
+  }
+  html[data-ios-flat='true'][data-reader-theme='frost'] { --magi-ios-flat-filter: blur(.22px); }
+  html[data-ios-flat='true'][data-reader-theme='dark'] { --magi-ios-flat-filter: blur(.39px); }
+
+  html[data-ios-flat='true'][data-screen-curvature='false'][data-reader-theme][data-night-phosphor] body
+    :is(#magi-home-display,#magi-reader-display,.magi-review-theme),
+  html[data-ios-flat='true'][data-screen-curvature='false'][data-reader-theme][data-night-phosphor] body
+    .magi-floating-window:not(#magi-home-display *,#magi-reader-display *,.magi-review-theme *) {
+    filter: var(--magi-ios-flat-filter) !important;
+  }
+
+  /* Decorations belong to the local display rather than Safari's changing
+     visual viewport. Native overflow and off-screen containment stay intact. */
+  html[data-ios-flat='true'] :is(#magi-home-display,#magi-reader-display,.magi-review-theme) { position: relative; }
+  html[data-ios-flat='true'] :is(#magi-home-display,#magi-reader-display,.magi-review-theme) >
+    :is(.magi-night-phosphor,.magi-night-grain,.magi-night-surface,.magi-screen-bezel,
+        .magi-reader-tube-phosphor,.magi-reader-tube-grain,.magi-reader-tube-surface,
+        .magi-screen-scanlines,.magi-glass-refraction,
+        .magi-reader-film-surface,.magi-optical-scroll-paint) { position: absolute !important; }
+
+  html[data-ios-flat='true'] .magi-screen-effects-settings [data-platform-disabled='true'] {
+    color: #888 !important;
+    opacity: .65;
+    cursor: not-allowed;
+  }
+  html[data-ios-flat='true'] .magi-screen-effects-settings [data-platform-disabled='true'] input {
+    accent-color: #888;
+    cursor: not-allowed;
+  }
+}
+
+/* Safari may leave the contents of a revealed card skipped while its border is
+   already visible. Keep catalogue text in native layout before a fast gesture;
+   Android/desktop retain their off-screen optimisation. No scroll repaint loop. */
+html[data-ios-flat='true'] :is(.magi-folder-card-collapsed,.magi-sidebar-folder-collapsed) {
+  content-visibility: visible;
+  contain-intrinsic-size: none;
+}

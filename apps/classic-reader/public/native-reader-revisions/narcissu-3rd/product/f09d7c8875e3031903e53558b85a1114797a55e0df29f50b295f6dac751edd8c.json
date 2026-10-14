@@ -1,0 +1,4184 @@
+{
+  "schema": "native-reader-revision/v1",
+  "storyId": "narcissu-3rd/product",
+  "revision": "f09d7c8875e3031903e53558b85a1114797a55e0df29f50b295f6dac751edd8c",
+  "parentRevision": null,
+  "baseSourceSha256": "2ea3715d0b9034962039e0678c873b5c09baec049cbff9533c584244b39148ac",
+  "parentSourceSha256": "2ea3715d0b9034962039e0678c873b5c09baec049cbff9533c584244b39148ac",
+  "patchSha256": "624c9b525b63b077349a01cb3c4afc753e853b00c03ca56de01e0e4bf4e32f18",
+  "source": {
+    "schema": "native-reader-edit-source/v1",
+    "storyId": "narcissu-3rd/product",
+    "binding": {
+      "route": "e46f84bb61abb3bfb57c25b314cdb66ce7475814060b1fe5349610f2ab3c688e",
+      "cnText": "6599758b9f98e3f86df77c8acbee886b700d55a5ad34f1200bb068a4169167d4",
+      "jpText": "42d628542d12ea500cad34780c9a278f1f9255d64c725fd73a7a18b52d9ef4c2",
+      "adapter": "d66d0576de230228f884ae0c70be53334ad5a5395efc575d39dd2f6e55806f39",
+      "normalizedStory": "7fe8f98c01947688b5f2906d0b89185a1e9bef9fe0578868810f64e56a33cbb9"
+    },
+    "nativeSources": [
+      {
+        "path": "archive/derived/scripts/narcissu3/scenario.arc.unpacked/product.plain.mjo",
+        "sha256": "2080f3ae48d6c4e4cf365aef05df76001ea1e72f04a658a4d5176483243203d6"
+      },
+      {
+        "path": "archive/derived/scripts/narcissu3/scenario.arc.unpacked/product.script.json",
+        "sha256": "2d87cde7e63832e47a8b4b0609198edda54377051bb6c4463415de3f81431476"
+      },
+      {
+        "path": "archive/derived/scripts/narcissu3/scenario.arc.unpacked/product.strings.json",
+        "sha256": "983ce8538279afd0b7dc80f37903debffab4a285a01f73562934fbc2c9d34e45"
+      },
+      {
+        "path": "archive/derived/scripts/narcissu3/update.arc.unpacked/product.plain.mjo",
+        "sha256": "b1f73937c259b1d2d073efa20ff8d11aab63637358c34df3b610ddf288c25e24"
+      },
+      {
+        "path": "archive/derived/scripts/narcissu3/update.arc.unpacked/product.script.json",
+        "sha256": "564ab59abac1943cac38e918596dc4b2df0c74f665d1452e0127927647250ccd"
+      },
+      {
+        "path": "archive/derived/scripts/narcissu3/update.arc.unpacked/product.strings.json",
+        "sha256": "5a74f42b907b8df00b3401f56fcd4ebb909aba6855597546f0ef2030f8bb8214"
+      },
+      {
+        "path": "archive/raw/narcissu3/scenario.arc.unpacked/product.mjo",
+        "sha256": "9daa7cf86dc05f3231e5766ffd0688bab0ec3f91f1793257ac5c52b758aa4019"
+      },
+      {
+        "path": "archive/raw/narcissu3/update.arc.unpacked/product.mjo",
+        "sha256": "ba5f0aa6735c1f22fb1628bc3ad18957b3fa0ddaf08c9ce7a5dadfcddec60d8a"
+      }
+    ],
+    "rows": [
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/product\\\",\\\"main\\\"]/header\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/product\\\",\\\"main\\\"]/header\"]",
+        "target": null,
+        "allowed": [],
+        "speakerReason": "structural-row",
+        "baseline": {
+          "text": "--- Start: product.txt Section 1 ---",
+          "speaker": ""
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/product\\\",\\\"main\\\"]/mjo-6d\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/product\\\",\\\"main\\\"]/mjo-81\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-6d"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "大家好、我是片冈とも。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/product\\\",\\\"main\\\"]/mjo-9c\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/product\\\",\\\"main\\\"]/mjo-c2\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-9c"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "现在忙得不可开交。\n不好意思、不好意思。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/product\\\",\\\"main\\\"]/mjo-e8\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/product\\\",\\\"main\\\"]/mjo-12c\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-e8"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "今后如果我有时间的话、请务必让我再修正一下。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-12d",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-12d"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "（现在是已经修正过的状态）",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/product\\\",\\\"main\\\"]/mjo-160\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/product\\\",\\\"main\\\"]/mjo-18e\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-160"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "总之最少也请先看一下。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-choice-1fe/choice/mjo-choice-1fe-case-1",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-choice-1fe",
+          "choiceId": "mjo-choice-1fe-case-1"
+        },
+        "allowed": [
+          "choiceLabel"
+        ],
+        "speakerReason": "structural-row",
+        "baseline": {
+          "text": "【汉化后记（果断先看这个吧）】",
+          "speaker": "选项",
+          "choiceLabel": "汉化后记（果断先看这个吧）"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-choice-1fe/choice/mjo-choice-1fe-case-2",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-choice-1fe",
+          "choiceId": "mjo-choice-1fe-case-2"
+        },
+        "allowed": [
+          "choiceLabel"
+        ],
+        "speakerReason": "structural-row",
+        "baseline": {
+          "text": "【关于水仙３】",
+          "speaker": "选项",
+          "choiceLabel": "关于水仙３"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-choice-1fe/choice/mjo-choice-1fe-case-3",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-choice-1fe",
+          "choiceId": "mjo-choice-1fe-case-3"
+        },
+        "allowed": [
+          "choiceLabel"
+        ],
+        "speakerReason": "structural-row",
+        "baseline": {
+          "text": "【其他】",
+          "speaker": "选项",
+          "choiceLabel": "其他"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-choice-1fe/choice/mjo-choice-1fe-case-4",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-choice-1fe",
+          "choiceId": "mjo-choice-1fe-case-4"
+        },
+        "allowed": [
+          "choiceLabel"
+        ],
+        "speakerReason": "structural-row",
+        "baseline": {
+          "text": "【１９９３（可能会影响到你的心情）】",
+          "speaker": "选项",
+          "choiceLabel": "１９９３（可能会影响到你的心情）"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-choice-1fe/choice/mjo-choice-1fe-case-5",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-choice-1fe",
+          "choiceId": "mjo-choice-1fe-case-5"
+        },
+        "allowed": [
+          "choiceLabel"
+        ],
+        "speakerReason": "structural-row",
+        "baseline": {
+          "text": "【再见】",
+          "speaker": "选项",
+          "choiceLabel": "再见"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-222",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-222"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "新年的钟声，即将远去，一年又过去了！完美版的汉化补丁终于发布了～",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-275",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-275"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "算是起来，已经近两年了呢～很抱歉让大家等这么久～感谢大家的期待～",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-2c8",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-2c8"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "因为各种原因，这次汉化拖得比较久，\n但是，我相信，就质量而言，还是比较高的。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-332",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-332"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "各线路都进行了多次校对和润色，游戏的每一句话，每一幅修改的图片、\n都充分倾注了汉化人员的心血，众位一直在前线奋斗的汉化英雄，你们辛苦了。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-3d8",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-3d8"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "接下来是后期担当弥赛亚的「访谈」时间了～",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-413",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-413"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "大家好，我是无能的担当弥赛亚。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-444",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-444"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "很高兴，完美版的补丁终于发布了。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-477",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-477"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "这次汉化，该怎么说呢，进行了好长时间呢，",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-4b2",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-4b2"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "经过多次的校对与润色，然后程序与测试又进行了好长一段时间，于是拖到了今天。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-50f",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-50f"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "感谢各位汉化战士们能陪我一起奋战到现在，你们辛苦了～",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-556",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-556"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "感谢各位水仙的粉丝们能耐心等到现在，让大家久等了。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-59b",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-59b"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "我有罪，在这里向大家赔罪了。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-5ca",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-5ca"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "然后，衷心感谢以下参与汉化的STAFF人员",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-602",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-602"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "主催：huoyanyan\n后期担当：弥赛亚\n初翻：小炎　落樱时节　右代宫绪　little487　寒蝉　style7th　50kg　觅　扇扇　\n校对：dameyui　风铃　寒蝉　小天　月夜　星屑　阁阁　蓝秀吉　深海の布　\n润色：七羽叶　大林　SS-sam　牧者　Konpaku777　XL beycom　优衣　KZ　长尾庆虎　蓝斯洛　被遗忘的某蛋　天下骡子是一家　樱花　lrs　藤原妹红　山闲　海洋　　konomi　小SA　弥赛亚　\n修图：HY　LeKFigure　\n程序：憧憬这一切　冰丨枫　\n测试：十六　绝对宅男　霜　海洋　Nichijou　黑白配　月夜　若忆　Konpaku777　水水　原界　╰＇韶华",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-85a",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-85a"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "非常感谢大家的努力，如果没有你们，这个补丁就无法放出！\n由于时间跨度太久，有些参与者真的没办法再联系上，\n或者因为汉化组当时的不成熟，所以会有遗漏。\n请发现后第一时间与汉化组驻论坛取得联系：www.acgfuture.com，我们会第一时间为您补上～\n最后，本作版权归风铃汉化组所有，未经授权，不等擅自用于商业目的！\n本汉化补丁将同步发布于Acgfuture论坛、宅结界论坛、NARCISSU贴吧。\n欢迎转载，必须保留完整信息，除有许可否则不得对补丁进行修改。\n风铃汉化组　\n２０１２年０３月",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/scenario.arc.unpacked/product\",\"main\"]/mjo-choice-1f2/choice/mjo-choice-1f2-case-1",
+        "target": {
+          "variantId": "mjo/narcissu3/scenario.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-choice-1f2",
+          "choiceId": "mjo-choice-1f2-case-1"
+        },
+        "allowed": [
+          "choiceLabel"
+        ],
+        "speakerReason": "structural-row",
+        "baseline": {
+          "text": "【关于水仙３】",
+          "speaker": "选项",
+          "choiceLabel": "关于水仙３"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/scenario.arc.unpacked/product\",\"main\"]/mjo-choice-1f2/choice/mjo-choice-1f2-case-2",
+        "target": {
+          "variantId": "mjo/narcissu3/scenario.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-choice-1f2",
+          "choiceId": "mjo-choice-1f2-case-2"
+        },
+        "allowed": [
+          "choiceLabel"
+        ],
+        "speakerReason": "structural-row",
+        "baseline": {
+          "text": "【其他】",
+          "speaker": "选项",
+          "choiceLabel": "其他"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/scenario.arc.unpacked/product\",\"main\"]/mjo-choice-1f2/choice/mjo-choice-1f2-case-3",
+        "target": {
+          "variantId": "mjo/narcissu3/scenario.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-choice-1f2",
+          "choiceId": "mjo-choice-1f2-case-3"
+        },
+        "allowed": [
+          "choiceLabel"
+        ],
+        "speakerReason": "structural-row",
+        "baseline": {
+          "text": "【再见】",
+          "speaker": "选项",
+          "choiceLabel": "再见"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/product\\\",\\\"main\\\"]/mjo-aaf\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/product\\\",\\\"main\\\"]/mjo-222\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-aaf"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "■关于水仙３",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/product\\\",\\\"main\\\"]/mjo-ad4\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/product\\\",\\\"main\\\"]/mjo-251\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-ad4"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "这次最大的变化果然还是请了我以外的作者也参加进来了吧？",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-b23",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-b23"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "说起来，这次的抬头虽然都一样，但恐怕有种作品集的感觉呢。舞台和设定也是这样。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/scenario.arc.unpacked/product\",\"main\"]/mjo-2e4",
+        "target": {
+          "variantId": "mjo/narcissu3/scenario.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-2e4"
+        },
+        "allowed": [],
+        "speakerReason": "no-native-speaker",
+        "readOnlyReason": "translation-on-native-group-members",
+        "baseline": {
+          "text": "",
+          "speaker": ""
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/scenario.arc.unpacked/product\",\"main\"]/mjo-35a",
+        "target": {
+          "variantId": "mjo/narcissu3/scenario.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-35a"
+        },
+        "allowed": [],
+        "speakerReason": "no-native-speaker",
+        "readOnlyReason": "translation-on-native-group-members",
+        "baseline": {
+          "text": "",
+          "speaker": ""
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/product\\\",\\\"main\\\"]/mjo-b82\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/product\\\",\\\"main\\\"]/mjo-38f\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-b82"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "所以、关于水仙的『日常－生死观』这个主题，恐怕就不是所有人都能认同了。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/product\\\",\\\"main\\\"]/mjo-be1\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/product\\\",\\\"main\\\"]/mjo-434\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-be1"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "因此才会有了那个第三世界、 让各位作者可以自由发挥。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/product\\\",\\\"main\\\"]/mjo-c27\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/product\\\",\\\"main\\\"]/mjo-4a2\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-c27"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "我个人觉得、早狩先生写的剧本和我比较接近。看来是因为我们都是中年人了吧。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/product\\\",\\\"main\\\"]/mjo-c88\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/product\\\",\\\"main\\\"]/mjo-516\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-c88"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "ごぉ先生和酸橙先生感觉是年轻人那一组的。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/product\\\",\\\"main\\\"]/mjo-cc9\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/product\\\",\\\"main\\\"]/mjo-574\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-cc9"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "不如说、他们只是单纯的在年龄和生死观上比较接近？",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/product\\\",\\\"main\\\"]/mjo-d12\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/product\\\",\\\"main\\\"]/mjo-5d2\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-d12"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "说不定就是这样没错呢。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/product\\\",\\\"main\\\"]/mjo-d3b\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/product\\\",\\\"main\\\"]/mjo-611\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-d3b"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "说起来、这次我还真是写了个和本篇的设定完全不一样的剧本出来呢。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-d92",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-d92"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "不过、这毕竟是水仙。虽然瀨津美没有登场。从感觉上来说的话、和银色是最接近的。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/scenario.arc.unpacked/product\",\"main\"]/mjo-687",
+        "target": {
+          "variantId": "mjo/narcissu3/scenario.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-687"
+        },
+        "allowed": [],
+        "speakerReason": "no-native-speaker",
+        "readOnlyReason": "translation-on-native-group-members",
+        "baseline": {
+          "text": "",
+          "speaker": ""
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/scenario.arc.unpacked/product\",\"main\"]/mjo-6e9",
+        "target": {
+          "variantId": "mjo/narcissu3/scenario.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-6e9"
+        },
+        "allowed": [],
+        "speakerReason": "no-native-speaker",
+        "readOnlyReason": "translation-on-native-group-members",
+        "baseline": {
+          "text": "",
+          "speaker": ""
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-df7",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-df7"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "背景设定大致是罗马十字军左右的时代、不过严密说来完全是不一样的，也就是差不多的感觉吧？",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/product\\\",\\\"main\\\"]/mjo-e60\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/product\\\",\\\"main\\\"]/mjo-728\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-e60"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "另外、其实里面还混入了其他的故事。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-e9b",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-e9b"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "从设定上来说的话、水仙３和水仙１、２是一样的，与其说是总结篇，不如说这次的水仙是完结篇比较合适。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/scenario.arc.unpacked/product\",\"main\"]/mjo-76b",
+        "target": {
+          "variantId": "mjo/narcissu3/scenario.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-76b"
+        },
+        "allowed": [],
+        "speakerReason": "no-native-speaker",
+        "readOnlyReason": "translation-on-native-group-members",
+        "baseline": {
+          "text": "",
+          "speaker": ""
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/scenario.arc.unpacked/product\",\"main\"]/mjo-7cd",
+        "target": {
+          "variantId": "mjo/narcissu3/scenario.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-7cd"
+        },
+        "allowed": [],
+        "speakerReason": "no-native-speaker",
+        "readOnlyReason": "translation-on-native-group-members",
+        "baseline": {
+          "text": "",
+          "speaker": ""
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/product\\\",\\\"main\\\"]/mjo-f14\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/product\\\",\\\"main\\\"]/mjo-80e\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-f14"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "姑且还是能从目前为止的故事里推测出概要来的。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/product\\\",\\\"main\\\"]/mjo-f53\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/product\\\",\\\"main\\\"]/mjo-84d\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-f53"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "话说、要想再提高剧本质量恐怕是不太可能的…",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-f96",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-f96"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "而且、水仙这个系列的创作是非常消耗MP的。我的MP。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-fdf",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-fdf"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "另外、猫猫的新作也快出来了、所以请允许我PASS。哈哈。那个可是开心的校园剧哦。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/scenario.arc.unpacked/product\",\"main\"]/mjo-8bd",
+        "target": {
+          "variantId": "mjo/narcissu3/scenario.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-8bd"
+        },
+        "allowed": [],
+        "speakerReason": "no-native-speaker",
+        "readOnlyReason": "translation-on-native-group-members",
+        "baseline": {
+          "text": "",
+          "speaker": ""
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/scenario.arc.unpacked/product\",\"main\"]/mjo-8fe",
+        "target": {
+          "variantId": "mjo/narcissu3/scenario.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-8fe"
+        },
+        "allowed": [],
+        "speakerReason": "no-native-speaker",
+        "readOnlyReason": "translation-on-native-group-members",
+        "baseline": {
+          "text": "",
+          "speaker": ""
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/scenario.arc.unpacked/product\",\"main\"]/mjo-939",
+        "target": {
+          "variantId": "mjo/narcissu3/scenario.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-939"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "写着写着，离交付母盘的期限已经没剩多少时间了。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/scenario.arc.unpacked/product\",\"main\"]/mjo-984",
+        "target": {
+          "variantId": "mjo/narcissu3/scenario.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-984"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "抱歉——这次内容写得很短，实在没有时间了……",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/scenario.arc.unpacked/product\",\"main\"]/mjo-9c7",
+        "target": {
+          "variantId": "mjo/narcissu3/scenario.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-9c7"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "之后还想修正错字漏字、加强演出，\n所以准备更新补丁时，也会在这里补些内容——\n顺便再放些壁纸之类的。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/product\\\",\\\"main\\\"]/mjo-103e\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/product\\\",\\\"main\\\"]/mjo-a6c\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-103e"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "好了好了、就这样吧、\n能读到这里、\n我非常感谢m(_ _)m",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/product\\\",\\\"main\\\"]/mjo-10a2\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/product\\\",\\\"main\\\"]/mjo-b04\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-10a2"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "２００９年４月　片岡とも",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/product\\\",\\\"main\\\"]/mjo-10ed\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/product\\\",\\\"main\\\"]/mjo-b63\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-10ed"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "已经到了要写这个玩意的时候了么？",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/product\\\",\\\"main\\\"]/mjo-1126\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/product\\\",\\\"main\\\"]/mjo-b90\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-1126"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "啊啊、伤脑筋了…",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/product\\\",\\\"main\\\"]/mjo-114f\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/product\\\",\\\"main\\\"]/mjo-bc1\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-114f"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "对了、说起来这次、因为没有版权问题、给一下STAFF。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/product\\\",\\\"main\\\"]/mjo-122f\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/product\\\",\\\"main\\\"]/mjo-cdd\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-122f"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "还有、终于在最后一刻做好了动画、但我想不到要放在游戏里的什么地方播放比较好、所以不如就放在这里吧。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-12b1",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-12b1"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "顺便说一下、字幕和歌词在时间上可能有点对不上、真是不好意思。过几天请容我上传到主页去吧。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-1453",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-1453"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "■１９９３",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-1494",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-1494"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "那是二月刚至的时候。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-14c1",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-14c1"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "时节正值隆冬、在罕见的大雪中、我驱车赶回家中。\n母亲坐在后面的位子上。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-152b",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-152b"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "在大雪中、我有些茫然的想着。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-1560",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-1560"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "恐怕这是最后一次出院了吧。 今后再也不用往返于淀川和家里了…",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-15b4",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-15b4"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "当我想到这里时、并不仅仅是感到悲伤。\n还有种松了口气的感觉。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-160e",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-160e"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "『照顾病人真累』",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-1637",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-1637"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "虽然这是经常被提起的事、但要说明起来却很难。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-167c",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-167c"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "恐怕只有有过这种经验的人才能明白。突然而至的交通事故、只留下了悲伤。\n那些梦幻般的过去都会随风凋零。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-1704",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-1704"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "就像是电影里出现的那样、只会摘取美丽的部分。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-1749",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-1749"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "然而、以年为单位的照料、除了悲伤之外…",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-177c",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-177c"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "沉重的疲劳。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-17a1",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-17a1"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "这…并不是薄情寡义。\n护理生命、绝不是一件只有漂亮的事。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-17f7",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-17f7"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "…我想、不管是谁一定都会有这么想的时候。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-1838",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-1838"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "当亲人去世的时候肯定不会是100%的悲伤、\n在心里的某处、一定也松了口气。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-18a2",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-18a2"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "已经不用在吸烟室和看护病房的床上渡过一夜了。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-18e7",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-18e7"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "也不用在半夜里登上救护车了。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-1916",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-1916"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "然后…随着岁月的流逝、内心的空洞被慢慢地堵上、接着会这么想道。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-196d",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-196d"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "还好是生病。还好是能在双眼所及的地方照看着。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-19b2",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-19b2"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "还好不是像突发事故那样连看都没看到就去世了",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-19f5",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-19f5"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "对于这个毫不可靠、对谁都一样残酷的世界来说…",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-1a3a",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-1a3a"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "减少了后悔、给予了「缓期」、还是要说声谢谢的。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-1a9a",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-1a9a"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "四月。告别式也结束了、向照顾家母的看护者道谢。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-1ae1",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-1ae1"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "虽然我在小时候就知道了大人中也是有好人的这个道理、但当我自己成长为大人时才知道。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-1b4a",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-1b4a"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "好人虽然稀少但却是存在的。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-1b7d",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-1b7d"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "能为他人着想的人也是很多的。这个世界也并不是完全没有希望的。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-1bf1",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-1bf1"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "―都立Ｕ公园―",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-1c18",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-1c18"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "五月。我来带东京找工作。很快就决定了要做警备员的打工。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-1c67",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-1c67"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "不过、这个警备员的工作却有些奇怪。这份工作是要警备都立公园。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-1cbc",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-1cbc"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "一开始的时候完全无法理解、说得简单点、其实就是名为巡逻的散步。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-1d13",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-1d13"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "每天只要巡逻四次就可以了、之后就算是在管理事务所内呆着也可以。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-1d64",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-1d64"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "公园本身走一圈只要十分钟、像这样走个四圈、实在是太轻松了。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-1db7",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-1db7"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "恐怕是政府希望能定期在公园内看到穿着制服的警备员吧。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-1e04",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-1e04"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "…就这样、我走马上任了。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-1e35",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-1e35"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "在樱花即将零落的时候、我买好了来往于新宿和U站的定期车票。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-1ea0",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-1ea0"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "―初代警備員―",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-1ec7",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-1ec7"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "我是这个公园的初代警备员。也就是说没有上一任和交代人。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-1f16",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-1f16"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "据说是一年前有个钓鱼的人在这里受伤了、于是政府为此而做出了对应。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-1f6f",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-1f6f"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "所以就连事务所的人也在摸索着工作内容。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-1fae",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-1fae"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "虽然让我来说很那个啥、大部分职员都是叮嘱的多、谈正事的少。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-1ffb",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-1ffb"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "所以这就成了一件很轻松的工作。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-2032",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-2032"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "早上八点到下午五点的工作时间里、只有四十分钟的散步。日薪八千円、每周日和过年休息。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-209d",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-209d"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "除了散步以外的工作就是提醒来钓鱼的人要注意安全。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-20e6",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-20e6"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "这个公园的池塘是禁止用拟饵钩的，所以要提醒那些用假饵来钓鱼的小家伙，就这么简单。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-2149",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-2149"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "接下来就真的没什么事可以做了。\n\n所以我一直都坐在椅子上画漫画。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-21b1",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-21b1"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "不过这里还有很多的流浪汉。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-21e4",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-21e4"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "我得到的指示是尽量不要去管他们、不过偶尔他们生火的时候我还是要去提醒一下的。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-2249",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-2249"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "流浪汉里有着各种各样的人。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-2282",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-2282"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "有常见的号称自己曾经是某大公司老板的人、还有每天都有类似家里的人来找的、另外还有一到白天就消失的人。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-22ff",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-22ff"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "他们的言谈意外的很开朗。不过那是为了不被寂寞所击倒的逞强。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-2352",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-2352"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "然后我注意到了一些和流浪汉不同、每天都会来这里的人…",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-23be",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-23be"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "―公園の住人―",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-23e5",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-23e5"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "刚开始注意到的时候、大概是开始工作后过了约一周时。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-2430",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-2430"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "每天都能看到同样的２～３人。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-2465",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-2465"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "但仔细看的话、并不仅仅是２～３人。还有很多的人、都会每天来公园。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-24be",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-24be"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "他们中、男女老少样样都有。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-24f1",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-24f1"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "然后这些人都是孤单一个、从来不会聚在一起、也没见过他们和别人说什么话。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-2569",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-2569"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "大白天的就在公园里无所事事、很多人到处晃来晃去。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-25b2",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-25b2"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "刚开始的时候、我还在想真是闲人啊。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-25ed",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-25ed"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "总觉得可能是失业的上班族或是来消磨时间的家庭主妇。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-2638",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-2638"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "对我来说、反正也不会影响我的工作、 根本不用去关心作、当没看见就可以了。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-26b7",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-26b7"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "但过了一两个月的时候、我突然想到。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-26f2",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-26f2"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "他们每天都是晚上回去、隔天早上过来、整整一天都在公园里渡过。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-2747",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-2747"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "所以我将他们比喻为『公园的居民』。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-2782",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-2782"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "某一天、虽然一直都是无视他们的、但我不知不觉的向他们打了招呼。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-27d3",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-27d3"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "「早上好」",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-27f6",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-27f6"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "「哎、啊恩…」",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-281d",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-281d"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "那个中年男子只是撇了我一眼。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-2852",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-2852"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "从那天开始、我用类似的感觉向另外几个人也打了招呼。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-289d",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-289d"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "我觉得这并没有什么深意。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-28e7",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-28e7"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "―７月。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-2908",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-2908"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "今天又是苍白的梅雨天。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-2937",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-2937"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "我坐在公园的长椅上、聊着无所谓的话题。对象是每天都过来的居民之一。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-2992",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-2992"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "不知从何时开始、我渐渐开始与更多的居民说上了更多的话。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-29e1",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-29e1"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "然后听到了许多的事。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-2a0e",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-2a0e"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "不、是被诉说了许多的事。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-2a39",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-2a39"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "他们都是一些因肉体上的疾病而不断进出医院的人。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-2a80",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-2a80"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "或是因为精神上的疾病而重复住院和出院的人。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-2ac3",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-2ac3"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "不管怎么说、都是些在家里和医院都没有容身之处的人。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-2b0e",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-2b0e"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "所谓的没有容身之处、并不是指家里人或医生对他们不好。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-2b55",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-2b55"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "不如说、是受到了家里人的特别优待。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-2b90",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-2b90"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "对于家人、他们感到十分抱歉。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-2bc5",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-2bc5"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "所以…成为了公园的居民。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-2bf6",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-2bf6"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "如果有什么别的地方能去、一定不会每天都来公园的…",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-2c58",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-2c58"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "―８月。盛夏。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-2c7f",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-2c7f"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "到了目前、他们不仅仅是说些日常话题、还对我说了很多。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-2ccc",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-2ccc"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "我想这一切都是『偶然』吧。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-2cff",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-2cff"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "跟谁都合不来、排除自己以外的所有人。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-2d3c",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-2d3c"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "对于他们来说、公园是唯一能来的地方、初次被导入的警备员。妨碍者。我。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-2d99",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-2d99"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "双方即使多么不想见到对方却还是要每天都见面。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-2dd8",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-2dd8"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "但我却不是医生、 也不是亲人或朋友。只是个每天都在散步的警备员。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-2e30",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-2e30"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "穿着制服可以稍微让人安心一点。当然也可能是我开朗的性格所致。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-2e85",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-2e85"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "这些偶然重叠起来后…他们终于也能敞开心房、和我交谈。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-2ed2",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-2ed2"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "不、并不是想和我交谈。真的就只是希望我能倾听他们的诉说罢了…",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-2f21",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-2f21"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "他们这样说了。家人、医生和辅导员都不说真话。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-2f66",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-2f66"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "特别是家人因为照顾情绪而说不出真话。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-2fa3",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-2fa3"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "虽然他们也遇到过不错的医生和辅导员、但他们果然也是因为工作需要才那么说的。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-3000",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-3000"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "当然了我也是、我觉得这些话不能适用于所有的人。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-3047",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-3047"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "只是、对于那些除了公园就无处可去的人来说、也许那就是他们的真心话了。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-30a4",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-30a4"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "由于我也遇到过类似的事、所以总觉得能够理解他们。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-310c",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-310c"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "―Ｏ先生。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-312f",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-312f"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "他是一位中年男性。比我要年长一圈、总是用大哥的口气来说话。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-3182",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-3182"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "明明得了肺癌、却总是在吸烟。总是有一搭没一搭的跟我说着人生。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-31d7",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-31d7"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "和那样的他、有一次我在下班后跟他去喝了一杯，在公园的长椅上喝酒。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-3230",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-3230"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "渐渐喝醉后的他、突然大声的开始怒骂。平时都很冷静的他这还是第一次。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-3285",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-3285"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "这并不是…对什么、或对谁的愤怒。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-32be",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-32be"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "如果一定要说的话、这是对已经没救的自己…或者说是、对拒绝了未来的自己的神的怒骂。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-3327",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-3327"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "之后、我们在河别谈到了天亮。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-335c",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-335c"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "话音从愤怒渐渐转为梗咽、最后变得达观。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-339b",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-339b"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "那个姿态所诉说的话语…实在是无法用文字来表达。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-33dc",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-33dc"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "在我至今送别过的人中、他是唯一能被称为达观的人。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-3425",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-3425"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "在这之前或之后都没有，那已经不是人所能拥有的情绪了。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-3472",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-3472"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "三天后。他从公园的居民转为了7F的患者。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-34b1",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-34b1"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "再一起喝一次吧、我们互相登录了对方的手机号码、然而那个机会却再也没有来过。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-3514",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-3514"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "就算是现在、我也无法忘记在告别仪式上的他。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-3570",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-3570"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "之后…我又送别了几个居民。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-35a3",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-35a3"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "送别的地点是公园的入口处。在那里挥着手送别。不能再做更多了。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-35f8",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-35f8"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "走出了这里、就是一个人了。所以不会去看望他、也不会去7F。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-3649",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-3649"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "下次再见面的时候、就是本人的告别仪式了。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-368a",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-368a"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "要说为什么的话、那是因为听到他们心里话的人并不应该是我。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-36db",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-36db"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "只是偶尔和偶然的重叠罢了…只有正好出现在那里的警备员才能做到。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-3751",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-3751"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "―１１月　Ｋ小姐",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-377c",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-377c"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "变得很冷的那个时候。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-37a9",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-37a9"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "经常和我说话的那个女孩子、那个Ｋ小姐。那个孩子和我说了很多。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-37fe",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-37fe"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "总是很高兴的看着我画漫画、",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-3831",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-3831"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "可是、那个笑着的头上却又着一个巨大的伤痕、那是自残的痕迹。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-3884",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-3884"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "很明显、是真的想死却失败了的痕迹。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-38b9",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-38b9"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "某一天、坐在公园的长椅上、我向她问道。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-38f8",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-38f8"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "「有没有想过为什么只有自己会这样？」",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-3935",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-3935"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "对于这个问题、她思考了片刻后回答道…",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-3972",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-3972"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "「想过、但想了也得不到答案」",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-39a7",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-39a7"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "她这么说了后就笑了。头上那个巨大的伤痕没有消失。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-39ea",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-39ea"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "那天晚上。我们在公园的角落里放烟火。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-3a27",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-3a27"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "她买了一个小小的烟火套装开始放。在火药的气味和白色的烟雾中、我们呆呆的看着冬天的星座。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-3a96",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-3a96"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "自动贩卖机的罐装饮料冰冰地真好喝。突然、我想起了很久以前在二色之浜上玩过的烟火。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-3aff",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-3aff"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "然后、当最后的烟火也熄灭时、她咕哝道。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-3b3e",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-3b3e"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "「这个世界…还真是不公平呢…」",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-3b75",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-3b75"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "平时那副开朗的表情已经不见了。明明是胃癌转移时都在笑着的她。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-3bc4",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-3bc4"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "然后、她说起了自己至今为止的人生。说完时她哭了起来。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-3c11",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-3c11"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "流泪的原因是…",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-3c38",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-3c38"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "…叹息人类是多么的无力。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-3c69",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-3c69"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "强力的诅咒着世界的无情。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-3c9a",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-3c9a"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "然后、她也怀着同样的心情… 为自己的亲朋好友祝福着",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-3ce4",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-3ce4"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "然后对作为证人的我、拜托了一个小小的心愿…",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-3d21",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-3d21"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "终于、来到了公园的入口、她就像平时那样挥着手向我道别。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-3d70",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-3d70"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "不知为何、她露出了笑脸…",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-3d9b",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-3d9b"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "一周后。\n她自杀了。\n我想她一定没有在遗书里写什么详细的内容。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-3e08",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-3e08"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "…但是、就算世界上的所有人都不知道、我却是明白的。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-3e53",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-3e53"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "她说过、不能再给家里带来更多的负担。她拜托我不要对任何人说。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-3ea8",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-3ea8"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "她觉得如果被知道了、只会让家人徒增悲伤。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-3ee9",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-3ee9"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "不过…就算明知如此…",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-3f16",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-3f16"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "就算是这样、我也不能不对任何人说…",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-3f4b",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-3f4b"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "…我还认识其他很多人。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-3f7a",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-3f7a"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "对死亡做出了觉悟的人、不管多么坚强的表现出了自己的达观…",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-3fcb",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-3fcb"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "果然还是很寂寞。但不能靠近。特别是亲近的人。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-4010",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-4010"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "其实很想听到家人的声音。其实很想留下活过的证明…",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-4059",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-4059"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "其实很想传达自己的愿望…",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-40a9",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-40a9"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "又过了３个月。\n在接近樱花满开的时候。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-40f3",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-40f3"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "公园的入口处、这次是我被送别了。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-412c",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-412c"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "一位居民向我挥着手、我也向他挥着手。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-4169",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-4169"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "眼前是埼京线的车站口。我没有回过头。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-41a6",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-41a6"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "…从那天开始、这个都立公园废除了警备员的制度。好像只是单纯的政府预算问题。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-4209",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-4209"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "看来我是这个公园最初也是最后的警备员了。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-4244",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-4244"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "…好几个、好几个偶然重叠在了一起、偶然的成为了好几个人的、成为了他们的证人的警备员。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-42b1",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-42b1"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "７年後。那个失业的警备员、当他回过神来的时候，发现自己已经开始写东西了…",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-432b",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-432b"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "―我如今也在想着。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-4356",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-4356"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "那个公园、现在也有着居民吧…",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-438b",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-438b"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "他们如今也是每天都来公园、一个人孤独的坐在长椅上吧…",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-43d8",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-43d8"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "然而、那里已经没有警备员了。由偶然所诞生出来的、那个唯一的证人已经不在了。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-4435",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-4435"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "他们这些公园的居民所能选择的…只有成为7F的居民、或是自杀。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-4488",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-4488"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "到底怎么做才是正确的、我不太明白。这个问题恐怕没有正确答案吧。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-44df",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-44df"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "所期望的只是…亲近的人能笑着。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-4516",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-4516"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "没错、那个成为证人的原警备员如此想着…",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-4555",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/product",
+          "sectionId": "main",
+          "eventId": "mjo-4555"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "１９９３年。都立Ｕ公园―",
+          "speaker": "旁白"
+        }
+      }
+    ]
+  },
+  "cnKeys": [
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/product\\\",\\\"main\\\"]/header\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/product\\\",\\\"main\\\"]/header\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/product\\\",\\\"main\\\"]/mjo-6d\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/product\\\",\\\"main\\\"]/mjo-81\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/product\\\",\\\"main\\\"]/mjo-9c\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/product\\\",\\\"main\\\"]/mjo-c2\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/product\\\",\\\"main\\\"]/mjo-e8\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/product\\\",\\\"main\\\"]/mjo-12c\"]",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-12d",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/product\\\",\\\"main\\\"]/mjo-160\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/product\\\",\\\"main\\\"]/mjo-18e\"]",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-choice-1fe/choice/mjo-choice-1fe-case-1",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-choice-1fe/choice/mjo-choice-1fe-case-2",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-choice-1fe/choice/mjo-choice-1fe-case-3",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-choice-1fe/choice/mjo-choice-1fe-case-4",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-choice-1fe/choice/mjo-choice-1fe-case-5",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-222",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-275",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-2c8",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-332",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-3d8",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-413",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-444",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-477",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-4b2",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-50f",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-556",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-59b",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-5ca",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-602",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-85a",
+    "[\"mjo/narcissu3/scenario.arc.unpacked/product\",\"main\"]/mjo-choice-1f2/choice/mjo-choice-1f2-case-1",
+    "[\"mjo/narcissu3/scenario.arc.unpacked/product\",\"main\"]/mjo-choice-1f2/choice/mjo-choice-1f2-case-2",
+    "[\"mjo/narcissu3/scenario.arc.unpacked/product\",\"main\"]/mjo-choice-1f2/choice/mjo-choice-1f2-case-3",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/product\\\",\\\"main\\\"]/mjo-aaf\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/product\\\",\\\"main\\\"]/mjo-222\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/product\\\",\\\"main\\\"]/mjo-ad4\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/product\\\",\\\"main\\\"]/mjo-251\"]",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-b23",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/product\\\",\\\"main\\\"]/mjo-b82\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/product\\\",\\\"main\\\"]/mjo-38f\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/product\\\",\\\"main\\\"]/mjo-be1\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/product\\\",\\\"main\\\"]/mjo-434\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/product\\\",\\\"main\\\"]/mjo-c27\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/product\\\",\\\"main\\\"]/mjo-4a2\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/product\\\",\\\"main\\\"]/mjo-c88\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/product\\\",\\\"main\\\"]/mjo-516\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/product\\\",\\\"main\\\"]/mjo-cc9\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/product\\\",\\\"main\\\"]/mjo-574\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/product\\\",\\\"main\\\"]/mjo-d12\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/product\\\",\\\"main\\\"]/mjo-5d2\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/product\\\",\\\"main\\\"]/mjo-d3b\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/product\\\",\\\"main\\\"]/mjo-611\"]",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-d92",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-df7",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/product\\\",\\\"main\\\"]/mjo-e60\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/product\\\",\\\"main\\\"]/mjo-728\"]",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-e9b",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/product\\\",\\\"main\\\"]/mjo-f14\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/product\\\",\\\"main\\\"]/mjo-80e\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/product\\\",\\\"main\\\"]/mjo-f53\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/product\\\",\\\"main\\\"]/mjo-84d\"]",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-f96",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-fdf",
+    "[\"mjo/narcissu3/scenario.arc.unpacked/product\",\"main\"]/mjo-939",
+    "[\"mjo/narcissu3/scenario.arc.unpacked/product\",\"main\"]/mjo-984",
+    "[\"mjo/narcissu3/scenario.arc.unpacked/product\",\"main\"]/mjo-9c7",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/product\\\",\\\"main\\\"]/mjo-103e\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/product\\\",\\\"main\\\"]/mjo-a6c\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/product\\\",\\\"main\\\"]/mjo-10a2\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/product\\\",\\\"main\\\"]/mjo-b04\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/product\\\",\\\"main\\\"]/mjo-10ed\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/product\\\",\\\"main\\\"]/mjo-b63\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/product\\\",\\\"main\\\"]/mjo-1126\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/product\\\",\\\"main\\\"]/mjo-b90\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/product\\\",\\\"main\\\"]/mjo-114f\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/product\\\",\\\"main\\\"]/mjo-bc1\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/product\\\",\\\"main\\\"]/mjo-122f\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/product\\\",\\\"main\\\"]/mjo-cdd\"]",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-12b1",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-1453",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-1494",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-14c1",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-152b",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-1560",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-15b4",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-160e",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-1637",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-167c",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-1704",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-1749",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-177c",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-17a1",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-17f7",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-1838",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-18a2",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-18e7",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-1916",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-196d",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-19b2",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-19f5",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-1a3a",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-1a9a",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-1ae1",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-1b4a",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-1b7d",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-1bf1",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-1c18",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-1c67",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-1cbc",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-1d13",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-1d64",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-1db7",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-1e04",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-1e35",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-1ea0",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-1ec7",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-1f16",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-1f6f",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-1fae",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-1ffb",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-2032",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-209d",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-20e6",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-2149",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-21b1",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-21e4",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-2249",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-2282",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-22ff",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-2352",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-23be",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-23e5",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-2430",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-2465",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-24be",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-24f1",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-2569",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-25b2",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-25ed",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-2638",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-26b7",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-26f2",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-2747",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-2782",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-27d3",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-27f6",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-281d",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-2852",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-289d",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-28e7",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-2908",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-2937",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-2992",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-29e1",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-2a0e",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-2a39",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-2a80",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-2ac3",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-2b0e",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-2b55",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-2b90",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-2bc5",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-2bf6",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-2c58",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-2c7f",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-2ccc",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-2cff",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-2d3c",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-2d99",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-2dd8",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-2e30",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-2e85",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-2ed2",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-2f21",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-2f66",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-2fa3",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-3000",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-3047",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-30a4",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-310c",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-312f",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-3182",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-31d7",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-3230",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-3285",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-32be",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-3327",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-335c",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-339b",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-33dc",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-3425",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-3472",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-34b1",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-3514",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-3570",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-35a3",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-35f8",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-3649",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-368a",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-36db",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-3751",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-377c",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-37a9",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-37fe",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-3831",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-3884",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-38b9",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-38f8",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-3935",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-3972",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-39a7",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-39ea",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-3a27",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-3a96",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-3aff",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-3b3e",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-3b75",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-3bc4",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-3c11",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-3c38",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-3c69",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-3c9a",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-3ce4",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-3d21",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-3d70",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-3d9b",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-3e08",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-3e53",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-3ea8",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-3ee9",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-3f16",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-3f4b",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-3f7a",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-3fcb",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-4010",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-4059",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-40a9",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-40f3",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-412c",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-4169",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-41a6",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-4209",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-4244",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-42b1",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-432b",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-4356",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-438b",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-43d8",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-4435",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-4488",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-44df",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-4516",
+    "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-4555"
+  ],
+  "translationReview": {
+    "policy": "original-reviewed-author-pending/v1",
+    "rows": {
+      "[\"mjo/narcissu3/scenario.arc.unpacked/product\",\"main\"]/mjo-choice-1f2/choice/mjo-choice-1f2-case-3": {
+        "state": "pending",
+        "origin": "author-supplement",
+        "credit": "站长",
+        "sources": [],
+        "recipeSha256": "c126c0ab1812bfd01daa9305d2c01115f2b69315a5a62c15d396ddb46a747035",
+        "targetJapanese": "【さよなな】"
+      },
+      "[\"mjo/narcissu3/scenario.arc.unpacked/product\",\"main\"]/mjo-939": {
+        "state": "pending",
+        "origin": "author-supplement",
+        "credit": "站长",
+        "sources": [],
+        "recipeSha256": "c126c0ab1812bfd01daa9305d2c01115f2b69315a5a62c15d396ddb46a747035",
+        "targetJapanese": "てなこと書いてたら、もうマスターギリギリです。"
+      },
+      "[\"mjo/narcissu3/scenario.arc.unpacked/product\",\"main\"]/mjo-984": {
+        "state": "pending",
+        "origin": "author-supplement",
+        "credit": "站长",
+        "sources": [],
+        "recipeSha256": "c126c0ab1812bfd01daa9305d2c01115f2b69315a5a62c15d396ddb46a747035",
+        "targetJapanese": "すみませんー、今回は非常に短くて書く時間がっ"
+      },
+      "[\"mjo/narcissu3/scenario.arc.unpacked/product\",\"main\"]/mjo-9c7": {
+        "state": "pending",
+        "origin": "author-supplement",
+        "credit": "站长",
+        "sources": [],
+        "recipeSha256": "c126c0ab1812bfd01daa9305d2c01115f2b69315a5a62c15d396ddb46a747035",
+        "targetJapanese": "また誤字・脱字とか演出強化したいので、\n差分用意した時には、ここも追加しておきますー\nついでに壁紙とかも。"
+      },
+      "[\"mjo/narcissu3/scenario.arc.unpacked/product\",\"main\"]/mjo-choice-1f2/choice/mjo-choice-1f2-case-1": {
+        "state": "reviewed",
+        "origin": "existing-translation",
+        "credit": "原汉化组",
+        "sources": [
+          {
+            "identity": "narcissu-3rd/product",
+            "text": "【关于水仙３】",
+            "nativeKeys": [
+              "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-choice-1fe/choice/mjo-choice-1fe-case-2"
+            ]
+          }
+        ],
+        "recipeSha256": "c126c0ab1812bfd01daa9305d2c01115f2b69315a5a62c15d396ddb46a747035",
+        "targetJapanese": "【ナルキ３について】"
+      },
+      "[\"mjo/narcissu3/scenario.arc.unpacked/product\",\"main\"]/mjo-choice-1f2/choice/mjo-choice-1f2-case-2": {
+        "state": "reviewed",
+        "origin": "existing-translation",
+        "credit": "原汉化组",
+        "sources": [
+          {
+            "identity": "narcissu-3rd/product",
+            "text": "【其他】",
+            "nativeKeys": [
+              "[\"mjo/narcissu3/update.arc.unpacked/product\",\"main\"]/mjo-choice-1fe/choice/mjo-choice-1fe-case-3"
+            ]
+          }
+        ],
+        "recipeSha256": "c126c0ab1812bfd01daa9305d2c01115f2b69315a5a62c15d396ddb46a747035",
+        "targetJapanese": "【その他】"
+      }
+    }
+  }
+}

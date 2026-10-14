@@ -83,6 +83,3 @@ ikura-production-v1 + adv-story/ikura-v1
 
 Registering an adapter ID or source format before its exact implementation is present makes loading fail closed.
 
-## UI shell migration
-
-The UI shell catalog is served from `/apps/web/.well-known/ui-shells.json`. `classic` is inherited, stable, and default. `next` is experimental and declares `requiresManualAcceptance: true`. Both shells use `ui-shell/1.0.0`; `?ui=next` is non-persistent, auto-promotion is disabled, and changing the default requires a separately recorded human acceptance.

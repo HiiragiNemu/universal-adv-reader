@@ -1,0 +1,32 @@
+/* The cover is outside the filtered viewport. Hide only an incomplete scene;
+   its layout still runs, and all original optical parameters remain intact. */
+.magi-display-startup-cover { visibility: hidden; pointer-events: none; position: fixed; inset: 0; z-index: 20000; }
+/* Retain viewport geometry while parked. display:none left the cold glass
+   cache at 0x0, so every navigation exposed an unprepared, empty loader. */
+html:not(:has(:is(#magi-home-display,#magi-reader-display,.magi-review-theme)[data-optics-ready='true'])) .magi-display-startup-cover { visibility: visible; pointer-events: auto; }
+:is(#magi-home-display,#magi-reader-display):not([data-optics-ready='true']) { visibility: hidden; }
+.magi-display-startup-error { display: none; }
+html:has([data-optics-error='true']) .magi-display-startup-error,
+html[data-loading-assets='error'] .magi-display-startup-error {
+  display: flex; gap: 12px; align-items: center; justify-content: center;
+  position: absolute; z-index: 21; left: 0; right: 0; top: 65%; padding: 12px;
+  background: #171d20; color: #f5f5f5;
+}
+.magi-display-startup-error button { border: 1px solid; padding: 6px 12px; cursor: pointer; }
+/* A failed optional live texture may report its asset error, but must not
+   replace an already published readable scene with the startup cover. */
+html[data-loading-assets='error']:not(:has(:is(#magi-home-display,#magi-reader-display)[data-optics-ready='true'])) .magi-display-startup-cover { visibility: visible; pointer-events: auto; }
+/* One publication boundary for the WHOLE loading image. Never publish only
+   a clean theme field / partial unfiltered bezel while images are decoding. */
+html:not([data-loading-assets='ready']) .magi-loading-screen {
+  opacity: 0 !important; pointer-events: none !important;
+}
+html:is([data-reader-theme='frost'],[data-reader-theme='dark']) .magi-display-startup-cover {
+  background: #000;
+}
+html:is([data-reader-theme='frost'],[data-reader-theme='dark']):not([data-loading-assets='ready']),
+html:is([data-reader-theme='frost'],[data-reader-theme='dark']):not([data-loading-assets='ready']) body {
+  background: #000 !important;
+}
+html:is([data-reader-theme='frost'],[data-reader-theme='dark']):not([data-loading-assets='ready'])
+  .magi-app-backdrop { visibility: hidden !important; }

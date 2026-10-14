@@ -1,0 +1,21 @@
+title = "Universal ADV source publication: all default rules plus narrow native-field exceptions"
+[extend]
+useDefault = true
+
+# Exact game media basenames were verified against adjacent playbackPath fields.
+# Do not ignore whole files, arbitrary keys, or any provider-specific token rule.
+[[rules]]
+id = "generic-api-key"
+[[rules.allowlists]]
+description = "Native media basename, not an API credential"
+condition = "AND"
+regexTarget = "match"
+paths = ['''^apps/classic-reader/public/(data/legacy-vn/|native-reader-revisions/).+\.json$''']
+regexes = ['''^sourceKey": "(?:03_asioto_01_fadeout|hime1_0538b2|himeko-0147b|himeko-0148b|himeko-0149b|himeko-0152b|himeko-0173b|himeko-0194b|himeko-0195d|himeko-0213b|himeko-0218b|himeko-0231d|himeko-0237b|himeko-0258b|n3hisa_0247_1|n3hisa_0479_1|n3hisa_0479_2|n3hisa_0485_1|n3hisa_0485_2|n3hisa_0571_2|n3hisa_0671_e|n3hisa_0674_e|n3hisa_0675_e|n3hisa_0945_1|n3hisa_0945_2|n3tisa_0594c|n3tisa_0928b|np4imo_1097e|np4imo_1098e|np4imo_1109_e2|npetcm35_012|npetcm35_014|npetcm35_016|npetcm35_017|npetcm35_018|npetcm36_014|npetcm36_015|npetcm36_017|npetcm36_018|npetcm36_019|npetcm36_021|npetcm36_024|npetcm36_025|npetcm37_012|npetcm37_014|npetcm37_015|npetcm37_016|npetcm37_018|npetcm37_019|npetcm37_021|npetcm37_024|npetcm37_025|npetcm37_026|npetcm37_028|npetcm37_029|npetcm37_041|npetcm37_042|npetcm37_045|npetcm37_046|npetcm37_048|npetcm37_049|npetcm37_051|npetcm37_052|npetcm37_054|npetcm37_056|npetcm37_058|npetcm37_059|npetcm37_061|npetcm37_062|npetcm38_012|npetcm38_014|npetcm38_015|npetcm38_016|npetcm38_017|npetcm38_019|npetcm38_021|npetcm38_024|setsumi_0125b|setsumi_0135b|setsumi_0142b|setsumi_0148b|setsumi_0152b|setsumi_0192b|setsumi_0195b|setsumi_0197b|setsumi_0198b|setsumi_0243b|setsumi_0269d|setsumi_0283b|setsumi_0319b|setsumi_0349b|setsumi_0362b|setsumi_0371c|setsumi_0372b|setsumi_0378b|setsumi_0381c|setsumi_0382b|setsumi_0387_1|setsumi_0387_2|setsumi_0389b|setsumi_0391b|setsumi_0391c|setsumi_0392b|setsumi_0413c|setsumi_0415b|setsumi_0432b|setsumi_0437b|shanai_michi01_yoru|shanai_michi02_yoru|yohanp_1234_01|yohanp_1234_02|yohanp_1355_02)"$''']
+
+[[rules.allowlists]]
+description = "Named SHA-256 checksums of native control tokens"
+condition = "AND"
+regexTarget = "match"
+paths = ['''^apps/classic-reader/public/data/legacy-vn/.+\.alignment\.json$''']
+regexes = ['''^(exactCNReferenceTokenSha256|remainingNativeTokensSha256)":"[a-f0-9]{64}"$''']

@@ -1,0 +1,96 @@
+/* The viewport, not the document, owns the tube. 100vh in the old font
+   wrapper is the LARGE mobile viewport, and used to scroll the whole monitor
+   underneath the browser chrome even though the Reader already scrolls inside. */
+@layer reader-visual-revision {
+  html:has(:is(#magi-home-display,#magi-reader-display,.magi-loading-screen)),
+  html:has(:is(#magi-home-display,#magi-reader-display,.magi-loading-screen)) body {
+    height: 100%; min-height: 0 !important; overflow: hidden !important;
+    overscroll-behavior: none;
+  }
+  html body .magi-site-font-scope:has(:is(#magi-home-display,#magi-reader-display,.magi-loading-screen)) {
+    position: fixed !important; inset: 0 !important;
+    height: 100dvh !important; min-height: 0 !important; max-height: 100dvh !important;
+    overflow: hidden !important;
+  }
+  html body :is(#magi-home-display,#magi-reader-display) {
+    position: relative !important; height: 100% !important; min-height: 0 !important;
+    max-height: 100% !important; width: 100%;
+  }
+
+  /* Like night: one stationary projection underneath transparent scrolling
+     compartments, not several viewport-attached backgrounds in composited tiles. */
+  html[data-reader-theme='frost'] body :is(#magi-home-display,#magi-reader-display) {
+    background: var(--magi-cold-field) !important;
+  }
+  html[data-reader-theme='frost'] body :is(#magi-home-display,#magi-reader-display) :is(
+    .magi-reader-main,.magi-reader-document,.magi-reader-header,
+    .magi-home-story-scroll,.magi-home-toolbar-shell,.magi-home-light-sidebar,.magi-brand-panel) {
+    background: transparent !important; background-attachment: scroll !important;
+  }
+  html[data-reader-theme='frost'] body :is(#magi-home-display,#magi-reader-display) :is(
+    .magi-reader-sidebar,.magi-home-sidebar,.magi-floating-window,.magi-reader-utility-panel,.magi-reader-font-control) {
+    background-attachment: scroll !important;
+  }
+  html body #magi-reader-display .magi-reader-main { min-height: 0; }
+
+  /* Readiness covers the real mounted wear image AND the filter/cache, not
+     merely a second Image() preload that can finish before the painted one. */
+  html[data-reader-theme='frost'][data-screen-glass-damage='true'] .magi-loading-screen:not([data-film-ready='true']) {
+    opacity: 0 !important; pointer-events: none !important;
+  }
+}
+
+/* These palette fields are global from the initial stylesheet; they do not
+   depend on a home/Reader element existing yet. */
+html[data-reader-theme='frost'] {
+  --magi-cold-field:
+    radial-gradient(ellipse 28vw 23vh at 76vw 35vh, rgba(12,107,109,.42), transparent 78%),
+    radial-gradient(ellipse 23vw 38vh at 50vw 72vh, rgba(0,61,68,.35), transparent 76%),
+    radial-gradient(ellipse 24vw 30vh at 40vw 24vh, rgba(0,5,14,.64), transparent 84%),
+    linear-gradient(106deg, #010910 0%, #01101a 19%, #012029 45%, #012e34 74%, #001018 100%);
+}
+html[data-reader-theme='dark'] {
+  --magi-tube-field: radial-gradient(ellipse 60vw 62vh at 51vw 46vh,#293922 0%,#1c2a17 40%,#10190c 72%,#030702 100%);
+}
+html[data-reader-theme='dark'][data-night-phosphor='amber'] {
+  --magi-tube-field: radial-gradient(ellipse 60vw 62vh at 51vw 46vh,#433337 0%,#2c2024 40%,#190f13 72%,#070305 100%);
+}
+html[data-reader-theme='dark'] .magi-loading-screen { background: var(--magi-tube-field); }
+html[data-reader-theme='frost'] .magi-loading-screen { background: var(--magi-cold-field); }
+@layer reader-visual-revision {
+  html[data-screen-curvature='true'][data-reader-theme='dark'],
+  html[data-screen-curvature='true'][data-reader-theme='dark'] body,
+  html[data-screen-curvature='true'][data-reader-theme='dark'] :is(.magi-site-font-scope,.magi-display-startup-cover) {
+    background: #000 !important;
+  }
+}
+
+/* Only inherited paint tokens cross the ruler's style boundary. Its labels
+   retain the same pixel font and phosphor shadows as the surrounding scene. */
+html[data-screen-pixel-font='true'] .magi-reader-film-viewport {
+  --magi-ruler-font: var(--magi-night-pixel-font);
+  --magi-ruler-label-weight: 400;
+}
+html[data-reader-theme='frost'] .magi-reader-film-viewport {
+  --magi-ruler-shadow: var(--magi-display-text-echo);
+}
+html[data-reader-theme='dark'] .magi-reader-film-viewport {
+  --magi-ruler-shadow: var(--magi-display-text-echo),var(--magi-global-text-registration);
+}
+
+/* Skipped descendants can remain empty in a freshly revealed composited tile
+   while their border is already painted through the viewport lens. Both tube
+   palettes use native eager card paint; plain displays retain offscreen skips. */
+html[data-screen-curvature='true'] :is(.magi-folder-card-collapsed,.magi-sidebar-folder-collapsed) {
+  content-visibility: visible;
+  contain-intrinsic-size: none;
+}
+
+/* This host uses parser-time theme state, including gaps between route mounts.
+   It replaces the retired blue/purple grid node rather than covering it later. */
+.magi-app-backdrop { position: fixed; inset: 0; z-index: -50; pointer-events: none; background: #e6dfcf; }
+html[data-reader-theme='paper'] .magi-app-backdrop { background: #f0e6d2; }
+html[data-reader-theme='green'] .magi-app-backdrop { background: #c7edcc; }
+html[data-reader-theme='dark'] .magi-app-backdrop { background: var(--magi-tube-field,#030702); }
+html[data-reader-theme='frost'] .magi-app-backdrop { background: var(--magi-cold-field,#010910); }
+html[data-screen-curvature='true'] .magi-app-backdrop { background: #000; }

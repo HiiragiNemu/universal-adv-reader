@@ -1,0 +1,65 @@
+/* Shared viewport glass: home, Reader and review mount the same material.
+   Chipping lives in the SVG itself so route stylesheet loading cannot drop it. */
+@layer reader-visual-revision {
+  html[data-reader-theme='frost'] { --magi-frost-registration-filter: ; }
+  html[data-reader-theme='frost'][data-screen-glass-damage='false'] body
+    :is(#magi-home-display,#magi-reader-display,.magi-review-theme,.magi-loading-screen) {
+    --magi-frost-glass-filter: !important;
+  }
+  html[data-reader-theme='frost'][data-screen-glass-damage='false'] body
+    :is(#magi-home-display,#magi-reader-display,.magi-review-theme,.magi-loading-screen)
+    .magi-reader-film-surface[data-frost-glass='shared'] .magi-reader-film-wear,
+  html[data-reader-theme='frost'][data-screen-glass-damage='false'] .magi-glass-refraction { display: none !important; }
+  html[data-reader-theme='frost'][data-screen-registration='true'][data-screen-curvature='false']:not([data-ios-flat='true']) {
+    --magi-frost-registration-filter: url('#magi-scene-registration');
+  }
+  html[data-reader-theme='frost'] body :is(#magi-home-display,#magi-reader-display,.magi-review-theme)[data-glass-ready='true'] {
+    filter: var(--magi-frost-registration-filter,) var(--magi-frost-glass-filter) !important;
+  }
+  html[data-reader-theme='frost'][data-screen-curvature='true'] body
+    :is(#magi-home-display,#magi-reader-display,.magi-review-theme)[data-glass-ready='true']:has(.magi-reader-tube-surface[data-lens-ready='true']) {
+    filter: var(--magi-active-tube-filter) var(--magi-frost-glass-filter) !important;
+  }
+  html[data-reader-theme] body :is(#magi-home-display.magi-home-frost-root,
+    #magi-reader-display.magi-reader-theme-frost, .magi-review-theme[data-reader-theme='frost'], .magi-loading-screen)
+    .magi-reader-film-surface[data-frost-glass='shared'] {
+    --magi-reader-left-material-fade: linear-gradient(90deg,rgba(0,0,0,.70),rgba(0,0,0,.84) 16%,#000 34%) !important;
+    position: fixed; inset: 0; pointer-events: none; overflow: hidden;
+    z-index: 1101 !important;
+    color: rgba(220,255,245,.76) !important;
+    opacity: .96 !important;
+    mask-image: var(--magi-reader-left-material-fade) !important;
+    mix-blend-mode: screen;
+  }
+
+  html[data-reader-theme] body .magi-reader-film-surface[data-frost-glass='shared'] .magi-reader-film-wear {
+    display: block !important; position: absolute; inset: 0; width: 100%; height: 100%;
+    object-fit: fill !important; max-width: none !important;
+    color: rgba(220,255,245,.76) !important;
+    opacity: .78 !important; stroke-width: .72 !important;
+    filter: drop-shadow(.42px 0 rgba(255,255,255,.42))
+      drop-shadow(-.34px 0 rgba(104,228,215,.24)) blur(.16px) !important;
+    mask-image: var(--magi-reader-left-material-fade) !important;
+  }
+
+  html[data-reader-theme] body .magi-reader-film-surface[data-frost-glass='shared'] .magi-reader-film-glass {
+    opacity: .9 !important;
+    mask-image: var(--magi-reader-left-material-fade) !important;
+  }
+
+  .magi-glass-filter-definitions { position: absolute; pointer-events: none; }
+  .magi-glass-refraction {
+    position: fixed; inset: 0; z-index: 1100; pointer-events: none;
+    mask-image: url('/textures/frost-glass-scratches.png');
+    mask-mode: luminance;
+    mask-size: 100% 100%; mask-repeat: no-repeat;
+    background: rgba(0,18,23,.62); transform: translate(-.7px,.4px);
+  }
+
+  html body #magi-reader-display.magi-reader-theme-frost.magi-reader-theme-dark
+    .magi-reader-speaker-label {
+    color: #bce9df !important;
+    -webkit-text-fill-color: #bce9df !important;
+    text-shadow: 0 0 1px rgba(190,255,241,.9), var(--magi-display-text-echo) !important;
+  }
+}

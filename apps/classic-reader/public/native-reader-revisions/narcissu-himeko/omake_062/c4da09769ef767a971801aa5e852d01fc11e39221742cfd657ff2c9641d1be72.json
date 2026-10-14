@@ -1,0 +1,3941 @@
+{
+  "schema": "native-reader-revision/v1",
+  "storyId": "narcissu-himeko/omake_062",
+  "revision": "c4da09769ef767a971801aa5e852d01fc11e39221742cfd657ff2c9641d1be72",
+  "parentRevision": null,
+  "baseSourceSha256": "e7494f6f40c5e26e47eddc41137d18cebe278f9d65c6c4013375cacbd11c9d81",
+  "parentSourceSha256": "e7494f6f40c5e26e47eddc41137d18cebe278f9d65c6c4013375cacbd11c9d81",
+  "patchSha256": "1b567e80bec78e974ba17b360ac82b953b316c5b3ecc23d9d944f6b10a3ef302",
+  "source": {
+    "schema": "native-reader-edit-source/v1",
+    "storyId": "narcissu-himeko/omake_062",
+    "binding": {
+      "route": "61ce1b5d7fce08a354caa97ede64f6bb980d88c0352e1a071e60eee7c6561738",
+      "cnText": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "jpText": "9c5a8860ac4349ce0799a8045a54b06ab24b3279dd2821e3dc46d513bc6b71e8",
+      "adapter": "d66d0576de230228f884ae0c70be53334ad5a5395efc575d39dd2f6e55806f39",
+      "normalizedStory": "3cb85478287bbd717fe2a79dac041c4471c34727eb4733a1e5b805f4efb075b2"
+    },
+    "nativeSources": [
+      {
+        "path": "archive/derived/scripts/narcissu10-original-ja-JP/narci_himeko/scenario.arc.unpacked/おまけ.plain.mjo",
+        "sha256": "66fdd749ede243cf1f6a132d3398ef54f2c1ee8bf7b3745b75f0a9a7e208689b"
+      },
+      {
+        "path": "archive/derived/scripts/narcissu10-original-ja-JP/narci_himeko/scenario.arc.unpacked/おまけ.script.json",
+        "sha256": "ceb30475c493f3c5b07f8b93508681d90b8d046c1080c3e77cbb7f8d76435413"
+      },
+      {
+        "path": "archive/derived/scripts/narcissu10-original-ja-JP/narci_himeko/scenario.arc.unpacked/おまけ.strings.json",
+        "sha256": "668b616df83f0732d4d28161f3964ac94752eee7b1e86edb507a024890d0e5bf"
+      },
+      {
+        "path": "archive/derived/scripts/narcissu10-original/narci_himeko/scenario.arc.unpacked/おまけ.plain.mjo",
+        "sha256": "66fdd749ede243cf1f6a132d3398ef54f2c1ee8bf7b3745b75f0a9a7e208689b"
+      },
+      {
+        "path": "archive/derived/scripts/narcissu10-original/narci_himeko/scenario.arc.unpacked/おまけ.script.json",
+        "sha256": "c939c411175d7bc793b07a84f3379e08d5f69e61d8b5d756b9cfff5ee19d0771"
+      },
+      {
+        "path": "archive/derived/scripts/narcissu10-original/narci_himeko/scenario.arc.unpacked/おまけ.strings.json",
+        "sha256": "8bbadc5ede02e0a13150c7965890f31e121c632968b3183fcaf6cbe5d5d66a40"
+      },
+      {
+        "path": "archive/raw/narcissu10-original-ja-JP/narci_himeko/scenario.arc.unpacked/おまけ.mjo",
+        "sha256": "f23c7f73030ebe0bc0225deaa2d973032c209c3cc125ec68abf14c0c77d49f79"
+      },
+      {
+        "path": "archive/raw/narcissu10-original/narci_himeko/scenario.arc.unpacked/おまけ.mjo",
+        "sha256": "f23c7f73030ebe0bc0225deaa2d973032c209c3cc125ec68abf14c0c77d49f79"
+      }
+    ],
+    "rows": [
+      {
+        "key": "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/header",
+        "target": null,
+        "allowed": [],
+        "speakerReason": "structural-row",
+        "baseline": {
+          "text": "--- Start: おまけ.txt Section 1 ---",
+          "speaker": ""
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-b5",
+        "target": {
+          "variantId": "mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91",
+          "sectionId": "main",
+          "eventId": "mjo-b5"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "■短篇　＃０６２　淡路服务区",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-15f",
+        "target": {
+          "variantId": "mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91",
+          "sectionId": "main",
+          "eventId": "mjo-15f"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "拍完照片后，英特格拉再次驶上了路。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-1a0",
+        "target": {
+          "variantId": "mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91",
+          "sectionId": "main",
+          "eventId": "mjo-1a0"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "沿着濑户大桥漫长的直道，继续朝淡路岛驶去。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-1e5",
+        "target": {
+          "variantId": "mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91",
+          "sectionId": "main",
+          "eventId": "mjo-1e5"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "抬头望去，太阳还高高挂着。\n不久，我们就要驶过这座桥了。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-24f",
+        "target": {
+          "variantId": "mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91",
+          "sectionId": "main",
+          "eventId": "mjo-24f"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "……看来会比想象中更顺利地到达啊。\n天色还早，要不要顺路去个什么地方……",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-2c1",
+        "target": {
+          "variantId": "mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91",
+          "sectionId": "main",
+          "eventId": "mjo-2c1"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "现在这个时间，就算到了目的地，\n离天黑似乎也还会有些余裕。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-331",
+        "target": {
+          "variantId": "mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91",
+          "sectionId": "main",
+          "eventId": "mjo-331"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "我一边想着这些，一边漫不经心地握着方向盘，这时……",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-3e4",
+        "target": {
+          "variantId": "mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91",
+          "sectionId": "main",
+          "eventId": "mjo-3e4"
+        },
+        "allowed": [
+          "text",
+          "speaker"
+        ],
+        "speakerReason": "separate-native-message",
+        "baseline": {
+          "text": "「……摩天轮……」",
+          "speaker": "濑津美"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-418",
+        "target": {
+          "variantId": "mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91",
+          "sectionId": "main",
+          "eventId": "mjo-418"
+        },
+        "allowed": [
+          "text",
+          "speaker"
+        ],
+        "speakerReason": "separate-native-message",
+        "baseline": {
+          "text": "「嗯？摩天轮？」",
+          "speaker": "主人公"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-441",
+        "target": {
+          "variantId": "mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91",
+          "sectionId": "main",
+          "eventId": "mjo-441"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "听到她的话，我朝车窗外望去，\n看见了一座巨大的摩天轮。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-4b2",
+        "target": {
+          "variantId": "mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91",
+          "sectionId": "main",
+          "eventId": "mjo-4b2"
+        },
+        "allowed": [
+          "text",
+          "speaker"
+        ],
+        "speakerReason": "separate-native-message",
+        "baseline": {
+          "text": "「哦——这种地方居然也有摩天轮啊……」",
+          "speaker": "主人公"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-524",
+        "target": {
+          "variantId": "mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91",
+          "sectionId": "main",
+          "eventId": "mjo-524"
+        },
+        "allowed": [
+          "text",
+          "speaker"
+        ],
+        "speakerReason": "separate-native-message",
+        "baseline": {
+          "text": "「嗯，在淡路服务区里……」",
+          "speaker": "濑津美"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-561",
+        "target": {
+          "variantId": "mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91",
+          "sectionId": "main",
+          "eventId": "mjo-561"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "听说有的服务区甚至还有温泉或电影院，\n不过，摩天轮应该还是挺少见的。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-5e5",
+        "target": {
+          "variantId": "mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91",
+          "sectionId": "main",
+          "eventId": "mjo-5e5"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "她透过车窗，一动不动地望着那座摩天轮。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-624",
+        "target": {
+          "variantId": "mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91",
+          "sectionId": "main",
+          "eventId": "mjo-624"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "……总觉得，有点像个小孩子。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-65f",
+        "target": {
+          "variantId": "mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91",
+          "sectionId": "main",
+          "eventId": "mjo-65f"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "再加上刚才拍照时的事，\n该说让人忍不住微笑吗……正因为她平常是那副样子，我才更有这种感觉。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-6ee",
+        "target": {
+          "variantId": "mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91",
+          "sectionId": "main",
+          "eventId": "mjo-6ee"
+        },
+        "allowed": [
+          "text",
+          "speaker"
+        ],
+        "speakerReason": "separate-native-message",
+        "baseline": {
+          "text": "「难不成，你想去看看？」",
+          "speaker": "主人公"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-75a",
+        "target": {
+          "variantId": "mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91",
+          "sectionId": "main",
+          "eventId": "mjo-75a"
+        },
+        "allowed": [
+          "text",
+          "speaker"
+        ],
+        "speakerReason": "separate-native-message",
+        "baseline": {
+          "text": "「诶……」",
+          "speaker": "濑津美"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-78c",
+        "target": {
+          "variantId": "mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91",
+          "sectionId": "main",
+          "eventId": "mjo-78c"
+        },
+        "allowed": [
+          "text",
+          "speaker"
+        ],
+        "speakerReason": "separate-native-message",
+        "baseline": {
+          "text": "「不是，你从刚才开始就一直盯着摩天轮看，\n　我还以为你想坐呢。」",
+          "speaker": "主人公"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-827",
+        "target": {
+          "variantId": "mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91",
+          "sectionId": "main",
+          "eventId": "mjo-827"
+        },
+        "allowed": [
+          "text",
+          "speaker"
+        ],
+        "speakerReason": "separate-native-message",
+        "baseline": {
+          "text": "「……没什么……没有那种事……」",
+          "speaker": "濑津美"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-856",
+        "target": {
+          "variantId": "mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91",
+          "sectionId": "main",
+          "eventId": "mjo-856"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "虽然嘴上这样回答，我却注意到了她的变化。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-89f",
+        "target": {
+          "variantId": "mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91",
+          "sectionId": "main",
+          "eventId": "mjo-89f"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "平时，她只会说一句“没什么……”就结束了，\n现在却还接上了“没有那种事……”。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-907",
+        "target": {
+          "variantId": "mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91",
+          "sectionId": "main",
+          "eventId": "mjo-907"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "想想这些天的相处，她既然会说到这个份上，\n心里应该是相当感兴趣的吧。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-990",
+        "target": {
+          "variantId": "mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91",
+          "sectionId": "main",
+          "eventId": "mjo-990"
+        },
+        "allowed": [
+          "text",
+          "speaker"
+        ],
+        "speakerReason": "separate-native-message",
+        "baseline": {
+          "text": "「好，那就去看看吧。你给我带路，好吗？」",
+          "speaker": "主人公"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-a08",
+        "target": {
+          "variantId": "mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91",
+          "sectionId": "main",
+          "eventId": "mjo-a08"
+        },
+        "allowed": [
+          "text",
+          "speaker"
+        ],
+        "speakerReason": "separate-native-message",
+        "baseline": {
+          "text": "「……………」",
+          "speaker": "濑津美"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-a2d",
+        "target": {
+          "variantId": "mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91",
+          "sectionId": "main",
+          "eventId": "mjo-a2d"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "其实就算不问，我也知道沿着这条路开下去就能到。\n既然是服务区，也根本谈不上什么路线。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-ab9",
+        "target": {
+          "variantId": "mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91",
+          "sectionId": "main",
+          "eventId": "mjo-ab9"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "只是，难得有这样的机会，我想营造一种和她一起出游的感觉。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-b15",
+        "target": {
+          "variantId": "mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91",
+          "sectionId": "main",
+          "eventId": "mjo-b15"
+        },
+        "allowed": [
+          "text",
+          "speaker"
+        ],
+        "speakerReason": "separate-native-message",
+        "baseline": {
+          "text": "「好了，别露出那种表情。\n　是我自己想去看看，这样总没关系吧？」",
+          "speaker": "主人公"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-b81",
+        "target": {
+          "variantId": "mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91",
+          "sectionId": "main",
+          "eventId": "mjo-b81"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "听到这句话，她还是沉默不语，不过，过了一会儿……",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-bf5",
+        "target": {
+          "variantId": "mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91",
+          "sectionId": "main",
+          "eventId": "mjo-bf5"
+        },
+        "allowed": [
+          "text",
+          "speaker"
+        ],
+        "speakerReason": "separate-native-message",
+        "baseline": {
+          "text": "「就这样……过了桥马上就到了……」",
+          "speaker": "濑津美"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-c3d",
+        "target": {
+          "variantId": "mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91",
+          "sectionId": "main",
+          "eventId": "mjo-c3d"
+        },
+        "allowed": [
+          "text",
+          "speaker"
+        ],
+        "speakerReason": "separate-native-message",
+        "baseline": {
+          "text": "「知道了。那就顺路去看看吧。」",
+          "speaker": "主人公"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-cd2",
+        "target": {
+          "variantId": "mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91",
+          "sectionId": "main",
+          "eventId": "mjo-cd2"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "又过了一会儿，我们到了淡路服务区。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-d26",
+        "target": {
+          "variantId": "mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91",
+          "sectionId": "main",
+          "eventId": "mjo-d26"
+        },
+        "allowed": [
+          "text",
+          "speaker"
+        ],
+        "speakerReason": "separate-native-message",
+        "baseline": {
+          "text": "「哦——还真是紧挨着大海啊……」",
+          "speaker": "主人公"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-d79",
+        "target": {
+          "variantId": "mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91",
+          "sectionId": "main",
+          "eventId": "mjo-d79"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "我们两个下了车，走到外面。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-db2",
+        "target": {
+          "variantId": "mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91",
+          "sectionId": "main",
+          "eventId": "mjo-db2"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "比起刚才在桥上时，这里的风多少平缓了一些。\n不过，大概也是因为时节的关系，这里几乎没什么人。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-e43",
+        "target": {
+          "variantId": "mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91",
+          "sectionId": "main",
+          "eventId": "mjo-e43"
+        },
+        "allowed": [
+          "text",
+          "speaker"
+        ],
+        "speakerReason": "separate-native-message",
+        "baseline": {
+          "text": "「不过，除了有个摩天轮，其他地方和普通服务区也没什么区别啊……」",
+          "speaker": "主人公"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-ec3",
+        "target": {
+          "variantId": "mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91",
+          "sectionId": "main",
+          "eventId": "mjo-ec3"
+        },
+        "allowed": [
+          "text",
+          "speaker"
+        ],
+        "speakerReason": "separate-native-message",
+        "baseline": {
+          "text": "「嗯……」",
+          "speaker": "濑津美"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-ee4",
+        "target": {
+          "variantId": "mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91",
+          "sectionId": "main",
+          "eventId": "mjo-ee4"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "甚至比起途中去过的东名神服务区，\n这里还让人觉得有些冷清。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-f61",
+        "target": {
+          "variantId": "mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91",
+          "sectionId": "main",
+          "eventId": "mjo-f61"
+        },
+        "allowed": [
+          "text",
+          "speaker"
+        ],
+        "speakerReason": "separate-native-message",
+        "baseline": {
+          "text": "「算了，走吧。」",
+          "speaker": "主人公"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-f96",
+        "target": {
+          "variantId": "mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91",
+          "sectionId": "main",
+          "eventId": "mjo-f96"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "我像是推着仍有些不情愿的她的后背一样，\n朝摩天轮的乘坐入口走去。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-1022",
+        "target": {
+          "variantId": "mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91",
+          "sectionId": "main",
+          "eventId": "mjo-1022"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "嘛，虽然看起来不情不愿的，但我并不觉得她真的不愿意。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-106d",
+        "target": {
+          "variantId": "mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91",
+          "sectionId": "main",
+          "eventId": "mjo-106d"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "真不愿意的话，她大概连车都不会下。\n一起相处了这么些日子，这一点我也渐渐明白了。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-112d",
+        "target": {
+          "variantId": "mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91",
+          "sectionId": "main",
+          "eventId": "mjo-112d"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "不久，我们来到入口，\n却站在价目表前，两个人一起陷入了沉思。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-11a6",
+        "target": {
+          "variantId": "mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91",
+          "sectionId": "main",
+          "eventId": "mjo-11a6"
+        },
+        "allowed": [
+          "text",
+          "speaker"
+        ],
+        "speakerReason": "separate-native-message",
+        "baseline": {
+          "text": "「……一个人六百日元啊……还挺贵的……」",
+          "speaker": "主人公"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-11df",
+        "target": {
+          "variantId": "mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91",
+          "sectionId": "main",
+          "eventId": "mjo-11df"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "看来，站在我身旁的她也持同样的意见。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-121e",
+        "target": {
+          "variantId": "mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91",
+          "sectionId": "main",
+          "eventId": "mjo-121e"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "明明平常很少流露感情，\n现在却明显露出了出乎意料的表情。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-128e",
+        "target": {
+          "variantId": "mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91",
+          "sectionId": "main",
+          "eventId": "mjo-128e"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "嘛，我确实不太想乱花钱……",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-choice-12f4/choice/mjo-choice-12f4-case-1",
+        "target": {
+          "variantId": "mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91",
+          "sectionId": "main",
+          "eventId": "mjo-choice-12f4",
+          "choiceId": "mjo-choice-12f4-case-1"
+        },
+        "allowed": [
+          "choiceLabel"
+        ],
+        "speakerReason": "structural-row",
+        "baseline": {
+          "text": "【犹豫】",
+          "speaker": "选项",
+          "choiceLabel": "犹豫"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-choice-12f4/choice/mjo-choice-12f4-case-2",
+        "target": {
+          "variantId": "mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91",
+          "sectionId": "main",
+          "eventId": "mjo-choice-12f4",
+          "choiceId": "mjo-choice-12f4-case-2"
+        },
+        "allowed": [
+          "choiceLabel"
+        ],
+        "speakerReason": "structural-row",
+        "baseline": {
+          "text": "【乘坐】",
+          "speaker": "选项",
+          "choiceLabel": "乘坐"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-131a",
+        "target": {
+          "variantId": "mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91",
+          "sectionId": "main",
+          "eventId": "mjo-131a"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "唔，真让人犹豫。\n想到以后的事，实在不想浪费钱。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-137a",
+        "target": {
+          "variantId": "mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91",
+          "sectionId": "main",
+          "eventId": "mjo-137a"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "可是，难得都来到这里了，\n更何况，这家伙看起来也很想坐……",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-13ec",
+        "target": {
+          "variantId": "mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91",
+          "sectionId": "main",
+          "eventId": "mjo-13ec"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "想着这些，我正打算和身旁的她商量一下……",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-1464",
+        "target": {
+          "variantId": "mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91",
+          "sectionId": "main",
+          "eventId": "mjo-1464"
+        },
+        "allowed": [
+          "text",
+          "speaker"
+        ],
+        "speakerReason": "separate-native-message",
+        "baseline": {
+          "text": "「……那个……」",
+          "speaker": "濑津美"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-1489",
+        "target": {
+          "variantId": "mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91",
+          "sectionId": "main",
+          "eventId": "mjo-1489"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "没想到，先开口的反而是她。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-14db",
+        "target": {
+          "variantId": "mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91",
+          "sectionId": "main",
+          "eventId": "mjo-14db"
+        },
+        "allowed": [
+          "text",
+          "speaker"
+        ],
+        "speakerReason": "separate-native-message",
+        "baseline": {
+          "text": "「怎么了？比想象中贵，要不还是算了？」",
+          "speaker": "主人公"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-154a",
+        "target": {
+          "variantId": "mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91",
+          "sectionId": "main",
+          "eventId": "mjo-154a"
+        },
+        "allowed": [
+          "text",
+          "speaker"
+        ],
+        "speakerReason": "separate-native-message",
+        "baseline": {
+          "text": "「…………」",
+          "speaker": "濑津美"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-156d",
+        "target": {
+          "variantId": "mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91",
+          "sectionId": "main",
+          "eventId": "mjo-156d"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "不过，你想坐的话……",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-15a0",
+        "target": {
+          "variantId": "mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91",
+          "sectionId": "main",
+          "eventId": "mjo-15a0"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "还没等我把这句话说出口，",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-1600",
+        "target": {
+          "variantId": "mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91",
+          "sectionId": "main",
+          "eventId": "mjo-1600"
+        },
+        "allowed": [
+          "text",
+          "speaker"
+        ],
+        "speakerReason": "separate-native-message",
+        "baseline": {
+          "text": "「我、我也可以用儿童票……」",
+          "speaker": "濑津美"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-1644",
+        "target": {
+          "variantId": "mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91",
+          "sectionId": "main",
+          "eventId": "mjo-1644"
+        },
+        "allowed": [
+          "text",
+          "speaker"
+        ],
+        "speakerReason": "separate-native-message",
+        "baseline": {
+          "text": "「啊？」",
+          "speaker": "主人公"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-1694",
+        "target": {
+          "variantId": "mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91",
+          "sectionId": "main",
+          "eventId": "mjo-1694"
+        },
+        "allowed": [
+          "text",
+          "speaker"
+        ],
+        "speakerReason": "separate-native-message",
+        "baseline": {
+          "text": "「努、努力一下的话，也许能行……」",
+          "speaker": "濑津美"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-16dc",
+        "target": {
+          "variantId": "mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91",
+          "sectionId": "main",
+          "eventId": "mjo-16dc"
+        },
+        "allowed": [
+          "text",
+          "speaker"
+        ],
+        "speakerReason": "separate-native-message",
+        "baseline": {
+          "text": "「你在说什么啊？」",
+          "speaker": "主人公"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-1711",
+        "target": {
+          "variantId": "mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91",
+          "sectionId": "main",
+          "eventId": "mjo-1711"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "难道她以为，我是嫌票价太贵，\n所以一直犹豫着，打算不坐了吗？",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-1787",
+        "target": {
+          "variantId": "mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91",
+          "sectionId": "main",
+          "eventId": "mjo-1787"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "可就算是这样，好歹也二十二岁了，这未免太拼了吧。\n虽然只看外表的话，或许还真能蒙混过去。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-180d",
+        "target": {
+          "variantId": "mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91",
+          "sectionId": "main",
+          "eventId": "mjo-180d"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "……不过，虽然看起来没什么兴趣，\n她果然还是想坐一坐摩天轮啊。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-188c",
+        "target": {
+          "variantId": "mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91",
+          "sectionId": "main",
+          "eventId": "mjo-188c"
+        },
+        "allowed": [
+          "text",
+          "speaker"
+        ],
+        "speakerReason": "separate-native-message",
+        "baseline": {
+          "text": "「好了，别说傻话了，走吧。」",
+          "speaker": "主人公"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-18fa",
+        "target": {
+          "variantId": "mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91",
+          "sectionId": "main",
+          "eventId": "mjo-18fa"
+        },
+        "allowed": [
+          "text",
+          "speaker"
+        ],
+        "speakerReason": "separate-native-message",
+        "baseline": {
+          "text": "「啊，嗯……」",
+          "speaker": "濑津美"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-191f",
+        "target": {
+          "variantId": "mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91",
+          "sectionId": "main",
+          "eventId": "mjo-191f"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "我买了票，和她一起坐了进去。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-1985",
+        "target": {
+          "variantId": "mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91",
+          "sectionId": "main",
+          "eventId": "mjo-1985"
+        },
+        "allowed": [
+          "text",
+          "speaker"
+        ],
+        "speakerReason": "separate-native-message",
+        "baseline": {
+          "text": "「那就坐吧。」",
+          "speaker": "主人公"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-19dd",
+        "target": {
+          "variantId": "mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91",
+          "sectionId": "main",
+          "eventId": "mjo-19dd"
+        },
+        "allowed": [
+          "text",
+          "speaker"
+        ],
+        "speakerReason": "separate-native-message",
+        "baseline": {
+          "text": "「啊，嗯……」",
+          "speaker": "濑津美"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-1a02",
+        "target": {
+          "variantId": "mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91",
+          "sectionId": "main",
+          "eventId": "mjo-1a02"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "难得来一趟，在这里省钱也没什么意义。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-1a79",
+        "target": {
+          "variantId": "mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91",
+          "sectionId": "main",
+          "eventId": "mjo-1a79"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "咯噔、咯噔的声音，伴随着摇晃。\n座舱一点一点，向上、再向上升去。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-1af8",
+        "target": {
+          "variantId": "mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91",
+          "sectionId": "main",
+          "eventId": "mjo-1af8"
+        },
+        "allowed": [
+          "text",
+          "speaker"
+        ],
+        "speakerReason": "separate-native-message",
+        "baseline": {
+          "text": "「哦，还摇得挺厉害的……」",
+          "speaker": "主人公"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-1b27",
+        "target": {
+          "variantId": "mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91",
+          "sectionId": "main",
+          "eventId": "mjo-1b27"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "四周都是空旷的海面，\n转眼间，脚下展开的便只剩天空与大海。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-1b9d",
+        "target": {
+          "variantId": "mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91",
+          "sectionId": "main",
+          "eventId": "mjo-1b9d"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "而坐在对面座位上的她……",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-1be2",
+        "target": {
+          "variantId": "mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91",
+          "sectionId": "main",
+          "eventId": "mjo-1be2"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "正把脸紧紧贴在窗边，入神地望着外面。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-1c29",
+        "target": {
+          "variantId": "mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91",
+          "sectionId": "main",
+          "eventId": "mjo-1c29"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "那反应，简直像是\n坐上电车的小孩子。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-1c9c",
+        "target": {
+          "variantId": "mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91",
+          "sectionId": "main",
+          "eventId": "mjo-1c9c"
+        },
+        "allowed": [
+          "text",
+          "speaker"
+        ],
+        "speakerReason": "separate-native-message",
+        "baseline": {
+          "text": "「难不成，你是第一次坐摩天轮？」",
+          "speaker": "主人公"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-1d0e",
+        "target": {
+          "variantId": "mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91",
+          "sectionId": "main",
+          "eventId": "mjo-1d0e"
+        },
+        "allowed": [
+          "text",
+          "speaker"
+        ],
+        "speakerReason": "separate-native-message",
+        "baseline": {
+          "text": "「不是……小学以后，这是第二次……」",
+          "speaker": "濑津美"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-1d54",
+        "target": {
+          "variantId": "mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91",
+          "sectionId": "main",
+          "eventId": "mjo-1d54"
+        },
+        "allowed": [
+          "text",
+          "speaker"
+        ],
+        "speakerReason": "separate-native-message",
+        "baseline": {
+          "text": "「这样啊，第二次啊……」",
+          "speaker": "主人公"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-1d81",
+        "target": {
+          "variantId": "mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91",
+          "sectionId": "main",
+          "eventId": "mjo-1d81"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "一般来说，坐过的次数少到这种程度的人应该很少见，\n但她说的大概是真的。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-1ded",
+        "target": {
+          "variantId": "mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91",
+          "sectionId": "main",
+          "eventId": "mjo-1ded"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "我还记得，之前去家庭餐厅和牛仔裤店时，\n她也露出了开心的样子。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-1e8b",
+        "target": {
+          "variantId": "mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91",
+          "sectionId": "main",
+          "eventId": "mjo-1e8b"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "……我并不知道，她是从多少岁开始，\n身体就总是不好的。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-1ef3",
+        "target": {
+          "variantId": "mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91",
+          "sectionId": "main",
+          "eventId": "mjo-1ef3"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "或许，从很小的时候就已经如此。\n说不定连学校的集体活动，她也没有参加过。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-1f77",
+        "target": {
+          "variantId": "mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91",
+          "sectionId": "main",
+          "eventId": "mjo-1f77"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "……那么，我把她带出医院这件事，\n是不是也能算一件好事呢……",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-1fef",
+        "target": {
+          "variantId": "mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91",
+          "sectionId": "main",
+          "eventId": "mjo-1fef"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "让她温柔的家人担心，给医院添了麻烦，\n我并不是想请求谁原谅这些事……",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-2069",
+        "target": {
+          "variantId": "mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91",
+          "sectionId": "main",
+          "eventId": "mjo-2069"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "但现在，看着她这样开心的模样，\n我并不后悔。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-20d7",
+        "target": {
+          "variantId": "mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91",
+          "sectionId": "main",
+          "eventId": "mjo-20d7"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "我甚至想让她温柔的父母，\n也看看她这副快乐的样子……",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-21ae",
+        "target": {
+          "variantId": "mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91",
+          "sectionId": "main",
+          "eventId": "mjo-21ae"
+        },
+        "allowed": [
+          "text",
+          "speaker"
+        ],
+        "speakerReason": "separate-native-message",
+        "baseline": {
+          "text": "「好厉害……居然能升到这么高的地方……」",
+          "speaker": "濑津美"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-21eb",
+        "target": {
+          "variantId": "mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91",
+          "sectionId": "main",
+          "eventId": "mjo-21eb"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "她轻轻感叹着，\n享受着这场不过十五分钟左右的空中游览。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-2253",
+        "target": {
+          "variantId": "mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91",
+          "sectionId": "main",
+          "eventId": "mjo-2253"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "从这高高的天空，望向远方。\n只是，一直望着远方。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-22b8",
+        "target": {
+          "variantId": "mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91",
+          "sectionId": "main",
+          "eventId": "mjo-22b8"
+        },
+        "allowed": [
+          "text",
+          "speaker"
+        ],
+        "speakerReason": "separate-native-message",
+        "baseline": {
+          "text": "「你……有没有什么想去的地方？」",
+          "speaker": "主人公"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-22f5",
+        "target": {
+          "variantId": "mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91",
+          "sectionId": "main",
+          "eventId": "mjo-22f5"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "我望着在脚下铺展开的景色，开口问道。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-2341",
+        "target": {
+          "variantId": "mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91",
+          "sectionId": "main",
+          "eventId": "mjo-2341"
+        },
+        "allowed": [
+          "text",
+          "speaker"
+        ],
+        "speakerReason": "separate-native-message",
+        "baseline": {
+          "text": "「有想去的地方的话……」",
+          "speaker": "主人公"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-23ad",
+        "target": {
+          "variantId": "mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91",
+          "sectionId": "main",
+          "eventId": "mjo-23ad"
+        },
+        "allowed": [
+          "text",
+          "speaker"
+        ],
+        "speakerReason": "separate-native-message",
+        "baseline": {
+          "text": "「……不知道。」",
+          "speaker": "濑津美"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-23d4",
+        "target": {
+          "variantId": "mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91",
+          "sectionId": "main",
+          "eventId": "mjo-23d4"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "她只是低声说了这么一句。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-2432",
+        "target": {
+          "variantId": "mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91",
+          "sectionId": "main",
+          "eventId": "mjo-2432"
+        },
+        "allowed": [
+          "text",
+          "speaker"
+        ],
+        "speakerReason": "separate-native-message",
+        "baseline": {
+          "text": "「……你有吗？」",
+          "speaker": "濑津美"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-246c",
+        "target": {
+          "variantId": "mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91",
+          "sectionId": "main",
+          "eventId": "mjo-246c"
+        },
+        "allowed": [
+          "text",
+          "speaker"
+        ],
+        "speakerReason": "separate-native-message",
+        "baseline": {
+          "text": "「我啊……我也不知道……」",
+          "speaker": "主人公"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-249f",
+        "target": {
+          "variantId": "mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91",
+          "sectionId": "main",
+          "eventId": "mjo-249f"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "……想去的地方……\n作为目的地的淡路岛……那片鲜花盛开的土地，已经近在眼前。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-2507",
+        "target": {
+          "variantId": "mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91",
+          "sectionId": "main",
+          "eventId": "mjo-2507"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "此刻所谓的“想去的地方”，\n也同样是在询问今后……询问未来。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-258a",
+        "target": {
+          "variantId": "mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91",
+          "sectionId": "main",
+          "eventId": "mjo-258a"
+        },
+        "allowed": [
+          "text",
+          "speaker"
+        ],
+        "speakerReason": "separate-native-message",
+        "baseline": {
+          "text": "「只是，不管是哪里……和你……」",
+          "speaker": "主人公"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-25f4",
+        "target": {
+          "variantId": "mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91",
+          "sectionId": "main",
+          "eventId": "mjo-25f4"
+        },
+        "allowed": [
+          "text",
+          "speaker"
+        ],
+        "speakerReason": "separate-native-message",
+        "baseline": {
+          "text": "「……和你？」",
+          "speaker": "濑津美"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-2628",
+        "target": {
+          "variantId": "mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91",
+          "sectionId": "main",
+          "eventId": "mjo-2628"
+        },
+        "allowed": [
+          "text",
+          "speaker"
+        ],
+        "speakerReason": "separate-native-message",
+        "baseline": {
+          "text": "「不，没什么……」",
+          "speaker": "主人公"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-2657",
+        "target": {
+          "variantId": "mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91",
+          "sectionId": "main",
+          "eventId": "mjo-2657"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "……一起。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-267a",
+        "target": {
+          "variantId": "mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91",
+          "sectionId": "main",
+          "eventId": "mjo-267a"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "本想接着说出口的话，却停在了喉咙里。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-26e6",
+        "target": {
+          "variantId": "mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91",
+          "sectionId": "main",
+          "eventId": "mjo-26e6"
+        },
+        "allowed": [
+          "text",
+          "speaker"
+        ],
+        "speakerReason": "separate-native-message",
+        "baseline": {
+          "text": "「你还是第一次……还有时间。」",
+          "speaker": "濑津美"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-274e",
+        "target": {
+          "variantId": "mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91",
+          "sectionId": "main",
+          "eventId": "mjo-274e"
+        },
+        "allowed": [
+          "text",
+          "speaker"
+        ],
+        "speakerReason": "separate-native-message",
+        "baseline": {
+          "text": "「而且，你还没有传下去……」",
+          "speaker": "濑津美"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-2796",
+        "target": {
+          "variantId": "mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91",
+          "sectionId": "main",
+          "eventId": "mjo-2796"
+        },
+        "allowed": [
+          "text",
+          "speaker"
+        ],
+        "speakerReason": "separate-native-message",
+        "baseline": {
+          "text": "「没有传下去？你说的难道是那些规则？」",
+          "speaker": "主人公"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-280e",
+        "target": {
+          "variantId": "mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91",
+          "sectionId": "main",
+          "eventId": "mjo-280e"
+        },
+        "allowed": [
+          "text",
+          "speaker"
+        ],
+        "speakerReason": "separate-native-message",
+        "baseline": {
+          "text": "「嗯……」",
+          "speaker": "濑津美"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-282f",
+        "target": {
+          "variantId": "mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91",
+          "sectionId": "main",
+          "eventId": "mjo-282f"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "我记得，那是最初来到七楼时，她告诉我的事。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-2889",
+        "target": {
+          "variantId": "mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91",
+          "sectionId": "main",
+          "eventId": "mjo-2889"
+        },
+        "allowed": [
+          "text",
+          "speaker"
+        ],
+        "speakerReason": "separate-native-message",
+        "baseline": {
+          "text": "「你已经传给我了啊……」",
+          "speaker": "主人公"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-28f1",
+        "target": {
+          "variantId": "mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91",
+          "sectionId": "main",
+          "eventId": "mjo-28f1"
+        },
+        "allowed": [
+          "text",
+          "speaker"
+        ],
+        "speakerReason": "separate-native-message",
+        "baseline": {
+          "text": "「可是……我自己的，还没有……」",
+          "speaker": "濑津美"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-293d",
+        "target": {
+          "variantId": "mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91",
+          "sectionId": "main",
+          "eventId": "mjo-293d"
+        },
+        "allowed": [
+          "text",
+          "speaker"
+        ],
+        "speakerReason": "separate-native-message",
+        "baseline": {
+          "text": "「你自己的？」",
+          "speaker": "主人公"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-2991",
+        "target": {
+          "variantId": "mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91",
+          "sectionId": "main",
+          "eventId": "mjo-2991"
+        },
+        "allowed": [
+          "text",
+          "speaker"
+        ],
+        "speakerReason": "separate-native-message",
+        "baseline": {
+          "text": "「那些，是一直以来流传下来的事……」",
+          "speaker": "濑津美"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-29fb",
+        "target": {
+          "variantId": "mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91",
+          "sectionId": "main",
+          "eventId": "mjo-29fb"
+        },
+        "allowed": [
+          "text",
+          "speaker"
+        ],
+        "speakerReason": "separate-native-message",
+        "baseline": {
+          "text": "「我还没决定，要传下去的事……」",
+          "speaker": "濑津美"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-2a65",
+        "target": {
+          "variantId": "mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91",
+          "sectionId": "main",
+          "eventId": "mjo-2a65"
+        },
+        "allowed": [
+          "text",
+          "speaker"
+        ],
+        "speakerReason": "separate-native-message",
+        "baseline": {
+          "text": "「还没决定，想要留下的话……」",
+          "speaker": "濑津美"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-2a9c",
+        "target": {
+          "variantId": "mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91",
+          "sectionId": "main",
+          "eventId": "mjo-2a9c"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "她满怀感触地，一句一句说着。\n说话时，她正凝望着眼前那片湛蓝的天空。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-2b1f",
+        "target": {
+          "variantId": "mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91",
+          "sectionId": "main",
+          "eventId": "mjo-2b1f"
+        },
+        "allowed": [
+          "text",
+          "speaker"
+        ],
+        "speakerReason": "separate-native-message",
+        "baseline": {
+          "text": "「这样啊……能找到就好了。\n　你想要留下的那些话……」",
+          "speaker": "主人公"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-2baf",
+        "target": {
+          "variantId": "mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91",
+          "sectionId": "main",
+          "eventId": "mjo-2baf"
+        },
+        "allowed": [
+          "text",
+          "speaker"
+        ],
+        "speakerReason": "separate-native-message",
+        "baseline": {
+          "text": "「……嗯。」",
+          "speaker": "濑津美"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-2bd0",
+        "target": {
+          "variantId": "mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91",
+          "sectionId": "main",
+          "eventId": "mjo-2bd0"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "而接过那些留下的话……\n接过她的规则的人，大概就是我吧。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-2c58",
+        "target": {
+          "variantId": "mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91",
+          "sectionId": "main",
+          "eventId": "mjo-2c58"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "那么，我也必须将它们传给某个人……",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-2d4f",
+        "target": {
+          "variantId": "mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91",
+          "sectionId": "main",
+          "eventId": "mjo-2d4f"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "银色的双门轿跑再次出发。\n太阳稍稍西斜，将行进中的车身染成了橙色。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-2db9",
+        "target": {
+          "variantId": "mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91",
+          "sectionId": "main",
+          "eventId": "mjo-2db9"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "那片鲜花盛开的地方，已经近在眼前。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-2df0",
+        "target": {
+          "variantId": "mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91",
+          "sectionId": "main",
+          "eventId": "mjo-2df0"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "不过，在那之前，她大概会先去拿到驾照吧。\n这样一来，就应该能自由地去往任何地方了……",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-2e6a",
+        "target": {
+          "variantId": "mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91",
+          "sectionId": "main",
+          "eventId": "mjo-2e6a"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "去远方。\n去很远很远的地方。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-2ea8",
+        "target": {
+          "variantId": "mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91",
+          "sectionId": "main",
+          "eventId": "mjo-2ea8"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "即使是比从那座摩天轮上看到的景色，\n还要更加遥远的地方，也一定能够抵达……",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-2f10",
+        "target": {
+          "variantId": "mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91",
+          "sectionId": "main",
+          "eventId": "mjo-2f10"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "—短篇　＃０６２　淡路服务区—",
+          "speaker": "旁白"
+        }
+      }
+    ]
+  },
+  "cnKeys": [
+    "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-b5",
+    "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-15f",
+    "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-1a0",
+    "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-1e5",
+    "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-24f",
+    "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-2c1",
+    "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-331",
+    "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-3e4",
+    "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-418",
+    "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-441",
+    "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-4b2",
+    "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-524",
+    "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-561",
+    "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-5e5",
+    "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-624",
+    "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-65f",
+    "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-6ee",
+    "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-75a",
+    "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-78c",
+    "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-827",
+    "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-856",
+    "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-89f",
+    "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-907",
+    "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-990",
+    "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-a08",
+    "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-a2d",
+    "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-ab9",
+    "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-b15",
+    "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-b81",
+    "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-bf5",
+    "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-c3d",
+    "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-cd2",
+    "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-d26",
+    "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-d79",
+    "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-db2",
+    "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-e43",
+    "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-ec3",
+    "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-ee4",
+    "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-f61",
+    "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-f96",
+    "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-1022",
+    "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-106d",
+    "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-112d",
+    "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-11a6",
+    "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-11df",
+    "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-121e",
+    "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-128e",
+    "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-choice-12f4/choice/mjo-choice-12f4-case-1",
+    "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-choice-12f4/choice/mjo-choice-12f4-case-2",
+    "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-131a",
+    "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-137a",
+    "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-13ec",
+    "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-1464",
+    "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-1489",
+    "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-14db",
+    "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-154a",
+    "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-156d",
+    "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-15a0",
+    "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-1600",
+    "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-1644",
+    "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-1694",
+    "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-16dc",
+    "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-1711",
+    "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-1787",
+    "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-180d",
+    "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-188c",
+    "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-18fa",
+    "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-191f",
+    "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-1985",
+    "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-19dd",
+    "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-1a02",
+    "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-1a79",
+    "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-1af8",
+    "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-1b27",
+    "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-1b9d",
+    "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-1be2",
+    "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-1c29",
+    "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-1c9c",
+    "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-1d0e",
+    "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-1d54",
+    "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-1d81",
+    "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-1ded",
+    "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-1e8b",
+    "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-1ef3",
+    "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-1f77",
+    "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-1fef",
+    "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-2069",
+    "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-20d7",
+    "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-21ae",
+    "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-21eb",
+    "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-2253",
+    "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-22b8",
+    "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-22f5",
+    "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-2341",
+    "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-23ad",
+    "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-23d4",
+    "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-2432",
+    "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-246c",
+    "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-249f",
+    "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-2507",
+    "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-258a",
+    "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-25f4",
+    "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-2628",
+    "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-2657",
+    "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-267a",
+    "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-26e6",
+    "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-274e",
+    "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-2796",
+    "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-280e",
+    "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-282f",
+    "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-2889",
+    "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-28f1",
+    "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-293d",
+    "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-2991",
+    "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-29fb",
+    "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-2a65",
+    "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-2a9c",
+    "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-2b1f",
+    "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-2baf",
+    "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-2bd0",
+    "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-2c58",
+    "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-2d4f",
+    "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-2db9",
+    "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-2df0",
+    "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-2e6a",
+    "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-2ea8",
+    "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-2f10"
+  ],
+  "translationReview": {
+    "policy": "original-reviewed-author-pending/v1",
+    "rows": {
+      "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-b5": {
+        "state": "pending",
+        "origin": "author-supplement",
+        "credit": "站长",
+        "sources": [
+          {
+            "path": "tools/content/awaji-062-author-cn.txt",
+            "sha256": "24d7b40d3f635b556b4cdd6795718d14d8a2e28da717a9b3a68238d1289e9ccc",
+            "originalJapaneseSha256": "9c5a8860ac4349ce0799a8045a54b06ab24b3279dd2821e3dc46d513bc6b71e8",
+            "sourceLine": 2
+          }
+        ]
+      },
+      "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-15f": {
+        "state": "pending",
+        "origin": "author-supplement",
+        "credit": "站长",
+        "sources": [
+          {
+            "path": "tools/content/awaji-062-author-cn.txt",
+            "sha256": "24d7b40d3f635b556b4cdd6795718d14d8a2e28da717a9b3a68238d1289e9ccc",
+            "originalJapaneseSha256": "9c5a8860ac4349ce0799a8045a54b06ab24b3279dd2821e3dc46d513bc6b71e8",
+            "sourceLine": 3
+          }
+        ]
+      },
+      "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-1a0": {
+        "state": "pending",
+        "origin": "author-supplement",
+        "credit": "站长",
+        "sources": [
+          {
+            "path": "tools/content/awaji-062-author-cn.txt",
+            "sha256": "24d7b40d3f635b556b4cdd6795718d14d8a2e28da717a9b3a68238d1289e9ccc",
+            "originalJapaneseSha256": "9c5a8860ac4349ce0799a8045a54b06ab24b3279dd2821e3dc46d513bc6b71e8",
+            "sourceLine": 4
+          }
+        ]
+      },
+      "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-1e5": {
+        "state": "pending",
+        "origin": "author-supplement",
+        "credit": "站长",
+        "sources": [
+          {
+            "path": "tools/content/awaji-062-author-cn.txt",
+            "sha256": "24d7b40d3f635b556b4cdd6795718d14d8a2e28da717a9b3a68238d1289e9ccc",
+            "originalJapaneseSha256": "9c5a8860ac4349ce0799a8045a54b06ab24b3279dd2821e3dc46d513bc6b71e8",
+            "sourceLine": 5
+          }
+        ]
+      },
+      "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-24f": {
+        "state": "pending",
+        "origin": "author-supplement",
+        "credit": "站长",
+        "sources": [
+          {
+            "path": "tools/content/awaji-062-author-cn.txt",
+            "sha256": "24d7b40d3f635b556b4cdd6795718d14d8a2e28da717a9b3a68238d1289e9ccc",
+            "originalJapaneseSha256": "9c5a8860ac4349ce0799a8045a54b06ab24b3279dd2821e3dc46d513bc6b71e8",
+            "sourceLine": 6
+          }
+        ]
+      },
+      "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-2c1": {
+        "state": "pending",
+        "origin": "author-supplement",
+        "credit": "站长",
+        "sources": [
+          {
+            "path": "tools/content/awaji-062-author-cn.txt",
+            "sha256": "24d7b40d3f635b556b4cdd6795718d14d8a2e28da717a9b3a68238d1289e9ccc",
+            "originalJapaneseSha256": "9c5a8860ac4349ce0799a8045a54b06ab24b3279dd2821e3dc46d513bc6b71e8",
+            "sourceLine": 7
+          }
+        ]
+      },
+      "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-331": {
+        "state": "pending",
+        "origin": "author-supplement",
+        "credit": "站长",
+        "sources": [
+          {
+            "path": "tools/content/awaji-062-author-cn.txt",
+            "sha256": "24d7b40d3f635b556b4cdd6795718d14d8a2e28da717a9b3a68238d1289e9ccc",
+            "originalJapaneseSha256": "9c5a8860ac4349ce0799a8045a54b06ab24b3279dd2821e3dc46d513bc6b71e8",
+            "sourceLine": 8
+          }
+        ]
+      },
+      "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-3e4": {
+        "state": "pending",
+        "origin": "author-supplement",
+        "credit": "站长",
+        "sources": [
+          {
+            "path": "tools/content/awaji-062-author-cn.txt",
+            "sha256": "24d7b40d3f635b556b4cdd6795718d14d8a2e28da717a9b3a68238d1289e9ccc",
+            "originalJapaneseSha256": "9c5a8860ac4349ce0799a8045a54b06ab24b3279dd2821e3dc46d513bc6b71e8",
+            "sourceLine": 9
+          }
+        ]
+      },
+      "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-418": {
+        "state": "pending",
+        "origin": "author-supplement",
+        "credit": "站长",
+        "sources": [
+          {
+            "path": "tools/content/awaji-062-author-cn.txt",
+            "sha256": "24d7b40d3f635b556b4cdd6795718d14d8a2e28da717a9b3a68238d1289e9ccc",
+            "originalJapaneseSha256": "9c5a8860ac4349ce0799a8045a54b06ab24b3279dd2821e3dc46d513bc6b71e8",
+            "sourceLine": 10
+          }
+        ]
+      },
+      "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-441": {
+        "state": "pending",
+        "origin": "author-supplement",
+        "credit": "站长",
+        "sources": [
+          {
+            "path": "tools/content/awaji-062-author-cn.txt",
+            "sha256": "24d7b40d3f635b556b4cdd6795718d14d8a2e28da717a9b3a68238d1289e9ccc",
+            "originalJapaneseSha256": "9c5a8860ac4349ce0799a8045a54b06ab24b3279dd2821e3dc46d513bc6b71e8",
+            "sourceLine": 11
+          }
+        ]
+      },
+      "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-4b2": {
+        "state": "pending",
+        "origin": "author-supplement",
+        "credit": "站长",
+        "sources": [
+          {
+            "path": "tools/content/awaji-062-author-cn.txt",
+            "sha256": "24d7b40d3f635b556b4cdd6795718d14d8a2e28da717a9b3a68238d1289e9ccc",
+            "originalJapaneseSha256": "9c5a8860ac4349ce0799a8045a54b06ab24b3279dd2821e3dc46d513bc6b71e8",
+            "sourceLine": 12
+          }
+        ]
+      },
+      "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-524": {
+        "state": "pending",
+        "origin": "author-supplement",
+        "credit": "站长",
+        "sources": [
+          {
+            "path": "tools/content/awaji-062-author-cn.txt",
+            "sha256": "24d7b40d3f635b556b4cdd6795718d14d8a2e28da717a9b3a68238d1289e9ccc",
+            "originalJapaneseSha256": "9c5a8860ac4349ce0799a8045a54b06ab24b3279dd2821e3dc46d513bc6b71e8",
+            "sourceLine": 13
+          }
+        ]
+      },
+      "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-561": {
+        "state": "pending",
+        "origin": "author-supplement",
+        "credit": "站长",
+        "sources": [
+          {
+            "path": "tools/content/awaji-062-author-cn.txt",
+            "sha256": "24d7b40d3f635b556b4cdd6795718d14d8a2e28da717a9b3a68238d1289e9ccc",
+            "originalJapaneseSha256": "9c5a8860ac4349ce0799a8045a54b06ab24b3279dd2821e3dc46d513bc6b71e8",
+            "sourceLine": 14
+          }
+        ]
+      },
+      "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-5e5": {
+        "state": "pending",
+        "origin": "author-supplement",
+        "credit": "站长",
+        "sources": [
+          {
+            "path": "tools/content/awaji-062-author-cn.txt",
+            "sha256": "24d7b40d3f635b556b4cdd6795718d14d8a2e28da717a9b3a68238d1289e9ccc",
+            "originalJapaneseSha256": "9c5a8860ac4349ce0799a8045a54b06ab24b3279dd2821e3dc46d513bc6b71e8",
+            "sourceLine": 15
+          }
+        ]
+      },
+      "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-624": {
+        "state": "pending",
+        "origin": "author-supplement",
+        "credit": "站长",
+        "sources": [
+          {
+            "path": "tools/content/awaji-062-author-cn.txt",
+            "sha256": "24d7b40d3f635b556b4cdd6795718d14d8a2e28da717a9b3a68238d1289e9ccc",
+            "originalJapaneseSha256": "9c5a8860ac4349ce0799a8045a54b06ab24b3279dd2821e3dc46d513bc6b71e8",
+            "sourceLine": 16
+          }
+        ]
+      },
+      "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-65f": {
+        "state": "pending",
+        "origin": "author-supplement",
+        "credit": "站长",
+        "sources": [
+          {
+            "path": "tools/content/awaji-062-author-cn.txt",
+            "sha256": "24d7b40d3f635b556b4cdd6795718d14d8a2e28da717a9b3a68238d1289e9ccc",
+            "originalJapaneseSha256": "9c5a8860ac4349ce0799a8045a54b06ab24b3279dd2821e3dc46d513bc6b71e8",
+            "sourceLine": 17
+          }
+        ]
+      },
+      "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-6ee": {
+        "state": "pending",
+        "origin": "author-supplement",
+        "credit": "站长",
+        "sources": [
+          {
+            "path": "tools/content/awaji-062-author-cn.txt",
+            "sha256": "24d7b40d3f635b556b4cdd6795718d14d8a2e28da717a9b3a68238d1289e9ccc",
+            "originalJapaneseSha256": "9c5a8860ac4349ce0799a8045a54b06ab24b3279dd2821e3dc46d513bc6b71e8",
+            "sourceLine": 18
+          }
+        ]
+      },
+      "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-75a": {
+        "state": "pending",
+        "origin": "author-supplement",
+        "credit": "站长",
+        "sources": [
+          {
+            "path": "tools/content/awaji-062-author-cn.txt",
+            "sha256": "24d7b40d3f635b556b4cdd6795718d14d8a2e28da717a9b3a68238d1289e9ccc",
+            "originalJapaneseSha256": "9c5a8860ac4349ce0799a8045a54b06ab24b3279dd2821e3dc46d513bc6b71e8",
+            "sourceLine": 19
+          }
+        ]
+      },
+      "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-78c": {
+        "state": "pending",
+        "origin": "author-supplement",
+        "credit": "站长",
+        "sources": [
+          {
+            "path": "tools/content/awaji-062-author-cn.txt",
+            "sha256": "24d7b40d3f635b556b4cdd6795718d14d8a2e28da717a9b3a68238d1289e9ccc",
+            "originalJapaneseSha256": "9c5a8860ac4349ce0799a8045a54b06ab24b3279dd2821e3dc46d513bc6b71e8",
+            "sourceLine": 20
+          }
+        ]
+      },
+      "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-827": {
+        "state": "pending",
+        "origin": "author-supplement",
+        "credit": "站长",
+        "sources": [
+          {
+            "path": "tools/content/awaji-062-author-cn.txt",
+            "sha256": "24d7b40d3f635b556b4cdd6795718d14d8a2e28da717a9b3a68238d1289e9ccc",
+            "originalJapaneseSha256": "9c5a8860ac4349ce0799a8045a54b06ab24b3279dd2821e3dc46d513bc6b71e8",
+            "sourceLine": 21
+          }
+        ]
+      },
+      "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-856": {
+        "state": "pending",
+        "origin": "author-supplement",
+        "credit": "站长",
+        "sources": [
+          {
+            "path": "tools/content/awaji-062-author-cn.txt",
+            "sha256": "24d7b40d3f635b556b4cdd6795718d14d8a2e28da717a9b3a68238d1289e9ccc",
+            "originalJapaneseSha256": "9c5a8860ac4349ce0799a8045a54b06ab24b3279dd2821e3dc46d513bc6b71e8",
+            "sourceLine": 22
+          }
+        ]
+      },
+      "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-89f": {
+        "state": "pending",
+        "origin": "author-supplement",
+        "credit": "站长",
+        "sources": [
+          {
+            "path": "tools/content/awaji-062-author-cn.txt",
+            "sha256": "24d7b40d3f635b556b4cdd6795718d14d8a2e28da717a9b3a68238d1289e9ccc",
+            "originalJapaneseSha256": "9c5a8860ac4349ce0799a8045a54b06ab24b3279dd2821e3dc46d513bc6b71e8",
+            "sourceLine": 23
+          }
+        ]
+      },
+      "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-907": {
+        "state": "pending",
+        "origin": "author-supplement",
+        "credit": "站长",
+        "sources": [
+          {
+            "path": "tools/content/awaji-062-author-cn.txt",
+            "sha256": "24d7b40d3f635b556b4cdd6795718d14d8a2e28da717a9b3a68238d1289e9ccc",
+            "originalJapaneseSha256": "9c5a8860ac4349ce0799a8045a54b06ab24b3279dd2821e3dc46d513bc6b71e8",
+            "sourceLine": 24
+          }
+        ]
+      },
+      "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-990": {
+        "state": "pending",
+        "origin": "author-supplement",
+        "credit": "站长",
+        "sources": [
+          {
+            "path": "tools/content/awaji-062-author-cn.txt",
+            "sha256": "24d7b40d3f635b556b4cdd6795718d14d8a2e28da717a9b3a68238d1289e9ccc",
+            "originalJapaneseSha256": "9c5a8860ac4349ce0799a8045a54b06ab24b3279dd2821e3dc46d513bc6b71e8",
+            "sourceLine": 25
+          }
+        ]
+      },
+      "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-a08": {
+        "state": "pending",
+        "origin": "author-supplement",
+        "credit": "站长",
+        "sources": [
+          {
+            "path": "tools/content/awaji-062-author-cn.txt",
+            "sha256": "24d7b40d3f635b556b4cdd6795718d14d8a2e28da717a9b3a68238d1289e9ccc",
+            "originalJapaneseSha256": "9c5a8860ac4349ce0799a8045a54b06ab24b3279dd2821e3dc46d513bc6b71e8",
+            "sourceLine": 26
+          }
+        ]
+      },
+      "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-a2d": {
+        "state": "pending",
+        "origin": "author-supplement",
+        "credit": "站长",
+        "sources": [
+          {
+            "path": "tools/content/awaji-062-author-cn.txt",
+            "sha256": "24d7b40d3f635b556b4cdd6795718d14d8a2e28da717a9b3a68238d1289e9ccc",
+            "originalJapaneseSha256": "9c5a8860ac4349ce0799a8045a54b06ab24b3279dd2821e3dc46d513bc6b71e8",
+            "sourceLine": 27
+          }
+        ]
+      },
+      "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-ab9": {
+        "state": "pending",
+        "origin": "author-supplement",
+        "credit": "站长",
+        "sources": [
+          {
+            "path": "tools/content/awaji-062-author-cn.txt",
+            "sha256": "24d7b40d3f635b556b4cdd6795718d14d8a2e28da717a9b3a68238d1289e9ccc",
+            "originalJapaneseSha256": "9c5a8860ac4349ce0799a8045a54b06ab24b3279dd2821e3dc46d513bc6b71e8",
+            "sourceLine": 28
+          }
+        ]
+      },
+      "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-b15": {
+        "state": "pending",
+        "origin": "author-supplement",
+        "credit": "站长",
+        "sources": [
+          {
+            "path": "tools/content/awaji-062-author-cn.txt",
+            "sha256": "24d7b40d3f635b556b4cdd6795718d14d8a2e28da717a9b3a68238d1289e9ccc",
+            "originalJapaneseSha256": "9c5a8860ac4349ce0799a8045a54b06ab24b3279dd2821e3dc46d513bc6b71e8",
+            "sourceLine": 29
+          }
+        ]
+      },
+      "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-b81": {
+        "state": "pending",
+        "origin": "author-supplement",
+        "credit": "站长",
+        "sources": [
+          {
+            "path": "tools/content/awaji-062-author-cn.txt",
+            "sha256": "24d7b40d3f635b556b4cdd6795718d14d8a2e28da717a9b3a68238d1289e9ccc",
+            "originalJapaneseSha256": "9c5a8860ac4349ce0799a8045a54b06ab24b3279dd2821e3dc46d513bc6b71e8",
+            "sourceLine": 30
+          }
+        ]
+      },
+      "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-bf5": {
+        "state": "pending",
+        "origin": "author-supplement",
+        "credit": "站长",
+        "sources": [
+          {
+            "path": "tools/content/awaji-062-author-cn.txt",
+            "sha256": "24d7b40d3f635b556b4cdd6795718d14d8a2e28da717a9b3a68238d1289e9ccc",
+            "originalJapaneseSha256": "9c5a8860ac4349ce0799a8045a54b06ab24b3279dd2821e3dc46d513bc6b71e8",
+            "sourceLine": 31
+          }
+        ]
+      },
+      "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-c3d": {
+        "state": "pending",
+        "origin": "author-supplement",
+        "credit": "站长",
+        "sources": [
+          {
+            "path": "tools/content/awaji-062-author-cn.txt",
+            "sha256": "24d7b40d3f635b556b4cdd6795718d14d8a2e28da717a9b3a68238d1289e9ccc",
+            "originalJapaneseSha256": "9c5a8860ac4349ce0799a8045a54b06ab24b3279dd2821e3dc46d513bc6b71e8",
+            "sourceLine": 32
+          }
+        ]
+      },
+      "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-cd2": {
+        "state": "pending",
+        "origin": "author-supplement",
+        "credit": "站长",
+        "sources": [
+          {
+            "path": "tools/content/awaji-062-author-cn.txt",
+            "sha256": "24d7b40d3f635b556b4cdd6795718d14d8a2e28da717a9b3a68238d1289e9ccc",
+            "originalJapaneseSha256": "9c5a8860ac4349ce0799a8045a54b06ab24b3279dd2821e3dc46d513bc6b71e8",
+            "sourceLine": 33
+          }
+        ]
+      },
+      "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-d26": {
+        "state": "pending",
+        "origin": "author-supplement",
+        "credit": "站长",
+        "sources": [
+          {
+            "path": "tools/content/awaji-062-author-cn.txt",
+            "sha256": "24d7b40d3f635b556b4cdd6795718d14d8a2e28da717a9b3a68238d1289e9ccc",
+            "originalJapaneseSha256": "9c5a8860ac4349ce0799a8045a54b06ab24b3279dd2821e3dc46d513bc6b71e8",
+            "sourceLine": 34
+          }
+        ]
+      },
+      "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-d79": {
+        "state": "pending",
+        "origin": "author-supplement",
+        "credit": "站长",
+        "sources": [
+          {
+            "path": "tools/content/awaji-062-author-cn.txt",
+            "sha256": "24d7b40d3f635b556b4cdd6795718d14d8a2e28da717a9b3a68238d1289e9ccc",
+            "originalJapaneseSha256": "9c5a8860ac4349ce0799a8045a54b06ab24b3279dd2821e3dc46d513bc6b71e8",
+            "sourceLine": 35
+          }
+        ]
+      },
+      "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-db2": {
+        "state": "pending",
+        "origin": "author-supplement",
+        "credit": "站长",
+        "sources": [
+          {
+            "path": "tools/content/awaji-062-author-cn.txt",
+            "sha256": "24d7b40d3f635b556b4cdd6795718d14d8a2e28da717a9b3a68238d1289e9ccc",
+            "originalJapaneseSha256": "9c5a8860ac4349ce0799a8045a54b06ab24b3279dd2821e3dc46d513bc6b71e8",
+            "sourceLine": 36
+          }
+        ]
+      },
+      "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-e43": {
+        "state": "pending",
+        "origin": "author-supplement",
+        "credit": "站长",
+        "sources": [
+          {
+            "path": "tools/content/awaji-062-author-cn.txt",
+            "sha256": "24d7b40d3f635b556b4cdd6795718d14d8a2e28da717a9b3a68238d1289e9ccc",
+            "originalJapaneseSha256": "9c5a8860ac4349ce0799a8045a54b06ab24b3279dd2821e3dc46d513bc6b71e8",
+            "sourceLine": 37
+          }
+        ]
+      },
+      "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-ec3": {
+        "state": "pending",
+        "origin": "author-supplement",
+        "credit": "站长",
+        "sources": [
+          {
+            "path": "tools/content/awaji-062-author-cn.txt",
+            "sha256": "24d7b40d3f635b556b4cdd6795718d14d8a2e28da717a9b3a68238d1289e9ccc",
+            "originalJapaneseSha256": "9c5a8860ac4349ce0799a8045a54b06ab24b3279dd2821e3dc46d513bc6b71e8",
+            "sourceLine": 38
+          }
+        ]
+      },
+      "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-ee4": {
+        "state": "pending",
+        "origin": "author-supplement",
+        "credit": "站长",
+        "sources": [
+          {
+            "path": "tools/content/awaji-062-author-cn.txt",
+            "sha256": "24d7b40d3f635b556b4cdd6795718d14d8a2e28da717a9b3a68238d1289e9ccc",
+            "originalJapaneseSha256": "9c5a8860ac4349ce0799a8045a54b06ab24b3279dd2821e3dc46d513bc6b71e8",
+            "sourceLine": 39
+          }
+        ]
+      },
+      "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-f61": {
+        "state": "pending",
+        "origin": "author-supplement",
+        "credit": "站长",
+        "sources": [
+          {
+            "path": "tools/content/awaji-062-author-cn.txt",
+            "sha256": "24d7b40d3f635b556b4cdd6795718d14d8a2e28da717a9b3a68238d1289e9ccc",
+            "originalJapaneseSha256": "9c5a8860ac4349ce0799a8045a54b06ab24b3279dd2821e3dc46d513bc6b71e8",
+            "sourceLine": 40
+          }
+        ]
+      },
+      "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-f96": {
+        "state": "pending",
+        "origin": "author-supplement",
+        "credit": "站长",
+        "sources": [
+          {
+            "path": "tools/content/awaji-062-author-cn.txt",
+            "sha256": "24d7b40d3f635b556b4cdd6795718d14d8a2e28da717a9b3a68238d1289e9ccc",
+            "originalJapaneseSha256": "9c5a8860ac4349ce0799a8045a54b06ab24b3279dd2821e3dc46d513bc6b71e8",
+            "sourceLine": 41
+          }
+        ]
+      },
+      "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-1022": {
+        "state": "pending",
+        "origin": "author-supplement",
+        "credit": "站长",
+        "sources": [
+          {
+            "path": "tools/content/awaji-062-author-cn.txt",
+            "sha256": "24d7b40d3f635b556b4cdd6795718d14d8a2e28da717a9b3a68238d1289e9ccc",
+            "originalJapaneseSha256": "9c5a8860ac4349ce0799a8045a54b06ab24b3279dd2821e3dc46d513bc6b71e8",
+            "sourceLine": 42
+          }
+        ]
+      },
+      "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-106d": {
+        "state": "pending",
+        "origin": "author-supplement",
+        "credit": "站长",
+        "sources": [
+          {
+            "path": "tools/content/awaji-062-author-cn.txt",
+            "sha256": "24d7b40d3f635b556b4cdd6795718d14d8a2e28da717a9b3a68238d1289e9ccc",
+            "originalJapaneseSha256": "9c5a8860ac4349ce0799a8045a54b06ab24b3279dd2821e3dc46d513bc6b71e8",
+            "sourceLine": 43
+          }
+        ]
+      },
+      "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-112d": {
+        "state": "pending",
+        "origin": "author-supplement",
+        "credit": "站长",
+        "sources": [
+          {
+            "path": "tools/content/awaji-062-author-cn.txt",
+            "sha256": "24d7b40d3f635b556b4cdd6795718d14d8a2e28da717a9b3a68238d1289e9ccc",
+            "originalJapaneseSha256": "9c5a8860ac4349ce0799a8045a54b06ab24b3279dd2821e3dc46d513bc6b71e8",
+            "sourceLine": 44
+          }
+        ]
+      },
+      "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-11a6": {
+        "state": "pending",
+        "origin": "author-supplement",
+        "credit": "站长",
+        "sources": [
+          {
+            "path": "tools/content/awaji-062-author-cn.txt",
+            "sha256": "24d7b40d3f635b556b4cdd6795718d14d8a2e28da717a9b3a68238d1289e9ccc",
+            "originalJapaneseSha256": "9c5a8860ac4349ce0799a8045a54b06ab24b3279dd2821e3dc46d513bc6b71e8",
+            "sourceLine": 45
+          }
+        ]
+      },
+      "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-11df": {
+        "state": "pending",
+        "origin": "author-supplement",
+        "credit": "站长",
+        "sources": [
+          {
+            "path": "tools/content/awaji-062-author-cn.txt",
+            "sha256": "24d7b40d3f635b556b4cdd6795718d14d8a2e28da717a9b3a68238d1289e9ccc",
+            "originalJapaneseSha256": "9c5a8860ac4349ce0799a8045a54b06ab24b3279dd2821e3dc46d513bc6b71e8",
+            "sourceLine": 46
+          }
+        ]
+      },
+      "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-121e": {
+        "state": "pending",
+        "origin": "author-supplement",
+        "credit": "站长",
+        "sources": [
+          {
+            "path": "tools/content/awaji-062-author-cn.txt",
+            "sha256": "24d7b40d3f635b556b4cdd6795718d14d8a2e28da717a9b3a68238d1289e9ccc",
+            "originalJapaneseSha256": "9c5a8860ac4349ce0799a8045a54b06ab24b3279dd2821e3dc46d513bc6b71e8",
+            "sourceLine": 47
+          }
+        ]
+      },
+      "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-128e": {
+        "state": "pending",
+        "origin": "author-supplement",
+        "credit": "站长",
+        "sources": [
+          {
+            "path": "tools/content/awaji-062-author-cn.txt",
+            "sha256": "24d7b40d3f635b556b4cdd6795718d14d8a2e28da717a9b3a68238d1289e9ccc",
+            "originalJapaneseSha256": "9c5a8860ac4349ce0799a8045a54b06ab24b3279dd2821e3dc46d513bc6b71e8",
+            "sourceLine": 48
+          }
+        ]
+      },
+      "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-choice-12f4/choice/mjo-choice-12f4-case-1": {
+        "state": "pending",
+        "origin": "author-supplement",
+        "credit": "站长",
+        "sources": [
+          {
+            "path": "tools/content/awaji-062-author-cn.txt",
+            "sha256": "24d7b40d3f635b556b4cdd6795718d14d8a2e28da717a9b3a68238d1289e9ccc",
+            "originalJapaneseSha256": "9c5a8860ac4349ce0799a8045a54b06ab24b3279dd2821e3dc46d513bc6b71e8",
+            "sourceLine": 49
+          }
+        ]
+      },
+      "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-choice-12f4/choice/mjo-choice-12f4-case-2": {
+        "state": "pending",
+        "origin": "author-supplement",
+        "credit": "站长",
+        "sources": [
+          {
+            "path": "tools/content/awaji-062-author-cn.txt",
+            "sha256": "24d7b40d3f635b556b4cdd6795718d14d8a2e28da717a9b3a68238d1289e9ccc",
+            "originalJapaneseSha256": "9c5a8860ac4349ce0799a8045a54b06ab24b3279dd2821e3dc46d513bc6b71e8",
+            "sourceLine": 50
+          }
+        ]
+      },
+      "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-131a": {
+        "state": "pending",
+        "origin": "author-supplement",
+        "credit": "站长",
+        "sources": [
+          {
+            "path": "tools/content/awaji-062-author-cn.txt",
+            "sha256": "24d7b40d3f635b556b4cdd6795718d14d8a2e28da717a9b3a68238d1289e9ccc",
+            "originalJapaneseSha256": "9c5a8860ac4349ce0799a8045a54b06ab24b3279dd2821e3dc46d513bc6b71e8",
+            "sourceLine": 51
+          }
+        ]
+      },
+      "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-137a": {
+        "state": "pending",
+        "origin": "author-supplement",
+        "credit": "站长",
+        "sources": [
+          {
+            "path": "tools/content/awaji-062-author-cn.txt",
+            "sha256": "24d7b40d3f635b556b4cdd6795718d14d8a2e28da717a9b3a68238d1289e9ccc",
+            "originalJapaneseSha256": "9c5a8860ac4349ce0799a8045a54b06ab24b3279dd2821e3dc46d513bc6b71e8",
+            "sourceLine": 52
+          }
+        ]
+      },
+      "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-13ec": {
+        "state": "pending",
+        "origin": "author-supplement",
+        "credit": "站长",
+        "sources": [
+          {
+            "path": "tools/content/awaji-062-author-cn.txt",
+            "sha256": "24d7b40d3f635b556b4cdd6795718d14d8a2e28da717a9b3a68238d1289e9ccc",
+            "originalJapaneseSha256": "9c5a8860ac4349ce0799a8045a54b06ab24b3279dd2821e3dc46d513bc6b71e8",
+            "sourceLine": 53
+          }
+        ]
+      },
+      "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-1464": {
+        "state": "pending",
+        "origin": "author-supplement",
+        "credit": "站长",
+        "sources": [
+          {
+            "path": "tools/content/awaji-062-author-cn.txt",
+            "sha256": "24d7b40d3f635b556b4cdd6795718d14d8a2e28da717a9b3a68238d1289e9ccc",
+            "originalJapaneseSha256": "9c5a8860ac4349ce0799a8045a54b06ab24b3279dd2821e3dc46d513bc6b71e8",
+            "sourceLine": 54
+          }
+        ]
+      },
+      "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-1489": {
+        "state": "pending",
+        "origin": "author-supplement",
+        "credit": "站长",
+        "sources": [
+          {
+            "path": "tools/content/awaji-062-author-cn.txt",
+            "sha256": "24d7b40d3f635b556b4cdd6795718d14d8a2e28da717a9b3a68238d1289e9ccc",
+            "originalJapaneseSha256": "9c5a8860ac4349ce0799a8045a54b06ab24b3279dd2821e3dc46d513bc6b71e8",
+            "sourceLine": 55
+          }
+        ]
+      },
+      "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-14db": {
+        "state": "pending",
+        "origin": "author-supplement",
+        "credit": "站长",
+        "sources": [
+          {
+            "path": "tools/content/awaji-062-author-cn.txt",
+            "sha256": "24d7b40d3f635b556b4cdd6795718d14d8a2e28da717a9b3a68238d1289e9ccc",
+            "originalJapaneseSha256": "9c5a8860ac4349ce0799a8045a54b06ab24b3279dd2821e3dc46d513bc6b71e8",
+            "sourceLine": 56
+          }
+        ]
+      },
+      "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-154a": {
+        "state": "pending",
+        "origin": "author-supplement",
+        "credit": "站长",
+        "sources": [
+          {
+            "path": "tools/content/awaji-062-author-cn.txt",
+            "sha256": "24d7b40d3f635b556b4cdd6795718d14d8a2e28da717a9b3a68238d1289e9ccc",
+            "originalJapaneseSha256": "9c5a8860ac4349ce0799a8045a54b06ab24b3279dd2821e3dc46d513bc6b71e8",
+            "sourceLine": 57
+          }
+        ]
+      },
+      "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-156d": {
+        "state": "pending",
+        "origin": "author-supplement",
+        "credit": "站长",
+        "sources": [
+          {
+            "path": "tools/content/awaji-062-author-cn.txt",
+            "sha256": "24d7b40d3f635b556b4cdd6795718d14d8a2e28da717a9b3a68238d1289e9ccc",
+            "originalJapaneseSha256": "9c5a8860ac4349ce0799a8045a54b06ab24b3279dd2821e3dc46d513bc6b71e8",
+            "sourceLine": 58
+          }
+        ]
+      },
+      "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-15a0": {
+        "state": "pending",
+        "origin": "author-supplement",
+        "credit": "站长",
+        "sources": [
+          {
+            "path": "tools/content/awaji-062-author-cn.txt",
+            "sha256": "24d7b40d3f635b556b4cdd6795718d14d8a2e28da717a9b3a68238d1289e9ccc",
+            "originalJapaneseSha256": "9c5a8860ac4349ce0799a8045a54b06ab24b3279dd2821e3dc46d513bc6b71e8",
+            "sourceLine": 59
+          }
+        ]
+      },
+      "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-1600": {
+        "state": "pending",
+        "origin": "author-supplement",
+        "credit": "站长",
+        "sources": [
+          {
+            "path": "tools/content/awaji-062-author-cn.txt",
+            "sha256": "24d7b40d3f635b556b4cdd6795718d14d8a2e28da717a9b3a68238d1289e9ccc",
+            "originalJapaneseSha256": "9c5a8860ac4349ce0799a8045a54b06ab24b3279dd2821e3dc46d513bc6b71e8",
+            "sourceLine": 60
+          }
+        ]
+      },
+      "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-1644": {
+        "state": "pending",
+        "origin": "author-supplement",
+        "credit": "站长",
+        "sources": [
+          {
+            "path": "tools/content/awaji-062-author-cn.txt",
+            "sha256": "24d7b40d3f635b556b4cdd6795718d14d8a2e28da717a9b3a68238d1289e9ccc",
+            "originalJapaneseSha256": "9c5a8860ac4349ce0799a8045a54b06ab24b3279dd2821e3dc46d513bc6b71e8",
+            "sourceLine": 61
+          }
+        ]
+      },
+      "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-1694": {
+        "state": "pending",
+        "origin": "author-supplement",
+        "credit": "站长",
+        "sources": [
+          {
+            "path": "tools/content/awaji-062-author-cn.txt",
+            "sha256": "24d7b40d3f635b556b4cdd6795718d14d8a2e28da717a9b3a68238d1289e9ccc",
+            "originalJapaneseSha256": "9c5a8860ac4349ce0799a8045a54b06ab24b3279dd2821e3dc46d513bc6b71e8",
+            "sourceLine": 62
+          }
+        ]
+      },
+      "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-16dc": {
+        "state": "pending",
+        "origin": "author-supplement",
+        "credit": "站长",
+        "sources": [
+          {
+            "path": "tools/content/awaji-062-author-cn.txt",
+            "sha256": "24d7b40d3f635b556b4cdd6795718d14d8a2e28da717a9b3a68238d1289e9ccc",
+            "originalJapaneseSha256": "9c5a8860ac4349ce0799a8045a54b06ab24b3279dd2821e3dc46d513bc6b71e8",
+            "sourceLine": 63
+          }
+        ]
+      },
+      "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-1711": {
+        "state": "pending",
+        "origin": "author-supplement",
+        "credit": "站长",
+        "sources": [
+          {
+            "path": "tools/content/awaji-062-author-cn.txt",
+            "sha256": "24d7b40d3f635b556b4cdd6795718d14d8a2e28da717a9b3a68238d1289e9ccc",
+            "originalJapaneseSha256": "9c5a8860ac4349ce0799a8045a54b06ab24b3279dd2821e3dc46d513bc6b71e8",
+            "sourceLine": 64
+          }
+        ]
+      },
+      "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-1787": {
+        "state": "pending",
+        "origin": "author-supplement",
+        "credit": "站长",
+        "sources": [
+          {
+            "path": "tools/content/awaji-062-author-cn.txt",
+            "sha256": "24d7b40d3f635b556b4cdd6795718d14d8a2e28da717a9b3a68238d1289e9ccc",
+            "originalJapaneseSha256": "9c5a8860ac4349ce0799a8045a54b06ab24b3279dd2821e3dc46d513bc6b71e8",
+            "sourceLine": 65
+          }
+        ]
+      },
+      "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-180d": {
+        "state": "pending",
+        "origin": "author-supplement",
+        "credit": "站长",
+        "sources": [
+          {
+            "path": "tools/content/awaji-062-author-cn.txt",
+            "sha256": "24d7b40d3f635b556b4cdd6795718d14d8a2e28da717a9b3a68238d1289e9ccc",
+            "originalJapaneseSha256": "9c5a8860ac4349ce0799a8045a54b06ab24b3279dd2821e3dc46d513bc6b71e8",
+            "sourceLine": 66
+          }
+        ]
+      },
+      "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-188c": {
+        "state": "pending",
+        "origin": "author-supplement",
+        "credit": "站长",
+        "sources": [
+          {
+            "path": "tools/content/awaji-062-author-cn.txt",
+            "sha256": "24d7b40d3f635b556b4cdd6795718d14d8a2e28da717a9b3a68238d1289e9ccc",
+            "originalJapaneseSha256": "9c5a8860ac4349ce0799a8045a54b06ab24b3279dd2821e3dc46d513bc6b71e8",
+            "sourceLine": 67
+          }
+        ]
+      },
+      "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-18fa": {
+        "state": "pending",
+        "origin": "author-supplement",
+        "credit": "站长",
+        "sources": [
+          {
+            "path": "tools/content/awaji-062-author-cn.txt",
+            "sha256": "24d7b40d3f635b556b4cdd6795718d14d8a2e28da717a9b3a68238d1289e9ccc",
+            "originalJapaneseSha256": "9c5a8860ac4349ce0799a8045a54b06ab24b3279dd2821e3dc46d513bc6b71e8",
+            "sourceLine": 68
+          }
+        ]
+      },
+      "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-191f": {
+        "state": "pending",
+        "origin": "author-supplement",
+        "credit": "站长",
+        "sources": [
+          {
+            "path": "tools/content/awaji-062-author-cn.txt",
+            "sha256": "24d7b40d3f635b556b4cdd6795718d14d8a2e28da717a9b3a68238d1289e9ccc",
+            "originalJapaneseSha256": "9c5a8860ac4349ce0799a8045a54b06ab24b3279dd2821e3dc46d513bc6b71e8",
+            "sourceLine": 69
+          }
+        ]
+      },
+      "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-1985": {
+        "state": "pending",
+        "origin": "author-supplement",
+        "credit": "站长",
+        "sources": [
+          {
+            "path": "tools/content/awaji-062-author-cn.txt",
+            "sha256": "24d7b40d3f635b556b4cdd6795718d14d8a2e28da717a9b3a68238d1289e9ccc",
+            "originalJapaneseSha256": "9c5a8860ac4349ce0799a8045a54b06ab24b3279dd2821e3dc46d513bc6b71e8",
+            "sourceLine": 70
+          }
+        ]
+      },
+      "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-19dd": {
+        "state": "pending",
+        "origin": "author-supplement",
+        "credit": "站长",
+        "sources": [
+          {
+            "path": "tools/content/awaji-062-author-cn.txt",
+            "sha256": "24d7b40d3f635b556b4cdd6795718d14d8a2e28da717a9b3a68238d1289e9ccc",
+            "originalJapaneseSha256": "9c5a8860ac4349ce0799a8045a54b06ab24b3279dd2821e3dc46d513bc6b71e8",
+            "sourceLine": 71
+          }
+        ]
+      },
+      "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-1a02": {
+        "state": "pending",
+        "origin": "author-supplement",
+        "credit": "站长",
+        "sources": [
+          {
+            "path": "tools/content/awaji-062-author-cn.txt",
+            "sha256": "24d7b40d3f635b556b4cdd6795718d14d8a2e28da717a9b3a68238d1289e9ccc",
+            "originalJapaneseSha256": "9c5a8860ac4349ce0799a8045a54b06ab24b3279dd2821e3dc46d513bc6b71e8",
+            "sourceLine": 72
+          }
+        ]
+      },
+      "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-1a79": {
+        "state": "pending",
+        "origin": "author-supplement",
+        "credit": "站长",
+        "sources": [
+          {
+            "path": "tools/content/awaji-062-author-cn.txt",
+            "sha256": "24d7b40d3f635b556b4cdd6795718d14d8a2e28da717a9b3a68238d1289e9ccc",
+            "originalJapaneseSha256": "9c5a8860ac4349ce0799a8045a54b06ab24b3279dd2821e3dc46d513bc6b71e8",
+            "sourceLine": 73
+          }
+        ]
+      },
+      "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-1af8": {
+        "state": "pending",
+        "origin": "author-supplement",
+        "credit": "站长",
+        "sources": [
+          {
+            "path": "tools/content/awaji-062-author-cn.txt",
+            "sha256": "24d7b40d3f635b556b4cdd6795718d14d8a2e28da717a9b3a68238d1289e9ccc",
+            "originalJapaneseSha256": "9c5a8860ac4349ce0799a8045a54b06ab24b3279dd2821e3dc46d513bc6b71e8",
+            "sourceLine": 74
+          }
+        ]
+      },
+      "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-1b27": {
+        "state": "pending",
+        "origin": "author-supplement",
+        "credit": "站长",
+        "sources": [
+          {
+            "path": "tools/content/awaji-062-author-cn.txt",
+            "sha256": "24d7b40d3f635b556b4cdd6795718d14d8a2e28da717a9b3a68238d1289e9ccc",
+            "originalJapaneseSha256": "9c5a8860ac4349ce0799a8045a54b06ab24b3279dd2821e3dc46d513bc6b71e8",
+            "sourceLine": 75
+          }
+        ]
+      },
+      "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-1b9d": {
+        "state": "pending",
+        "origin": "author-supplement",
+        "credit": "站长",
+        "sources": [
+          {
+            "path": "tools/content/awaji-062-author-cn.txt",
+            "sha256": "24d7b40d3f635b556b4cdd6795718d14d8a2e28da717a9b3a68238d1289e9ccc",
+            "originalJapaneseSha256": "9c5a8860ac4349ce0799a8045a54b06ab24b3279dd2821e3dc46d513bc6b71e8",
+            "sourceLine": 76
+          }
+        ]
+      },
+      "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-1be2": {
+        "state": "pending",
+        "origin": "author-supplement",
+        "credit": "站长",
+        "sources": [
+          {
+            "path": "tools/content/awaji-062-author-cn.txt",
+            "sha256": "24d7b40d3f635b556b4cdd6795718d14d8a2e28da717a9b3a68238d1289e9ccc",
+            "originalJapaneseSha256": "9c5a8860ac4349ce0799a8045a54b06ab24b3279dd2821e3dc46d513bc6b71e8",
+            "sourceLine": 77
+          }
+        ]
+      },
+      "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-1c29": {
+        "state": "pending",
+        "origin": "author-supplement",
+        "credit": "站长",
+        "sources": [
+          {
+            "path": "tools/content/awaji-062-author-cn.txt",
+            "sha256": "24d7b40d3f635b556b4cdd6795718d14d8a2e28da717a9b3a68238d1289e9ccc",
+            "originalJapaneseSha256": "9c5a8860ac4349ce0799a8045a54b06ab24b3279dd2821e3dc46d513bc6b71e8",
+            "sourceLine": 78
+          }
+        ]
+      },
+      "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-1c9c": {
+        "state": "pending",
+        "origin": "author-supplement",
+        "credit": "站长",
+        "sources": [
+          {
+            "path": "tools/content/awaji-062-author-cn.txt",
+            "sha256": "24d7b40d3f635b556b4cdd6795718d14d8a2e28da717a9b3a68238d1289e9ccc",
+            "originalJapaneseSha256": "9c5a8860ac4349ce0799a8045a54b06ab24b3279dd2821e3dc46d513bc6b71e8",
+            "sourceLine": 79
+          }
+        ]
+      },
+      "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-1d0e": {
+        "state": "pending",
+        "origin": "author-supplement",
+        "credit": "站长",
+        "sources": [
+          {
+            "path": "tools/content/awaji-062-author-cn.txt",
+            "sha256": "24d7b40d3f635b556b4cdd6795718d14d8a2e28da717a9b3a68238d1289e9ccc",
+            "originalJapaneseSha256": "9c5a8860ac4349ce0799a8045a54b06ab24b3279dd2821e3dc46d513bc6b71e8",
+            "sourceLine": 80
+          }
+        ]
+      },
+      "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-1d54": {
+        "state": "pending",
+        "origin": "author-supplement",
+        "credit": "站长",
+        "sources": [
+          {
+            "path": "tools/content/awaji-062-author-cn.txt",
+            "sha256": "24d7b40d3f635b556b4cdd6795718d14d8a2e28da717a9b3a68238d1289e9ccc",
+            "originalJapaneseSha256": "9c5a8860ac4349ce0799a8045a54b06ab24b3279dd2821e3dc46d513bc6b71e8",
+            "sourceLine": 81
+          }
+        ]
+      },
+      "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-1d81": {
+        "state": "pending",
+        "origin": "author-supplement",
+        "credit": "站长",
+        "sources": [
+          {
+            "path": "tools/content/awaji-062-author-cn.txt",
+            "sha256": "24d7b40d3f635b556b4cdd6795718d14d8a2e28da717a9b3a68238d1289e9ccc",
+            "originalJapaneseSha256": "9c5a8860ac4349ce0799a8045a54b06ab24b3279dd2821e3dc46d513bc6b71e8",
+            "sourceLine": 82
+          }
+        ]
+      },
+      "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-1ded": {
+        "state": "pending",
+        "origin": "author-supplement",
+        "credit": "站长",
+        "sources": [
+          {
+            "path": "tools/content/awaji-062-author-cn.txt",
+            "sha256": "24d7b40d3f635b556b4cdd6795718d14d8a2e28da717a9b3a68238d1289e9ccc",
+            "originalJapaneseSha256": "9c5a8860ac4349ce0799a8045a54b06ab24b3279dd2821e3dc46d513bc6b71e8",
+            "sourceLine": 83
+          }
+        ]
+      },
+      "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-1e8b": {
+        "state": "pending",
+        "origin": "author-supplement",
+        "credit": "站长",
+        "sources": [
+          {
+            "path": "tools/content/awaji-062-author-cn.txt",
+            "sha256": "24d7b40d3f635b556b4cdd6795718d14d8a2e28da717a9b3a68238d1289e9ccc",
+            "originalJapaneseSha256": "9c5a8860ac4349ce0799a8045a54b06ab24b3279dd2821e3dc46d513bc6b71e8",
+            "sourceLine": 84
+          }
+        ]
+      },
+      "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-1ef3": {
+        "state": "pending",
+        "origin": "author-supplement",
+        "credit": "站长",
+        "sources": [
+          {
+            "path": "tools/content/awaji-062-author-cn.txt",
+            "sha256": "24d7b40d3f635b556b4cdd6795718d14d8a2e28da717a9b3a68238d1289e9ccc",
+            "originalJapaneseSha256": "9c5a8860ac4349ce0799a8045a54b06ab24b3279dd2821e3dc46d513bc6b71e8",
+            "sourceLine": 85
+          }
+        ]
+      },
+      "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-1f77": {
+        "state": "pending",
+        "origin": "author-supplement",
+        "credit": "站长",
+        "sources": [
+          {
+            "path": "tools/content/awaji-062-author-cn.txt",
+            "sha256": "24d7b40d3f635b556b4cdd6795718d14d8a2e28da717a9b3a68238d1289e9ccc",
+            "originalJapaneseSha256": "9c5a8860ac4349ce0799a8045a54b06ab24b3279dd2821e3dc46d513bc6b71e8",
+            "sourceLine": 86
+          }
+        ]
+      },
+      "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-1fef": {
+        "state": "pending",
+        "origin": "author-supplement",
+        "credit": "站长",
+        "sources": [
+          {
+            "path": "tools/content/awaji-062-author-cn.txt",
+            "sha256": "24d7b40d3f635b556b4cdd6795718d14d8a2e28da717a9b3a68238d1289e9ccc",
+            "originalJapaneseSha256": "9c5a8860ac4349ce0799a8045a54b06ab24b3279dd2821e3dc46d513bc6b71e8",
+            "sourceLine": 87
+          }
+        ]
+      },
+      "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-2069": {
+        "state": "pending",
+        "origin": "author-supplement",
+        "credit": "站长",
+        "sources": [
+          {
+            "path": "tools/content/awaji-062-author-cn.txt",
+            "sha256": "24d7b40d3f635b556b4cdd6795718d14d8a2e28da717a9b3a68238d1289e9ccc",
+            "originalJapaneseSha256": "9c5a8860ac4349ce0799a8045a54b06ab24b3279dd2821e3dc46d513bc6b71e8",
+            "sourceLine": 88
+          }
+        ]
+      },
+      "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-20d7": {
+        "state": "pending",
+        "origin": "author-supplement",
+        "credit": "站长",
+        "sources": [
+          {
+            "path": "tools/content/awaji-062-author-cn.txt",
+            "sha256": "24d7b40d3f635b556b4cdd6795718d14d8a2e28da717a9b3a68238d1289e9ccc",
+            "originalJapaneseSha256": "9c5a8860ac4349ce0799a8045a54b06ab24b3279dd2821e3dc46d513bc6b71e8",
+            "sourceLine": 89
+          }
+        ]
+      },
+      "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-21ae": {
+        "state": "pending",
+        "origin": "author-supplement",
+        "credit": "站长",
+        "sources": [
+          {
+            "path": "tools/content/awaji-062-author-cn.txt",
+            "sha256": "24d7b40d3f635b556b4cdd6795718d14d8a2e28da717a9b3a68238d1289e9ccc",
+            "originalJapaneseSha256": "9c5a8860ac4349ce0799a8045a54b06ab24b3279dd2821e3dc46d513bc6b71e8",
+            "sourceLine": 90
+          }
+        ]
+      },
+      "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-21eb": {
+        "state": "pending",
+        "origin": "author-supplement",
+        "credit": "站长",
+        "sources": [
+          {
+            "path": "tools/content/awaji-062-author-cn.txt",
+            "sha256": "24d7b40d3f635b556b4cdd6795718d14d8a2e28da717a9b3a68238d1289e9ccc",
+            "originalJapaneseSha256": "9c5a8860ac4349ce0799a8045a54b06ab24b3279dd2821e3dc46d513bc6b71e8",
+            "sourceLine": 91
+          }
+        ]
+      },
+      "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-2253": {
+        "state": "pending",
+        "origin": "author-supplement",
+        "credit": "站长",
+        "sources": [
+          {
+            "path": "tools/content/awaji-062-author-cn.txt",
+            "sha256": "24d7b40d3f635b556b4cdd6795718d14d8a2e28da717a9b3a68238d1289e9ccc",
+            "originalJapaneseSha256": "9c5a8860ac4349ce0799a8045a54b06ab24b3279dd2821e3dc46d513bc6b71e8",
+            "sourceLine": 92
+          }
+        ]
+      },
+      "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-22b8": {
+        "state": "pending",
+        "origin": "author-supplement",
+        "credit": "站长",
+        "sources": [
+          {
+            "path": "tools/content/awaji-062-author-cn.txt",
+            "sha256": "24d7b40d3f635b556b4cdd6795718d14d8a2e28da717a9b3a68238d1289e9ccc",
+            "originalJapaneseSha256": "9c5a8860ac4349ce0799a8045a54b06ab24b3279dd2821e3dc46d513bc6b71e8",
+            "sourceLine": 93
+          }
+        ]
+      },
+      "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-22f5": {
+        "state": "pending",
+        "origin": "author-supplement",
+        "credit": "站长",
+        "sources": [
+          {
+            "path": "tools/content/awaji-062-author-cn.txt",
+            "sha256": "24d7b40d3f635b556b4cdd6795718d14d8a2e28da717a9b3a68238d1289e9ccc",
+            "originalJapaneseSha256": "9c5a8860ac4349ce0799a8045a54b06ab24b3279dd2821e3dc46d513bc6b71e8",
+            "sourceLine": 94
+          }
+        ]
+      },
+      "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-2341": {
+        "state": "pending",
+        "origin": "author-supplement",
+        "credit": "站长",
+        "sources": [
+          {
+            "path": "tools/content/awaji-062-author-cn.txt",
+            "sha256": "24d7b40d3f635b556b4cdd6795718d14d8a2e28da717a9b3a68238d1289e9ccc",
+            "originalJapaneseSha256": "9c5a8860ac4349ce0799a8045a54b06ab24b3279dd2821e3dc46d513bc6b71e8",
+            "sourceLine": 95
+          }
+        ]
+      },
+      "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-23ad": {
+        "state": "pending",
+        "origin": "author-supplement",
+        "credit": "站长",
+        "sources": [
+          {
+            "path": "tools/content/awaji-062-author-cn.txt",
+            "sha256": "24d7b40d3f635b556b4cdd6795718d14d8a2e28da717a9b3a68238d1289e9ccc",
+            "originalJapaneseSha256": "9c5a8860ac4349ce0799a8045a54b06ab24b3279dd2821e3dc46d513bc6b71e8",
+            "sourceLine": 96
+          }
+        ]
+      },
+      "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-23d4": {
+        "state": "pending",
+        "origin": "author-supplement",
+        "credit": "站长",
+        "sources": [
+          {
+            "path": "tools/content/awaji-062-author-cn.txt",
+            "sha256": "24d7b40d3f635b556b4cdd6795718d14d8a2e28da717a9b3a68238d1289e9ccc",
+            "originalJapaneseSha256": "9c5a8860ac4349ce0799a8045a54b06ab24b3279dd2821e3dc46d513bc6b71e8",
+            "sourceLine": 97
+          }
+        ]
+      },
+      "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-2432": {
+        "state": "pending",
+        "origin": "author-supplement",
+        "credit": "站长",
+        "sources": [
+          {
+            "path": "tools/content/awaji-062-author-cn.txt",
+            "sha256": "24d7b40d3f635b556b4cdd6795718d14d8a2e28da717a9b3a68238d1289e9ccc",
+            "originalJapaneseSha256": "9c5a8860ac4349ce0799a8045a54b06ab24b3279dd2821e3dc46d513bc6b71e8",
+            "sourceLine": 98
+          }
+        ]
+      },
+      "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-246c": {
+        "state": "pending",
+        "origin": "author-supplement",
+        "credit": "站长",
+        "sources": [
+          {
+            "path": "tools/content/awaji-062-author-cn.txt",
+            "sha256": "24d7b40d3f635b556b4cdd6795718d14d8a2e28da717a9b3a68238d1289e9ccc",
+            "originalJapaneseSha256": "9c5a8860ac4349ce0799a8045a54b06ab24b3279dd2821e3dc46d513bc6b71e8",
+            "sourceLine": 99
+          }
+        ]
+      },
+      "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-249f": {
+        "state": "pending",
+        "origin": "author-supplement",
+        "credit": "站长",
+        "sources": [
+          {
+            "path": "tools/content/awaji-062-author-cn.txt",
+            "sha256": "24d7b40d3f635b556b4cdd6795718d14d8a2e28da717a9b3a68238d1289e9ccc",
+            "originalJapaneseSha256": "9c5a8860ac4349ce0799a8045a54b06ab24b3279dd2821e3dc46d513bc6b71e8",
+            "sourceLine": 100
+          }
+        ]
+      },
+      "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-2507": {
+        "state": "pending",
+        "origin": "author-supplement",
+        "credit": "站长",
+        "sources": [
+          {
+            "path": "tools/content/awaji-062-author-cn.txt",
+            "sha256": "24d7b40d3f635b556b4cdd6795718d14d8a2e28da717a9b3a68238d1289e9ccc",
+            "originalJapaneseSha256": "9c5a8860ac4349ce0799a8045a54b06ab24b3279dd2821e3dc46d513bc6b71e8",
+            "sourceLine": 101
+          }
+        ]
+      },
+      "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-258a": {
+        "state": "pending",
+        "origin": "author-supplement",
+        "credit": "站长",
+        "sources": [
+          {
+            "path": "tools/content/awaji-062-author-cn.txt",
+            "sha256": "24d7b40d3f635b556b4cdd6795718d14d8a2e28da717a9b3a68238d1289e9ccc",
+            "originalJapaneseSha256": "9c5a8860ac4349ce0799a8045a54b06ab24b3279dd2821e3dc46d513bc6b71e8",
+            "sourceLine": 102
+          }
+        ]
+      },
+      "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-25f4": {
+        "state": "pending",
+        "origin": "author-supplement",
+        "credit": "站长",
+        "sources": [
+          {
+            "path": "tools/content/awaji-062-author-cn.txt",
+            "sha256": "24d7b40d3f635b556b4cdd6795718d14d8a2e28da717a9b3a68238d1289e9ccc",
+            "originalJapaneseSha256": "9c5a8860ac4349ce0799a8045a54b06ab24b3279dd2821e3dc46d513bc6b71e8",
+            "sourceLine": 103
+          }
+        ]
+      },
+      "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-2628": {
+        "state": "pending",
+        "origin": "author-supplement",
+        "credit": "站长",
+        "sources": [
+          {
+            "path": "tools/content/awaji-062-author-cn.txt",
+            "sha256": "24d7b40d3f635b556b4cdd6795718d14d8a2e28da717a9b3a68238d1289e9ccc",
+            "originalJapaneseSha256": "9c5a8860ac4349ce0799a8045a54b06ab24b3279dd2821e3dc46d513bc6b71e8",
+            "sourceLine": 104
+          }
+        ]
+      },
+      "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-2657": {
+        "state": "pending",
+        "origin": "author-supplement",
+        "credit": "站长",
+        "sources": [
+          {
+            "path": "tools/content/awaji-062-author-cn.txt",
+            "sha256": "24d7b40d3f635b556b4cdd6795718d14d8a2e28da717a9b3a68238d1289e9ccc",
+            "originalJapaneseSha256": "9c5a8860ac4349ce0799a8045a54b06ab24b3279dd2821e3dc46d513bc6b71e8",
+            "sourceLine": 105
+          }
+        ]
+      },
+      "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-267a": {
+        "state": "pending",
+        "origin": "author-supplement",
+        "credit": "站长",
+        "sources": [
+          {
+            "path": "tools/content/awaji-062-author-cn.txt",
+            "sha256": "24d7b40d3f635b556b4cdd6795718d14d8a2e28da717a9b3a68238d1289e9ccc",
+            "originalJapaneseSha256": "9c5a8860ac4349ce0799a8045a54b06ab24b3279dd2821e3dc46d513bc6b71e8",
+            "sourceLine": 106
+          }
+        ]
+      },
+      "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-26e6": {
+        "state": "pending",
+        "origin": "author-supplement",
+        "credit": "站长",
+        "sources": [
+          {
+            "path": "tools/content/awaji-062-author-cn.txt",
+            "sha256": "24d7b40d3f635b556b4cdd6795718d14d8a2e28da717a9b3a68238d1289e9ccc",
+            "originalJapaneseSha256": "9c5a8860ac4349ce0799a8045a54b06ab24b3279dd2821e3dc46d513bc6b71e8",
+            "sourceLine": 107
+          }
+        ]
+      },
+      "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-274e": {
+        "state": "pending",
+        "origin": "author-supplement",
+        "credit": "站长",
+        "sources": [
+          {
+            "path": "tools/content/awaji-062-author-cn.txt",
+            "sha256": "24d7b40d3f635b556b4cdd6795718d14d8a2e28da717a9b3a68238d1289e9ccc",
+            "originalJapaneseSha256": "9c5a8860ac4349ce0799a8045a54b06ab24b3279dd2821e3dc46d513bc6b71e8",
+            "sourceLine": 108
+          }
+        ]
+      },
+      "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-2796": {
+        "state": "pending",
+        "origin": "author-supplement",
+        "credit": "站长",
+        "sources": [
+          {
+            "path": "tools/content/awaji-062-author-cn.txt",
+            "sha256": "24d7b40d3f635b556b4cdd6795718d14d8a2e28da717a9b3a68238d1289e9ccc",
+            "originalJapaneseSha256": "9c5a8860ac4349ce0799a8045a54b06ab24b3279dd2821e3dc46d513bc6b71e8",
+            "sourceLine": 109
+          }
+        ]
+      },
+      "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-280e": {
+        "state": "pending",
+        "origin": "author-supplement",
+        "credit": "站长",
+        "sources": [
+          {
+            "path": "tools/content/awaji-062-author-cn.txt",
+            "sha256": "24d7b40d3f635b556b4cdd6795718d14d8a2e28da717a9b3a68238d1289e9ccc",
+            "originalJapaneseSha256": "9c5a8860ac4349ce0799a8045a54b06ab24b3279dd2821e3dc46d513bc6b71e8",
+            "sourceLine": 110
+          }
+        ]
+      },
+      "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-282f": {
+        "state": "pending",
+        "origin": "author-supplement",
+        "credit": "站长",
+        "sources": [
+          {
+            "path": "tools/content/awaji-062-author-cn.txt",
+            "sha256": "24d7b40d3f635b556b4cdd6795718d14d8a2e28da717a9b3a68238d1289e9ccc",
+            "originalJapaneseSha256": "9c5a8860ac4349ce0799a8045a54b06ab24b3279dd2821e3dc46d513bc6b71e8",
+            "sourceLine": 111
+          }
+        ]
+      },
+      "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-2889": {
+        "state": "pending",
+        "origin": "author-supplement",
+        "credit": "站长",
+        "sources": [
+          {
+            "path": "tools/content/awaji-062-author-cn.txt",
+            "sha256": "24d7b40d3f635b556b4cdd6795718d14d8a2e28da717a9b3a68238d1289e9ccc",
+            "originalJapaneseSha256": "9c5a8860ac4349ce0799a8045a54b06ab24b3279dd2821e3dc46d513bc6b71e8",
+            "sourceLine": 112
+          }
+        ]
+      },
+      "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-28f1": {
+        "state": "pending",
+        "origin": "author-supplement",
+        "credit": "站长",
+        "sources": [
+          {
+            "path": "tools/content/awaji-062-author-cn.txt",
+            "sha256": "24d7b40d3f635b556b4cdd6795718d14d8a2e28da717a9b3a68238d1289e9ccc",
+            "originalJapaneseSha256": "9c5a8860ac4349ce0799a8045a54b06ab24b3279dd2821e3dc46d513bc6b71e8",
+            "sourceLine": 113
+          }
+        ]
+      },
+      "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-293d": {
+        "state": "pending",
+        "origin": "author-supplement",
+        "credit": "站长",
+        "sources": [
+          {
+            "path": "tools/content/awaji-062-author-cn.txt",
+            "sha256": "24d7b40d3f635b556b4cdd6795718d14d8a2e28da717a9b3a68238d1289e9ccc",
+            "originalJapaneseSha256": "9c5a8860ac4349ce0799a8045a54b06ab24b3279dd2821e3dc46d513bc6b71e8",
+            "sourceLine": 114
+          }
+        ]
+      },
+      "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-2991": {
+        "state": "pending",
+        "origin": "author-supplement",
+        "credit": "站长",
+        "sources": [
+          {
+            "path": "tools/content/awaji-062-author-cn.txt",
+            "sha256": "24d7b40d3f635b556b4cdd6795718d14d8a2e28da717a9b3a68238d1289e9ccc",
+            "originalJapaneseSha256": "9c5a8860ac4349ce0799a8045a54b06ab24b3279dd2821e3dc46d513bc6b71e8",
+            "sourceLine": 115
+          }
+        ]
+      },
+      "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-29fb": {
+        "state": "pending",
+        "origin": "author-supplement",
+        "credit": "站长",
+        "sources": [
+          {
+            "path": "tools/content/awaji-062-author-cn.txt",
+            "sha256": "24d7b40d3f635b556b4cdd6795718d14d8a2e28da717a9b3a68238d1289e9ccc",
+            "originalJapaneseSha256": "9c5a8860ac4349ce0799a8045a54b06ab24b3279dd2821e3dc46d513bc6b71e8",
+            "sourceLine": 116
+          }
+        ]
+      },
+      "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-2a65": {
+        "state": "pending",
+        "origin": "author-supplement",
+        "credit": "站长",
+        "sources": [
+          {
+            "path": "tools/content/awaji-062-author-cn.txt",
+            "sha256": "24d7b40d3f635b556b4cdd6795718d14d8a2e28da717a9b3a68238d1289e9ccc",
+            "originalJapaneseSha256": "9c5a8860ac4349ce0799a8045a54b06ab24b3279dd2821e3dc46d513bc6b71e8",
+            "sourceLine": 117
+          }
+        ]
+      },
+      "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-2a9c": {
+        "state": "pending",
+        "origin": "author-supplement",
+        "credit": "站长",
+        "sources": [
+          {
+            "path": "tools/content/awaji-062-author-cn.txt",
+            "sha256": "24d7b40d3f635b556b4cdd6795718d14d8a2e28da717a9b3a68238d1289e9ccc",
+            "originalJapaneseSha256": "9c5a8860ac4349ce0799a8045a54b06ab24b3279dd2821e3dc46d513bc6b71e8",
+            "sourceLine": 118
+          }
+        ]
+      },
+      "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-2b1f": {
+        "state": "pending",
+        "origin": "author-supplement",
+        "credit": "站长",
+        "sources": [
+          {
+            "path": "tools/content/awaji-062-author-cn.txt",
+            "sha256": "24d7b40d3f635b556b4cdd6795718d14d8a2e28da717a9b3a68238d1289e9ccc",
+            "originalJapaneseSha256": "9c5a8860ac4349ce0799a8045a54b06ab24b3279dd2821e3dc46d513bc6b71e8",
+            "sourceLine": 119
+          }
+        ]
+      },
+      "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-2baf": {
+        "state": "pending",
+        "origin": "author-supplement",
+        "credit": "站长",
+        "sources": [
+          {
+            "path": "tools/content/awaji-062-author-cn.txt",
+            "sha256": "24d7b40d3f635b556b4cdd6795718d14d8a2e28da717a9b3a68238d1289e9ccc",
+            "originalJapaneseSha256": "9c5a8860ac4349ce0799a8045a54b06ab24b3279dd2821e3dc46d513bc6b71e8",
+            "sourceLine": 120
+          }
+        ]
+      },
+      "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-2bd0": {
+        "state": "pending",
+        "origin": "author-supplement",
+        "credit": "站长",
+        "sources": [
+          {
+            "path": "tools/content/awaji-062-author-cn.txt",
+            "sha256": "24d7b40d3f635b556b4cdd6795718d14d8a2e28da717a9b3a68238d1289e9ccc",
+            "originalJapaneseSha256": "9c5a8860ac4349ce0799a8045a54b06ab24b3279dd2821e3dc46d513bc6b71e8",
+            "sourceLine": 121
+          }
+        ]
+      },
+      "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-2c58": {
+        "state": "pending",
+        "origin": "author-supplement",
+        "credit": "站长",
+        "sources": [
+          {
+            "path": "tools/content/awaji-062-author-cn.txt",
+            "sha256": "24d7b40d3f635b556b4cdd6795718d14d8a2e28da717a9b3a68238d1289e9ccc",
+            "originalJapaneseSha256": "9c5a8860ac4349ce0799a8045a54b06ab24b3279dd2821e3dc46d513bc6b71e8",
+            "sourceLine": 122
+          }
+        ]
+      },
+      "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-2d4f": {
+        "state": "pending",
+        "origin": "author-supplement",
+        "credit": "站长",
+        "sources": [
+          {
+            "path": "tools/content/awaji-062-author-cn.txt",
+            "sha256": "24d7b40d3f635b556b4cdd6795718d14d8a2e28da717a9b3a68238d1289e9ccc",
+            "originalJapaneseSha256": "9c5a8860ac4349ce0799a8045a54b06ab24b3279dd2821e3dc46d513bc6b71e8",
+            "sourceLine": 123
+          }
+        ]
+      },
+      "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-2db9": {
+        "state": "pending",
+        "origin": "author-supplement",
+        "credit": "站长",
+        "sources": [
+          {
+            "path": "tools/content/awaji-062-author-cn.txt",
+            "sha256": "24d7b40d3f635b556b4cdd6795718d14d8a2e28da717a9b3a68238d1289e9ccc",
+            "originalJapaneseSha256": "9c5a8860ac4349ce0799a8045a54b06ab24b3279dd2821e3dc46d513bc6b71e8",
+            "sourceLine": 124
+          }
+        ]
+      },
+      "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-2df0": {
+        "state": "pending",
+        "origin": "author-supplement",
+        "credit": "站长",
+        "sources": [
+          {
+            "path": "tools/content/awaji-062-author-cn.txt",
+            "sha256": "24d7b40d3f635b556b4cdd6795718d14d8a2e28da717a9b3a68238d1289e9ccc",
+            "originalJapaneseSha256": "9c5a8860ac4349ce0799a8045a54b06ab24b3279dd2821e3dc46d513bc6b71e8",
+            "sourceLine": 125
+          }
+        ]
+      },
+      "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-2e6a": {
+        "state": "pending",
+        "origin": "author-supplement",
+        "credit": "站长",
+        "sources": [
+          {
+            "path": "tools/content/awaji-062-author-cn.txt",
+            "sha256": "24d7b40d3f635b556b4cdd6795718d14d8a2e28da717a9b3a68238d1289e9ccc",
+            "originalJapaneseSha256": "9c5a8860ac4349ce0799a8045a54b06ab24b3279dd2821e3dc46d513bc6b71e8",
+            "sourceLine": 126
+          }
+        ]
+      },
+      "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-2ea8": {
+        "state": "pending",
+        "origin": "author-supplement",
+        "credit": "站长",
+        "sources": [
+          {
+            "path": "tools/content/awaji-062-author-cn.txt",
+            "sha256": "24d7b40d3f635b556b4cdd6795718d14d8a2e28da717a9b3a68238d1289e9ccc",
+            "originalJapaneseSha256": "9c5a8860ac4349ce0799a8045a54b06ab24b3279dd2821e3dc46d513bc6b71e8",
+            "sourceLine": 127
+          }
+        ]
+      },
+      "[\"mjo/narcissu10-original/narci_himeko/scenario.arc.unpacked/%E3%81%8A%E3%81%BE%E3%81%91\",\"main\"]/mjo-2f10": {
+        "state": "pending",
+        "origin": "author-supplement",
+        "credit": "站长",
+        "sources": [
+          {
+            "path": "tools/content/awaji-062-author-cn.txt",
+            "sha256": "24d7b40d3f635b556b4cdd6795718d14d8a2e28da717a9b3a68238d1289e9ccc",
+            "originalJapaneseSha256": "9c5a8860ac4349ce0799a8045a54b06ab24b3279dd2821e3dc46d513bc6b71e8",
+            "sourceLine": 128
+          }
+        ]
+      }
+    }
+  }
+}

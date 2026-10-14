@@ -1,0 +1,3754 @@
+{
+  "version": 2,
+  "sha256": "081a9c966d359f0032b6b260d433c1477c0a4bbdf0da639219dbea04683a344f",
+  "bytes": 18892779,
+  "entries": 149864,
+  "object_key": "search/generic/081a9c966d359f0032b6b260d433c1477c0a4bbdf0da639219dbea04683a344f.json",
+  "story_index_sha256": "8160e98cf860987046f4294d5d5d4a443e15007445a6bb9b069ff61dd90413b9",
+  "chunk_bytes": 1048576,
+  "chunks": [
+    {
+      "bytes": 1048576,
+      "sha256": "2f8c725691990810f98ddece0055cb2a7145e9f1048716923c2c95b89be5b264"
+    },
+    {
+      "bytes": 1048576,
+      "sha256": "020edd579753665df797334ae8df5d3f7e70fbf6d8f40ef355ff6d573fbb3c08"
+    },
+    {
+      "bytes": 1048576,
+      "sha256": "8fcae2f89df24ba878a3905d7761787d47a182849b56c72f9db17a0e9cb24829"
+    },
+    {
+      "bytes": 1048576,
+      "sha256": "0edfaa7215d25350605cfe0c97f357d426f881521f0994d6b8ed3f20a51c5a8c"
+    },
+    {
+      "bytes": 1048576,
+      "sha256": "6b19f933831e5b130b7f50d09be790563042bb8cf19d30ba4ba95bf0d36d0654"
+    },
+    {
+      "bytes": 1048576,
+      "sha256": "1754d51b85f5aa60517e4563918696eea8dd13e04c7e003e40d6574f1c1f86d6"
+    },
+    {
+      "bytes": 1048576,
+      "sha256": "efc0d0f79021d23039cf9fe12c7150d6e3c119515a2ba822c99f5e68e9c390ab"
+    },
+    {
+      "bytes": 1048576,
+      "sha256": "83253d2c10296f4aa8106d7fbbc7cbe7a4d10eb0cf91f2adf1814324e64483f9"
+    },
+    {
+      "bytes": 1048576,
+      "sha256": "fd1433d46eed4d2b7f456d5f794c3e0ba07a1dfb0f7604ace1e09bbf436e2df6"
+    },
+    {
+      "bytes": 1048576,
+      "sha256": "203218df8820d25b90eabad2abf7e1681f5602bef3b17610aa4e983361374182"
+    },
+    {
+      "bytes": 1048576,
+      "sha256": "747b36e16673faf66a36f10a6e42423a1e8304220ce993385fe5d55f8bc81a4e"
+    },
+    {
+      "bytes": 1048576,
+      "sha256": "a84778b2b06adf52a3b5ec357fd6b581512f8fa9ff6dd5a079762fe731d451f1"
+    },
+    {
+      "bytes": 1048576,
+      "sha256": "3d1d3e911faaea8a46a771c620ae75abe425467d93bbfd1f8f2a1df9338d9a06"
+    },
+    {
+      "bytes": 1048576,
+      "sha256": "d0b7b3b3e9e9efffdfebe53a245426e5336568ddea6362bed5f4f2eae365aa59"
+    },
+    {
+      "bytes": 1048576,
+      "sha256": "eb0714e0f550051c4a266eb872aaae2dc45682848e07e048bf94a4e3cd878d6c"
+    },
+    {
+      "bytes": 1048576,
+      "sha256": "6a2a494dd43ebf0a3e711e1d93064f3bb5f03712265cfa193802fe1a09593435"
+    },
+    {
+      "bytes": 1048576,
+      "sha256": "659f5a14000766e1470f66f8636f5e8d71d895232602b82f69e074fbdd06afd8"
+    },
+    {
+      "bytes": 1048576,
+      "sha256": "82ac3da1c5bdc7145d25aeff2f1458ac518f6b6d072c2ae1b101d5a81f9ecec9"
+    },
+    {
+      "bytes": 18411,
+      "sha256": "25777030e2a7bcff4a195db2538984517801136c438b0d10eb841aced038db88"
+    }
+  ],
+  "stories": 323,
+  "works": {
+    "main_story": 68,
+    "event_story": 82,
+    "character_story": 52,
+    "supplement_story": 121
+  },
+  "parser_sha256": "1e457c84670c82508b5622dbf4d01de31461b1474c25e4ae3c91e8a74b2bab8b",
+  "sources": [
+    {
+      "id": "legacy-narcissu-himeko-omake_062",
+      "language": "cn",
+      "revision": "c4da09769ef767a971801aa5e852d01fc11e39221742cfd657ff2c9641d1be72",
+      "sourceSha256": "3f437c05e1ac45ed0a9be62a3cf16a40b1ff7e06bb41ff02551f9420925cca5a"
+    },
+    {
+      "id": "legacy-narcissu-himeko-omake_062",
+      "language": "jp",
+      "path": "/data/legacy-vn/narcissu-himeko/omake_062_jp.txt",
+      "bytes": 11179,
+      "sha256": "9c5a8860ac4349ce0799a8045a54b06ab24b3279dd2821e3dc46d513bc6b71e8"
+    },
+    {
+      "id": "legacy-narcissu-himeko-himeko_atogaki",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-himeko/himeko_atogaki_cn.txt",
+      "bytes": 13079,
+      "sha256": "2226aa8c836b72e59708bdd785d01a3abf03501c97b138869e32ebeb99bcea32"
+    },
+    {
+      "id": "legacy-narcissu-himeko-himeko_atogaki",
+      "language": "jp",
+      "path": "/data/legacy-vn/narcissu-himeko/himeko_atogaki_jp.txt",
+      "bytes": 18506,
+      "sha256": "f5e7084ef71ac7adc306144e9539ba71ce3d6ce7bfb8dcbc381970ae7a17ecf3"
+    },
+    {
+      "id": "legacy-narcissu-himeko-himeko_ep00",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-himeko/himeko_ep00_cn.txt",
+      "bytes": 835,
+      "sha256": "94afd6032da667cfbab00f07f83e8f9bdab714ba1e4b0d830b8fe2a7dd44bd9a"
+    },
+    {
+      "id": "legacy-narcissu-himeko-himeko_ep00",
+      "language": "jp",
+      "path": "/data/legacy-vn/narcissu-himeko/himeko_ep00_jp.txt",
+      "bytes": 1091,
+      "sha256": "fc49da073e5fae9386e690145f9d0c97828cf164624650cbb6cd9f78800a7bd5"
+    },
+    {
+      "id": "legacy-narcissu-himeko-himeko_ep01",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-himeko/himeko_ep01_cn.txt",
+      "bytes": 65644,
+      "sha256": "dc576d447eeb3444dfb2522d3790ff78dbbc1edb037704398613628c4345ba91"
+    },
+    {
+      "id": "legacy-narcissu-himeko-himeko_ep01",
+      "language": "jp",
+      "path": "/data/legacy-vn/narcissu-himeko/himeko_ep01_jp.txt",
+      "bytes": 90844,
+      "sha256": "de7f5d653de29f6eb610a8940e926318c166ce905d251ad7604777d1c68833eb"
+    },
+    {
+      "id": "legacy-narcissu-himeko-himeko_ep02",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-himeko/himeko_ep02_cn.txt",
+      "bytes": 65562,
+      "sha256": "bffbd83addd95ee887e0ee0d089dd1063d616a3aefd8e802c1ec1664138df8c4"
+    },
+    {
+      "id": "legacy-narcissu-himeko-himeko_ep02",
+      "language": "jp",
+      "path": "/data/legacy-vn/narcissu-himeko/himeko_ep02_jp.txt",
+      "bytes": 90697,
+      "sha256": "7efcc73cbb7457067e656b5d3dc0a1fd0352d0a088025614d2e6b781a088a2ab"
+    },
+    {
+      "id": "legacy-narcissu-iris-atogaki",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-iris/atogaki_cn.txt",
+      "bytes": 15931,
+      "sha256": "c58aee9cca244f0346f29d33a508d6db11dc4867258689d2cfa4c44e33fe2399"
+    },
+    {
+      "id": "legacy-narcissu-iris-atogaki",
+      "language": "jp",
+      "path": "/data/legacy-vn/narcissu-iris/atogaki_jp.txt",
+      "bytes": 21609,
+      "sha256": "c3643ef597969d57f601e0d2ffc3622bcc74c221e79f6ac5adb21e47cce3ec6a"
+    },
+    {
+      "id": "legacy-narcissu-iris-nar3_00",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-iris/nar3_00_cn.txt",
+      "bytes": 15568,
+      "sha256": "8d419ec0c8556e79d638aded0f28aeb528e1b65bc831523fa5b4c8937a63e59f"
+    },
+    {
+      "id": "legacy-narcissu-iris-nar3_00",
+      "language": "jp",
+      "path": "/data/legacy-vn/narcissu-iris/nar3_00_jp.txt",
+      "bytes": 21121,
+      "sha256": "22be7995b88ab1d1d20e443522404c84ef147733ecc35eaf1baf334d71d3f43b"
+    },
+    {
+      "id": "legacy-narcissu-iris-nar3_01",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-iris/nar3_01_cn.txt",
+      "bytes": 26863,
+      "sha256": "ec154259a85c28376bf9e68195a269cc3905a3d47cc39394d15befd84ee765f9"
+    },
+    {
+      "id": "legacy-narcissu-iris-nar3_01",
+      "language": "jp",
+      "path": "/data/legacy-vn/narcissu-iris/nar3_01_jp.txt",
+      "bytes": 37487,
+      "sha256": "bfa7b4ea88c210db25ed7f54bf6f2ad4e273b049bc825ae402e7a69bc6593818"
+    },
+    {
+      "id": "legacy-narcissu-iris-nar3_02",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-iris/nar3_02_cn.txt",
+      "bytes": 14805,
+      "sha256": "306ab8684976e45bfac9785df9338c5229af6b940694c987e92c7450ad6d5d28"
+    },
+    {
+      "id": "legacy-narcissu-iris-nar3_02",
+      "language": "jp",
+      "path": "/data/legacy-vn/narcissu-iris/nar3_02_jp.txt",
+      "bytes": 20200,
+      "sha256": "c6f741c07f11b8cd9a86077ee909b5edc4813b775dfa161788536ebb695b8f26"
+    },
+    {
+      "id": "legacy-narcissu-iris-nar3_03",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-iris/nar3_03_cn.txt",
+      "bytes": 26386,
+      "sha256": "991d813f4c8843838a7c36120723c9d5c9f2fc5e105515aa3317d7da263490c5"
+    },
+    {
+      "id": "legacy-narcissu-iris-nar3_03",
+      "language": "jp",
+      "path": "/data/legacy-vn/narcissu-iris/nar3_03_jp.txt",
+      "bytes": 36085,
+      "sha256": "4a3b1f38c26b7f330e583297cf921188aa9ac8275b01f3c71cae0fc818cf48d4"
+    },
+    {
+      "id": "legacy-narcissu-iris-nar3_04",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-iris/nar3_04_cn.txt",
+      "bytes": 28067,
+      "sha256": "91ae3ba0f93299d55a52d24fd7f0ff58bbc6cc7eb9616ebdfa0d7e1be6fa5404"
+    },
+    {
+      "id": "legacy-narcissu-iris-nar3_04",
+      "language": "jp",
+      "path": "/data/legacy-vn/narcissu-iris/nar3_04_jp.txt",
+      "bytes": 38504,
+      "sha256": "80192bd9143a511c6684eae99e4e0aa4b88114b856db612c8c0d68c7c0df8b41"
+    },
+    {
+      "id": "legacy-narcissu-iris-nar3_05",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-iris/nar3_05_cn.txt",
+      "bytes": 22432,
+      "sha256": "cedb2d77a0dc1811c10a275999e2b291c59c0d115680af9228658911b5ce49b2"
+    },
+    {
+      "id": "legacy-narcissu-iris-nar3_05",
+      "language": "jp",
+      "path": "/data/legacy-vn/narcissu-iris/nar3_05_jp.txt",
+      "bytes": 30954,
+      "sha256": "c93c11e80f3f4d711a2776cddc0df745b1b22ea21e0c99ae488be1da03697939"
+    },
+    {
+      "id": "legacy-narcissu-iris-nar3_06",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-iris/nar3_06_cn.txt",
+      "bytes": 22418,
+      "sha256": "8fdf15929a10952f8bc1a0a23e6f0e6ae8c1a3a53c71cce4c750b33d522a847d"
+    },
+    {
+      "id": "legacy-narcissu-iris-nar3_06",
+      "language": "jp",
+      "path": "/data/legacy-vn/narcissu-iris/nar3_06_jp.txt",
+      "bytes": 31134,
+      "sha256": "ad46405b3b2573fb42935c2fd50f18116e9ee312741b8458816856b38d32adb7"
+    },
+    {
+      "id": "legacy-narcissu-iris-nar3_07",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-iris/nar3_07_cn.txt",
+      "bytes": 33495,
+      "sha256": "b05b8a5e7204c28e11f1cd3d67e7b172b9b6a4d48d231109c2c94c0ffb6f7838"
+    },
+    {
+      "id": "legacy-narcissu-iris-nar3_07",
+      "language": "jp",
+      "path": "/data/legacy-vn/narcissu-iris/nar3_07_jp.txt",
+      "bytes": 45224,
+      "sha256": "e61cd0f0eea63dad7bc33bb7acc9e066f4ad2887fd9f1cc26ce498c6e5c9f782"
+    },
+    {
+      "id": "legacy-narcissu-iris-nar3_08",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-iris/nar3_08_cn.txt",
+      "bytes": 30787,
+      "sha256": "d43f8bb17d24e2dce64b42202bf668ba2eedb612eb0b93347c09d3ad3c8e28db"
+    },
+    {
+      "id": "legacy-narcissu-iris-nar3_08",
+      "language": "jp",
+      "path": "/data/legacy-vn/narcissu-iris/nar3_08_jp.txt",
+      "bytes": 41621,
+      "sha256": "4fd61262511c8e45b15c3d56b693f3306c262d61f47e61272b2201cbbb654143"
+    },
+    {
+      "id": "legacy-narcissu-one-two-nar1_00",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-one-two/nar1_00_cn.txt",
+      "bytes": 7869,
+      "sha256": "3fb3cd20539d4a4ab2cc1e14b0de32ec6a4ff262846b968a7d0dd1d4216aa370"
+    },
+    {
+      "id": "legacy-narcissu-one-two-nar1_00",
+      "language": "jp",
+      "path": "/data/legacy-vn/narcissu-one-two/nar1_00_jp.txt",
+      "bytes": 10340,
+      "sha256": "a2f9a130dae0cca7b3dab29f209711497880aab01e0effdfbaf7f250a19dcde9"
+    },
+    {
+      "id": "legacy-narcissu-one-two-nar1_01",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-one-two/nar1_01_cn.txt",
+      "bytes": 17132,
+      "sha256": "bea283be34615fbefdf2450f95c43ae955aff43945fc4b74d8d1f26b5eee4ff3"
+    },
+    {
+      "id": "legacy-narcissu-one-two-nar1_01",
+      "language": "jp",
+      "path": "/data/legacy-vn/narcissu-one-two/nar1_01_jp.txt",
+      "bytes": 23332,
+      "sha256": "4056236fb4ba1c395809a2145674ac5b3ccda95eab59da6a3d7b3809ec95dc02"
+    },
+    {
+      "id": "legacy-narcissu-one-two-nar1_02",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-one-two/nar1_02_cn.txt",
+      "bytes": 24597,
+      "sha256": "560018095eb72f94fb6c9d03508c5cab4690be89556f434c89907ebb8fe28dba"
+    },
+    {
+      "id": "legacy-narcissu-one-two-nar1_02",
+      "language": "jp",
+      "path": "/data/legacy-vn/narcissu-one-two/nar1_02_jp.txt",
+      "bytes": 33864,
+      "sha256": "0b8b3c0bd9e6c085267b9b1b1dc37e6e400933e6ca690d05370b9f507c1725d9"
+    },
+    {
+      "id": "legacy-narcissu-one-two-nar1_03",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-one-two/nar1_03_cn.txt",
+      "bytes": 20603,
+      "sha256": "3dab9899114568a63637cbec94724a2b73cd4c5d0266ecc8c9541a3f1c2ea0be"
+    },
+    {
+      "id": "legacy-narcissu-one-two-nar1_03",
+      "language": "jp",
+      "path": "/data/legacy-vn/narcissu-one-two/nar1_03_jp.txt",
+      "bytes": 28633,
+      "sha256": "c8f9df1b5f7f040b6f384555d4b0a63b10b1aa207529a3eeff035b5d34ff74cf"
+    },
+    {
+      "id": "legacy-narcissu-one-two-nar1_04",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-one-two/nar1_04_cn.txt",
+      "bytes": 14684,
+      "sha256": "0bffbd1e3cc6edd3c68d752963cd1bf401f031730c64737d059ecd5be5216835"
+    },
+    {
+      "id": "legacy-narcissu-one-two-nar1_04",
+      "language": "jp",
+      "path": "/data/legacy-vn/narcissu-one-two/nar1_04_jp.txt",
+      "bytes": 20563,
+      "sha256": "598a69132131c1de7e6aa5c40757692e259f440ef507a3072731cebe9d1730c7"
+    },
+    {
+      "id": "legacy-narcissu-one-two-nar1_05",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-one-two/nar1_05_cn.txt",
+      "bytes": 18228,
+      "sha256": "686e3db9693361ec4bdebe0f01a693a000b56f8a7c60bdca737ed3127257b9a0"
+    },
+    {
+      "id": "legacy-narcissu-one-two-nar1_05",
+      "language": "jp",
+      "path": "/data/legacy-vn/narcissu-one-two/nar1_05_jp.txt",
+      "bytes": 25304,
+      "sha256": "7a9673d3a560f1d50de4af7f626ad561147d573327fc936a657da615b791c39b"
+    },
+    {
+      "id": "legacy-narcissu-one-two-nar1_06",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-one-two/nar1_06_cn.txt",
+      "bytes": 14218,
+      "sha256": "bdd63ee6f90836cd5435d5669a82c70e05823152e2554d23d77c1a174761f81f"
+    },
+    {
+      "id": "legacy-narcissu-one-two-nar1_06",
+      "language": "jp",
+      "path": "/data/legacy-vn/narcissu-one-two/nar1_06_jp.txt",
+      "bytes": 21523,
+      "sha256": "8ba021b774ea0f94fe089f2ddb0760a4ede3900b4c3dfd787b7ed2901a596142"
+    },
+    {
+      "id": "legacy-narcissu-one-two-nar1_07",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-one-two/nar1_07_cn.txt",
+      "bytes": 16408,
+      "sha256": "64c2d5851332234c64dcf0177db2cc11b4d8cb8d2685071a9aa75cc7060b3ab8"
+    },
+    {
+      "id": "legacy-narcissu-one-two-nar1_07",
+      "language": "jp",
+      "path": "/data/legacy-vn/narcissu-one-two/nar1_07_jp.txt",
+      "bytes": 22518,
+      "sha256": "16a580e382dec8d0b76dc975a0f8ecff967c445b2e516bcb549ba14ed0532932"
+    },
+    {
+      "id": "legacy-narcissu-one-two-nar1_08",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-one-two/nar1_08_cn.txt",
+      "bytes": 6545,
+      "sha256": "b25ce7ae6abe0f9ef47fd5db06478da16989720856a4b39085fc708c761a066f"
+    },
+    {
+      "id": "legacy-narcissu-one-two-nar1_08",
+      "language": "jp",
+      "path": "/data/legacy-vn/narcissu-one-two/nar1_08_jp.txt",
+      "bytes": 9759,
+      "sha256": "0ba67cdbd6f7e5ec01bdff374dc7240d3f47b2be04063bad496a6f5602c72965"
+    },
+    {
+      "id": "legacy-narcissu-one-two-nar2_01",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-one-two/nar2_01_cn.txt",
+      "bytes": 4092,
+      "sha256": "4eb8e0bbf72e423eb0f5dd0b89de1d2943d711a27031c4e37851450b7918ccd9"
+    },
+    {
+      "id": "legacy-narcissu-one-two-nar2_01",
+      "language": "jp",
+      "path": "/data/legacy-vn/narcissu-one-two/nar2_01_jp.txt",
+      "bytes": 5752,
+      "sha256": "9aff06fad984c70725d56e70964aa95e538a18cf2fae0cdfdec473dd72b08cc3"
+    },
+    {
+      "id": "legacy-narcissu-one-two-nar2_02",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-one-two/nar2_02_cn.txt",
+      "bytes": 18804,
+      "sha256": "4544664a92bc005dc22c65ddbe7ad0db4d5bde611b0ee7f7b8396d64d57e89f2"
+    },
+    {
+      "id": "legacy-narcissu-one-two-nar2_02",
+      "language": "jp",
+      "path": "/data/legacy-vn/narcissu-one-two/nar2_02_jp.txt",
+      "bytes": 25720,
+      "sha256": "62cbaf6738c43b540c53722362737252da78b2a5c17d35b2bb2d5a4453dde12b"
+    },
+    {
+      "id": "legacy-narcissu-one-two-nar2_03",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-one-two/nar2_03_cn.txt",
+      "bytes": 10891,
+      "sha256": "767dfc01ece34ef898be95eb9684bdcc86606cae28bddf9e2f82f8fa0e45ff80"
+    },
+    {
+      "id": "legacy-narcissu-one-two-nar2_03",
+      "language": "jp",
+      "path": "/data/legacy-vn/narcissu-one-two/nar2_03_jp.txt",
+      "bytes": 15978,
+      "sha256": "a2f5c2d37fde783f19a7385bfd2ad8e62bc430a387352b5c7a954daa67585146"
+    },
+    {
+      "id": "legacy-narcissu-one-two-nar2_04",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-one-two/nar2_04_cn.txt",
+      "bytes": 18616,
+      "sha256": "30997e5d2b30a634504ed394a1cc020a10f77cff887f59a397febc29722ee5f3"
+    },
+    {
+      "id": "legacy-narcissu-one-two-nar2_04",
+      "language": "jp",
+      "path": "/data/legacy-vn/narcissu-one-two/nar2_04_jp.txt",
+      "bytes": 25328,
+      "sha256": "b905587b997dbc42c86656b763e9c847c8c041c9ac5aac3f5e77283f7c4a7095"
+    },
+    {
+      "id": "legacy-narcissu-one-two-nar2_05",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-one-two/nar2_05_cn.txt",
+      "bytes": 19350,
+      "sha256": "d18fe21fdd28f49690c964859d6895bacadd87672aa695c122815a46c643ceef"
+    },
+    {
+      "id": "legacy-narcissu-one-two-nar2_05",
+      "language": "jp",
+      "path": "/data/legacy-vn/narcissu-one-two/nar2_05_jp.txt",
+      "bytes": 27276,
+      "sha256": "5cdf501bfe009abb9293fac0d43672d46d5f04236380484ba0d240a3fcaeb7bf"
+    },
+    {
+      "id": "legacy-narcissu-one-two-nar2_06",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-one-two/nar2_06_cn.txt",
+      "bytes": 10939,
+      "sha256": "fa5eb40fc9e1159cc2a8c3e4ba921a0594dc29d3fd17c39ce619a5679947333a"
+    },
+    {
+      "id": "legacy-narcissu-one-two-nar2_06",
+      "language": "jp",
+      "path": "/data/legacy-vn/narcissu-one-two/nar2_06_jp.txt",
+      "bytes": 15479,
+      "sha256": "8741188617911ee010bac7e284c79a4f5b40c00c715a78896bf0663c583c4b2a"
+    },
+    {
+      "id": "legacy-narcissu-one-two-nar2_07",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-one-two/nar2_07_cn.txt",
+      "bytes": 8854,
+      "sha256": "fd92d051abb3cbf346edad276e4b1a3cae92e600d74045f2b290e049ccfbac3a"
+    },
+    {
+      "id": "legacy-narcissu-one-two-nar2_07",
+      "language": "jp",
+      "path": "/data/legacy-vn/narcissu-one-two/nar2_07_jp.txt",
+      "bytes": 12405,
+      "sha256": "894c6c902706475ea8d45d5648334b6d7f7e2cdef42bb3cde4c2250d66ecf1ad"
+    },
+    {
+      "id": "legacy-narcissu-one-two-nar2_08",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-one-two/nar2_08_cn.txt",
+      "bytes": 19042,
+      "sha256": "d1a7912f9dab61424a18774f3504c22f77cb5d430982923ea7a9a1442c7cd653"
+    },
+    {
+      "id": "legacy-narcissu-one-two-nar2_08",
+      "language": "jp",
+      "path": "/data/legacy-vn/narcissu-one-two/nar2_08_jp.txt",
+      "bytes": 27059,
+      "sha256": "0521905460d3ed982e05d7e29b22cbfe3eeb92de399c7e7bc0004f95dac6ecc4"
+    },
+    {
+      "id": "legacy-narcissu-one-two-nar2_09",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-one-two/nar2_09_cn.txt",
+      "bytes": 12004,
+      "sha256": "b5a0dac065778a427509b4aac3b75b98afa9fd79eb3cca5aee306b83edd85785"
+    },
+    {
+      "id": "legacy-narcissu-one-two-nar2_09",
+      "language": "jp",
+      "path": "/data/legacy-vn/narcissu-one-two/nar2_09_jp.txt",
+      "bytes": 17427,
+      "sha256": "3237249f578d3049b5479e45ef382472a9dc2a26600461fa653d1e47cc143cf1"
+    },
+    {
+      "id": "legacy-narcissu-one-two-nar2_10",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-one-two/nar2_10_cn.txt",
+      "bytes": 11497,
+      "sha256": "1600b336842d939b4af508daf9ed46d3ef49d64722eca9f1d040d9198d200f21"
+    },
+    {
+      "id": "legacy-narcissu-one-two-nar2_10",
+      "language": "jp",
+      "path": "/data/legacy-vn/narcissu-one-two/nar2_10_jp.txt",
+      "bytes": 16733,
+      "sha256": "17e6a561ae8bbca8e0c443faedbb2fbde3192f82eea2f7e9c86d47b5c987d4d3"
+    },
+    {
+      "id": "legacy-narcissu-one-two-nar2_11",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-one-two/nar2_11_cn.txt",
+      "bytes": 11619,
+      "sha256": "4c2b67dab1dc222ce84fd1519895a498a44ee1df01c8885a4392adcb18367a75"
+    },
+    {
+      "id": "legacy-narcissu-one-two-nar2_11",
+      "language": "jp",
+      "path": "/data/legacy-vn/narcissu-one-two/nar2_11_jp.txt",
+      "bytes": 16441,
+      "sha256": "4d1f833fdc8b53ee8c3a1edb526d03969eab012f1bcca8cfbd6c032d922c3ccb"
+    },
+    {
+      "id": "legacy-narcissu-one-two-nar2_12",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-one-two/nar2_12_cn.txt",
+      "bytes": 24294,
+      "sha256": "f6852d3788221118f674d98691bac89321235ece8833f20cb3efc248ba8b10c3"
+    },
+    {
+      "id": "legacy-narcissu-one-two-nar2_12",
+      "language": "jp",
+      "path": "/data/legacy-vn/narcissu-one-two/nar2_12_jp.txt",
+      "bytes": 33385,
+      "sha256": "eda6ebd432e6590acd357baaff0ae7144e3b784a374f92d7c0a0c24fe7ba953c"
+    },
+    {
+      "id": "legacy-narcissu-one-two-nar2_13",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-one-two/nar2_13_cn.txt",
+      "bytes": 12936,
+      "sha256": "cd16c06862a9e9f953156a5925d71cc2fa055d853245bb7dbdaba5fbd5d2afb4"
+    },
+    {
+      "id": "legacy-narcissu-one-two-nar2_13",
+      "language": "jp",
+      "path": "/data/legacy-vn/narcissu-one-two/nar2_13_jp.txt",
+      "bytes": 18578,
+      "sha256": "035165308e06dc016056fbd390e07cf724e97975637790eeaadc255107915ba9"
+    },
+    {
+      "id": "legacy-narcissu-one-two-nar2_14",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-one-two/nar2_14_cn.txt",
+      "bytes": 15675,
+      "sha256": "0139c89c062f142b30e873d24f1bd0cff6001cac13a5c55dc3a97371050a3209"
+    },
+    {
+      "id": "legacy-narcissu-one-two-nar2_14",
+      "language": "jp",
+      "path": "/data/legacy-vn/narcissu-one-two/nar2_14_jp.txt",
+      "bytes": 21330,
+      "sha256": "4271c69b62d9d97f597488afd61896d0a820fbd42ee62318160b97b4cf12d922"
+    },
+    {
+      "id": "legacy-narcissu-one-two-nar2_15",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-one-two/nar2_15_cn.txt",
+      "bytes": 12466,
+      "sha256": "7abbb496cfdc18060f1b010a1f326055c31fd2aa3e4e62008a796cb71f494920"
+    },
+    {
+      "id": "legacy-narcissu-one-two-nar2_15",
+      "language": "jp",
+      "path": "/data/legacy-vn/narcissu-one-two/nar2_15_jp.txt",
+      "bytes": 17810,
+      "sha256": "33864ae43cfa6f2a3c936f48d1a916fdcf3e5575ffcfadaf468c9fe34ef9525a"
+    },
+    {
+      "id": "legacy-narcissu-one-two-nar2_16",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-one-two/nar2_16_cn.txt",
+      "bytes": 13831,
+      "sha256": "49703825c7b0fe1872947e30ea1e48b209bb935ea160d8148a47f39ca1a789a1"
+    },
+    {
+      "id": "legacy-narcissu-one-two-nar2_16",
+      "language": "jp",
+      "path": "/data/legacy-vn/narcissu-one-two/nar2_16_jp.txt",
+      "bytes": 19487,
+      "sha256": "78b541cf21b38f4acf9bd4375619f51d5dac33f4ed35ac4a0d5befc57c2034f6"
+    },
+    {
+      "id": "legacy-narcissu-one-two-nar2_17",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-one-two/nar2_17_cn.txt",
+      "bytes": 16487,
+      "sha256": "bc7db8284f3b47d9f64b356321bcb401d7db9ea4964ac21710314594a8536848"
+    },
+    {
+      "id": "legacy-narcissu-one-two-nar2_17",
+      "language": "jp",
+      "path": "/data/legacy-vn/narcissu-one-two/nar2_17_jp.txt",
+      "bytes": 23497,
+      "sha256": "88b360104adb57c9f7c08ad66131d017e822dbac11e7e370f8c7d854aa960188"
+    },
+    {
+      "id": "legacy-narcissu-one-two-nar2_18",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-one-two/nar2_18_cn.txt",
+      "bytes": 11932,
+      "sha256": "d50a92dec18bfcc3313df2f0fdded82808583c7f8be604168c27681c8b25d24e"
+    },
+    {
+      "id": "legacy-narcissu-one-two-nar2_18",
+      "language": "jp",
+      "path": "/data/legacy-vn/narcissu-one-two/nar2_18_jp.txt",
+      "bytes": 16499,
+      "sha256": "6367fe68b42bdaee0633deeeb8bf66329d36109c6110beb1fdeb7b81ac92ecce"
+    },
+    {
+      "id": "legacy-narcissu-one-two-nar2_19",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-one-two/nar2_19_cn.txt",
+      "bytes": 6859,
+      "sha256": "66d3ea8c282de24f9bf7f7fe5025201b1881d5fe01975726d53abeac0a4283df"
+    },
+    {
+      "id": "legacy-narcissu-one-two-nar2_19",
+      "language": "jp",
+      "path": "/data/legacy-vn/narcissu-one-two/nar2_19_jp.txt",
+      "bytes": 9701,
+      "sha256": "44b8540358e3d16d3323c3553df3e0e44729ddff9213bb5b3d72bc9b0ee5a352"
+    },
+    {
+      "id": "legacy-narcissu-one-two-nar2_20",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-one-two/nar2_20_cn.txt",
+      "bytes": 5977,
+      "sha256": "f9ea7e07aff459e07ba44695301ea64c1ec9ef85aca2189f58cbd32cf1bc329a"
+    },
+    {
+      "id": "legacy-narcissu-one-two-nar2_20",
+      "language": "jp",
+      "path": "/data/legacy-vn/narcissu-one-two/nar2_20_jp.txt",
+      "bytes": 8481,
+      "sha256": "7fdc498ad214e05f4c96d8692cde998172e2a74186de7e876140a962c492af9e"
+    },
+    {
+      "id": "legacy-narcissu-sumire-3narsumi01",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-sumire/3narsumi01_cn.txt",
+      "bytes": 36326,
+      "sha256": "fa33a9d68f31b87ba25a804b1caa813069b71b384519db32352ce683eb239e76"
+    },
+    {
+      "id": "legacy-narcissu-sumire-3narsumi01",
+      "language": "jp",
+      "path": "/data/legacy-vn/narcissu-sumire/3narsumi01_jp.txt",
+      "bytes": 49969,
+      "sha256": "ece1d72176129e33749b3c4ba666bcde20872fc423cb7af7b64c2c0abc6acd00"
+    },
+    {
+      "id": "legacy-narcissu-sumire-3narsumi02",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-sumire/3narsumi02_cn.txt",
+      "bytes": 35977,
+      "sha256": "21533cc0f4ce6e7269d33366b6b2dfe7836eab39e2bb8b9a053f7ded3bfd2898"
+    },
+    {
+      "id": "legacy-narcissu-sumire-3narsumi02",
+      "language": "jp",
+      "path": "/data/legacy-vn/narcissu-sumire/3narsumi02_jp.txt",
+      "bytes": 48939,
+      "sha256": "1c716b66a02fbb6cc27189ea835f2b32c8b5c2ce5efc2d66aa4486baffd44491"
+    },
+    {
+      "id": "legacy-narcissu-sumire-3narsumi03",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-sumire/3narsumi03_cn.txt",
+      "bytes": 39530,
+      "sha256": "ecd1fa5062ce57d7b28d980c3e3aefa120aacda067c298b47aaa667b16c325e3"
+    },
+    {
+      "id": "legacy-narcissu-sumire-3narsumi03",
+      "language": "jp",
+      "path": "/data/legacy-vn/narcissu-sumire/3narsumi03_jp.txt",
+      "bytes": 55426,
+      "sha256": "14c4387bc0278a1de0b11db74dc6d0e8bbf3f06f9135e65ce60def741a19af76"
+    },
+    {
+      "id": "legacy-narcissu-sumire-3narsumi04",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-sumire/3narsumi04_cn.txt",
+      "bytes": 20556,
+      "sha256": "f1d76bca575f165ac06b93ab1cf04058b60b0c72cf4d4f96b00eb0fcceef9986"
+    },
+    {
+      "id": "legacy-narcissu-sumire-3narsumi04",
+      "language": "jp",
+      "path": "/data/legacy-vn/narcissu-sumire/3narsumi04_jp.txt",
+      "bytes": 29340,
+      "sha256": "47c4a6dbe6de27f242f7a6df2b3a9811e22c8c0a5eb2187250013e87e1bb5b7e"
+    },
+    {
+      "id": "legacy-narcissu-sumire-3narsumi05",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-sumire/3narsumi05_cn.txt",
+      "bytes": 22205,
+      "sha256": "4e43e591cdc3045f4c9cdb8de8ea5150943453c54f0418a29277ced2984f709b"
+    },
+    {
+      "id": "legacy-narcissu-sumire-3narsumi05",
+      "language": "jp",
+      "path": "/data/legacy-vn/narcissu-sumire/3narsumi05_jp.txt",
+      "bytes": 31377,
+      "sha256": "f2076b983726630d9fcfe1455e7254a5f8cfd85a6735b6c082d409c408b54286"
+    },
+    {
+      "id": "legacy-narcissu-sumire-3narsumi06",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-sumire/3narsumi06_cn.txt",
+      "bytes": 20377,
+      "sha256": "04e96cf274070552440b2f9a0ec5750a754ef42d1f1fd2e171cf5fcba575428f"
+    },
+    {
+      "id": "legacy-narcissu-sumire-3narsumi06",
+      "language": "jp",
+      "path": "/data/legacy-vn/narcissu-sumire/3narsumi06_jp.txt",
+      "bytes": 28606,
+      "sha256": "d9066360dbf0f056f3c0964cc331ad869ad07481ca16cbf6b844d722be7c6279"
+    },
+    {
+      "id": "legacy-narcissu-sumire-3narsumi07",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-sumire/3narsumi07_cn.txt",
+      "bytes": 25916,
+      "sha256": "8eb02fd90cb65eca7ad88bfb32845a4385fe9c44024a6bca115c28acc3c3e2dd"
+    },
+    {
+      "id": "legacy-narcissu-sumire-3narsumi07",
+      "language": "jp",
+      "path": "/data/legacy-vn/narcissu-sumire/3narsumi07_jp.txt",
+      "bytes": 36003,
+      "sha256": "8aa04409d219fc6df371cc3ff38a20f8bf587c28bc6e768561d1951f0010714b"
+    },
+    {
+      "id": "legacy-narcissu-sumire-3narsumi08",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-sumire/3narsumi08_cn.txt",
+      "bytes": 30673,
+      "sha256": "a23c72e76f243042f58b35ce67d1715f353a7a09956ab4008d81532decc06d29"
+    },
+    {
+      "id": "legacy-narcissu-sumire-3narsumi08",
+      "language": "jp",
+      "path": "/data/legacy-vn/narcissu-sumire/3narsumi08_jp.txt",
+      "bytes": 42173,
+      "sha256": "3c3874af63eba3a9c2f3dd1994bcffef6bdf5de9a9c8490ead19a6202901d463"
+    },
+    {
+      "id": "legacy-narcissu-sumire-ep",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-sumire/ep_cn.txt",
+      "bytes": 5268,
+      "sha256": "99c149a6cfb1fcb65073de2ded29a3d109c0f59af3a1b138cc75b8a7f7b1f91b"
+    },
+    {
+      "id": "legacy-narcissu-sumire-ep",
+      "language": "jp",
+      "path": "/data/legacy-vn/narcissu-sumire/ep_jp.txt",
+      "bytes": 7158,
+      "sha256": "dcf94fd18dcb3f9a108cf45f17ba78c982f5bd44d07eada69d3f5611e4f18747"
+    },
+    {
+      "id": "legacy-narcissu-sumire-narsumi00",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-sumire/narsumi00_cn.txt",
+      "bytes": 763,
+      "sha256": "3a828df7cdf9684ab4d627c72da3bdd2155c2e51a1a573a82eedb2229a0660f7"
+    },
+    {
+      "id": "legacy-narcissu-sumire-narsumi00",
+      "language": "jp",
+      "path": "/data/legacy-vn/narcissu-sumire/narsumi00_jp.txt",
+      "bytes": 1082,
+      "sha256": "01d6fcdf056bec7d36b928279abba41552f63da94014dcfc3952322ecfc3d0a4"
+    },
+    {
+      "id": "legacy-narcissu-sumire-omake",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-sumire/omake_cn.txt",
+      "bytes": 6930,
+      "sha256": "f1f410238abb4654823a3f28114737a23c9748692beed30af41f50ff871a377d"
+    },
+    {
+      "id": "legacy-narcissu-sumire-omake",
+      "language": "jp",
+      "path": "/data/legacy-vn/narcissu-sumire/omake_jp.txt",
+      "bytes": 9372,
+      "sha256": "c9ee38151d145a917234f7db3763f21e9245bc8db6622b23a1098af6ce0b8b17"
+    },
+    {
+      "id": "legacy-narcissu-zero-4atogaki",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-zero/4atogaki_cn.txt",
+      "bytes": 5296,
+      "sha256": "8a9cc160057e61311b36488c2273069e46c4c6f61199f3a750260d78692b357c"
+    },
+    {
+      "id": "legacy-narcissu-zero-4atogaki",
+      "language": "jp",
+      "path": "/data/legacy-vn/narcissu-zero/4atogaki_jp.txt",
+      "bytes": 7017,
+      "sha256": "1de7d231f6ab900aab46325471b82246c78d1a833147e88ca8449f4f05a273a7"
+    },
+    {
+      "id": "legacy-narcissu-zero-nar4_00",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-zero/nar4_00_cn.txt",
+      "bytes": 6282,
+      "sha256": "27913cd98ad4a2d63d8b5ff057585520f340e039a9b1d497559c4e93bed02593"
+    },
+    {
+      "id": "legacy-narcissu-zero-nar4_00",
+      "language": "jp",
+      "path": "/data/legacy-vn/narcissu-zero/nar4_00_jp.txt",
+      "bytes": 7815,
+      "sha256": "d2829cc3d67407a2ac752cc8af5ec5f5f19039bb7fc54497d17e64623c11c11b"
+    },
+    {
+      "id": "legacy-narcissu-zero-nar4_01",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-zero/nar4_01_cn.txt",
+      "bytes": 14720,
+      "sha256": "cd00bb2904faa8f73201944f5837005f21affa26a4dd7a13ad424d073ba8dabe"
+    },
+    {
+      "id": "legacy-narcissu-zero-nar4_01",
+      "language": "jp",
+      "path": "/data/legacy-vn/narcissu-zero/nar4_01_jp.txt",
+      "bytes": 19937,
+      "sha256": "b96237762ee7d5e73d3a77b2b9ca1f14bd7a12fb56bbb1fb0252b3ab0dbe37f4"
+    },
+    {
+      "id": "legacy-narcissu-zero-nar4_02",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-zero/nar4_02_cn.txt",
+      "bytes": 32347,
+      "sha256": "83e76120a7d2e38350cc47f836806f852d8bf4deb45332a1afe449e8c48f093f"
+    },
+    {
+      "id": "legacy-narcissu-zero-nar4_02",
+      "language": "jp",
+      "path": "/data/legacy-vn/narcissu-zero/nar4_02_jp.txt",
+      "bytes": 41977,
+      "sha256": "c560e2eee18bab6072c6c80bacbc8d6623ff4639e3c4e740738f3b3b7873c38b"
+    },
+    {
+      "id": "legacy-narcissu-zero-nar4_03",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-zero/nar4_03_cn.txt",
+      "bytes": 21471,
+      "sha256": "1dc4f9106642b02621f3890cf7957e3f7d2a0a04bf9a6a5f9f356c75d240e30c"
+    },
+    {
+      "id": "legacy-narcissu-zero-nar4_03",
+      "language": "jp",
+      "path": "/data/legacy-vn/narcissu-zero/nar4_03_jp.txt",
+      "bytes": 28057,
+      "sha256": "36283d4f2bb16b60227743b4db4116f63ffe8c8cc1f49d906b19ce22c559b7b9"
+    },
+    {
+      "id": "legacy-narcissu-zero-nar4_04",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-zero/nar4_04_cn.txt",
+      "bytes": 25027,
+      "sha256": "0bdc1b0deddbce0f409994102b10b83023ba20315733b33cf62a55a0356eb791"
+    },
+    {
+      "id": "legacy-narcissu-zero-nar4_04",
+      "language": "jp",
+      "path": "/data/legacy-vn/narcissu-zero/nar4_04_jp.txt",
+      "bytes": 32837,
+      "sha256": "a9848ba9dbaa1fb7d832cc513176e31f87ef4524b19795f82cd57effd32a758b"
+    },
+    {
+      "id": "legacy-narcissu-zero-nar4_05",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-zero/nar4_05_cn.txt",
+      "bytes": 33788,
+      "sha256": "fcc655afdd7a53fa09f16ef08a5852dc151a942bbe3058503aab9e2a0d48897b"
+    },
+    {
+      "id": "legacy-narcissu-zero-nar4_05",
+      "language": "jp",
+      "path": "/data/legacy-vn/narcissu-zero/nar4_05_jp.txt",
+      "bytes": 43951,
+      "sha256": "43c361b8f8b3bcbb0d901818f4659e45213b67e69e5ec4a909ed3363377b6ebd"
+    },
+    {
+      "id": "legacy-narcissu-zero-nar4_06",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-zero/nar4_06_cn.txt",
+      "bytes": 28610,
+      "sha256": "e30bf1d4f72a571e8ea215e63d71dbe5928df57288f810e8d89fde1a8a5d2397"
+    },
+    {
+      "id": "legacy-narcissu-zero-nar4_06",
+      "language": "jp",
+      "path": "/data/legacy-vn/narcissu-zero/nar4_06_jp.txt",
+      "bytes": 37961,
+      "sha256": "b95d162fcf093b4b74b49e5f7ddcc77f89c207b4b612f563b83d8fcf3b42db64"
+    },
+    {
+      "id": "legacy-narcissu-zero-nar4_07",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-zero/nar4_07_cn.txt",
+      "bytes": 33646,
+      "sha256": "0af77de9acb231968ae6b429ac1445757918629b6fc43af9f41b619273715e5f"
+    },
+    {
+      "id": "legacy-narcissu-zero-nar4_07",
+      "language": "jp",
+      "path": "/data/legacy-vn/narcissu-zero/nar4_07_jp.txt",
+      "bytes": 43723,
+      "sha256": "23cc3b898c3ba1614d9b7b2a5dc55eb1a12692516f004e065e00e4e36e56fd3e"
+    },
+    {
+      "id": "legacy-narcissu-zero-nar4_08",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-zero/nar4_08_cn.txt",
+      "bytes": 15866,
+      "sha256": "bda1aca0284cc157bd3dfdf5bf0ac62611eedb4eab422108057c10e589a9085d"
+    },
+    {
+      "id": "legacy-narcissu-zero-nar4_08",
+      "language": "jp",
+      "path": "/data/legacy-vn/narcissu-zero/nar4_08_jp.txt",
+      "bytes": 21622,
+      "sha256": "5188a9c8a67b0f94a5068ebb14f827e7863026f84310978e97f0fbf112cad3a2"
+    },
+    {
+      "id": "legacy-narcissu-zero-nar4_09",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-zero/nar4_09_cn.txt",
+      "bytes": 23980,
+      "sha256": "e480524465710311da4c7e80ce9df0c481d9d776076854dce46bbd732b01c2c6"
+    },
+    {
+      "id": "legacy-narcissu-zero-nar4_09",
+      "language": "jp",
+      "path": "/data/legacy-vn/narcissu-zero/nar4_09_jp.txt",
+      "bytes": 32287,
+      "sha256": "a5e8b0de450b65ed077637cd15e45ac3e51f40186fdec49c9e2693d4b9564fbc"
+    },
+    {
+      "id": "legacy-narcissu-zero-nar4_10",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-zero/nar4_10_cn.txt",
+      "bytes": 28664,
+      "sha256": "4327a9cc684de945ab5b7de9aeeab5bbd97033853162be36c5d6d688d4aa0fc7"
+    },
+    {
+      "id": "legacy-narcissu-zero-nar4_10",
+      "language": "jp",
+      "path": "/data/legacy-vn/narcissu-zero/nar4_10_jp.txt",
+      "bytes": 36944,
+      "sha256": "d3e785781d83d3f56a6ba9c825cb6b0e02c3bb6e1ce694ab71f82d4253e26cab"
+    },
+    {
+      "id": "legacy-narcissu-zero-nar4_ep",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-zero/nar4_ep_cn.txt",
+      "bytes": 15983,
+      "sha256": "51b69cd7eb538d82acbf19f14adc7d3fff0b90409a6d66f6d57831501d88e906"
+    },
+    {
+      "id": "legacy-narcissu-zero-nar4_ep",
+      "language": "jp",
+      "path": "/data/legacy-vn/narcissu-zero/nar4_ep_jp.txt",
+      "bytes": 21362,
+      "sha256": "b367ecff865f4a6d339d99b11ddc53ba3f44e92dcb300f59dd8f219f9478d63c"
+    },
+    {
+      "id": "legacy-narcissu-3rd-hime_ep",
+      "language": "cn",
+      "revision": "a729191c5fff95cfb043dd7f78b27552471a8ac25c767a664450f8280af518d5",
+      "sourceSha256": "73b86ce107d71ef568158250831d0511ea184f8f09f044889126499460a1e3f7"
+    },
+    {
+      "id": "legacy-narcissu-3rd-hime_ep",
+      "language": "jp",
+      "path": "/data/legacy-vn/narcissu-3rd/hime_ep_jp.txt",
+      "bytes": 90337,
+      "sha256": "1466d1b4e561fa18adef9cd1f0a7e7de65e840a1b1879eb2f93a52713e4231e6"
+    },
+    {
+      "id": "legacy-narcissu-3rd-nar1_00",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-3rd/nar1_00_cn.txt",
+      "bytes": 8166,
+      "sha256": "ebf2d1a4c2ac9ece5ae6e4c4d9f3f813f360f27daaf9979a237ce44930a85f4c"
+    },
+    {
+      "id": "legacy-narcissu-3rd-nar1_00",
+      "language": "jp",
+      "path": "/data/legacy-vn/narcissu-3rd/nar1_00_jp.txt",
+      "bytes": 10340,
+      "sha256": "a2f9a130dae0cca7b3dab29f209711497880aab01e0effdfbaf7f250a19dcde9"
+    },
+    {
+      "id": "legacy-narcissu-3rd-nar1_01",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-3rd/nar1_01_cn.txt",
+      "bytes": 16830,
+      "sha256": "8754f36396a1ce1fc1d63aa0c69d8fb3abef671066cb8c0d46315b41b3a5fef2"
+    },
+    {
+      "id": "legacy-narcissu-3rd-nar1_01",
+      "language": "jp",
+      "path": "/data/legacy-vn/narcissu-3rd/nar1_01_jp.txt",
+      "bytes": 23332,
+      "sha256": "4056236fb4ba1c395809a2145674ac5b3ccda95eab59da6a3d7b3809ec95dc02"
+    },
+    {
+      "id": "legacy-narcissu-3rd-nar1_02",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-3rd/nar1_02_cn.txt",
+      "bytes": 23744,
+      "sha256": "b1c70795e465730b97f3dd4a5e13a450e4ef44c47674480eed0fed486ec4a685"
+    },
+    {
+      "id": "legacy-narcissu-3rd-nar1_02",
+      "language": "jp",
+      "path": "/data/legacy-vn/narcissu-3rd/nar1_02_jp.txt",
+      "bytes": 33864,
+      "sha256": "0b8b3c0bd9e6c085267b9b1b1dc37e6e400933e6ca690d05370b9f507c1725d9"
+    },
+    {
+      "id": "legacy-narcissu-3rd-nar1_03",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-3rd/nar1_03_cn.txt",
+      "bytes": 20411,
+      "sha256": "121657952d92adfd245102a7f546f83ea6dd855ffe7137ecc71ebe99ea878c97"
+    },
+    {
+      "id": "legacy-narcissu-3rd-nar1_03",
+      "language": "jp",
+      "path": "/data/legacy-vn/narcissu-3rd/nar1_03_jp.txt",
+      "bytes": 28633,
+      "sha256": "c8f9df1b5f7f040b6f384555d4b0a63b10b1aa207529a3eeff035b5d34ff74cf"
+    },
+    {
+      "id": "legacy-narcissu-3rd-nar1_04",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-3rd/nar1_04_cn.txt",
+      "bytes": 14488,
+      "sha256": "7f6d9e5d446a6bde3d86405ce63a6a1a3ecfadf79136f8d0207db25b19a81153"
+    },
+    {
+      "id": "legacy-narcissu-3rd-nar1_04",
+      "language": "jp",
+      "path": "/data/legacy-vn/narcissu-3rd/nar1_04_jp.txt",
+      "bytes": 20563,
+      "sha256": "598a69132131c1de7e6aa5c40757692e259f440ef507a3072731cebe9d1730c7"
+    },
+    {
+      "id": "legacy-narcissu-3rd-nar1_05",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-3rd/nar1_05_cn.txt",
+      "bytes": 17960,
+      "sha256": "e7dc77cf55aac949a2d2474d831f2831d03de48be7f9189ced01ac310363f5a6"
+    },
+    {
+      "id": "legacy-narcissu-3rd-nar1_05",
+      "language": "jp",
+      "path": "/data/legacy-vn/narcissu-3rd/nar1_05_jp.txt",
+      "bytes": 25304,
+      "sha256": "7a9673d3a560f1d50de4af7f626ad561147d573327fc936a657da615b791c39b"
+    },
+    {
+      "id": "legacy-narcissu-3rd-nar1_06",
+      "language": "cn",
+      "revision": "5ea43ad3db1719e4e9f12fd5aad939a46d85b02fde68eb7e48c4648e252d5166",
+      "sourceSha256": "730477ea51492bdcb75e3057f76a361ed7930cdc98c2eeac6874bb39bf48e78d"
+    },
+    {
+      "id": "legacy-narcissu-3rd-nar1_06",
+      "language": "jp",
+      "path": "/data/legacy-vn/narcissu-3rd/nar1_06_jp.txt",
+      "bytes": 21523,
+      "sha256": "8ba021b774ea0f94fe089f2ddb0760a4ede3900b4c3dfd787b7ed2901a596142"
+    },
+    {
+      "id": "legacy-narcissu-3rd-nar1_07",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-3rd/nar1_07_cn.txt",
+      "bytes": 16386,
+      "sha256": "c618eb8b51e409f442178db426713b2ad4e33eab23ef40c5d39f69c2c2b9a050"
+    },
+    {
+      "id": "legacy-narcissu-3rd-nar1_07",
+      "language": "jp",
+      "path": "/data/legacy-vn/narcissu-3rd/nar1_07_jp.txt",
+      "bytes": 22518,
+      "sha256": "16a580e382dec8d0b76dc975a0f8ecff967c445b2e516bcb549ba14ed0532932"
+    },
+    {
+      "id": "legacy-narcissu-3rd-nar1_08",
+      "language": "cn",
+      "revision": "180f8fc08500fa3f016be86817b3e730357c7b06d632e877157a19e45f0718e8",
+      "sourceSha256": "fa0124819f36c98401db6c880ad23885ef8497b8ff3cf3ca043a75f7786e2221"
+    },
+    {
+      "id": "legacy-narcissu-3rd-nar1_08",
+      "language": "jp",
+      "path": "/data/legacy-vn/narcissu-3rd/nar1_08_jp.txt",
+      "bytes": 9759,
+      "sha256": "0ba67cdbd6f7e5ec01bdff374dc7240d3f47b2be04063bad496a6f5602c72965"
+    },
+    {
+      "id": "legacy-narcissu-3rd-nar2_01",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-3rd/nar2_01_cn.txt",
+      "bytes": 3694,
+      "sha256": "0d9d56d3ecfce52f0d898891552277d2dbd3da824b454308076be8c44a35d15f"
+    },
+    {
+      "id": "legacy-narcissu-3rd-nar2_01",
+      "language": "jp",
+      "path": "/data/legacy-vn/narcissu-3rd/nar2_01_jp.txt",
+      "bytes": 5752,
+      "sha256": "9aff06fad984c70725d56e70964aa95e538a18cf2fae0cdfdec473dd72b08cc3"
+    },
+    {
+      "id": "legacy-narcissu-3rd-nar2_02",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-3rd/nar2_02_cn.txt",
+      "bytes": 18812,
+      "sha256": "9ccdeba94a542d4166a925594214832441734286c608b1138eaa9b3793341650"
+    },
+    {
+      "id": "legacy-narcissu-3rd-nar2_02",
+      "language": "jp",
+      "path": "/data/legacy-vn/narcissu-3rd/nar2_02_jp.txt",
+      "bytes": 25720,
+      "sha256": "62cbaf6738c43b540c53722362737252da78b2a5c17d35b2bb2d5a4453dde12b"
+    },
+    {
+      "id": "legacy-narcissu-3rd-nar2_03",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-3rd/nar2_03_cn.txt",
+      "bytes": 10480,
+      "sha256": "db8aa21f8d39222d24b01f50ebb92cc3b44e70c08a30f8ab56ee5528ff236199"
+    },
+    {
+      "id": "legacy-narcissu-3rd-nar2_03",
+      "language": "jp",
+      "path": "/data/legacy-vn/narcissu-3rd/nar2_03_jp.txt",
+      "bytes": 15978,
+      "sha256": "a2f5c2d37fde783f19a7385bfd2ad8e62bc430a387352b5c7a954daa67585146"
+    },
+    {
+      "id": "legacy-narcissu-3rd-nar2_04",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-3rd/nar2_04_cn.txt",
+      "bytes": 18522,
+      "sha256": "d9cc912e56334522b433df6e6059bfec6de02d60917b6d7614a28d333040134b"
+    },
+    {
+      "id": "legacy-narcissu-3rd-nar2_04",
+      "language": "jp",
+      "path": "/data/legacy-vn/narcissu-3rd/nar2_04_jp.txt",
+      "bytes": 25328,
+      "sha256": "b905587b997dbc42c86656b763e9c847c8c041c9ac5aac3f5e77283f7c4a7095"
+    },
+    {
+      "id": "legacy-narcissu-3rd-nar2_05",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-3rd/nar2_05_cn.txt",
+      "bytes": 19768,
+      "sha256": "131b91ffe7afaafa7240879318a854310afe9440e4ab94b69d7f4441e72cf45e"
+    },
+    {
+      "id": "legacy-narcissu-3rd-nar2_05",
+      "language": "jp",
+      "path": "/data/legacy-vn/narcissu-3rd/nar2_05_jp.txt",
+      "bytes": 27276,
+      "sha256": "5cdf501bfe009abb9293fac0d43672d46d5f04236380484ba0d240a3fcaeb7bf"
+    },
+    {
+      "id": "legacy-narcissu-3rd-nar2_06",
+      "language": "cn",
+      "revision": "1583a382f20f25ddf49219ec939ba5b4da639d2a756763194bce176c01a3d09e",
+      "sourceSha256": "41ceb63b8f54972e82b9cf1397eae0ccb6f64e736710fc74c90d7296112be643"
+    },
+    {
+      "id": "legacy-narcissu-3rd-nar2_06",
+      "language": "jp",
+      "path": "/data/legacy-vn/narcissu-3rd/nar2_06_jp.txt",
+      "bytes": 15479,
+      "sha256": "8741188617911ee010bac7e284c79a4f5b40c00c715a78896bf0663c583c4b2a"
+    },
+    {
+      "id": "legacy-narcissu-3rd-nar2_07",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-3rd/nar2_07_cn.txt",
+      "bytes": 8794,
+      "sha256": "2134c2ebac55d13b07707a52f004208fbea157ba3c3f376929becaab4d6bf25b"
+    },
+    {
+      "id": "legacy-narcissu-3rd-nar2_07",
+      "language": "jp",
+      "path": "/data/legacy-vn/narcissu-3rd/nar2_07_jp.txt",
+      "bytes": 12405,
+      "sha256": "894c6c902706475ea8d45d5648334b6d7f7e2cdef42bb3cde4c2250d66ecf1ad"
+    },
+    {
+      "id": "legacy-narcissu-3rd-nar2_08",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-3rd/nar2_08_cn.txt",
+      "bytes": 18781,
+      "sha256": "6249983440735eab24e63e44963af30851d2b4806360b2186adbdd93f17ea2a0"
+    },
+    {
+      "id": "legacy-narcissu-3rd-nar2_08",
+      "language": "jp",
+      "path": "/data/legacy-vn/narcissu-3rd/nar2_08_jp.txt",
+      "bytes": 27059,
+      "sha256": "0521905460d3ed982e05d7e29b22cbfe3eeb92de399c7e7bc0004f95dac6ecc4"
+    },
+    {
+      "id": "legacy-narcissu-3rd-nar2_09",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-3rd/nar2_09_cn.txt",
+      "bytes": 12217,
+      "sha256": "226d2751114877b8bfe6b20fba15ecaeafec7eb113aa8a4a7a197ff2acc018da"
+    },
+    {
+      "id": "legacy-narcissu-3rd-nar2_09",
+      "language": "jp",
+      "path": "/data/legacy-vn/narcissu-3rd/nar2_09_jp.txt",
+      "bytes": 17427,
+      "sha256": "3237249f578d3049b5479e45ef382472a9dc2a26600461fa653d1e47cc143cf1"
+    },
+    {
+      "id": "legacy-narcissu-3rd-nar2_10",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-3rd/nar2_10_cn.txt",
+      "bytes": 11343,
+      "sha256": "15f3f52593b7e4b8a150f864194f8d7417abbc45551e4454f747d0e3e8ec9985"
+    },
+    {
+      "id": "legacy-narcissu-3rd-nar2_10",
+      "language": "jp",
+      "path": "/data/legacy-vn/narcissu-3rd/nar2_10_jp.txt",
+      "bytes": 16733,
+      "sha256": "17e6a561ae8bbca8e0c443faedbb2fbde3192f82eea2f7e9c86d47b5c987d4d3"
+    },
+    {
+      "id": "legacy-narcissu-3rd-nar2_11",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-3rd/nar2_11_cn.txt",
+      "bytes": 11451,
+      "sha256": "94e0923f1e1a772c87026e2dbd88b797e55ab46ae146518b61b13536aa37e23d"
+    },
+    {
+      "id": "legacy-narcissu-3rd-nar2_11",
+      "language": "jp",
+      "path": "/data/legacy-vn/narcissu-3rd/nar2_11_jp.txt",
+      "bytes": 16441,
+      "sha256": "4d1f833fdc8b53ee8c3a1edb526d03969eab012f1bcca8cfbd6c032d922c3ccb"
+    },
+    {
+      "id": "legacy-narcissu-3rd-nar2_12",
+      "language": "cn",
+      "revision": "a74af9da712c4289f443277a66dc7f0dc586413c4f7e3d5f757c7583cce3bd4e",
+      "sourceSha256": "b11539dfa0be69c717e12035d344bb1c1b99fd4e7bcf1eb56622ff520f034cdc"
+    },
+    {
+      "id": "legacy-narcissu-3rd-nar2_12",
+      "language": "jp",
+      "path": "/data/legacy-vn/narcissu-3rd/nar2_12_jp.txt",
+      "bytes": 33385,
+      "sha256": "eda6ebd432e6590acd357baaff0ae7144e3b784a374f92d7c0a0c24fe7ba953c"
+    },
+    {
+      "id": "legacy-narcissu-3rd-nar2_13",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-3rd/nar2_13_cn.txt",
+      "bytes": 12815,
+      "sha256": "a840b4f7bec6409aea9d809a18f547faaad060a3aca3aabd33be02cacb939499"
+    },
+    {
+      "id": "legacy-narcissu-3rd-nar2_13",
+      "language": "jp",
+      "path": "/data/legacy-vn/narcissu-3rd/nar2_13_jp.txt",
+      "bytes": 18578,
+      "sha256": "035165308e06dc016056fbd390e07cf724e97975637790eeaadc255107915ba9"
+    },
+    {
+      "id": "legacy-narcissu-3rd-nar2_14",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-3rd/nar2_14_cn.txt",
+      "bytes": 15264,
+      "sha256": "8d0726479c120cac8d086bbf80499717a409255000008fe4b26d27fe99e4ea6a"
+    },
+    {
+      "id": "legacy-narcissu-3rd-nar2_14",
+      "language": "jp",
+      "path": "/data/legacy-vn/narcissu-3rd/nar2_14_jp.txt",
+      "bytes": 21330,
+      "sha256": "4271c69b62d9d97f597488afd61896d0a820fbd42ee62318160b97b4cf12d922"
+    },
+    {
+      "id": "legacy-narcissu-3rd-nar2_15",
+      "language": "cn",
+      "revision": "b5b029a655cc74001fde49a5d404871665b1de1880346a7df2f9b4eb602dcfed",
+      "sourceSha256": "962296d09697e30647280735124a605c5b48cb21f6fc344c6ae7f41957a6ab54"
+    },
+    {
+      "id": "legacy-narcissu-3rd-nar2_15",
+      "language": "jp",
+      "path": "/data/legacy-vn/narcissu-3rd/nar2_15_jp.txt",
+      "bytes": 17810,
+      "sha256": "33864ae43cfa6f2a3c936f48d1a916fdcf3e5575ffcfadaf468c9fe34ef9525a"
+    },
+    {
+      "id": "legacy-narcissu-3rd-nar2_16",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-3rd/nar2_16_cn.txt",
+      "bytes": 13650,
+      "sha256": "39b48ee07cc83f5685d234b7a30fcbf8853f1f6bbd32d9349a0c7b32bd5586ff"
+    },
+    {
+      "id": "legacy-narcissu-3rd-nar2_16",
+      "language": "jp",
+      "path": "/data/legacy-vn/narcissu-3rd/nar2_16_jp.txt",
+      "bytes": 19487,
+      "sha256": "78b541cf21b38f4acf9bd4375619f51d5dac33f4ed35ac4a0d5befc57c2034f6"
+    },
+    {
+      "id": "legacy-narcissu-3rd-nar2_17",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-3rd/nar2_17_cn.txt",
+      "bytes": 16429,
+      "sha256": "f5b99c101ae42885cef6b81601682d0ff6ff78525134995e10f0d8dc56fa3f87"
+    },
+    {
+      "id": "legacy-narcissu-3rd-nar2_17",
+      "language": "jp",
+      "path": "/data/legacy-vn/narcissu-3rd/nar2_17_jp.txt",
+      "bytes": 23497,
+      "sha256": "88b360104adb57c9f7c08ad66131d017e822dbac11e7e370f8c7d854aa960188"
+    },
+    {
+      "id": "legacy-narcissu-3rd-nar2_18",
+      "language": "cn",
+      "revision": "ea88028f0774ae1a7bfe4dad12e2e3222daac43ab68e4e8132c579dddb7e6b79",
+      "sourceSha256": "9382adb185bfd5fb52d914aae44f6df44eea13ed0cf43700f961bb2eeaa588ea"
+    },
+    {
+      "id": "legacy-narcissu-3rd-nar2_18",
+      "language": "jp",
+      "path": "/data/legacy-vn/narcissu-3rd/nar2_18_jp.txt",
+      "bytes": 16499,
+      "sha256": "6367fe68b42bdaee0633deeeb8bf66329d36109c6110beb1fdeb7b81ac92ecce"
+    },
+    {
+      "id": "legacy-narcissu-3rd-nar2_19",
+      "language": "cn",
+      "revision": "32197e01fe34966dc10509a6e12647957e7d3a89c466cfedfb1db13f5324637f",
+      "sourceSha256": "589627538ce592ccc4ebb211bba3c3b4babd0f1cce24fa79620949e55d402ac1"
+    },
+    {
+      "id": "legacy-narcissu-3rd-nar2_19",
+      "language": "jp",
+      "path": "/data/legacy-vn/narcissu-3rd/nar2_19_jp.txt",
+      "bytes": 9701,
+      "sha256": "44b8540358e3d16d3323c3553df3e0e44729ddff9213bb5b3d72bc9b0ee5a352"
+    },
+    {
+      "id": "legacy-narcissu-3rd-nar2_20",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-3rd/nar2_20_cn.txt",
+      "bytes": 5954,
+      "sha256": "953f81aa78eb05d01525c9b054234148ec7825e18f0e61719d7977558f6545e7"
+    },
+    {
+      "id": "legacy-narcissu-3rd-nar2_20",
+      "language": "jp",
+      "path": "/data/legacy-vn/narcissu-3rd/nar2_20_jp.txt",
+      "bytes": 8481,
+      "sha256": "7fdc498ad214e05f4c96d8692cde998172e2a74186de7e876140a962c492af9e"
+    },
+    {
+      "id": "legacy-narcissu-3rd-nar3_00",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-3rd/nar3_00_cn.txt",
+      "bytes": 15859,
+      "sha256": "76108d254b90945eac06bc4b1c4f3362c8899f1651e4e92a0c453e17938084be"
+    },
+    {
+      "id": "legacy-narcissu-3rd-nar3_00",
+      "language": "jp",
+      "path": "/data/legacy-vn/narcissu-3rd/nar3_00_jp.txt",
+      "bytes": 20645,
+      "sha256": "e45a37f8050c677fd7707b5878e6d20894a8959726c24bd7745f51871ff61310"
+    },
+    {
+      "id": "legacy-narcissu-3rd-nar3_01",
+      "language": "cn",
+      "revision": "8c16c59548caeddd4e1068e79a6d6badf28718821a373aaebeac8ce08b22df53",
+      "sourceSha256": "4b2917348fe840760304378054ace6930ffc91fe009b76e7e02d36f4684a3b32"
+    },
+    {
+      "id": "legacy-narcissu-3rd-nar3_01",
+      "language": "jp",
+      "path": "/data/legacy-vn/narcissu-3rd/nar3_01_jp.txt",
+      "bytes": 36764,
+      "sha256": "9dda1eb21707a71799f6cf480ff7abf0ee0874338adcc2392eecd2e750fa3279"
+    },
+    {
+      "id": "legacy-narcissu-3rd-nar3_02",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-3rd/nar3_02_cn.txt",
+      "bytes": 14184,
+      "sha256": "95e994bcf4e4ce56b0bf7eeb0cc1e29b5807cfe88e2dc99f89ae4cb998363f9c"
+    },
+    {
+      "id": "legacy-narcissu-3rd-nar3_02",
+      "language": "jp",
+      "path": "/data/legacy-vn/narcissu-3rd/nar3_02_jp.txt",
+      "bytes": 19942,
+      "sha256": "89acd6c7e4b026d3a1e69285b6a7bacdf0904d424fd4ec7e02e68bab18b03c79"
+    },
+    {
+      "id": "legacy-narcissu-3rd-nar3_03",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-3rd/nar3_03_cn.txt",
+      "bytes": 25127,
+      "sha256": "79f71939e91df5c796b30aa475f52002facd5d9107dd731eef2947d0f2202afc"
+    },
+    {
+      "id": "legacy-narcissu-3rd-nar3_03",
+      "language": "jp",
+      "path": "/data/legacy-vn/narcissu-3rd/nar3_03_jp.txt",
+      "bytes": 35054,
+      "sha256": "6ade3fe69338da051bf9e5c38ad1455d092be9226bc99d97ddb4d7c20d518683"
+    },
+    {
+      "id": "legacy-narcissu-3rd-nar3_04",
+      "language": "cn",
+      "revision": "90763cfa4d8b98127fd1a5475a9894ed567d9139e8d4cc7d1aecea4f20f77c50",
+      "sourceSha256": "6725c5cf82e5501123584d5ee3da8cfdf2eede46743c625833296721a9feeabf"
+    },
+    {
+      "id": "legacy-narcissu-3rd-nar3_04",
+      "language": "jp",
+      "path": "/data/legacy-vn/narcissu-3rd/nar3_04_jp.txt",
+      "bytes": 38261,
+      "sha256": "e8c3c55875f356ce855e8f7e8b7b447cd42a1f028e795de279505251eb79839a"
+    },
+    {
+      "id": "legacy-narcissu-3rd-nar3_05",
+      "language": "cn",
+      "revision": "4fb406b1b33fa05b5a7b1f4b15bf100dab2583338c48e1658601aad5a961c187",
+      "sourceSha256": "0e7c00204c4b858b49c7cef982f0581d95313f88da7507df6ebb5e434f409fe2"
+    },
+    {
+      "id": "legacy-narcissu-3rd-nar3_05",
+      "language": "jp",
+      "path": "/data/legacy-vn/narcissu-3rd/nar3_05_jp.txt",
+      "bytes": 30431,
+      "sha256": "7da1e58b53e0c62b772f3e6eb8d5f7c8dca123ddb8bef97a1e08a5ecece90740"
+    },
+    {
+      "id": "legacy-narcissu-3rd-nar3_06",
+      "language": "cn",
+      "revision": "5e724a49a63f0646feb5ad0084c044791b89952d5f9d06b2e9881c3d4e8df9b1",
+      "sourceSha256": "0bc85787d193c8ae4e8f08b3c52f51b1186493c823a19fd08588e800957c82c0"
+    },
+    {
+      "id": "legacy-narcissu-3rd-nar3_06",
+      "language": "jp",
+      "path": "/data/legacy-vn/narcissu-3rd/nar3_06_jp.txt",
+      "bytes": 26599,
+      "sha256": "ad50490994f9737832c8038a657d49b1c5d1ad0c6ad0953486d8363c5a11b6ae"
+    },
+    {
+      "id": "legacy-narcissu-3rd-nar3_07",
+      "language": "cn",
+      "revision": "42007728c8de3463a004b06eedee0e6486b163e376d38b23a2ff8aebe662c920",
+      "sourceSha256": "01dd7bdb30d4c3e00376d65a8b645cb085618c9e5969cc2c20c57c0709cd2e96"
+    },
+    {
+      "id": "legacy-narcissu-3rd-nar3_07",
+      "language": "jp",
+      "path": "/data/legacy-vn/narcissu-3rd/nar3_07_jp.txt",
+      "bytes": 49011,
+      "sha256": "90effc799c70a7c145fc96d7bf9190b850a90f5eaaf0a76e16b742e7cb552ba4"
+    },
+    {
+      "id": "legacy-narcissu-3rd-nar3_08",
+      "language": "cn",
+      "revision": "63e26436569ff403db5b291ec44325aa9a8de8f4f0431954ae39a2493a20f3d0",
+      "sourceSha256": "584217f8b319a1243e3029e4f4dc278255f9eb20a01920d894c20136d552b3fd"
+    },
+    {
+      "id": "legacy-narcissu-3rd-nar3_08",
+      "language": "jp",
+      "path": "/data/legacy-vn/narcissu-3rd/nar3_08_jp.txt",
+      "bytes": 39048,
+      "sha256": "70d90fb9ed8ba704689ea77c20a32d4f4aa954efdf6bdcd1c6a161e074021025"
+    },
+    {
+      "id": "legacy-narcissu-3rd-nara00",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-3rd/nara00_cn.txt",
+      "bytes": 5540,
+      "sha256": "735bf2cb85250c3a8322bb37f197a18637aca90a904e450a629728b0bff24d79"
+    },
+    {
+      "id": "legacy-narcissu-3rd-nara00",
+      "language": "jp",
+      "path": "/data/legacy-vn/narcissu-3rd/nara00_jp.txt",
+      "bytes": 7333,
+      "sha256": "27efb618d2c6d18e9bca06c2b825a9646a6eb4bc71fd10aa35314ddd4d79db6c"
+    },
+    {
+      "id": "legacy-narcissu-3rd-nara01",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-3rd/nara01_cn.txt",
+      "bytes": 21441,
+      "sha256": "73ec8176437afcfa3b8e10af9ad5a6c4d0f8ec28d705d2eba885a713ce776e14"
+    },
+    {
+      "id": "legacy-narcissu-3rd-nara01",
+      "language": "jp",
+      "path": "/data/legacy-vn/narcissu-3rd/nara01_jp.txt",
+      "bytes": 28873,
+      "sha256": "43f4748f9332c3335fafa0b8146ee58b93b296249c38526a0167c176f1315a9f"
+    },
+    {
+      "id": "legacy-narcissu-3rd-nara02",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-3rd/nara02_cn.txt",
+      "bytes": 42808,
+      "sha256": "16e999da18e8605e5d02a1f74072f870596015b9693f3eec6af236e3a2789ceb"
+    },
+    {
+      "id": "legacy-narcissu-3rd-nara02",
+      "language": "jp",
+      "path": "/data/legacy-vn/narcissu-3rd/nara02_jp.txt",
+      "bytes": 58085,
+      "sha256": "f4b2d755547d2733fd52bf7f651bf49695140130feebcefebc490de3d5ab710c"
+    },
+    {
+      "id": "legacy-narcissu-3rd-nara03",
+      "language": "cn",
+      "revision": "8f064abe694cc2de7619fd92fdbc5e0981cbd6d47d72d130250147100fc54036",
+      "sourceSha256": "0a6cfab7b65baeae6422bad40b4a54abdeebe2a4e6631ec1a8014c9933f3fced"
+    },
+    {
+      "id": "legacy-narcissu-3rd-nara03",
+      "language": "jp",
+      "path": "/data/legacy-vn/narcissu-3rd/nara03_jp.txt",
+      "bytes": 95397,
+      "sha256": "adaa557b20a2eb92fcdb04d70e6a901954c0c75b97038b13ddfab159849d56b7"
+    },
+    {
+      "id": "legacy-narcissu-3rd-nara04",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-3rd/nara04_cn.txt",
+      "bytes": 38087,
+      "sha256": "f596ae0e1a3ec02e80a0166a5f86bf75d3f5b1f4cfad27d9dec6c4d8382053ae"
+    },
+    {
+      "id": "legacy-narcissu-3rd-nara04",
+      "language": "jp",
+      "path": "/data/legacy-vn/narcissu-3rd/nara04_jp.txt",
+      "bytes": 52489,
+      "sha256": "73c50ff7a527fd634102065bdec85b5bf22369b39eab920603d147a0bd332afa"
+    },
+    {
+      "id": "legacy-narcissu-3rd-nara05",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-3rd/nara05_cn.txt",
+      "bytes": 38874,
+      "sha256": "24424b5482ae048ad012931b06371958d031bc488bfc2e7f95e3f76c344388b1"
+    },
+    {
+      "id": "legacy-narcissu-3rd-nara05",
+      "language": "jp",
+      "path": "/data/legacy-vn/narcissu-3rd/nara05_jp.txt",
+      "bytes": 52675,
+      "sha256": "d58b9c2641b1a76884487a7fc8e46530495ffbca74f0bc0d7e009347081fc12b"
+    },
+    {
+      "id": "legacy-narcissu-3rd-nara06",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-3rd/nara06_cn.txt",
+      "bytes": 51835,
+      "sha256": "04b1d166ca0f2d652087753040c0dbc6ad6284ca0ad86b83f95aed95ebd064ff"
+    },
+    {
+      "id": "legacy-narcissu-3rd-nara06",
+      "language": "jp",
+      "path": "/data/legacy-vn/narcissu-3rd/nara06_jp.txt",
+      "bytes": 70488,
+      "sha256": "3e54072ff30ca216a4fafeca1ad4fdb3fce778d26b34c26064342289459c6e02"
+    },
+    {
+      "id": "legacy-narcissu-3rd-nara07",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-3rd/nara07_cn.txt",
+      "bytes": 31112,
+      "sha256": "b07d0fd04b572b6dcaba3549e1c9def54174c1da02d65fed7be11382bbc05b40"
+    },
+    {
+      "id": "legacy-narcissu-3rd-nara07",
+      "language": "jp",
+      "path": "/data/legacy-vn/narcissu-3rd/nara07_jp.txt",
+      "bytes": 44253,
+      "sha256": "580c06f9487b9b99eda44b08e56f07b139d02be9766c378c1bbe1dd09783bf25"
+    },
+    {
+      "id": "legacy-narcissu-3rd-nara08",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-3rd/nara08_cn.txt",
+      "bytes": 29105,
+      "sha256": "563d476b9e80d6d78eeb425b9f2d9667a49c9e7de12f4dcdd1f73e88aec33fa3"
+    },
+    {
+      "id": "legacy-narcissu-3rd-nara08",
+      "language": "jp",
+      "path": "/data/legacy-vn/narcissu-3rd/nara08_jp.txt",
+      "bytes": 41716,
+      "sha256": "6116dd8d289adc6f7915302649e93c42d13d47acf71e617949effba001c7a597"
+    },
+    {
+      "id": "legacy-narcissu-3rd-nara09",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-3rd/nara09_cn.txt",
+      "bytes": 20089,
+      "sha256": "c1517ebba0fd618b02bb51daf5960e15a8bfd4c42041b6edefb65f0257dbf2a1"
+    },
+    {
+      "id": "legacy-narcissu-3rd-nara09",
+      "language": "jp",
+      "path": "/data/legacy-vn/narcissu-3rd/nara09_jp.txt",
+      "bytes": 29328,
+      "sha256": "18c28d082d3d5815378b47585c2bd997f621eb99fda5e386af647691e3bd618e"
+    },
+    {
+      "id": "legacy-narcissu-3rd-nara10",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-3rd/nara10_cn.txt",
+      "bytes": 12467,
+      "sha256": "fdb8dde0ff9f68bcdb4df334d8e3058c1d0d98453f28568c77e55d11be5b8389"
+    },
+    {
+      "id": "legacy-narcissu-3rd-nara10",
+      "language": "jp",
+      "path": "/data/legacy-vn/narcissu-3rd/nara10_jp.txt",
+      "bytes": 17626,
+      "sha256": "6a3f3f72ab3a9cf86405b727e2b2e87ca9422d07875f78e3bf8091a88d95ab5f"
+    },
+    {
+      "id": "legacy-narcissu-3rd-narb00",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-3rd/narb00_cn.txt",
+      "bytes": 8835,
+      "sha256": "0077511d59972085b9592ada9cf753ecb914f101fe9b5b32bf127660fe2081d7"
+    },
+    {
+      "id": "legacy-narcissu-3rd-narb00",
+      "language": "jp",
+      "path": "/data/legacy-vn/narcissu-3rd/narb00_jp.txt",
+      "bytes": 12816,
+      "sha256": "4123d017f679cd563cd2a134779409623900b2d43ed9f9b255ca684fc009dd00"
+    },
+    {
+      "id": "legacy-narcissu-3rd-narb01",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-3rd/narb01_cn.txt",
+      "bytes": 28227,
+      "sha256": "329eacde20cfcfc8787131688f003d14d73fe137bd9342ffb71cdae6ae7ceb86"
+    },
+    {
+      "id": "legacy-narcissu-3rd-narb01",
+      "language": "jp",
+      "path": "/data/legacy-vn/narcissu-3rd/narb01_jp.txt",
+      "bytes": 41041,
+      "sha256": "60629774fcaa2121fccf93b93e1ffff903f1cc734cc925a238ec47f9d36450f5"
+    },
+    {
+      "id": "legacy-narcissu-3rd-narb02",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-3rd/narb02_cn.txt",
+      "bytes": 26534,
+      "sha256": "0d382c50eb616da0b4bdf51710d0558d9e6acef01eca1c90ac1e0c1fd0101198"
+    },
+    {
+      "id": "legacy-narcissu-3rd-narb02",
+      "language": "jp",
+      "path": "/data/legacy-vn/narcissu-3rd/narb02_jp.txt",
+      "bytes": 38016,
+      "sha256": "a67290649daed54f5472db15c1b3a59391d088ed8f8284317ebbbbbd4f750992"
+    },
+    {
+      "id": "legacy-narcissu-3rd-narb03",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-3rd/narb03_cn.txt",
+      "bytes": 24874,
+      "sha256": "5b03e6a1d836cabf3de915d46b44f55e6ccbb8c76c85bccf864de23f632798ad"
+    },
+    {
+      "id": "legacy-narcissu-3rd-narb03",
+      "language": "jp",
+      "path": "/data/legacy-vn/narcissu-3rd/narb03_jp.txt",
+      "bytes": 35160,
+      "sha256": "d5ef534f60ef60a719661fe8312c60d7ccd4ca2456e5b69814fe6e3a41f91d49"
+    },
+    {
+      "id": "legacy-narcissu-3rd-narb04",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-3rd/narb04_cn.txt",
+      "bytes": 29316,
+      "sha256": "33b0ca4b06243d406d562a0ea82ad1078854c6eb92b0612b687343873802e064"
+    },
+    {
+      "id": "legacy-narcissu-3rd-narb04",
+      "language": "jp",
+      "path": "/data/legacy-vn/narcissu-3rd/narb04_jp.txt",
+      "bytes": 40796,
+      "sha256": "4c87c533a9877092c2f00e32c257a0101a4978e810214d577289915c426f2ae5"
+    },
+    {
+      "id": "legacy-narcissu-3rd-narb05",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-3rd/narb05_cn.txt",
+      "bytes": 19424,
+      "sha256": "83262d56bb8612f8555b4dda8d8bab35e8f0a7804b17a684b389ad202e32c8de"
+    },
+    {
+      "id": "legacy-narcissu-3rd-narb05",
+      "language": "jp",
+      "path": "/data/legacy-vn/narcissu-3rd/narb05_jp.txt",
+      "bytes": 27328,
+      "sha256": "d7367c62cc504a3bb045c7e67dc5a6228fe0d074565090d18bdacf23bc3eb684"
+    },
+    {
+      "id": "legacy-narcissu-3rd-narb06",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-3rd/narb06_cn.txt",
+      "bytes": 24892,
+      "sha256": "4869cafd6bcf2dd77b3b059a8f66fe7ae406f59d87a482e056fdb2cd2bd2c09a"
+    },
+    {
+      "id": "legacy-narcissu-3rd-narb06",
+      "language": "jp",
+      "path": "/data/legacy-vn/narcissu-3rd/narb06_jp.txt",
+      "bytes": 32903,
+      "sha256": "f543b95d4d001ee0e4f93fb55694ec5b66818873a23296d853e8d97f25c3de5f"
+    },
+    {
+      "id": "legacy-narcissu-3rd-narb07",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-3rd/narb07_cn.txt",
+      "bytes": 31951,
+      "sha256": "0ced73d5d3dcf1bea6b76d6494a86ccfecf04240525637fd16fd7ec5654e5a31"
+    },
+    {
+      "id": "legacy-narcissu-3rd-narb07",
+      "language": "jp",
+      "path": "/data/legacy-vn/narcissu-3rd/narb07_jp.txt",
+      "bytes": 43120,
+      "sha256": "9c7b9e2636a7470836001a51b0a0628b231b5ca45bddf79020a38fe172aa6d29"
+    },
+    {
+      "id": "legacy-narcissu-3rd-narb08",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-3rd/narb08_cn.txt",
+      "bytes": 21968,
+      "sha256": "8edf430b0fe9ca2f4507aa5beccf2cfaf6f3428b05ace609521ace6d353cdef2"
+    },
+    {
+      "id": "legacy-narcissu-3rd-narb08",
+      "language": "jp",
+      "path": "/data/legacy-vn/narcissu-3rd/narb08_jp.txt",
+      "bytes": 28452,
+      "sha256": "b1eadda7d5f604d1a3f8ab8bbd263882cf46949ce248c7f0a62bfcce94a56d25"
+    },
+    {
+      "id": "legacy-narcissu-3rd-narb09",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-3rd/narb09_cn.txt",
+      "bytes": 27369,
+      "sha256": "98e07376fe3745400c4e51e1688bb05310fabd9a9a4b89540c6ef6dd21077163"
+    },
+    {
+      "id": "legacy-narcissu-3rd-narb09",
+      "language": "jp",
+      "path": "/data/legacy-vn/narcissu-3rd/narb09_jp.txt",
+      "bytes": 35784,
+      "sha256": "df3ecff62df4d8ccb7203505c1a3f71a4c75494531ab7afe7be4ce36d755d946"
+    },
+    {
+      "id": "legacy-narcissu-3rd-narb10",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-3rd/narb10_cn.txt",
+      "bytes": 23780,
+      "sha256": "6d080e8e8685c61c834ef8a20dd8391f4274ee9eecab94470dd15a82854f4369"
+    },
+    {
+      "id": "legacy-narcissu-3rd-narb10",
+      "language": "jp",
+      "path": "/data/legacy-vn/narcissu-3rd/narb10_jp.txt",
+      "bytes": 31849,
+      "sha256": "706699da1b202d085b5e1d07f8a8aa72aad243214b56f26bb9f920f4a550ee3c"
+    },
+    {
+      "id": "legacy-narcissu-3rd-narb11",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-3rd/narb11_cn.txt",
+      "bytes": 33157,
+      "sha256": "b0cfef68ca1f3392290052015a2a8da580e610518bee2a60a911a3ebb95e1241"
+    },
+    {
+      "id": "legacy-narcissu-3rd-narb11",
+      "language": "jp",
+      "path": "/data/legacy-vn/narcissu-3rd/narb11_jp.txt",
+      "bytes": 44843,
+      "sha256": "6e5eb7c71109f6ed73fd05c4e3a959c63ddcfe33f1c0342788095b7864f2c6f8"
+    },
+    {
+      "id": "legacy-narcissu-3rd-narb12",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-3rd/narb12_cn.txt",
+      "bytes": 75563,
+      "sha256": "266efecb2f4c396e5cb97df507ff075025c151b3e23920a79e3e80aee6b23deb"
+    },
+    {
+      "id": "legacy-narcissu-3rd-narb12",
+      "language": "jp",
+      "path": "/data/legacy-vn/narcissu-3rd/narb12_jp.txt",
+      "bytes": 100535,
+      "sha256": "82a86319615e37a276c85bde7fc9cec26360a567005a31fa49be43418772f944"
+    },
+    {
+      "id": "legacy-narcissu-3rd-narb13",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-3rd/narb13_cn.txt",
+      "bytes": 30770,
+      "sha256": "aa5baa93e56deccbcfbb7df6a2eaf8dfbb827f882c4136c61bdfcb27cbff6359"
+    },
+    {
+      "id": "legacy-narcissu-3rd-narb13",
+      "language": "jp",
+      "path": "/data/legacy-vn/narcissu-3rd/narb13_jp.txt",
+      "bytes": 40997,
+      "sha256": "f7ff6d19f34562bbb8aad7512d9024596fb6debfd988da7dcf66f307a4f8c548"
+    },
+    {
+      "id": "legacy-narcissu-3rd-nard00",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-3rd/nard00_cn.txt",
+      "bytes": 8066,
+      "sha256": "842d404e6ffe91f0e85ae371e40661dfe9bcae031fde6468e8d27236e2e46c9d"
+    },
+    {
+      "id": "legacy-narcissu-3rd-nard00",
+      "language": "jp",
+      "path": "/data/legacy-vn/narcissu-3rd/nard00_jp.txt",
+      "bytes": 11617,
+      "sha256": "75f6be8f7887d62227fa6ce8506e38a3cf5e21011a1d2913d649f9c4a7b9cde6"
+    },
+    {
+      "id": "legacy-narcissu-3rd-nard01",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-3rd/nard01_cn.txt",
+      "bytes": 29560,
+      "sha256": "95dc4f80c19b8d8c83a3318acf646ac5ea1951b1155375e6de7cf1d8ff8be4c0"
+    },
+    {
+      "id": "legacy-narcissu-3rd-nard01",
+      "language": "jp",
+      "path": "/data/legacy-vn/narcissu-3rd/nard01_jp.txt",
+      "bytes": 41012,
+      "sha256": "c6336536c6af832dede87ebc8e6a298f0204fc98a9203303f3fd31652f9d729b"
+    },
+    {
+      "id": "legacy-narcissu-3rd-nard02",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-3rd/nard02_cn.txt",
+      "bytes": 26918,
+      "sha256": "e4fdef233d484ad187dc53d07b3e39262a0950837caeb521c040a01ebdb261f2"
+    },
+    {
+      "id": "legacy-narcissu-3rd-nard02",
+      "language": "jp",
+      "path": "/data/legacy-vn/narcissu-3rd/nard02_jp.txt",
+      "bytes": 37385,
+      "sha256": "e4c2a512cce6af50af13848fc0cccbbbc133096b44f4718ece519f46e34416b6"
+    },
+    {
+      "id": "legacy-narcissu-3rd-nard03",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-3rd/nard03_cn.txt",
+      "bytes": 83714,
+      "sha256": "5417ffc979ab27b6d489a719d2f3af6f2b9c49f814a7dec92319198718298ef5"
+    },
+    {
+      "id": "legacy-narcissu-3rd-nard03",
+      "language": "jp",
+      "path": "/data/legacy-vn/narcissu-3rd/nard03_jp.txt",
+      "bytes": 116520,
+      "sha256": "33131b26cf8e3a021b1b6085753813aac38313b2f7e1864f6376806c5df5a6b9"
+    },
+    {
+      "id": "legacy-narcissu-3rd-nard04",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-3rd/nard04_cn.txt",
+      "bytes": 22596,
+      "sha256": "07f7147844aed31ea1632760c564ff8b2ed97e2ef8e1934b74cc8fb1addb0e4d"
+    },
+    {
+      "id": "legacy-narcissu-3rd-nard04",
+      "language": "jp",
+      "path": "/data/legacy-vn/narcissu-3rd/nard04_jp.txt",
+      "bytes": 31666,
+      "sha256": "82c9915d5f70cf2ad78283456a1ea43fdb173c423b361bab0732a3079f89cf4b"
+    },
+    {
+      "id": "legacy-narcissu-3rd-nard05",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-3rd/nard05_cn.txt",
+      "bytes": 19290,
+      "sha256": "72f1f368f375b2d43bcd1fccd74087430d7d03bedd4cfd1b148e95addff70240"
+    },
+    {
+      "id": "legacy-narcissu-3rd-nard05",
+      "language": "jp",
+      "path": "/data/legacy-vn/narcissu-3rd/nard05_jp.txt",
+      "bytes": 26562,
+      "sha256": "f17b67352fd3eee17572fda8b0f3dd4022d59092f4586ccbf54c04400f124dae"
+    },
+    {
+      "id": "legacy-narcissu-3rd-nard06",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-3rd/nard06_cn.txt",
+      "bytes": 18162,
+      "sha256": "180ddcaacb934441749aaa73da13aab370e69ed9cbd25c3ae908a37a523e8c6b"
+    },
+    {
+      "id": "legacy-narcissu-3rd-nard06",
+      "language": "jp",
+      "path": "/data/legacy-vn/narcissu-3rd/nard06_jp.txt",
+      "bytes": 25863,
+      "sha256": "e34606bf8d3c7eceb4d3a8932df2216f8c4bb78010d403e5770b417a8f8b22e9"
+    },
+    {
+      "id": "legacy-narcissu-3rd-nard07",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-3rd/nard07_cn.txt",
+      "bytes": 50861,
+      "sha256": "6e30ca8bd0d0cab3b69417a7900fe59d5d85983b3ed3bab4d07030f1afebe4e3"
+    },
+    {
+      "id": "legacy-narcissu-3rd-nard07",
+      "language": "jp",
+      "path": "/data/legacy-vn/narcissu-3rd/nard07_jp.txt",
+      "bytes": 71301,
+      "sha256": "e23feec7d42e68c3bb93b68c5ebf821b89014144d066f711480a935dce5d5436"
+    },
+    {
+      "id": "legacy-narcissu-3rd-nard08",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-3rd/nard08_cn.txt",
+      "bytes": 28204,
+      "sha256": "17c7f05f58c3e8b35cbcd37bba411693107d6930bc700e128997e11baea7c4e6"
+    },
+    {
+      "id": "legacy-narcissu-3rd-nard08",
+      "language": "jp",
+      "path": "/data/legacy-vn/narcissu-3rd/nard08_jp.txt",
+      "bytes": 40377,
+      "sha256": "6ee417eef14c1d8c74aeea769f890d3f7256f69715ca607ca021c377befd20fd"
+    },
+    {
+      "id": "legacy-narcissu-3rd-nard09",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-3rd/nard09_cn.txt",
+      "bytes": 11240,
+      "sha256": "56379301d8513b9054d1b9574c544df4727831e1a6765ce1438c0133699563e6"
+    },
+    {
+      "id": "legacy-narcissu-3rd-nard09",
+      "language": "jp",
+      "path": "/data/legacy-vn/narcissu-3rd/nard09_jp.txt",
+      "bytes": 16230,
+      "sha256": "de63245357f84557390da5556419d0585bc3af3cef34392158292c2a5b90e511"
+    },
+    {
+      "id": "legacy-narcissu-3rd-nard10",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-3rd/nard10_cn.txt",
+      "bytes": 22002,
+      "sha256": "390134f2a5aae0d288a942a482ba3828dc637230244a15a5d90b2c404cf1c68b"
+    },
+    {
+      "id": "legacy-narcissu-3rd-nard10",
+      "language": "jp",
+      "path": "/data/legacy-vn/narcissu-3rd/nard10_jp.txt",
+      "bytes": 33570,
+      "sha256": "c385130817582394a21bcb174829bd869191fd30d5398e8dfa84ff9cd9191eb3"
+    },
+    {
+      "id": "legacy-narcissu-3rd-nard11",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-3rd/nard11_cn.txt",
+      "bytes": 15471,
+      "sha256": "0940a6b87fd27aef4944bff26beddab363783b00436329097a78b72289abfe0f"
+    },
+    {
+      "id": "legacy-narcissu-3rd-nard11",
+      "language": "jp",
+      "path": "/data/legacy-vn/narcissu-3rd/nard11_jp.txt",
+      "bytes": 23562,
+      "sha256": "4adc50ca5173afbe5423d0856cd4977a51f6c1a1661c165729104790b5a1be4a"
+    },
+    {
+      "id": "legacy-narcissu-3rd-nard12",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-3rd/nard12_cn.txt",
+      "bytes": 19777,
+      "sha256": "f528c96de275036761f136523687dd8476044142b27d9e31e28b33d0ce983243"
+    },
+    {
+      "id": "legacy-narcissu-3rd-nard12",
+      "language": "jp",
+      "path": "/data/legacy-vn/narcissu-3rd/nard12_jp.txt",
+      "bytes": 29344,
+      "sha256": "ffc02e80518ba8656e76d963079cb55a77aea949986fe7fc25a15832933f64a7"
+    },
+    {
+      "id": "legacy-narcissu-3rd-nard13",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-3rd/nard13_cn.txt",
+      "bytes": 21202,
+      "sha256": "9a63689df9c5771f67f8adf8f2658c6d618ef683fe40a81ff91fba73c6d9f30e"
+    },
+    {
+      "id": "legacy-narcissu-3rd-nard13",
+      "language": "jp",
+      "path": "/data/legacy-vn/narcissu-3rd/nard13_jp.txt",
+      "bytes": 32250,
+      "sha256": "04e94e64b3a09578272e569a39364d3f17613f52a9540c4de44d1fa21aa08568"
+    },
+    {
+      "id": "legacy-narcissu-3rd-nard14",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-3rd/nard14_cn.txt",
+      "bytes": 1857,
+      "sha256": "78f7c7890f5cbf8728d4452fbea7da577e976779a926cefe006293212177c1c2"
+    },
+    {
+      "id": "legacy-narcissu-3rd-nard14",
+      "language": "jp",
+      "path": "/data/legacy-vn/narcissu-3rd/nard14_jp.txt",
+      "bytes": 2783,
+      "sha256": "9f09a83f5caa93bf6fc70550d22b3b8dc3a52a6d8fefee397ebbf2f0b2f2e753"
+    },
+    {
+      "id": "legacy-narcissu-3rd-nard15",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-3rd/nard15_cn.txt",
+      "bytes": 18971,
+      "sha256": "21ed23d302fa095e80733877172937c0c53d179e2b47c5bf20bbe480d647461f"
+    },
+    {
+      "id": "legacy-narcissu-3rd-nard15",
+      "language": "jp",
+      "path": "/data/legacy-vn/narcissu-3rd/nard15_jp.txt",
+      "bytes": 28762,
+      "sha256": "d4ecaf8371e771d2d1a3d00569fb31a3097c9d07a4de63ea5765cf0fbae7e961"
+    },
+    {
+      "id": "legacy-narcissu-3rd-nard16",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-3rd/nard16_cn.txt",
+      "bytes": 6981,
+      "sha256": "fbd078b7b5f0238968082704ca57fabee64664ceaffd70fef4c874a0853f22e9"
+    },
+    {
+      "id": "legacy-narcissu-3rd-nard16",
+      "language": "jp",
+      "path": "/data/legacy-vn/narcissu-3rd/nard16_jp.txt",
+      "bytes": 10445,
+      "sha256": "0c9f1448cfb527f58acf924a78463678936c2446ddf1e73b156ddef62c6d3791"
+    },
+    {
+      "id": "legacy-narcissu-3rd-product",
+      "language": "cn",
+      "revision": "f09d7c8875e3031903e53558b85a1114797a55e0df29f50b295f6dac751edd8c",
+      "sourceSha256": "34b396cec4ee9e961e421f0ea6e227d3838a100d4cb718415ef07d8b0d2fbc5e"
+    },
+    {
+      "id": "legacy-narcissu-3rd-product",
+      "language": "jp",
+      "path": "/data/legacy-vn/narcissu-3rd/product_jp.txt",
+      "bytes": 3492,
+      "sha256": "42d628542d12ea500cad34780c9a278f1f9255d64c725fd73a7a18b52d9ef4c2"
+    },
+    {
+      "id": "legacy-kana-okaeri-ed1",
+      "language": "cn",
+      "path": "/data/legacy-vn/kana-okaeri/ed1_cn.txt",
+      "bytes": 43356,
+      "sha256": "064897996484e752843bdd7d04fafedbb79195143ed8521c787043b40d32ab59"
+    },
+    {
+      "id": "legacy-kana-okaeri-ed1",
+      "language": "jp",
+      "path": "/data/legacy-vn/kana-okaeri/ed1_jp.txt",
+      "bytes": 53616,
+      "sha256": "2dd6a48ad624a44e5ab671a12e1e6ef85855e6bbd00456ce361570a4d9eb4574"
+    },
+    {
+      "id": "legacy-kana-okaeri-ed2",
+      "language": "cn",
+      "path": "/data/legacy-vn/kana-okaeri/ed2_cn.txt",
+      "bytes": 14625,
+      "sha256": "07f7a51746cca54a08f3341c884bf693cec75bc63ac4abb84ed16e8d948952cb"
+    },
+    {
+      "id": "legacy-kana-okaeri-ed2",
+      "language": "jp",
+      "path": "/data/legacy-vn/kana-okaeri/ed2_jp.txt",
+      "bytes": 19203,
+      "sha256": "47717e5ae59ea08756d8eba8f07e0ecd623b47393f235104aa33c21f9f082e89"
+    },
+    {
+      "id": "legacy-kana-okaeri-ed3",
+      "language": "cn",
+      "path": "/data/legacy-vn/kana-okaeri/ed3_cn.txt",
+      "bytes": 41916,
+      "sha256": "a48ce377e4ba685061897f909ce1861107b2df3a4d09d70da984025df43ae4f8"
+    },
+    {
+      "id": "legacy-kana-okaeri-ed3",
+      "language": "jp",
+      "path": "/data/legacy-vn/kana-okaeri/ed3_jp.txt",
+      "bytes": 54684,
+      "sha256": "fcebaa9bb0c51b5ce57fd607dba25b7fd7c5e39c3f62bb68d12f8fc38a290202"
+    },
+    {
+      "id": "legacy-kana-okaeri-ed4",
+      "language": "cn",
+      "path": "/data/legacy-vn/kana-okaeri/ed4_cn.txt",
+      "bytes": 19071,
+      "sha256": "601f591bc844717f1f47e2f8a3f2c47800b879e9a746c700315b9d59c228c4c9"
+    },
+    {
+      "id": "legacy-kana-okaeri-ed4",
+      "language": "jp",
+      "path": "/data/legacy-vn/kana-okaeri/ed4_jp.txt",
+      "bytes": 25602,
+      "sha256": "2b34569d8eefd0111a3caa1a30977be38eb2374d8a54181d76222dfa4a412136"
+    },
+    {
+      "id": "legacy-kana-okaeri-ed4b",
+      "language": "cn",
+      "path": "/data/legacy-vn/kana-okaeri/ed4b_cn.txt",
+      "bytes": 1345,
+      "sha256": "641f82e4480355b1a9c7123f4db4b36c56b7e66afade932f175dfa19e244fa8e"
+    },
+    {
+      "id": "legacy-kana-okaeri-ed4b",
+      "language": "jp",
+      "path": "/data/legacy-vn/kana-okaeri/ed4b_jp.txt",
+      "bytes": 1789,
+      "sha256": "e9fcf33aab426a87fc27196d182663205ba30ccfa65f052a22bed9b078e85bc3"
+    },
+    {
+      "id": "legacy-kana-okaeri-ed5",
+      "language": "cn",
+      "path": "/data/legacy-vn/kana-okaeri/ed5_cn.txt",
+      "bytes": 32314,
+      "sha256": "c61ab31bafff13d1c2c269f06c6d282d45cdb377d5399f2669cf8b44ee23c224"
+    },
+    {
+      "id": "legacy-kana-okaeri-ed5",
+      "language": "jp",
+      "path": "/data/legacy-vn/kana-okaeri/ed5_jp.txt",
+      "bytes": 45739,
+      "sha256": "dbd12822dab10b316c3d81ae6f8773c1d93021eb893ab7e31946fb80bca3b102"
+    },
+    {
+      "id": "legacy-kana-okaeri-ed5b",
+      "language": "cn",
+      "path": "/data/legacy-vn/kana-okaeri/ed5b_cn.txt",
+      "bytes": 688,
+      "sha256": "480d074e06742e87942501f4e1ea4b0369ef6f9a8fe9404216f2cdb4fa9a80df"
+    },
+    {
+      "id": "legacy-kana-okaeri-ed5b",
+      "language": "jp",
+      "path": "/data/legacy-vn/kana-okaeri/ed5b_jp.txt",
+      "bytes": 937,
+      "sha256": "f03d2c8c8d83e449456e1aab9f403e6d1d4e1d850c65a2a3afd26d5231fde42d"
+    },
+    {
+      "id": "legacy-kana-okaeri-ed6",
+      "language": "cn",
+      "path": "/data/legacy-vn/kana-okaeri/ed6_cn.txt",
+      "bytes": 6405,
+      "sha256": "9bbaee289fe145c298353eb73d91a362195378027db6f962f16e0df9fd77763a"
+    },
+    {
+      "id": "legacy-kana-okaeri-ed6",
+      "language": "jp",
+      "path": "/data/legacy-vn/kana-okaeri/ed6_jp.txt",
+      "bytes": 8286,
+      "sha256": "ab99d92cf7f828fdab075232993ca06c6071f9bcc24c39df54031280f365b863"
+    },
+    {
+      "id": "legacy-kana-okaeri-ev00",
+      "language": "cn",
+      "path": "/data/legacy-vn/kana-okaeri/ev00_cn.txt",
+      "bytes": 155,
+      "sha256": "5b232f50b8a99f5bc0ecc8402ea79f9d78b8732636f90e7a4147409fbe1397d4"
+    },
+    {
+      "id": "legacy-kana-okaeri-ev00",
+      "language": "jp",
+      "path": "/data/legacy-vn/kana-okaeri/ev00_jp.txt",
+      "bytes": 179,
+      "sha256": "80f7af332a155ed1a64080156a3e543900f96df2b9058cf1ee50377696def9d4"
+    },
+    {
+      "id": "legacy-kana-okaeri-ev01",
+      "language": "cn",
+      "path": "/data/legacy-vn/kana-okaeri/ev01_cn.txt",
+      "bytes": 14863,
+      "sha256": "4e514ed941fed107e4d77d31a9ed543f935aa7b780538d96c1a7490fdfe187e2"
+    },
+    {
+      "id": "legacy-kana-okaeri-ev01",
+      "language": "jp",
+      "path": "/data/legacy-vn/kana-okaeri/ev01_jp.txt",
+      "bytes": 18571,
+      "sha256": "1d6961204ac68b3fbeadd34e9a9fb8bd64d9f46668c46f55c4b7dece6f16adf1"
+    },
+    {
+      "id": "legacy-kana-okaeri-ev11",
+      "language": "cn",
+      "path": "/data/legacy-vn/kana-okaeri/ev11_cn.txt",
+      "bytes": 7665,
+      "sha256": "4fb6d2a04da14ba08acf2bdf72df016d96ad9be0c28d85b66a21652459ddbd33"
+    },
+    {
+      "id": "legacy-kana-okaeri-ev11",
+      "language": "jp",
+      "path": "/data/legacy-vn/kana-okaeri/ev11_jp.txt",
+      "bytes": 9328,
+      "sha256": "05d9bc713a1aba759b8bfb5937a51ae73967eaf3dcf586cee65002ce023c069e"
+    },
+    {
+      "id": "legacy-kana-okaeri-ev21",
+      "language": "cn",
+      "path": "/data/legacy-vn/kana-okaeri/ev21_cn.txt",
+      "bytes": 31796,
+      "sha256": "6339147bc5785683d4b7deae8c4adc9ba33eb671cc1f95c9dc037248a89e8100"
+    },
+    {
+      "id": "legacy-kana-okaeri-ev21",
+      "language": "jp",
+      "path": "/data/legacy-vn/kana-okaeri/ev21_jp.txt",
+      "bytes": 42932,
+      "sha256": "493cbe754a22c7ac802fa8147a4932b80a4b12f24ba9531a98b365f1da9961ed"
+    },
+    {
+      "id": "legacy-kana-okaeri-ev22",
+      "language": "cn",
+      "path": "/data/legacy-vn/kana-okaeri/ev22_cn.txt",
+      "bytes": 8108,
+      "sha256": "5b63266e35a288d7543ff27be49910719a830dbfd5a717364fe79311127a5ec6"
+    },
+    {
+      "id": "legacy-kana-okaeri-ev22",
+      "language": "jp",
+      "path": "/data/legacy-vn/kana-okaeri/ev22_jp.txt",
+      "bytes": 10618,
+      "sha256": "92e7894ba628ea0fde875ae78d63b16b23ce4f7955b181015a6eb323688cfe38"
+    },
+    {
+      "id": "legacy-kana-okaeri-ev23",
+      "language": "cn",
+      "path": "/data/legacy-vn/kana-okaeri/ev23_cn.txt",
+      "bytes": 22620,
+      "sha256": "b763f6e976c30c6fbe4c87e6425068f34f1c0f3ef532eb965d539c1bc6dbbc3c"
+    },
+    {
+      "id": "legacy-kana-okaeri-ev23",
+      "language": "jp",
+      "path": "/data/legacy-vn/kana-okaeri/ev23_jp.txt",
+      "bytes": 29828,
+      "sha256": "b209c998a0e7facfc2aeb9ad3e4742c2fe43e8405356cf5fc2b9955297f0d72d"
+    },
+    {
+      "id": "legacy-kana-okaeri-ev24",
+      "language": "cn",
+      "path": "/data/legacy-vn/kana-okaeri/ev24_cn.txt",
+      "bytes": 6681,
+      "sha256": "8769bf3b7149b71118ba3c87dbbe37e2476fd8f80d13dbe541bbe9c1a5db3843"
+    },
+    {
+      "id": "legacy-kana-okaeri-ev24",
+      "language": "jp",
+      "path": "/data/legacy-vn/kana-okaeri/ev24_jp.txt",
+      "bytes": 8356,
+      "sha256": "9bcd71f1c1e73d730200917ab374ac4c021625402d285eb96c73bddddd6a17c8"
+    },
+    {
+      "id": "legacy-kana-okaeri-ev242",
+      "language": "cn",
+      "path": "/data/legacy-vn/kana-okaeri/ev242_cn.txt",
+      "bytes": 6068,
+      "sha256": "e99f509f687f346e3ba915c1951cdb5edfa50eeee5358cbd21880cd00b150004"
+    },
+    {
+      "id": "legacy-kana-okaeri-ev242",
+      "language": "jp",
+      "path": "/data/legacy-vn/kana-okaeri/ev242_jp.txt",
+      "bytes": 7899,
+      "sha256": "b2530a1cc336e0ae0fb483175979543e6d4228921e2fece11b5ecffb6e17e101"
+    },
+    {
+      "id": "legacy-kana-okaeri-ev25",
+      "language": "cn",
+      "path": "/data/legacy-vn/kana-okaeri/ev25_cn.txt",
+      "bytes": 11875,
+      "sha256": "77d67dd9a0852217c167ea6625fd76fa968cc546c00a47eb6e0a9ac4acc85ead"
+    },
+    {
+      "id": "legacy-kana-okaeri-ev25",
+      "language": "jp",
+      "path": "/data/legacy-vn/kana-okaeri/ev25_jp.txt",
+      "bytes": 15336,
+      "sha256": "fb50289ceaf9ff7b9fefa955380389eab5e23a478d229e28881fe3da617e1b12"
+    },
+    {
+      "id": "legacy-kana-okaeri-ev26",
+      "language": "cn",
+      "path": "/data/legacy-vn/kana-okaeri/ev26_cn.txt",
+      "bytes": 17902,
+      "sha256": "f29ec6476ce6136de2695e063bf618510f99e11434f75dfd7730ab81dbce4407"
+    },
+    {
+      "id": "legacy-kana-okaeri-ev26",
+      "language": "jp",
+      "path": "/data/legacy-vn/kana-okaeri/ev26_jp.txt",
+      "bytes": 22774,
+      "sha256": "667366178b5b3a5a81594614e3115af5f49f013775beae64e5364461598fa51d"
+    },
+    {
+      "id": "legacy-kana-okaeri-ev31",
+      "language": "cn",
+      "path": "/data/legacy-vn/kana-okaeri/ev31_cn.txt",
+      "bytes": 58085,
+      "sha256": "8e627ac26d22fd6a519e1a22e4ea8036971a37911583f5a8c183432c1f3479f2"
+    },
+    {
+      "id": "legacy-kana-okaeri-ev31",
+      "language": "jp",
+      "path": "/data/legacy-vn/kana-okaeri/ev31_jp.txt",
+      "bytes": 72486,
+      "sha256": "edf2ee2b01b7d66620c712e6c52af9b75ebb95d3e3126752a741af0fd947f347"
+    },
+    {
+      "id": "legacy-kana-okaeri-ev32",
+      "language": "cn",
+      "path": "/data/legacy-vn/kana-okaeri/ev32_cn.txt",
+      "bytes": 29285,
+      "sha256": "c22dd63382479497e0ec63b0a0aa0b85ca20cdca2dda9c595a22e362589c7706"
+    },
+    {
+      "id": "legacy-kana-okaeri-ev32",
+      "language": "jp",
+      "path": "/data/legacy-vn/kana-okaeri/ev32_jp.txt",
+      "bytes": 37037,
+      "sha256": "36b3fb5ca770da69b26407d2ded60a91aa42e43edb75cd26a69971729b1f720d"
+    },
+    {
+      "id": "legacy-kana-okaeri-ev33",
+      "language": "cn",
+      "path": "/data/legacy-vn/kana-okaeri/ev33_cn.txt",
+      "bytes": 20841,
+      "sha256": "bc5ef38deb3872a2244960f4c24ea9b7a2efea5e96ead1f0b210ee4c56de4d69"
+    },
+    {
+      "id": "legacy-kana-okaeri-ev33",
+      "language": "jp",
+      "path": "/data/legacy-vn/kana-okaeri/ev33_jp.txt",
+      "bytes": 27688,
+      "sha256": "07ed8ba208ae65ac031d190045ce60a3301d1c96d435e564a83d8a02512590d3"
+    },
+    {
+      "id": "legacy-kana-okaeri-ev341",
+      "language": "cn",
+      "path": "/data/legacy-vn/kana-okaeri/ev341_cn.txt",
+      "bytes": 9457,
+      "sha256": "2bbd94e376a9ae725b26baaadaba8f822c25b7ba5834040aa96406905954bec4"
+    },
+    {
+      "id": "legacy-kana-okaeri-ev341",
+      "language": "jp",
+      "path": "/data/legacy-vn/kana-okaeri/ev341_jp.txt",
+      "bytes": 12035,
+      "sha256": "ad28e5b175e34b6734c7c06f06e54c6b5d942c127391aa630707426e5783bfa3"
+    },
+    {
+      "id": "legacy-kana-okaeri-ev341a",
+      "language": "cn",
+      "path": "/data/legacy-vn/kana-okaeri/ev341a_cn.txt",
+      "bytes": 11714,
+      "sha256": "ace757d412fafb611e22024318ff60324946f82043f8748855c15f67f93019c8"
+    },
+    {
+      "id": "legacy-kana-okaeri-ev341a",
+      "language": "jp",
+      "path": "/data/legacy-vn/kana-okaeri/ev341a_jp.txt",
+      "bytes": 15051,
+      "sha256": "e0d687e2fdb25d74f135a657e3b0775268cb038669a6a313ba575d82031db9a4"
+    },
+    {
+      "id": "legacy-kana-okaeri-ev341b",
+      "language": "cn",
+      "path": "/data/legacy-vn/kana-okaeri/ev341b_cn.txt",
+      "bytes": 9125,
+      "sha256": "d0171a17c04e747dc9e328fe9a1ce96292bbfb3f57488c0f9280fc005c808dc2"
+    },
+    {
+      "id": "legacy-kana-okaeri-ev341b",
+      "language": "jp",
+      "path": "/data/legacy-vn/kana-okaeri/ev341b_jp.txt",
+      "bytes": 11850,
+      "sha256": "884d24e57af5e8535704ef82d7c4980693420e2180b17e7baf2c955d7b5b06aa"
+    },
+    {
+      "id": "legacy-kana-okaeri-ev342",
+      "language": "cn",
+      "path": "/data/legacy-vn/kana-okaeri/ev342_cn.txt",
+      "bytes": 55512,
+      "sha256": "dce98977f480a91f0e3ad3af7a1035d6ddc7b008a4ea771f2775b9091309dbf8"
+    },
+    {
+      "id": "legacy-kana-okaeri-ev342",
+      "language": "jp",
+      "path": "/data/legacy-vn/kana-okaeri/ev342_jp.txt",
+      "bytes": 73795,
+      "sha256": "9bbb5f3ed30cd59e8a005abb7f6414c24eb99e88fac92c1412629bc6fbf55c19"
+    },
+    {
+      "id": "legacy-kana-okaeri-ev36",
+      "language": "cn",
+      "path": "/data/legacy-vn/kana-okaeri/ev36_cn.txt",
+      "bytes": 10846,
+      "sha256": "69f0f966bf5865c339c8a45a75c0a8433ebf91d890d96b447dfe2fd9d86b5446"
+    },
+    {
+      "id": "legacy-kana-okaeri-ev36",
+      "language": "jp",
+      "path": "/data/legacy-vn/kana-okaeri/ev36_jp.txt",
+      "bytes": 13163,
+      "sha256": "ba86258bd5be1a999441144c0763d2466d06fc54cf8f322f4527a078dbfd166b"
+    },
+    {
+      "id": "legacy-kana-okaeri-ev37",
+      "language": "cn",
+      "path": "/data/legacy-vn/kana-okaeri/ev37_cn.txt",
+      "bytes": 24964,
+      "sha256": "1fcd99ae17c8c8a19d548319eec0ba32bb9a3945542d63786348925625ce3185"
+    },
+    {
+      "id": "legacy-kana-okaeri-ev37",
+      "language": "jp",
+      "path": "/data/legacy-vn/kana-okaeri/ev37_jp.txt",
+      "bytes": 32493,
+      "sha256": "db3373785c174010d9ad16b7817f73f3a107a2eda1d1168ae89f80c7a8373c2a"
+    },
+    {
+      "id": "legacy-kana-okaeri-ev40a",
+      "language": "cn",
+      "path": "/data/legacy-vn/kana-okaeri/ev40a_cn.txt",
+      "bytes": 17527,
+      "sha256": "5259a483f07587cadb654eb3b4bb0f18ac7bbdb32cb2fe4803436e1a8f3244e7"
+    },
+    {
+      "id": "legacy-kana-okaeri-ev40a",
+      "language": "jp",
+      "path": "/data/legacy-vn/kana-okaeri/ev40a_jp.txt",
+      "bytes": 21690,
+      "sha256": "dabd30f37a9bc3ef383804865178b17853df0d6cd7dd36abc39ca6cb23f8e2ff"
+    },
+    {
+      "id": "legacy-kana-okaeri-ev40b",
+      "language": "cn",
+      "path": "/data/legacy-vn/kana-okaeri/ev40b_cn.txt",
+      "bytes": 14821,
+      "sha256": "7166dc51772a9042b776f262f5132b879bf2cb7c6e25f9969b9e410df9abd565"
+    },
+    {
+      "id": "legacy-kana-okaeri-ev40b",
+      "language": "jp",
+      "path": "/data/legacy-vn/kana-okaeri/ev40b_jp.txt",
+      "bytes": 19007,
+      "sha256": "0bb9009d438cbf78f96ec3d97b1c015ddbee8823c6c3231b50dd40b9d81d1a8c"
+    },
+    {
+      "id": "legacy-kana-okaeri-ev41",
+      "language": "cn",
+      "path": "/data/legacy-vn/kana-okaeri/ev41_cn.txt",
+      "bytes": 45701,
+      "sha256": "7bcafb25e3c1e7d538ccb17bce13380b1f24aa384f6c7bf4ee59f28a6768a907"
+    },
+    {
+      "id": "legacy-kana-okaeri-ev41",
+      "language": "jp",
+      "path": "/data/legacy-vn/kana-okaeri/ev41_jp.txt",
+      "bytes": 57185,
+      "sha256": "d28901b5f529820cff5717f6bb461f5362bcae18b1ae33657638decd69b75608"
+    },
+    {
+      "id": "legacy-kana-okaeri-ev42",
+      "language": "cn",
+      "path": "/data/legacy-vn/kana-okaeri/ev42_cn.txt",
+      "bytes": 21966,
+      "sha256": "3fd1966f9fc5955ff6ccb9d8d835b52aa99cdbae740910c085bccc8b92da3aba"
+    },
+    {
+      "id": "legacy-kana-okaeri-ev42",
+      "language": "jp",
+      "path": "/data/legacy-vn/kana-okaeri/ev42_jp.txt",
+      "bytes": 27622,
+      "sha256": "069a9641961e9d3f17fe63747088f75fa59ad231568e0e236a445629bd4b7cd8"
+    },
+    {
+      "id": "legacy-kana-okaeri-ev43",
+      "language": "cn",
+      "path": "/data/legacy-vn/kana-okaeri/ev43_cn.txt",
+      "bytes": 4806,
+      "sha256": "7736a9845bbf46b3e35eeb6caded9ef075082a91027cfc71a72e615781340e3a"
+    },
+    {
+      "id": "legacy-kana-okaeri-ev43",
+      "language": "jp",
+      "path": "/data/legacy-vn/kana-okaeri/ev43_jp.txt",
+      "bytes": 6043,
+      "sha256": "7c910ce403a9dce5d88b22cdc28bf6a1ef5bf92e3d0c2b9b6223d88b9891c7f6"
+    },
+    {
+      "id": "legacy-kana-okaeri-ev432",
+      "language": "cn",
+      "path": "/data/legacy-vn/kana-okaeri/ev432_cn.txt",
+      "bytes": 15217,
+      "sha256": "492949933e2d18477ef940b0c7da2d63bad792c18e2d1b444ed038ebf35798ee"
+    },
+    {
+      "id": "legacy-kana-okaeri-ev432",
+      "language": "jp",
+      "path": "/data/legacy-vn/kana-okaeri/ev432_jp.txt",
+      "bytes": 18767,
+      "sha256": "a7391892ea9a3f04e8dc02630611721c136526426d7972fbb2f2b5019783e45e"
+    },
+    {
+      "id": "legacy-kana-okaeri-ev44",
+      "language": "cn",
+      "path": "/data/legacy-vn/kana-okaeri/ev44_cn.txt",
+      "bytes": 23111,
+      "sha256": "774600484c915d9326003dfb0bcf559e377caa40e4cff0c474e3a1fa4801192e"
+    },
+    {
+      "id": "legacy-kana-okaeri-ev44",
+      "language": "jp",
+      "path": "/data/legacy-vn/kana-okaeri/ev44_jp.txt",
+      "bytes": 30377,
+      "sha256": "51aa3fb2939bf3e97b3801b93845dc9c12098d101ded237d5c40c382c75b49ff"
+    },
+    {
+      "id": "legacy-kana-okaeri-ev45",
+      "language": "cn",
+      "path": "/data/legacy-vn/kana-okaeri/ev45_cn.txt",
+      "bytes": 14545,
+      "sha256": "fd712e9fa589d7d27eb73ba640dc16da7f83ea2f190d9a92b11208340bfcedbe"
+    },
+    {
+      "id": "legacy-kana-okaeri-ev45",
+      "language": "jp",
+      "path": "/data/legacy-vn/kana-okaeri/ev45_jp.txt",
+      "bytes": 19112,
+      "sha256": "847d6c366a759df137cd2271aacd7f34cf1b2107ae35be8f8c4b9c98a99c4b8f"
+    },
+    {
+      "id": "legacy-kana-okaeri-ev46",
+      "language": "cn",
+      "path": "/data/legacy-vn/kana-okaeri/ev46_cn.txt",
+      "bytes": 33038,
+      "sha256": "8a253f405769ab399e91eb26b346cdd33ddec677c7923863edb3dff7ac70e6e7"
+    },
+    {
+      "id": "legacy-kana-okaeri-ev46",
+      "language": "jp",
+      "path": "/data/legacy-vn/kana-okaeri/ev46_jp.txt",
+      "bytes": 42646,
+      "sha256": "074dc5daf9ed3d713ed07f28da39c38572062d6148efe554da5696b68d6b685d"
+    },
+    {
+      "id": "legacy-kana-okaeri-ev462a",
+      "language": "cn",
+      "path": "/data/legacy-vn/kana-okaeri/ev462a_cn.txt",
+      "bytes": 10385,
+      "sha256": "884486ebdeb955d7ceec1a70c7136563d72789e43e98b4c98ba8c70e2fe9e283"
+    },
+    {
+      "id": "legacy-kana-okaeri-ev462a",
+      "language": "jp",
+      "path": "/data/legacy-vn/kana-okaeri/ev462a_jp.txt",
+      "bytes": 14052,
+      "sha256": "3370af9f95c75b14fd404f7ce40c2d06875841e5c20ef764953b006d4946aca3"
+    },
+    {
+      "id": "legacy-kana-okaeri-ev462b",
+      "language": "cn",
+      "path": "/data/legacy-vn/kana-okaeri/ev462b_cn.txt",
+      "bytes": 9551,
+      "sha256": "364062aec5256d4c193d385e2f294c43c19ac9a91693b289fa3dd524a1a2cc7e"
+    },
+    {
+      "id": "legacy-kana-okaeri-ev462b",
+      "language": "jp",
+      "path": "/data/legacy-vn/kana-okaeri/ev462b_jp.txt",
+      "bytes": 12726,
+      "sha256": "208ca507bff1ec7b2a33406a03d41992331611a5389c5a3ccfa668eb1008e60f"
+    },
+    {
+      "id": "legacy-kana-okaeri-ev463",
+      "language": "cn",
+      "path": "/data/legacy-vn/kana-okaeri/ev463_cn.txt",
+      "bytes": 7594,
+      "sha256": "d60d4828e0ba30f31d93c4335f9994f59ce865e76504dadf7793f23b1fe1f015"
+    },
+    {
+      "id": "legacy-kana-okaeri-ev463",
+      "language": "jp",
+      "path": "/data/legacy-vn/kana-okaeri/ev463_jp.txt",
+      "bytes": 10772,
+      "sha256": "510acdbe9081277bdc348e079dee8823d5b2d9fe645be38f5d79d528991f85b5"
+    },
+    {
+      "id": "legacy-kana-okaeri-ev472",
+      "language": "cn",
+      "path": "/data/legacy-vn/kana-okaeri/ev472_cn.txt",
+      "bytes": 3880,
+      "sha256": "2241bc2f58f539097e901f24a5d3c4d8642aa230fe293cbd2a2863f8359d9083"
+    },
+    {
+      "id": "legacy-kana-okaeri-ev472",
+      "language": "jp",
+      "path": "/data/legacy-vn/kana-okaeri/ev472_jp.txt",
+      "bytes": 5285,
+      "sha256": "b32e999c8faf689b90f187051479da280fc95758b129618a2cb4b65034f41780"
+    },
+    {
+      "id": "legacy-kana-okaeri-ev473",
+      "language": "cn",
+      "path": "/data/legacy-vn/kana-okaeri/ev473_cn.txt",
+      "bytes": 14561,
+      "sha256": "80f210c2ea751225c2d7b67d1ad36e0ea13e1bdc78f419f98627b92740da3355"
+    },
+    {
+      "id": "legacy-kana-okaeri-ev473",
+      "language": "jp",
+      "path": "/data/legacy-vn/kana-okaeri/ev473_jp.txt",
+      "bytes": 19023,
+      "sha256": "fe89cf288ad783cee15ac8896c515f4c844708170404b98481bce0ca6e3bc8a7"
+    },
+    {
+      "id": "legacy-kana-okaeri-ev47a",
+      "language": "cn",
+      "path": "/data/legacy-vn/kana-okaeri/ev47a_cn.txt",
+      "bytes": 13871,
+      "sha256": "9981a514ab4df05e965af175f8221bd48b47fcbfbc27ceaee62fff6fd05475ac"
+    },
+    {
+      "id": "legacy-kana-okaeri-ev47a",
+      "language": "jp",
+      "path": "/data/legacy-vn/kana-okaeri/ev47a_jp.txt",
+      "bytes": 16818,
+      "sha256": "a504f5be07f31a06c82e6a849d21c9455f832421c350713b7b9f83d171df10c0"
+    },
+    {
+      "id": "legacy-kana-okaeri-ev47b",
+      "language": "cn",
+      "path": "/data/legacy-vn/kana-okaeri/ev47b_cn.txt",
+      "bytes": 5845,
+      "sha256": "0ac9dfeb9678d80c9c6913f220a398f1d5d66ff42a9e5bac87c809955512d842"
+    },
+    {
+      "id": "legacy-kana-okaeri-ev47b",
+      "language": "jp",
+      "path": "/data/legacy-vn/kana-okaeri/ev47b_jp.txt",
+      "bytes": 7067,
+      "sha256": "dba1e001b33bf54d0860b718550d0a0955ab8dba0da0c68b46f8050dd4686cf3"
+    },
+    {
+      "id": "legacy-kana-okaeri-ev48",
+      "language": "cn",
+      "path": "/data/legacy-vn/kana-okaeri/ev48_cn.txt",
+      "bytes": 4317,
+      "sha256": "7f7bde4e064ca36d9a92482a8e0f07a62f888d73fd40fdc3d0c2dcab230bee56"
+    },
+    {
+      "id": "legacy-kana-okaeri-ev48",
+      "language": "jp",
+      "path": "/data/legacy-vn/kana-okaeri/ev48_jp.txt",
+      "bytes": 5587,
+      "sha256": "2457db0840706ca17747700a65853df269dacb5c3c4bb79b193d28b3ce6c7a68"
+    },
+    {
+      "id": "legacy-kana-okaeri-ev482a",
+      "language": "cn",
+      "path": "/data/legacy-vn/kana-okaeri/ev482a_cn.txt",
+      "bytes": 4605,
+      "sha256": "50e00348ece8558d8fa22e0d6f8c2ddbfcaa49822b399c2e9ce240e9f93cd2b3"
+    },
+    {
+      "id": "legacy-kana-okaeri-ev482a",
+      "language": "jp",
+      "path": "/data/legacy-vn/kana-okaeri/ev482a_jp.txt",
+      "bytes": 5976,
+      "sha256": "d12ddf1351bb14340d998fba59a0c044bbce5f874f147ada20fb1880c8316ddd"
+    },
+    {
+      "id": "legacy-kana-okaeri-ev482b",
+      "language": "cn",
+      "path": "/data/legacy-vn/kana-okaeri/ev482b_cn.txt",
+      "bytes": 33338,
+      "sha256": "8bf0b0c1c2b1b6c605b1ebeb867fc95350376629ea6bc0bf5a735db1ae7e65a0"
+    },
+    {
+      "id": "legacy-kana-okaeri-ev482b",
+      "language": "jp",
+      "path": "/data/legacy-vn/kana-okaeri/ev482b_jp.txt",
+      "bytes": 42401,
+      "sha256": "a95b5afa34239f61aa7e53b0cd3c15b4d87a4569938cfbdd28f195f6957de1bc"
+    },
+    {
+      "id": "legacy-kana-okaeri-ev494",
+      "language": "cn",
+      "path": "/data/legacy-vn/kana-okaeri/ev494_cn.txt",
+      "bytes": 2290,
+      "sha256": "4284b79afd7963ff63e9684b8fa4f344a78131ddef8526e5655e412263fcabf6"
+    },
+    {
+      "id": "legacy-kana-okaeri-ev494",
+      "language": "jp",
+      "path": "/data/legacy-vn/kana-okaeri/ev494_jp.txt",
+      "bytes": 2990,
+      "sha256": "a041c2710a4c65cbad14dfa8dcfb9da5d9a76b919ca829f872bb5c0ccebfb070"
+    },
+    {
+      "id": "legacy-kana-okaeri-ev49a",
+      "language": "cn",
+      "path": "/data/legacy-vn/kana-okaeri/ev49a_cn.txt",
+      "bytes": 22318,
+      "sha256": "4c753ee98dea5c22ef93f5c1b22fe44dd6be282e3f34f65b35d8a8df3fb6f6ac"
+    },
+    {
+      "id": "legacy-kana-okaeri-ev49a",
+      "language": "jp",
+      "path": "/data/legacy-vn/kana-okaeri/ev49a_jp.txt",
+      "bytes": 29694,
+      "sha256": "6b4bfabb5563614e03b8b60d89fc3cc3a89174446082c7dc21f116a64141e424"
+    },
+    {
+      "id": "legacy-kana-okaeri-ev49b",
+      "language": "cn",
+      "revision": "52500b32f92d64119cbec66fcf6ff75bbc6313dc92724d7ed827d1d154a333a4",
+      "sourceSha256": "6838596165da07f0478fd96c1047476dec53d3687843b931fb8c99101ecdbe67"
+    },
+    {
+      "id": "legacy-kana-okaeri-ev49b",
+      "language": "jp",
+      "path": "/data/legacy-vn/kana-okaeri/ev49b_jp.txt",
+      "bytes": 15567,
+      "sha256": "6a89c8021bbd46922e3a7f7771e3f67c5239bb991dab0bf3606e667cc386c326"
+    },
+    {
+      "id": "legacy-kana-okaeri-ev49b2",
+      "language": "cn",
+      "path": "/data/legacy-vn/kana-okaeri/ev49b2_cn.txt",
+      "bytes": 9383,
+      "sha256": "cdd04c9911783ce66a80c546c10a75f33b4d1f4604d2e09329dfb3d7a4daa6fa"
+    },
+    {
+      "id": "legacy-kana-okaeri-ev49b2",
+      "language": "jp",
+      "path": "/data/legacy-vn/kana-okaeri/ev49b2_jp.txt",
+      "bytes": 12297,
+      "sha256": "c07fc4e266944579d6e426516d98d23f70ec5fc4b2815a1597eeb82ac960a5a5"
+    },
+    {
+      "id": "legacy-kana-okaeri-ev49b3",
+      "language": "cn",
+      "path": "/data/legacy-vn/kana-okaeri/ev49b3_cn.txt",
+      "bytes": 28946,
+      "sha256": "15f7d80e7252a30f22e3dfe1a50132bc26a872a24612ef6c5dec4b9ebb059136"
+    },
+    {
+      "id": "legacy-kana-okaeri-ev49b3",
+      "language": "jp",
+      "path": "/data/legacy-vn/kana-okaeri/ev49b3_jp.txt",
+      "bytes": 37765,
+      "sha256": "cd21f75f2dc47aa107dd7541f9652820c387b2457094340a6c412d13f9c744a3"
+    },
+    {
+      "id": "legacy-kana-okaeri-ev4a",
+      "language": "cn",
+      "path": "/data/legacy-vn/kana-okaeri/ev4a_cn.txt",
+      "bytes": 12501,
+      "sha256": "1b1cc8df20d6dd5e6dc456c3c1c9be51df2ae3e2221e499e1437b665c35530c1"
+    },
+    {
+      "id": "legacy-kana-okaeri-ev4a",
+      "language": "jp",
+      "path": "/data/legacy-vn/kana-okaeri/ev4a_jp.txt",
+      "bytes": 16510,
+      "sha256": "60810a6115e1fdd70ea59869069d5e362851bd488b21644eef3383e213f4f136"
+    },
+    {
+      "id": "legacy-narcissu-texts-novel1-001",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-texts/novel1-001_cn.txt",
+      "bytes": 2520,
+      "sha256": "7c30f50c766952e0a3d10ce7f3fbd38165aa7ed29606b22b84e73780dcb81d95"
+    },
+    {
+      "id": "legacy-narcissu-texts-novel1-002",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-texts/novel1-002_cn.txt",
+      "bytes": 6363,
+      "sha256": "698657ff56a30ee12863ed893e1aaf41ca0bb2a6f6652825292021e69ad02cd5"
+    },
+    {
+      "id": "legacy-narcissu-texts-novel1-003",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-texts/novel1-003_cn.txt",
+      "bytes": 15002,
+      "sha256": "f8acb69bc040a342c80f4e50a369fac71857cd9ac8254fa77a80865710a8534f"
+    },
+    {
+      "id": "legacy-narcissu-texts-novel1-004",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-texts/novel1-004_cn.txt",
+      "bytes": 37633,
+      "sha256": "d8b4281c43b4f4c359ddc56f13bdf87076dbcf07bf82672c98609344aea8a146"
+    },
+    {
+      "id": "legacy-narcissu-texts-novel1-005",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-texts/novel1-005_cn.txt",
+      "bytes": 51579,
+      "sha256": "5eaa61368110cba0bfc03a9f8bb1ce4e679ac00fbb7ae3cce43f76dcd1d5c074"
+    },
+    {
+      "id": "legacy-narcissu-texts-novel1-006",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-texts/novel1-006_cn.txt",
+      "bytes": 25614,
+      "sha256": "505970a54b187bd8b17edcf48de93e71c417f15d0787e7162aedd1a232c07ea3"
+    },
+    {
+      "id": "legacy-narcissu-texts-novel1-007",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-texts/novel1-007_cn.txt",
+      "bytes": 27565,
+      "sha256": "19d1a41a7e2d29d2b31e74330ff935bc4c72bd74389c97859b06266c7a1db213"
+    },
+    {
+      "id": "legacy-narcissu-texts-novel1-008",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-texts/novel1-008_cn.txt",
+      "bytes": 62269,
+      "sha256": "e400e10032ed20562d33e83d66220d3a4f377b0cdcdeb35e1c476876d7814682"
+    },
+    {
+      "id": "legacy-narcissu-texts-novel1-009",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-texts/novel1-009_cn.txt",
+      "bytes": 48226,
+      "sha256": "a271ff212ac3b69cbc188ff8a347c5f321da75f6b7998f2f1b3e64f50a702cba"
+    },
+    {
+      "id": "legacy-narcissu-texts-novel1-010",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-texts/novel1-010_cn.txt",
+      "bytes": 19595,
+      "sha256": "cc1fe094dbb37c799cdfcd4c8717745ff9aa0190a96805d599b46e603d41b0b9"
+    },
+    {
+      "id": "legacy-narcissu-texts-novel1-011",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-texts/novel1-011_cn.txt",
+      "bytes": 10072,
+      "sha256": "993c56d74baddf8c65c42ff383ea8bf471926188a98a84ddd9812c7f1312a2b9"
+    },
+    {
+      "id": "legacy-narcissu-texts-novel1-012",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-texts/novel1-012_cn.txt",
+      "bytes": 3328,
+      "sha256": "f1d193f1d8ff694990363dd0fdd6f898a21f3a28bcdf7250fcfe9580aecd48e6"
+    },
+    {
+      "id": "legacy-narcissu-texts-novel1-013",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-texts/novel1-013_cn.txt",
+      "bytes": 2124,
+      "sha256": "dd36d2ddfb83d2bd4695aaeeacd7fc88a5cfb442dbcd165bc97aa7ccbb0ae8a2"
+    },
+    {
+      "id": "legacy-narcissu-texts-novel1-alt-001",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-texts/novel1-alt-001_cn.txt",
+      "bytes": 1004,
+      "sha256": "ccc8a8b093ea3a22ea9f7b099f7817d25fd52927bcd5773aea5367e205bd1fd2"
+    },
+    {
+      "id": "legacy-narcissu-texts-novel1-alt-002",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-texts/novel1-alt-002_cn.txt",
+      "bytes": 6360,
+      "sha256": "f4711f5fe20f0d0066afef71a3c9ee7f593ca6186c067850ce35642bce62ad55"
+    },
+    {
+      "id": "legacy-narcissu-texts-novel1-alt-003",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-texts/novel1-alt-003_cn.txt",
+      "bytes": 14976,
+      "sha256": "3d27d40ce422d293c3cdbd3e9caae9cd65c4f18e7852d73cd966e0a9506120bf"
+    },
+    {
+      "id": "legacy-narcissu-texts-novel1-alt-004",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-texts/novel1-alt-004_cn.txt",
+      "bytes": 37592,
+      "sha256": "203828f75b1bc6e70e5b8aaabd17cfc1d47e00eaa4e5f29cf6a5000c11183940"
+    },
+    {
+      "id": "legacy-narcissu-texts-novel1-alt-005",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-texts/novel1-alt-005_cn.txt",
+      "bytes": 51499,
+      "sha256": "7a09a748729dd93009b1e4f3ff022c567904a7e9fbeb0ec2deb3bbc374f89d33"
+    },
+    {
+      "id": "legacy-narcissu-texts-novel1-alt-006",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-texts/novel1-alt-006_cn.txt",
+      "bytes": 25570,
+      "sha256": "83366d1287697168489fb589599c27d7818ba7b51afacf1ed90e2ef09a5f039d"
+    },
+    {
+      "id": "legacy-narcissu-texts-novel1-alt-007",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-texts/novel1-alt-007_cn.txt",
+      "bytes": 27514,
+      "sha256": "9ee5500879833bacef713cb97560538797cfea49986a368873b2ffa6c78aaba6"
+    },
+    {
+      "id": "legacy-narcissu-texts-novel1-alt-008",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-texts/novel1-alt-008_cn.txt",
+      "bytes": 62157,
+      "sha256": "5afa409dba276c1e46b4521a31d70b38d0e1e12826df450b145564d4122f7ad0"
+    },
+    {
+      "id": "legacy-narcissu-texts-novel1-alt-009",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-texts/novel1-alt-009_cn.txt",
+      "bytes": 48146,
+      "sha256": "5de32a85eba389c7fb73c653c85b5e229d9161e6a1afde768472745d21c8d9fb"
+    },
+    {
+      "id": "legacy-narcissu-texts-novel1-alt-010",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-texts/novel1-alt-010_cn.txt",
+      "bytes": 19557,
+      "sha256": "110ad4a4a711e305b3e79291dbaaecccdd026ab50f6f4ce3998ddfb88d30b0dc"
+    },
+    {
+      "id": "legacy-narcissu-texts-novel1-alt-011",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-texts/novel1-alt-011_cn.txt",
+      "bytes": 10065,
+      "sha256": "e2850a48e88ab4e6a12c96b5551b3c2950388fdaaa027d307cb849acf16e5a83"
+    },
+    {
+      "id": "legacy-narcissu-texts-novel1-alt-012",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-texts/novel1-alt-012_cn.txt",
+      "bytes": 3326,
+      "sha256": "1faf2f83cad867778a876ca763ad564178061af0d7c94d4d10e208d412afad4a"
+    },
+    {
+      "id": "legacy-narcissu-texts-novel1-alt-013",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-texts/novel1-alt-013_cn.txt",
+      "bytes": 2127,
+      "sha256": "445c50c7fc795902d60e75f5c51db8532db305c9aa2f0e46b5537ef8c9ccf3bd"
+    },
+    {
+      "id": "legacy-narcissu-texts-novel2-imperfect-001",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-texts/novel2-imperfect-001_cn.txt",
+      "bytes": 4324,
+      "sha256": "ce452a9908e487fa4ea59435f00bf1c1ad8b4be26cc2f4ea2f7890d16da8c74f"
+    },
+    {
+      "id": "legacy-narcissu-texts-novel2-imperfect-002",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-texts/novel2-imperfect-002_cn.txt",
+      "bytes": 1328,
+      "sha256": "366e569892109c63116f2ff87f59feed3e20459ea4312d581820b14a03bf8ee2"
+    },
+    {
+      "id": "legacy-narcissu-texts-novel2-imperfect-003",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-texts/novel2-imperfect-003_cn.txt",
+      "bytes": 7677,
+      "sha256": "3c60a4e2af7669318d428b47923510331044e24a16b8294131efd76759359691"
+    },
+    {
+      "id": "legacy-narcissu-texts-novel2-imperfect-004",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-texts/novel2-imperfect-004_cn.txt",
+      "bytes": 1967,
+      "sha256": "d16e3a7d88cf2bbe573d464ed8fcd1a4b626d38e207b2041052b088dd0ffaf71"
+    },
+    {
+      "id": "legacy-narcissu-texts-novel2-imperfect-005",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-texts/novel2-imperfect-005_cn.txt",
+      "bytes": 302,
+      "sha256": "79ccb0d8c808e084f4479560bc11c648c7e099bb50a054dbebf13412e291c227"
+    },
+    {
+      "id": "legacy-narcissu-texts-novel2-imperfect-006",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-texts/novel2-imperfect-006_cn.txt",
+      "bytes": 2975,
+      "sha256": "01b4a35348b0cd647aaea4364ed7ba62f524cd949e34f68c431389fabc1a1c3b"
+    },
+    {
+      "id": "legacy-narcissu-texts-novel2-imperfect-007",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-texts/novel2-imperfect-007_cn.txt",
+      "bytes": 27557,
+      "sha256": "b186ca61442349f822f006361ad792674003096c340f985ae5a5be21314b0a63"
+    },
+    {
+      "id": "legacy-narcissu-texts-novel2-imperfect-008",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-texts/novel2-imperfect-008_cn.txt",
+      "bytes": 3761,
+      "sha256": "f595043a4ef63cdf6b3351bb1b185d2a21aec6701b05f414749e10d2896c35ca"
+    },
+    {
+      "id": "legacy-narcissu-texts-novel2-imperfect-009",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-texts/novel2-imperfect-009_cn.txt",
+      "bytes": 2396,
+      "sha256": "6a36fe292b0f3d686c81096844ff73ecf5f62edf4510c475752f1450481fd9b0"
+    },
+    {
+      "id": "legacy-narcissu-texts-novel2-imperfect-010",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-texts/novel2-imperfect-010_cn.txt",
+      "bytes": 317,
+      "sha256": "5766b17ce4beab382c858da5f936032f14da29c4ddd4bd63744643d357986c5b"
+    },
+    {
+      "id": "legacy-narcissu-texts-novel2-imperfect-011",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-texts/novel2-imperfect-011_cn.txt",
+      "bytes": 4274,
+      "sha256": "3bb0b1a166c4412999abdcfa95dbba6a99d04964660e347e23df1bc184e4fac7"
+    },
+    {
+      "id": "legacy-narcissu-texts-novel2-imperfect-012",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-texts/novel2-imperfect-012_cn.txt",
+      "bytes": 1643,
+      "sha256": "06b8b807e55b337f078fa0d1df2f87cfe9eb48e05c99f1a1282a1bb535b98ef7"
+    },
+    {
+      "id": "legacy-narcissu-texts-novel2-imperfect-013",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-texts/novel2-imperfect-013_cn.txt",
+      "bytes": 65,
+      "sha256": "632ee42ef29ec65a2c158a41aff58a9a4ac04cbf6989efb4d932ad084cc48522"
+    },
+    {
+      "id": "legacy-narcissu-texts-novel2-imperfect-014",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-texts/novel2-imperfect-014_cn.txt",
+      "bytes": 860,
+      "sha256": "bfb66e5484b3d286d52fde2af08d4999ce748ce22421b0db8fca7e4841c3a07f"
+    },
+    {
+      "id": "legacy-narcissu-texts-novel2-imperfect-015",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-texts/novel2-imperfect-015_cn.txt",
+      "bytes": 1442,
+      "sha256": "75281a5188b366d403ea811471429dc536e4a1bb11ad7bd9331c07cfa03287ad"
+    },
+    {
+      "id": "legacy-narcissu-texts-novel2-imperfect-016",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-texts/novel2-imperfect-016_cn.txt",
+      "bytes": 972,
+      "sha256": "548ede74f620772dd279463d7d34b85e55e9c56d45ea551f682b6bb05365b4e2"
+    },
+    {
+      "id": "legacy-narcissu-texts-novel2-imperfect-017",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-texts/novel2-imperfect-017_cn.txt",
+      "bytes": 689,
+      "sha256": "4916adf843c99c0926b95503c02840cedbd6f7c3a2df2ded3ab629475d011d30"
+    },
+    {
+      "id": "legacy-narcissu-texts-novel2-imperfect-018",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-texts/novel2-imperfect-018_cn.txt",
+      "bytes": 491,
+      "sha256": "44ff8b6c2d8301039548b281f9d066704be9ea6248b9d1080254fd60eb6aff5c"
+    },
+    {
+      "id": "legacy-narcissu-texts-novel2-imperfect-019",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-texts/novel2-imperfect-019_cn.txt",
+      "bytes": 416,
+      "sha256": "d7be8654a1596c3c8d22d183004f3a96e6949a4a6438acd6e3e2d6be445d3dec"
+    },
+    {
+      "id": "legacy-narcissu-texts-novel2-imperfect-020",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-texts/novel2-imperfect-020_cn.txt",
+      "bytes": 1262,
+      "sha256": "ef8e90e518dcc341085efa25099281c84da52a6dbbca3b6fbb035a9defe19c7f"
+    },
+    {
+      "id": "legacy-narcissu-texts-novel2-imperfect-021",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-texts/novel2-imperfect-021_cn.txt",
+      "bytes": 308,
+      "sha256": "82f7ebdac2f21e9219e2ad2f1059281e2b33a87b402ca028a04947a0dc89f17e"
+    },
+    {
+      "id": "legacy-narcissu-texts-novel2-imperfect-022",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-texts/novel2-imperfect-022_cn.txt",
+      "bytes": 1064,
+      "sha256": "18c9ce65d6275cb83579218a56c8415fe9a629feb7d2753a12122670a26b958e"
+    },
+    {
+      "id": "legacy-narcissu-texts-novel2-imperfect-023",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-texts/novel2-imperfect-023_cn.txt",
+      "bytes": 821,
+      "sha256": "e204bcefa78d16ee687658f044b335220e45759bc6bee5b4592d79543faea79c"
+    },
+    {
+      "id": "legacy-narcissu-texts-novel2-imperfect-024",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-texts/novel2-imperfect-024_cn.txt",
+      "bytes": 947,
+      "sha256": "34af3e0d903e280204a6be30d4c5588ba017c4ce06ecdbc1544be0b15c3d2d05"
+    },
+    {
+      "id": "legacy-narcissu-texts-novel2-imperfect-025",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-texts/novel2-imperfect-025_cn.txt",
+      "bytes": 1121,
+      "sha256": "28935c0c202598f10bf605f301650ae6a6c8e5a2976076d942e11139c64762b3"
+    },
+    {
+      "id": "legacy-narcissu-texts-1980-001",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-texts/1980-001_cn.txt",
+      "bytes": 686,
+      "sha256": "b003447037dd61bcae0767dc62dd915f88faa068108e5ae88e72bf7b7468cf54"
+    },
+    {
+      "id": "legacy-narcissu-texts-1980-002",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-texts/1980-002_cn.txt",
+      "bytes": 12871,
+      "sha256": "9207ac3fd3ff8cdee8fd65d4cafa7b907cd83b06d1b1c769a9ec5ce4d33ab408"
+    },
+    {
+      "id": "legacy-narcissu-texts-1993-001",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-texts/1993-001_cn.txt",
+      "bytes": 12598,
+      "sha256": "92ef6b7049336c63bdd7b0321e551acc2c03a08d38f7aa9868ba8492f6a2286a"
+    },
+    {
+      "id": "legacy-narcissu-texts-himeko-001",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-texts/himeko-001_cn.txt",
+      "bytes": 438,
+      "sha256": "788e4cab8854ce220c88a8753fde5cd3190ca51ead8b1e13f9abc990d97355ee"
+    },
+    {
+      "id": "legacy-narcissu-texts-himeko-002",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-texts/himeko-002_cn.txt",
+      "bytes": 3610,
+      "sha256": "c49b3deb9bd8413a5aa77aed0cbce504c21a9ca805da6185749cf0e63bd2310a"
+    },
+    {
+      "id": "legacy-narcissu-texts-himeko-003",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-texts/himeko-003_cn.txt",
+      "bytes": 3158,
+      "sha256": "cd3a176fd9ee1fe9c6720a88b9c4f1c33486d50f702566d451f2604c177c5841"
+    },
+    {
+      "id": "legacy-narcissu-texts-himeko-004",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-texts/himeko-004_cn.txt",
+      "bytes": 18560,
+      "sha256": "3d67168a63ac641285abd6b1eb7cf26efc54474610e997a5f911a4c4cd77d04c"
+    },
+    {
+      "id": "legacy-narcissu-texts-himeko-005",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-texts/himeko-005_cn.txt",
+      "bytes": 38437,
+      "sha256": "e53f87271de1c195cb3435af3dedd51d45c0ead7cad7523f29c60297a4dcba40"
+    },
+    {
+      "id": "legacy-narcissu-texts-himeko-006",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-texts/himeko-006_cn.txt",
+      "bytes": 1410,
+      "sha256": "6206935540265ca2998b89cc9cf26c2422a6d99d6262f7ce2f60f27b1dff3bee"
+    },
+    {
+      "id": "legacy-narcissu-texts-one-001",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-texts/one-001_cn.txt",
+      "bytes": 82,
+      "sha256": "85560e0ee3210c63464d162024da92bdefc0d6eca547e9a6bcd7d76e3cd76640"
+    },
+    {
+      "id": "legacy-narcissu-texts-one-002",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-texts/one-002_cn.txt",
+      "bytes": 8248,
+      "sha256": "338371e083bcb52ae38803c1b4da795187e904345d95f32c4b1046b7e02d4e6f"
+    },
+    {
+      "id": "legacy-narcissu-texts-one-003",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-texts/one-003_cn.txt",
+      "bytes": 16959,
+      "sha256": "1f62f7deb5520c436c050466309e751941fdcdcbb955fef9453b522f750ce2ad"
+    },
+    {
+      "id": "legacy-narcissu-texts-one-004",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-texts/one-004_cn.txt",
+      "bytes": 8552,
+      "sha256": "cfd068fd0d60af5c316e2d733f2fb79afeded995dc6b14754a1d0ed279e90006"
+    },
+    {
+      "id": "legacy-narcissu-texts-one-005",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-texts/one-005_cn.txt",
+      "bytes": 7962,
+      "sha256": "28399d04d20e5be2177c615b38145f9c54f9df0be2c7bb1f0dd5bcfbc61db17e"
+    },
+    {
+      "id": "legacy-narcissu-texts-one-006",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-texts/one-006_cn.txt",
+      "bytes": 7486,
+      "sha256": "aebb4e21f81b85e0e213b4f09b765253c67bed83b1ad8567ae36175501a0eab7"
+    },
+    {
+      "id": "legacy-narcissu-texts-one-007",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-texts/one-007_cn.txt",
+      "bytes": 10562,
+      "sha256": "4eba9858f9b375938e000ca593d0eb049ac74ff467bfe7b8d75930e7f869390d"
+    },
+    {
+      "id": "legacy-narcissu-texts-one-008",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-texts/one-008_cn.txt",
+      "bytes": 9991,
+      "sha256": "3890252b632db9304f0b00e05c332ec14a6c440d0effa1b756ce30b2970bb8cf"
+    },
+    {
+      "id": "legacy-narcissu-texts-one-009",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-texts/one-009_cn.txt",
+      "bytes": 7108,
+      "sha256": "a786c03517a8b877ac72459a507946a619499e813213c2be41d3b1945c706c1b"
+    },
+    {
+      "id": "legacy-narcissu-texts-one-010",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-texts/one-010_cn.txt",
+      "bytes": 7544,
+      "sha256": "c729a16797e3634468716b3a80f0bc7fe18d0beeab7477460834c4baeeed6124"
+    },
+    {
+      "id": "legacy-narcissu-texts-one-011",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-texts/one-011_cn.txt",
+      "bytes": 8966,
+      "sha256": "039883b19c8ca832a11d0b11e2210968143d781d6d9caa842168e4e5369cf0d0"
+    },
+    {
+      "id": "legacy-narcissu-texts-one-012",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-texts/one-012_cn.txt",
+      "bytes": 9254,
+      "sha256": "a6bab5f24c3df6771a7f50b4181c640460729a5f3be76f261ac77e82cd50ae43"
+    },
+    {
+      "id": "legacy-narcissu-texts-one-013",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-texts/one-013_cn.txt",
+      "bytes": 6917,
+      "sha256": "6ac3ac913ff9572e729ac754890debf50ef39bc1eba4a3b4bcc56e8af98f954d"
+    },
+    {
+      "id": "legacy-narcissu-texts-one-014",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-texts/one-014_cn.txt",
+      "bytes": 7415,
+      "sha256": "c8dba5f2233465e89f516fa9d9f919e494f6cfdb8271e008217e18ea24457ad6"
+    },
+    {
+      "id": "legacy-narcissu-texts-one-015",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-texts/one-015_cn.txt",
+      "bytes": 8055,
+      "sha256": "3dd07872f90ba5cd44de37a43a4b631e87bec970bb7616d842c22ae7e0f37270"
+    },
+    {
+      "id": "legacy-narcissu-texts-one-016",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-texts/one-016_cn.txt",
+      "bytes": 8608,
+      "sha256": "5de2d7617f813cea1b5b3c986201e80628777e3962ec0701eb23124d8ce9c8f3"
+    },
+    {
+      "id": "legacy-narcissu-texts-one-017",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-texts/one-017_cn.txt",
+      "bytes": 30931,
+      "sha256": "71c07908f970c7c027feab3345190848c1ebadf67d5fc4005909c222e9812498"
+    },
+    {
+      "id": "legacy-narcissu-texts-two-001",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-texts/two-001_cn.txt",
+      "bytes": 3955,
+      "sha256": "25eade728493fa46a4e9758228e2c99ded2695d37f11d81ef65ca5dd74dd39e4"
+    },
+    {
+      "id": "legacy-narcissu-texts-two-002",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-texts/two-002_cn.txt",
+      "bytes": 1289,
+      "sha256": "f9748469de1c4f615d023f00e70252d5e8558ba2075cc2655d6185929fb0f08f"
+    },
+    {
+      "id": "legacy-narcissu-texts-two-003",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-texts/two-003_cn.txt",
+      "bytes": 7517,
+      "sha256": "23bc8c6d607693cce1ed2e5753883b74683595d61065c656e9437bfa81ab0c5d"
+    },
+    {
+      "id": "legacy-narcissu-texts-two-004",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-texts/two-004_cn.txt",
+      "bytes": 1939,
+      "sha256": "2072b51db35eb36a54e0bb2817f1aa8485fff23ce5c24ad8876e2cd0f5536913"
+    },
+    {
+      "id": "legacy-narcissu-texts-two-005",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-texts/two-005_cn.txt",
+      "bytes": 292,
+      "sha256": "a3ebf837f58d06c8babbe961d7d500d56e0d24706a8c1dd3d609a5de5241cb64"
+    },
+    {
+      "id": "legacy-narcissu-texts-two-006",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-texts/two-006_cn.txt",
+      "bytes": 7466,
+      "sha256": "9599fc14d047bf280ae837f9347301921513f78ecb9e675f9d0226cc86ff0375"
+    },
+    {
+      "id": "legacy-narcissu-texts-two-007",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-texts/two-007_cn.txt",
+      "bytes": 135370,
+      "sha256": "29da31e9d83a6156a1dacbc1f0df2dd42ac80934f007c32607020072c273d597"
+    },
+    {
+      "id": "legacy-narcissu-texts-two-008",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-texts/two-008_cn.txt",
+      "bytes": 59457,
+      "sha256": "d1e8764f2e4be7081cca29431dbc123423b5e416dde2d283e97eab55baca6d72"
+    },
+    {
+      "id": "legacy-narcissu-texts-two-009",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-texts/two-009_cn.txt",
+      "bytes": 3869,
+      "sha256": "6c15bfb2160baf89cc4539187c27f7be300c2a1a1ba9fe92c298cb922ee0b80e"
+    },
+    {
+      "id": "legacy-narcissu-texts-two-010",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-texts/two-010_cn.txt",
+      "bytes": 2747,
+      "sha256": "1dcc9a9031ce961164b9c3fe80ac9e5bde1473867a529b0825173e9b7954cedb"
+    },
+    {
+      "id": "legacy-narcissu-texts-two-011",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-texts/two-011_cn.txt",
+      "bytes": 2432,
+      "sha256": "bc805c1ba7329059493a0f0c17f11a9bd1c738d4c4095668f0d4714d5acf8722"
+    },
+    {
+      "id": "legacy-narcissu-texts-two-012",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-texts/two-012_cn.txt",
+      "bytes": 1360,
+      "sha256": "ede4a75d21e5249dea3697b0655b5a0315b604abdd9b629840ff2576d8633f30"
+    },
+    {
+      "id": "legacy-narcissu-texts-two-013",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-texts/two-013_cn.txt",
+      "bytes": 918,
+      "sha256": "5085d0e3b677252661c11b33ce22480edc60526bc99c6bb95d79ed63e944dcd3"
+    },
+    {
+      "id": "legacy-narcissu-texts-two-014",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-texts/two-014_cn.txt",
+      "bytes": 658,
+      "sha256": "2419d8ae90b8464b246c239b1d1e30fa2a12687c9254f0fb8b349fc64cd0cd0a"
+    },
+    {
+      "id": "legacy-narcissu-texts-two-015",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-texts/two-015_cn.txt",
+      "bytes": 451,
+      "sha256": "277389ded1ef623cc9af133383ef163a549b2b3c3d3d3b6d7e490ba3ca4d17da"
+    },
+    {
+      "id": "legacy-narcissu-texts-two-016",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-texts/two-016_cn.txt",
+      "bytes": 385,
+      "sha256": "33e2e8e4273eea62bb4ac3d43cf6ee397f28afe1acbd26b47b9ded98a66826bd"
+    },
+    {
+      "id": "legacy-narcissu-texts-two-017",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-texts/two-017_cn.txt",
+      "bytes": 1195,
+      "sha256": "8a5ae2ae8facb6c211b058f24e0bce963cbc8ab2de95a031b18f2e0f77131640"
+    },
+    {
+      "id": "legacy-narcissu-texts-two-018",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-texts/two-018_cn.txt",
+      "bytes": 289,
+      "sha256": "b6adcf62c603c226135cc2082564232094efc1691f0a1c440a760e0f466a115c"
+    },
+    {
+      "id": "legacy-narcissu-texts-two-019",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-texts/two-019_cn.txt",
+      "bytes": 999,
+      "sha256": "04b5a8092464cea7841b96522aa2c6301b2d1896874178f034d722e8315c33f9"
+    },
+    {
+      "id": "legacy-narcissu-texts-two-020",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-texts/two-020_cn.txt",
+      "bytes": 772,
+      "sha256": "f6ad218a5d420fc2f9b4e6c3d292fb5b33a7b8f59edacbad006e17172c5319a5"
+    },
+    {
+      "id": "legacy-narcissu-texts-two-021",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-texts/two-021_cn.txt",
+      "bytes": 889,
+      "sha256": "3b1cca928af6bcd9991b9d71a23d820a997974ee954d0cd7143a60a4c5a20486"
+    },
+    {
+      "id": "legacy-narcissu-texts-two-022",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-texts/two-022_cn.txt",
+      "bytes": 1052,
+      "sha256": "a8a0db3e506643e2caf24cf8f1b49bef7331419b598d4fa119743d0c1035255a"
+    },
+    {
+      "id": "legacy-narcissu-texts-iris-001",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-texts/iris-001_cn.txt",
+      "bytes": 14966,
+      "sha256": "3afa22d0a7dfd083181028fb71b754bf00bb9f5676baa0e0c0145bd39b4d2dfa"
+    },
+    {
+      "id": "legacy-narcissu-texts-iris-002",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-texts/iris-002_cn.txt",
+      "bytes": 24753,
+      "sha256": "e8d90cf65676b016c5d10d6a9012e969200915affb96ab6331059dab98e64906"
+    },
+    {
+      "id": "legacy-narcissu-texts-iris-003",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-texts/iris-003_cn.txt",
+      "bytes": 13234,
+      "sha256": "accbd45827d7abe017509c323c8106ab759f076e537865bcd915273c867db78b"
+    },
+    {
+      "id": "legacy-narcissu-texts-iris-004",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-texts/iris-004_cn.txt",
+      "bytes": 23353,
+      "sha256": "7a1e67c114a1eecf2d09d0d0297a846461765cab2cbc354baa230f861fdfa8e9"
+    },
+    {
+      "id": "legacy-narcissu-texts-iris-005",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-texts/iris-005_cn.txt",
+      "bytes": 25105,
+      "sha256": "cad6c09bbdfb097a60dd71a40c92c2f8da6d10e3de816e97caf3d026869bfb18"
+    },
+    {
+      "id": "legacy-narcissu-texts-iris-006",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-texts/iris-006_cn.txt",
+      "bytes": 20249,
+      "sha256": "e78b4a7497092838b878d7053e127954d5b3770f381ae403f9dc9dd591415c70"
+    },
+    {
+      "id": "legacy-narcissu-texts-iris-007",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-texts/iris-007_cn.txt",
+      "bytes": 20480,
+      "sha256": "c4de8e89c505582bc345ba3ca90282dcf042318e9dbd36581f937b42e970009f"
+    },
+    {
+      "id": "legacy-narcissu-texts-iris-008",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-texts/iris-008_cn.txt",
+      "bytes": 30596,
+      "sha256": "e55c56d1f754fe9c0c2b8974f61012a160b724734f6f4484374df7c1ed034206"
+    },
+    {
+      "id": "legacy-narcissu-texts-iris-009",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-texts/iris-009_cn.txt",
+      "bytes": 7904,
+      "sha256": "71d08cfa95862b963266ee56321c4f140aa6d592f4bbc06d9abfcef0c2df1e75"
+    },
+    {
+      "id": "legacy-narcissu-texts-iris-010",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-texts/iris-010_cn.txt",
+      "bytes": 19931,
+      "sha256": "f40c975ff00ef198a3d7d9e1cb9fbc9678218c8c6eaab46aafe87d816f4d41bf"
+    },
+    {
+      "id": "legacy-narcissu-texts-bride-001",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-texts/bride-001_cn.txt",
+      "bytes": 346,
+      "sha256": "13c72e2ac8d64f44af5e86213680ef79a3b9764d9825417805efb5731f747469"
+    },
+    {
+      "id": "legacy-narcissu-texts-bride-002",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-texts/bride-002_cn.txt",
+      "bytes": 5841,
+      "sha256": "590fb5c6309e8ad4105beb386d0e080ffc3fb7a131ac9b40fba80317b51dbd6c"
+    },
+    {
+      "id": "legacy-narcissu-texts-bride-003",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-texts/bride-003_cn.txt",
+      "bytes": 22678,
+      "sha256": "3d88a25c28c9372dcd8371afc52d936878066bf05774db1a00c57a9245fb63ef"
+    },
+    {
+      "id": "legacy-narcissu-texts-bride-004",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-texts/bride-004_cn.txt",
+      "bytes": 42448,
+      "sha256": "85ea4970d5fd4a9b688cad97a28c6ef20f85f164f9f513073d02c509992e768b"
+    },
+    {
+      "id": "legacy-narcissu-texts-bride-005",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-texts/bride-005_cn.txt",
+      "bytes": 68116,
+      "sha256": "032322b0c8a4965ad3bc4faa7f6aedccf1ea195ac692afa39a118304e71b3ee5"
+    },
+    {
+      "id": "legacy-narcissu-texts-bride-006",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-texts/bride-006_cn.txt",
+      "bytes": 37080,
+      "sha256": "f2036e2021dd2a1d45e30c111e6242f14a5bcaeae633a209dece5941976a3bcd"
+    },
+    {
+      "id": "legacy-narcissu-texts-bride-007",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-texts/bride-007_cn.txt",
+      "bytes": 24856,
+      "sha256": "a05e89d3adfbd3f1384346b42fdb6b67629e6e70de9134088dbadd6b6e9c9c1f"
+    },
+    {
+      "id": "legacy-narcissu-texts-bride-008",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-texts/bride-008_cn.txt",
+      "bytes": 43375,
+      "sha256": "f2b9f55eaa88061d2bab08dfafac39841205d88d7501b895e6d2db5e02a69501"
+    },
+    {
+      "id": "legacy-narcissu-texts-bride-009",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-texts/bride-009_cn.txt",
+      "bytes": 27640,
+      "sha256": "7606e6da4d480dd8392d4b923fb60fa3560d5c4a8c5473cb506eb3102d201478"
+    },
+    {
+      "id": "legacy-narcissu-texts-bride-010",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-texts/bride-010_cn.txt",
+      "bytes": 28536,
+      "sha256": "f82f90ade743c7c918e81aa4af48331616cdb9fe8b8b5589207a228872f14360"
+    },
+    {
+      "id": "legacy-narcissu-texts-bride-011",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-texts/bride-011_cn.txt",
+      "bytes": 19434,
+      "sha256": "6625d933131587efaaaafaa5f74807e0a517e7d6826d6171e1ad4c6e33988cfc"
+    },
+    {
+      "id": "legacy-narcissu-texts-bride-012",
+      "language": "cn",
+      "path": "/data/legacy-vn/narcissu-texts/bride-012_cn.txt",
+      "bytes": 15313,
+      "sha256": "f9adf9810ea3ca0b29be1b38423cfb4a5f0eef59a17be08a42f426a75a222fef"
+    }
+  ]
+}

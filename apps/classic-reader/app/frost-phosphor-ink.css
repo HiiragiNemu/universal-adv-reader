@@ -1,0 +1,13 @@
+/* Flat cold uses one viewport-bounded ink texture, not one composited mask
+   per story row, card, header or sidebar. The same original grain is retained;
+   repeated handling-chip gradients on whole rows are retired. Curved cold
+   remains on the shared night projection and does not add this flat pass. */
+html[data-reader-theme='frost'][data-screen-curvature='false'] body
+  :is(#magi-home-display,#magi-reader-display) > .magi-scene-content,
+html[data-reader-theme='frost'][data-screen-curvature='false'] body
+  .magi-floating-window:not(#magi-home-display *,#magi-reader-display *) {
+  mask-image: url('/textures/frost-phosphor-ink-mask.svg');
+  mask-size: 509px 383px;
+  mask-repeat: repeat;
+  mask-mode: alpha;
+}

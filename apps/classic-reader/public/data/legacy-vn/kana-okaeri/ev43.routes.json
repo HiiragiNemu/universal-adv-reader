@@ -1,0 +1,4250 @@
+{
+  "schema": "classic-reader-story-routes/v1",
+  "canonicalStoryId": "kana-okaeri/ev43",
+  "sourceCanonicalStoryId": "kana-okaeri/ev43",
+  "preferredVariantId": "paired/kana-okaeri/ev43/zh-ja",
+  "japaneseVariantId": "paired/kana-okaeri/ev43/zh-ja",
+  "chineseVariantId": "paired/kana-okaeri/ev43/zh-ja",
+  "voiceRouting": {
+    "schema": "classic-reader-voice-routing/v1",
+    "defaultState": "collapsed",
+    "expandedSlotMode": "all-lines",
+    "unresolvedLineBehavior": "visible"
+  },
+  "titleAuthority": {
+    "work": {
+      "authorityId": "work/kana",
+      "title_cn": "加奈～欢迎回来～",
+      "title_jp": "加奈…おかえり!!",
+      "source": {
+        "zh-CN": "archive/source-patches/kana-v1.01/payload/KANACHS.INI",
+        "ja-JP": "archive/inputs/kana/KANAOKA.EXE"
+      },
+      "evidence": {
+        "zh-CN": [
+          "UTF-16 line 7: TITLE=加奈～欢迎回来～",
+          "rawHex=5400490054004c0045003d00a05248595eff226bce8fde5665675eff"
+        ],
+        "ja-JP": [
+          "UTF-16LE product-title literal at byte offsets 792384,792608,792900",
+          "rawHex=a052485926204a304b3048308a3021002100"
+        ]
+      },
+      "confidence": {
+        "zh-CN": 1,
+        "ja-JP": 1
+      }
+    },
+    "arc": {
+      "authorityId": "arc/kana-okaeri",
+      "title_cn": "加奈～欢迎回来～",
+      "title_jp": "加奈…おかえり!!",
+      "source": {
+        "zh-CN": "archive/source-patches/kana-v1.01/payload/KANACHS.INI",
+        "ja-JP": "archive/inputs/kana/KANAOKA.EXE"
+      },
+      "evidence": {
+        "zh-CN": [
+          "UTF-16 line 7: TITLE=加奈～欢迎回来～",
+          "rawHex=5400490054004c0045003d00a05248595eff226bce8fde5665675eff"
+        ],
+        "ja-JP": [
+          "UTF-16LE product-title literal at byte offsets 792384,792608,792900",
+          "rawHex=a052485926204a304b3048308a3021002100"
+        ]
+      },
+      "confidence": {
+        "zh-CN": 1,
+        "ja-JP": 1
+      }
+    },
+    "story": {
+      "authorityId": "story/kana-okaeri/ev43",
+      "title_cn": "高等期·加奈的视线",
+      "title_jp": "高等期・加奈の視線",
+      "source": {
+        "zh-CN": "archive/derived/ikura-scripts/ISC.unpacked/EV43.script.json",
+        "ja-JP": "archive/derived/ikura-scripts/ISF.unpacked/EV43.script.json"
+      },
+      "evidence": {
+        "zh-CN": [
+          "textEvents entry has explicit kind=title",
+          "instructionOffset=71",
+          "rawHex=b8dfb5c8c6daa1a4bcd3c4ceb5c4cad3cfdf",
+          "variantId=ikura/isc.unpacked/ev43"
+        ],
+        "ja-JP": [
+          "textEvents entry has explicit kind=title",
+          "instructionOffset=71",
+          "rawHex=8d8293998afa814589c193de82cc8e8b90fc",
+          "variantId=ikura/isf.unpacked/ev43"
+        ]
+      },
+      "confidence": {
+        "zh-CN": 1,
+        "ja-JP": 1
+      }
+    }
+  },
+  "sections": [
+    {
+      "sectionId": "main",
+      "entryEventId": "ikura-47",
+      "events": [
+        {
+          "eventId": "ikura-47",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 11,
+            "opcode": 247,
+            "status": "translated",
+            "zhOffset": 71,
+            "jaOffset": 71,
+            "originalDisplayText": {
+              "zh-CN": "高等期·加奈的视线",
+              "ja-JP": "高等期・加奈の視線"
+            }
+          },
+          "nextEventId": "ikura-7c",
+          "textLineIndex": {
+            "ja-JP": 0
+          },
+          "cues": [
+            {
+              "cueId": "cue-928c828efadfe1dc",
+              "kind": "bgm",
+              "timing": "scene",
+              "mediaId": "asset/a-d9ee14ec700484ad",
+              "resolverId": "research-media-v1",
+              "raw": {
+                "sourceKey": "TK07.ogg",
+                "playbackPath": "raw/kana/WMSC.unpacked/TK07.OGG",
+                "instructionIndex": 2,
+                "targetInstructionIndex": 2917
+              }
+            },
+            {
+              "cueId": "cue-394cb8cac9424605",
+              "kind": "image",
+              "timing": "scene",
+              "mediaId": "asset/a-0310d0cf97c0fe0a",
+              "resolverId": "research-media-v1",
+              "raw": {
+                "sourceKey": "KBG09A",
+                "playbackPath": "derived/images/kana/GGD.unpacked/KBG09A.png",
+                "instructionIndex": 4,
+                "targetInstructionIndex": 621
+              }
+            }
+          ]
+        },
+        {
+          "eventId": "ikura-7c",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 17,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 124,
+            "jaOffset": 124,
+            "originalDisplayText": {
+              "zh-CN": "　到最后，加奈的生活还是在频繁的出院入院之间更替着。",
+              "ja-JP": "　結局のところ、加奈は入退院を繰り替えすことになった。"
+            }
+          },
+          "nextEventId": "ikura-d3",
+          "textLineIndex": {
+            "ja-JP": 1
+          }
+        },
+        {
+          "eventId": "ikura-d3",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 25,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 227,
+            "jaOffset": 211,
+            "originalDisplayText": {
+              "zh-CN": "　突然就出院的话可能会让她本人感觉到什么，并且更重要的是因为她的健康状况不是在一个让人心安的状态。即使如此，加奈还是精神不错的，每天从已不是占据她全部时间的病院和学校间往返。",
+              "ja-JP": "　いきなり退院させても本人に感づかれる可能性もあったし、何より体調がおもわしくなかったためだ。それでも精神的にはいい状態で、毎日ではないものの病院から学校に通うこともある。"
+            }
+          },
+          "nextEventId": "ikura-162",
+          "textLineIndex": {
+            "ja-JP": 2
+          }
+        },
+        {
+          "eventId": "ikura-162",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 28,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 434,
+            "jaOffset": 354,
+            "originalDisplayText": {
+              "zh-CN": "　在这种，和以往变化并不大的日常中，唯有的一些不同就是曾经很久才来探病一次的刻意疏远的父亲和将加奈的事情事无巨细都推脱给我的母亲，现在却频繁的出现了。",
+              "ja-JP": "　そんな、以前と変わりない毎日の中、しばらくお見舞いに疎遠だった父と、ついつい俺に押しつけがちだった母も、今では頻繁に顔を出すようになっていた。"
+            }
+          },
+          "nextEventId": "ikura-1f9",
+          "textLineIndex": {
+            "ja-JP": 3
+          }
+        },
+        {
+          "eventId": "ikura-1f9",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 36,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 644,
+            "jaOffset": 505,
+            "originalDisplayText": {
+              "zh-CN": "　本来的话，为了加奈不起什么疑心而陷入恐惧中，应该要持续至今为止的生活模式。但是，知道将会失去女儿了，哪怕一天也好能多见见面的话也是作为父母的人之常情吧。",
+              "ja-JP": "　本来なら、加奈に危惧を抱かせないため、今まで通りの生活パターンを貫かなければならない。しかし、娘を失うことがわかっていては、一目でも多く顔を見ておきたいというのが親というものなのだろう。"
+            }
+          },
+          "nextEventId": "ikura-293",
+          "textLineIndex": {
+            "ja-JP": 4
+          }
+        },
+        {
+          "eventId": "ikura-293",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 39,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 831,
+            "jaOffset": 659,
+            "originalDisplayText": {
+              "zh-CN": "　那一天，在去看望加奈时，发现伊藤勇太站在病房前。",
+              "ja-JP": "　その日、加奈の見舞いに行くと、病室前で伊藤勇太が立っていた。"
+            }
+          },
+          "nextEventId": "ikura-2db",
+          "textLineIndex": {
+            "ja-JP": 5
+          }
+        },
+        {
+          "eventId": "ikura-2db",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 42,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 908,
+            "jaOffset": 731,
+            "originalDisplayText": {
+              "zh-CN": "　平素里给人以超然洒脱印象的勇太，不知今天为什么看起来有些脆弱。",
+              "ja-JP": "　普段はどこか飄々としている勇太だが、今日はなぜか弱々しく見えた。"
+            }
+          },
+          "nextEventId": "ikura-379",
+          "textLineIndex": {
+            "ja-JP": 6
+          }
+        },
+        {
+          "eventId": "ikura-379",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 60,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 1086,
+            "jaOffset": 889,
+            "originalDisplayText": {
+              "zh-CN": "隆　道：「喂，勇太」",
+              "ja-JP": "隆　道：「おい、勇太」"
+            }
+          },
+          "nextEventId": "ikura-3a1",
+          "textLineIndex": {
+            "ja-JP": 7
+          },
+          "cues": [
+            {
+              "cueId": "cue-0aa86ebfa40c4ee3",
+              "kind": "image",
+              "timing": "scene",
+              "mediaId": "asset/a-0310d0cf97c0fe0a",
+              "resolverId": "research-media-v1",
+              "raw": {
+                "sourceKey": "KBG09A",
+                "playbackPath": "derived/images/kana/GGD.unpacked/KBG09A.png",
+                "instructionIndex": 46,
+                "targetInstructionIndex": 621
+              }
+            },
+            {
+              "cueId": "cue-9a8eff596bbbd9a9",
+              "kind": "image",
+              "timing": "scene",
+              "mediaId": "asset/a-70e3e57afc2e3aac",
+              "resolverId": "research-media-v1",
+              "raw": {
+                "sourceKey": "KSU07",
+                "playbackPath": "derived/images/kana/GGD.unpacked/KSU07.png",
+                "instructionIndex": 48,
+                "targetInstructionIndex": 1326
+              }
+            }
+          ]
+        },
+        {
+          "eventId": "ikura-3a1",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 63,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 1130,
+            "jaOffset": 929,
+            "originalDisplayText": {
+              "zh-CN": "勇　太：「啊……前辈」",
+              "ja-JP": "勇　太：「あ……先輩」"
+            }
+          },
+          "nextEventId": "ikura-3d4",
+          "textLineIndex": {
+            "ja-JP": 8
+          },
+          "cues": [
+            {
+              "cueId": "cue-c16d7c82b2f5cf74",
+              "kind": "voice",
+              "timing": "utterance",
+              "mediaId": "asset/a-b4c8677fd82ab00c",
+              "resolverId": "research-media-v1",
+              "raw": {
+                "sourceKey": "Yut0166",
+                "playbackPath": "raw/kana/VOICE.unpacked/YUT0166.OGG",
+                "instructionIndex": 63
+              }
+            }
+          ]
+        },
+        {
+          "eventId": "ikura-3d4",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 66,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 1185,
+            "jaOffset": 980,
+            "originalDisplayText": {
+              "zh-CN": "隆　道：「怎么了？」",
+              "ja-JP": "隆　道：「どうしたんだ？」"
+            }
+          },
+          "nextEventId": "ikura-3fc",
+          "textLineIndex": {
+            "ja-JP": 9
+          }
+        },
+        {
+          "eventId": "ikura-3fc",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 69,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 1229,
+            "jaOffset": 1020,
+            "originalDisplayText": {
+              "zh-CN": "勇　太：「诶……啊，那个……」",
+              "ja-JP": "勇　太：「え……ああ、その……」"
+            }
+          },
+          "nextEventId": "ikura-434",
+          "textLineIndex": {
+            "ja-JP": 10
+          },
+          "cues": [
+            {
+              "cueId": "cue-dac840d44e4a64f9",
+              "kind": "voice",
+              "timing": "utterance",
+              "mediaId": "asset/a-09eb776c6c8f65cb",
+              "resolverId": "research-media-v1",
+              "raw": {
+                "sourceKey": "Yut0167",
+                "playbackPath": "raw/kana/VOICE.unpacked/YUT0167.OGG",
+                "instructionIndex": 69
+              }
+            }
+          ]
+        },
+        {
+          "eventId": "ikura-434",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 72,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 1292,
+            "jaOffset": 1076,
+            "originalDisplayText": {
+              "zh-CN": "隆　道：「是来看望加奈的吧？」",
+              "ja-JP": "隆　道：「加奈の見舞いに来たんだろ？」"
+            }
+          },
+          "nextEventId": "ikura-467",
+          "textLineIndex": {
+            "ja-JP": 11
+          }
+        },
+        {
+          "eventId": "ikura-467",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 75,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 1346,
+            "jaOffset": 1127,
+            "originalDisplayText": {
+              "zh-CN": "勇　太：「……哈」",
+              "ja-JP": "勇　太：「……はあ」"
+            }
+          },
+          "nextEventId": "ikura-4de",
+          "textLineIndex": {
+            "ja-JP": 12
+          },
+          "cues": [
+            {
+              "cueId": "cue-f9958985357f2e25",
+              "kind": "voice",
+              "timing": "utterance",
+              "mediaId": "asset/a-968efb97dc98312a",
+              "resolverId": "research-media-v1",
+              "raw": {
+                "sourceKey": "Yut0168",
+                "playbackPath": "raw/kana/VOICE.unpacked/YUT0168.OGG",
+                "instructionIndex": 75
+              }
+            }
+          ]
+        },
+        {
+          "eventId": "ikura-4de",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 90,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 1468,
+            "jaOffset": 1246,
+            "originalDisplayText": {
+              "zh-CN": "　和平时不同，有些支支吾吾。",
+              "ja-JP": "　いつになく歯切れが悪い。"
+            }
+          },
+          "nextEventId": "ikura-506",
+          "textLineIndex": {
+            "ja-JP": 13
+          },
+          "cues": [
+            {
+              "cueId": "cue-f8fed407fdef2525",
+              "kind": "image",
+              "timing": "scene",
+              "mediaId": "asset/a-0310d0cf97c0fe0a",
+              "resolverId": "research-media-v1",
+              "raw": {
+                "sourceKey": "KBG09A",
+                "playbackPath": "derived/images/kana/GGD.unpacked/KBG09A.png",
+                "instructionIndex": 79,
+                "targetInstructionIndex": 621
+              }
+            }
+          ]
+        },
+        {
+          "eventId": "ikura-506",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 93,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 1520,
+            "jaOffset": 1286,
+            "originalDisplayText": {
+              "zh-CN": "　不经意间想到。",
+              "ja-JP": "　不意に思った。"
+            }
+          },
+          "nextEventId": "ikura-529",
+          "textLineIndex": {
+            "ja-JP": 14
+          }
+        },
+        {
+          "eventId": "ikura-529",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 96,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 1560,
+            "jaOffset": 1321,
+            "originalDisplayText": {
+              "zh-CN": "　对了，加奈也和异性朋友……不管怎样……。",
+              "ja-JP": "　そうだ、加奈にも異性の友達を……何なら……。"
+            }
+          },
+          "nextEventId": "ikura-57e",
+          "textLineIndex": {
+            "ja-JP": 15
+          }
+        },
+        {
+          "eventId": "ikura-57e",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 104,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 1653,
+            "jaOffset": 1406,
+            "originalDisplayText": {
+              "zh-CN": "勇　太：「很痛啊，前辈」",
+              "ja-JP": "勇　太：「痛いです、先輩」"
+            }
+          },
+          "nextEventId": "ikura-5b7",
+          "textLineIndex": {
+            "ja-JP": 16
+          },
+          "cues": [
+            {
+              "cueId": "cue-163b28341465af31",
+              "kind": "voice",
+              "timing": "utterance",
+              "mediaId": "asset/a-7f682c8c25449329",
+              "resolverId": "research-media-v1",
+              "raw": {
+                "sourceKey": "Yut0169",
+                "playbackPath": "raw/kana/VOICE.unpacked/YUT0169.OGG",
+                "instructionIndex": 104
+              }
+            }
+          ]
+        },
+        {
+          "eventId": "ikura-5b7",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 108,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 1715,
+            "jaOffset": 1463,
+            "originalDisplayText": {
+              "zh-CN": "　不知不觉中紧抓住了勇太的肩头。我将深陷入肉的手指移开。",
+              "ja-JP": "　いつのまにか勇太の肩をつかんでいたらしい。俺は食い込んだ指を離した。"
+            }
+          },
+          "nextEventId": "ikura-5ff",
+          "textLineIndex": {
+            "ja-JP": 17
+          }
+        },
+        {
+          "eventId": "ikura-5ff",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 112,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 1800,
+            "jaOffset": 1535,
+            "originalDisplayText": {
+              "zh-CN": "勇　太：「意外的力气……很大啊……」",
+              "ja-JP": "勇　太：「意外と力……強いんですね……」"
+            }
+          },
+          "nextEventId": "ikura-65a",
+          "textLineIndex": {
+            "ja-JP": 18
+          },
+          "cues": [
+            {
+              "cueId": "cue-3bcad774e70bed14",
+              "kind": "voice",
+              "timing": "utterance",
+              "mediaId": "asset/a-bbd257694b2cfddb",
+              "resolverId": "research-media-v1",
+              "raw": {
+                "sourceKey": "Yut0170",
+                "playbackPath": "raw/kana/VOICE.unpacked/YUT0170.OGG",
+                "instructionIndex": 112
+              }
+            }
+          ]
+        },
+        {
+          "eventId": "ikura-65a",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 120,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 1896,
+            "jaOffset": 1626,
+            "originalDisplayText": {
+              "zh-CN": "　勇太一边揉着肩一边说道。",
+              "ja-JP": "　勇太が肩をさすりながら言った。"
+            }
+          },
+          "nextEventId": "ikura-686",
+          "textLineIndex": {
+            "ja-JP": 19
+          }
+        },
+        {
+          "eventId": "ikura-686",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 123,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 1946,
+            "jaOffset": 1670,
+            "originalDisplayText": {
+              "zh-CN": "　心中响起了不和谐的音符。",
+              "ja-JP": "　心の中で不協和音が鳴っていた。"
+            }
+          },
+          "nextEventId": "ikura-6b5",
+          "textLineIndex": {
+            "ja-JP": 20
+          }
+        },
+        {
+          "eventId": "ikura-6b5",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 126,
+            "opcode": 43,
+            "status": "unchanged",
+            "zhOffset": 1996,
+            "jaOffset": 1717,
+            "originalDisplayText": {
+              "zh-CN": "　加奈。",
+              "ja-JP": "　加奈。"
+            }
+          },
+          "nextEventId": "ikura-6d3",
+          "textLineIndex": {
+            "ja-JP": 21
+          }
+        },
+        {
+          "eventId": "ikura-6d3",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 129,
+            "opcode": 43,
+            "status": "unchanged",
+            "zhOffset": 2028,
+            "jaOffset": 1747,
+            "originalDisplayText": {
+              "zh-CN": "　夕美。",
+              "ja-JP": "　夕美。"
+            }
+          },
+          "nextEventId": "ikura-6f1",
+          "textLineIndex": {
+            "ja-JP": 22
+          }
+        },
+        {
+          "eventId": "ikura-6f1",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 132,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 2060,
+            "jaOffset": 1777,
+            "originalDisplayText": {
+              "zh-CN": "　还有勇太。",
+              "ja-JP": "　そして勇太。"
+            }
+          },
+          "nextEventId": "ikura-712",
+          "textLineIndex": {
+            "ja-JP": 23
+          }
+        },
+        {
+          "eventId": "ikura-712",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 135,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 2096,
+            "jaOffset": 1810,
+            "originalDisplayText": {
+              "zh-CN": "　三个人的面庞，不知为何在我眼前挥之不去。",
+              "ja-JP": "　三つの顔が、なぜかぐるぐると回っていた。"
+            }
+          },
+          "nextEventId": "ikura-75d",
+          "textLineIndex": {
+            "ja-JP": 24
+          }
+        },
+        {
+          "eventId": "ikura-75d",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 143,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 2189,
+            "jaOffset": 1885,
+            "originalDisplayText": {
+              "zh-CN": "隆　道：「加奈，进来了」",
+              "ja-JP": "隆　道：「加奈、入るぞ」"
+            }
+          },
+          "nextEventId": "ikura-7ca",
+          "textLineIndex": {
+            "ja-JP": 25
+          }
+        },
+        {
+          "eventId": "ikura-7ca",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 156,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 2304,
+            "jaOffset": 1994,
+            "originalDisplayText": {
+              "zh-CN": "　一进入房间，就看见加奈的笑脸向我迎来。",
+              "ja-JP": "　部屋に入ると、加奈の笑顔が俺を出迎えた。"
+            }
+          },
+          "nextEventId": "ikura-806",
+          "textLineIndex": {
+            "ja-JP": 26
+          },
+          "cues": [
+            {
+              "cueId": "cue-7dd18b3e7d2293c8",
+              "kind": "image",
+              "timing": "scene",
+              "mediaId": "asset/a-eaf4d68659d0f4f5",
+              "resolverId": "research-media-v1",
+              "raw": {
+                "sourceKey": "KE004A",
+                "playbackPath": "derived/images/kana/GGD.unpacked/KE004A.png",
+                "instructionIndex": 147,
+                "targetInstructionIndex": 1584
+              }
+            }
+          ]
+        },
+        {
+          "eventId": "ikura-806",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 160,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 2373,
+            "jaOffset": 2054,
+            "originalDisplayText": {
+              "zh-CN": "加　奈：「……哥哥，欢迎回来」",
+              "ja-JP": "加　奈：「……お兄ちゃん、おかえり」"
+            }
+          },
+          "nextEventId": "ikura-83f",
+          "textLineIndex": {
+            "ja-JP": 27
+          },
+          "cues": [
+            {
+              "cueId": "cue-63c86b863db9e8b0",
+              "kind": "voice",
+              "timing": "utterance",
+              "mediaId": "asset/a-770549c473c82886",
+              "resolverId": "research-media-v1",
+              "raw": {
+                "sourceKey": "Kan1453",
+                "playbackPath": "raw/kana/VOICE.unpacked/KAN1453.OGG",
+                "instructionIndex": 160
+              }
+            }
+          ]
+        },
+        {
+          "eventId": "ikura-83f",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 163,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 2436,
+            "jaOffset": 2111,
+            "originalDisplayText": {
+              "zh-CN": "隆　道：「我回来了。今天有很少见的客人呦」",
+              "ja-JP": "隆　道：「ただいま。今日は珍しいお客さんだぞ」"
+            }
+          },
+          "nextEventId": "ikura-875",
+          "textLineIndex": {
+            "ja-JP": 28
+          }
+        },
+        {
+          "eventId": "ikura-875",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 166,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 2502,
+            "jaOffset": 2165,
+            "originalDisplayText": {
+              "zh-CN": "勇　太：「你好」",
+              "ja-JP": "勇　太：「ども」"
+            }
+          },
+          "nextEventId": "ikura-8a6",
+          "textLineIndex": {
+            "ja-JP": 29
+          },
+          "cues": [
+            {
+              "cueId": "cue-56711d64713982e0",
+              "kind": "voice",
+              "timing": "utterance",
+              "mediaId": "asset/a-11f1c77a42c8f29c",
+              "resolverId": "research-media-v1",
+              "raw": {
+                "sourceKey": "Yut0171",
+                "playbackPath": "raw/kana/VOICE.unpacked/YUT0171.OGG",
+                "instructionIndex": 166
+              }
+            }
+          ]
+        },
+        {
+          "eventId": "ikura-8a6",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 170,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 2556,
+            "jaOffset": 2214,
+            "originalDisplayText": {
+              "zh-CN": "　勇太突然露出了脸。",
+              "ja-JP": "　勇太がひょいと顔を出す。"
+            }
+          },
+          "nextEventId": "ikura-8ea",
+          "textLineIndex": {
+            "ja-JP": 30
+          }
+        },
+        {
+          "eventId": "ikura-8ea",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 178,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 2627,
+            "jaOffset": 2282,
+            "originalDisplayText": {
+              "zh-CN": "勇　太：「藤堂，还精神吗？」",
+              "ja-JP": "勇　太：「藤堂、元気？」"
+            }
+          },
+          "nextEventId": "ikura-94a",
+          "textLineIndex": {
+            "ja-JP": 31
+          },
+          "cues": [
+            {
+              "cueId": "cue-4c182eca93c0f726",
+              "kind": "voice",
+              "timing": "utterance",
+              "mediaId": "asset/a-fe2cab8dd4d78ab5",
+              "resolverId": "research-media-v1",
+              "raw": {
+                "sourceKey": "Yut0172",
+                "playbackPath": "raw/kana/VOICE.unpacked/YUT0172.OGG",
+                "instructionIndex": 178
+              }
+            }
+          ]
+        },
+        {
+          "eventId": "ikura-94a",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 188,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 2732,
+            "jaOffset": 2378,
+            "originalDisplayText": {
+              "zh-CN": "加　奈：「伊藤君……」",
+              "ja-JP": "加　奈：「伊藤くん……」"
+            }
+          },
+          "nextEventId": "ikura-97e",
+          "textLineIndex": {
+            "ja-JP": 32
+          },
+          "cues": [
+            {
+              "cueId": "cue-b9257f9f98df6153",
+              "kind": "voice",
+              "timing": "utterance",
+              "mediaId": "asset/a-3f1f559b77becdd7",
+              "resolverId": "research-media-v1",
+              "raw": {
+                "sourceKey": "Kan1454",
+                "playbackPath": "raw/kana/VOICE.unpacked/KAN1454.OGG",
+                "instructionIndex": 188
+              }
+            },
+            {
+              "cueId": "cue-4717d5140da500a9",
+              "kind": "image",
+              "timing": "scene",
+              "mediaId": "asset/a-2fbbca2ab74564f6",
+              "resolverId": "research-media-v1",
+              "raw": {
+                "sourceKey": "KE004AP5",
+                "playbackPath": "derived/images/kana/GGD.unpacked/KE004AP5.png",
+                "instructionIndex": 181,
+                "targetInstructionIndex": 1609
+              }
+            }
+          ]
+        },
+        {
+          "eventId": "ikura-97e",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 191,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 2787,
+            "jaOffset": 2430,
+            "originalDisplayText": {
+              "zh-CN": "勇　太：「来看望你了。嘛……给你添麻烦了吗？」",
+              "ja-JP": "勇　太：「お見舞いに来たんだ。め……迷惑だった？」"
+            }
+          },
+          "nextEventId": "ikura-9ca",
+          "textLineIndex": {
+            "ja-JP": 33
+          },
+          "cues": [
+            {
+              "cueId": "cue-153187ef5ae56f90",
+              "kind": "voice",
+              "timing": "utterance",
+              "mediaId": "asset/a-56df6a94075abfb6",
+              "resolverId": "research-media-v1",
+              "raw": {
+                "sourceKey": "Yut0173",
+                "playbackPath": "raw/kana/VOICE.unpacked/YUT0173.OGG",
+                "instructionIndex": 191
+              }
+            }
+          ]
+        },
+        {
+          "eventId": "ikura-9ca",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 195,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 2871,
+            "jaOffset": 2506,
+            "originalDisplayText": {
+              "zh-CN": "　勇太看起来正处于平常未有的紧张状态中。",
+              "ja-JP": "　勇太はいつになく緊張しているようだった。"
+            }
+          },
+          "nextEventId": "ikura-a00",
+          "textLineIndex": {
+            "ja-JP": 34
+          }
+        },
+        {
+          "eventId": "ikura-a00",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 199,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 2940,
+            "jaOffset": 2560,
+            "originalDisplayText": {
+              "zh-CN": "加　奈：「……才没有那样……嗯，谢谢……」",
+              "ja-JP": "加　奈：「……そんなことないけど……ん、ありがとう……」"
+            }
+          },
+          "nextEventId": "ikura-a7a",
+          "textLineIndex": {
+            "ja-JP": 35
+          },
+          "cues": [
+            {
+              "cueId": "cue-5907d8db163ce472",
+              "kind": "voice",
+              "timing": "utterance",
+              "mediaId": "asset/a-a96494a2442fa328",
+              "resolverId": "research-media-v1",
+              "raw": {
+                "sourceKey": "Kan1455",
+                "playbackPath": "raw/kana/VOICE.unpacked/KAN1455.OGG",
+                "instructionIndex": 199
+              }
+            }
+          ]
+        },
+        {
+          "eventId": "ikura-a7a",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 210,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 3064,
+            "jaOffset": 2682,
+            "originalDisplayText": {
+              "zh-CN": "　加奈像是困惑般低下头，陷入了沉默中。",
+              "ja-JP": "　加奈は困ったようにうつむいて、押し黙ってしまう。"
+            }
+          },
+          "nextEventId": "ikura-ace",
+          "textLineIndex": {
+            "ja-JP": 36
+          },
+          "cues": [
+            {
+              "cueId": "cue-d510dcac8fa2d75d",
+              "kind": "image",
+              "timing": "scene",
+              "mediaId": "asset/a-770f2120577f3069",
+              "resolverId": "research-media-v1",
+              "raw": {
+                "sourceKey": "KE004AP4",
+                "playbackPath": "derived/images/kana/GGD.unpacked/KE004AP4.png",
+                "instructionIndex": 203,
+                "targetInstructionIndex": 1604
+              }
+            }
+          ]
+        },
+        {
+          "eventId": "ikura-ace",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 218,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 3153,
+            "jaOffset": 2766,
+            "originalDisplayText": {
+              "zh-CN": "隆　道：「来，勇太，椅子」",
+              "ja-JP": "隆　道：「ほら、勇太、椅子」"
+            }
+          },
+          "nextEventId": "ikura-afb",
+          "textLineIndex": {
+            "ja-JP": 37
+          }
+        },
+        {
+          "eventId": "ikura-afb",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 221,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 3203,
+            "jaOffset": 2811,
+            "originalDisplayText": {
+              "zh-CN": "勇　太：「啊，多谢。这个还有这个……给你」",
+              "ja-JP": "勇　太：「あ、ども。それとこれ……どーぞ」"
+            }
+          },
+          "nextEventId": "ikura-b3c",
+          "textLineIndex": {
+            "ja-JP": 38
+          },
+          "cues": [
+            {
+              "cueId": "cue-d0c886faa3770547",
+              "kind": "voice",
+              "timing": "utterance",
+              "mediaId": "asset/a-1ef9766b0b516507",
+              "resolverId": "research-media-v1",
+              "raw": {
+                "sourceKey": "Yut0174",
+                "playbackPath": "raw/kana/VOICE.unpacked/YUT0174.OGG",
+                "instructionIndex": 221
+              }
+            }
+          ]
+        },
+        {
+          "eventId": "ikura-b3c",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 225,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 3283,
+            "jaOffset": 2876,
+            "originalDisplayText": {
+              "zh-CN": "　勇太将手提着的水果篮子递过来。那是仅凭学生的零花钱买不起的贵重礼物。",
+              "ja-JP": "　勇太は手に提げたフルーツ・バスケットを差し出す。学生の小遣いじゃ高い買い物だったろうに。"
+            }
+          },
+          "nextEventId": "ikura-b99",
+          "textLineIndex": {
+            "ja-JP": 39
+          }
+        },
+        {
+          "eventId": "ikura-b99",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 229,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 3385,
+            "jaOffset": 2969,
+            "originalDisplayText": {
+              "zh-CN": "隆　道：「不好意思，让你费心了」",
+              "ja-JP": "隆　道：「悪いな。気を遣ってもらって」"
+            }
+          },
+          "nextEventId": "ikura-bca",
+          "textLineIndex": {
+            "ja-JP": 40
+          }
+        },
+        {
+          "eventId": "ikura-bca",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 232,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 3441,
+            "jaOffset": 3018,
+            "originalDisplayText": {
+              "zh-CN": "勇　太：「没，没关系……」",
+              "ja-JP": "勇　太：「いえ、いいんです……」"
+            }
+          },
+          "nextEventId": "ikura-c00",
+          "textLineIndex": {
+            "ja-JP": 41
+          },
+          "cues": [
+            {
+              "cueId": "cue-4058cb738b0065d4",
+              "kind": "voice",
+              "timing": "utterance",
+              "mediaId": "asset/a-8c46b35c4bc4aa98",
+              "resolverId": "research-media-v1",
+              "raw": {
+                "sourceKey": "Yut0175",
+                "playbackPath": "raw/kana/VOICE.unpacked/YUT0175.OGG",
+                "instructionIndex": 232
+              }
+            }
+          ]
+        },
+        {
+          "eventId": "ikura-c00",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 235,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 3500,
+            "jaOffset": 3072,
+            "originalDisplayText": {
+              "zh-CN": "隆　道：「喂，想和加奈谈谈吧？」",
+              "ja-JP": "隆　道：「ほら、加奈と話したいんだろ？」"
+            }
+          },
+          "nextEventId": "ikura-c32",
+          "textLineIndex": {
+            "ja-JP": 42
+          }
+        },
+        {
+          "eventId": "ikura-c32",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 238,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 3556,
+            "jaOffset": 3122,
+            "originalDisplayText": {
+              "zh-CN": "勇　太：「哈……」",
+              "ja-JP": "勇　太：「はあ……」"
+            }
+          },
+          "nextEventId": "ikura-c7d",
+          "textLineIndex": {
+            "ja-JP": 43
+          },
+          "cues": [
+            {
+              "cueId": "cue-5bfdc8472774db73",
+              "kind": "voice",
+              "timing": "utterance",
+              "mediaId": "asset/a-0d8c366204aaf131",
+              "resolverId": "research-media-v1",
+              "raw": {
+                "sourceKey": "Yut0176",
+                "playbackPath": "raw/kana/VOICE.unpacked/YUT0176.OGG",
+                "instructionIndex": 238
+              }
+            }
+          ]
+        },
+        {
+          "eventId": "ikura-c7d",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 246,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 3634,
+            "jaOffset": 3197,
+            "originalDisplayText": {
+              "zh-CN": "　伊藤拉过椅子，坐在离加奈床头的一个微妙距离上。",
+              "ja-JP": "　伊藤は椅子を引いて、加奈のベッドから微妙な距離を開けた。"
+            }
+          },
+          "nextEventId": "ikura-cc8",
+          "textLineIndex": {
+            "ja-JP": 44
+          }
+        },
+        {
+          "eventId": "ikura-cc8",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 250,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 3711,
+            "jaOffset": 3272,
+            "originalDisplayText": {
+              "zh-CN": "勇　太：「那个……身体状态，怎么样？」",
+              "ja-JP": "勇　太：「えっと……体調、どう？」"
+            }
+          },
+          "nextEventId": "ikura-d01",
+          "textLineIndex": {
+            "ja-JP": 45
+          },
+          "cues": [
+            {
+              "cueId": "cue-4abda0e931740e4a",
+              "kind": "voice",
+              "timing": "utterance",
+              "mediaId": "asset/a-235e8783496e8cf2",
+              "resolverId": "research-media-v1",
+              "raw": {
+                "sourceKey": "Yut0177",
+                "playbackPath": "raw/kana/VOICE.unpacked/YUT0177.OGG",
+                "instructionIndex": 250
+              }
+            }
+          ]
+        },
+        {
+          "eventId": "ikura-d01",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 253,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 3782,
+            "jaOffset": 3329,
+            "originalDisplayText": {
+              "zh-CN": "加　奈：「……嗯」",
+              "ja-JP": "加　奈：「……うん」"
+            }
+          },
+          "nextEventId": "ikura-d36",
+          "textLineIndex": {
+            "ja-JP": 46
+          },
+          "cues": [
+            {
+              "cueId": "cue-031f909224bd35f8",
+              "kind": "voice",
+              "timing": "utterance",
+              "mediaId": "asset/a-2f659592728ac801",
+              "resolverId": "research-media-v1",
+              "raw": {
+                "sourceKey": "Kan1456",
+                "playbackPath": "raw/kana/VOICE.unpacked/KAN1456.OGG",
+                "instructionIndex": 253
+              }
+            }
+          ]
+        },
+        {
+          "eventId": "ikura-d36",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 257,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 3838,
+            "jaOffset": 3382,
+            "originalDisplayText": {
+              "zh-CN": "　这回答可不成立。看来加奈还是不擅长对待勇太。",
+              "ja-JP": "　答えになっていない。どうやら加奈には、まだ勇太への苦手意識が残っているようだ。"
+            }
+          },
+          "nextEventId": "ikura-d9e",
+          "textLineIndex": {
+            "ja-JP": 47
+          }
+        },
+        {
+          "eventId": "ikura-d9e",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 265,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 3935,
+            "jaOffset": 3486,
+            "originalDisplayText": {
+              "zh-CN": "　今天在加奈的地盘，勇太那一方面没有什么向前迈步靠近的余裕。两人之间有一股奇怪的疏远感。其一部分也可以理解是因为勇太无意识拉的椅子所造成的。",
+              "ja-JP": "　今日は加奈のテリトリー内で、勇太の方に歩み寄りの余裕がないため、二人の距離は妙に遠く感じられた。それは勇太が無意識に椅子を引いたことからもわかる。"
+            }
+          },
+          "nextEventId": "ikura-e27",
+          "textLineIndex": {
+            "ja-JP": 48
+          }
+        },
+        {
+          "eventId": "ikura-e27",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 268,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 4108,
+            "jaOffset": 3623,
+            "originalDisplayText": {
+              "zh-CN": "　这也更明显的说明了，勇太在对待加奈的问题上，是扔掉了自己平日里一贯的面具，真心的想要靠近她。勇太是认真的啊。",
+              "ja-JP": "　それはいみじくも、勇太が加奈に対して、自分の普段のポーズを捨ててアプローチをかけていることを示している。勇太は真剣なのだ。"
+            }
+          },
+          "nextEventId": "ikura-e9d",
+          "textLineIndex": {
+            "ja-JP": 49
+          }
+        },
+        {
+          "eventId": "ikura-e9d",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 272,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 4253,
+            "jaOffset": 3741,
+            "originalDisplayText": {
+              "zh-CN": "勇　太：「最近，班级里啊……」",
+              "ja-JP": "勇　太：「最近、クラスでさあ……」"
+            }
+          },
+          "nextEventId": "ikura-ef2",
+          "textLineIndex": {
+            "ja-JP": 50
+          },
+          "cues": [
+            {
+              "cueId": "cue-60bdc19ec0d74963",
+              "kind": "voice",
+              "timing": "utterance",
+              "mediaId": "asset/a-cb6ece9a758e62a3",
+              "resolverId": "research-media-v1",
+              "raw": {
+                "sourceKey": "Yut0178",
+                "playbackPath": "raw/kana/VOICE.unpacked/YUT0178.OGG",
+                "instructionIndex": 272
+              }
+            }
+          ]
+        },
+        {
+          "eventId": "ikura-ef2",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 280,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 4343,
+            "jaOffset": 3826,
+            "originalDisplayText": {
+              "zh-CN": "　勇太说了很多。",
+              "ja-JP": "　勇太はいろいろと話をする。"
+            }
+          },
+          "nextEventId": "ikura-f1b",
+          "textLineIndex": {
+            "ja-JP": 51
+          }
+        },
+        {
+          "eventId": "ikura-f1b",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 283,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 4383,
+            "jaOffset": 3867,
+            "originalDisplayText": {
+              "zh-CN": "　班级同学间的蠢话。",
+              "ja-JP": "　クラスメイトの馬鹿話。"
+            }
+          },
+          "nextEventId": "ikura-f44",
+          "textLineIndex": {
+            "ja-JP": 52
+          }
+        },
+        {
+          "eventId": "ikura-f44",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 286,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 4427,
+            "jaOffset": 3908,
+            "originalDisplayText": {
+              "zh-CN": "　电视的话题。",
+              "ja-JP": "　テレビの話。"
+            }
+          },
+          "nextEventId": "ikura-f66",
+          "textLineIndex": {
+            "ja-JP": 53
+          }
+        },
+        {
+          "eventId": "ikura-f66",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 289,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 4465,
+            "jaOffset": 3942,
+            "originalDisplayText": {
+              "zh-CN": "　演员的话题。",
+              "ja-JP": "　タレントの話。"
+            }
+          },
+          "nextEventId": "ikura-f89",
+          "textLineIndex": {
+            "ja-JP": 54
+          }
+        },
+        {
+          "eventId": "ikura-f89",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 292,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 4503,
+            "jaOffset": 3977,
+            "originalDisplayText": {
+              "zh-CN": "　业余时间的话题。",
+              "ja-JP": "　レジャーの話。"
+            }
+          },
+          "nextEventId": "ikura-fae",
+          "textLineIndex": {
+            "ja-JP": 55
+          }
+        },
+        {
+          "eventId": "ikura-fae",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 295,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 4545,
+            "jaOffset": 4014,
+            "originalDisplayText": {
+              "zh-CN": "　正在收集Ｔ恤的收藏话题。",
+              "ja-JP": "　集めているＴシャツ・コレクションの話。"
+            }
+          },
+          "nextEventId": "ikura-fe1",
+          "textLineIndex": {
+            "ja-JP": 56
+          }
+        },
+        {
+          "eventId": "ikura-fe1",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 298,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 4595,
+            "jaOffset": 4065,
+            "originalDisplayText": {
+              "zh-CN": "　我一边感慨着他还真是能留有这么多的的话题来谈，一边环抱双臂在他身后站着。",
+              "ja-JP": "　よくもまあ、これだけの話のネタを持っているものだと思いつつ、俺は勇太の背後で腕を組んで立っていた。"
+            }
+          },
+          "nextEventId": "ikura-103c",
+          "textLineIndex": {
+            "ja-JP": 57
+          }
+        },
+        {
+          "eventId": "ikura-103c",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 301,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 4696,
+            "jaOffset": 4156,
+            "originalDisplayText": {
+              "zh-CN": "　突然感到了一条视线。",
+              "ja-JP": "　ふと、視線を感じた。"
+            }
+          },
+          "nextEventId": "ikura-108e",
+          "textLineIndex": {
+            "ja-JP": 58
+          }
+        },
+        {
+          "eventId": "ikura-108e",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 311,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 4786,
+            "jaOffset": 4238,
+            "originalDisplayText": {
+              "zh-CN": "　跨过勇太的肩膀，加奈的视线偷看了过来。",
+              "ja-JP": "　勇太の肩越しから、加奈の視線がのぞく。"
+            }
+          },
+          "nextEventId": "ikura-10dd",
+          "textLineIndex": {
+            "ja-JP": 59
+          },
+          "cues": [
+            {
+              "cueId": "cue-d4ab12d9ec82fb51",
+              "kind": "image",
+              "timing": "scene",
+              "mediaId": "asset/a-1e2b851bb0d2826f",
+              "resolverId": "research-media-v1",
+              "raw": {
+                "sourceKey": "KE004AP2",
+                "playbackPath": "derived/images/kana/GGD.unpacked/KE004AP2.png",
+                "instructionIndex": 304,
+                "targetInstructionIndex": 1594
+              }
+            }
+          ]
+        },
+        {
+          "eventId": "ikura-10dd",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 319,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 4877,
+            "jaOffset": 4317,
+            "originalDisplayText": {
+              "zh-CN": "　一瞬间，想到是不是正在看着勇太的脸啊。",
+              "ja-JP": "　一瞬、話をする勇太の顔を見ているのかな、と思った。"
+            }
+          },
+          "nextEventId": "ikura-111a",
+          "textLineIndex": {
+            "ja-JP": 60
+          }
+        },
+        {
+          "eventId": "ikura-111a",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 322,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 4941,
+            "jaOffset": 4378,
+            "originalDisplayText": {
+              "zh-CN": "　但是，却不是这样。",
+              "ja-JP": "　しかし、そうではない。"
+            }
+          },
+          "nextEventId": "ikura-113e",
+          "textLineIndex": {
+            "ja-JP": 61
+          }
+        },
+        {
+          "eventId": "ikura-113e",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 325,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 4985,
+            "jaOffset": 4414,
+            "originalDisplayText": {
+              "zh-CN": "　加奈的视线穿过勇太的肩上，直直地看着我的脸，。",
+              "ja-JP": "　加奈は、勇太の肩口から、まっすぐ俺の顔を見ていたのだ。"
+            }
+          },
+          "nextEventId": "ikura-1183",
+          "textLineIndex": {
+            "ja-JP": 62
+          }
+        },
+        {
+          "eventId": "ikura-1183",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 329,
+            "opcode": 43,
+            "status": "unchanged",
+            "zhOffset": 5062,
+            "jaOffset": 4483,
+            "originalDisplayText": {
+              "zh-CN": "加　奈：「……」",
+              "ja-JP": "加　奈：「……」"
+            }
+          },
+          "nextEventId": "ikura-11cc",
+          "textLineIndex": {
+            "ja-JP": 63
+          },
+          "cues": [
+            {
+              "cueId": "cue-9ee8a2bd397e7871",
+              "kind": "voice",
+              "timing": "utterance",
+              "mediaId": "asset/a-ee68e49bb2fbe782",
+              "resolverId": "research-media-v1",
+              "raw": {
+                "sourceKey": "Kan1457",
+                "playbackPath": "raw/kana/VOICE.unpacked/KAN1457.OGG",
+                "instructionIndex": 329
+              }
+            }
+          ]
+        },
+        {
+          "eventId": "ikura-11cc",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 337,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 5138,
+            "jaOffset": 4556,
+            "originalDisplayText": {
+              "zh-CN": "　为勇太觉得可怜起来。",
+              "ja-JP": "　勇太は不憫だった。"
+            }
+          },
+          "nextEventId": "ikura-11f2",
+          "textLineIndex": {
+            "ja-JP": 64
+          }
+        },
+        {
+          "eventId": "ikura-11f2",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 340,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 5184,
+            "jaOffset": 4594,
+            "originalDisplayText": {
+              "zh-CN": "　自己被当成是透明人一样无视的事，他不是已经察觉到了吧。",
+              "ja-JP": "　自分が透明人間のように無視されていることに、こいつは気づいているんだろうか。"
+            }
+          },
+          "nextEventId": "ikura-123a",
+          "textLineIndex": {
+            "ja-JP": 65
+          }
+        },
+        {
+          "eventId": "ikura-123a",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 343,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 5264,
+            "jaOffset": 4666,
+            "originalDisplayText": {
+              "zh-CN": "　……勇太的话说不定会注意到。",
+              "ja-JP": "　……勇太なら気づいているかも知れない。"
+            }
+          },
+          "nextEventId": "ikura-126c",
+          "textLineIndex": {
+            "ja-JP": 66
+          }
+        },
+        {
+          "eventId": "ikura-126c",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 346,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 5318,
+            "jaOffset": 4716,
+            "originalDisplayText": {
+              "zh-CN": "　但是，加奈只剩下半年的生命这件事他却不会知道。",
+              "ja-JP": "　だが、加奈の命があと半年だということは知るまい。"
+            }
+          },
+          "nextEventId": "ikura-12a6",
+          "textLineIndex": {
+            "ja-JP": 67
+          }
+        },
+        {
+          "eventId": "ikura-12a6",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 349,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 5393,
+            "jaOffset": 4774,
+            "originalDisplayText": {
+              "zh-CN": "　如果。",
+              "ja-JP": "　もし。"
+            }
+          },
+          "nextEventId": "ikura-12c2",
+          "textLineIndex": {
+            "ja-JP": 68
+          }
+        },
+        {
+          "eventId": "ikura-12c2",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 352,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 5425,
+            "jaOffset": 4802,
+            "originalDisplayText": {
+              "zh-CN": "　要是勇太的恋情实现的话，加奈也……至少不会在完全不知道恋爱的滋味就死去。这对于加奈来说，也应该是一件幸福的事。",
+              "ja-JP": "　勇太の恋が実るようなことになれば、加奈は……少なくとも恋を知らずに死ぬということはなくなる。それは加奈にとって、幸せであるはずだ。"
+            }
+          },
+          "nextEventId": "ikura-1350",
+          "textLineIndex": {
+            "ja-JP": 69
+          }
+        },
+        {
+          "eventId": "ikura-1350",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 361,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 5594,
+            "jaOffset": 4944,
+            "originalDisplayText": {
+              "zh-CN": "　可是这样的话，对勇太来说真是太残酷的回忆了。",
+              "ja-JP": "　その場合、勇太には本当に不憫な思いをさせることになる。"
+            }
+          },
+          "nextEventId": "ikura-1390",
+          "textLineIndex": {
+            "ja-JP": 70
+          }
+        },
+        {
+          "eventId": "ikura-1390",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 364,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 5664,
+            "jaOffset": 5008,
+            "originalDisplayText": {
+              "zh-CN": "　但即使如此…………我也无法将真相告诉他。",
+              "ja-JP": "　それでも…………真実を教えることはできそうにない。"
+            }
+          },
+          "nextEventId": "ikura-13cc",
+          "textLineIndex": {
+            "ja-JP": 71
+          }
+        },
+        {
+          "eventId": "ikura-13cc",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 367,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 5730,
+            "jaOffset": 5068,
+            "originalDisplayText": {
+              "zh-CN": "　勇太的恋情实现的话真的好么？",
+              "ja-JP": "　勇太の恋は、実った方がいいのだろうか？"
+            }
+          },
+          "nextEventId": "ikura-13fd",
+          "textLineIndex": {
+            "ja-JP": 72
+          }
+        },
+        {
+          "eventId": "ikura-13fd",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 370,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 5784,
+            "jaOffset": 5117,
+            "originalDisplayText": {
+              "zh-CN": "　刺痛。",
+              "ja-JP": "　ちくり。"
+            }
+          },
+          "nextEventId": "ikura-141a",
+          "textLineIndex": {
+            "ja-JP": 73
+          }
+        },
+        {
+          "eventId": "ikura-141a",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 373,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 5816,
+            "jaOffset": 5146,
+            "originalDisplayText": {
+              "zh-CN": "　不知从何处一阵绞痛。",
+              "ja-JP": "　何かが痛んだ。"
+            }
+          },
+          "nextEventId": "ikura-143c",
+          "textLineIndex": {
+            "ja-JP": 74
+          }
+        },
+        {
+          "eventId": "ikura-143c",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 376,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 5862,
+            "jaOffset": 5180,
+            "originalDisplayText": {
+              "zh-CN": "　而去探查那个疼痛所在的行为，我也无意识地放弃了。",
+              "ja-JP": "　その何かを深く洞察することを、俺は無意識に放棄していた。"
+            }
+          },
+          "nextEventId": "end-001",
+          "textLineIndex": {
+            "ja-JP": 75
+          }
+        },
+        {
+          "eventId": "end-001",
+          "kind": "end",
+          "cues": [
+            {
+              "cueId": "cue-d236bf4a9d6395c7",
+              "kind": "image",
+              "timing": "scene",
+              "mediaId": "asset/a-dc9cf3ab554a56ab",
+              "resolverId": "research-media-v1",
+              "raw": {
+                "sourceKey": "BLACK",
+                "playbackPath": "derived/images/kana/GGD.unpacked/BLACK.png",
+                "instructionIndex": 382,
+                "targetInstructionIndex": 555
+              }
+            },
+            {
+              "cueId": "cue-174339252474168c",
+              "kind": "image",
+              "timing": "scene",
+              "mediaId": "asset/a-dc9cf3ab554a56ab",
+              "resolverId": "research-media-v1",
+              "raw": {
+                "sourceKey": "BLACK",
+                "playbackPath": "derived/images/kana/GGD.unpacked/BLACK.png",
+                "instructionIndex": 525,
+                "targetInstructionIndex": 555
+              }
+            }
+          ]
+        }
+      ],
+      "titleAuthority": {
+        "sectionId": "main",
+        "authorityId": "section/kana-okaeri/ev43/main",
+        "title_cn": "高等期·加奈的视线",
+        "title_jp": "高等期・加奈の視線",
+        "source": {
+          "zh-CN": "archive/derived/ikura-scripts/ISC.unpacked/EV43.script.json",
+          "ja-JP": "archive/derived/ikura-scripts/ISF.unpacked/EV43.script.json"
+        },
+        "evidence": {
+          "zh-CN": [
+            "textEvents entry has explicit kind=title",
+            "instructionOffset=71",
+            "rawHex=b8dfb5c8c6daa1a4bcd3c4ceb5c4cad3cfdf",
+            "variantId=ikura/isc.unpacked/ev43"
+          ],
+          "ja-JP": [
+            "textEvents entry has explicit kind=title",
+            "instructionOffset=71",
+            "rawHex=8d8293998afa814589c193de82cc8e8b90fc",
+            "variantId=ikura/isf.unpacked/ev43"
+          ]
+        },
+        "confidence": {
+          "zh-CN": 1,
+          "ja-JP": 1
+        }
+      }
+    }
+  ],
+  "variantRoutes": [
+    {
+      "variantId": "paired/kana-okaeri/ev43/zh-ja",
+      "locales": [
+        "zh-CN",
+        "ja-JP"
+      ],
+      "readerLocales": [
+        "ja-JP",
+        "zh-CN"
+      ],
+      "textLineCounts": {
+        "ja-JP": 76,
+        "zh-CN": 76
+      },
+      "sections": [
+        {
+          "sectionId": "main",
+          "entryEventId": "ikura-47",
+          "events": [
+            {
+              "eventId": "ikura-47",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 11,
+                "opcode": 247,
+                "status": "translated",
+                "zhOffset": 71,
+                "jaOffset": 71,
+                "originalDisplayText": {
+                  "zh-CN": "高等期·加奈的视线",
+                  "ja-JP": "高等期・加奈の視線"
+                }
+              },
+              "nextEventId": "ikura-7c",
+              "textLineIndex": {
+                "ja-JP": 0,
+                "zh-CN": 0
+              },
+              "cues": [
+                {
+                  "cueId": "cue-928c828efadfe1dc",
+                  "kind": "bgm",
+                  "timing": "scene",
+                  "mediaId": "asset/a-d9ee14ec700484ad",
+                  "resolverId": "research-media-v1",
+                  "raw": {
+                    "sourceKey": "TK07.ogg",
+                    "playbackPath": "raw/kana/WMSC.unpacked/TK07.OGG",
+                    "instructionIndex": 2,
+                    "targetInstructionIndex": 2917
+                  }
+                },
+                {
+                  "cueId": "cue-394cb8cac9424605",
+                  "kind": "image",
+                  "timing": "scene",
+                  "mediaId": "asset/a-0310d0cf97c0fe0a",
+                  "resolverId": "research-media-v1",
+                  "raw": {
+                    "sourceKey": "KBG09A",
+                    "playbackPath": "derived/images/kana/GGD.unpacked/KBG09A.png",
+                    "instructionIndex": 4,
+                    "targetInstructionIndex": 621
+                  }
+                }
+              ]
+            },
+            {
+              "eventId": "ikura-7c",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 17,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 124,
+                "jaOffset": 124,
+                "originalDisplayText": {
+                  "zh-CN": "　到最后，加奈的生活还是在频繁的出院入院之间更替着。",
+                  "ja-JP": "　結局のところ、加奈は入退院を繰り替えすことになった。"
+                }
+              },
+              "nextEventId": "ikura-d3",
+              "textLineIndex": {
+                "ja-JP": 1,
+                "zh-CN": 1
+              }
+            },
+            {
+              "eventId": "ikura-d3",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 25,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 227,
+                "jaOffset": 211,
+                "originalDisplayText": {
+                  "zh-CN": "　突然就出院的话可能会让她本人感觉到什么，并且更重要的是因为她的健康状况不是在一个让人心安的状态。即使如此，加奈还是精神不错的，每天从已不是占据她全部时间的病院和学校间往返。",
+                  "ja-JP": "　いきなり退院させても本人に感づかれる可能性もあったし、何より体調がおもわしくなかったためだ。それでも精神的にはいい状態で、毎日ではないものの病院から学校に通うこともある。"
+                }
+              },
+              "nextEventId": "ikura-162",
+              "textLineIndex": {
+                "ja-JP": 2,
+                "zh-CN": 2
+              }
+            },
+            {
+              "eventId": "ikura-162",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 28,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 434,
+                "jaOffset": 354,
+                "originalDisplayText": {
+                  "zh-CN": "　在这种，和以往变化并不大的日常中，唯有的一些不同就是曾经很久才来探病一次的刻意疏远的父亲和将加奈的事情事无巨细都推脱给我的母亲，现在却频繁的出现了。",
+                  "ja-JP": "　そんな、以前と変わりない毎日の中、しばらくお見舞いに疎遠だった父と、ついつい俺に押しつけがちだった母も、今では頻繁に顔を出すようになっていた。"
+                }
+              },
+              "nextEventId": "ikura-1f9",
+              "textLineIndex": {
+                "ja-JP": 3,
+                "zh-CN": 3
+              }
+            },
+            {
+              "eventId": "ikura-1f9",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 36,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 644,
+                "jaOffset": 505,
+                "originalDisplayText": {
+                  "zh-CN": "　本来的话，为了加奈不起什么疑心而陷入恐惧中，应该要持续至今为止的生活模式。但是，知道将会失去女儿了，哪怕一天也好能多见见面的话也是作为父母的人之常情吧。",
+                  "ja-JP": "　本来なら、加奈に危惧を抱かせないため、今まで通りの生活パターンを貫かなければならない。しかし、娘を失うことがわかっていては、一目でも多く顔を見ておきたいというのが親というものなのだろう。"
+                }
+              },
+              "nextEventId": "ikura-293",
+              "textLineIndex": {
+                "ja-JP": 4,
+                "zh-CN": 4
+              }
+            },
+            {
+              "eventId": "ikura-293",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 39,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 831,
+                "jaOffset": 659,
+                "originalDisplayText": {
+                  "zh-CN": "　那一天，在去看望加奈时，发现伊藤勇太站在病房前。",
+                  "ja-JP": "　その日、加奈の見舞いに行くと、病室前で伊藤勇太が立っていた。"
+                }
+              },
+              "nextEventId": "ikura-2db",
+              "textLineIndex": {
+                "ja-JP": 5,
+                "zh-CN": 5
+              }
+            },
+            {
+              "eventId": "ikura-2db",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 42,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 908,
+                "jaOffset": 731,
+                "originalDisplayText": {
+                  "zh-CN": "　平素里给人以超然洒脱印象的勇太，不知今天为什么看起来有些脆弱。",
+                  "ja-JP": "　普段はどこか飄々としている勇太だが、今日はなぜか弱々しく見えた。"
+                }
+              },
+              "nextEventId": "ikura-379",
+              "textLineIndex": {
+                "ja-JP": 6,
+                "zh-CN": 6
+              }
+            },
+            {
+              "eventId": "ikura-379",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 60,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 1086,
+                "jaOffset": 889,
+                "originalDisplayText": {
+                  "zh-CN": "隆　道：「喂，勇太」",
+                  "ja-JP": "隆　道：「おい、勇太」"
+                }
+              },
+              "nextEventId": "ikura-3a1",
+              "textLineIndex": {
+                "ja-JP": 7,
+                "zh-CN": 7
+              },
+              "cues": [
+                {
+                  "cueId": "cue-0aa86ebfa40c4ee3",
+                  "kind": "image",
+                  "timing": "scene",
+                  "mediaId": "asset/a-0310d0cf97c0fe0a",
+                  "resolverId": "research-media-v1",
+                  "raw": {
+                    "sourceKey": "KBG09A",
+                    "playbackPath": "derived/images/kana/GGD.unpacked/KBG09A.png",
+                    "instructionIndex": 46,
+                    "targetInstructionIndex": 621
+                  }
+                },
+                {
+                  "cueId": "cue-9a8eff596bbbd9a9",
+                  "kind": "image",
+                  "timing": "scene",
+                  "mediaId": "asset/a-70e3e57afc2e3aac",
+                  "resolverId": "research-media-v1",
+                  "raw": {
+                    "sourceKey": "KSU07",
+                    "playbackPath": "derived/images/kana/GGD.unpacked/KSU07.png",
+                    "instructionIndex": 48,
+                    "targetInstructionIndex": 1326
+                  }
+                }
+              ]
+            },
+            {
+              "eventId": "ikura-3a1",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 63,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 1130,
+                "jaOffset": 929,
+                "originalDisplayText": {
+                  "zh-CN": "勇　太：「啊……前辈」",
+                  "ja-JP": "勇　太：「あ……先輩」"
+                }
+              },
+              "nextEventId": "ikura-3d4",
+              "textLineIndex": {
+                "ja-JP": 8,
+                "zh-CN": 8
+              },
+              "cues": [
+                {
+                  "cueId": "cue-c16d7c82b2f5cf74",
+                  "kind": "voice",
+                  "timing": "utterance",
+                  "mediaId": "asset/a-b4c8677fd82ab00c",
+                  "resolverId": "research-media-v1",
+                  "raw": {
+                    "sourceKey": "Yut0166",
+                    "playbackPath": "raw/kana/VOICE.unpacked/YUT0166.OGG",
+                    "instructionIndex": 63
+                  }
+                }
+              ]
+            },
+            {
+              "eventId": "ikura-3d4",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 66,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 1185,
+                "jaOffset": 980,
+                "originalDisplayText": {
+                  "zh-CN": "隆　道：「怎么了？」",
+                  "ja-JP": "隆　道：「どうしたんだ？」"
+                }
+              },
+              "nextEventId": "ikura-3fc",
+              "textLineIndex": {
+                "ja-JP": 9,
+                "zh-CN": 9
+              }
+            },
+            {
+              "eventId": "ikura-3fc",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 69,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 1229,
+                "jaOffset": 1020,
+                "originalDisplayText": {
+                  "zh-CN": "勇　太：「诶……啊，那个……」",
+                  "ja-JP": "勇　太：「え……ああ、その……」"
+                }
+              },
+              "nextEventId": "ikura-434",
+              "textLineIndex": {
+                "ja-JP": 10,
+                "zh-CN": 10
+              },
+              "cues": [
+                {
+                  "cueId": "cue-dac840d44e4a64f9",
+                  "kind": "voice",
+                  "timing": "utterance",
+                  "mediaId": "asset/a-09eb776c6c8f65cb",
+                  "resolverId": "research-media-v1",
+                  "raw": {
+                    "sourceKey": "Yut0167",
+                    "playbackPath": "raw/kana/VOICE.unpacked/YUT0167.OGG",
+                    "instructionIndex": 69
+                  }
+                }
+              ]
+            },
+            {
+              "eventId": "ikura-434",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 72,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 1292,
+                "jaOffset": 1076,
+                "originalDisplayText": {
+                  "zh-CN": "隆　道：「是来看望加奈的吧？」",
+                  "ja-JP": "隆　道：「加奈の見舞いに来たんだろ？」"
+                }
+              },
+              "nextEventId": "ikura-467",
+              "textLineIndex": {
+                "ja-JP": 11,
+                "zh-CN": 11
+              }
+            },
+            {
+              "eventId": "ikura-467",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 75,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 1346,
+                "jaOffset": 1127,
+                "originalDisplayText": {
+                  "zh-CN": "勇　太：「……哈」",
+                  "ja-JP": "勇　太：「……はあ」"
+                }
+              },
+              "nextEventId": "ikura-4de",
+              "textLineIndex": {
+                "ja-JP": 12,
+                "zh-CN": 12
+              },
+              "cues": [
+                {
+                  "cueId": "cue-f9958985357f2e25",
+                  "kind": "voice",
+                  "timing": "utterance",
+                  "mediaId": "asset/a-968efb97dc98312a",
+                  "resolverId": "research-media-v1",
+                  "raw": {
+                    "sourceKey": "Yut0168",
+                    "playbackPath": "raw/kana/VOICE.unpacked/YUT0168.OGG",
+                    "instructionIndex": 75
+                  }
+                }
+              ]
+            },
+            {
+              "eventId": "ikura-4de",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 90,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 1468,
+                "jaOffset": 1246,
+                "originalDisplayText": {
+                  "zh-CN": "　和平时不同，有些支支吾吾。",
+                  "ja-JP": "　いつになく歯切れが悪い。"
+                }
+              },
+              "nextEventId": "ikura-506",
+              "textLineIndex": {
+                "ja-JP": 13,
+                "zh-CN": 13
+              },
+              "cues": [
+                {
+                  "cueId": "cue-f8fed407fdef2525",
+                  "kind": "image",
+                  "timing": "scene",
+                  "mediaId": "asset/a-0310d0cf97c0fe0a",
+                  "resolverId": "research-media-v1",
+                  "raw": {
+                    "sourceKey": "KBG09A",
+                    "playbackPath": "derived/images/kana/GGD.unpacked/KBG09A.png",
+                    "instructionIndex": 79,
+                    "targetInstructionIndex": 621
+                  }
+                }
+              ]
+            },
+            {
+              "eventId": "ikura-506",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 93,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 1520,
+                "jaOffset": 1286,
+                "originalDisplayText": {
+                  "zh-CN": "　不经意间想到。",
+                  "ja-JP": "　不意に思った。"
+                }
+              },
+              "nextEventId": "ikura-529",
+              "textLineIndex": {
+                "ja-JP": 14,
+                "zh-CN": 14
+              }
+            },
+            {
+              "eventId": "ikura-529",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 96,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 1560,
+                "jaOffset": 1321,
+                "originalDisplayText": {
+                  "zh-CN": "　对了，加奈也和异性朋友……不管怎样……。",
+                  "ja-JP": "　そうだ、加奈にも異性の友達を……何なら……。"
+                }
+              },
+              "nextEventId": "ikura-57e",
+              "textLineIndex": {
+                "ja-JP": 15,
+                "zh-CN": 15
+              }
+            },
+            {
+              "eventId": "ikura-57e",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 104,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 1653,
+                "jaOffset": 1406,
+                "originalDisplayText": {
+                  "zh-CN": "勇　太：「很痛啊，前辈」",
+                  "ja-JP": "勇　太：「痛いです、先輩」"
+                }
+              },
+              "nextEventId": "ikura-5b7",
+              "textLineIndex": {
+                "ja-JP": 16,
+                "zh-CN": 16
+              },
+              "cues": [
+                {
+                  "cueId": "cue-163b28341465af31",
+                  "kind": "voice",
+                  "timing": "utterance",
+                  "mediaId": "asset/a-7f682c8c25449329",
+                  "resolverId": "research-media-v1",
+                  "raw": {
+                    "sourceKey": "Yut0169",
+                    "playbackPath": "raw/kana/VOICE.unpacked/YUT0169.OGG",
+                    "instructionIndex": 104
+                  }
+                }
+              ]
+            },
+            {
+              "eventId": "ikura-5b7",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 108,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 1715,
+                "jaOffset": 1463,
+                "originalDisplayText": {
+                  "zh-CN": "　不知不觉中紧抓住了勇太的肩头。我将深陷入肉的手指移开。",
+                  "ja-JP": "　いつのまにか勇太の肩をつかんでいたらしい。俺は食い込んだ指を離した。"
+                }
+              },
+              "nextEventId": "ikura-5ff",
+              "textLineIndex": {
+                "ja-JP": 17,
+                "zh-CN": 17
+              }
+            },
+            {
+              "eventId": "ikura-5ff",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 112,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 1800,
+                "jaOffset": 1535,
+                "originalDisplayText": {
+                  "zh-CN": "勇　太：「意外的力气……很大啊……」",
+                  "ja-JP": "勇　太：「意外と力……強いんですね……」"
+                }
+              },
+              "nextEventId": "ikura-65a",
+              "textLineIndex": {
+                "ja-JP": 18,
+                "zh-CN": 18
+              },
+              "cues": [
+                {
+                  "cueId": "cue-3bcad774e70bed14",
+                  "kind": "voice",
+                  "timing": "utterance",
+                  "mediaId": "asset/a-bbd257694b2cfddb",
+                  "resolverId": "research-media-v1",
+                  "raw": {
+                    "sourceKey": "Yut0170",
+                    "playbackPath": "raw/kana/VOICE.unpacked/YUT0170.OGG",
+                    "instructionIndex": 112
+                  }
+                }
+              ]
+            },
+            {
+              "eventId": "ikura-65a",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 120,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 1896,
+                "jaOffset": 1626,
+                "originalDisplayText": {
+                  "zh-CN": "　勇太一边揉着肩一边说道。",
+                  "ja-JP": "　勇太が肩をさすりながら言った。"
+                }
+              },
+              "nextEventId": "ikura-686",
+              "textLineIndex": {
+                "ja-JP": 19,
+                "zh-CN": 19
+              }
+            },
+            {
+              "eventId": "ikura-686",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 123,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 1946,
+                "jaOffset": 1670,
+                "originalDisplayText": {
+                  "zh-CN": "　心中响起了不和谐的音符。",
+                  "ja-JP": "　心の中で不協和音が鳴っていた。"
+                }
+              },
+              "nextEventId": "ikura-6b5",
+              "textLineIndex": {
+                "ja-JP": 20,
+                "zh-CN": 20
+              }
+            },
+            {
+              "eventId": "ikura-6b5",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 126,
+                "opcode": 43,
+                "status": "unchanged",
+                "zhOffset": 1996,
+                "jaOffset": 1717,
+                "originalDisplayText": {
+                  "zh-CN": "　加奈。",
+                  "ja-JP": "　加奈。"
+                }
+              },
+              "nextEventId": "ikura-6d3",
+              "textLineIndex": {
+                "ja-JP": 21,
+                "zh-CN": 21
+              }
+            },
+            {
+              "eventId": "ikura-6d3",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 129,
+                "opcode": 43,
+                "status": "unchanged",
+                "zhOffset": 2028,
+                "jaOffset": 1747,
+                "originalDisplayText": {
+                  "zh-CN": "　夕美。",
+                  "ja-JP": "　夕美。"
+                }
+              },
+              "nextEventId": "ikura-6f1",
+              "textLineIndex": {
+                "ja-JP": 22,
+                "zh-CN": 22
+              }
+            },
+            {
+              "eventId": "ikura-6f1",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 132,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 2060,
+                "jaOffset": 1777,
+                "originalDisplayText": {
+                  "zh-CN": "　还有勇太。",
+                  "ja-JP": "　そして勇太。"
+                }
+              },
+              "nextEventId": "ikura-712",
+              "textLineIndex": {
+                "ja-JP": 23,
+                "zh-CN": 23
+              }
+            },
+            {
+              "eventId": "ikura-712",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 135,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 2096,
+                "jaOffset": 1810,
+                "originalDisplayText": {
+                  "zh-CN": "　三个人的面庞，不知为何在我眼前挥之不去。",
+                  "ja-JP": "　三つの顔が、なぜかぐるぐると回っていた。"
+                }
+              },
+              "nextEventId": "ikura-75d",
+              "textLineIndex": {
+                "ja-JP": 24,
+                "zh-CN": 24
+              }
+            },
+            {
+              "eventId": "ikura-75d",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 143,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 2189,
+                "jaOffset": 1885,
+                "originalDisplayText": {
+                  "zh-CN": "隆　道：「加奈，进来了」",
+                  "ja-JP": "隆　道：「加奈、入るぞ」"
+                }
+              },
+              "nextEventId": "ikura-7ca",
+              "textLineIndex": {
+                "ja-JP": 25,
+                "zh-CN": 25
+              }
+            },
+            {
+              "eventId": "ikura-7ca",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 156,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 2304,
+                "jaOffset": 1994,
+                "originalDisplayText": {
+                  "zh-CN": "　一进入房间，就看见加奈的笑脸向我迎来。",
+                  "ja-JP": "　部屋に入ると、加奈の笑顔が俺を出迎えた。"
+                }
+              },
+              "nextEventId": "ikura-806",
+              "textLineIndex": {
+                "ja-JP": 26,
+                "zh-CN": 26
+              },
+              "cues": [
+                {
+                  "cueId": "cue-7dd18b3e7d2293c8",
+                  "kind": "image",
+                  "timing": "scene",
+                  "mediaId": "asset/a-eaf4d68659d0f4f5",
+                  "resolverId": "research-media-v1",
+                  "raw": {
+                    "sourceKey": "KE004A",
+                    "playbackPath": "derived/images/kana/GGD.unpacked/KE004A.png",
+                    "instructionIndex": 147,
+                    "targetInstructionIndex": 1584
+                  }
+                }
+              ]
+            },
+            {
+              "eventId": "ikura-806",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 160,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 2373,
+                "jaOffset": 2054,
+                "originalDisplayText": {
+                  "zh-CN": "加　奈：「……哥哥，欢迎回来」",
+                  "ja-JP": "加　奈：「……お兄ちゃん、おかえり」"
+                }
+              },
+              "nextEventId": "ikura-83f",
+              "textLineIndex": {
+                "ja-JP": 27,
+                "zh-CN": 27
+              },
+              "cues": [
+                {
+                  "cueId": "cue-63c86b863db9e8b0",
+                  "kind": "voice",
+                  "timing": "utterance",
+                  "mediaId": "asset/a-770549c473c82886",
+                  "resolverId": "research-media-v1",
+                  "raw": {
+                    "sourceKey": "Kan1453",
+                    "playbackPath": "raw/kana/VOICE.unpacked/KAN1453.OGG",
+                    "instructionIndex": 160
+                  }
+                }
+              ]
+            },
+            {
+              "eventId": "ikura-83f",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 163,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 2436,
+                "jaOffset": 2111,
+                "originalDisplayText": {
+                  "zh-CN": "隆　道：「我回来了。今天有很少见的客人呦」",
+                  "ja-JP": "隆　道：「ただいま。今日は珍しいお客さんだぞ」"
+                }
+              },
+              "nextEventId": "ikura-875",
+              "textLineIndex": {
+                "ja-JP": 28,
+                "zh-CN": 28
+              }
+            },
+            {
+              "eventId": "ikura-875",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 166,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 2502,
+                "jaOffset": 2165,
+                "originalDisplayText": {
+                  "zh-CN": "勇　太：「你好」",
+                  "ja-JP": "勇　太：「ども」"
+                }
+              },
+              "nextEventId": "ikura-8a6",
+              "textLineIndex": {
+                "ja-JP": 29,
+                "zh-CN": 29
+              },
+              "cues": [
+                {
+                  "cueId": "cue-56711d64713982e0",
+                  "kind": "voice",
+                  "timing": "utterance",
+                  "mediaId": "asset/a-11f1c77a42c8f29c",
+                  "resolverId": "research-media-v1",
+                  "raw": {
+                    "sourceKey": "Yut0171",
+                    "playbackPath": "raw/kana/VOICE.unpacked/YUT0171.OGG",
+                    "instructionIndex": 166
+                  }
+                }
+              ]
+            },
+            {
+              "eventId": "ikura-8a6",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 170,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 2556,
+                "jaOffset": 2214,
+                "originalDisplayText": {
+                  "zh-CN": "　勇太突然露出了脸。",
+                  "ja-JP": "　勇太がひょいと顔を出す。"
+                }
+              },
+              "nextEventId": "ikura-8ea",
+              "textLineIndex": {
+                "ja-JP": 30,
+                "zh-CN": 30
+              }
+            },
+            {
+              "eventId": "ikura-8ea",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 178,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 2627,
+                "jaOffset": 2282,
+                "originalDisplayText": {
+                  "zh-CN": "勇　太：「藤堂，还精神吗？」",
+                  "ja-JP": "勇　太：「藤堂、元気？」"
+                }
+              },
+              "nextEventId": "ikura-94a",
+              "textLineIndex": {
+                "ja-JP": 31,
+                "zh-CN": 31
+              },
+              "cues": [
+                {
+                  "cueId": "cue-4c182eca93c0f726",
+                  "kind": "voice",
+                  "timing": "utterance",
+                  "mediaId": "asset/a-fe2cab8dd4d78ab5",
+                  "resolverId": "research-media-v1",
+                  "raw": {
+                    "sourceKey": "Yut0172",
+                    "playbackPath": "raw/kana/VOICE.unpacked/YUT0172.OGG",
+                    "instructionIndex": 178
+                  }
+                }
+              ]
+            },
+            {
+              "eventId": "ikura-94a",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 188,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 2732,
+                "jaOffset": 2378,
+                "originalDisplayText": {
+                  "zh-CN": "加　奈：「伊藤君……」",
+                  "ja-JP": "加　奈：「伊藤くん……」"
+                }
+              },
+              "nextEventId": "ikura-97e",
+              "textLineIndex": {
+                "ja-JP": 32,
+                "zh-CN": 32
+              },
+              "cues": [
+                {
+                  "cueId": "cue-b9257f9f98df6153",
+                  "kind": "voice",
+                  "timing": "utterance",
+                  "mediaId": "asset/a-3f1f559b77becdd7",
+                  "resolverId": "research-media-v1",
+                  "raw": {
+                    "sourceKey": "Kan1454",
+                    "playbackPath": "raw/kana/VOICE.unpacked/KAN1454.OGG",
+                    "instructionIndex": 188
+                  }
+                },
+                {
+                  "cueId": "cue-4717d5140da500a9",
+                  "kind": "image",
+                  "timing": "scene",
+                  "mediaId": "asset/a-2fbbca2ab74564f6",
+                  "resolverId": "research-media-v1",
+                  "raw": {
+                    "sourceKey": "KE004AP5",
+                    "playbackPath": "derived/images/kana/GGD.unpacked/KE004AP5.png",
+                    "instructionIndex": 181,
+                    "targetInstructionIndex": 1609
+                  }
+                }
+              ]
+            },
+            {
+              "eventId": "ikura-97e",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 191,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 2787,
+                "jaOffset": 2430,
+                "originalDisplayText": {
+                  "zh-CN": "勇　太：「来看望你了。嘛……给你添麻烦了吗？」",
+                  "ja-JP": "勇　太：「お見舞いに来たんだ。め……迷惑だった？」"
+                }
+              },
+              "nextEventId": "ikura-9ca",
+              "textLineIndex": {
+                "ja-JP": 33,
+                "zh-CN": 33
+              },
+              "cues": [
+                {
+                  "cueId": "cue-153187ef5ae56f90",
+                  "kind": "voice",
+                  "timing": "utterance",
+                  "mediaId": "asset/a-56df6a94075abfb6",
+                  "resolverId": "research-media-v1",
+                  "raw": {
+                    "sourceKey": "Yut0173",
+                    "playbackPath": "raw/kana/VOICE.unpacked/YUT0173.OGG",
+                    "instructionIndex": 191
+                  }
+                }
+              ]
+            },
+            {
+              "eventId": "ikura-9ca",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 195,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 2871,
+                "jaOffset": 2506,
+                "originalDisplayText": {
+                  "zh-CN": "　勇太看起来正处于平常未有的紧张状态中。",
+                  "ja-JP": "　勇太はいつになく緊張しているようだった。"
+                }
+              },
+              "nextEventId": "ikura-a00",
+              "textLineIndex": {
+                "ja-JP": 34,
+                "zh-CN": 34
+              }
+            },
+            {
+              "eventId": "ikura-a00",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 199,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 2940,
+                "jaOffset": 2560,
+                "originalDisplayText": {
+                  "zh-CN": "加　奈：「……才没有那样……嗯，谢谢……」",
+                  "ja-JP": "加　奈：「……そんなことないけど……ん、ありがとう……」"
+                }
+              },
+              "nextEventId": "ikura-a7a",
+              "textLineIndex": {
+                "ja-JP": 35,
+                "zh-CN": 35
+              },
+              "cues": [
+                {
+                  "cueId": "cue-5907d8db163ce472",
+                  "kind": "voice",
+                  "timing": "utterance",
+                  "mediaId": "asset/a-a96494a2442fa328",
+                  "resolverId": "research-media-v1",
+                  "raw": {
+                    "sourceKey": "Kan1455",
+                    "playbackPath": "raw/kana/VOICE.unpacked/KAN1455.OGG",
+                    "instructionIndex": 199
+                  }
+                }
+              ]
+            },
+            {
+              "eventId": "ikura-a7a",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 210,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 3064,
+                "jaOffset": 2682,
+                "originalDisplayText": {
+                  "zh-CN": "　加奈像是困惑般低下头，陷入了沉默中。",
+                  "ja-JP": "　加奈は困ったようにうつむいて、押し黙ってしまう。"
+                }
+              },
+              "nextEventId": "ikura-ace",
+              "textLineIndex": {
+                "ja-JP": 36,
+                "zh-CN": 36
+              },
+              "cues": [
+                {
+                  "cueId": "cue-d510dcac8fa2d75d",
+                  "kind": "image",
+                  "timing": "scene",
+                  "mediaId": "asset/a-770f2120577f3069",
+                  "resolverId": "research-media-v1",
+                  "raw": {
+                    "sourceKey": "KE004AP4",
+                    "playbackPath": "derived/images/kana/GGD.unpacked/KE004AP4.png",
+                    "instructionIndex": 203,
+                    "targetInstructionIndex": 1604
+                  }
+                }
+              ]
+            },
+            {
+              "eventId": "ikura-ace",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 218,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 3153,
+                "jaOffset": 2766,
+                "originalDisplayText": {
+                  "zh-CN": "隆　道：「来，勇太，椅子」",
+                  "ja-JP": "隆　道：「ほら、勇太、椅子」"
+                }
+              },
+              "nextEventId": "ikura-afb",
+              "textLineIndex": {
+                "ja-JP": 37,
+                "zh-CN": 37
+              }
+            },
+            {
+              "eventId": "ikura-afb",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 221,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 3203,
+                "jaOffset": 2811,
+                "originalDisplayText": {
+                  "zh-CN": "勇　太：「啊，多谢。这个还有这个……给你」",
+                  "ja-JP": "勇　太：「あ、ども。それとこれ……どーぞ」"
+                }
+              },
+              "nextEventId": "ikura-b3c",
+              "textLineIndex": {
+                "ja-JP": 38,
+                "zh-CN": 38
+              },
+              "cues": [
+                {
+                  "cueId": "cue-d0c886faa3770547",
+                  "kind": "voice",
+                  "timing": "utterance",
+                  "mediaId": "asset/a-1ef9766b0b516507",
+                  "resolverId": "research-media-v1",
+                  "raw": {
+                    "sourceKey": "Yut0174",
+                    "playbackPath": "raw/kana/VOICE.unpacked/YUT0174.OGG",
+                    "instructionIndex": 221
+                  }
+                }
+              ]
+            },
+            {
+              "eventId": "ikura-b3c",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 225,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 3283,
+                "jaOffset": 2876,
+                "originalDisplayText": {
+                  "zh-CN": "　勇太将手提着的水果篮子递过来。那是仅凭学生的零花钱买不起的贵重礼物。",
+                  "ja-JP": "　勇太は手に提げたフルーツ・バスケットを差し出す。学生の小遣いじゃ高い買い物だったろうに。"
+                }
+              },
+              "nextEventId": "ikura-b99",
+              "textLineIndex": {
+                "ja-JP": 39,
+                "zh-CN": 39
+              }
+            },
+            {
+              "eventId": "ikura-b99",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 229,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 3385,
+                "jaOffset": 2969,
+                "originalDisplayText": {
+                  "zh-CN": "隆　道：「不好意思，让你费心了」",
+                  "ja-JP": "隆　道：「悪いな。気を遣ってもらって」"
+                }
+              },
+              "nextEventId": "ikura-bca",
+              "textLineIndex": {
+                "ja-JP": 40,
+                "zh-CN": 40
+              }
+            },
+            {
+              "eventId": "ikura-bca",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 232,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 3441,
+                "jaOffset": 3018,
+                "originalDisplayText": {
+                  "zh-CN": "勇　太：「没，没关系……」",
+                  "ja-JP": "勇　太：「いえ、いいんです……」"
+                }
+              },
+              "nextEventId": "ikura-c00",
+              "textLineIndex": {
+                "ja-JP": 41,
+                "zh-CN": 41
+              },
+              "cues": [
+                {
+                  "cueId": "cue-4058cb738b0065d4",
+                  "kind": "voice",
+                  "timing": "utterance",
+                  "mediaId": "asset/a-8c46b35c4bc4aa98",
+                  "resolverId": "research-media-v1",
+                  "raw": {
+                    "sourceKey": "Yut0175",
+                    "playbackPath": "raw/kana/VOICE.unpacked/YUT0175.OGG",
+                    "instructionIndex": 232
+                  }
+                }
+              ]
+            },
+            {
+              "eventId": "ikura-c00",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 235,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 3500,
+                "jaOffset": 3072,
+                "originalDisplayText": {
+                  "zh-CN": "隆　道：「喂，想和加奈谈谈吧？」",
+                  "ja-JP": "隆　道：「ほら、加奈と話したいんだろ？」"
+                }
+              },
+              "nextEventId": "ikura-c32",
+              "textLineIndex": {
+                "ja-JP": 42,
+                "zh-CN": 42
+              }
+            },
+            {
+              "eventId": "ikura-c32",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 238,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 3556,
+                "jaOffset": 3122,
+                "originalDisplayText": {
+                  "zh-CN": "勇　太：「哈……」",
+                  "ja-JP": "勇　太：「はあ……」"
+                }
+              },
+              "nextEventId": "ikura-c7d",
+              "textLineIndex": {
+                "ja-JP": 43,
+                "zh-CN": 43
+              },
+              "cues": [
+                {
+                  "cueId": "cue-5bfdc8472774db73",
+                  "kind": "voice",
+                  "timing": "utterance",
+                  "mediaId": "asset/a-0d8c366204aaf131",
+                  "resolverId": "research-media-v1",
+                  "raw": {
+                    "sourceKey": "Yut0176",
+                    "playbackPath": "raw/kana/VOICE.unpacked/YUT0176.OGG",
+                    "instructionIndex": 238
+                  }
+                }
+              ]
+            },
+            {
+              "eventId": "ikura-c7d",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 246,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 3634,
+                "jaOffset": 3197,
+                "originalDisplayText": {
+                  "zh-CN": "　伊藤拉过椅子，坐在离加奈床头的一个微妙距离上。",
+                  "ja-JP": "　伊藤は椅子を引いて、加奈のベッドから微妙な距離を開けた。"
+                }
+              },
+              "nextEventId": "ikura-cc8",
+              "textLineIndex": {
+                "ja-JP": 44,
+                "zh-CN": 44
+              }
+            },
+            {
+              "eventId": "ikura-cc8",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 250,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 3711,
+                "jaOffset": 3272,
+                "originalDisplayText": {
+                  "zh-CN": "勇　太：「那个……身体状态，怎么样？」",
+                  "ja-JP": "勇　太：「えっと……体調、どう？」"
+                }
+              },
+              "nextEventId": "ikura-d01",
+              "textLineIndex": {
+                "ja-JP": 45,
+                "zh-CN": 45
+              },
+              "cues": [
+                {
+                  "cueId": "cue-4abda0e931740e4a",
+                  "kind": "voice",
+                  "timing": "utterance",
+                  "mediaId": "asset/a-235e8783496e8cf2",
+                  "resolverId": "research-media-v1",
+                  "raw": {
+                    "sourceKey": "Yut0177",
+                    "playbackPath": "raw/kana/VOICE.unpacked/YUT0177.OGG",
+                    "instructionIndex": 250
+                  }
+                }
+              ]
+            },
+            {
+              "eventId": "ikura-d01",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 253,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 3782,
+                "jaOffset": 3329,
+                "originalDisplayText": {
+                  "zh-CN": "加　奈：「……嗯」",
+                  "ja-JP": "加　奈：「……うん」"
+                }
+              },
+              "nextEventId": "ikura-d36",
+              "textLineIndex": {
+                "ja-JP": 46,
+                "zh-CN": 46
+              },
+              "cues": [
+                {
+                  "cueId": "cue-031f909224bd35f8",
+                  "kind": "voice",
+                  "timing": "utterance",
+                  "mediaId": "asset/a-2f659592728ac801",
+                  "resolverId": "research-media-v1",
+                  "raw": {
+                    "sourceKey": "Kan1456",
+                    "playbackPath": "raw/kana/VOICE.unpacked/KAN1456.OGG",
+                    "instructionIndex": 253
+                  }
+                }
+              ]
+            },
+            {
+              "eventId": "ikura-d36",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 257,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 3838,
+                "jaOffset": 3382,
+                "originalDisplayText": {
+                  "zh-CN": "　这回答可不成立。看来加奈还是不擅长对待勇太。",
+                  "ja-JP": "　答えになっていない。どうやら加奈には、まだ勇太への苦手意識が残っているようだ。"
+                }
+              },
+              "nextEventId": "ikura-d9e",
+              "textLineIndex": {
+                "ja-JP": 47,
+                "zh-CN": 47
+              }
+            },
+            {
+              "eventId": "ikura-d9e",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 265,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 3935,
+                "jaOffset": 3486,
+                "originalDisplayText": {
+                  "zh-CN": "　今天在加奈的地盘，勇太那一方面没有什么向前迈步靠近的余裕。两人之间有一股奇怪的疏远感。其一部分也可以理解是因为勇太无意识拉的椅子所造成的。",
+                  "ja-JP": "　今日は加奈のテリトリー内で、勇太の方に歩み寄りの余裕がないため、二人の距離は妙に遠く感じられた。それは勇太が無意識に椅子を引いたことからもわかる。"
+                }
+              },
+              "nextEventId": "ikura-e27",
+              "textLineIndex": {
+                "ja-JP": 48,
+                "zh-CN": 48
+              }
+            },
+            {
+              "eventId": "ikura-e27",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 268,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 4108,
+                "jaOffset": 3623,
+                "originalDisplayText": {
+                  "zh-CN": "　这也更明显的说明了，勇太在对待加奈的问题上，是扔掉了自己平日里一贯的面具，真心的想要靠近她。勇太是认真的啊。",
+                  "ja-JP": "　それはいみじくも、勇太が加奈に対して、自分の普段のポーズを捨ててアプローチをかけていることを示している。勇太は真剣なのだ。"
+                }
+              },
+              "nextEventId": "ikura-e9d",
+              "textLineIndex": {
+                "ja-JP": 49,
+                "zh-CN": 49
+              }
+            },
+            {
+              "eventId": "ikura-e9d",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 272,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 4253,
+                "jaOffset": 3741,
+                "originalDisplayText": {
+                  "zh-CN": "勇　太：「最近，班级里啊……」",
+                  "ja-JP": "勇　太：「最近、クラスでさあ……」"
+                }
+              },
+              "nextEventId": "ikura-ef2",
+              "textLineIndex": {
+                "ja-JP": 50,
+                "zh-CN": 50
+              },
+              "cues": [
+                {
+                  "cueId": "cue-60bdc19ec0d74963",
+                  "kind": "voice",
+                  "timing": "utterance",
+                  "mediaId": "asset/a-cb6ece9a758e62a3",
+                  "resolverId": "research-media-v1",
+                  "raw": {
+                    "sourceKey": "Yut0178",
+                    "playbackPath": "raw/kana/VOICE.unpacked/YUT0178.OGG",
+                    "instructionIndex": 272
+                  }
+                }
+              ]
+            },
+            {
+              "eventId": "ikura-ef2",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 280,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 4343,
+                "jaOffset": 3826,
+                "originalDisplayText": {
+                  "zh-CN": "　勇太说了很多。",
+                  "ja-JP": "　勇太はいろいろと話をする。"
+                }
+              },
+              "nextEventId": "ikura-f1b",
+              "textLineIndex": {
+                "ja-JP": 51,
+                "zh-CN": 51
+              }
+            },
+            {
+              "eventId": "ikura-f1b",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 283,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 4383,
+                "jaOffset": 3867,
+                "originalDisplayText": {
+                  "zh-CN": "　班级同学间的蠢话。",
+                  "ja-JP": "　クラスメイトの馬鹿話。"
+                }
+              },
+              "nextEventId": "ikura-f44",
+              "textLineIndex": {
+                "ja-JP": 52,
+                "zh-CN": 52
+              }
+            },
+            {
+              "eventId": "ikura-f44",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 286,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 4427,
+                "jaOffset": 3908,
+                "originalDisplayText": {
+                  "zh-CN": "　电视的话题。",
+                  "ja-JP": "　テレビの話。"
+                }
+              },
+              "nextEventId": "ikura-f66",
+              "textLineIndex": {
+                "ja-JP": 53,
+                "zh-CN": 53
+              }
+            },
+            {
+              "eventId": "ikura-f66",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 289,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 4465,
+                "jaOffset": 3942,
+                "originalDisplayText": {
+                  "zh-CN": "　演员的话题。",
+                  "ja-JP": "　タレントの話。"
+                }
+              },
+              "nextEventId": "ikura-f89",
+              "textLineIndex": {
+                "ja-JP": 54,
+                "zh-CN": 54
+              }
+            },
+            {
+              "eventId": "ikura-f89",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 292,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 4503,
+                "jaOffset": 3977,
+                "originalDisplayText": {
+                  "zh-CN": "　业余时间的话题。",
+                  "ja-JP": "　レジャーの話。"
+                }
+              },
+              "nextEventId": "ikura-fae",
+              "textLineIndex": {
+                "ja-JP": 55,
+                "zh-CN": 55
+              }
+            },
+            {
+              "eventId": "ikura-fae",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 295,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 4545,
+                "jaOffset": 4014,
+                "originalDisplayText": {
+                  "zh-CN": "　正在收集Ｔ恤的收藏话题。",
+                  "ja-JP": "　集めているＴシャツ・コレクションの話。"
+                }
+              },
+              "nextEventId": "ikura-fe1",
+              "textLineIndex": {
+                "ja-JP": 56,
+                "zh-CN": 56
+              }
+            },
+            {
+              "eventId": "ikura-fe1",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 298,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 4595,
+                "jaOffset": 4065,
+                "originalDisplayText": {
+                  "zh-CN": "　我一边感慨着他还真是能留有这么多的的话题来谈，一边环抱双臂在他身后站着。",
+                  "ja-JP": "　よくもまあ、これだけの話のネタを持っているものだと思いつつ、俺は勇太の背後で腕を組んで立っていた。"
+                }
+              },
+              "nextEventId": "ikura-103c",
+              "textLineIndex": {
+                "ja-JP": 57,
+                "zh-CN": 57
+              }
+            },
+            {
+              "eventId": "ikura-103c",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 301,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 4696,
+                "jaOffset": 4156,
+                "originalDisplayText": {
+                  "zh-CN": "　突然感到了一条视线。",
+                  "ja-JP": "　ふと、視線を感じた。"
+                }
+              },
+              "nextEventId": "ikura-108e",
+              "textLineIndex": {
+                "ja-JP": 58,
+                "zh-CN": 58
+              }
+            },
+            {
+              "eventId": "ikura-108e",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 311,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 4786,
+                "jaOffset": 4238,
+                "originalDisplayText": {
+                  "zh-CN": "　跨过勇太的肩膀，加奈的视线偷看了过来。",
+                  "ja-JP": "　勇太の肩越しから、加奈の視線がのぞく。"
+                }
+              },
+              "nextEventId": "ikura-10dd",
+              "textLineIndex": {
+                "ja-JP": 59,
+                "zh-CN": 59
+              },
+              "cues": [
+                {
+                  "cueId": "cue-d4ab12d9ec82fb51",
+                  "kind": "image",
+                  "timing": "scene",
+                  "mediaId": "asset/a-1e2b851bb0d2826f",
+                  "resolverId": "research-media-v1",
+                  "raw": {
+                    "sourceKey": "KE004AP2",
+                    "playbackPath": "derived/images/kana/GGD.unpacked/KE004AP2.png",
+                    "instructionIndex": 304,
+                    "targetInstructionIndex": 1594
+                  }
+                }
+              ]
+            },
+            {
+              "eventId": "ikura-10dd",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 319,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 4877,
+                "jaOffset": 4317,
+                "originalDisplayText": {
+                  "zh-CN": "　一瞬间，想到是不是正在看着勇太的脸啊。",
+                  "ja-JP": "　一瞬、話をする勇太の顔を見ているのかな、と思った。"
+                }
+              },
+              "nextEventId": "ikura-111a",
+              "textLineIndex": {
+                "ja-JP": 60,
+                "zh-CN": 60
+              }
+            },
+            {
+              "eventId": "ikura-111a",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 322,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 4941,
+                "jaOffset": 4378,
+                "originalDisplayText": {
+                  "zh-CN": "　但是，却不是这样。",
+                  "ja-JP": "　しかし、そうではない。"
+                }
+              },
+              "nextEventId": "ikura-113e",
+              "textLineIndex": {
+                "ja-JP": 61,
+                "zh-CN": 61
+              }
+            },
+            {
+              "eventId": "ikura-113e",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 325,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 4985,
+                "jaOffset": 4414,
+                "originalDisplayText": {
+                  "zh-CN": "　加奈的视线穿过勇太的肩上，直直地看着我的脸，。",
+                  "ja-JP": "　加奈は、勇太の肩口から、まっすぐ俺の顔を見ていたのだ。"
+                }
+              },
+              "nextEventId": "ikura-1183",
+              "textLineIndex": {
+                "ja-JP": 62,
+                "zh-CN": 62
+              }
+            },
+            {
+              "eventId": "ikura-1183",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 329,
+                "opcode": 43,
+                "status": "unchanged",
+                "zhOffset": 5062,
+                "jaOffset": 4483,
+                "originalDisplayText": {
+                  "zh-CN": "加　奈：「……」",
+                  "ja-JP": "加　奈：「……」"
+                }
+              },
+              "nextEventId": "ikura-11cc",
+              "textLineIndex": {
+                "ja-JP": 63,
+                "zh-CN": 63
+              },
+              "cues": [
+                {
+                  "cueId": "cue-9ee8a2bd397e7871",
+                  "kind": "voice",
+                  "timing": "utterance",
+                  "mediaId": "asset/a-ee68e49bb2fbe782",
+                  "resolverId": "research-media-v1",
+                  "raw": {
+                    "sourceKey": "Kan1457",
+                    "playbackPath": "raw/kana/VOICE.unpacked/KAN1457.OGG",
+                    "instructionIndex": 329
+                  }
+                }
+              ]
+            },
+            {
+              "eventId": "ikura-11cc",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 337,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 5138,
+                "jaOffset": 4556,
+                "originalDisplayText": {
+                  "zh-CN": "　为勇太觉得可怜起来。",
+                  "ja-JP": "　勇太は不憫だった。"
+                }
+              },
+              "nextEventId": "ikura-11f2",
+              "textLineIndex": {
+                "ja-JP": 64,
+                "zh-CN": 64
+              }
+            },
+            {
+              "eventId": "ikura-11f2",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 340,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 5184,
+                "jaOffset": 4594,
+                "originalDisplayText": {
+                  "zh-CN": "　自己被当成是透明人一样无视的事，他不是已经察觉到了吧。",
+                  "ja-JP": "　自分が透明人間のように無視されていることに、こいつは気づいているんだろうか。"
+                }
+              },
+              "nextEventId": "ikura-123a",
+              "textLineIndex": {
+                "ja-JP": 65,
+                "zh-CN": 65
+              }
+            },
+            {
+              "eventId": "ikura-123a",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 343,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 5264,
+                "jaOffset": 4666,
+                "originalDisplayText": {
+                  "zh-CN": "　……勇太的话说不定会注意到。",
+                  "ja-JP": "　……勇太なら気づいているかも知れない。"
+                }
+              },
+              "nextEventId": "ikura-126c",
+              "textLineIndex": {
+                "ja-JP": 66,
+                "zh-CN": 66
+              }
+            },
+            {
+              "eventId": "ikura-126c",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 346,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 5318,
+                "jaOffset": 4716,
+                "originalDisplayText": {
+                  "zh-CN": "　但是，加奈只剩下半年的生命这件事他却不会知道。",
+                  "ja-JP": "　だが、加奈の命があと半年だということは知るまい。"
+                }
+              },
+              "nextEventId": "ikura-12a6",
+              "textLineIndex": {
+                "ja-JP": 67,
+                "zh-CN": 67
+              }
+            },
+            {
+              "eventId": "ikura-12a6",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 349,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 5393,
+                "jaOffset": 4774,
+                "originalDisplayText": {
+                  "zh-CN": "　如果。",
+                  "ja-JP": "　もし。"
+                }
+              },
+              "nextEventId": "ikura-12c2",
+              "textLineIndex": {
+                "ja-JP": 68,
+                "zh-CN": 68
+              }
+            },
+            {
+              "eventId": "ikura-12c2",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 352,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 5425,
+                "jaOffset": 4802,
+                "originalDisplayText": {
+                  "zh-CN": "　要是勇太的恋情实现的话，加奈也……至少不会在完全不知道恋爱的滋味就死去。这对于加奈来说，也应该是一件幸福的事。",
+                  "ja-JP": "　勇太の恋が実るようなことになれば、加奈は……少なくとも恋を知らずに死ぬということはなくなる。それは加奈にとって、幸せであるはずだ。"
+                }
+              },
+              "nextEventId": "ikura-1350",
+              "textLineIndex": {
+                "ja-JP": 69,
+                "zh-CN": 69
+              }
+            },
+            {
+              "eventId": "ikura-1350",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 361,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 5594,
+                "jaOffset": 4944,
+                "originalDisplayText": {
+                  "zh-CN": "　可是这样的话，对勇太来说真是太残酷的回忆了。",
+                  "ja-JP": "　その場合、勇太には本当に不憫な思いをさせることになる。"
+                }
+              },
+              "nextEventId": "ikura-1390",
+              "textLineIndex": {
+                "ja-JP": 70,
+                "zh-CN": 70
+              }
+            },
+            {
+              "eventId": "ikura-1390",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 364,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 5664,
+                "jaOffset": 5008,
+                "originalDisplayText": {
+                  "zh-CN": "　但即使如此…………我也无法将真相告诉他。",
+                  "ja-JP": "　それでも…………真実を教えることはできそうにない。"
+                }
+              },
+              "nextEventId": "ikura-13cc",
+              "textLineIndex": {
+                "ja-JP": 71,
+                "zh-CN": 71
+              }
+            },
+            {
+              "eventId": "ikura-13cc",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 367,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 5730,
+                "jaOffset": 5068,
+                "originalDisplayText": {
+                  "zh-CN": "　勇太的恋情实现的话真的好么？",
+                  "ja-JP": "　勇太の恋は、実った方がいいのだろうか？"
+                }
+              },
+              "nextEventId": "ikura-13fd",
+              "textLineIndex": {
+                "ja-JP": 72,
+                "zh-CN": 72
+              }
+            },
+            {
+              "eventId": "ikura-13fd",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 370,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 5784,
+                "jaOffset": 5117,
+                "originalDisplayText": {
+                  "zh-CN": "　刺痛。",
+                  "ja-JP": "　ちくり。"
+                }
+              },
+              "nextEventId": "ikura-141a",
+              "textLineIndex": {
+                "ja-JP": 73,
+                "zh-CN": 73
+              }
+            },
+            {
+              "eventId": "ikura-141a",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 373,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 5816,
+                "jaOffset": 5146,
+                "originalDisplayText": {
+                  "zh-CN": "　不知从何处一阵绞痛。",
+                  "ja-JP": "　何かが痛んだ。"
+                }
+              },
+              "nextEventId": "ikura-143c",
+              "textLineIndex": {
+                "ja-JP": 74,
+                "zh-CN": 74
+              }
+            },
+            {
+              "eventId": "ikura-143c",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 376,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 5862,
+                "jaOffset": 5180,
+                "originalDisplayText": {
+                  "zh-CN": "　而去探查那个疼痛所在的行为，我也无意识地放弃了。",
+                  "ja-JP": "　その何かを深く洞察することを、俺は無意識に放棄していた。"
+                }
+              },
+              "nextEventId": "end-001",
+              "textLineIndex": {
+                "ja-JP": 75,
+                "zh-CN": 75
+              }
+            },
+            {
+              "eventId": "end-001",
+              "kind": "end",
+              "cues": [
+                {
+                  "cueId": "cue-d236bf4a9d6395c7",
+                  "kind": "image",
+                  "timing": "scene",
+                  "mediaId": "asset/a-dc9cf3ab554a56ab",
+                  "resolverId": "research-media-v1",
+                  "raw": {
+                    "sourceKey": "BLACK",
+                    "playbackPath": "derived/images/kana/GGD.unpacked/BLACK.png",
+                    "instructionIndex": 382,
+                    "targetInstructionIndex": 555
+                  }
+                },
+                {
+                  "cueId": "cue-174339252474168c",
+                  "kind": "image",
+                  "timing": "scene",
+                  "mediaId": "asset/a-dc9cf3ab554a56ab",
+                  "resolverId": "research-media-v1",
+                  "raw": {
+                    "sourceKey": "BLACK",
+                    "playbackPath": "derived/images/kana/GGD.unpacked/BLACK.png",
+                    "instructionIndex": 525,
+                    "targetInstructionIndex": 555
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "media": [
+    {
+      "mediaId": "asset/a-b4c8677fd82ab00c",
+      "role": "voice",
+      "url": "/corpus/archive/raw/kana/VOICE.unpacked/YUT0166.OGG",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "asset/a-09eb776c6c8f65cb",
+      "role": "voice",
+      "url": "/corpus/archive/raw/kana/VOICE.unpacked/YUT0167.OGG",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "asset/a-968efb97dc98312a",
+      "role": "voice",
+      "url": "/corpus/archive/raw/kana/VOICE.unpacked/YUT0168.OGG",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "asset/a-7f682c8c25449329",
+      "role": "voice",
+      "url": "/corpus/archive/raw/kana/VOICE.unpacked/YUT0169.OGG",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "asset/a-bbd257694b2cfddb",
+      "role": "voice",
+      "url": "/corpus/archive/raw/kana/VOICE.unpacked/YUT0170.OGG",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "asset/a-770549c473c82886",
+      "role": "voice",
+      "url": "/corpus/archive/raw/kana/VOICE.unpacked/KAN1453.OGG",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "asset/a-11f1c77a42c8f29c",
+      "role": "voice",
+      "url": "/corpus/archive/raw/kana/VOICE.unpacked/YUT0171.OGG",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "asset/a-fe2cab8dd4d78ab5",
+      "role": "voice",
+      "url": "/corpus/archive/raw/kana/VOICE.unpacked/YUT0172.OGG",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "asset/a-3f1f559b77becdd7",
+      "role": "voice",
+      "url": "/corpus/archive/raw/kana/VOICE.unpacked/KAN1454.OGG",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "asset/a-56df6a94075abfb6",
+      "role": "voice",
+      "url": "/corpus/archive/raw/kana/VOICE.unpacked/YUT0173.OGG",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "asset/a-a96494a2442fa328",
+      "role": "voice",
+      "url": "/corpus/archive/raw/kana/VOICE.unpacked/KAN1455.OGG",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "asset/a-1ef9766b0b516507",
+      "role": "voice",
+      "url": "/corpus/archive/raw/kana/VOICE.unpacked/YUT0174.OGG",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "asset/a-8c46b35c4bc4aa98",
+      "role": "voice",
+      "url": "/corpus/archive/raw/kana/VOICE.unpacked/YUT0175.OGG",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "asset/a-0d8c366204aaf131",
+      "role": "voice",
+      "url": "/corpus/archive/raw/kana/VOICE.unpacked/YUT0176.OGG",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "asset/a-235e8783496e8cf2",
+      "role": "voice",
+      "url": "/corpus/archive/raw/kana/VOICE.unpacked/YUT0177.OGG",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "asset/a-2f659592728ac801",
+      "role": "voice",
+      "url": "/corpus/archive/raw/kana/VOICE.unpacked/KAN1456.OGG",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "asset/a-cb6ece9a758e62a3",
+      "role": "voice",
+      "url": "/corpus/archive/raw/kana/VOICE.unpacked/YUT0178.OGG",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "asset/a-ee68e49bb2fbe782",
+      "role": "voice",
+      "url": "/corpus/archive/raw/kana/VOICE.unpacked/KAN1457.OGG",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "asset/a-d9ee14ec700484ad",
+      "role": "bgm",
+      "url": "/corpus/archive/raw/kana/WMSC.unpacked/TK07.OGG",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "asset/a-0310d0cf97c0fe0a",
+      "role": "image",
+      "url": "/corpus/archive/derived/images/kana/GGD.unpacked/KBG09A.png",
+      "mimeType": "image/png"
+    },
+    {
+      "mediaId": "asset/a-70e3e57afc2e3aac",
+      "role": "image",
+      "url": "/corpus/archive/derived/images/kana/GGD.unpacked/KSU07.png",
+      "mimeType": "image/png"
+    },
+    {
+      "mediaId": "asset/a-eaf4d68659d0f4f5",
+      "role": "image",
+      "url": "/corpus/archive/derived/images/kana/GGD.unpacked/KE004A.png",
+      "mimeType": "image/png"
+    },
+    {
+      "mediaId": "asset/a-2fbbca2ab74564f6",
+      "role": "image",
+      "url": "/corpus/archive/derived/images/kana/GGD.unpacked/KE004AP5.png",
+      "mimeType": "image/png"
+    },
+    {
+      "mediaId": "asset/a-770f2120577f3069",
+      "role": "image",
+      "url": "/corpus/archive/derived/images/kana/GGD.unpacked/KE004AP4.png",
+      "mimeType": "image/png"
+    },
+    {
+      "mediaId": "asset/a-1e2b851bb0d2826f",
+      "role": "image",
+      "url": "/corpus/archive/derived/images/kana/GGD.unpacked/KE004AP2.png",
+      "mimeType": "image/png"
+    },
+    {
+      "mediaId": "asset/a-dc9cf3ab554a56ab",
+      "role": "image",
+      "url": "/corpus/archive/derived/images/kana/GGD.unpacked/BLACK.png",
+      "mimeType": "image/png"
+    }
+  ]
+}

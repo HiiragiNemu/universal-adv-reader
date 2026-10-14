@@ -1,0 +1,75 @@
+@layer reader-visual-revision {
+  .magi-scene-registration-defs { position: absolute; pointer-events: none; }
+  /* Curved screens compose the pass inside their existing optical filter.
+     A flat screen uses the same pass directly: the toggle is independent. */
+  html[data-screen-registration='true'][data-screen-curvature='false']:not([data-reader-theme='frost']):not([data-ios-flat='true']) body
+    :is(#magi-home-display,#magi-reader-display):has(.magi-scene-registration-defs) {
+    filter: url('#magi-scene-registration') !important;
+  }
+  html[data-screen-registration='true']:not([data-ios-flat='true']) body
+    .magi-floating-window:not(#magi-home-display *,#magi-reader-display *) {
+    filter: url('#magi-scene-registration') !important;
+  }
+  /* A detached day window receives the same one-pass softness. Descendants
+     already share the display pass and must never be softened twice. */
+  html:is([data-reader-theme='light'],[data-reader-theme='paper'],[data-reader-theme='green'])[data-screen-registration='false']:not([data-ios-flat='true']) body
+    .magi-floating-window:not(#magi-home-display *,#magi-reader-display *) {
+    filter: var(--magi-flat-day-filter) !important;
+  }
+  /* Remove the additional per-label registration, not font weight, ink colour,
+     layout or the preserved night beam/bloom. No more doubled text shadows. */
+  html[data-screen-registration='true']:not([data-reader-theme='dark']) body
+    :is(#magi-home-display,#magi-reader-display,.magi-floating-window)
+    :is([data-reader-text-content],.magi-reader-speaker-label,button,a,label,legend,h1,h2,h3,input,textarea,small,span,p,strong,b,output,summary,li,[style*='--magi-ink-lead'],[style*='--magi-ink-lead'] *) {
+    text-shadow: none !important;
+  }
+  html[data-screen-registration='true'] {
+    --magi-sized-lead: rgba(255,252,225,.5);
+    --magi-sized-trail: rgba(69,154,244,.55);
+  }
+  html[data-screen-registration='true'][data-reader-theme='dark'][data-night-phosphor='amber'] {
+    --magi-sized-trail: rgba(246,94,40,.52);
+  }
+  html[data-screen-registration='true'][data-reader-theme='dark'][data-night-phosphor='green'] {
+    --magi-sized-trail: rgba(153,235,213,.48);
+  }
+  /* A 10px label gets no extra echo; 12px gets .4px, 17px gets 1.4px.
+     These copies are drawn BEHIND the original ink, preserving fine strokes. */
+  html[data-screen-registration='true'][data-reader-theme]:not([data-reader-theme='dark'])[data-night-phosphor] body
+    :is(#magi-home-display,#magi-reader-display,.magi-floating-window)
+    :is([data-reader-text-content],.magi-reader-speaker-label,button,a,label,legend,h1,h2,h3,input,textarea,small,span,p,strong,b,output,summary,li,[style*='--magi-ink-lead'],[style*='--magi-ink-lead'] *) {
+    text-shadow: clamp(-1px,calc(1.7px - .17em),0px) 0 .008em var(--magi-ink-lead,var(--magi-sized-lead)),
+      clamp(0px,calc(.2em - 2px),1.4px) 0 .008em var(--magi-ink-trail,var(--magi-sized-trail)) !important;
+  }
+  /* Night's colour/position contract is independent of scene registration.
+     Amber: dark separator + remote red; green: yellow lead + green trail;
+     inverse dark legends: pale echo; explicit source colours: their own hues. */
+  html[data-reader-theme='dark'][data-night-phosphor] body :is(#magi-home-display,#magi-reader-display,.magi-floating-window) {
+    --magi-night-text-shadow: clamp(-1.8px,calc(.91px - .124em),-.08px) 0 .016em rgba(255,232,82,.88),clamp(.1px,calc(.16em - 1.17px),2.3px) 0 .018em rgba(52,249,22,.82),0 0 .12em rgba(166,247,82,.24);
+    /* Restored NIGHT_CHANNEL_V5: white ink uses its own blue/cyan signal. */
+    --magi-night-white-shadow: clamp(.08px,calc(.15em - 1.1px),1.8px) 0 .012em rgb(38,141,255),clamp(-.6px,calc(.4px - .06em),-.04px) 0 .014em rgba(103,255,235,.72),0 0 .1em #eaffff35;
+  }
+  html[data-reader-theme='dark'][data-night-phosphor='amber'] body :is(#magi-home-display,#magi-reader-display,.magi-floating-window) {
+    --magi-night-text-shadow: clamp(.05px,calc(.12em - .89px),1.65px) 0 0 #140a0c,clamp(.08px,calc(.27em - 2px),3.6px) .007em .007em #ff410de8,-.012em 0 .007em #fffad355,0 0 .16em #ffa72d35;
+  }
+  html[data-reader-theme='dark'][data-night-phosphor] body :is(#magi-home-display,#magi-reader-display,.magi-floating-window)
+    :is(.magi-reader-page-summary,.magi-floating-link-subtitle,.magi-reader-source-badge,.magi-official-tw-badge) {
+    --magi-night-text-shadow: var(--magi-night-white-shadow);
+  }
+  html[data-reader-theme='dark'][data-night-phosphor='amber'] body :is(#magi-home-display,#magi-reader-display,.magi-floating-window)
+    :is(.magi-reader-utility-button,.magi-reader-font-control,.magi-floating-window-body) {
+    --magi-night-text-shadow: var(--magi-night-white-shadow);
+  }
+  html[data-reader-theme='dark'][data-night-phosphor] body :is(#magi-home-display,#magi-reader-display,.magi-floating-window)
+    :is(button[aria-pressed='true'],.magi-home-category-trigger[data-selected='true'],.magi-home-category-filter[data-selected='true'],.magi-reader-header-identity,.magi-floating-window-titlebar,.magi-reader-sidebar-category-button[aria-expanded='true'],.magi-reader-sidebar-folder-button[aria-expanded='true'],.magi-reader-sidebar-section-item[aria-current='location'],.magi-reader-branch-header) {
+    --magi-night-text-shadow: clamp(.08px,calc(.14em - 1.03px),1.7px) 0 .007em #fffef1,clamp(.12px,calc(.21em - 1.52px),2.6px) .006em .015em #ffffd980;
+  }
+  html[data-screen-registration='true'][data-reader-theme='dark'][data-night-phosphor] body
+    :is(#magi-home-display,#magi-reader-display,.magi-floating-window)
+    :is([data-reader-text-content],.magi-reader-speaker-label,button,a,label,legend,h1,h2,h3,input,textarea,small,span,p,strong,b,output,summary,li,[style*='--magi-ink-lead'],[style*='--magi-ink-lead'] *) {
+    text-shadow: var(--magi-ink-shadow,var(--magi-night-text-shadow)) !important;
+  }
+  /* A transparent linebreak mirror is not a second phosphor text layer. */
+  html[data-screen-registration='true'][data-reader-theme='dark'][data-night-phosphor] body #magi-reader-display
+    :is(.magi-translation-linebreak-overlay,.magi-translation-linebreak-overlay .text-transparent) { text-shadow: none !important; }
+}

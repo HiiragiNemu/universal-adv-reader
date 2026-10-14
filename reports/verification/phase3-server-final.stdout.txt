@@ -1,2 +1,0 @@
-READY http://127.0.0.1:4176/apps/web/
-CORPUS read-only D:\PROGETTO\narcissu-kana-research

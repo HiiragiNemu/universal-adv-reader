@@ -1,0 +1,67 @@
+@layer reader-visual-revision {
+  /* The close action owns a real column, rather than sitting over the final
+     theme button. The gap also gives the cold halo room without clipping it. */
+  html[data-reader-theme] body #magi-reader-display.magi-reader-root
+    .magi-reader-utility-panel.magi-reader-utility-panel-floating {
+    display: grid !important;
+    grid-template-columns: minmax(0, 1fr) max-content !important;
+    column-gap: 12px !important;
+    padding: 5px !important;
+  }
+  html[data-reader-theme] body #magi-reader-display.magi-reader-root
+    .magi-reader-utility-panel-floating > .magi-reader-utility-close {
+    position: static !important; inset: auto !important;
+    grid-column: 2; grid-row: 1; align-self: start; margin: 0 !important;
+  }
+  html[data-reader-theme] body #magi-reader-display.magi-reader-root
+    .magi-reader-utility-panel-floating > .magi-reader-utility-content {
+    grid-column: 1; grid-row: 1; min-width: 0 !important;
+  }
+}
+
+@layer reader-visual-revision {
+  @media (max-width: 767px) {
+    html[data-reader-theme] body #magi-reader-display.magi-reader-root
+      .magi-reader-utility-panel.magi-reader-utility-panel-floating {
+      grid-template-columns: minmax(0, 1fr) !important;
+      column-gap: 0 !important;
+    }
+    html[data-reader-theme] body #magi-reader-display.magi-reader-root
+      .magi-reader-utility-panel-floating > .magi-reader-utility-close {
+      grid-column: 1; grid-row: 1; justify-self: end; z-index: 1;
+      width: 32px !important; min-width: 32px !important; height: 36px !important;
+    }
+    html[data-reader-theme] body #magi-reader-display.magi-reader-root
+      .magi-reader-utility-panel-floating .magi-reader-utility-search {
+      width: calc(100% - 40px) !important; margin: 0 0 4px !important;
+    }
+    html[data-reader-theme] body #magi-reader-display.magi-reader-root
+      .magi-reader-utility-panel-floating .magi-reader-utility-actions {
+      display: flex !important; flex-wrap: wrap !important;
+      align-items: center !important; justify-content: flex-start !important;
+      gap: 3px !important; min-width: 0 !important; padding: 0 !important;
+    }
+    /* Individual controls consume remaining space; a theme group is not a
+       full-width row. Its DOM grouping and accessible labels remain intact. */
+    html[data-reader-theme] body #magi-reader-display.magi-reader-root
+      .magi-reader-utility-panel-floating :is(.magi-reader-utility-home-stack,.magi-reader-utility-theme-switcher) {
+      display: contents !important;
+    }
+    html[data-reader-theme] body #magi-reader-display.magi-reader-root
+      .magi-reader-utility-panel-floating .magi-reader-utility-button {
+      flex: 0 0 auto !important; width: auto !important; min-width: 0 !important;
+      min-height: 32px !important; padding: 4px 6px !important;
+      font-size: 12px !important; line-height: 20px !important; white-space: nowrap !important;
+    }
+    html[data-reader-theme] body #magi-reader-display.magi-reader-root
+      .magi-reader-utility-panel-floating .magi-reader-theme-option {
+      flex: 0 0 32px !important; width: 32px !important; min-width: 32px !important;
+      height: 32px !important; min-height: 32px !important; padding: 4px !important;
+      order: 1 !important;
+    }
+    html[data-reader-theme] body #magi-reader-display.magi-reader-root
+      .magi-reader-utility-panel-floating :is(.magi-local-story-picker,.magi-reader-utility-voice-actions) {
+      order: 2 !important;
+    }
+  }
+}

@@ -1,0 +1,4 @@
+--- Start: EV00.txt Section 1 ---
+ナレーション: はじまり
+Choice: 【俺には妹がいた。】 -> group_end-001
+Choice: 【俺には妹がいる。】 -> group_end-001

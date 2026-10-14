@@ -1,9 +1,0 @@
-$ pwsh -NoProfile -ExecutionPolicy Bypass -File .\tools\rollback-phase2.ps1
-{
-  "status": "ROLLED_BACK",
-  "baselineCommit": "f30c7bc1879f22a7d686ad6c84f50e778004876a",
-  "repositoryRoot": "D:\\PROGETTO\\universal-adv-reader",
-  "restoredTrackedFiles": 15,
-  "removedAddedFiles": 13
-}
-EXIT_STATUS=0

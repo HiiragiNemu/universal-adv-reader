@@ -44,3 +44,17 @@ test('revision mismatch blocks exact event synchronization without dropping loca
   assert.equal(parsed.revision.story, 'mismatch');
   assert.equal(canSynchronizeExactEvent(parsed.revision), false);
 });
+
+test('source variant IDs with encoded archive segments survive a deep-link round trip', () => {
+  const location = {
+    canonicalStoryId: 'narcissu-himeko/himeko_ep00',
+    variantId: 'mjo/patches/narci_himeko/%23mjo/himeko_ep00',
+    sectionId: 'main',
+    eventId: 'mjo-124',
+  };
+  const url = buildStoryDeepLink('https://reader.example/', location);
+  assert.deepEqual(parseStoryDeepLink(url).location, {
+    ...location,
+    bridgeRevision: BRIDGE_REVISION,
+  });
+});

@@ -1,0 +1,41 @@
+/* Follow the existing expanded state; no geometry listeners or effect layers.
+   Keep the dim trunk, and light only the route to the last expanded card. */
+.magi-home-shell .magi-home-folder-tree {
+  --magi-home-tree-active-ink: var(--magi-tree-node, var(--magi-category-interaction-text, currentColor));
+}
+
+.magi-home-shell .magi-home-story-tree-node[data-tree-state='open'] > .magi-home-story-tree-junction {
+  --magi-home-tree-line: var(--magi-home-tree-active-ink);
+  --home-edge: var(--magi-home-tree-active-ink);
+  border-top-color: var(--magi-home-tree-active-ink) !important;
+}
+
+.magi-home-shell .magi-home-story-tree-node[data-tree-state='open'] > .magi-home-story-tree-junction::before {
+  border-color: var(--magi-home-tree-active-ink);
+  background: var(--magi-home-tree-active-ink);
+}
+
+.magi-home-shell .magi-home-folder-tree > .magi-home-story-tree-node:is([data-tree-state='open'], :has(~ .magi-home-story-tree-node[data-tree-state='open']))::before {
+  --home-edge: var(--magi-home-tree-active-ink);
+  position: absolute;
+  top: -0.36rem;
+  bottom: -0.36rem;
+  left: -0.94rem;
+  width: 0;
+  border-left: 1.2px solid var(--magi-home-tree-active-ink);
+  pointer-events: none;
+  content: '';
+}
+
+.magi-home-shell .magi-home-folder-tree > .magi-home-story-tree-node[data-tree-state='open']:not(:has(~ .magi-home-story-tree-node[data-tree-state='open']))::before {
+  bottom: auto;
+  height: 1.14rem;
+}
+
+.magi-home-shell .magi-home-folder-tree > .magi-home-story-tree-node:first-child::before {
+  top: 0.28rem;
+}
+
+.magi-home-shell .magi-home-folder-tree > .magi-home-story-tree-node:first-child[data-tree-state='open']:not(:has(~ .magi-home-story-tree-node[data-tree-state='open']))::before {
+  height: 0.5rem;
+}

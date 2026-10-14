@@ -1,0 +1,52 @@
+@layer reader-visual-revision {
+  /* Selected luminous plates carry dark ink through every nested label/icon.
+     Hover still uses the separately defined dark face and white registered ink. */
+  html[data-reader-theme='dark'][data-night-phosphor] body
+    #magi-reader-display.magi-reader-root.magi-reader-theme-dark:not(.magi-reader-theme-frost) .magi-reader-sidebar
+    :is(.magi-reader-sidebar-category-button[aria-expanded='true'],.magi-reader-sidebar-folder-button[aria-expanded='true'],.magi-reader-sidebar-section-item[aria-current='location']):not(:hover):not(:focus-visible),
+  html[data-reader-theme='dark'][data-night-phosphor] body
+    #magi-reader-display.magi-reader-root.magi-reader-theme-dark:not(.magi-reader-theme-frost) .magi-reader-sidebar
+    :is(.magi-reader-sidebar-category-button[aria-expanded='true'],.magi-reader-sidebar-folder-button[aria-expanded='true'],.magi-reader-sidebar-section-item[aria-current='location']):not(:hover):not(:focus-visible) :is(span,svg) {
+    color: #141b12 !important; -webkit-text-fill-color: currentColor !important;
+    opacity: 1 !important;
+  }
+  /* The old muted colour plus opacity-60 made About descriptions disappear.
+     White is intentional here; the shared small-type registration remains. */
+  html[data-reader-theme='dark'][data-night-phosphor] body
+    .magi-floating-window.magi-about-window[data-reader-theme='dark'] .magi-floating-window-body
+    :is(.magi-floating-link-subtitle,.magi-contribution-content) {
+    color: #f4f8f5 !important; -webkit-text-fill-color: currentColor !important;
+    opacity: 1 !important;
+    --magi-ink-lead: rgba(170,223,255,.58);
+    --magi-ink-trail: rgba(149,159,255,.46);
+  }
+  html[data-reader-theme='dark'][data-night-phosphor] body #magi-home-display.magi-home-shell.magi-home-dark-root[data-theme='dark']:not(.magi-home-frost-root)
+    .magi-home-category-filter[data-selected='false'] {
+    background: rgba(8,14,13,.92) !important;
+    border-color: var(--magi-tube-ink) !important;
+    box-shadow: inset 0 0 4px rgba(180,220,160,.08) !important;
+  }
+  html[data-reader-theme='dark'][data-night-phosphor] body #magi-home-display.magi-home-shell.magi-home-dark-root[data-theme='dark']:not(.magi-home-frost-root)
+    .magi-home-category-filter[data-selected='false'] :is(.magi-home-category-filter-label,.magi-home-mobile-source-filter-label) {
+    color: var(--magi-tube-ink) !important; -webkit-text-fill-color: currentColor !important;
+  }
+  html[data-reader-theme='dark'][data-night-phosphor] body #magi-home-display.magi-home-shell.magi-home-dark-root[data-theme='dark']:not(.magi-home-frost-root)
+    .magi-home-category-filter[data-selected='true'] :is(.magi-home-category-filter-label,.magi-home-mobile-source-filter-label) {
+    color: #162017 !important; -webkit-text-fill-color: currentColor !important;
+  }
+  /* A dark hover face always has white ink, including selected sidebar plates.
+     White echoes use the SAME font-sized registration, never another filter. */
+  html[data-reader-theme='dark'][data-night-phosphor] body
+    :is(#magi-home-display.magi-home-shell[data-theme='dark']:not(.magi-home-frost-root),#magi-reader-display.magi-reader-root.magi-reader-theme-dark:not(.magi-reader-theme-frost),.magi-floating-window[data-reader-theme='dark'])
+    :is(button,a,[role='button']):not(.magi-home-category-filter-hit,.magi-reader-brand,.magi-folder-source-card *,.magi-story-source-link,.magi-story-source-link *):not(:disabled):is(:hover,:focus-visible) {
+    background: #101813 !important;
+    color: #f4f8f5 !important; -webkit-text-fill-color: currentColor !important;
+    --magi-ink-lead: rgba(170,223,255,.58);
+    --magi-ink-trail: rgba(149,159,255,.46);
+  }
+  html[data-reader-theme='dark'][data-night-phosphor] body
+    :is(#magi-home-display.magi-home-shell[data-theme='dark']:not(.magi-home-frost-root),#magi-reader-display.magi-reader-root.magi-reader-theme-dark:not(.magi-reader-theme-frost),.magi-floating-window[data-reader-theme='dark'])
+    :is(button,a,[role='button']):not(.magi-home-category-filter-hit,.magi-reader-brand,.magi-folder-source-card *,.magi-story-source-link,.magi-story-source-link *):not(:disabled):is(:hover,:focus-visible) :is(span,strong,b,small,svg) {
+    color: #f4f8f5 !important; -webkit-text-fill-color: currentColor !important;
+  }
+}

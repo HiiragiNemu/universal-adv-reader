@@ -9,7 +9,7 @@ export const LOCATION_PARAMETERS = Object.freeze([
   'bridgeRevision',
 ]);
 
-const PATH_ID_RE = /^[A-Za-z0-9][A-Za-z0-9_.:/-]{0,255}$/u;
+const PATH_ID_RE = /^[A-Za-z0-9][A-Za-z0-9_.:/%\-]{0,255}$/u;
 const SIMPLE_ID_RE = /^[A-Za-z0-9][A-Za-z0-9_.:-]{0,191}$/u;
 const pathKeys = new Set(['canonicalStoryId', 'variantId']);
 

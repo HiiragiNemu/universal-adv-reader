@@ -8,7 +8,7 @@ export const MEDIA_KINDS = Object.freeze(['voice', 'bgm', 'sfx', 'image', 'video
 export const CUE_TIMINGS = Object.freeze(['utterance', 'scene']);
 
 const SIMPLE_ID_RE = /^[A-Za-z0-9][A-Za-z0-9_.:-]{0,191}$/u;
-const PATH_ID_RE = /^[A-Za-z0-9][A-Za-z0-9_.:/-]{0,255}$/u;
+const PATH_ID_RE = /^[A-Za-z0-9][A-Za-z0-9_.:/%\-]{0,255}$/u;
 const LOCALE_RE = /^[A-Za-z]{2,8}(?:-[A-Za-z0-9]{1,8})*$/u;
 
 export class ContractError extends Error {

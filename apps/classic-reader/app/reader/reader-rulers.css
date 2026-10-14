@@ -1,0 +1,43 @@
+/* One coordinate system: CSS pixels inside the measured language text cell. */
+@layer reader-visual-revision {
+  html body #magi-reader-display.magi-reader-root .magi-reader-film-viewport {
+    mix-blend-mode: normal !important;
+  }
+  html body #magi-reader-display.magi-reader-root .magi-reader-view-columns {
+    height: 28px !important;
+    border-top: 1px solid color-mix(in srgb, var(--magi-ui-ink) 28%, transparent);
+    background: linear-gradient(var(--magi-ui-surface), color-mix(in srgb, var(--magi-ui-surface) 90%, transparent)) !important;
+    color: var(--magi-ui-ink) !important;
+  }
+  html body #magi-reader-display.magi-reader-root .magi-reader-view-columns--top { top: 0 !important; }
+  html body #magi-reader-display.magi-reader-root .magi-reader-view-columns--bottom { bottom: 0 !important; }
+  html body #magi-reader-display.magi-reader-root .magi-reader-view-columns i {
+    height: 5px !important; opacity: .55;
+  }
+  html body #magi-reader-display.magi-reader-root .magi-reader-view-columns i[data-major='true'] {
+    height: 9px !important; opacity: .85;
+  }
+  html body #magi-reader-display.magi-reader-root .magi-reader-view-columns i[data-active='true'] {
+    height: 27px !important; width: 2px !important; opacity: 1;
+    border-color: var(--magi-ui-ink) !important;
+    box-shadow: 0 0 5px var(--magi-ui-accent);
+  }
+  html body #magi-reader-display.magi-reader-root .magi-reader-view-columns i[data-active='true'] b {
+    top: 11px; font-weight: 800; padding: 1px 2px;
+    background: var(--magi-ui-surface); color: var(--magi-ui-ink) !important;
+    text-shadow: 0 0 5px var(--magi-ui-accent) !important;
+  }
+  html body #magi-reader-display.magi-reader-root .magi-reader-view-lines i[data-active='true'] {
+    width: 11px; border-color: var(--magi-ui-ink) !important;
+  }
+  .magi-reader-ruler-language {
+    position: absolute; font: 700 9px/1.1 ui-monospace, Consolas, monospace;
+    color: var(--magi-ui-ink); background: var(--magi-ui-surface); padding: 2px;
+  }
+  .magi-reader-view-columns > .magi-reader-ruler-language { left: -24px; top: 8px; }
+  .magi-reader-view-columns--bottom > .magi-reader-ruler-language { transform: scaleY(-1); }
+  .magi-reader-view-lines > .magi-reader-ruler-language { top: 31px; left: 0; }
+  /* On narrow stacked pages the two horizontal scales live at opposite edges;
+     the two independent vertical counters live on opposite sides. */
+  [data-ruler-layout='stacked'] .magi-reader-view-lines[data-ruler-language='jp'] > .magi-reader-ruler-language { left: 12px; }
+}

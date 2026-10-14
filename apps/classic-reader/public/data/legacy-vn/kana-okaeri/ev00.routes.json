@@ -1,0 +1,409 @@
+{
+  "schema": "classic-reader-story-routes/v1",
+  "canonicalStoryId": "kana-okaeri/ev00",
+  "sourceCanonicalStoryId": "kana-okaeri/ev00",
+  "preferredVariantId": "paired/kana-okaeri/ev00/zh-ja",
+  "japaneseVariantId": "paired/kana-okaeri/ev00/zh-ja",
+  "chineseVariantId": "paired/kana-okaeri/ev00/zh-ja",
+  "voiceRouting": {
+    "schema": "classic-reader-voice-routing/v1",
+    "defaultState": "collapsed",
+    "expandedSlotMode": "all-lines",
+    "unresolvedLineBehavior": "visible"
+  },
+  "titleAuthority": {
+    "work": {
+      "authorityId": "work/kana",
+      "title_cn": "加奈～欢迎回来～",
+      "title_jp": "加奈…おかえり!!",
+      "source": {
+        "zh-CN": "archive/source-patches/kana-v1.01/payload/KANACHS.INI",
+        "ja-JP": "archive/inputs/kana/KANAOKA.EXE"
+      },
+      "evidence": {
+        "zh-CN": [
+          "UTF-16 line 7: TITLE=加奈～欢迎回来～",
+          "rawHex=5400490054004c0045003d00a05248595eff226bce8fde5665675eff"
+        ],
+        "ja-JP": [
+          "UTF-16LE product-title literal at byte offsets 792384,792608,792900",
+          "rawHex=a052485926204a304b3048308a3021002100"
+        ]
+      },
+      "confidence": {
+        "zh-CN": 1,
+        "ja-JP": 1
+      }
+    },
+    "arc": {
+      "authorityId": "arc/kana-okaeri",
+      "title_cn": "加奈～欢迎回来～",
+      "title_jp": "加奈…おかえり!!",
+      "source": {
+        "zh-CN": "archive/source-patches/kana-v1.01/payload/KANACHS.INI",
+        "ja-JP": "archive/inputs/kana/KANAOKA.EXE"
+      },
+      "evidence": {
+        "zh-CN": [
+          "UTF-16 line 7: TITLE=加奈～欢迎回来～",
+          "rawHex=5400490054004c0045003d00a05248595eff226bce8fde5665675eff"
+        ],
+        "ja-JP": [
+          "UTF-16LE product-title literal at byte offsets 792384,792608,792900",
+          "rawHex=a052485926204a304b3048308a3021002100"
+        ]
+      },
+      "confidence": {
+        "zh-CN": 1,
+        "ja-JP": 1
+      }
+    },
+    "story": {
+      "authorityId": "story/kana-okaeri/ev00",
+      "title_cn": "开始",
+      "title_jp": "はじまり",
+      "source": {
+        "zh-CN": "archive/derived/ikura-scripts/ISC.unpacked/EV00.script.json",
+        "ja-JP": "archive/derived/ikura-scripts/ISF.unpacked/EV00.script.json"
+      },
+      "evidence": {
+        "zh-CN": [
+          "textEvents entry has explicit kind=title",
+          "instructionOffset=79",
+          "rawHex=bfaacabc",
+          "variantId=ikura/isc.unpacked/ev00"
+        ],
+        "ja-JP": [
+          "textEvents entry has explicit kind=title",
+          "instructionOffset=79",
+          "rawHex=82cd82b682dc82e8",
+          "variantId=ikura/isf.unpacked/ev00"
+        ]
+      },
+      "confidence": {
+        "zh-CN": 1,
+        "ja-JP": 1
+      }
+    }
+  },
+  "sections": [
+    {
+      "sectionId": "main",
+      "entryEventId": "ikura-4f",
+      "events": [
+        {
+          "eventId": "ikura-4f",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 11,
+            "opcode": 247,
+            "status": "translated",
+            "zhOffset": 79,
+            "jaOffset": 79,
+            "originalDisplayText": {
+              "zh-CN": "开始",
+              "ja-JP": "はじまり"
+            }
+          },
+          "nextEventId": "ikura-ca",
+          "textLineIndex": {
+            "ja-JP": 0
+          },
+          "cues": [
+            {
+              "cueId": "cue-befa3e22593db4c5",
+              "kind": "image",
+              "timing": "scene",
+              "mediaId": "asset/a-dc9cf3ab554a56ab",
+              "resolverId": "research-media-v1",
+              "raw": {
+                "sourceKey": "BLACK",
+                "playbackPath": "derived/images/kana/GGD.unpacked/BLACK.png",
+                "instructionIndex": 7,
+                "targetInstructionIndex": 192
+              }
+            }
+          ]
+        },
+        {
+          "eventId": "ikura-ca",
+          "kind": "choice",
+          "source": {
+            "engine": "ikura",
+            "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV00.json",
+            "selectorInstructionIndex": 21,
+            "arms": [
+              {
+                "sourceInstructionIndex": 21,
+                "sourceOpcode": 7,
+                "kind": "indexed-jump",
+                "armIndex": 1,
+                "pointerIndex": 2,
+                "targetInstructionIndex": 23,
+                "targetKind": "instruction",
+                "zhSourceOffset": 198,
+                "jaSourceOffset": 202,
+                "zhTargetOffset": 215,
+                "jaTargetOffset": 219
+              },
+              {
+                "sourceInstructionIndex": 21,
+                "sourceOpcode": 7,
+                "kind": "indexed-jump",
+                "armIndex": 2,
+                "pointerIndex": 3,
+                "targetInstructionIndex": 25,
+                "targetKind": "instruction",
+                "zhSourceOffset": 198,
+                "jaSourceOffset": 202,
+                "zhTargetOffset": 227,
+                "jaTargetOffset": 231
+              }
+            ]
+          },
+          "choices": [
+            {
+              "choiceId": "arm-db",
+              "nextEventId": "end-001",
+              "label": {
+                "zh-CN": "我曾经有个妹妹。",
+                "ja-JP": "俺には妹がいた。"
+              }
+            },
+            {
+              "choiceId": "arm-e7",
+              "nextEventId": "end-001",
+              "label": {
+                "zh-CN": "我有个妹妹。　　",
+                "ja-JP": "俺には妹がいる。"
+              }
+            }
+          ]
+        },
+        {
+          "eventId": "end-001",
+          "kind": "end",
+          "cues": [
+            {
+              "cueId": "cue-6e7732457a6032bf",
+              "kind": "image",
+              "timing": "scene",
+              "mediaId": "asset/a-ad6b4cfed91ac328",
+              "resolverId": "research-media-v1",
+              "raw": {
+                "sourceKey": "COM_B",
+                "playbackPath": "derived/images/kana/GGD.unpacked/COM_B.png",
+                "instructionIndex": 20,
+                "targetInstructionIndex": 3326
+              }
+            },
+            {
+              "cueId": "cue-8c84905f3aef10f3",
+              "kind": "image",
+              "timing": "scene",
+              "mediaId": "asset/a-dc9cf3ab554a56ab",
+              "resolverId": "research-media-v1",
+              "raw": {
+                "sourceKey": "BLACK",
+                "playbackPath": "derived/images/kana/GGD.unpacked/BLACK.png",
+                "instructionIndex": 162,
+                "targetInstructionIndex": 192
+              }
+            }
+          ]
+        }
+      ],
+      "titleAuthority": {
+        "sectionId": "main",
+        "authorityId": "section/kana-okaeri/ev00/main",
+        "title_cn": "开始",
+        "title_jp": "はじまり",
+        "source": {
+          "zh-CN": "archive/derived/ikura-scripts/ISC.unpacked/EV00.script.json",
+          "ja-JP": "archive/derived/ikura-scripts/ISF.unpacked/EV00.script.json"
+        },
+        "evidence": {
+          "zh-CN": [
+            "textEvents entry has explicit kind=title",
+            "instructionOffset=79",
+            "rawHex=bfaacabc",
+            "variantId=ikura/isc.unpacked/ev00"
+          ],
+          "ja-JP": [
+            "textEvents entry has explicit kind=title",
+            "instructionOffset=79",
+            "rawHex=82cd82b682dc82e8",
+            "variantId=ikura/isf.unpacked/ev00"
+          ]
+        },
+        "confidence": {
+          "zh-CN": 1,
+          "ja-JP": 1
+        }
+      }
+    }
+  ],
+  "variantRoutes": [
+    {
+      "variantId": "paired/kana-okaeri/ev00/zh-ja",
+      "locales": [
+        "zh-CN",
+        "ja-JP"
+      ],
+      "readerLocales": [
+        "ja-JP",
+        "zh-CN"
+      ],
+      "textLineCounts": {
+        "ja-JP": 1,
+        "zh-CN": 1
+      },
+      "sections": [
+        {
+          "sectionId": "main",
+          "entryEventId": "ikura-4f",
+          "events": [
+            {
+              "eventId": "ikura-4f",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 11,
+                "opcode": 247,
+                "status": "translated",
+                "zhOffset": 79,
+                "jaOffset": 79,
+                "originalDisplayText": {
+                  "zh-CN": "开始",
+                  "ja-JP": "はじまり"
+                }
+              },
+              "nextEventId": "ikura-ca",
+              "textLineIndex": {
+                "ja-JP": 0,
+                "zh-CN": 0
+              },
+              "cues": [
+                {
+                  "cueId": "cue-befa3e22593db4c5",
+                  "kind": "image",
+                  "timing": "scene",
+                  "mediaId": "asset/a-dc9cf3ab554a56ab",
+                  "resolverId": "research-media-v1",
+                  "raw": {
+                    "sourceKey": "BLACK",
+                    "playbackPath": "derived/images/kana/GGD.unpacked/BLACK.png",
+                    "instructionIndex": 7,
+                    "targetInstructionIndex": 192
+                  }
+                }
+              ]
+            },
+            {
+              "eventId": "ikura-ca",
+              "kind": "choice",
+              "source": {
+                "engine": "ikura",
+                "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV00.json",
+                "selectorInstructionIndex": 21,
+                "arms": [
+                  {
+                    "sourceInstructionIndex": 21,
+                    "sourceOpcode": 7,
+                    "kind": "indexed-jump",
+                    "armIndex": 1,
+                    "pointerIndex": 2,
+                    "targetInstructionIndex": 23,
+                    "targetKind": "instruction",
+                    "zhSourceOffset": 198,
+                    "jaSourceOffset": 202,
+                    "zhTargetOffset": 215,
+                    "jaTargetOffset": 219
+                  },
+                  {
+                    "sourceInstructionIndex": 21,
+                    "sourceOpcode": 7,
+                    "kind": "indexed-jump",
+                    "armIndex": 2,
+                    "pointerIndex": 3,
+                    "targetInstructionIndex": 25,
+                    "targetKind": "instruction",
+                    "zhSourceOffset": 198,
+                    "jaSourceOffset": 202,
+                    "zhTargetOffset": 227,
+                    "jaTargetOffset": 231
+                  }
+                ]
+              },
+              "choices": [
+                {
+                  "choiceId": "arm-db",
+                  "nextEventId": "end-001",
+                  "label": {
+                    "zh-CN": "我曾经有个妹妹。",
+                    "ja-JP": "俺には妹がいた。"
+                  }
+                },
+                {
+                  "choiceId": "arm-e7",
+                  "nextEventId": "end-001",
+                  "label": {
+                    "zh-CN": "我有个妹妹。　　",
+                    "ja-JP": "俺には妹がいる。"
+                  }
+                }
+              ]
+            },
+            {
+              "eventId": "end-001",
+              "kind": "end",
+              "cues": [
+                {
+                  "cueId": "cue-6e7732457a6032bf",
+                  "kind": "image",
+                  "timing": "scene",
+                  "mediaId": "asset/a-ad6b4cfed91ac328",
+                  "resolverId": "research-media-v1",
+                  "raw": {
+                    "sourceKey": "COM_B",
+                    "playbackPath": "derived/images/kana/GGD.unpacked/COM_B.png",
+                    "instructionIndex": 20,
+                    "targetInstructionIndex": 3326
+                  }
+                },
+                {
+                  "cueId": "cue-8c84905f3aef10f3",
+                  "kind": "image",
+                  "timing": "scene",
+                  "mediaId": "asset/a-dc9cf3ab554a56ab",
+                  "resolverId": "research-media-v1",
+                  "raw": {
+                    "sourceKey": "BLACK",
+                    "playbackPath": "derived/images/kana/GGD.unpacked/BLACK.png",
+                    "instructionIndex": 162,
+                    "targetInstructionIndex": 192
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "media": [
+    {
+      "mediaId": "asset/a-dc9cf3ab554a56ab",
+      "role": "image",
+      "url": "/corpus/archive/derived/images/kana/GGD.unpacked/BLACK.png",
+      "mimeType": "image/png"
+    },
+    {
+      "mediaId": "asset/a-ad6b4cfed91ac328",
+      "role": "image",
+      "url": "/corpus/archive/derived/images/kana/GGD.unpacked/COM_B.png",
+      "mimeType": "image/png"
+    }
+  ]
+}

@@ -9,6 +9,8 @@ import {
   validateMediaManifest,
   validateStoryDocument,
 } from '../packages/contracts/src/index.js';
+import { buildResearchCatalog } from '../packages/adapters/src/research-reader-v1.js';
+import { readEffectiveReaderManifests } from './lib/content-selection-corrections.mjs';
 import { voiceRouteSummary, voiceSlotForEvent } from '../packages/core/src/reader-session.js';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
@@ -22,7 +24,8 @@ const walk = async (directory) => {
   const entries = await readdir(directory, { withFileTypes: true });
   const files = [];
   for (const entry of entries) {
-    if (entry.name === '.git' || entry.name === 'reports') continue;
+    // Third-party packages and build caches are verified by their own build, not source syntax checks.
+    if (['.git','reports','node_modules','.next','.open-next','.wrangler','.pages-deploy','coverage','__pycache__'].includes(entry.name)) continue;
     const item = path.join(directory, entry.name);
     if (entry.isDirectory()) files.push(...await walk(item));
     else if (entry.isFile()) files.push(item);
@@ -70,7 +73,7 @@ const jsonFiles = files.filter((filename) => path.extname(filename) === '.json')
 for (const filename of jsonFiles) await readJson(filename);
 
 const catalog = validateCatalog(await readJson(path.join(webRoot, 'data', 'catalog.json')));
-let storyCount = 0;
+let fixtureStoryCount = 0;
 let sectionCount = 0;
 let eventCount = 0;
 let lineCount = 0;
@@ -130,7 +133,7 @@ for (const corpus of catalog.corpora) {
       verifiedMediaFiles.add(filename);
     }
 
-    storyCount += 1;
+    fixtureStoryCount += 1;
     sectionCount += story.variants.reduce((total, variant) => total + variant.sections.length, 0);
     eventCount += events.length;
     lineCount += lines.length;
@@ -139,17 +142,49 @@ for (const corpus of catalog.corpora) {
   }
 }
 
-const appManifest = await readJson(path.join(webRoot, '.well-known', 'adv-app.json'));
-const uiShellManifest = await readJson(path.join(webRoot, '.well-known', 'ui-shells.json'));
-if (uiShellManifest.contract !== 'ui-shell/1.0.0'
-  || uiShellManifest.defaultShellId !== 'classic'
-  || uiShellManifest.migration?.promotionPolicy !== 'manual-acceptance-only'
-  || uiShellManifest.migration?.persistent !== false
-  || uiShellManifest.migration?.autoPromotion !== false
-  || uiShellManifest.slots?.length !== 8
-  || uiShellManifest.shells.find((shell) => shell.id === 'next')?.requiresManualAcceptance !== true) {
-  throw new Error('dual UI shell migration contract is invalid');
+const readerManifestFilename = path.join(
+  corpusRoot,
+  'manifests',
+  'generated',
+  'reader-adapter.json',
+);
+await access(readerManifestFilename);
+const archivedManifest = await readJson(readerManifestFilename);
+const { readerManifest } = await readEffectiveReaderManifests(corpusRoot);
+const deployedCatalog = buildResearchCatalog(readerManifest, { corpusBaseUrl: '/corpus/' });
+const deployedCorpusCounts = Object.fromEntries(
+  deployedCatalog.corpora.map((corpus) => [corpus.corpusId, corpus.stories.length]),
+);
+const deployedStoryCount = deployedCatalog.corpora.reduce(
+  (total, corpus) => total + corpus.stories.length,
+  0,
+);
+const sourceVariants = archivedManifest.stories.flatMap(story => story.variants);
+const archivedTextEvents = sourceVariants.reduce((n,variant) => n + variant.textEventCount,0);
+const selected = readerManifest.stories.filter(story => story.resource.reader.decision === 'include');
+const sourceIdentity = story => story.readerIdentity ?? story.canonicalStoryId;
+const catalogIds = new Set(deployedCatalog.corpora.flatMap(corpus => corpus.stories.map(story => story.canonicalStoryId)));
+const expectedCorpusCounts = {
+  narcissu10: selected.filter(story => !['narcissu-3rd','kana-okaeri'].includes(story.gameId)).length,
+  narcissu3: selected.filter(story => story.gameId === 'narcissu-3rd').length,
+  kana: selected.filter(story => story.gameId === 'kana-okaeri').length,
+};
+if (archivedManifest.stories.length !== archivedManifest.counts.stories
+  || new Set(archivedManifest.stories.map(story => story.canonicalStoryId)).size !== archivedManifest.stories.length
+  || new Set(sourceVariants.map(variant => variant.id)).size !== sourceVariants.length
+  || sourceVariants.length !== archivedManifest.counts.variants
+  || archivedTextEvents !== archivedManifest.counts.textEvents
+  || JSON.stringify(deployedCorpusCounts) !== JSON.stringify(expectedCorpusCounts)
+  || selected.length === 0 || deployedStoryCount !== selected.length || catalogIds.size !== selected.length
+  || selected.some(story => !catalogIds.has(sourceIdentity(story)))
+  || deployedCatalog.sourceCounts?.variants !== sourceVariants.length
+  || deployedCatalog.sourceCounts?.textEvents !== archivedTextEvents
+  || readerManifest.validation?.failureCount !== 0) {
+  throw new Error('reviewed catalog membership or independent archive totals differ');
 }
+
+
+const appManifest = await readJson(path.join(webRoot, '.well-known', 'adv-app.json'));
 if (appManifest.schema !== 'adv-app-manifest/v1'
   || appManifest.protocol?.name !== 'adv-app-bridge'
   || appManifest.protocol?.version !== 1) {
@@ -166,7 +201,12 @@ console.log(JSON.stringify({
   status: 'PASS',
   javascriptFiles: javascriptFiles.length,
   jsonFiles: jsonFiles.length,
-  storyCount,
+  fixtureStoryCount,
+  deployedStoryCount,
+  archivedStoryCount: archivedManifest.stories.length,
+  deployedCorpusCounts,
+  deployedVariantCount: deployedCatalog.sourceCounts.variants,
+  deployedTextEventCount: deployedCatalog.sourceCounts.textEvents,
   sectionCount,
   eventCount,
   lineCount,

@@ -1,0 +1,439 @@
+@layer reader-visual-revision {
+  html body :is(#magi-home-display, #magi-reader-display) .magi-balloon-host {
+    position: sticky !important; top: 0; height: 0; min-height: 0;
+    flex: 0 0 0; width: 100%; z-index: 3 !important; pointer-events: none;
+    mix-blend-mode: multiply;
+  }
+  html body :is(#magi-home-display, #magi-reader-display) .magi-balloon-host .magi-balloon-rain[data-balloon-enabled='true'] {
+    position: absolute; inset: 0; height: 100dvh; width: 100%;
+    display: block !important;
+  }
+  html:is([data-reader-theme='dark'],[data-reader-theme='frost']) .magi-balloon-host { mix-blend-mode: screen !important; }
+  html body .magi-balloon-rain[data-balloon-theme='frost'] { --magi-balloon-layer-opacity: .44; }
+  .magi-balloon-pixel-skin { display: none; }
+  html[data-screen-pixel-font='true'] .magi-balloon-rain-item {
+    background: transparent !important; border: 0 !important; border-radius: 0 !important; box-shadow: none !important;
+    animation-name: magi-balloon-pixel-fall !important;
+  }
+  html:is([data-screen-pixel-font='true'],[data-reader-theme='dark']) .magi-balloon-rain-item {
+    animation-timing-function: steps(140,end) !important;
+  }
+  html[data-screen-pixel-font='true'] .magi-balloon-pixel-skin {
+    display: block; position: absolute; inset: 0;
+    clip-path: polygon(25% 0,75% 0,75% 10%,87.5% 10%,87.5% 20%,100% 20%,100% 60%,87.5% 60%,87.5% 80%,75% 80%,75% 90%,62.5% 90%,62.5% 100%,37.5% 100%,37.5% 90%,25% 90%,25% 80%,12.5% 80%,12.5% 60%,0 60%,0 20%,12.5% 20%,12.5% 10%,25% 10%);
+    background: linear-gradient(rgba(255,255,255,.68),rgba(255,255,255,.68)) 25% 18% / 12.5% 20% no-repeat,
+      linear-gradient(90deg,transparent 75%,rgba(0,0,0,.18) 75%),var(--magi-balloon-color);
+  }
+  html[data-screen-pixel-font='true'] .magi-balloon-rain-item::before { width: 2px; }
+  html[data-screen-pixel-font='true'] .magi-balloon-rain-item::after {
+    left: 43.75%; width: 12.5%; height: 10%;
+    border: 0; background: var(--magi-balloon-color);
+  }
+  @keyframes magi-balloon-pixel-fall {
+    from { transform: translate3d(0,-18vh,0); }
+    to { transform: translate3d(var(--magi-balloon-drift),136vh,0); }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html body :is(#magi-home-display, #magi-reader-display) .magi-balloon-host { display: none !important; }
+  }
+  /* Curved screen surrounds: daylight leaves only a trace of reflected hue. */
+  html[data-reader-theme='light'] { --magi-screen-surround: #080b0c; --magi-bezel-reflection: 166,189,193; }
+  html[data-reader-theme='paper'] { --magi-screen-surround: #0d0b07; --magi-bezel-reflection: 204,180,119; }
+  html[data-reader-theme='green'] { --magi-screen-surround: #060d09; --magi-bezel-reflection: 132,196,159; }
+  html[data-reader-theme='frost'] { --magi-screen-surround: #000; --magi-bezel-reflection: 105,188,177; }
+  html[data-reader-theme='dark'] { --magi-bezel-reflection: 132,192,92; }
+  html[data-reader-theme='green'] { --magi-day-signal-base: #d6e9c4; }
+  html[data-reader-theme='paper'] { --magi-day-signal-base: #f3eacb; }
+  html[data-reader-theme='light'] { --magi-day-signal-base: #d8d4c6; }
+  /* The black surround is outside the lens, never behind translucent day UI. */
+  html[data-screen-curvature='true']:is([data-reader-theme='light'],[data-reader-theme='paper'],[data-reader-theme='green']) body
+    :is(#magi-home-display,#magi-reader-display) {
+    background-color: var(--magi-day-signal-base) !important;
+  }
+  html[data-screen-curvature='true']:is([data-reader-theme='light'],[data-reader-theme='paper'],[data-reader-theme='green'],[data-reader-theme='frost']),
+  html[data-screen-curvature='true']:is([data-reader-theme='light'],[data-reader-theme='paper'],[data-reader-theme='green'],[data-reader-theme='frost']) body {
+    background: var(--magi-screen-surround) !important;
+  }
+  html[data-screen-curvature='true'] body :is(#magi-home-display,#magi-reader-display) {
+    /* Round the input signal before the lens bends it; this also rounds the
+       header/sidebar paint instead of leaving rectangular corners exposed. */
+    border-radius: clamp(22px,2.2vw,42px) / clamp(20px,3vh,34px) !important;
+    overflow: hidden !important;
+    clip-path: inset(0 round clamp(22px,2.2vw,42px) / clamp(20px,3vh,34px));
+  }
+  .magi-screen-bezel {
+    position: fixed; inset: 0; z-index: 1002; pointer-events: none;
+    border-radius: clamp(22px,2.2vw,42px) / clamp(20px,3vh,34px);
+    box-shadow: inset 0 0 2px 1px rgba(0,0,0,.9),
+      inset 0 0 9px 3px rgba(0,0,0,.58),
+      inset 0 0 24px 4px rgba(0,0,0,.25),
+      inset 0 2px 3px rgba(var(--magi-bezel-reflection),.1);
+  }
+  html[data-screen-curvature='true'] body :is(#magi-home-display, #magi-reader-display):has(.magi-reader-tube-surface[data-lens-ready='true']) {
+    filter: var(--magi-active-tube-filter, url('#magi-reader-tube-curve')) !important;
+  }
+  /* Flat daytime retains the old beam softness without a lens graph.
+     .39 is the combined radius of the .35/.18 curved signal stages. */
+  html:is([data-reader-theme='light'],[data-reader-theme='paper'],[data-reader-theme='green']) {
+    --magi-flat-day-filter: blur(.39px);
+  }
+  html[data-screen-curvature='false'] body :is(#magi-home-display, #magi-reader-display) {
+    filter: var(--magi-flat-day-filter, none) !important;
+  }
+  html[data-screen-curvature='false'] .magi-reader-tube-surface { display: none !important; }
+  html body :is(#magi-home-display, #magi-reader-display) .magi-reader-tube-lens { position: absolute; pointer-events: none; }
+  html body :is(#magi-home-display, #magi-reader-display) .magi-reader-tube-surface {
+    position: fixed; inset: 0; z-index: 1000; pointer-events: none;
+    overflow: hidden; border-radius: 18px / 13px;
+  }
+  html {
+    --magi-screen-noise: url('/textures/stories-untold/NoiseAndGrain.png');
+  }
+  /* Keep the original continuous grain, at a visible reading scale. Daylight
+     exposure is independent of the unchanged night/cold optical settings. */
+  html:is([data-reader-theme='light'],[data-reader-theme='paper'],[data-reader-theme='green']) {
+    --magi-screen-noise-opacity: .85;
+    --magi-screen-noise-size: 160px 160px;
+    --magi-screen-noise-background-blend: normal;
+    --magi-screen-noise-blend: hard-light;
+  }
+  html[data-screen-noise='false'] { --magi-screen-noise: linear-gradient(transparent,transparent); }
+  html body :is(#magi-home-display, #magi-reader-display, .magi-review-theme, .magi-loading-screen) .magi-reader-tube-phosphor {
+    position: fixed; inset: 0; z-index: 1000; pointer-events: none;
+    mix-blend-mode: var(--magi-screen-noise-blend, soft-light) !important;
+    background: var(--magi-screen-noise) 0 0 / var(--magi-screen-noise-size, 257px 131px) repeat !important;
+    background-blend-mode: var(--magi-screen-noise-background-blend, soft-light) !important;
+    opacity: var(--magi-screen-noise-opacity, .28) !important;
+  }
+  /* The mobile scrim dims the document, not a second noisy screen. Clip the
+     existing day grain to the sidebar; keep its accepted exposure unchanged. */
+  @media (max-width: 767px) {
+    html:is([data-reader-theme='light'],[data-reader-theme='paper'],[data-reader-theme='green']) body
+      #magi-reader-display[data-mobile-sidebar-open='true'] .magi-reader-tube-phosphor {
+      clip-path: inset(0 calc(100% - var(--magi-sidebar-mobile-width)) 0 0);
+    }
+  }
+  .magi-screen-scanlines {
+    position: fixed; inset: 0; width: 100%; height: 100%; z-index: 1000;
+    pointer-events: none; mix-blend-mode: multiply;
+    /* Soft beam shoulders are painted once as a gradient, not hundreds of
+       hairline paths or a blur/filter pass over the viewport. */
+    background: repeating-linear-gradient(0deg,
+      rgba(5,0,2,0) 0px, rgba(5,0,2,.06) .4px,
+      rgba(5,0,2,.22) .8px, rgba(5,0,2,.34) 1.2px,
+      rgba(5,0,2,.22) 1.6px, rgba(5,0,2,.06) 2px,
+      rgba(5,0,2,0) 2.4px, rgba(5,0,2,0) 3px);
+    opacity: var(--magi-tube-scan,.28);
+  }
+  html[data-screen-noise='false'] .magi-reader-tube-grain { display: none !important; }
+  html[data-screen-pixel-font='true'] body :is(#magi-home-display, #magi-reader-display, .magi-floating-window)
+    :is(button,input,textarea,a,span,p,b,strong,label,legend,h1,h2,h3,small,.magi-reader-speaker-label) {
+    font-family: var(--magi-night-pixel-font) !important;
+    font-synthesis: none !important; font-weight: 400 !important;
+  }
+  html[data-screen-pixel-font='true'] body :is(#magi-home-display, #magi-reader-display, .magi-floating-window)
+    :is([lang='ja'],[lang='ja'] *,[data-reader-text-content='jp'],[data-reader-text-content='jp'] *) {
+    font-family: var(--magi-night-pixel-font-jp) !important;
+  }
+  /* The same static registration and dispersion belongs to every text role,
+     including speaker names and metadata, not only dialogue spans. */
+  html[data-reader-theme='frost'] body :is(#magi-home-display, #magi-reader-display, .magi-floating-window) {
+    --magi-display-text-echo: var(--magi-cold-text-echo), 0 0 3px rgba(159,243,223,.55), 0 0 8px rgba(78,224,197,.32);
+  }
+  html[data-reader-theme='dark'] body :is(#magi-home-display, #magi-reader-display, .magi-floating-window) {
+    --magi-global-text-registration: clamp(-.8px,-.04em,-.35px) 0 .012em rgba(255,232,82,.58),clamp(.45px,.055em,1px) 0 .014em rgba(52,249,22,.56);
+    --magi-display-text-echo: clamp(-1.8px,calc(.91px - .124em),-.08px) 0 .016em rgba(255,232,82,.88),clamp(.1px,calc(.16em - 1.17px),2.3px) 0 .018em rgba(52,249,22,.82),0 0 .12em rgba(166,247,82,.24);
+    --magi-display-inverse-echo: clamp(.08px,calc(.14em - 1.03px),1.7px) 0 .007em #fffef1,clamp(.12px,calc(.21em - 1.52px),2.6px) .006em .015em #ffffd980;
+  }
+  html[data-reader-theme='dark'][data-night-phosphor='amber'] body :is(#magi-home-display,#magi-reader-display,.magi-floating-window) {
+    --magi-global-text-registration: 0 0 .045em rgba(255,255,240,.78),clamp(.45px,.055em,1px) .006em .012em rgba(255,85,25,.66);
+    --magi-display-inverse-echo: 0 0 .035em rgba(189,43,19,.96),clamp(.08px,calc(.14em - 1.03px),1.7px) 0 .007em #fffef1,clamp(.12px,calc(.21em - 1.52px),2.6px) .006em .015em #ffffd980;
+    --magi-display-text-echo: clamp(.05px,calc(.12em - .89px),1.65px) 0 0 #140a0c,clamp(.08px,calc(.27em - 2px),3.6px) .007em .007em #ff410de8,-.012em 0 .007em #fffad355,0 0 .16em #ffa72d35;
+  }
+  html[data-reader-theme='dark'][data-night-phosphor] body #magi-home-display {
+    --magi-display-text-echo: var(--home-optical-shadow);
+  }
+  html:is([data-reader-theme='frost'],[data-reader-theme='dark']) body :is(#magi-home-display, #magi-reader-display, .magi-floating-window)
+    :is([data-reader-text-content],.magi-reader-speaker-label,button,a,label,legend,h1,h2,h3,input,textarea,small,span,p,strong,b,output,summary,li,
+      .magi-reader-row-metrics,.magi-reader-source-statistics,.magi-reader-header-meta,.magi-reader-sidebar-folder-label,.magi-reader-story-label,.magi-reader-sidebar-section-label) {
+    text-shadow: var(--magi-display-text-echo) !important;
+  }
+  /* Add registration to the established phosphor ink, not to the screen
+     filter. Keeping the old shadow list intact preserves its soft core. */
+  html[data-reader-theme='dark'] body :is(#magi-home-display,#magi-reader-display,.magi-floating-window)
+    :is([data-reader-text-content],.magi-reader-speaker-label,button,a,label,legend,h1,h2,h3,input,textarea,small,span,p,strong,b,output,summary,li,
+      .magi-reader-row-metrics,.magi-reader-source-statistics,.magi-reader-header-meta,.magi-reader-sidebar-folder-label,.magi-reader-story-label,.magi-reader-sidebar-section-label) {
+    text-shadow: var(--magi-display-text-echo),var(--magi-global-text-registration) !important;
+  }
+  html[data-reader-theme='dark'] body :is(#magi-home-display,#magi-reader-display,.magi-floating-window) :is(input,textarea)::placeholder {
+    text-shadow: var(--magi-display-text-echo),var(--magi-global-text-registration) !important;
+    opacity: 1 !important;
+  }
+  html:is([data-reader-theme='frost'],[data-reader-theme='dark']) body #magi-reader-display .magi-reader-speaker-label {
+    opacity: 1 !important;
+  }
+  /* Inverse phosphor lettering needs a dark signal with a pale displaced
+     rim, not the glow used for light dialogue on a dark background. */
+  html[data-reader-theme='dark'] body
+    :is(#magi-home-display,#magi-reader-display,.magi-floating-window)
+    :is(.magi-home-category-trigger[data-selected='true'],.magi-home-category-filter[data-selected='true'],
+      button[aria-pressed='true'],.magi-reader-header-identity,.magi-floating-window-titlebar,
+      .magi-reader-sidebar-category-button[aria-expanded='true'],.magi-reader-sidebar-folder-button[aria-expanded='true'],
+      .magi-reader-sidebar-section-item[aria-current='location'],.magi-reader-sidebar-folder-button > span:last-child,.magi-reader-branch-header) {
+    --magi-display-text-echo: var(--magi-display-inverse-echo);
+    --magi-global-text-registration: clamp(.65px,.085em,1.4px) 0 .012em rgba(255,255,248,.95);
+    text-shadow: var(--magi-display-text-echo),var(--magi-global-text-registration) !important;
+  }
+  html[data-reader-theme='dark'][data-night-phosphor='amber'] body :is(#magi-home-display,#magi-reader-display,.magi-floating-window)
+    :is(.magi-reader-utility-button,.magi-reader-page-summary,.magi-reader-font-control,.magi-floating-window-body) {
+    --magi-display-text-echo: clamp(.08px,calc(.15em - 1.1px),1.8px) 0 .012em rgb(38,141,255),clamp(-.6px,calc(.4px - .06em),-.04px) 0 .014em rgba(103,255,235,.72),0 0 .1em #eaffff35;
+    --magi-global-text-registration: clamp(.45px,.06em,1px) 0 .012em rgba(38,141,255,.65),-.018em 0 .01em rgba(208,164,237,.4);
+  }
+  html[data-reader-theme='dark'] body .magi-translation-linebreak-overlay .text-transparent,
+  html[data-reader-theme='dark'] body .magi-translation-linebreak-overlay { text-shadow: none !important; }
+  html[data-reader-theme='frost'] body #magi-home-display .magi-brand-panel {
+    display: flex !important; justify-content: center !important; align-items: center !important;
+  }
+  html[data-reader-theme='frost'] body #magi-home-display .magi-home-search-shell input,
+  html[data-reader-theme='frost'] body #magi-home-display .magi-home-search-shell input::placeholder {
+    color: #e2fff8 !important; -webkit-text-fill-color: #e2fff8 !important;
+    opacity: 1 !important;
+    text-shadow: 0 0 2px rgba(211,255,246,.85),0 0 6px rgba(101,225,205,.55),.5px 0 rgba(233,255,255,.65) !important;
+  }
+  html[data-reader-theme='frost'] body #magi-home-display .magi-home-search-shell :is(svg,.pointer-events-none) {
+    color: #cefff2 !important; opacity: .95 !important;
+    filter: drop-shadow(0 0 2px rgba(159,255,227,.5));
+  }
+  html[data-reader-theme='frost'] body #magi-home-display :is(.magi-madeinmagius-logo,.magi-madeinmagius-wordmark,.magi-madeinmagius-text) {
+    display: block !important; width: auto !important; max-width: 100% !important;
+    margin-inline: auto !important; padding-inline: 0 !important;
+    transform: none !important; text-align: center !important;
+  }
+  html[data-reader-theme='frost'] body #magi-home-display .magi-madeinmagius-text::before {
+    font-size: clamp(10px,1.25vw,17px) !important; letter-spacing: .09em !important;
+    white-space: nowrap !important;
+  }
+  /* The floating navigator owns local-file opening, below the Home action. */
+  html body #magi-home-display .magi-home-toolbar-row {
+    display: flex !important; flex-wrap: wrap !important; justify-content: center !important;
+    align-items: center !important; gap: 5px !important;
+  }
+  html body #magi-home-display .magi-home-toolbar-controls {
+    display: contents !important;
+  }
+  html body #magi-home-display .magi-home-toolbar-controls > :not(.magi-home-search-shell) {
+    order: 4 !important; flex: 0 0 auto !important;
+  }
+  html body #magi-home-display .magi-home-search-shell {
+    order: 0 !important; flex: 1 1 12rem !important; width: auto !important;
+    min-width: 0 !important; max-width: none !important; margin: 0 !important;
+  }
+  html body #magi-home-display .magi-home-theme-switcher {
+    order: 1 !important; flex: 0 0 auto !important; margin: 0 !important;
+    align-self: center !important;
+  }
+  @media (max-width: 1023px) {
+    html body #magi-home-display .magi-home-toolbar-row::after {
+      content: '' !important; display: block !important; order: 3 !important;
+      flex: 0 0 100% !important; height: 0 !important; border: 0 !important;
+      position: static !important; padding: 0 !important; margin: -2px 0 !important;
+    }
+    html body #magi-home-display .magi-home-search-shell { flex-basis: 0 !important; }
+    html body #magi-home-display .magi-home-toolbar-row .magi-home-toolbar-controls > [data-toolbar-promoted='true'] {
+      order: 2 !important;
+    }
+  }
+  html body #magi-reader-display .magi-reader-identity-copy {
+    flex: 1 1 auto; min-width: 0;
+  }
+  html body #magi-reader-display .magi-reader-header-meta {
+    flex-wrap: wrap !important; max-width: 100% !important;
+  }
+  html body #magi-reader-display :is(.magi-reader-story-id,.magi-reader-story-title) {
+    max-width: 100% !important; white-space: normal !important; overflow: visible !important;
+    text-overflow: clip !important; overflow-wrap: anywhere !important;
+  }
+  html body #magi-reader-display .magi-reader-header-actions { flex-wrap: wrap !important; justify-content: center !important; }
+  html body #magi-reader-display .magi-reader-search-shell {
+    flex: 1 0 min(var(--magi-reader-search-min,3em),45%) !important;
+    min-width: min(var(--magi-reader-search-min,3em),45%) !important;
+    max-width: none !important; margin-inline: 0 !important; container-type: inline-size;
+  }
+  html body #magi-reader-display .magi-reader-search-shell:focus-within {
+    flex-basis: min(max(9em,var(--magi-reader-search-min,3em)),45%) !important;
+    min-width: min(9em,45%) !important;
+  }
+  @container (max-width: 90px) {
+    .magi-reader-search-shell input { padding-right: 0 !important; padding-left: 31px !important; }
+  }
+  html body #magi-reader-display .magi-reader-source-badge {
+    flex-shrink: 0 !important;
+  }
+  /* Explicit story/name inks choose their own edge colors. Frost deliberately
+     keeps its existing microfilm registration rather than receiving CRT ink. */
+  html[data-reader-theme='dark'] body :is(#magi-home-display,#magi-reader-display,.magi-floating-window)
+    :is([style*='--magi-ink-lead'],[style*='--magi-ink-lead'] *) {
+    text-shadow: -.045em 0 .014em var(--magi-ink-lead),.065em 0 .018em var(--magi-ink-trail),0 0 .09em var(--magi-ink-halo) !important;
+  }
+  html[data-screen-registration='true']:is([data-reader-theme='light'],[data-reader-theme='paper'],[data-reader-theme='green']) body
+    :is(#magi-home-display,#magi-reader-display,.magi-floating-window)
+    :is([data-reader-text-content],.magi-reader-speaker-label,button,a,label,legend,h1,h2,h3,input,textarea,small,span,p,strong,b,output,summary,li) {
+    text-shadow: -.018em 0 .008em rgba(44,57,74,.16),.028em .008em .008em rgba(127,75,53,.2) !important;
+  }
+  html[data-screen-registration='true']:is([data-reader-theme='light'],[data-reader-theme='paper'],[data-reader-theme='green']) body
+    :is(#magi-home-display,#magi-reader-display,.magi-floating-window)
+    :is([style*='--magi-ink-lead'],[style*='--magi-ink-lead'] *) {
+    text-shadow: -.02em 0 .008em color-mix(in srgb,var(--magi-ink-lead) 35%,transparent),.03em 0 .008em color-mix(in srgb,var(--magi-ink-trail) 40%,transparent) !important;
+  }
+  html body #magi-reader-display .magi-reader-source-download { flex-shrink: 0 !important; }
+  html body #magi-reader-display .magi-reader-header-meta {
+    font-size: 10px !important; line-height: 1.2 !important; gap: 3px !important;
+  }
+  html body #magi-reader-display .magi-reader-story-title {
+    font-size: inherit !important; line-height: 1.2 !important; opacity: 1 !important;
+  }
+  html body #magi-reader-display .magi-reader-header-meta :is(.magi-reader-source-badge,.magi-reader-source-download) {
+    min-width: 0 !important; min-height: 0 !important; height: 16px !important;
+    padding: 0 3px !important; font-size: 10px !important; line-height: 1.2 !important;
+    border-width: 1px !important; gap: 2px !important; border-radius: 1px !important;
+    opacity: 1 !important; align-items: center !important;
+  }
+  html body #magi-reader-display .magi-reader-header-meta .magi-reader-source-download svg {
+    width: 10px !important; height: 10px !important;
+  }
+  html body #magi-reader-display .magi-reader-main { padding-top: 0 !important; }
+  html body #magi-reader-display[data-reading-ruler='on'] .magi-reader-main { padding-top: 28px !important; }
+  html body #magi-reader-display .magi-reader-document { padding-top: 0 !important; }
+  html body #magi-reader-display .magi-reader-document-statistics {
+    margin-top: 0 !important; padding-top: 2px !important;
+  }
+  @media (min-width: 768px) {
+    html body #magi-reader-display .magi-reader-header { flex-wrap: nowrap !important; }
+    html body #magi-reader-display .magi-reader-header-identity { flex: 0 1 auto !important; max-width: none !important; }
+    html body #magi-reader-display .magi-reader-identity-copy { width: max-content !important; max-width: 100% !important; }
+    html body #magi-reader-display .magi-reader-header-actions { flex: 0 0 auto !important; margin-left: 0 !important; }
+  }
+  @media (max-width: 767px) {
+    html body #magi-reader-display .magi-reader-header-identity { flex: 1 1 100% !important; max-width: 100% !important; }
+    html body #magi-reader-display .magi-reader-identity-copy { width: 100%; }
+    html body #magi-reader-display .magi-reader-header-actions { margin-inline: auto !important; }
+  }
+  html body #magi-reader-display .magi-reader-utility-panel-floating {
+    height: auto !important; max-height: calc(100dvh - 7rem) !important;
+    padding: 5px 27px 5px 5px !important;
+    overflow-x: hidden !important; overflow-y: auto !important;
+    scrollbar-width: thin;
+    scrollbar-color: var(--magi-reader-scroll-thumb,var(--magi-ui-ink)) var(--magi-reader-scroll-track,var(--magi-ui-panel));
+  }
+  html body #magi-reader-display .magi-reader-utility-panel-floating::-webkit-scrollbar { width: 5px; }
+  html body #magi-reader-display .magi-reader-utility-panel-floating::-webkit-scrollbar-track { background: var(--magi-reader-scroll-track,var(--magi-ui-panel)); }
+  html body #magi-reader-display .magi-reader-utility-panel-floating::-webkit-scrollbar-thumb { background: var(--magi-reader-scroll-thumb,var(--magi-ui-ink)); border-radius: 3px; }
+  html body #magi-reader-display .magi-reader-utility-panel-floating::-webkit-scrollbar-button { display: none; }
+  html body #magi-reader-display .magi-reader-utility-content {
+    width: 100% !important; min-width: 0 !important; max-width: 100% !important;
+    display: flex !important; flex-direction: column !important; align-items: stretch !important; gap: 4px !important;
+  }
+  html body #magi-reader-display .magi-reader-utility-actions {
+    --utility-control-height: 28px;
+    width: 100% !important; display: flex !important; flex-wrap: wrap !important;
+    align-items: flex-start !important; justify-content: flex-start !important; gap: 4px !important;
+  }
+  html body #magi-reader-display .magi-reader-utility-voice-actions {
+    display: flex; flex-wrap: wrap; gap: 3px;
+  }
+  html body #magi-reader-display .magi-reader-utility-page-summary,
+  html body #magi-reader-display .magi-reader-page-summary {
+    white-space: normal !important; align-self: flex-start !important; margin: 0 !important;
+  }
+  html body #magi-reader-display .magi-reader-utility-theme-switcher {
+    display: contents !important; padding: 0 !important;
+    border: 0 !important; height: var(--utility-control-height) !important;
+  }
+  html body #magi-reader-display .magi-reader-utility-theme-switcher button {
+    order: 4; flex: 0 0 var(--utility-control-height) !important;
+    width: var(--utility-control-height) !important; height: var(--utility-control-height) !important;
+    min-height: var(--utility-control-height) !important; min-width: var(--utility-control-height) !important;
+    flex-basis: var(--utility-control-height) !important; padding: 3px !important;
+    transform: none !important;
+  }
+  html body #magi-reader-display .magi-reader-utility-home-stack {
+    display: contents;
+  }
+  html body #magi-reader-display .magi-reader-utility-actions > .magi-reader-utility-button { order: 1; }
+  html body #magi-reader-display .magi-reader-utility-voice-actions { order: 2; }
+  html body #magi-reader-display .magi-reader-utility-home-stack .magi-local-story-picker { order: 3; }
+  html body #magi-reader-display .magi-reader-utility-actions :is(.magi-reader-utility-button,.magi-local-story-picker-button) {
+    min-height: var(--utility-control-height) !important; height: var(--utility-control-height) !important;
+    padding: 3px 6px !important; font-size: 11px !important;
+    line-height: 1.15 !important; align-self: start;
+  }
+  html body #magi-reader-display .magi-reader-utility-home-stack .magi-local-story-picker-button {
+    width: 100%; color: var(--magi-ui-ink) !important;
+    background: var(--magi-ui-panel) !important; border-color: var(--magi-ui-edge) !important;
+  }
+  /* Source identity is not an inverse title label: keep grey/white even
+     inside a yellow or green header, including inherited text fill. */
+  html[data-reader-theme] body #magi-reader-display .magi-reader-source-badge,
+  html[data-reader-theme] body #magi-home-display.magi-home-shell[data-theme] .magi-official-tw-badge {
+    color: #fff !important; -webkit-text-fill-color: #fff !important;
+    background: #45494d !important; background-image: none !important;
+    border-color: #8b939b !important; opacity: 1 !important;
+    box-shadow: none !important; filter: none !important;
+    --magi-display-text-echo: clamp(.08px,calc(.15em - 1.1px),1.8px) 0 .012em rgb(38,141,255),-.025em 0 .014em rgba(103,255,235,.72);
+    --magi-global-text-registration: clamp(.4px,.05em,.8px) 0 .012em rgba(38,141,255,.6);
+    text-shadow: var(--magi-display-text-echo),var(--magi-global-text-registration) !important;
+  }
+  /* Zero coverage has its own quiet surface; text stays fully readable.
+     Only exact 0% metadata is used, never a translation-source guess. */
+  html[data-reader-theme] body #magi-home-display.magi-home-shell[data-theme] {
+    --magi-zero-coverage-surface: #e5e7e8;
+    --magi-zero-coverage-edge: #899198;
+  }
+  html[data-reader-theme='paper'] body #magi-home-display.magi-home-shell[data-theme] { --magi-zero-coverage-surface: #e6dfc9; }
+  html[data-reader-theme='green'] body #magi-home-display.magi-home-shell[data-theme] { --magi-zero-coverage-surface: #d2ddd0; }
+  html[data-reader-theme='frost'] body #magi-home-display.magi-home-shell[data-theme] { --magi-zero-coverage-surface: #14272e; --magi-zero-coverage-edge: #526b73; }
+  html[data-reader-theme='dark'] body #magi-home-display.magi-home-shell[data-theme] { --magi-zero-coverage-surface: #16201b; --magi-zero-coverage-edge: #657267; }
+  html[data-reader-theme='dark'][data-night-phosphor='amber'] body #magi-home-display.magi-home-shell[data-theme] { --magi-zero-coverage-surface: #292529; --magi-zero-coverage-edge: #81766a; }
+  html[data-reader-theme] body #magi-home-display.magi-home-shell[data-theme]
+    :is(.magi-folder-source-card,.magi-story-source-link)[data-translation-coverage-percent='0'] {
+    background: var(--magi-zero-coverage-surface) !important;
+    border-color: var(--magi-zero-coverage-edge) !important;
+  }
+  html[data-reader-theme] body #magi-home-display.magi-home-shell[data-theme]
+    .magi-folder-source-card[data-translation-coverage-percent='0'] > button,
+  html[data-reader-theme] body #magi-home-display.magi-home-shell[data-theme]
+    .magi-story-source-link[data-translation-coverage-percent='0'] .magi-home-story-heading-row {
+    background: var(--magi-zero-coverage-surface) !important;
+  }
+  @media (pointer: coarse) {
+    html body #magi-reader-display .magi-reader-utility-actions { --utility-control-height: 30px; }
+  }
+  @media (max-width: 767px) {
+    html body #magi-home-display .magi-home-mobile-category-nav[data-mobile-layout='graph'] {
+      grid-template-columns: repeat(var(--magi-category-columns), minmax(0,1fr)) !important;
+      justify-content: center !important; column-gap: clamp(6px,2vw,16px) !important;
+      width: 100% !important; overflow-x: hidden !important; scrollbar-gutter: auto !important;
+    }
+    html body #magi-home-display .magi-home-mobile-category-nav[data-mobile-layout='graph'] > .magi-home-category-node,
+    html body #magi-home-display .magi-home-mobile-category-nav[data-mobile-layout='graph'] .magi-home-category-trigger {
+      width: 100% !important; min-width: 0 !important; max-width: 100% !important;
+      justify-content: center !important;
+    }
+    html body #magi-home-display .magi-home-mobile-category-nav[data-mobile-layout='single-row'] {
+      justify-content: space-evenly !important; gap: clamp(6px,2vw,16px) !important;
+    }
+    html body #magi-home-display .magi-home-mobile-source-anchor-dot {
+      width: 24px !important; height: 24px !important; min-width: 24px !important; min-height: 24px !important;
+      top: -27px !important; padding: 0 !important; border: 1px solid color-mix(in srgb,var(--magi-ui-ink) 50%,transparent) !important;
+      border-radius: 0 !important; box-shadow: none !important; background: transparent !important;
+    }
+    html body #magi-home-display .magi-home-mobile-category-select-box {
+      width: 22px !important; height: 22px !important; min-width: 22px !important; min-height: 22px !important;
+      padding: 0 !important; border: 1px solid color-mix(in srgb,var(--magi-ui-ink) 50%,transparent) !important;
+      border-radius: 0 !important; box-shadow: none !important; background: transparent !important;
+    }
+    html body #magi-home-display .magi-home-mobile-category-select-box--below { bottom: -15px !important; }
+    html body #magi-home-display .magi-home-mobile-category-select-box--above { top: -15px !important; }
+    html body #magi-home-display .magi-home-mobile-source-filter-row[data-mobile-layout='graph'] { padding-top: 28px !important; }
+  }
+}

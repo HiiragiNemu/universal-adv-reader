@@ -1,0 +1,5540 @@
+{
+  "schema": "classic-reader-story-routes/v1",
+  "canonicalStoryId": "kana-okaeri/ev242",
+  "sourceCanonicalStoryId": "kana-okaeri/ev242",
+  "preferredVariantId": "paired/kana-okaeri/ev242/zh-ja",
+  "japaneseVariantId": "paired/kana-okaeri/ev242/zh-ja",
+  "chineseVariantId": "paired/kana-okaeri/ev242/zh-ja",
+  "voiceRouting": {
+    "schema": "classic-reader-voice-routing/v1",
+    "defaultState": "collapsed",
+    "expandedSlotMode": "all-lines",
+    "unresolvedLineBehavior": "visible"
+  },
+  "titleAuthority": {
+    "work": {
+      "authorityId": "work/kana",
+      "title_cn": "加奈～欢迎回来～",
+      "title_jp": "加奈…おかえり!!",
+      "source": {
+        "zh-CN": "archive/source-patches/kana-v1.01/payload/KANACHS.INI",
+        "ja-JP": "archive/inputs/kana/KANAOKA.EXE"
+      },
+      "evidence": {
+        "zh-CN": [
+          "UTF-16 line 7: TITLE=加奈～欢迎回来～",
+          "rawHex=5400490054004c0045003d00a05248595eff226bce8fde5665675eff"
+        ],
+        "ja-JP": [
+          "UTF-16LE product-title literal at byte offsets 792384,792608,792900",
+          "rawHex=a052485926204a304b3048308a3021002100"
+        ]
+      },
+      "confidence": {
+        "zh-CN": 1,
+        "ja-JP": 1
+      }
+    },
+    "arc": {
+      "authorityId": "arc/kana-okaeri",
+      "title_cn": "加奈～欢迎回来～",
+      "title_jp": "加奈…おかえり!!",
+      "source": {
+        "zh-CN": "archive/source-patches/kana-v1.01/payload/KANACHS.INI",
+        "ja-JP": "archive/inputs/kana/KANAOKA.EXE"
+      },
+      "evidence": {
+        "zh-CN": [
+          "UTF-16 line 7: TITLE=加奈～欢迎回来～",
+          "rawHex=5400490054004c0045003d00a05248595eff226bce8fde5665675eff"
+        ],
+        "ja-JP": [
+          "UTF-16LE product-title literal at byte offsets 792384,792608,792900",
+          "rawHex=a052485926204a304b3048308a3021002100"
+        ]
+      },
+      "confidence": {
+        "zh-CN": 1,
+        "ja-JP": 1
+      }
+    },
+    "story": {
+      "authorityId": "story/kana-okaeri/ev242",
+      "title_cn": "幼少期·迷之礼物",
+      "title_jp": "幼少期・謎のプレゼント",
+      "source": {
+        "zh-CN": "archive/derived/ikura-scripts/ISC.unpacked/EV242.script.json",
+        "ja-JP": "archive/derived/ikura-scripts/ISF.unpacked/EV242.script.json"
+      },
+      "evidence": {
+        "zh-CN": [
+          "textEvents entry has explicit kind=title",
+          "instructionOffset=71",
+          "rawHex=d3d7c9d9c6daa1a4c3d4d6aec0f1ceef",
+          "variantId=ikura/isc.unpacked/ev242"
+        ],
+        "ja-JP": [
+          "textEvents entry has explicit kind=title",
+          "instructionOffset=71",
+          "rawHex=97638fad8afa814593e482cc8376838c835b83938367",
+          "variantId=ikura/isf.unpacked/ev242"
+        ]
+      },
+      "confidence": {
+        "zh-CN": 1,
+        "ja-JP": 1
+      }
+    }
+  },
+  "sections": [
+    {
+      "sectionId": "main",
+      "entryEventId": "ikura-47",
+      "events": [
+        {
+          "eventId": "ikura-47",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 11,
+            "opcode": 247,
+            "status": "translated",
+            "zhOffset": 71,
+            "jaOffset": 71,
+            "originalDisplayText": {
+              "zh-CN": "幼少期·迷之礼物",
+              "ja-JP": "幼少期・謎のプレゼント"
+            }
+          },
+          "nextEventId": "ikura-80",
+          "textLineIndex": {
+            "ja-JP": 0
+          },
+          "cues": [
+            {
+              "cueId": "cue-b248c9b34adb8639",
+              "kind": "bgm",
+              "timing": "scene",
+              "mediaId": "asset/a-fee027a4308f0708",
+              "resolverId": "research-media-v1",
+              "raw": {
+                "sourceKey": "TK08.ogg",
+                "playbackPath": "raw/kana/WMSC.unpacked/TK08.OGG",
+                "instructionIndex": 2,
+                "targetInstructionIndex": 3078
+              }
+            },
+            {
+              "cueId": "cue-3b7c27c58ab9a16d",
+              "kind": "image",
+              "timing": "scene",
+              "mediaId": "asset/a-0919a972fe60f94a",
+              "resolverId": "research-media-v1",
+              "raw": {
+                "sourceKey": "KBG16A",
+                "playbackPath": "derived/images/kana/GGD.unpacked/KBG16A.png",
+                "instructionIndex": 4,
+                "targetInstructionIndex": 813
+              }
+            }
+          ]
+        },
+        {
+          "eventId": "ikura-80",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 17,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 122,
+            "jaOffset": 128,
+            "originalDisplayText": {
+              "zh-CN": "担　任：「……那么，随着加热水的体积会膨胀……」",
+              "ja-JP": "担　任：「……で、熱を加えることによって水は膨張する……」"
+            }
+          },
+          "nextEventId": "ikura-cf",
+          "textLineIndex": {
+            "ja-JP": 1
+          },
+          "cues": [
+            {
+              "cueId": "cue-ccbbc1125bc7f8ac",
+              "kind": "voice",
+              "timing": "utterance",
+              "mediaId": "asset/a-2a5969b0ba6d8f63",
+              "resolverId": "research-media-v1",
+              "raw": {
+                "sourceKey": "Etc0141",
+                "playbackPath": "raw/kana/VOICE.unpacked/ETC0141.OGG",
+                "instructionIndex": 17
+              }
+            }
+          ]
+        },
+        {
+          "eventId": "ikura-cf",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 21,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 208,
+            "jaOffset": 207,
+            "originalDisplayText": {
+              "zh-CN": "　理科的课。",
+              "ja-JP": "　理科の授業。"
+            }
+          },
+          "nextEventId": "ikura-f2",
+          "textLineIndex": {
+            "ja-JP": 2
+          }
+        },
+        {
+          "eventId": "ikura-f2",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 24,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 244,
+            "jaOffset": 242,
+            "originalDisplayText": {
+              "zh-CN": "　正好是第四课时，再过十几分钟就会到午饭的时间了。",
+              "ja-JP": "　ちょうど四時間目で、あと十数分を待てば昼ごはんとなる頃。"
+            }
+          },
+          "nextEventId": "ikura-14c",
+          "textLineIndex": {
+            "ja-JP": 3
+          }
+        },
+        {
+          "eventId": "ikura-14c",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 32,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 345,
+            "jaOffset": 332,
+            "originalDisplayText": {
+              "zh-CN": "　刺刺。",
+              "ja-JP": "　つんつん。"
+            }
+          },
+          "nextEventId": "ikura-16f",
+          "textLineIndex": {
+            "ja-JP": 4
+          }
+        },
+        {
+          "eventId": "ikura-16f",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 36,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 382,
+            "jaOffset": 367,
+            "originalDisplayText": {
+              "zh-CN": "　育郎在我的背后不停的戳着。",
+              "ja-JP": "　背後から育郎が背中をつついてくる。"
+            }
+          },
+          "nextEventId": "ikura-1a4",
+          "textLineIndex": {
+            "ja-JP": 5
+          }
+        },
+        {
+          "eventId": "ikura-1a4",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 40,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 439,
+            "jaOffset": 420,
+            "originalDisplayText": {
+              "zh-CN": "隆　道：「……嗯？」",
+              "ja-JP": "隆　道：「……ん？」"
+            }
+          },
+          "nextEventId": "ikura-1cb",
+          "textLineIndex": {
+            "ja-JP": 6
+          }
+        },
+        {
+          "eventId": "ikura-1cb",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 43,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 483,
+            "jaOffset": 459,
+            "originalDisplayText": {
+              "zh-CN": "育　郎：「不好意思，可以借我橡皮吗？」",
+              "ja-JP": "育　郎：「悪いんだけどさあ、消しゴム貸してくんない？」"
+            }
+          },
+          "nextEventId": "ikura-20e",
+          "textLineIndex": {
+            "ja-JP": 7
+          },
+          "cues": [
+            {
+              "cueId": "cue-a2ad701999b6e32b",
+              "kind": "voice",
+              "timing": "utterance",
+              "mediaId": "asset/a-434cfcfb6e7177c1",
+              "resolverId": "research-media-v1",
+              "raw": {
+                "sourceKey": "Iku0012",
+                "playbackPath": "raw/kana/VOICE.unpacked/IKU0012.OGG",
+                "instructionIndex": 43
+              }
+            }
+          ]
+        },
+        {
+          "eventId": "ikura-20e",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 46,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 554,
+            "jaOffset": 526,
+            "originalDisplayText": {
+              "zh-CN": "隆　道：「可以啊……你的丢了吗？」",
+              "ja-JP": "隆　道：「いいけど……なくしたのか？」"
+            }
+          },
+          "nextEventId": "ikura-23e",
+          "textLineIndex": {
+            "ja-JP": 8
+          }
+        },
+        {
+          "eventId": "ikura-23e",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 49,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 612,
+            "jaOffset": 574,
+            "originalDisplayText": {
+              "zh-CN": "育　郎：「被雅俊吃过，弄得满是口水黏糊糊的就扔了」",
+              "ja-JP": "育　郎：「雅俊に食われてヨダレでベトベトになったから捨てた」"
+            }
+          },
+          "nextEventId": "ikura-289",
+          "textLineIndex": {
+            "ja-JP": 9
+          },
+          "cues": [
+            {
+              "cueId": "cue-e0278f0a058acd66",
+              "kind": "voice",
+              "timing": "utterance",
+              "mediaId": "asset/a-05b64c04b1c5c042",
+              "resolverId": "research-media-v1",
+              "raw": {
+                "sourceKey": "Iku0013",
+                "playbackPath": "raw/kana/VOICE.unpacked/IKU0013.OGG",
+                "instructionIndex": 49
+              }
+            }
+          ]
+        },
+        {
+          "eventId": "ikura-289",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 52,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 695,
+            "jaOffset": 649,
+            "originalDisplayText": {
+              "zh-CN": "隆　道：「那家伙……」",
+              "ja-JP": "隆　道：「あいつ……」"
+            }
+          },
+          "nextEventId": "ikura-2cc",
+          "textLineIndex": {
+            "ja-JP": 10
+          }
+        },
+        {
+          "eventId": "ikura-2cc",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 60,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 768,
+            "jaOffset": 716,
+            "originalDisplayText": {
+              "zh-CN": "　我一边发着呆，一边将自己的橡皮递给身后的育郎。",
+              "ja-JP": "　俺は呆れつつ、自分の消しゴムを後ろ手で育郎に渡す。"
+            }
+          },
+          "nextEventId": "ikura-30e",
+          "textLineIndex": {
+            "ja-JP": 11
+          }
+        },
+        {
+          "eventId": "ikura-30e",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 64,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 845,
+            "jaOffset": 782,
+            "originalDisplayText": {
+              "zh-CN": "隆　道：「掰成一半用也可以」",
+              "ja-JP": "隆　道：「半分切って使っていいや」"
+            }
+          },
+          "nextEventId": "ikura-33e",
+          "textLineIndex": {
+            "ja-JP": 12
+          }
+        },
+        {
+          "eventId": "ikura-33e",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 67,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 897,
+            "jaOffset": 830,
+            "originalDisplayText": {
+              "zh-CN": "育　郎：「ｔｈａｎｋ　ｙｏｕ」",
+              "ja-JP": "育　郎：「サンキュー」"
+            }
+          },
+          "nextEventId": "ikura-375",
+          "textLineIndex": {
+            "ja-JP": 13
+          },
+          "cues": [
+            {
+              "cueId": "cue-7b139cf8f1359717",
+              "kind": "voice",
+              "timing": "utterance",
+              "mediaId": "asset/a-9d33a015cfd4e7ab",
+              "resolverId": "research-media-v1",
+              "raw": {
+                "sourceKey": "Iku0014",
+                "playbackPath": "raw/kana/VOICE.unpacked/IKU0014.OGG",
+                "instructionIndex": 67
+              }
+            }
+          ]
+        },
+        {
+          "eventId": "ikura-375",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 71,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 965,
+            "jaOffset": 885,
+            "originalDisplayText": {
+              "zh-CN": "　育郎从铅笔盒中取出画有动画人物的十五厘米尺子，将那个当成刀开始切起了橡皮。",
+              "ja-JP": "　育郎は筆箱からアニメものの十五センチ定規を取り出すと、それを包丁がわりに消しゴムを切りはじめた。"
+            }
+          },
+          "nextEventId": "ikura-3ef",
+          "textLineIndex": {
+            "ja-JP": 14
+          }
+        },
+        {
+          "eventId": "ikura-3ef",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 79,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 1095,
+            "jaOffset": 1007,
+            "originalDisplayText": {
+              "zh-CN": "育　郎：「一半就太不好意思了，稍微切一些就可以了」",
+              "ja-JP": "育　郎：「半分は悪いから、ちょっとだけもらうよ」"
+            }
+          },
+          "nextEventId": "ikura-431",
+          "textLineIndex": {
+            "ja-JP": 15
+          },
+          "cues": [
+            {
+              "cueId": "cue-b85c825ab10cf707",
+              "kind": "voice",
+              "timing": "utterance",
+              "mediaId": "asset/a-f3531026c770dc6c",
+              "resolverId": "research-media-v1",
+              "raw": {
+                "sourceKey": "Iku0015",
+                "playbackPath": "raw/kana/VOICE.unpacked/IKU0015.OGG",
+                "instructionIndex": 79
+              }
+            }
+          ]
+        },
+        {
+          "eventId": "ikura-431",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 82,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 1181,
+            "jaOffset": 1073,
+            "originalDisplayText": {
+              "zh-CN": "隆　道：「嗯」",
+              "ja-JP": "隆　道：「ん」"
+            }
+          },
+          "nextEventId": "ikura-453",
+          "textLineIndex": {
+            "ja-JP": 16
+          }
+        },
+        {
+          "eventId": "ikura-453",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 85,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 1219,
+            "jaOffset": 1107,
+            "originalDisplayText": {
+              "zh-CN": "育　郎：「……但是，可真硬啊，这个」",
+              "ja-JP": "育　郎：「……でも、けっこう硬いな、これ」"
+            }
+          },
+          "nextEventId": "ikura-48f",
+          "textLineIndex": {
+            "ja-JP": 17
+          },
+          "cues": [
+            {
+              "cueId": "cue-54a1180b73800141",
+              "kind": "voice",
+              "timing": "utterance",
+              "mediaId": "asset/a-8d7a700ccaa1d685",
+              "resolverId": "research-media-v1",
+              "raw": {
+                "sourceKey": "Iku0016",
+                "playbackPath": "raw/kana/VOICE.unpacked/IKU0016.OGG",
+                "instructionIndex": 85
+              }
+            }
+          ]
+        },
+        {
+          "eventId": "ikura-48f",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 88,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 1288,
+            "jaOffset": 1167,
+            "originalDisplayText": {
+              "zh-CN": "隆　道：「因为是连油笔也能擦掉的东西了」",
+              "ja-JP": "隆　道：「ボールペンも消せるやつだから」"
+            }
+          },
+          "nextEventId": "ikura-4c4",
+          "textLineIndex": {
+            "ja-JP": 18
+          }
+        },
+        {
+          "eventId": "ikura-4c4",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 91,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 1352,
+            "jaOffset": 1220,
+            "originalDisplayText": {
+              "zh-CN": "育　郎：「嗯呒唔唔唔……」",
+              "ja-JP": "育　郎：「んむむむむ……」"
+            }
+          },
+          "nextEventId": "ikura-4fc",
+          "textLineIndex": {
+            "ja-JP": 19
+          },
+          "cues": [
+            {
+              "cueId": "cue-726a0b806cf7ea33",
+              "kind": "voice",
+              "timing": "utterance",
+              "mediaId": "asset/a-8aecb12d6faed846",
+              "resolverId": "research-media-v1",
+              "raw": {
+                "sourceKey": "Iku0017",
+                "playbackPath": "raw/kana/VOICE.unpacked/IKU0017.OGG",
+                "instructionIndex": 91
+              }
+            }
+          ]
+        },
+        {
+          "eventId": "ikura-4fc",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 95,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 1416,
+            "jaOffset": 1276,
+            "originalDisplayText": {
+              "zh-CN": "　育郎在苦战中的声音传来。",
+              "ja-JP": "　育郎の苦戦する声。"
+            }
+          },
+          "nextEventId": "ikura-53e",
+          "textLineIndex": {
+            "ja-JP": 20
+          }
+        },
+        {
+          "eventId": "ikura-53e",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 103,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 1493,
+            "jaOffset": 1342,
+            "originalDisplayText": {
+              "zh-CN": "隆　道：「喂，太用力的话……」",
+              "ja-JP": "隆　道：「おい、あまり無茶すると……」"
+            }
+          },
+          "nextEventId": "ikura-570",
+          "textLineIndex": {
+            "ja-JP": 21
+          }
+        },
+        {
+          "eventId": "ikura-570",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 106,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 1547,
+            "jaOffset": 1392,
+            "originalDisplayText": {
+              "zh-CN": "育　郎：「没……只要再等一会……」",
+              "ja-JP": "育　郎：「いや……もちょっとなんだけど……」"
+            }
+          },
+          "nextEventId": "ikura-5ae",
+          "textLineIndex": {
+            "ja-JP": 22
+          },
+          "cues": [
+            {
+              "cueId": "cue-689ef56ab9543d99",
+              "kind": "voice",
+              "timing": "utterance",
+              "mediaId": "asset/a-d00a94315479a13f",
+              "resolverId": "research-media-v1",
+              "raw": {
+                "sourceKey": "Iku0018",
+                "playbackPath": "raw/kana/VOICE.unpacked/IKU0018.OGG",
+                "instructionIndex": 106
+              }
+            }
+          ]
+        },
+        {
+          "eventId": "ikura-5ae",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 109,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 1614,
+            "jaOffset": 1454,
+            "originalDisplayText": {
+              "zh-CN": "隆　道：「会受伤呦」",
+              "ja-JP": "隆　道：「怪我するぞ」"
+            }
+          },
+          "nextEventId": "ikura-5d6",
+          "textLineIndex": {
+            "ja-JP": 23
+          }
+        },
+        {
+          "eventId": "ikura-5d6",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 112,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 1658,
+            "jaOffset": 1494,
+            "originalDisplayText": {
+              "zh-CN": "育　郎：「没关系……唔呶呶呶呶……」",
+              "ja-JP": "育　郎：「だいじょうぶ……ぐぬぬぬぬぬぬ……」"
+            }
+          },
+          "nextEventId": "ikura-630",
+          "textLineIndex": {
+            "ja-JP": 24
+          },
+          "cues": [
+            {
+              "cueId": "cue-5167621dbc056797",
+              "kind": "voice",
+              "timing": "utterance",
+              "mediaId": "asset/a-9215d12508ed15d0",
+              "resolverId": "research-media-v1",
+              "raw": {
+                "sourceKey": "Iku0019",
+                "playbackPath": "raw/kana/VOICE.unpacked/IKU0019.OGG",
+                "instructionIndex": 112
+              }
+            }
+          ]
+        },
+        {
+          "eventId": "ikura-630",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 119,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 1754,
+            "jaOffset": 1584,
+            "originalDisplayText": {
+              "zh-CN": "　和育郎苦闷的声音一起，尺子在桌上敲击所发出的『啪』的一声在教室中回响着。",
+              "ja-JP": "　育郎の苦悶の声と共に、定規が机を叩く『べち』という音が教室に響いた。"
+            }
+          },
+          "nextEventId": "ikura-67b",
+          "textLineIndex": {
+            "ja-JP": 25
+          }
+        },
+        {
+          "eventId": "ikura-67b",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 122,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 1852,
+            "jaOffset": 1659,
+            "originalDisplayText": {
+              "zh-CN": "　教室中的视线，集中在我们的身上。",
+              "ja-JP": "　教室中の視線が、俺たちに集まった。"
+            }
+          },
+          "nextEventId": "ikura-6ac",
+          "textLineIndex": {
+            "ja-JP": 26
+          }
+        },
+        {
+          "eventId": "ikura-6ac",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 125,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 1910,
+            "jaOffset": 1708,
+            "originalDisplayText": {
+              "zh-CN": "　在这瞬间。",
+              "ja-JP": "　その瞬間。"
+            }
+          },
+          "nextEventId": "ikura-6cc",
+          "textLineIndex": {
+            "ja-JP": 27
+          }
+        },
+        {
+          "eventId": "ikura-6cc",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 128,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 1946,
+            "jaOffset": 1740,
+            "originalDisplayText": {
+              "zh-CN": "　受到尺子的压力而弹出的橡皮，通过打开的窗子，飞向了外面的青空。",
+              "ja-JP": "　定規の圧力にはじかれた消しゴムは、開け放たれた窓から、青空めがけて飛んでいった。"
+            }
+          },
+          "nextEventId": "ikura-734",
+          "textLineIndex": {
+            "ja-JP": 28
+          }
+        },
+        {
+          "eventId": "ikura-734",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 136,
+            "opcode": 43,
+            "status": "unchanged",
+            "zhOffset": 2061,
+            "jaOffset": 1844,
+            "originalDisplayText": {
+              "zh-CN": "隆　道：「……………………」",
+              "ja-JP": "隆　道：「……………………」"
+            }
+          },
+          "nextEventId": "ikura-765",
+          "textLineIndex": {
+            "ja-JP": 29
+          }
+        },
+        {
+          "eventId": "ikura-765",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 139,
+            "opcode": 43,
+            "status": "unchanged",
+            "zhOffset": 2113,
+            "jaOffset": 1893,
+            "originalDisplayText": {
+              "zh-CN": "育　郎：「……………………」",
+              "ja-JP": "育　郎：「……………………」"
+            }
+          },
+          "nextEventId": "ikura-7b6",
+          "textLineIndex": {
+            "ja-JP": 30
+          },
+          "cues": [
+            {
+              "cueId": "cue-fad09c44c03ed8ec",
+              "kind": "voice",
+              "timing": "utterance",
+              "mediaId": "asset/a-fba9f0261b7e84fc",
+              "resolverId": "research-media-v1",
+              "raw": {
+                "sourceKey": "Iku0020",
+                "playbackPath": "raw/kana/VOICE.unpacked/IKU0020.OGG",
+                "instructionIndex": 139
+              }
+            }
+          ]
+        },
+        {
+          "eventId": "ikura-7b6",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 145,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 2197,
+            "jaOffset": 1974,
+            "originalDisplayText": {
+              "zh-CN": "　在远处传来了鸟叫声。",
+              "ja-JP": "　どこかで鳥が鳴いていた。"
+            }
+          },
+          "nextEventId": "ikura-7dd",
+          "textLineIndex": {
+            "ja-JP": 31
+          }
+        },
+        {
+          "eventId": "ikura-7dd",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 148,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 2243,
+            "jaOffset": 2013,
+            "originalDisplayText": {
+              "zh-CN": "　应该是学校养的鸡。",
+              "ja-JP": "　学校で飼育しているニワトリに違いなかった。"
+            }
+          },
+          "nextEventId": "ikura-82d",
+          "textLineIndex": {
+            "ja-JP": 32
+          }
+        },
+        {
+          "eventId": "ikura-82d",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 156,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 2314,
+            "jaOffset": 2093,
+            "originalDisplayText": {
+              "zh-CN": "担　任：「笨蛋家伙」",
+              "ja-JP": "担　任：「ばかね」"
+            }
+          },
+          "nextEventId": "ikura-85f",
+          "textLineIndex": {
+            "ja-JP": 33
+          },
+          "cues": [
+            {
+              "cueId": "cue-2dd6d66804d53389",
+              "kind": "voice",
+              "timing": "utterance",
+              "mediaId": "asset/a-2ef4dac8f8b8e9de",
+              "resolverId": "research-media-v1",
+              "raw": {
+                "sourceKey": "Etc0142",
+                "playbackPath": "raw/kana/VOICE.unpacked/ETC0142.OGG",
+                "instructionIndex": 156
+              }
+            }
+          ]
+        },
+        {
+          "eventId": "ikura-85f",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 160,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 2372,
+            "jaOffset": 2143,
+            "originalDisplayText": {
+              "zh-CN": "　我们依次被轻敲了脑袋，作为惩罚还让我们来回答问题。",
+              "ja-JP": "　それぞれ軽く頭を叩かれ、罰として問題を解かされる俺たちだった。"
+            }
+          },
+          "nextEventId": "ikura-920",
+          "textLineIndex": {
+            "ja-JP": 34
+          }
+        },
+        {
+          "eventId": "ikura-920",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 185,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 2577,
+            "jaOffset": 2336,
+            "originalDisplayText": {
+              "zh-CN": "隆　道：「……我说呐」",
+              "ja-JP": "隆　道：「……あのな」"
+            }
+          },
+          "nextEventId": "ikura-948",
+          "textLineIndex": {
+            "ja-JP": 35
+          },
+          "cues": [
+            {
+              "cueId": "cue-f661d00a15781654",
+              "kind": "image",
+              "timing": "scene",
+              "mediaId": "asset/a-dc9cf3ab554a56ab",
+              "resolverId": "research-media-v1",
+              "raw": {
+                "sourceKey": "BLACK",
+                "playbackPath": "derived/images/kana/GGD.unpacked/BLACK.png",
+                "instructionIndex": 165,
+                "targetInstructionIndex": 711
+              }
+            },
+            {
+              "cueId": "cue-36f328c3724ab6f8",
+              "kind": "bgm",
+              "timing": "scene",
+              "mediaId": "asset/a-d9ee14ec700484ad",
+              "resolverId": "research-media-v1",
+              "raw": {
+                "sourceKey": "TK07.ogg",
+                "playbackPath": "raw/kana/WMSC.unpacked/TK07.OGG",
+                "instructionIndex": 169,
+                "targetInstructionIndex": 3073
+              }
+            },
+            {
+              "cueId": "cue-cdc9fcf241c99a46",
+              "kind": "image",
+              "timing": "scene",
+              "mediaId": "asset/a-3cd4d429644fe692",
+              "resolverId": "research-media-v1",
+              "raw": {
+                "sourceKey": "KBG15AP1",
+                "playbackPath": "derived/images/kana/GGD.unpacked/KBG15AP1.png",
+                "instructionIndex": 171,
+                "targetInstructionIndex": 810
+              }
+            },
+            {
+              "cueId": "cue-46c72f2d1bb7cf74",
+              "kind": "image",
+              "timing": "scene",
+              "mediaId": "asset/a-734a45e54ae9587a",
+              "resolverId": "research-media-v1",
+              "raw": {
+                "sourceKey": "KSI01",
+                "playbackPath": "derived/images/kana/GGD.unpacked/KSI01.png",
+                "instructionIndex": 173,
+                "targetInstructionIndex": 1119
+              }
+            }
+          ]
+        },
+        {
+          "eventId": "ikura-948",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 188,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 2623,
+            "jaOffset": 2376,
+            "originalDisplayText": {
+              "zh-CN": "育　郎：「抱歉。橡皮，我会赔的」",
+              "ja-JP": "育　郎：「悪い。消しゴム、弁償する」"
+            }
+          },
+          "nextEventId": "ikura-983",
+          "textLineIndex": {
+            "ja-JP": 36
+          },
+          "cues": [
+            {
+              "cueId": "cue-c60b739507ea44ef",
+              "kind": "voice",
+              "timing": "utterance",
+              "mediaId": "asset/a-fc1080103be5983b",
+              "resolverId": "research-media-v1",
+              "raw": {
+                "sourceKey": "Iku0021",
+                "playbackPath": "raw/kana/VOICE.unpacked/IKU0021.OGG",
+                "instructionIndex": 188
+              }
+            }
+          ]
+        },
+        {
+          "eventId": "ikura-983",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 191,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 2688,
+            "jaOffset": 2435,
+            "originalDisplayText": {
+              "zh-CN": "隆　道：「不用在意……只不过是橡皮而已」",
+              "ja-JP": "隆　道：「別にいいけどな……消しゴムくらいさ」"
+            }
+          },
+          "nextEventId": "ikura-9ba",
+          "textLineIndex": {
+            "ja-JP": 37
+          }
+        },
+        {
+          "eventId": "ikura-9ba",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 194,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 2752,
+            "jaOffset": 2490,
+            "originalDisplayText": {
+              "zh-CN": "育　郎：「第五堂课，该怎么办呢」",
+              "ja-JP": "育　郎：「五時間目の授業、どうしようか」"
+            }
+          },
+          "nextEventId": "ikura-9f8",
+          "textLineIndex": {
+            "ja-JP": 38
+          },
+          "cues": [
+            {
+              "cueId": "cue-5f3f14c80df32eab",
+              "kind": "voice",
+              "timing": "utterance",
+              "mediaId": "asset/a-ecd10f124fc11f96",
+              "resolverId": "research-media-v1",
+              "raw": {
+                "sourceKey": "Iku0022",
+                "playbackPath": "raw/kana/VOICE.unpacked/IKU0022.OGG",
+                "instructionIndex": 194
+              }
+            }
+          ]
+        },
+        {
+          "eventId": "ikura-9f8",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 197,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 2817,
+            "jaOffset": 2552,
+            "originalDisplayText": {
+              "zh-CN": "隆　道：「只要别写错就好了吧」",
+              "ja-JP": "隆　道：「間違えないよう写せばいいだろ」"
+            }
+          },
+          "nextEventId": "ikura-a5b",
+          "textLineIndex": {
+            "ja-JP": 39
+          }
+        },
+        {
+          "eventId": "ikura-a5b",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 208,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 2920,
+            "jaOffset": 2651,
+            "originalDisplayText": {
+              "zh-CN": "　不过。",
+              "ja-JP": "　ところが。"
+            }
+          },
+          "nextEventId": "ikura-ac0",
+          "textLineIndex": {
+            "ja-JP": 40
+          },
+          "cues": [
+            {
+              "cueId": "cue-d83694c23e5d7712",
+              "kind": "image",
+              "timing": "scene",
+              "mediaId": "asset/a-dc9cf3ab554a56ab",
+              "resolverId": "research-media-v1",
+              "raw": {
+                "sourceKey": "BLACK",
+                "playbackPath": "derived/images/kana/GGD.unpacked/BLACK.png",
+                "instructionIndex": 202,
+                "targetInstructionIndex": 711
+              }
+            }
+          ]
+        },
+        {
+          "eventId": "ikura-ac0",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 223,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 3023,
+            "jaOffset": 2752,
+            "originalDisplayText": {
+              "zh-CN": "隆　道：「……嗯？」",
+              "ja-JP": "隆　道：「……ん？」"
+            }
+          },
+          "nextEventId": "ikura-aec",
+          "textLineIndex": {
+            "ja-JP": 41
+          },
+          "cues": [
+            {
+              "cueId": "cue-4682a97db4062c0c",
+              "kind": "image",
+              "timing": "scene",
+              "mediaId": "asset/a-3cd4d429644fe692",
+              "resolverId": "research-media-v1",
+              "raw": {
+                "sourceKey": "KBG15AP1",
+                "playbackPath": "derived/images/kana/GGD.unpacked/KBG15AP1.png",
+                "instructionIndex": 212,
+                "targetInstructionIndex": 810
+              }
+            }
+          ]
+        },
+        {
+          "eventId": "ikura-aec",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 227,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 3072,
+            "jaOffset": 2796,
+            "originalDisplayText": {
+              "zh-CN": "　第五堂课开始前五分钟，从校庭处回到教室里的我，发现桌子上放着橡皮。",
+              "ja-JP": "　五時間目の授業開始五分前、校庭から教室に戻った俺は、机の上に置いてある消しゴムを見つけた。"
+            }
+          },
+          "nextEventId": "ikura-b64",
+          "textLineIndex": {
+            "ja-JP": 42
+          }
+        },
+        {
+          "eventId": "ikura-b64",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 235,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 3191,
+            "jaOffset": 2916,
+            "originalDisplayText": {
+              "zh-CN": "隆　道：「呐，育郎」",
+              "ja-JP": "隆　道：「なあ、育郎」"
+            }
+          },
+          "nextEventId": "ikura-bc8",
+          "textLineIndex": {
+            "ja-JP": 43
+          }
+        },
+        {
+          "eventId": "ikura-bc8",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 248,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 3295,
+            "jaOffset": 3016,
+            "originalDisplayText": {
+              "zh-CN": "育　郎：「什么？」",
+              "ja-JP": "育　郎：「なに？」"
+            }
+          },
+          "nextEventId": "ikura-bf5",
+          "textLineIndex": {
+            "ja-JP": 44
+          },
+          "cues": [
+            {
+              "cueId": "cue-d842ac5b2478d6bc",
+              "kind": "voice",
+              "timing": "utterance",
+              "mediaId": "asset/a-95d1500c1eaf7f15",
+              "resolverId": "research-media-v1",
+              "raw": {
+                "sourceKey": "Iku0023",
+                "playbackPath": "raw/kana/VOICE.unpacked/IKU0023.OGG",
+                "instructionIndex": 248
+              }
+            },
+            {
+              "cueId": "cue-bbe3c1490209813c",
+              "kind": "image",
+              "timing": "scene",
+              "mediaId": "asset/a-3cd4d429644fe692",
+              "resolverId": "research-media-v1",
+              "raw": {
+                "sourceKey": "KBG15AP1",
+                "playbackPath": "derived/images/kana/GGD.unpacked/KBG15AP1.png",
+                "instructionIndex": 238,
+                "targetInstructionIndex": 810
+              }
+            },
+            {
+              "cueId": "cue-d72cc340bdf58f0d",
+              "kind": "image",
+              "timing": "scene",
+              "mediaId": "asset/a-734a45e54ae9587a",
+              "resolverId": "research-media-v1",
+              "raw": {
+                "sourceKey": "KSI01",
+                "playbackPath": "derived/images/kana/GGD.unpacked/KSI01.png",
+                "instructionIndex": 240,
+                "targetInstructionIndex": 1119
+              }
+            }
+          ]
+        },
+        {
+          "eventId": "ikura-bf5",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 251,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 3346,
+            "jaOffset": 3061,
+            "originalDisplayText": {
+              "zh-CN": "隆　道：「橡皮，你没有去买吧？」",
+              "ja-JP": "隆　道：「消しゴム、買ってたりしないよな？」"
+            }
+          },
+          "nextEventId": "ikura-c29",
+          "textLineIndex": {
+            "ja-JP": 45
+          }
+        },
+        {
+          "eventId": "ikura-c29",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 254,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 3402,
+            "jaOffset": 3113,
+            "originalDisplayText": {
+              "zh-CN": "育　郎：「橡皮……刚才的？　啊，难道说还在生气？　果然还是我赔给你吧？」",
+              "ja-JP": "育　郎：「消しゴムって……さっきの？　あ、もしかしてまだ怒ってる？　やっぱり弁償しようか？」"
+            }
+          },
+          "nextEventId": "ikura-c83",
+          "textLineIndex": {
+            "ja-JP": 46
+          },
+          "cues": [
+            {
+              "cueId": "cue-70d3c10b62d3de34",
+              "kind": "voice",
+              "timing": "utterance",
+              "mediaId": "asset/a-1f8edc05af0a2c78",
+              "resolverId": "research-media-v1",
+              "raw": {
+                "sourceKey": "Iku0024",
+                "playbackPath": "raw/kana/VOICE.unpacked/IKU0024.OGG",
+                "instructionIndex": 254
+              }
+            }
+          ]
+        },
+        {
+          "eventId": "ikura-c83",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 257,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 3507,
+            "jaOffset": 3203,
+            "originalDisplayText": {
+              "zh-CN": "隆　道：「不是，不是那样……」",
+              "ja-JP": "隆　道：「いや、そんなんじゃないけど……」"
+            }
+          },
+          "nextEventId": "ikura-cfc",
+          "textLineIndex": {
+            "ja-JP": 47
+          }
+        },
+        {
+          "eventId": "ikura-cfc",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 272,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 3632,
+            "jaOffset": 3324,
+            "originalDisplayText": {
+              "zh-CN": "　看来不是育郎。",
+              "ja-JP": "　育郎ではないらしい。"
+            }
+          },
+          "nextEventId": "ikura-d21",
+          "textLineIndex": {
+            "ja-JP": 48
+          },
+          "cues": [
+            {
+              "cueId": "cue-30365e92fcf161fe",
+              "kind": "image",
+              "timing": "scene",
+              "mediaId": "asset/a-3cd4d429644fe692",
+              "resolverId": "research-media-v1",
+              "raw": {
+                "sourceKey": "KBG15AP1",
+                "playbackPath": "derived/images/kana/GGD.unpacked/KBG15AP1.png",
+                "instructionIndex": 261,
+                "targetInstructionIndex": 810
+              }
+            }
+          ]
+        },
+        {
+          "eventId": "ikura-d21",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 275,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 3672,
+            "jaOffset": 3361,
+            "originalDisplayText": {
+              "zh-CN": "　课桌的一角，像是女生用的粉红色的小小的橡皮正端正地放置着。",
+              "ja-JP": "　机の端っこの方に、ファンシーなピンク色の小さい消しゴム（新品）が、ちんまりと置かれていた。"
+            }
+          },
+          "nextEventId": "ikura-d76",
+          "textLineIndex": {
+            "ja-JP": 49
+          }
+        },
+        {
+          "eventId": "ikura-d76",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 278,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 3756,
+            "jaOffset": 3446,
+            "originalDisplayText": {
+              "zh-CN": "　用薄膜包裹着，还画着动漫角色的橡皮。",
+              "ja-JP": "　セロファンに包まれた、キャラクターものの消しゴム。"
+            }
+          },
+          "nextEventId": "ikura-db1",
+          "textLineIndex": {
+            "ja-JP": 50
+          }
+        },
+        {
+          "eventId": "ikura-db1",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 281,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 3818,
+            "jaOffset": 3505,
+            "originalDisplayText": {
+              "zh-CN": "　男生使用的话稍微有些害羞。",
+              "ja-JP": "　男子が使うにはちょっと恥ずかしい。"
+            }
+          },
+          "nextEventId": "ikura-ddf",
+          "textLineIndex": {
+            "ja-JP": 51
+          }
+        },
+        {
+          "eventId": "ikura-ddf",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 284,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 3870,
+            "jaOffset": 3551,
+            "originalDisplayText": {
+              "zh-CN": "　但是，与那相比更介意的是，这是谁买的，又是怎么一回事。",
+              "ja-JP": "　だけど、それよりも気になるのは、これを誰が置いたのか、ということだった。"
+            }
+          },
+          "nextEventId": "ikura-e3a",
+          "textLineIndex": {
+            "ja-JP": 52
+          }
+        },
+        {
+          "eventId": "ikura-e3a",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 292,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 3977,
+            "jaOffset": 3642,
+            "originalDisplayText": {
+              "zh-CN": "　最后，既没有现身也没有留下名字的那个亲切的人的真身，我还是没有弄清楚。",
+              "ja-JP": "　結局、姿も見せず名乗りもあげない親切人の正体は、判明することはなかった。"
+            }
+          },
+          "nextEventId": "ikura-e84",
+          "textLineIndex": {
+            "ja-JP": 53
+          }
+        },
+        {
+          "eventId": "ikura-e84",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 295,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 4073,
+            "jaOffset": 3716,
+            "originalDisplayText": {
+              "zh-CN": "　我稍微觉得有些可疑，继续使着那个橡皮。",
+              "ja-JP": "　ちょっと不審に思いつつも、俺はその消しゴムを使った。"
+            }
+          },
+          "nextEventId": "ikura-f09",
+          "textLineIndex": {
+            "ja-JP": 54
+          }
+        },
+        {
+          "eventId": "ikura-f09",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 311,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 4212,
+            "jaOffset": 3849,
+            "originalDisplayText": {
+              "zh-CN": "　那一天，从给食委员会走出的我（当时是给食委员）在归途中看了一下鞋柜，发现那里面放着老鼠饰样的小包。",
+              "ja-JP": "　その日、給食委員会に出た俺（当時、給食委員）が帰り際に下駄箱をのぞくと、ねずみのアップリケつき巾着が入れてあった。"
+            }
+          },
+          "nextEventId": "ikura-f78",
+          "textLineIndex": {
+            "ja-JP": 55
+          },
+          "cues": [
+            {
+              "cueId": "cue-02223bbd41accd69",
+              "kind": "image",
+              "timing": "scene",
+              "mediaId": "asset/a-dc9cf3ab554a56ab",
+              "resolverId": "research-media-v1",
+              "raw": {
+                "sourceKey": "BLACK",
+                "playbackPath": "derived/images/kana/GGD.unpacked/BLACK.png",
+                "instructionIndex": 300,
+                "targetInstructionIndex": 711
+              }
+            }
+          ]
+        },
+        {
+          "eventId": "ikura-f78",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 315,
+            "opcode": 43,
+            "status": "unchanged",
+            "zhOffset": 4341,
+            "jaOffset": 3960,
+            "originalDisplayText": {
+              "zh-CN": "隆　道：「……………………」",
+              "ja-JP": "隆　道：「……………………」"
+            }
+          },
+          "nextEventId": "ikura-fae",
+          "textLineIndex": {
+            "ja-JP": 56
+          }
+        },
+        {
+          "eventId": "ikura-fae",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 319,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 4398,
+            "jaOffset": 4014,
+            "originalDisplayText": {
+              "zh-CN": "　拿出来，确认一下里面的东西。",
+              "ja-JP": "　取り出し、中身を確認してみる。"
+            }
+          },
+          "nextEventId": "ikura-1027",
+          "textLineIndex": {
+            "ja-JP": 57
+          }
+        },
+        {
+          "eventId": "ikura-1027",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 335,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 4527,
+            "jaOffset": 4135,
+            "originalDisplayText": {
+              "zh-CN": "　是个人偶……",
+              "ja-JP": "　人形……だった。"
+            }
+          },
+          "nextEventId": "ikura-1051",
+          "textLineIndex": {
+            "ja-JP": 58
+          },
+          "cues": [
+            {
+              "cueId": "cue-1f2a80849e496a49",
+              "kind": "bgm",
+              "timing": "scene",
+              "mediaId": "asset/a-3c76e89aed3ad9b7",
+              "resolverId": "research-media-v1",
+              "raw": {
+                "sourceKey": "TK09.ogg",
+                "playbackPath": "raw/kana/WMSC.unpacked/TK09.OGG",
+                "instructionIndex": 322,
+                "targetInstructionIndex": 3083
+              }
+            },
+            {
+              "cueId": "cue-bbc096d1bdbb0a73",
+              "kind": "image",
+              "timing": "scene",
+              "mediaId": "asset/a-d5ef1c160f247073",
+              "resolverId": "research-media-v1",
+              "raw": {
+                "sourceKey": "KE034",
+                "playbackPath": "derived/images/kana/GGD.unpacked/KE034.png",
+                "instructionIndex": 324,
+                "targetInstructionIndex": 2065
+              }
+            }
+          ]
+        },
+        {
+          "eventId": "ikura-1051",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 339,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 4570,
+            "jaOffset": 4177,
+            "originalDisplayText": {
+              "zh-CN": "　穿着色彩鲜艳的衣服，毡制的手工人偶。",
+              "ja-JP": "　カラフルな衣服を着た、フェルト製の手製の人形。"
+            }
+          },
+          "nextEventId": "ikura-1090",
+          "textLineIndex": {
+            "ja-JP": 59
+          }
+        },
+        {
+          "eventId": "ikura-1090",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 342,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 4632,
+            "jaOffset": 4240,
+            "originalDisplayText": {
+              "zh-CN": "　虽然有些地方不够完美，但是那还是有相当不错的手工技术。",
+              "ja-JP": "　ところどころ不恰好ではあったが、なかなか器用に仕上がっているように思えた。"
+            }
+          },
+          "nextEventId": "ikura-10de",
+          "textLineIndex": {
+            "ja-JP": 60
+          }
+        },
+        {
+          "eventId": "ikura-10de",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 346,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 4720,
+            "jaOffset": 4318,
+            "originalDisplayText": {
+              "zh-CN": "隆　道：「这是……」",
+              "ja-JP": "隆　道：「これって……」"
+            }
+          },
+          "nextEventId": "ikura-1122",
+          "textLineIndex": {
+            "ja-JP": 61
+          }
+        },
+        {
+          "eventId": "ikura-1122",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 354,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 4791,
+            "jaOffset": 4386,
+            "originalDisplayText": {
+              "zh-CN": "　看向周围。",
+              "ja-JP": "　周囲を見渡す。"
+            }
+          },
+          "nextEventId": "ikura-1146",
+          "textLineIndex": {
+            "ja-JP": 62
+          }
+        },
+        {
+          "eventId": "ikura-1146",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 357,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 4827,
+            "jaOffset": 4422,
+            "originalDisplayText": {
+              "zh-CN": "　因为在委员会花了相当长的时间，现在这里已经一个人都没有了。",
+              "ja-JP": "　委員会で時間帯がずれていることもあって誰もいない。"
+            }
+          },
+          "nextEventId": "ikura-117f",
+          "textLineIndex": {
+            "ja-JP": 63
+          }
+        },
+        {
+          "eventId": "ikura-117f",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 360,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 4911,
+            "jaOffset": 4479,
+            "originalDisplayText": {
+              "zh-CN": "　瞬间，我想是不是搞错了。",
+              "ja-JP": "　瞬間的に何かの間違いだろうと思った。"
+            }
+          },
+          "nextEventId": "ikura-11b1",
+          "textLineIndex": {
+            "ja-JP": 64
+          }
+        },
+        {
+          "eventId": "ikura-11b1",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 363,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 4961,
+            "jaOffset": 4529,
+            "originalDisplayText": {
+              "zh-CN": "　这是不是女孩子间互相交换的制作出来的『杰作』的物品。",
+              "ja-JP": "　女子同士なら、いかにもお互いが作りあった『傑作』を交換しそうなものではないか。"
+            }
+          },
+          "nextEventId": "ikura-11fd",
+          "textLineIndex": {
+            "ja-JP": 65
+          }
+        },
+        {
+          "eventId": "ikura-11fd",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 366,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 5039,
+            "jaOffset": 4605,
+            "originalDisplayText": {
+              "zh-CN": "　但是……从钱包上哪里都看不出送出者的名字。",
+              "ja-JP": "　けど……巾着のどこを見ても差出人の名前はなかった。"
+            }
+          },
+          "nextEventId": "ikura-1239",
+          "textLineIndex": {
+            "ja-JP": 66
+          }
+        },
+        {
+          "eventId": "ikura-1239",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 369,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 5107,
+            "jaOffset": 4665,
+            "originalDisplayText": {
+              "zh-CN": "　人偶是少女的姿态。",
+              "ja-JP": "　人形は少女の姿をしている。"
+            }
+          },
+          "nextEventId": "ikura-1264",
+          "textLineIndex": {
+            "ja-JP": 67
+          }
+        },
+        {
+          "eventId": "ikura-1264",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 372,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 5151,
+            "jaOffset": 4708,
+            "originalDisplayText": {
+              "zh-CN": "　在本来要寄给的人是谁并不知道的情况下，该怎么做我也无法判明，但虽然如此就这么放置不管的话后果也相当棘手。",
+              "ja-JP": "　本来の届け主がわからない以上、どうすることもできそうになかったが、さりとてこのまま放置しておくのもまずいように思えた。"
+            }
+          },
+          "nextEventId": "ikura-12dc",
+          "textLineIndex": {
+            "ja-JP": 68
+          }
+        },
+        {
+          "eventId": "ikura-12dc",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 380,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 5308,
+            "jaOffset": 4828,
+            "originalDisplayText": {
+              "zh-CN": "　如果。",
+              "ja-JP": "　もし。"
+            }
+          },
+          "nextEventId": "ikura-12fd",
+          "textLineIndex": {
+            "ja-JP": 69
+          }
+        },
+        {
+          "eventId": "ikura-12fd",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 384,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 5345,
+            "jaOffset": 4861,
+            "originalDisplayText": {
+              "zh-CN": "　被班内的谁发现的话…………",
+              "ja-JP": "　クラスの誰かに発見されたら…………"
+            }
+          },
+          "nextEventId": "ikura-134a",
+          "textLineIndex": {
+            "ja-JP": 70
+          }
+        },
+        {
+          "eventId": "ikura-134a",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 392,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 5424,
+            "jaOffset": 4938,
+            "originalDisplayText": {
+              "zh-CN": "☆预想中的结果１",
+              "ja-JP": "☆予想される結末１"
+            }
+          },
+          "nextEventId": "ikura-1375",
+          "textLineIndex": {
+            "ja-JP": 71
+          }
+        },
+        {
+          "eventId": "ikura-1375",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 396,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 5469,
+            "jaOffset": 4981,
+            "originalDisplayText": {
+              "zh-CN": "生　徒：「不好，这家伙从女孩子那里得到礼物了呦！　得到手工制作的人偶了这家伙！　不好呦，ｔｒｕｅ　ｌｏｖｅ呦，喂大家快来看，这家伙啊……」",
+              "ja-JP": "生　徒：「やべー、こいつ女からプレゼントもらってる！　手作り人形もらってるよコイツ！　やべーよ、トゥルーラブだよ、おいみんな見ろって、こいつさあ……」"
+            }
+          },
+          "nextEventId": "ikura-1413",
+          "textLineIndex": {
+            "ja-JP": 72
+          },
+          "cues": [
+            {
+              "cueId": "cue-77b0b980d64606e0",
+              "kind": "voice",
+              "timing": "utterance",
+              "mediaId": "asset/a-c1713dd7b81771bd",
+              "resolverId": "research-media-v1",
+              "raw": {
+                "sourceKey": "Etc0143",
+                "playbackPath": "raw/kana/VOICE.unpacked/ETC0143.OGG",
+                "instructionIndex": 396
+              }
+            }
+          ]
+        },
+        {
+          "eventId": "ikura-1413",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 404,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 5666,
+            "jaOffset": 5139,
+            "originalDisplayText": {
+              "zh-CN": "☆预想中的结果２",
+              "ja-JP": "☆予想される結末２"
+            }
+          },
+          "nextEventId": "ikura-143e",
+          "textLineIndex": {
+            "ja-JP": 73
+          }
+        },
+        {
+          "eventId": "ikura-143e",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 408,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 5711,
+            "jaOffset": 5182,
+            "originalDisplayText": {
+              "zh-CN": "生　徒：「从谁那里得到的？　呐，告诉我啊。是谁啊，对象是谁啊……说啊，是谁说不出来，不知道？　别说谎了！　这样啊，不想说出来啊。超让人火大，绝交决定。喂，大家，和藤堂之后要绝交绝交。这家伙要和女孩子交往了，所以和我们一起玩不了了……」",
+              "ja-JP": "生　徒：「誰からもらったんだよ、それ？　なあ、教えろよ、誰だよ、相手は誰なんだよ……言えよ、誰にも言わねーからさあ。わからない？　嘘つくなよ！　そーかよ、教えないつもりかよ。すっげームカつく、ハブ決定。おーい、みんな、藤堂これからハブなハブ。こいつ女とつきあうからもうおれたちと遊べねーってよ……」"
+            }
+          },
+          "nextEventId": "ikura-1530",
+          "textLineIndex": {
+            "ja-JP": 74
+          },
+          "cues": [
+            {
+              "cueId": "cue-87b67de95ca50607",
+              "kind": "voice",
+              "timing": "utterance",
+              "mediaId": "asset/a-6154a5a6c9213e00",
+              "resolverId": "research-media-v1",
+              "raw": {
+                "sourceKey": "Etc0144",
+                "playbackPath": "raw/kana/VOICE.unpacked/ETC0144.OGG",
+                "instructionIndex": 408
+              }
+            }
+          ]
+        },
+        {
+          "eventId": "ikura-1530",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 416,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 6005,
+            "jaOffset": 5424,
+            "originalDisplayText": {
+              "zh-CN": "☆预想中的结果３",
+              "ja-JP": "☆予想される結末３"
+            }
+          },
+          "nextEventId": "ikura-155b",
+          "textLineIndex": {
+            "ja-JP": 75
+          }
+        },
+        {
+          "eventId": "ikura-155b",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 420,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 6050,
+            "jaOffset": 5467,
+            "originalDisplayText": {
+              "zh-CN": "生　徒：「大家注意！　这是藤堂的ｌｏｖｅ　ｌｏｖｅ人偶！　哦，别着急啊藤堂……来，接着！　传过去传过去，别还给藤堂呦！」",
+              "ja-JP": "生　徒：「みんな注目！　これが藤堂のラブラブ人形でーす！　おっと、あせんなよ藤堂……ほら、パス！　回せ回せ、藤堂に返すなよ！」"
+            }
+          },
+          "nextEventId": "ikura-15ee",
+          "textLineIndex": {
+            "ja-JP": 76
+          },
+          "cues": [
+            {
+              "cueId": "cue-95b2199add6107c6",
+              "kind": "voice",
+              "timing": "utterance",
+              "mediaId": "asset/a-f70ee69ffcaf8f2f",
+              "resolverId": "research-media-v1",
+              "raw": {
+                "sourceKey": "Etc0145",
+                "playbackPath": "raw/kana/VOICE.unpacked/ETC0145.OGG",
+                "instructionIndex": 420
+              }
+            }
+          ]
+        },
+        {
+          "eventId": "ikura-15ee",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 428,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 6229,
+            "jaOffset": 5614,
+            "originalDisplayText": {
+              "zh-CN": "隆　道：「太糟糕了……」",
+              "ja-JP": "隆　道：「最悪……」"
+            }
+          },
+          "nextEventId": "ikura-161c",
+          "textLineIndex": {
+            "ja-JP": 77
+          }
+        },
+        {
+          "eventId": "ikura-161c",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 432,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 6282,
+            "jaOffset": 5660,
+            "originalDisplayText": {
+              "zh-CN": "　心情越来越糟了。",
+              "ja-JP": "　気分がどんよりと重くなってきた。"
+            }
+          },
+          "nextEventId": "ikura-1648",
+          "textLineIndex": {
+            "ja-JP": 78
+          }
+        },
+        {
+          "eventId": "ikura-1648",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 435,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 6324,
+            "jaOffset": 5704,
+            "originalDisplayText": {
+              "zh-CN": "　这样的话，也就只有这两条路走了。",
+              "ja-JP": "　そうなると、選択肢はごく限られてくることになる。"
+            }
+          },
+          "nextEventId": "ikura-16e7",
+          "textLineIndex": {
+            "ja-JP": 79
+          }
+        },
+        {
+          "eventId": "ikura-16e7",
+          "kind": "choice",
+          "source": {
+            "engine": "ikura",
+            "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV242.json",
+            "selectorInstructionIndex": 448,
+            "arms": [
+              {
+                "sourceInstructionIndex": 448,
+                "sourceOpcode": 7,
+                "kind": "indexed-jump",
+                "armIndex": 1,
+                "pointerIndex": 22,
+                "targetInstructionIndex": 449,
+                "targetKind": "instruction",
+                "zhSourceOffset": 6482,
+                "jaSourceOffset": 5863,
+                "zhTargetOffset": 6495,
+                "jaTargetOffset": 5876
+              },
+              {
+                "sourceInstructionIndex": 448,
+                "sourceOpcode": 7,
+                "kind": "indexed-jump",
+                "armIndex": 2,
+                "pointerIndex": 24,
+                "targetInstructionIndex": 492,
+                "targetKind": "instruction",
+                "zhSourceOffset": 6482,
+                "jaSourceOffset": 5863,
+                "zhTargetOffset": 7077,
+                "jaTargetOffset": 6387
+              }
+            ]
+          },
+          "choices": [
+            {
+              "choiceId": "arm-16f4",
+              "nextEventId": "ikura-1718",
+              "label": {
+                "zh-CN": "偷偷地拿回去",
+                "ja-JP": "こっそり持ち帰る"
+              }
+            },
+            {
+              "choiceId": "arm-18f3",
+              "nextEventId": "ikura-191f",
+              "label": {
+                "zh-CN": "扔了",
+                "ja-JP": "捨てる"
+              }
+            }
+          ]
+        },
+        {
+          "eventId": "ikura-1718",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 455,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 6531,
+            "jaOffset": 5912,
+            "originalDisplayText": {
+              "zh-CN": "　……这也是没办法的啊。",
+              "ja-JP": "　……しかないだろうな。"
+            }
+          },
+          "nextEventId": "ikura-176e",
+          "textLineIndex": {
+            "ja-JP": 80
+          },
+          "cues": [
+            {
+              "cueId": "cue-33ef0eba109acd96",
+              "kind": "image",
+              "timing": "scene",
+              "mediaId": "asset/a-ad6b4cfed91ac328",
+              "resolverId": "research-media-v1",
+              "raw": {
+                "sourceKey": "COM_B",
+                "playbackPath": "derived/images/kana/GGD.unpacked/COM_B.png",
+                "instructionIndex": 447,
+                "targetInstructionIndex": 3845
+              }
+            }
+          ]
+        },
+        {
+          "eventId": "ikura-176e",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 466,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 6627,
+            "jaOffset": 5998,
+            "originalDisplayText": {
+              "zh-CN": "　将人偶和钱包放在书包里，我匆匆忙忙地跑回了家。",
+              "ja-JP": "　ランドセルの中に人形と巾着を放りこむと、俺は家路を急いだ。"
+            }
+          },
+          "nextEventId": "ikura-17b2",
+          "textLineIndex": {
+            "ja-JP": 81
+          },
+          "cues": [
+            {
+              "cueId": "cue-f3c85957f10c106f",
+              "kind": "image",
+              "timing": "scene",
+              "mediaId": "asset/a-1516efa834f4a831",
+              "resolverId": "research-media-v1",
+              "raw": {
+                "sourceKey": "KBG37A",
+                "playbackPath": "derived/images/kana/GGD.unpacked/KBG37A.png",
+                "instructionIndex": 458,
+                "targetInstructionIndex": 909
+              }
+            }
+          ]
+        },
+        {
+          "eventId": "ikura-17b2",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 469,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 6699,
+            "jaOffset": 6066,
+            "originalDisplayText": {
+              "zh-CN": "　有一股奇妙的情绪。",
+              "ja-JP": "　奇妙な気分だった。"
+            }
+          },
+          "nextEventId": "ikura-17d8",
+          "textLineIndex": {
+            "ja-JP": 82
+          }
+        },
+        {
+          "eventId": "ikura-17d8",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 472,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 6743,
+            "jaOffset": 6104,
+            "originalDisplayText": {
+              "zh-CN": "　对了，我注意到了。",
+              "ja-JP": "　そう、俺は気づいていた。"
+            }
+          },
+          "nextEventId": "ikura-17ff",
+          "textLineIndex": {
+            "ja-JP": 83
+          }
+        },
+        {
+          "eventId": "ikura-17ff",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 475,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 6787,
+            "jaOffset": 6143,
+            "originalDisplayText": {
+              "zh-CN": "　这个人偶，有个像猫一样大的眼瞳。",
+              "ja-JP": "　この人形が、猫のような大きな瞳をしていたことに。"
+            }
+          },
+          "nextEventId": "ikura-1835",
+          "textLineIndex": {
+            "ja-JP": 84
+          }
+        },
+        {
+          "eventId": "ikura-1835",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 478,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 6845,
+            "jaOffset": 6197,
+            "originalDisplayText": {
+              "zh-CN": "　有这样的眼睛的少女，是我非常熟知的……",
+              "ja-JP": "　そんな目をした少女を、俺はよく知っていることに……。"
+            }
+          },
+          "nextEventId": "ikura-186f",
+          "textLineIndex": {
+            "ja-JP": 85
+          }
+        },
+        {
+          "eventId": "ikura-186f",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 481,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 6909,
+            "jaOffset": 6255,
+            "originalDisplayText": {
+              "zh-CN": "　但是现在，我只能什么都不考虑地跑着。",
+              "ja-JP": "　だけど今は、何も考えずに走った。"
+            }
+          },
+          "nextEventId": "ikura-189c",
+          "textLineIndex": {
+            "ja-JP": 86
+          }
+        },
+        {
+          "eventId": "ikura-189c",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 484,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 6971,
+            "jaOffset": 6300,
+            "originalDisplayText": {
+              "zh-CN": "　只是，跑着。",
+              "ja-JP": "　ただ、走った。"
+            }
+          },
+          "nextEventId": "ikura-18bd",
+          "textLineIndex": {
+            "ja-JP": 87
+          }
+        },
+        {
+          "eventId": "ikura-18bd",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 487,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 7009,
+            "jaOffset": 6333,
+            "originalDisplayText": {
+              "zh-CN": "　内心深处，有不少刺刺的东西在蠢蠢欲动。",
+              "ja-JP": "　胸の奥で、トゲだらけの何かが蠢いていた。"
+            }
+          },
+          "nextEventId": "ikura-191f",
+          "textLineIndex": {
+            "ja-JP": 88
+          }
+        },
+        {
+          "eventId": "ikura-191f",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 500,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 7121,
+            "jaOffset": 6431,
+            "originalDisplayText": {
+              "zh-CN": "　人偶的眼瞳和猫的眼瞳很相像。",
+              "ja-JP": "　人形の瞳は、猫科のそれと似ていた。"
+            }
+          },
+          "nextEventId": "ikura-194f",
+          "textLineIndex": {
+            "ja-JP": 89
+          },
+          "cues": [
+            {
+              "cueId": "cue-1176b6459edd7a7f",
+              "kind": "bgm",
+              "timing": "scene",
+              "mediaId": "asset/a-032262e0e39c3df9",
+              "resolverId": "research-media-v1",
+              "raw": {
+                "sourceKey": "TK10.ogg",
+                "playbackPath": "raw/kana/WMSC.unpacked/TK10.OGG",
+                "instructionIndex": 494,
+                "targetInstructionIndex": 3088
+              }
+            }
+          ]
+        },
+        {
+          "eventId": "ikura-194f",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 503,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 7175,
+            "jaOffset": 6479,
+            "originalDisplayText": {
+              "zh-CN": "　这让我……很讨厌。",
+              "ja-JP": "　それが……嫌だった。"
+            }
+          },
+          "nextEventId": "ikura-19a5",
+          "textLineIndex": {
+            "ja-JP": 90
+          }
+        },
+        {
+          "eventId": "ikura-19a5",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 514,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 7267,
+            "jaOffset": 6565,
+            "originalDisplayText": {
+              "zh-CN": "　只把小包放在书包里，我走出了校舍。",
+              "ja-JP": "　ランドセルの中に巾着ごと放りこみ、校舎を出る。"
+            }
+          },
+          "nextEventId": "ikura-19e3",
+          "textLineIndex": {
+            "ja-JP": 91
+          },
+          "cues": [
+            {
+              "cueId": "cue-f0e35d1d4e7e237c",
+              "kind": "image",
+              "timing": "scene",
+              "mediaId": "asset/a-dd4cb20b1903055a",
+              "resolverId": "research-media-v1",
+              "raw": {
+                "sourceKey": "KBG23A",
+                "playbackPath": "derived/images/kana/GGD.unpacked/KBG23A.png",
+                "instructionIndex": 506,
+                "targetInstructionIndex": 837
+              }
+            }
+          ]
+        },
+        {
+          "eventId": "ikura-19e3",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 517,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 7327,
+            "jaOffset": 6627,
+            "originalDisplayText": {
+              "zh-CN": "　然后没有走向正门，而是走向了校舍里的焚化炉。",
+              "ja-JP": "　そして正門には向かわず、校舎裏の焼却炉に向かう。"
+            }
+          },
+          "nextEventId": "ikura-1a21",
+          "textLineIndex": {
+            "ja-JP": 92
+          }
+        },
+        {
+          "eventId": "ikura-1a21",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 520,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 7397,
+            "jaOffset": 6689,
+            "originalDisplayText": {
+              "zh-CN": "　所幸，管理员似乎并不在。",
+              "ja-JP": "　幸い、用務員はいないようだった。"
+            }
+          },
+          "nextEventId": "ikura-1a4e",
+          "textLineIndex": {
+            "ja-JP": 93
+          }
+        },
+        {
+          "eventId": "ikura-1a4e",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 523,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 7447,
+            "jaOffset": 6734,
+            "originalDisplayText": {
+              "zh-CN": "　焚化炉里面冒出烟的时候，是校园里谁都不在的放学后。",
+              "ja-JP": "　焼却炉が煙を立てるのは、校内にだれもいなくなる放課後だ。"
+            }
+          },
+          "nextEventId": "ikura-1a90",
+          "textLineIndex": {
+            "ja-JP": 94
+          }
+        },
+        {
+          "eventId": "ikura-1a90",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 526,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 7526,
+            "jaOffset": 6800,
+            "originalDisplayText": {
+              "zh-CN": "　我把那个人偶随意地扔进了焚化炉里。",
+              "ja-JP": "　俺はその人形を、無造作に焼却炉の中に捨てた。"
+            }
+          },
+          "nextEventId": "ikura-1aca",
+          "textLineIndex": {
+            "ja-JP": 95
+          }
+        },
+        {
+          "eventId": "ikura-1aca",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 529,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 7586,
+            "jaOffset": 6858,
+            "originalDisplayText": {
+              "zh-CN": "　罪恶感……没有的话那是骗人的。",
+              "ja-JP": "　罪悪感は……なかったといえば嘘になる。"
+            }
+          },
+          "nextEventId": "ikura-1afc",
+          "textLineIndex": {
+            "ja-JP": 96
+          }
+        },
+        {
+          "eventId": "ikura-1afc",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 532,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 7642,
+            "jaOffset": 6908,
+            "originalDisplayText": {
+              "zh-CN": "　但是，从那精神压力中解放出来的办法除此以外毫无他法。",
+              "ja-JP": "　けど、振りかかる精神的圧力から解放されるには、それしかなかった。"
+            }
+          },
+          "nextEventId": "end-001",
+          "textLineIndex": {
+            "ja-JP": 97
+          }
+        },
+        {
+          "eventId": "end-001",
+          "kind": "end",
+          "cues": [
+            {
+              "cueId": "cue-df264dd1ac1e461a",
+              "kind": "image",
+              "timing": "scene",
+              "mediaId": "asset/a-dc9cf3ab554a56ab",
+              "resolverId": "research-media-v1",
+              "raw": {
+                "sourceKey": "BLACK",
+                "playbackPath": "derived/images/kana/GGD.unpacked/BLACK.png",
+                "instructionIndex": 538,
+                "targetInstructionIndex": 711
+              }
+            },
+            {
+              "cueId": "cue-bb81a6bcf87053fd",
+              "kind": "image",
+              "timing": "scene",
+              "mediaId": "asset/a-dc9cf3ab554a56ab",
+              "resolverId": "research-media-v1",
+              "raw": {
+                "sourceKey": "BLACK",
+                "playbackPath": "derived/images/kana/GGD.unpacked/BLACK.png",
+                "instructionIndex": 681,
+                "targetInstructionIndex": 711
+              }
+            }
+          ]
+        }
+      ],
+      "titleAuthority": {
+        "sectionId": "main",
+        "authorityId": "section/kana-okaeri/ev242/main",
+        "title_cn": "幼少期·迷之礼物",
+        "title_jp": "幼少期・謎のプレゼント",
+        "source": {
+          "zh-CN": "archive/derived/ikura-scripts/ISC.unpacked/EV242.script.json",
+          "ja-JP": "archive/derived/ikura-scripts/ISF.unpacked/EV242.script.json"
+        },
+        "evidence": {
+          "zh-CN": [
+            "textEvents entry has explicit kind=title",
+            "instructionOffset=71",
+            "rawHex=d3d7c9d9c6daa1a4c3d4d6aec0f1ceef",
+            "variantId=ikura/isc.unpacked/ev242"
+          ],
+          "ja-JP": [
+            "textEvents entry has explicit kind=title",
+            "instructionOffset=71",
+            "rawHex=97638fad8afa814593e482cc8376838c835b83938367",
+            "variantId=ikura/isf.unpacked/ev242"
+          ]
+        },
+        "confidence": {
+          "zh-CN": 1,
+          "ja-JP": 1
+        }
+      }
+    }
+  ],
+  "variantRoutes": [
+    {
+      "variantId": "paired/kana-okaeri/ev242/zh-ja",
+      "locales": [
+        "zh-CN",
+        "ja-JP"
+      ],
+      "readerLocales": [
+        "ja-JP",
+        "zh-CN"
+      ],
+      "textLineCounts": {
+        "ja-JP": 98,
+        "zh-CN": 98
+      },
+      "sections": [
+        {
+          "sectionId": "main",
+          "entryEventId": "ikura-47",
+          "events": [
+            {
+              "eventId": "ikura-47",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 11,
+                "opcode": 247,
+                "status": "translated",
+                "zhOffset": 71,
+                "jaOffset": 71,
+                "originalDisplayText": {
+                  "zh-CN": "幼少期·迷之礼物",
+                  "ja-JP": "幼少期・謎のプレゼント"
+                }
+              },
+              "nextEventId": "ikura-80",
+              "textLineIndex": {
+                "ja-JP": 0,
+                "zh-CN": 0
+              },
+              "cues": [
+                {
+                  "cueId": "cue-b248c9b34adb8639",
+                  "kind": "bgm",
+                  "timing": "scene",
+                  "mediaId": "asset/a-fee027a4308f0708",
+                  "resolverId": "research-media-v1",
+                  "raw": {
+                    "sourceKey": "TK08.ogg",
+                    "playbackPath": "raw/kana/WMSC.unpacked/TK08.OGG",
+                    "instructionIndex": 2,
+                    "targetInstructionIndex": 3078
+                  }
+                },
+                {
+                  "cueId": "cue-3b7c27c58ab9a16d",
+                  "kind": "image",
+                  "timing": "scene",
+                  "mediaId": "asset/a-0919a972fe60f94a",
+                  "resolverId": "research-media-v1",
+                  "raw": {
+                    "sourceKey": "KBG16A",
+                    "playbackPath": "derived/images/kana/GGD.unpacked/KBG16A.png",
+                    "instructionIndex": 4,
+                    "targetInstructionIndex": 813
+                  }
+                }
+              ]
+            },
+            {
+              "eventId": "ikura-80",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 17,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 122,
+                "jaOffset": 128,
+                "originalDisplayText": {
+                  "zh-CN": "担　任：「……那么，随着加热水的体积会膨胀……」",
+                  "ja-JP": "担　任：「……で、熱を加えることによって水は膨張する……」"
+                }
+              },
+              "nextEventId": "ikura-cf",
+              "textLineIndex": {
+                "ja-JP": 1,
+                "zh-CN": 1
+              },
+              "cues": [
+                {
+                  "cueId": "cue-ccbbc1125bc7f8ac",
+                  "kind": "voice",
+                  "timing": "utterance",
+                  "mediaId": "asset/a-2a5969b0ba6d8f63",
+                  "resolverId": "research-media-v1",
+                  "raw": {
+                    "sourceKey": "Etc0141",
+                    "playbackPath": "raw/kana/VOICE.unpacked/ETC0141.OGG",
+                    "instructionIndex": 17
+                  }
+                }
+              ]
+            },
+            {
+              "eventId": "ikura-cf",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 21,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 208,
+                "jaOffset": 207,
+                "originalDisplayText": {
+                  "zh-CN": "　理科的课。",
+                  "ja-JP": "　理科の授業。"
+                }
+              },
+              "nextEventId": "ikura-f2",
+              "textLineIndex": {
+                "ja-JP": 2,
+                "zh-CN": 2
+              }
+            },
+            {
+              "eventId": "ikura-f2",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 24,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 244,
+                "jaOffset": 242,
+                "originalDisplayText": {
+                  "zh-CN": "　正好是第四课时，再过十几分钟就会到午饭的时间了。",
+                  "ja-JP": "　ちょうど四時間目で、あと十数分を待てば昼ごはんとなる頃。"
+                }
+              },
+              "nextEventId": "ikura-14c",
+              "textLineIndex": {
+                "ja-JP": 3,
+                "zh-CN": 3
+              }
+            },
+            {
+              "eventId": "ikura-14c",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 32,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 345,
+                "jaOffset": 332,
+                "originalDisplayText": {
+                  "zh-CN": "　刺刺。",
+                  "ja-JP": "　つんつん。"
+                }
+              },
+              "nextEventId": "ikura-16f",
+              "textLineIndex": {
+                "ja-JP": 4,
+                "zh-CN": 4
+              }
+            },
+            {
+              "eventId": "ikura-16f",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 36,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 382,
+                "jaOffset": 367,
+                "originalDisplayText": {
+                  "zh-CN": "　育郎在我的背后不停的戳着。",
+                  "ja-JP": "　背後から育郎が背中をつついてくる。"
+                }
+              },
+              "nextEventId": "ikura-1a4",
+              "textLineIndex": {
+                "ja-JP": 5,
+                "zh-CN": 5
+              }
+            },
+            {
+              "eventId": "ikura-1a4",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 40,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 439,
+                "jaOffset": 420,
+                "originalDisplayText": {
+                  "zh-CN": "隆　道：「……嗯？」",
+                  "ja-JP": "隆　道：「……ん？」"
+                }
+              },
+              "nextEventId": "ikura-1cb",
+              "textLineIndex": {
+                "ja-JP": 6,
+                "zh-CN": 6
+              }
+            },
+            {
+              "eventId": "ikura-1cb",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 43,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 483,
+                "jaOffset": 459,
+                "originalDisplayText": {
+                  "zh-CN": "育　郎：「不好意思，可以借我橡皮吗？」",
+                  "ja-JP": "育　郎：「悪いんだけどさあ、消しゴム貸してくんない？」"
+                }
+              },
+              "nextEventId": "ikura-20e",
+              "textLineIndex": {
+                "ja-JP": 7,
+                "zh-CN": 7
+              },
+              "cues": [
+                {
+                  "cueId": "cue-a2ad701999b6e32b",
+                  "kind": "voice",
+                  "timing": "utterance",
+                  "mediaId": "asset/a-434cfcfb6e7177c1",
+                  "resolverId": "research-media-v1",
+                  "raw": {
+                    "sourceKey": "Iku0012",
+                    "playbackPath": "raw/kana/VOICE.unpacked/IKU0012.OGG",
+                    "instructionIndex": 43
+                  }
+                }
+              ]
+            },
+            {
+              "eventId": "ikura-20e",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 46,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 554,
+                "jaOffset": 526,
+                "originalDisplayText": {
+                  "zh-CN": "隆　道：「可以啊……你的丢了吗？」",
+                  "ja-JP": "隆　道：「いいけど……なくしたのか？」"
+                }
+              },
+              "nextEventId": "ikura-23e",
+              "textLineIndex": {
+                "ja-JP": 8,
+                "zh-CN": 8
+              }
+            },
+            {
+              "eventId": "ikura-23e",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 49,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 612,
+                "jaOffset": 574,
+                "originalDisplayText": {
+                  "zh-CN": "育　郎：「被雅俊吃过，弄得满是口水黏糊糊的就扔了」",
+                  "ja-JP": "育　郎：「雅俊に食われてヨダレでベトベトになったから捨てた」"
+                }
+              },
+              "nextEventId": "ikura-289",
+              "textLineIndex": {
+                "ja-JP": 9,
+                "zh-CN": 9
+              },
+              "cues": [
+                {
+                  "cueId": "cue-e0278f0a058acd66",
+                  "kind": "voice",
+                  "timing": "utterance",
+                  "mediaId": "asset/a-05b64c04b1c5c042",
+                  "resolverId": "research-media-v1",
+                  "raw": {
+                    "sourceKey": "Iku0013",
+                    "playbackPath": "raw/kana/VOICE.unpacked/IKU0013.OGG",
+                    "instructionIndex": 49
+                  }
+                }
+              ]
+            },
+            {
+              "eventId": "ikura-289",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 52,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 695,
+                "jaOffset": 649,
+                "originalDisplayText": {
+                  "zh-CN": "隆　道：「那家伙……」",
+                  "ja-JP": "隆　道：「あいつ……」"
+                }
+              },
+              "nextEventId": "ikura-2cc",
+              "textLineIndex": {
+                "ja-JP": 10,
+                "zh-CN": 10
+              }
+            },
+            {
+              "eventId": "ikura-2cc",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 60,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 768,
+                "jaOffset": 716,
+                "originalDisplayText": {
+                  "zh-CN": "　我一边发着呆，一边将自己的橡皮递给身后的育郎。",
+                  "ja-JP": "　俺は呆れつつ、自分の消しゴムを後ろ手で育郎に渡す。"
+                }
+              },
+              "nextEventId": "ikura-30e",
+              "textLineIndex": {
+                "ja-JP": 11,
+                "zh-CN": 11
+              }
+            },
+            {
+              "eventId": "ikura-30e",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 64,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 845,
+                "jaOffset": 782,
+                "originalDisplayText": {
+                  "zh-CN": "隆　道：「掰成一半用也可以」",
+                  "ja-JP": "隆　道：「半分切って使っていいや」"
+                }
+              },
+              "nextEventId": "ikura-33e",
+              "textLineIndex": {
+                "ja-JP": 12,
+                "zh-CN": 12
+              }
+            },
+            {
+              "eventId": "ikura-33e",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 67,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 897,
+                "jaOffset": 830,
+                "originalDisplayText": {
+                  "zh-CN": "育　郎：「ｔｈａｎｋ　ｙｏｕ」",
+                  "ja-JP": "育　郎：「サンキュー」"
+                }
+              },
+              "nextEventId": "ikura-375",
+              "textLineIndex": {
+                "ja-JP": 13,
+                "zh-CN": 13
+              },
+              "cues": [
+                {
+                  "cueId": "cue-7b139cf8f1359717",
+                  "kind": "voice",
+                  "timing": "utterance",
+                  "mediaId": "asset/a-9d33a015cfd4e7ab",
+                  "resolverId": "research-media-v1",
+                  "raw": {
+                    "sourceKey": "Iku0014",
+                    "playbackPath": "raw/kana/VOICE.unpacked/IKU0014.OGG",
+                    "instructionIndex": 67
+                  }
+                }
+              ]
+            },
+            {
+              "eventId": "ikura-375",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 71,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 965,
+                "jaOffset": 885,
+                "originalDisplayText": {
+                  "zh-CN": "　育郎从铅笔盒中取出画有动画人物的十五厘米尺子，将那个当成刀开始切起了橡皮。",
+                  "ja-JP": "　育郎は筆箱からアニメものの十五センチ定規を取り出すと、それを包丁がわりに消しゴムを切りはじめた。"
+                }
+              },
+              "nextEventId": "ikura-3ef",
+              "textLineIndex": {
+                "ja-JP": 14,
+                "zh-CN": 14
+              }
+            },
+            {
+              "eventId": "ikura-3ef",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 79,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 1095,
+                "jaOffset": 1007,
+                "originalDisplayText": {
+                  "zh-CN": "育　郎：「一半就太不好意思了，稍微切一些就可以了」",
+                  "ja-JP": "育　郎：「半分は悪いから、ちょっとだけもらうよ」"
+                }
+              },
+              "nextEventId": "ikura-431",
+              "textLineIndex": {
+                "ja-JP": 15,
+                "zh-CN": 15
+              },
+              "cues": [
+                {
+                  "cueId": "cue-b85c825ab10cf707",
+                  "kind": "voice",
+                  "timing": "utterance",
+                  "mediaId": "asset/a-f3531026c770dc6c",
+                  "resolverId": "research-media-v1",
+                  "raw": {
+                    "sourceKey": "Iku0015",
+                    "playbackPath": "raw/kana/VOICE.unpacked/IKU0015.OGG",
+                    "instructionIndex": 79
+                  }
+                }
+              ]
+            },
+            {
+              "eventId": "ikura-431",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 82,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 1181,
+                "jaOffset": 1073,
+                "originalDisplayText": {
+                  "zh-CN": "隆　道：「嗯」",
+                  "ja-JP": "隆　道：「ん」"
+                }
+              },
+              "nextEventId": "ikura-453",
+              "textLineIndex": {
+                "ja-JP": 16,
+                "zh-CN": 16
+              }
+            },
+            {
+              "eventId": "ikura-453",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 85,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 1219,
+                "jaOffset": 1107,
+                "originalDisplayText": {
+                  "zh-CN": "育　郎：「……但是，可真硬啊，这个」",
+                  "ja-JP": "育　郎：「……でも、けっこう硬いな、これ」"
+                }
+              },
+              "nextEventId": "ikura-48f",
+              "textLineIndex": {
+                "ja-JP": 17,
+                "zh-CN": 17
+              },
+              "cues": [
+                {
+                  "cueId": "cue-54a1180b73800141",
+                  "kind": "voice",
+                  "timing": "utterance",
+                  "mediaId": "asset/a-8d7a700ccaa1d685",
+                  "resolverId": "research-media-v1",
+                  "raw": {
+                    "sourceKey": "Iku0016",
+                    "playbackPath": "raw/kana/VOICE.unpacked/IKU0016.OGG",
+                    "instructionIndex": 85
+                  }
+                }
+              ]
+            },
+            {
+              "eventId": "ikura-48f",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 88,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 1288,
+                "jaOffset": 1167,
+                "originalDisplayText": {
+                  "zh-CN": "隆　道：「因为是连油笔也能擦掉的东西了」",
+                  "ja-JP": "隆　道：「ボールペンも消せるやつだから」"
+                }
+              },
+              "nextEventId": "ikura-4c4",
+              "textLineIndex": {
+                "ja-JP": 18,
+                "zh-CN": 18
+              }
+            },
+            {
+              "eventId": "ikura-4c4",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 91,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 1352,
+                "jaOffset": 1220,
+                "originalDisplayText": {
+                  "zh-CN": "育　郎：「嗯呒唔唔唔……」",
+                  "ja-JP": "育　郎：「んむむむむ……」"
+                }
+              },
+              "nextEventId": "ikura-4fc",
+              "textLineIndex": {
+                "ja-JP": 19,
+                "zh-CN": 19
+              },
+              "cues": [
+                {
+                  "cueId": "cue-726a0b806cf7ea33",
+                  "kind": "voice",
+                  "timing": "utterance",
+                  "mediaId": "asset/a-8aecb12d6faed846",
+                  "resolverId": "research-media-v1",
+                  "raw": {
+                    "sourceKey": "Iku0017",
+                    "playbackPath": "raw/kana/VOICE.unpacked/IKU0017.OGG",
+                    "instructionIndex": 91
+                  }
+                }
+              ]
+            },
+            {
+              "eventId": "ikura-4fc",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 95,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 1416,
+                "jaOffset": 1276,
+                "originalDisplayText": {
+                  "zh-CN": "　育郎在苦战中的声音传来。",
+                  "ja-JP": "　育郎の苦戦する声。"
+                }
+              },
+              "nextEventId": "ikura-53e",
+              "textLineIndex": {
+                "ja-JP": 20,
+                "zh-CN": 20
+              }
+            },
+            {
+              "eventId": "ikura-53e",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 103,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 1493,
+                "jaOffset": 1342,
+                "originalDisplayText": {
+                  "zh-CN": "隆　道：「喂，太用力的话……」",
+                  "ja-JP": "隆　道：「おい、あまり無茶すると……」"
+                }
+              },
+              "nextEventId": "ikura-570",
+              "textLineIndex": {
+                "ja-JP": 21,
+                "zh-CN": 21
+              }
+            },
+            {
+              "eventId": "ikura-570",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 106,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 1547,
+                "jaOffset": 1392,
+                "originalDisplayText": {
+                  "zh-CN": "育　郎：「没……只要再等一会……」",
+                  "ja-JP": "育　郎：「いや……もちょっとなんだけど……」"
+                }
+              },
+              "nextEventId": "ikura-5ae",
+              "textLineIndex": {
+                "ja-JP": 22,
+                "zh-CN": 22
+              },
+              "cues": [
+                {
+                  "cueId": "cue-689ef56ab9543d99",
+                  "kind": "voice",
+                  "timing": "utterance",
+                  "mediaId": "asset/a-d00a94315479a13f",
+                  "resolverId": "research-media-v1",
+                  "raw": {
+                    "sourceKey": "Iku0018",
+                    "playbackPath": "raw/kana/VOICE.unpacked/IKU0018.OGG",
+                    "instructionIndex": 106
+                  }
+                }
+              ]
+            },
+            {
+              "eventId": "ikura-5ae",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 109,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 1614,
+                "jaOffset": 1454,
+                "originalDisplayText": {
+                  "zh-CN": "隆　道：「会受伤呦」",
+                  "ja-JP": "隆　道：「怪我するぞ」"
+                }
+              },
+              "nextEventId": "ikura-5d6",
+              "textLineIndex": {
+                "ja-JP": 23,
+                "zh-CN": 23
+              }
+            },
+            {
+              "eventId": "ikura-5d6",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 112,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 1658,
+                "jaOffset": 1494,
+                "originalDisplayText": {
+                  "zh-CN": "育　郎：「没关系……唔呶呶呶呶……」",
+                  "ja-JP": "育　郎：「だいじょうぶ……ぐぬぬぬぬぬぬ……」"
+                }
+              },
+              "nextEventId": "ikura-630",
+              "textLineIndex": {
+                "ja-JP": 24,
+                "zh-CN": 24
+              },
+              "cues": [
+                {
+                  "cueId": "cue-5167621dbc056797",
+                  "kind": "voice",
+                  "timing": "utterance",
+                  "mediaId": "asset/a-9215d12508ed15d0",
+                  "resolverId": "research-media-v1",
+                  "raw": {
+                    "sourceKey": "Iku0019",
+                    "playbackPath": "raw/kana/VOICE.unpacked/IKU0019.OGG",
+                    "instructionIndex": 112
+                  }
+                }
+              ]
+            },
+            {
+              "eventId": "ikura-630",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 119,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 1754,
+                "jaOffset": 1584,
+                "originalDisplayText": {
+                  "zh-CN": "　和育郎苦闷的声音一起，尺子在桌上敲击所发出的『啪』的一声在教室中回响着。",
+                  "ja-JP": "　育郎の苦悶の声と共に、定規が机を叩く『べち』という音が教室に響いた。"
+                }
+              },
+              "nextEventId": "ikura-67b",
+              "textLineIndex": {
+                "ja-JP": 25,
+                "zh-CN": 25
+              }
+            },
+            {
+              "eventId": "ikura-67b",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 122,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 1852,
+                "jaOffset": 1659,
+                "originalDisplayText": {
+                  "zh-CN": "　教室中的视线，集中在我们的身上。",
+                  "ja-JP": "　教室中の視線が、俺たちに集まった。"
+                }
+              },
+              "nextEventId": "ikura-6ac",
+              "textLineIndex": {
+                "ja-JP": 26,
+                "zh-CN": 26
+              }
+            },
+            {
+              "eventId": "ikura-6ac",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 125,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 1910,
+                "jaOffset": 1708,
+                "originalDisplayText": {
+                  "zh-CN": "　在这瞬间。",
+                  "ja-JP": "　その瞬間。"
+                }
+              },
+              "nextEventId": "ikura-6cc",
+              "textLineIndex": {
+                "ja-JP": 27,
+                "zh-CN": 27
+              }
+            },
+            {
+              "eventId": "ikura-6cc",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 128,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 1946,
+                "jaOffset": 1740,
+                "originalDisplayText": {
+                  "zh-CN": "　受到尺子的压力而弹出的橡皮，通过打开的窗子，飞向了外面的青空。",
+                  "ja-JP": "　定規の圧力にはじかれた消しゴムは、開け放たれた窓から、青空めがけて飛んでいった。"
+                }
+              },
+              "nextEventId": "ikura-734",
+              "textLineIndex": {
+                "ja-JP": 28,
+                "zh-CN": 28
+              }
+            },
+            {
+              "eventId": "ikura-734",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 136,
+                "opcode": 43,
+                "status": "unchanged",
+                "zhOffset": 2061,
+                "jaOffset": 1844,
+                "originalDisplayText": {
+                  "zh-CN": "隆　道：「……………………」",
+                  "ja-JP": "隆　道：「……………………」"
+                }
+              },
+              "nextEventId": "ikura-765",
+              "textLineIndex": {
+                "ja-JP": 29,
+                "zh-CN": 29
+              }
+            },
+            {
+              "eventId": "ikura-765",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 139,
+                "opcode": 43,
+                "status": "unchanged",
+                "zhOffset": 2113,
+                "jaOffset": 1893,
+                "originalDisplayText": {
+                  "zh-CN": "育　郎：「……………………」",
+                  "ja-JP": "育　郎：「……………………」"
+                }
+              },
+              "nextEventId": "ikura-7b6",
+              "textLineIndex": {
+                "ja-JP": 30,
+                "zh-CN": 30
+              },
+              "cues": [
+                {
+                  "cueId": "cue-fad09c44c03ed8ec",
+                  "kind": "voice",
+                  "timing": "utterance",
+                  "mediaId": "asset/a-fba9f0261b7e84fc",
+                  "resolverId": "research-media-v1",
+                  "raw": {
+                    "sourceKey": "Iku0020",
+                    "playbackPath": "raw/kana/VOICE.unpacked/IKU0020.OGG",
+                    "instructionIndex": 139
+                  }
+                }
+              ]
+            },
+            {
+              "eventId": "ikura-7b6",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 145,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 2197,
+                "jaOffset": 1974,
+                "originalDisplayText": {
+                  "zh-CN": "　在远处传来了鸟叫声。",
+                  "ja-JP": "　どこかで鳥が鳴いていた。"
+                }
+              },
+              "nextEventId": "ikura-7dd",
+              "textLineIndex": {
+                "ja-JP": 31,
+                "zh-CN": 31
+              }
+            },
+            {
+              "eventId": "ikura-7dd",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 148,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 2243,
+                "jaOffset": 2013,
+                "originalDisplayText": {
+                  "zh-CN": "　应该是学校养的鸡。",
+                  "ja-JP": "　学校で飼育しているニワトリに違いなかった。"
+                }
+              },
+              "nextEventId": "ikura-82d",
+              "textLineIndex": {
+                "ja-JP": 32,
+                "zh-CN": 32
+              }
+            },
+            {
+              "eventId": "ikura-82d",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 156,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 2314,
+                "jaOffset": 2093,
+                "originalDisplayText": {
+                  "zh-CN": "担　任：「笨蛋家伙」",
+                  "ja-JP": "担　任：「ばかね」"
+                }
+              },
+              "nextEventId": "ikura-85f",
+              "textLineIndex": {
+                "ja-JP": 33,
+                "zh-CN": 33
+              },
+              "cues": [
+                {
+                  "cueId": "cue-2dd6d66804d53389",
+                  "kind": "voice",
+                  "timing": "utterance",
+                  "mediaId": "asset/a-2ef4dac8f8b8e9de",
+                  "resolverId": "research-media-v1",
+                  "raw": {
+                    "sourceKey": "Etc0142",
+                    "playbackPath": "raw/kana/VOICE.unpacked/ETC0142.OGG",
+                    "instructionIndex": 156
+                  }
+                }
+              ]
+            },
+            {
+              "eventId": "ikura-85f",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 160,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 2372,
+                "jaOffset": 2143,
+                "originalDisplayText": {
+                  "zh-CN": "　我们依次被轻敲了脑袋，作为惩罚还让我们来回答问题。",
+                  "ja-JP": "　それぞれ軽く頭を叩かれ、罰として問題を解かされる俺たちだった。"
+                }
+              },
+              "nextEventId": "ikura-920",
+              "textLineIndex": {
+                "ja-JP": 34,
+                "zh-CN": 34
+              }
+            },
+            {
+              "eventId": "ikura-920",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 185,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 2577,
+                "jaOffset": 2336,
+                "originalDisplayText": {
+                  "zh-CN": "隆　道：「……我说呐」",
+                  "ja-JP": "隆　道：「……あのな」"
+                }
+              },
+              "nextEventId": "ikura-948",
+              "textLineIndex": {
+                "ja-JP": 35,
+                "zh-CN": 35
+              },
+              "cues": [
+                {
+                  "cueId": "cue-f661d00a15781654",
+                  "kind": "image",
+                  "timing": "scene",
+                  "mediaId": "asset/a-dc9cf3ab554a56ab",
+                  "resolverId": "research-media-v1",
+                  "raw": {
+                    "sourceKey": "BLACK",
+                    "playbackPath": "derived/images/kana/GGD.unpacked/BLACK.png",
+                    "instructionIndex": 165,
+                    "targetInstructionIndex": 711
+                  }
+                },
+                {
+                  "cueId": "cue-36f328c3724ab6f8",
+                  "kind": "bgm",
+                  "timing": "scene",
+                  "mediaId": "asset/a-d9ee14ec700484ad",
+                  "resolverId": "research-media-v1",
+                  "raw": {
+                    "sourceKey": "TK07.ogg",
+                    "playbackPath": "raw/kana/WMSC.unpacked/TK07.OGG",
+                    "instructionIndex": 169,
+                    "targetInstructionIndex": 3073
+                  }
+                },
+                {
+                  "cueId": "cue-cdc9fcf241c99a46",
+                  "kind": "image",
+                  "timing": "scene",
+                  "mediaId": "asset/a-3cd4d429644fe692",
+                  "resolverId": "research-media-v1",
+                  "raw": {
+                    "sourceKey": "KBG15AP1",
+                    "playbackPath": "derived/images/kana/GGD.unpacked/KBG15AP1.png",
+                    "instructionIndex": 171,
+                    "targetInstructionIndex": 810
+                  }
+                },
+                {
+                  "cueId": "cue-46c72f2d1bb7cf74",
+                  "kind": "image",
+                  "timing": "scene",
+                  "mediaId": "asset/a-734a45e54ae9587a",
+                  "resolverId": "research-media-v1",
+                  "raw": {
+                    "sourceKey": "KSI01",
+                    "playbackPath": "derived/images/kana/GGD.unpacked/KSI01.png",
+                    "instructionIndex": 173,
+                    "targetInstructionIndex": 1119
+                  }
+                }
+              ]
+            },
+            {
+              "eventId": "ikura-948",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 188,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 2623,
+                "jaOffset": 2376,
+                "originalDisplayText": {
+                  "zh-CN": "育　郎：「抱歉。橡皮，我会赔的」",
+                  "ja-JP": "育　郎：「悪い。消しゴム、弁償する」"
+                }
+              },
+              "nextEventId": "ikura-983",
+              "textLineIndex": {
+                "ja-JP": 36,
+                "zh-CN": 36
+              },
+              "cues": [
+                {
+                  "cueId": "cue-c60b739507ea44ef",
+                  "kind": "voice",
+                  "timing": "utterance",
+                  "mediaId": "asset/a-fc1080103be5983b",
+                  "resolverId": "research-media-v1",
+                  "raw": {
+                    "sourceKey": "Iku0021",
+                    "playbackPath": "raw/kana/VOICE.unpacked/IKU0021.OGG",
+                    "instructionIndex": 188
+                  }
+                }
+              ]
+            },
+            {
+              "eventId": "ikura-983",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 191,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 2688,
+                "jaOffset": 2435,
+                "originalDisplayText": {
+                  "zh-CN": "隆　道：「不用在意……只不过是橡皮而已」",
+                  "ja-JP": "隆　道：「別にいいけどな……消しゴムくらいさ」"
+                }
+              },
+              "nextEventId": "ikura-9ba",
+              "textLineIndex": {
+                "ja-JP": 37,
+                "zh-CN": 37
+              }
+            },
+            {
+              "eventId": "ikura-9ba",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 194,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 2752,
+                "jaOffset": 2490,
+                "originalDisplayText": {
+                  "zh-CN": "育　郎：「第五堂课，该怎么办呢」",
+                  "ja-JP": "育　郎：「五時間目の授業、どうしようか」"
+                }
+              },
+              "nextEventId": "ikura-9f8",
+              "textLineIndex": {
+                "ja-JP": 38,
+                "zh-CN": 38
+              },
+              "cues": [
+                {
+                  "cueId": "cue-5f3f14c80df32eab",
+                  "kind": "voice",
+                  "timing": "utterance",
+                  "mediaId": "asset/a-ecd10f124fc11f96",
+                  "resolverId": "research-media-v1",
+                  "raw": {
+                    "sourceKey": "Iku0022",
+                    "playbackPath": "raw/kana/VOICE.unpacked/IKU0022.OGG",
+                    "instructionIndex": 194
+                  }
+                }
+              ]
+            },
+            {
+              "eventId": "ikura-9f8",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 197,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 2817,
+                "jaOffset": 2552,
+                "originalDisplayText": {
+                  "zh-CN": "隆　道：「只要别写错就好了吧」",
+                  "ja-JP": "隆　道：「間違えないよう写せばいいだろ」"
+                }
+              },
+              "nextEventId": "ikura-a5b",
+              "textLineIndex": {
+                "ja-JP": 39,
+                "zh-CN": 39
+              }
+            },
+            {
+              "eventId": "ikura-a5b",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 208,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 2920,
+                "jaOffset": 2651,
+                "originalDisplayText": {
+                  "zh-CN": "　不过。",
+                  "ja-JP": "　ところが。"
+                }
+              },
+              "nextEventId": "ikura-ac0",
+              "textLineIndex": {
+                "ja-JP": 40,
+                "zh-CN": 40
+              },
+              "cues": [
+                {
+                  "cueId": "cue-d83694c23e5d7712",
+                  "kind": "image",
+                  "timing": "scene",
+                  "mediaId": "asset/a-dc9cf3ab554a56ab",
+                  "resolverId": "research-media-v1",
+                  "raw": {
+                    "sourceKey": "BLACK",
+                    "playbackPath": "derived/images/kana/GGD.unpacked/BLACK.png",
+                    "instructionIndex": 202,
+                    "targetInstructionIndex": 711
+                  }
+                }
+              ]
+            },
+            {
+              "eventId": "ikura-ac0",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 223,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 3023,
+                "jaOffset": 2752,
+                "originalDisplayText": {
+                  "zh-CN": "隆　道：「……嗯？」",
+                  "ja-JP": "隆　道：「……ん？」"
+                }
+              },
+              "nextEventId": "ikura-aec",
+              "textLineIndex": {
+                "ja-JP": 41,
+                "zh-CN": 41
+              },
+              "cues": [
+                {
+                  "cueId": "cue-4682a97db4062c0c",
+                  "kind": "image",
+                  "timing": "scene",
+                  "mediaId": "asset/a-3cd4d429644fe692",
+                  "resolverId": "research-media-v1",
+                  "raw": {
+                    "sourceKey": "KBG15AP1",
+                    "playbackPath": "derived/images/kana/GGD.unpacked/KBG15AP1.png",
+                    "instructionIndex": 212,
+                    "targetInstructionIndex": 810
+                  }
+                }
+              ]
+            },
+            {
+              "eventId": "ikura-aec",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 227,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 3072,
+                "jaOffset": 2796,
+                "originalDisplayText": {
+                  "zh-CN": "　第五堂课开始前五分钟，从校庭处回到教室里的我，发现桌子上放着橡皮。",
+                  "ja-JP": "　五時間目の授業開始五分前、校庭から教室に戻った俺は、机の上に置いてある消しゴムを見つけた。"
+                }
+              },
+              "nextEventId": "ikura-b64",
+              "textLineIndex": {
+                "ja-JP": 42,
+                "zh-CN": 42
+              }
+            },
+            {
+              "eventId": "ikura-b64",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 235,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 3191,
+                "jaOffset": 2916,
+                "originalDisplayText": {
+                  "zh-CN": "隆　道：「呐，育郎」",
+                  "ja-JP": "隆　道：「なあ、育郎」"
+                }
+              },
+              "nextEventId": "ikura-bc8",
+              "textLineIndex": {
+                "ja-JP": 43,
+                "zh-CN": 43
+              }
+            },
+            {
+              "eventId": "ikura-bc8",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 248,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 3295,
+                "jaOffset": 3016,
+                "originalDisplayText": {
+                  "zh-CN": "育　郎：「什么？」",
+                  "ja-JP": "育　郎：「なに？」"
+                }
+              },
+              "nextEventId": "ikura-bf5",
+              "textLineIndex": {
+                "ja-JP": 44,
+                "zh-CN": 44
+              },
+              "cues": [
+                {
+                  "cueId": "cue-d842ac5b2478d6bc",
+                  "kind": "voice",
+                  "timing": "utterance",
+                  "mediaId": "asset/a-95d1500c1eaf7f15",
+                  "resolverId": "research-media-v1",
+                  "raw": {
+                    "sourceKey": "Iku0023",
+                    "playbackPath": "raw/kana/VOICE.unpacked/IKU0023.OGG",
+                    "instructionIndex": 248
+                  }
+                },
+                {
+                  "cueId": "cue-bbe3c1490209813c",
+                  "kind": "image",
+                  "timing": "scene",
+                  "mediaId": "asset/a-3cd4d429644fe692",
+                  "resolverId": "research-media-v1",
+                  "raw": {
+                    "sourceKey": "KBG15AP1",
+                    "playbackPath": "derived/images/kana/GGD.unpacked/KBG15AP1.png",
+                    "instructionIndex": 238,
+                    "targetInstructionIndex": 810
+                  }
+                },
+                {
+                  "cueId": "cue-d72cc340bdf58f0d",
+                  "kind": "image",
+                  "timing": "scene",
+                  "mediaId": "asset/a-734a45e54ae9587a",
+                  "resolverId": "research-media-v1",
+                  "raw": {
+                    "sourceKey": "KSI01",
+                    "playbackPath": "derived/images/kana/GGD.unpacked/KSI01.png",
+                    "instructionIndex": 240,
+                    "targetInstructionIndex": 1119
+                  }
+                }
+              ]
+            },
+            {
+              "eventId": "ikura-bf5",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 251,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 3346,
+                "jaOffset": 3061,
+                "originalDisplayText": {
+                  "zh-CN": "隆　道：「橡皮，你没有去买吧？」",
+                  "ja-JP": "隆　道：「消しゴム、買ってたりしないよな？」"
+                }
+              },
+              "nextEventId": "ikura-c29",
+              "textLineIndex": {
+                "ja-JP": 45,
+                "zh-CN": 45
+              }
+            },
+            {
+              "eventId": "ikura-c29",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 254,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 3402,
+                "jaOffset": 3113,
+                "originalDisplayText": {
+                  "zh-CN": "育　郎：「橡皮……刚才的？　啊，难道说还在生气？　果然还是我赔给你吧？」",
+                  "ja-JP": "育　郎：「消しゴムって……さっきの？　あ、もしかしてまだ怒ってる？　やっぱり弁償しようか？」"
+                }
+              },
+              "nextEventId": "ikura-c83",
+              "textLineIndex": {
+                "ja-JP": 46,
+                "zh-CN": 46
+              },
+              "cues": [
+                {
+                  "cueId": "cue-70d3c10b62d3de34",
+                  "kind": "voice",
+                  "timing": "utterance",
+                  "mediaId": "asset/a-1f8edc05af0a2c78",
+                  "resolverId": "research-media-v1",
+                  "raw": {
+                    "sourceKey": "Iku0024",
+                    "playbackPath": "raw/kana/VOICE.unpacked/IKU0024.OGG",
+                    "instructionIndex": 254
+                  }
+                }
+              ]
+            },
+            {
+              "eventId": "ikura-c83",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 257,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 3507,
+                "jaOffset": 3203,
+                "originalDisplayText": {
+                  "zh-CN": "隆　道：「不是，不是那样……」",
+                  "ja-JP": "隆　道：「いや、そんなんじゃないけど……」"
+                }
+              },
+              "nextEventId": "ikura-cfc",
+              "textLineIndex": {
+                "ja-JP": 47,
+                "zh-CN": 47
+              }
+            },
+            {
+              "eventId": "ikura-cfc",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 272,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 3632,
+                "jaOffset": 3324,
+                "originalDisplayText": {
+                  "zh-CN": "　看来不是育郎。",
+                  "ja-JP": "　育郎ではないらしい。"
+                }
+              },
+              "nextEventId": "ikura-d21",
+              "textLineIndex": {
+                "ja-JP": 48,
+                "zh-CN": 48
+              },
+              "cues": [
+                {
+                  "cueId": "cue-30365e92fcf161fe",
+                  "kind": "image",
+                  "timing": "scene",
+                  "mediaId": "asset/a-3cd4d429644fe692",
+                  "resolverId": "research-media-v1",
+                  "raw": {
+                    "sourceKey": "KBG15AP1",
+                    "playbackPath": "derived/images/kana/GGD.unpacked/KBG15AP1.png",
+                    "instructionIndex": 261,
+                    "targetInstructionIndex": 810
+                  }
+                }
+              ]
+            },
+            {
+              "eventId": "ikura-d21",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 275,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 3672,
+                "jaOffset": 3361,
+                "originalDisplayText": {
+                  "zh-CN": "　课桌的一角，像是女生用的粉红色的小小的橡皮正端正地放置着。",
+                  "ja-JP": "　机の端っこの方に、ファンシーなピンク色の小さい消しゴム（新品）が、ちんまりと置かれていた。"
+                }
+              },
+              "nextEventId": "ikura-d76",
+              "textLineIndex": {
+                "ja-JP": 49,
+                "zh-CN": 49
+              }
+            },
+            {
+              "eventId": "ikura-d76",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 278,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 3756,
+                "jaOffset": 3446,
+                "originalDisplayText": {
+                  "zh-CN": "　用薄膜包裹着，还画着动漫角色的橡皮。",
+                  "ja-JP": "　セロファンに包まれた、キャラクターものの消しゴム。"
+                }
+              },
+              "nextEventId": "ikura-db1",
+              "textLineIndex": {
+                "ja-JP": 50,
+                "zh-CN": 50
+              }
+            },
+            {
+              "eventId": "ikura-db1",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 281,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 3818,
+                "jaOffset": 3505,
+                "originalDisplayText": {
+                  "zh-CN": "　男生使用的话稍微有些害羞。",
+                  "ja-JP": "　男子が使うにはちょっと恥ずかしい。"
+                }
+              },
+              "nextEventId": "ikura-ddf",
+              "textLineIndex": {
+                "ja-JP": 51,
+                "zh-CN": 51
+              }
+            },
+            {
+              "eventId": "ikura-ddf",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 284,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 3870,
+                "jaOffset": 3551,
+                "originalDisplayText": {
+                  "zh-CN": "　但是，与那相比更介意的是，这是谁买的，又是怎么一回事。",
+                  "ja-JP": "　だけど、それよりも気になるのは、これを誰が置いたのか、ということだった。"
+                }
+              },
+              "nextEventId": "ikura-e3a",
+              "textLineIndex": {
+                "ja-JP": 52,
+                "zh-CN": 52
+              }
+            },
+            {
+              "eventId": "ikura-e3a",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 292,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 3977,
+                "jaOffset": 3642,
+                "originalDisplayText": {
+                  "zh-CN": "　最后，既没有现身也没有留下名字的那个亲切的人的真身，我还是没有弄清楚。",
+                  "ja-JP": "　結局、姿も見せず名乗りもあげない親切人の正体は、判明することはなかった。"
+                }
+              },
+              "nextEventId": "ikura-e84",
+              "textLineIndex": {
+                "ja-JP": 53,
+                "zh-CN": 53
+              }
+            },
+            {
+              "eventId": "ikura-e84",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 295,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 4073,
+                "jaOffset": 3716,
+                "originalDisplayText": {
+                  "zh-CN": "　我稍微觉得有些可疑，继续使着那个橡皮。",
+                  "ja-JP": "　ちょっと不審に思いつつも、俺はその消しゴムを使った。"
+                }
+              },
+              "nextEventId": "ikura-f09",
+              "textLineIndex": {
+                "ja-JP": 54,
+                "zh-CN": 54
+              }
+            },
+            {
+              "eventId": "ikura-f09",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 311,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 4212,
+                "jaOffset": 3849,
+                "originalDisplayText": {
+                  "zh-CN": "　那一天，从给食委员会走出的我（当时是给食委员）在归途中看了一下鞋柜，发现那里面放着老鼠饰样的小包。",
+                  "ja-JP": "　その日、給食委員会に出た俺（当時、給食委員）が帰り際に下駄箱をのぞくと、ねずみのアップリケつき巾着が入れてあった。"
+                }
+              },
+              "nextEventId": "ikura-f78",
+              "textLineIndex": {
+                "ja-JP": 55,
+                "zh-CN": 55
+              },
+              "cues": [
+                {
+                  "cueId": "cue-02223bbd41accd69",
+                  "kind": "image",
+                  "timing": "scene",
+                  "mediaId": "asset/a-dc9cf3ab554a56ab",
+                  "resolverId": "research-media-v1",
+                  "raw": {
+                    "sourceKey": "BLACK",
+                    "playbackPath": "derived/images/kana/GGD.unpacked/BLACK.png",
+                    "instructionIndex": 300,
+                    "targetInstructionIndex": 711
+                  }
+                }
+              ]
+            },
+            {
+              "eventId": "ikura-f78",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 315,
+                "opcode": 43,
+                "status": "unchanged",
+                "zhOffset": 4341,
+                "jaOffset": 3960,
+                "originalDisplayText": {
+                  "zh-CN": "隆　道：「……………………」",
+                  "ja-JP": "隆　道：「……………………」"
+                }
+              },
+              "nextEventId": "ikura-fae",
+              "textLineIndex": {
+                "ja-JP": 56,
+                "zh-CN": 56
+              }
+            },
+            {
+              "eventId": "ikura-fae",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 319,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 4398,
+                "jaOffset": 4014,
+                "originalDisplayText": {
+                  "zh-CN": "　拿出来，确认一下里面的东西。",
+                  "ja-JP": "　取り出し、中身を確認してみる。"
+                }
+              },
+              "nextEventId": "ikura-1027",
+              "textLineIndex": {
+                "ja-JP": 57,
+                "zh-CN": 57
+              }
+            },
+            {
+              "eventId": "ikura-1027",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 335,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 4527,
+                "jaOffset": 4135,
+                "originalDisplayText": {
+                  "zh-CN": "　是个人偶……",
+                  "ja-JP": "　人形……だった。"
+                }
+              },
+              "nextEventId": "ikura-1051",
+              "textLineIndex": {
+                "ja-JP": 58,
+                "zh-CN": 58
+              },
+              "cues": [
+                {
+                  "cueId": "cue-1f2a80849e496a49",
+                  "kind": "bgm",
+                  "timing": "scene",
+                  "mediaId": "asset/a-3c76e89aed3ad9b7",
+                  "resolverId": "research-media-v1",
+                  "raw": {
+                    "sourceKey": "TK09.ogg",
+                    "playbackPath": "raw/kana/WMSC.unpacked/TK09.OGG",
+                    "instructionIndex": 322,
+                    "targetInstructionIndex": 3083
+                  }
+                },
+                {
+                  "cueId": "cue-bbc096d1bdbb0a73",
+                  "kind": "image",
+                  "timing": "scene",
+                  "mediaId": "asset/a-d5ef1c160f247073",
+                  "resolverId": "research-media-v1",
+                  "raw": {
+                    "sourceKey": "KE034",
+                    "playbackPath": "derived/images/kana/GGD.unpacked/KE034.png",
+                    "instructionIndex": 324,
+                    "targetInstructionIndex": 2065
+                  }
+                }
+              ]
+            },
+            {
+              "eventId": "ikura-1051",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 339,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 4570,
+                "jaOffset": 4177,
+                "originalDisplayText": {
+                  "zh-CN": "　穿着色彩鲜艳的衣服，毡制的手工人偶。",
+                  "ja-JP": "　カラフルな衣服を着た、フェルト製の手製の人形。"
+                }
+              },
+              "nextEventId": "ikura-1090",
+              "textLineIndex": {
+                "ja-JP": 59,
+                "zh-CN": 59
+              }
+            },
+            {
+              "eventId": "ikura-1090",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 342,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 4632,
+                "jaOffset": 4240,
+                "originalDisplayText": {
+                  "zh-CN": "　虽然有些地方不够完美，但是那还是有相当不错的手工技术。",
+                  "ja-JP": "　ところどころ不恰好ではあったが、なかなか器用に仕上がっているように思えた。"
+                }
+              },
+              "nextEventId": "ikura-10de",
+              "textLineIndex": {
+                "ja-JP": 60,
+                "zh-CN": 60
+              }
+            },
+            {
+              "eventId": "ikura-10de",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 346,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 4720,
+                "jaOffset": 4318,
+                "originalDisplayText": {
+                  "zh-CN": "隆　道：「这是……」",
+                  "ja-JP": "隆　道：「これって……」"
+                }
+              },
+              "nextEventId": "ikura-1122",
+              "textLineIndex": {
+                "ja-JP": 61,
+                "zh-CN": 61
+              }
+            },
+            {
+              "eventId": "ikura-1122",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 354,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 4791,
+                "jaOffset": 4386,
+                "originalDisplayText": {
+                  "zh-CN": "　看向周围。",
+                  "ja-JP": "　周囲を見渡す。"
+                }
+              },
+              "nextEventId": "ikura-1146",
+              "textLineIndex": {
+                "ja-JP": 62,
+                "zh-CN": 62
+              }
+            },
+            {
+              "eventId": "ikura-1146",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 357,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 4827,
+                "jaOffset": 4422,
+                "originalDisplayText": {
+                  "zh-CN": "　因为在委员会花了相当长的时间，现在这里已经一个人都没有了。",
+                  "ja-JP": "　委員会で時間帯がずれていることもあって誰もいない。"
+                }
+              },
+              "nextEventId": "ikura-117f",
+              "textLineIndex": {
+                "ja-JP": 63,
+                "zh-CN": 63
+              }
+            },
+            {
+              "eventId": "ikura-117f",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 360,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 4911,
+                "jaOffset": 4479,
+                "originalDisplayText": {
+                  "zh-CN": "　瞬间，我想是不是搞错了。",
+                  "ja-JP": "　瞬間的に何かの間違いだろうと思った。"
+                }
+              },
+              "nextEventId": "ikura-11b1",
+              "textLineIndex": {
+                "ja-JP": 64,
+                "zh-CN": 64
+              }
+            },
+            {
+              "eventId": "ikura-11b1",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 363,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 4961,
+                "jaOffset": 4529,
+                "originalDisplayText": {
+                  "zh-CN": "　这是不是女孩子间互相交换的制作出来的『杰作』的物品。",
+                  "ja-JP": "　女子同士なら、いかにもお互いが作りあった『傑作』を交換しそうなものではないか。"
+                }
+              },
+              "nextEventId": "ikura-11fd",
+              "textLineIndex": {
+                "ja-JP": 65,
+                "zh-CN": 65
+              }
+            },
+            {
+              "eventId": "ikura-11fd",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 366,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 5039,
+                "jaOffset": 4605,
+                "originalDisplayText": {
+                  "zh-CN": "　但是……从钱包上哪里都看不出送出者的名字。",
+                  "ja-JP": "　けど……巾着のどこを見ても差出人の名前はなかった。"
+                }
+              },
+              "nextEventId": "ikura-1239",
+              "textLineIndex": {
+                "ja-JP": 66,
+                "zh-CN": 66
+              }
+            },
+            {
+              "eventId": "ikura-1239",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 369,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 5107,
+                "jaOffset": 4665,
+                "originalDisplayText": {
+                  "zh-CN": "　人偶是少女的姿态。",
+                  "ja-JP": "　人形は少女の姿をしている。"
+                }
+              },
+              "nextEventId": "ikura-1264",
+              "textLineIndex": {
+                "ja-JP": 67,
+                "zh-CN": 67
+              }
+            },
+            {
+              "eventId": "ikura-1264",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 372,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 5151,
+                "jaOffset": 4708,
+                "originalDisplayText": {
+                  "zh-CN": "　在本来要寄给的人是谁并不知道的情况下，该怎么做我也无法判明，但虽然如此就这么放置不管的话后果也相当棘手。",
+                  "ja-JP": "　本来の届け主がわからない以上、どうすることもできそうになかったが、さりとてこのまま放置しておくのもまずいように思えた。"
+                }
+              },
+              "nextEventId": "ikura-12dc",
+              "textLineIndex": {
+                "ja-JP": 68,
+                "zh-CN": 68
+              }
+            },
+            {
+              "eventId": "ikura-12dc",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 380,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 5308,
+                "jaOffset": 4828,
+                "originalDisplayText": {
+                  "zh-CN": "　如果。",
+                  "ja-JP": "　もし。"
+                }
+              },
+              "nextEventId": "ikura-12fd",
+              "textLineIndex": {
+                "ja-JP": 69,
+                "zh-CN": 69
+              }
+            },
+            {
+              "eventId": "ikura-12fd",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 384,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 5345,
+                "jaOffset": 4861,
+                "originalDisplayText": {
+                  "zh-CN": "　被班内的谁发现的话…………",
+                  "ja-JP": "　クラスの誰かに発見されたら…………"
+                }
+              },
+              "nextEventId": "ikura-134a",
+              "textLineIndex": {
+                "ja-JP": 70,
+                "zh-CN": 70
+              }
+            },
+            {
+              "eventId": "ikura-134a",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 392,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 5424,
+                "jaOffset": 4938,
+                "originalDisplayText": {
+                  "zh-CN": "☆预想中的结果１",
+                  "ja-JP": "☆予想される結末１"
+                }
+              },
+              "nextEventId": "ikura-1375",
+              "textLineIndex": {
+                "ja-JP": 71,
+                "zh-CN": 71
+              }
+            },
+            {
+              "eventId": "ikura-1375",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 396,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 5469,
+                "jaOffset": 4981,
+                "originalDisplayText": {
+                  "zh-CN": "生　徒：「不好，这家伙从女孩子那里得到礼物了呦！　得到手工制作的人偶了这家伙！　不好呦，ｔｒｕｅ　ｌｏｖｅ呦，喂大家快来看，这家伙啊……」",
+                  "ja-JP": "生　徒：「やべー、こいつ女からプレゼントもらってる！　手作り人形もらってるよコイツ！　やべーよ、トゥルーラブだよ、おいみんな見ろって、こいつさあ……」"
+                }
+              },
+              "nextEventId": "ikura-1413",
+              "textLineIndex": {
+                "ja-JP": 72,
+                "zh-CN": 72
+              },
+              "cues": [
+                {
+                  "cueId": "cue-77b0b980d64606e0",
+                  "kind": "voice",
+                  "timing": "utterance",
+                  "mediaId": "asset/a-c1713dd7b81771bd",
+                  "resolverId": "research-media-v1",
+                  "raw": {
+                    "sourceKey": "Etc0143",
+                    "playbackPath": "raw/kana/VOICE.unpacked/ETC0143.OGG",
+                    "instructionIndex": 396
+                  }
+                }
+              ]
+            },
+            {
+              "eventId": "ikura-1413",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 404,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 5666,
+                "jaOffset": 5139,
+                "originalDisplayText": {
+                  "zh-CN": "☆预想中的结果２",
+                  "ja-JP": "☆予想される結末２"
+                }
+              },
+              "nextEventId": "ikura-143e",
+              "textLineIndex": {
+                "ja-JP": 73,
+                "zh-CN": 73
+              }
+            },
+            {
+              "eventId": "ikura-143e",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 408,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 5711,
+                "jaOffset": 5182,
+                "originalDisplayText": {
+                  "zh-CN": "生　徒：「从谁那里得到的？　呐，告诉我啊。是谁啊，对象是谁啊……说啊，是谁说不出来，不知道？　别说谎了！　这样啊，不想说出来啊。超让人火大，绝交决定。喂，大家，和藤堂之后要绝交绝交。这家伙要和女孩子交往了，所以和我们一起玩不了了……」",
+                  "ja-JP": "生　徒：「誰からもらったんだよ、それ？　なあ、教えろよ、誰だよ、相手は誰なんだよ……言えよ、誰にも言わねーからさあ。わからない？　嘘つくなよ！　そーかよ、教えないつもりかよ。すっげームカつく、ハブ決定。おーい、みんな、藤堂これからハブなハブ。こいつ女とつきあうからもうおれたちと遊べねーってよ……」"
+                }
+              },
+              "nextEventId": "ikura-1530",
+              "textLineIndex": {
+                "ja-JP": 74,
+                "zh-CN": 74
+              },
+              "cues": [
+                {
+                  "cueId": "cue-87b67de95ca50607",
+                  "kind": "voice",
+                  "timing": "utterance",
+                  "mediaId": "asset/a-6154a5a6c9213e00",
+                  "resolverId": "research-media-v1",
+                  "raw": {
+                    "sourceKey": "Etc0144",
+                    "playbackPath": "raw/kana/VOICE.unpacked/ETC0144.OGG",
+                    "instructionIndex": 408
+                  }
+                }
+              ]
+            },
+            {
+              "eventId": "ikura-1530",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 416,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 6005,
+                "jaOffset": 5424,
+                "originalDisplayText": {
+                  "zh-CN": "☆预想中的结果３",
+                  "ja-JP": "☆予想される結末３"
+                }
+              },
+              "nextEventId": "ikura-155b",
+              "textLineIndex": {
+                "ja-JP": 75,
+                "zh-CN": 75
+              }
+            },
+            {
+              "eventId": "ikura-155b",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 420,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 6050,
+                "jaOffset": 5467,
+                "originalDisplayText": {
+                  "zh-CN": "生　徒：「大家注意！　这是藤堂的ｌｏｖｅ　ｌｏｖｅ人偶！　哦，别着急啊藤堂……来，接着！　传过去传过去，别还给藤堂呦！」",
+                  "ja-JP": "生　徒：「みんな注目！　これが藤堂のラブラブ人形でーす！　おっと、あせんなよ藤堂……ほら、パス！　回せ回せ、藤堂に返すなよ！」"
+                }
+              },
+              "nextEventId": "ikura-15ee",
+              "textLineIndex": {
+                "ja-JP": 76,
+                "zh-CN": 76
+              },
+              "cues": [
+                {
+                  "cueId": "cue-95b2199add6107c6",
+                  "kind": "voice",
+                  "timing": "utterance",
+                  "mediaId": "asset/a-f70ee69ffcaf8f2f",
+                  "resolverId": "research-media-v1",
+                  "raw": {
+                    "sourceKey": "Etc0145",
+                    "playbackPath": "raw/kana/VOICE.unpacked/ETC0145.OGG",
+                    "instructionIndex": 420
+                  }
+                }
+              ]
+            },
+            {
+              "eventId": "ikura-15ee",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 428,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 6229,
+                "jaOffset": 5614,
+                "originalDisplayText": {
+                  "zh-CN": "隆　道：「太糟糕了……」",
+                  "ja-JP": "隆　道：「最悪……」"
+                }
+              },
+              "nextEventId": "ikura-161c",
+              "textLineIndex": {
+                "ja-JP": 77,
+                "zh-CN": 77
+              }
+            },
+            {
+              "eventId": "ikura-161c",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 432,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 6282,
+                "jaOffset": 5660,
+                "originalDisplayText": {
+                  "zh-CN": "　心情越来越糟了。",
+                  "ja-JP": "　気分がどんよりと重くなってきた。"
+                }
+              },
+              "nextEventId": "ikura-1648",
+              "textLineIndex": {
+                "ja-JP": 78,
+                "zh-CN": 78
+              }
+            },
+            {
+              "eventId": "ikura-1648",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 435,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 6324,
+                "jaOffset": 5704,
+                "originalDisplayText": {
+                  "zh-CN": "　这样的话，也就只有这两条路走了。",
+                  "ja-JP": "　そうなると、選択肢はごく限られてくることになる。"
+                }
+              },
+              "nextEventId": "ikura-16e7",
+              "textLineIndex": {
+                "ja-JP": 79,
+                "zh-CN": 79
+              }
+            },
+            {
+              "eventId": "ikura-16e7",
+              "kind": "choice",
+              "source": {
+                "engine": "ikura",
+                "routeRecordPath": "manifests/generated/kana-route-diff/scripts/EV242.json",
+                "selectorInstructionIndex": 448,
+                "arms": [
+                  {
+                    "sourceInstructionIndex": 448,
+                    "sourceOpcode": 7,
+                    "kind": "indexed-jump",
+                    "armIndex": 1,
+                    "pointerIndex": 22,
+                    "targetInstructionIndex": 449,
+                    "targetKind": "instruction",
+                    "zhSourceOffset": 6482,
+                    "jaSourceOffset": 5863,
+                    "zhTargetOffset": 6495,
+                    "jaTargetOffset": 5876
+                  },
+                  {
+                    "sourceInstructionIndex": 448,
+                    "sourceOpcode": 7,
+                    "kind": "indexed-jump",
+                    "armIndex": 2,
+                    "pointerIndex": 24,
+                    "targetInstructionIndex": 492,
+                    "targetKind": "instruction",
+                    "zhSourceOffset": 6482,
+                    "jaSourceOffset": 5863,
+                    "zhTargetOffset": 7077,
+                    "jaTargetOffset": 6387
+                  }
+                ]
+              },
+              "choices": [
+                {
+                  "choiceId": "arm-16f4",
+                  "nextEventId": "ikura-1718",
+                  "label": {
+                    "zh-CN": "偷偷地拿回去",
+                    "ja-JP": "こっそり持ち帰る"
+                  }
+                },
+                {
+                  "choiceId": "arm-18f3",
+                  "nextEventId": "ikura-191f",
+                  "label": {
+                    "zh-CN": "扔了",
+                    "ja-JP": "捨てる"
+                  }
+                }
+              ]
+            },
+            {
+              "eventId": "ikura-1718",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 455,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 6531,
+                "jaOffset": 5912,
+                "originalDisplayText": {
+                  "zh-CN": "　……这也是没办法的啊。",
+                  "ja-JP": "　……しかないだろうな。"
+                }
+              },
+              "nextEventId": "ikura-176e",
+              "textLineIndex": {
+                "ja-JP": 80,
+                "zh-CN": 80
+              },
+              "cues": [
+                {
+                  "cueId": "cue-33ef0eba109acd96",
+                  "kind": "image",
+                  "timing": "scene",
+                  "mediaId": "asset/a-ad6b4cfed91ac328",
+                  "resolverId": "research-media-v1",
+                  "raw": {
+                    "sourceKey": "COM_B",
+                    "playbackPath": "derived/images/kana/GGD.unpacked/COM_B.png",
+                    "instructionIndex": 447,
+                    "targetInstructionIndex": 3845
+                  }
+                }
+              ]
+            },
+            {
+              "eventId": "ikura-176e",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 466,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 6627,
+                "jaOffset": 5998,
+                "originalDisplayText": {
+                  "zh-CN": "　将人偶和钱包放在书包里，我匆匆忙忙地跑回了家。",
+                  "ja-JP": "　ランドセルの中に人形と巾着を放りこむと、俺は家路を急いだ。"
+                }
+              },
+              "nextEventId": "ikura-17b2",
+              "textLineIndex": {
+                "ja-JP": 81,
+                "zh-CN": 81
+              },
+              "cues": [
+                {
+                  "cueId": "cue-f3c85957f10c106f",
+                  "kind": "image",
+                  "timing": "scene",
+                  "mediaId": "asset/a-1516efa834f4a831",
+                  "resolverId": "research-media-v1",
+                  "raw": {
+                    "sourceKey": "KBG37A",
+                    "playbackPath": "derived/images/kana/GGD.unpacked/KBG37A.png",
+                    "instructionIndex": 458,
+                    "targetInstructionIndex": 909
+                  }
+                }
+              ]
+            },
+            {
+              "eventId": "ikura-17b2",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 469,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 6699,
+                "jaOffset": 6066,
+                "originalDisplayText": {
+                  "zh-CN": "　有一股奇妙的情绪。",
+                  "ja-JP": "　奇妙な気分だった。"
+                }
+              },
+              "nextEventId": "ikura-17d8",
+              "textLineIndex": {
+                "ja-JP": 82,
+                "zh-CN": 82
+              }
+            },
+            {
+              "eventId": "ikura-17d8",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 472,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 6743,
+                "jaOffset": 6104,
+                "originalDisplayText": {
+                  "zh-CN": "　对了，我注意到了。",
+                  "ja-JP": "　そう、俺は気づいていた。"
+                }
+              },
+              "nextEventId": "ikura-17ff",
+              "textLineIndex": {
+                "ja-JP": 83,
+                "zh-CN": 83
+              }
+            },
+            {
+              "eventId": "ikura-17ff",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 475,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 6787,
+                "jaOffset": 6143,
+                "originalDisplayText": {
+                  "zh-CN": "　这个人偶，有个像猫一样大的眼瞳。",
+                  "ja-JP": "　この人形が、猫のような大きな瞳をしていたことに。"
+                }
+              },
+              "nextEventId": "ikura-1835",
+              "textLineIndex": {
+                "ja-JP": 84,
+                "zh-CN": 84
+              }
+            },
+            {
+              "eventId": "ikura-1835",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 478,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 6845,
+                "jaOffset": 6197,
+                "originalDisplayText": {
+                  "zh-CN": "　有这样的眼睛的少女，是我非常熟知的……",
+                  "ja-JP": "　そんな目をした少女を、俺はよく知っていることに……。"
+                }
+              },
+              "nextEventId": "ikura-186f",
+              "textLineIndex": {
+                "ja-JP": 85,
+                "zh-CN": 85
+              }
+            },
+            {
+              "eventId": "ikura-186f",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 481,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 6909,
+                "jaOffset": 6255,
+                "originalDisplayText": {
+                  "zh-CN": "　但是现在，我只能什么都不考虑地跑着。",
+                  "ja-JP": "　だけど今は、何も考えずに走った。"
+                }
+              },
+              "nextEventId": "ikura-189c",
+              "textLineIndex": {
+                "ja-JP": 86,
+                "zh-CN": 86
+              }
+            },
+            {
+              "eventId": "ikura-189c",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 484,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 6971,
+                "jaOffset": 6300,
+                "originalDisplayText": {
+                  "zh-CN": "　只是，跑着。",
+                  "ja-JP": "　ただ、走った。"
+                }
+              },
+              "nextEventId": "ikura-18bd",
+              "textLineIndex": {
+                "ja-JP": 87,
+                "zh-CN": 87
+              }
+            },
+            {
+              "eventId": "ikura-18bd",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 487,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 7009,
+                "jaOffset": 6333,
+                "originalDisplayText": {
+                  "zh-CN": "　内心深处，有不少刺刺的东西在蠢蠢欲动。",
+                  "ja-JP": "　胸の奥で、トゲだらけの何かが蠢いていた。"
+                }
+              },
+              "nextEventId": "ikura-191f",
+              "textLineIndex": {
+                "ja-JP": 88,
+                "zh-CN": 88
+              }
+            },
+            {
+              "eventId": "ikura-191f",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 500,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 7121,
+                "jaOffset": 6431,
+                "originalDisplayText": {
+                  "zh-CN": "　人偶的眼瞳和猫的眼瞳很相像。",
+                  "ja-JP": "　人形の瞳は、猫科のそれと似ていた。"
+                }
+              },
+              "nextEventId": "ikura-194f",
+              "textLineIndex": {
+                "ja-JP": 89,
+                "zh-CN": 89
+              },
+              "cues": [
+                {
+                  "cueId": "cue-1176b6459edd7a7f",
+                  "kind": "bgm",
+                  "timing": "scene",
+                  "mediaId": "asset/a-032262e0e39c3df9",
+                  "resolverId": "research-media-v1",
+                  "raw": {
+                    "sourceKey": "TK10.ogg",
+                    "playbackPath": "raw/kana/WMSC.unpacked/TK10.OGG",
+                    "instructionIndex": 494,
+                    "targetInstructionIndex": 3088
+                  }
+                }
+              ]
+            },
+            {
+              "eventId": "ikura-194f",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 503,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 7175,
+                "jaOffset": 6479,
+                "originalDisplayText": {
+                  "zh-CN": "　这让我……很讨厌。",
+                  "ja-JP": "　それが……嫌だった。"
+                }
+              },
+              "nextEventId": "ikura-19a5",
+              "textLineIndex": {
+                "ja-JP": 90,
+                "zh-CN": 90
+              }
+            },
+            {
+              "eventId": "ikura-19a5",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 514,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 7267,
+                "jaOffset": 6565,
+                "originalDisplayText": {
+                  "zh-CN": "　只把小包放在书包里，我走出了校舍。",
+                  "ja-JP": "　ランドセルの中に巾着ごと放りこみ、校舎を出る。"
+                }
+              },
+              "nextEventId": "ikura-19e3",
+              "textLineIndex": {
+                "ja-JP": 91,
+                "zh-CN": 91
+              },
+              "cues": [
+                {
+                  "cueId": "cue-f0e35d1d4e7e237c",
+                  "kind": "image",
+                  "timing": "scene",
+                  "mediaId": "asset/a-dd4cb20b1903055a",
+                  "resolverId": "research-media-v1",
+                  "raw": {
+                    "sourceKey": "KBG23A",
+                    "playbackPath": "derived/images/kana/GGD.unpacked/KBG23A.png",
+                    "instructionIndex": 506,
+                    "targetInstructionIndex": 837
+                  }
+                }
+              ]
+            },
+            {
+              "eventId": "ikura-19e3",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 517,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 7327,
+                "jaOffset": 6627,
+                "originalDisplayText": {
+                  "zh-CN": "　然后没有走向正门，而是走向了校舍里的焚化炉。",
+                  "ja-JP": "　そして正門には向かわず、校舎裏の焼却炉に向かう。"
+                }
+              },
+              "nextEventId": "ikura-1a21",
+              "textLineIndex": {
+                "ja-JP": 92,
+                "zh-CN": 92
+              }
+            },
+            {
+              "eventId": "ikura-1a21",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 520,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 7397,
+                "jaOffset": 6689,
+                "originalDisplayText": {
+                  "zh-CN": "　所幸，管理员似乎并不在。",
+                  "ja-JP": "　幸い、用務員はいないようだった。"
+                }
+              },
+              "nextEventId": "ikura-1a4e",
+              "textLineIndex": {
+                "ja-JP": 93,
+                "zh-CN": 93
+              }
+            },
+            {
+              "eventId": "ikura-1a4e",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 523,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 7447,
+                "jaOffset": 6734,
+                "originalDisplayText": {
+                  "zh-CN": "　焚化炉里面冒出烟的时候，是校园里谁都不在的放学后。",
+                  "ja-JP": "　焼却炉が煙を立てるのは、校内にだれもいなくなる放課後だ。"
+                }
+              },
+              "nextEventId": "ikura-1a90",
+              "textLineIndex": {
+                "ja-JP": 94,
+                "zh-CN": 94
+              }
+            },
+            {
+              "eventId": "ikura-1a90",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 526,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 7526,
+                "jaOffset": 6800,
+                "originalDisplayText": {
+                  "zh-CN": "　我把那个人偶随意地扔进了焚化炉里。",
+                  "ja-JP": "　俺はその人形を、無造作に焼却炉の中に捨てた。"
+                }
+              },
+              "nextEventId": "ikura-1aca",
+              "textLineIndex": {
+                "ja-JP": 95,
+                "zh-CN": 95
+              }
+            },
+            {
+              "eventId": "ikura-1aca",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 529,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 7586,
+                "jaOffset": 6858,
+                "originalDisplayText": {
+                  "zh-CN": "　罪恶感……没有的话那是骗人的。",
+                  "ja-JP": "　罪悪感は……なかったといえば嘘になる。"
+                }
+              },
+              "nextEventId": "ikura-1afc",
+              "textLineIndex": {
+                "ja-JP": 96,
+                "zh-CN": 96
+              }
+            },
+            {
+              "eventId": "ikura-1afc",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 532,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 7642,
+                "jaOffset": 6908,
+                "originalDisplayText": {
+                  "zh-CN": "　但是，从那精神压力中解放出来的办法除此以外毫无他法。",
+                  "ja-JP": "　けど、振りかかる精神的圧力から解放されるには、それしかなかった。"
+                }
+              },
+              "nextEventId": "end-001",
+              "textLineIndex": {
+                "ja-JP": 97,
+                "zh-CN": 97
+              }
+            },
+            {
+              "eventId": "end-001",
+              "kind": "end",
+              "cues": [
+                {
+                  "cueId": "cue-df264dd1ac1e461a",
+                  "kind": "image",
+                  "timing": "scene",
+                  "mediaId": "asset/a-dc9cf3ab554a56ab",
+                  "resolverId": "research-media-v1",
+                  "raw": {
+                    "sourceKey": "BLACK",
+                    "playbackPath": "derived/images/kana/GGD.unpacked/BLACK.png",
+                    "instructionIndex": 538,
+                    "targetInstructionIndex": 711
+                  }
+                },
+                {
+                  "cueId": "cue-bb81a6bcf87053fd",
+                  "kind": "image",
+                  "timing": "scene",
+                  "mediaId": "asset/a-dc9cf3ab554a56ab",
+                  "resolverId": "research-media-v1",
+                  "raw": {
+                    "sourceKey": "BLACK",
+                    "playbackPath": "derived/images/kana/GGD.unpacked/BLACK.png",
+                    "instructionIndex": 681,
+                    "targetInstructionIndex": 711
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "media": [
+    {
+      "mediaId": "asset/a-2a5969b0ba6d8f63",
+      "role": "voice",
+      "url": "/corpus/archive/raw/kana/VOICE.unpacked/ETC0141.OGG",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "asset/a-434cfcfb6e7177c1",
+      "role": "voice",
+      "url": "/corpus/archive/raw/kana/VOICE.unpacked/IKU0012.OGG",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "asset/a-05b64c04b1c5c042",
+      "role": "voice",
+      "url": "/corpus/archive/raw/kana/VOICE.unpacked/IKU0013.OGG",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "asset/a-9d33a015cfd4e7ab",
+      "role": "voice",
+      "url": "/corpus/archive/raw/kana/VOICE.unpacked/IKU0014.OGG",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "asset/a-f3531026c770dc6c",
+      "role": "voice",
+      "url": "/corpus/archive/raw/kana/VOICE.unpacked/IKU0015.OGG",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "asset/a-8d7a700ccaa1d685",
+      "role": "voice",
+      "url": "/corpus/archive/raw/kana/VOICE.unpacked/IKU0016.OGG",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "asset/a-8aecb12d6faed846",
+      "role": "voice",
+      "url": "/corpus/archive/raw/kana/VOICE.unpacked/IKU0017.OGG",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "asset/a-d00a94315479a13f",
+      "role": "voice",
+      "url": "/corpus/archive/raw/kana/VOICE.unpacked/IKU0018.OGG",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "asset/a-9215d12508ed15d0",
+      "role": "voice",
+      "url": "/corpus/archive/raw/kana/VOICE.unpacked/IKU0019.OGG",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "asset/a-fba9f0261b7e84fc",
+      "role": "voice",
+      "url": "/corpus/archive/raw/kana/VOICE.unpacked/IKU0020.OGG",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "asset/a-2ef4dac8f8b8e9de",
+      "role": "voice",
+      "url": "/corpus/archive/raw/kana/VOICE.unpacked/ETC0142.OGG",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "asset/a-fc1080103be5983b",
+      "role": "voice",
+      "url": "/corpus/archive/raw/kana/VOICE.unpacked/IKU0021.OGG",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "asset/a-ecd10f124fc11f96",
+      "role": "voice",
+      "url": "/corpus/archive/raw/kana/VOICE.unpacked/IKU0022.OGG",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "asset/a-95d1500c1eaf7f15",
+      "role": "voice",
+      "url": "/corpus/archive/raw/kana/VOICE.unpacked/IKU0023.OGG",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "asset/a-1f8edc05af0a2c78",
+      "role": "voice",
+      "url": "/corpus/archive/raw/kana/VOICE.unpacked/IKU0024.OGG",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "asset/a-c1713dd7b81771bd",
+      "role": "voice",
+      "url": "/corpus/archive/raw/kana/VOICE.unpacked/ETC0143.OGG",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "asset/a-6154a5a6c9213e00",
+      "role": "voice",
+      "url": "/corpus/archive/raw/kana/VOICE.unpacked/ETC0144.OGG",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "asset/a-f70ee69ffcaf8f2f",
+      "role": "voice",
+      "url": "/corpus/archive/raw/kana/VOICE.unpacked/ETC0145.OGG",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "asset/a-fee027a4308f0708",
+      "role": "bgm",
+      "url": "/corpus/archive/raw/kana/WMSC.unpacked/TK08.OGG",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "asset/a-0919a972fe60f94a",
+      "role": "image",
+      "url": "/corpus/archive/derived/images/kana/GGD.unpacked/KBG16A.png",
+      "mimeType": "image/png"
+    },
+    {
+      "mediaId": "asset/a-dc9cf3ab554a56ab",
+      "role": "image",
+      "url": "/corpus/archive/derived/images/kana/GGD.unpacked/BLACK.png",
+      "mimeType": "image/png"
+    },
+    {
+      "mediaId": "asset/a-d9ee14ec700484ad",
+      "role": "bgm",
+      "url": "/corpus/archive/raw/kana/WMSC.unpacked/TK07.OGG",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "asset/a-3cd4d429644fe692",
+      "role": "image",
+      "url": "/corpus/archive/derived/images/kana/GGD.unpacked/KBG15AP1.png",
+      "mimeType": "image/png"
+    },
+    {
+      "mediaId": "asset/a-734a45e54ae9587a",
+      "role": "image",
+      "url": "/corpus/archive/derived/images/kana/GGD.unpacked/KSI01.png",
+      "mimeType": "image/png"
+    },
+    {
+      "mediaId": "asset/a-3c76e89aed3ad9b7",
+      "role": "bgm",
+      "url": "/corpus/archive/raw/kana/WMSC.unpacked/TK09.OGG",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "asset/a-d5ef1c160f247073",
+      "role": "image",
+      "url": "/corpus/archive/derived/images/kana/GGD.unpacked/KE034.png",
+      "mimeType": "image/png"
+    },
+    {
+      "mediaId": "asset/a-ad6b4cfed91ac328",
+      "role": "image",
+      "url": "/corpus/archive/derived/images/kana/GGD.unpacked/COM_B.png",
+      "mimeType": "image/png"
+    },
+    {
+      "mediaId": "asset/a-1516efa834f4a831",
+      "role": "image",
+      "url": "/corpus/archive/derived/images/kana/GGD.unpacked/KBG37A.png",
+      "mimeType": "image/png"
+    },
+    {
+      "mediaId": "asset/a-032262e0e39c3df9",
+      "role": "bgm",
+      "url": "/corpus/archive/raw/kana/WMSC.unpacked/TK10.OGG",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "asset/a-dd4cb20b1903055a",
+      "role": "image",
+      "url": "/corpus/archive/derived/images/kana/GGD.unpacked/KBG23A.png",
+      "mimeType": "image/png"
+    }
+  ]
+}

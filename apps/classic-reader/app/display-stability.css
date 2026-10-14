@@ -1,0 +1,193 @@
+@layer reader-visual-revision {
+  /* Cold film keeps its own grain, focus and damage. The optional screen
+     noise uses the same bounded soft-light exposure as the green CRT, not an
+     opaque raw texture. Scope the value to frost: other palettes stay intact. */
+  html[data-reader-theme='frost'] body
+    :is(#magi-home-display, #magi-reader-display, .magi-review-theme, .magi-loading-screen) {
+    --magi-screen-noise-opacity: .28;
+  }
+
+  /* A single viewport-sized scene owns its decorations. They must not become
+     separate fixed-position scrolling surfaces inside the SVG-filtered root.
+     This is already the flat-iOS route; use the same geometry on cold Chromium
+     without changing its lens, focus, grain, masks or filter strengths. */
+  html[data-reader-theme='frost'] body
+    :is(#magi-home-display, #magi-reader-display, .magi-review-theme) {
+    position: relative !important;
+  }
+  html[data-reader-theme='frost'] body
+    :is(#magi-home-display, #magi-reader-display, .magi-review-theme)
+    > :is(.magi-reader-tube-phosphor, .magi-reader-tube-grain, .magi-screen-scanlines,
+          .magi-reader-tube-surface, .magi-screen-bezel, .magi-glass-refraction, .magi-reader-film-surface) {
+    position: absolute !important;
+  }
+
+  html[data-reader-theme='frost'] body
+    :is(#magi-home-display, #magi-reader-display, .magi-review-theme, .magi-loading-screen)
+    > .magi-reader-tube-phosphor {
+    /* Important also protects against legacy unlayered var(--magi-tube-scan)
+       resolving to the initial opacity of 1 in the Reader route stylesheet. */
+    opacity: var(--magi-screen-noise-opacity, .28) !important;
+    mix-blend-mode: soft-light;
+    position: absolute !important;
+    inset: 0;
+    pointer-events: none;
+  }
+}
+
+@layer reader-visual-revision {
+  /* The zero-height sticky anchor costs no document space. Its child must be
+     local/absolute: the old unlayered fixed rule escaped this anchor. */
+  html body #magi-reader-display .magi-reader-document > .magi-balloon-host {
+    position: sticky !important; top: 0 !important;
+    height: 0 !important; min-height: 0 !important; overflow: visible !important;
+    z-index: 0 !important; pointer-events: none !important;
+  }
+  html body #magi-reader-display .magi-balloon-host > .magi-balloon-rain[data-balloon-enabled='true'] {
+    position: absolute !important; inset: 0 !important;
+    width: 100% !important; height: 100dvh !important;
+    display: block !important; pointer-events: none !important;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html body #magi-reader-display .magi-reader-document > .magi-balloon-host { display: none !important; }
+  }
+
+  html body :is(#magi-home-display,#magi-reader-display) .magi-floating-window {
+    display: flex !important; flex-direction: column !important;
+    max-height: min(78dvh, calc(100dvh - 96px)) !important;
+    transform: translate(var(--magi-window-x),var(--magi-window-y)) !important;
+  }
+  html body :is(#magi-home-display,#magi-reader-display) .magi-floating-window-titlebar {
+    flex: 0 0 auto !important; touch-action: none; cursor: move;
+  }
+  html body :is(#magi-home-display,#magi-reader-display) .magi-floating-window-body {
+    flex: 1 1 auto !important; min-height: 0 !important;
+    overflow-y: auto !important; overscroll-behavior: contain;
+  }
+  html body :is(#magi-home-display,#magi-reader-display) .magi-floating-window-footer {
+    flex: 0 0 auto !important;
+  }
+  html body :is(#magi-home-display,#magi-reader-display) .magi-floating-window[data-window-state='compact'] {
+    max-height: min(45dvh, 21rem) !important;
+  }
+  /* The global cold optical pass already blurs the whole window. Avoid
+     recursively sampling the same scrolling contents through a second blur. */
+  html[data-reader-theme='frost'] body .magi-floating-window {
+    backdrop-filter: none !important; -webkit-backdrop-filter: none !important;
+  }
+
+  html body #magi-reader-display .magi-reader-font-widget:not([style]) {
+    bottom: max(24px,env(safe-area-inset-bottom)) !important;
+    right: max(24px,env(safe-area-inset-right)) !important;
+  }
+  html body #magi-reader-display .magi-reader-font-widget:has(.magi-reader-font-control-closed) {
+    clip-path: none !important; min-width: 70px !important;
+  }
+  html body #magi-reader-display .magi-reader-font-control-closed {
+    display: inline-flex !important; overflow: visible !important;
+    min-width: 48px !important; min-height: 44px !important;
+  }
+  html body #magi-reader-display .magi-reader-font-control-closed > button[aria-label='展开字号调节'] {
+    display: inline-flex !important; align-items: center !important; justify-content: center !important;
+    width: 44px !important; height: 44px !important; min-width: 44px !important; min-height: 44px !important;
+    pointer-events: auto !important; touch-action: manipulation;
+  }
+
+  @media (max-width: 767px) {
+    html body :is(#magi-home-display,#magi-reader-display) .magi-floating-window {
+      width: calc(100vw - 40px) !important;
+      max-width: calc(100vw - 40px) !important;
+      max-height: min(74dvh, calc(100dvh - 112px)) !important;
+      left: 0 !important; top: 0 !important; margin: 0 !important;
+    }
+    html body :is(#magi-home-display,#magi-reader-display) .magi-floating-window-titlebar button {
+      min-width: 36px !important; min-height: 36px !important;
+    }
+    html body #magi-home-display .magi-home-section-heading-row[data-category-summary='true'] {
+      display: flex !important; flex-wrap: wrap !important; align-items: center !important;
+      gap: .4rem !important; padding-block: .25rem !important;
+    }
+    html body #magi-home-display .magi-home-section-heading-row[data-category-summary='true'] .magi-home-section-heading-main {
+      display: flex !important; min-width: 0 !important; flex: 1 1 100% !important;
+      flex-wrap: wrap !important; align-items: center !important; gap: .35rem !important;
+    }
+    html body #magi-home-display .magi-home-section-heading-row[data-category-summary='true'] h2 {
+      flex: 1 1 100% !important; padding: 0 !important; margin: 0 !important;
+      font-size: clamp(.9rem,3.6vw,1.05rem) !important; line-height: 1.5rem !important; white-space: normal;
+    }
+    html body #magi-home-display .magi-home-section-heading-row[data-category-summary='true'] .magi-home-section-statistics {
+      min-width: 0 !important; flex-basis: 100% !important; flex-wrap: wrap !important;
+      gap: .25rem !important; padding: 0 !important; margin: 0 !important;
+      font-size: .7rem !important; overflow: visible !important;
+    }
+    html body #magi-home-display .magi-home-section-heading-row[data-category-summary='true'] .magi-home-section-statistics > span {
+      padding: .2rem .3rem !important; white-space: nowrap !important;
+    }
+    html body #magi-home-display .magi-home-section-heading-row[data-category-summary='true'] .magi-home-mobile-review-button[data-placement='floating'] {
+      position: relative !important; flex: none !important; align-self: center !important;
+      height: 2rem !important; min-height: 2rem !important; min-width: 0 !important;
+      padding: .3rem .5rem !important; font-size: .7rem !important; line-height: 1 !important;
+    }
+    html body #magi-home-display .magi-home-section-heading-row[data-category-summary='true'] .magi-home-mobile-review-button::before { content: none !important; }
+  }
+}
+
+@layer reader-visual-revision {
+  /* Manual window geometry wins over old phone widths and compact defaults.
+     Resizing is bounded in JS; dragging intentionally is not. */
+  html body :is(#magi-home-display,#magi-reader-display):has(.magi-floating-window) {
+    /* overflow:hidden is still a scroll container: focusing an off-stage
+       control can move the entire scene. Clip preserves the screen boundary
+       without allowing focus-driven scrolling; the body panes still scroll. */
+    overflow: clip !important;
+  }
+  html body :is(#magi-home-display,#magi-reader-display) .magi-floating-window[data-user-sized='true'] {
+    width: var(--magi-window-width) !important;
+    min-width: 0 !important; max-width: none !important;
+    /* The grip follows the pointer, not a repeatedly restarted size transition. */
+    transition: none !important;
+  }
+  html body :is(#magi-home-display,#magi-reader-display) .magi-floating-window[data-user-sized='true'][data-window-state='open'] {
+    height: var(--magi-window-height) !important;
+    min-height: 0 !important; max-height: none !important;
+  }
+  html body :is(#magi-home-display,#magi-reader-display) .magi-floating-window > .magi-floating-window-resize {
+    position: absolute !important; inset: auto 0 0 auto !important;
+    display: grid !important; place-items: center !important;
+    width: 24px !important; height: 24px !important;
+    min-width: 24px !important; min-height: 24px !important;
+    padding: 0 !important; margin: 0 !important;
+    border: 0 !important; border-radius: 0 !important;
+    background: transparent !important; color: inherit !important;
+    box-shadow: none !important; transform: none !important;
+    cursor: nwse-resize !important; touch-action: none !important;
+    opacity: .85; z-index: 2; font-size: 15px !important;
+  }
+  html body :is(#magi-home-display,#magi-reader-display) .magi-floating-window > .magi-floating-window-resize:focus-visible {
+    outline: 1px dashed currentColor; outline-offset: -4px;
+  }
+  /* This layer must outrank the unlayered globals.css padding shorthand. */
+  html body :is(#magi-home-display,#magi-reader-display) .magi-floating-window-footer { padding-right: 28px !important; }
+}
+
+@layer reader-visual-revision {
+  /* Every modeless window uses the surrounding scene palette. The old Reader
+     rule covered settings only, leaving the links window's scrollbar native. */
+  html body .magi-floating-window .magi-floating-window-body {
+    scrollbar-width: thin;
+    scrollbar-color: var(--magi-reader-scroll-thumb, var(--home-scroll-thumb, currentColor)) var(--magi-reader-scroll-track, var(--home-scroll-track, transparent));
+  }
+  html body .magi-floating-window .magi-floating-window-body::-webkit-scrollbar { width: 8px; height: 8px; }
+  html body .magi-floating-window .magi-floating-window-body::-webkit-scrollbar-track {
+    background: var(--magi-reader-scroll-track, var(--home-scroll-track, transparent));
+  }
+  html body .magi-floating-window .magi-floating-window-body::-webkit-scrollbar-thumb {
+    background: var(--magi-reader-scroll-thumb, var(--home-scroll-thumb, currentColor));
+    border: 1px solid var(--magi-reader-scroll-track, var(--home-scroll-track, transparent));
+    border-radius: 2px;
+  }
+  html body .magi-floating-window .magi-floating-window-body::-webkit-scrollbar-thumb:hover {
+    background: var(--magi-reader-scroll-thumb-hover, var(--magi-reader-scroll-thumb, currentColor));
+  }
+  html body .magi-floating-window .magi-floating-window-body::-webkit-scrollbar-button { display: none; }
+}

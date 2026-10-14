@@ -1,0 +1,5067 @@
+{
+  "schema": "classic-reader-story-routes/v1",
+  "canonicalStoryId": "kana-okaeri/ev48",
+  "sourceCanonicalStoryId": "kana-okaeri/ev48",
+  "preferredVariantId": "paired/kana-okaeri/ev48/zh-ja",
+  "japaneseVariantId": "paired/kana-okaeri/ev48/zh-ja",
+  "chineseVariantId": "paired/kana-okaeri/ev48/zh-ja",
+  "voiceRouting": {
+    "schema": "classic-reader-voice-routing/v1",
+    "defaultState": "collapsed",
+    "expandedSlotMode": "all-lines",
+    "unresolvedLineBehavior": "visible"
+  },
+  "titleAuthority": {
+    "work": {
+      "authorityId": "work/kana",
+      "title_cn": "加奈～欢迎回来～",
+      "title_jp": "加奈…おかえり!!",
+      "source": {
+        "zh-CN": "archive/source-patches/kana-v1.01/payload/KANACHS.INI",
+        "ja-JP": "archive/inputs/kana/KANAOKA.EXE"
+      },
+      "evidence": {
+        "zh-CN": [
+          "UTF-16 line 7: TITLE=加奈～欢迎回来～",
+          "rawHex=5400490054004c0045003d00a05248595eff226bce8fde5665675eff"
+        ],
+        "ja-JP": [
+          "UTF-16LE product-title literal at byte offsets 792384,792608,792900",
+          "rawHex=a052485926204a304b3048308a3021002100"
+        ]
+      },
+      "confidence": {
+        "zh-CN": 1,
+        "ja-JP": 1
+      }
+    },
+    "arc": {
+      "authorityId": "arc/kana-okaeri",
+      "title_cn": "加奈～欢迎回来～",
+      "title_jp": "加奈…おかえり!!",
+      "source": {
+        "zh-CN": "archive/source-patches/kana-v1.01/payload/KANACHS.INI",
+        "ja-JP": "archive/inputs/kana/KANAOKA.EXE"
+      },
+      "evidence": {
+        "zh-CN": [
+          "UTF-16 line 7: TITLE=加奈～欢迎回来～",
+          "rawHex=5400490054004c0045003d00a05248595eff226bce8fde5665675eff"
+        ],
+        "ja-JP": [
+          "UTF-16LE product-title literal at byte offsets 792384,792608,792900",
+          "rawHex=a052485926204a304b3048308a3021002100"
+        ]
+      },
+      "confidence": {
+        "zh-CN": 1,
+        "ja-JP": 1
+      }
+    },
+    "story": {
+      "authorityId": "story/kana-okaeri/ev48",
+      "title_cn": "高等期·和家人一起。",
+      "title_jp": "高等期・家族で",
+      "source": {
+        "zh-CN": "archive/derived/ikura-scripts/ISC.unpacked/EV48.script.json",
+        "ja-JP": "archive/derived/ikura-scripts/ISF.unpacked/EV48.script.json"
+      },
+      "evidence": {
+        "zh-CN": [
+          "textEvents entry has explicit kind=title",
+          "instructionOffset=67",
+          "rawHex=b8dfb5c8c6daa1a4bacdbcd2c8cbd2bbc6f0a1a3",
+          "variantId=ikura/isc.unpacked/ev48"
+        ],
+        "ja-JP": [
+          "textEvents entry has explicit kind=title",
+          "instructionOffset=67",
+          "rawHex=8d8293998afa814589c691b082c5",
+          "variantId=ikura/isf.unpacked/ev48"
+        ]
+      },
+      "confidence": {
+        "zh-CN": 1,
+        "ja-JP": 1
+      }
+    }
+  },
+  "sections": [
+    {
+      "sectionId": "main",
+      "entryEventId": "ikura-43",
+      "events": [
+        {
+          "eventId": "ikura-43",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 10,
+            "opcode": 247,
+            "status": "translated",
+            "zhOffset": 67,
+            "jaOffset": 67,
+            "originalDisplayText": {
+              "zh-CN": "高等期·和家人一起。",
+              "ja-JP": "高等期・家族で"
+            }
+          },
+          "nextEventId": "ikura-74",
+          "textLineIndex": {
+            "ja-JP": 0
+          },
+          "cues": [
+            {
+              "cueId": "cue-9625444ca006e47d",
+              "kind": "image",
+              "timing": "scene",
+              "mediaId": "asset/a-05f7b5fdb9ed5dbf",
+              "resolverId": "research-media-v1",
+              "raw": {
+                "sourceKey": "KBG39A",
+                "playbackPath": "derived/images/kana/GGD.unpacked/KBG39A.png",
+                "instructionIndex": 3,
+                "targetInstructionIndex": 915
+              }
+            }
+          ]
+        },
+        {
+          "eventId": "ikura-74",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 16,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 122,
+            "jaOffset": 116,
+            "originalDisplayText": {
+              "zh-CN": "　今天全家人一起去看望加奈。",
+              "ja-JP": "　今日は家族全員で見舞いに行くことになった。"
+            }
+          },
+          "nextEventId": "ikura-c6",
+          "textLineIndex": {
+            "ja-JP": 1
+          }
+        },
+        {
+          "eventId": "ikura-c6",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 24,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 201,
+            "jaOffset": 198,
+            "originalDisplayText": {
+              "zh-CN": "　家人都觉得，应该给加奈留下一个温暖家庭的回忆。",
+              "ja-JP": "　一つでも加奈に思い出を残してやろうという、家族全員の判断だった。"
+            }
+          },
+          "nextEventId": "ikura-10b",
+          "textLineIndex": {
+            "ja-JP": 2
+          }
+        },
+        {
+          "eventId": "ikura-10b",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 27,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 273,
+            "jaOffset": 267,
+            "originalDisplayText": {
+              "zh-CN": "　去医院的路上，遇到了夕美。",
+              "ja-JP": "　病院に向かう途中、夕美と出会った。"
+            }
+          },
+          "nextEventId": "ikura-199",
+          "textLineIndex": {
+            "ja-JP": 3
+          }
+        },
+        {
+          "eventId": "ikura-199",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 46,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 416,
+            "jaOffset": 409,
+            "originalDisplayText": {
+              "zh-CN": "夕　美：「啊咧，藤堂君。」",
+              "ja-JP": "夕　美：「あれー、藤堂くーん？」"
+            }
+          },
+          "nextEventId": "ikura-1d1",
+          "textLineIndex": {
+            "ja-JP": 4
+          },
+          "cues": [
+            {
+              "cueId": "cue-d3908bc439cbd084",
+              "kind": "voice",
+              "timing": "utterance",
+              "mediaId": "asset/a-cae95943ffee5bed",
+              "resolverId": "research-media-v1",
+              "raw": {
+                "sourceKey": "Yum5501",
+                "playbackPath": "raw/kana/VOICE.unpacked/YUM5501.OGG",
+                "instructionIndex": 46
+              }
+            },
+            {
+              "cueId": "cue-492a036a6515c371",
+              "kind": "bgm",
+              "timing": "scene",
+              "mediaId": "asset/a-d9ee14ec700484ad",
+              "resolverId": "research-media-v1",
+              "raw": {
+                "sourceKey": "TK07.ogg",
+                "playbackPath": "raw/kana/WMSC.unpacked/TK07.OGG",
+                "instructionIndex": 30,
+                "targetInstructionIndex": 3067
+              }
+            },
+            {
+              "cueId": "cue-0ef3280f6f8136cd",
+              "kind": "image",
+              "timing": "scene",
+              "mediaId": "asset/a-05f7b5fdb9ed5dbf",
+              "resolverId": "research-media-v1",
+              "raw": {
+                "sourceKey": "KBG39A",
+                "playbackPath": "derived/images/kana/GGD.unpacked/KBG39A.png",
+                "instructionIndex": 32,
+                "targetInstructionIndex": 915
+              }
+            },
+            {
+              "cueId": "cue-07739ba719b520ff",
+              "kind": "image",
+              "timing": "scene",
+              "mediaId": "asset/a-e98417999be8e76f",
+              "resolverId": "research-media-v1",
+              "raw": {
+                "sourceKey": "KSY19",
+                "playbackPath": "derived/images/kana/GGD.unpacked/KSY19.png",
+                "instructionIndex": 34,
+                "targetInstructionIndex": 1536
+              }
+            }
+          ]
+        },
+        {
+          "eventId": "ikura-1d1",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 49,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 475,
+            "jaOffset": 465,
+            "originalDisplayText": {
+              "zh-CN": "隆　道：「啊……」",
+              "ja-JP": "隆　道：「あ……」"
+            }
+          },
+          "nextEventId": "ikura-212",
+          "textLineIndex": {
+            "ja-JP": 5
+          }
+        },
+        {
+          "eventId": "ikura-212",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 57,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 544,
+            "jaOffset": 530,
+            "originalDisplayText": {
+              "zh-CN": "　出现的真不是时候。",
+              "ja-JP": "　まずい時に、と思った。"
+            }
+          },
+          "nextEventId": "ikura-253",
+          "textLineIndex": {
+            "ja-JP": 6
+          }
+        },
+        {
+          "eventId": "ikura-253",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 65,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 615,
+            "jaOffset": 595,
+            "originalDisplayText": {
+              "zh-CN": "夕　美：「和家人一起出门啊。」",
+              "ja-JP": "夕　美：「家族でお出かけなんだ」"
+            }
+          },
+          "nextEventId": "ikura-28a",
+          "textLineIndex": {
+            "ja-JP": 7
+          },
+          "cues": [
+            {
+              "cueId": "cue-8c98bfa0ce2e5c5a",
+              "kind": "voice",
+              "timing": "utterance",
+              "mediaId": "asset/a-f1ddd8515f057614",
+              "resolverId": "research-media-v1",
+              "raw": {
+                "sourceKey": "Yum5502",
+                "playbackPath": "raw/kana/VOICE.unpacked/YUM5502.OGG",
+                "instructionIndex": 65
+              }
+            }
+          ]
+        },
+        {
+          "eventId": "ikura-28a",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 68,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 678,
+            "jaOffset": 650,
+            "originalDisplayText": {
+              "zh-CN": "隆　道：「啊，嗯……」",
+              "ja-JP": "隆　道：「ああ、まあ……」"
+            }
+          },
+          "nextEventId": "ikura-2b4",
+          "textLineIndex": {
+            "ja-JP": 8
+          }
+        },
+        {
+          "eventId": "ikura-2b4",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 71,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 724,
+            "jaOffset": 692,
+            "originalDisplayText": {
+              "zh-CN": "　父　：「这位小姐是？」",
+              "ja-JP": "　父　：「こちらのお嬢さんは？」"
+            }
+          },
+          "nextEventId": "ikura-303",
+          "textLineIndex": {
+            "ja-JP": 9
+          },
+          "cues": [
+            {
+              "cueId": "cue-1d6db5e4c61d978a",
+              "kind": "voice",
+              "timing": "utterance",
+              "mediaId": "asset/a-23bc829d397bf6a1",
+              "resolverId": "research-media-v1",
+              "raw": {
+                "sourceKey": "Etc5298",
+                "playbackPath": "raw/kana/VOICE.unpacked/ETC5298.OGG",
+                "instructionIndex": 71
+              }
+            }
+          ]
+        },
+        {
+          "eventId": "ikura-303",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 79,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 808,
+            "jaOffset": 771,
+            "originalDisplayText": {
+              "zh-CN": "　父亲问道。",
+              "ja-JP": "　父親が俺に問う。"
+            }
+          },
+          "nextEventId": "ikura-328",
+          "textLineIndex": {
+            "ja-JP": 10
+          }
+        },
+        {
+          "eventId": "ikura-328",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 82,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 844,
+            "jaOffset": 808,
+            "originalDisplayText": {
+              "zh-CN": "　还没等到我回答，夕美就恭恭敬敬地低了下头做起了自我介绍。就好像是在照剧本念似的说道。",
+              "ja-JP": "　俺が答える前に、夕美はぺこりとお辞儀をして自己紹介した。まるで台本を用意していたかのようにすらすらと喋った。"
+            }
+          },
+          "nextEventId": "ikura-3df",
+          "textLineIndex": {
+            "ja-JP": 11
+          }
+        },
+        {
+          "eventId": "ikura-3df",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 100,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 1041,
+            "jaOffset": 991,
+            "originalDisplayText": {
+              "zh-CN": "夕　美：「我是正在和隆道君纯洁地交往的来自青心女子大学的鹿岛夕美。」",
+              "ja-JP": "夕　美：「私、隆道君と清く正しくお付き合いさせていただいてます、青心女子大の鹿島夕美と申しまーす！」"
+            }
+          },
+          "nextEventId": "ikura-463",
+          "textLineIndex": {
+            "ja-JP": 12
+          },
+          "cues": [
+            {
+              "cueId": "cue-bb75967f91c817cf",
+              "kind": "voice",
+              "timing": "utterance",
+              "mediaId": "asset/a-312789481d22c213",
+              "resolverId": "research-media-v1",
+              "raw": {
+                "sourceKey": "Yum5503",
+                "playbackPath": "raw/kana/VOICE.unpacked/YUM5503.OGG",
+                "instructionIndex": 100
+              }
+            },
+            {
+              "cueId": "cue-7ce072fb07c7b5ba",
+              "kind": "image",
+              "timing": "scene",
+              "mediaId": "asset/a-05f7b5fdb9ed5dbf",
+              "resolverId": "research-media-v1",
+              "raw": {
+                "sourceKey": "KBG39A",
+                "playbackPath": "derived/images/kana/GGD.unpacked/KBG39A.png",
+                "instructionIndex": 86,
+                "targetInstructionIndex": 915
+              }
+            },
+            {
+              "cueId": "cue-f5a560b54cb4d7b7",
+              "kind": "image",
+              "timing": "scene",
+              "mediaId": "asset/a-9439338c3fe8c1e4",
+              "resolverId": "research-media-v1",
+              "raw": {
+                "sourceKey": "KSY20A",
+                "playbackPath": "derived/images/kana/GGD.unpacked/KSY20A.png",
+                "instructionIndex": 88,
+                "targetInstructionIndex": 1539
+              }
+            }
+          ]
+        },
+        {
+          "eventId": "ikura-463",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 108,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 1169,
+            "jaOffset": 1123,
+            "originalDisplayText": {
+              "zh-CN": "　父母都是一愣。",
+              "ja-JP": "　きょとん、とした両親だった。"
+            }
+          },
+          "nextEventId": "ikura-4f9",
+          "textLineIndex": {
+            "ja-JP": 13
+          }
+        },
+        {
+          "eventId": "ikura-4f9",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 129,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 1318,
+            "jaOffset": 1273,
+            "originalDisplayText": {
+              "zh-CN": "　母　：「最近的女孩真是大大方方的啊。我那时候……呐，亲爱的。」",
+              "ja-JP": "　母　：「最近の娘って物怖じしないのねえ。私の時なんて……ねえあなた？」"
+            }
+          },
+          "nextEventId": "ikura-549",
+          "textLineIndex": {
+            "ja-JP": 14
+          },
+          "cues": [
+            {
+              "cueId": "cue-f523c8768552d313",
+              "kind": "voice",
+              "timing": "utterance",
+              "mediaId": "asset/a-377d51a8edec6ba2",
+              "resolverId": "research-media-v1",
+              "raw": {
+                "sourceKey": "Etc5299",
+                "playbackPath": "raw/kana/VOICE.unpacked/ETC5299.OGG",
+                "instructionIndex": 129
+              }
+            },
+            {
+              "cueId": "cue-304341eab80a82bf",
+              "kind": "image",
+              "timing": "scene",
+              "mediaId": "asset/a-dc9cf3ab554a56ab",
+              "resolverId": "research-media-v1",
+              "raw": {
+                "sourceKey": "BLACK",
+                "playbackPath": "derived/images/kana/GGD.unpacked/BLACK.png",
+                "instructionIndex": 113,
+                "targetInstructionIndex": 705
+              }
+            },
+            {
+              "cueId": "cue-9c0cb19e987675d2",
+              "kind": "image",
+              "timing": "scene",
+              "mediaId": "asset/a-05f7b5fdb9ed5dbf",
+              "resolverId": "research-media-v1",
+              "raw": {
+                "sourceKey": "KBG39A",
+                "playbackPath": "derived/images/kana/GGD.unpacked/KBG39A.png",
+                "instructionIndex": 118,
+                "targetInstructionIndex": 915
+              }
+            }
+          ]
+        },
+        {
+          "eventId": "ikura-549",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 132,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 1415,
+            "jaOffset": 1353,
+            "originalDisplayText": {
+              "zh-CN": "　父　：「啊啊。正式见父母时可是不小的骚动呢。」",
+              "ja-JP": "　父　：「ああ。親に打ち明ける時は大騒ぎだったな」"
+            }
+          },
+          "nextEventId": "ikura-5a6",
+          "textLineIndex": {
+            "ja-JP": 15
+          },
+          "cues": [
+            {
+              "cueId": "cue-a42f0fbb8d96e9fa",
+              "kind": "voice",
+              "timing": "utterance",
+              "mediaId": "asset/a-40374430386f206f",
+              "resolverId": "research-media-v1",
+              "raw": {
+                "sourceKey": "Etc5300",
+                "playbackPath": "raw/kana/VOICE.unpacked/ETC5300.OGG",
+                "instructionIndex": 132
+              }
+            }
+          ]
+        },
+        {
+          "eventId": "ikura-5a6",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 140,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 1523,
+            "jaOffset": 1446,
+            "originalDisplayText": {
+              "zh-CN": "　双亲的反应看来没什么问题。",
+              "ja-JP": "　両親の反応は、おおむねいいようだ。"
+            }
+          },
+          "nextEventId": "ikura-5d4",
+          "textLineIndex": {
+            "ja-JP": 16
+          }
+        },
+        {
+          "eventId": "ikura-5d4",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 143,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 1575,
+            "jaOffset": 1492,
+            "originalDisplayText": {
+              "zh-CN": "　我还一直在担心父母是不是因为加奈的事已经变得有些神经质了，看来是我多心了。也没看出母亲那自己儿子要被别的女人抢走了的嫉妒心。",
+              "ja-JP": "　加奈があんな状態なので、変に神経質になってしまわないかと心配したが、そんなことはなかった。息子を取られる母親の嫉妬、みたいなものもなかった。"
+            }
+          },
+          "nextEventId": "ikura-644",
+          "textLineIndex": {
+            "ja-JP": 17
+          }
+        },
+        {
+          "eventId": "ikura-644",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 146,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 1725,
+            "jaOffset": 1604,
+            "originalDisplayText": {
+              "zh-CN": "　……或许这就是所谓的人之父母吧。",
+              "ja-JP": "　……親なんてそんなもんなんだろうか。"
+            }
+          },
+          "nextEventId": "ikura-6c9",
+          "textLineIndex": {
+            "ja-JP": 18
+          }
+        },
+        {
+          "eventId": "ikura-6c9",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 164,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 1870,
+            "jaOffset": 1737,
+            "originalDisplayText": {
+              "zh-CN": "夕　美：「叔叔和阿姨那时是通过自由恋爱结婚的吗？」",
+              "ja-JP": "夕　美：「おじさまとおばさまって恋愛結婚でいらっしゃるんですか？」"
+            }
+          },
+          "nextEventId": "ikura-72d",
+          "textLineIndex": {
+            "ja-JP": 19
+          },
+          "cues": [
+            {
+              "cueId": "cue-c07c21247bf19c04",
+              "kind": "voice",
+              "timing": "utterance",
+              "mediaId": "asset/a-af84942cd55cb76a",
+              "resolverId": "research-media-v1",
+              "raw": {
+                "sourceKey": "Yum5504",
+                "playbackPath": "raw/kana/VOICE.unpacked/YUM5504.OGG",
+                "instructionIndex": 164
+              }
+            },
+            {
+              "cueId": "cue-6c8a09ef7cf76f4e",
+              "kind": "image",
+              "timing": "scene",
+              "mediaId": "asset/a-05f7b5fdb9ed5dbf",
+              "resolverId": "research-media-v1",
+              "raw": {
+                "sourceKey": "KBG39A",
+                "playbackPath": "derived/images/kana/GGD.unpacked/KBG39A.png",
+                "instructionIndex": 150,
+                "targetInstructionIndex": 915
+              }
+            },
+            {
+              "cueId": "cue-c0409f3f259189d7",
+              "kind": "image",
+              "timing": "scene",
+              "mediaId": "asset/a-9439338c3fe8c1e4",
+              "resolverId": "research-media-v1",
+              "raw": {
+                "sourceKey": "KSY20A",
+                "playbackPath": "derived/images/kana/GGD.unpacked/KSY20A.png",
+                "instructionIndex": 152,
+                "targetInstructionIndex": 1539
+              }
+            }
+          ]
+        },
+        {
+          "eventId": "ikura-72d",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 172,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 1980,
+            "jaOffset": 1837,
+            "originalDisplayText": {
+              "zh-CN": "　夕美已经和家里人打成一片了。",
+              "ja-JP": "　夕美はもう家族に溶け込んでいる。"
+            }
+          },
+          "nextEventId": "ikura-75c",
+          "textLineIndex": {
+            "ja-JP": 20
+          }
+        },
+        {
+          "eventId": "ikura-75c",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 175,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 2034,
+            "jaOffset": 1884,
+            "originalDisplayText": {
+              "zh-CN": "　真是了不起的才能。",
+              "ja-JP": "　すごい才能だ。"
+            }
+          },
+          "nextEventId": "ikura-799",
+          "textLineIndex": {
+            "ja-JP": 21
+          }
+        },
+        {
+          "eventId": "ikura-799",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 183,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 2105,
+            "jaOffset": 1945,
+            "originalDisplayText": {
+              "zh-CN": "　父　：「啊啊，是的，鹿岛小姐。」",
+              "ja-JP": "　父　：「ああ、そうなんですよ、鹿島さん」"
+            }
+          },
+          "nextEventId": "ikura-7d3",
+          "textLineIndex": {
+            "ja-JP": 22
+          },
+          "cues": [
+            {
+              "cueId": "cue-4d78fa5f68a9c0ed",
+              "kind": "voice",
+              "timing": "utterance",
+              "mediaId": "asset/a-575e033befc2a340",
+              "resolverId": "research-media-v1",
+              "raw": {
+                "sourceKey": "Etc5301",
+                "playbackPath": "raw/kana/VOICE.unpacked/ETC5301.OGG",
+                "instructionIndex": 183
+              }
+            }
+          ]
+        },
+        {
+          "eventId": "ikura-7d3",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 186,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 2172,
+            "jaOffset": 2003,
+            "originalDisplayText": {
+              "zh-CN": "　母　：「是怀上隆道之后才结婚的哦，这事在当时可是闹得不小。」",
+              "ja-JP": "　母　：「隆道を身ごもってからの結婚だったわね。大騒ぎになったのよ」"
+            }
+          },
+          "nextEventId": "ikura-83d",
+          "textLineIndex": {
+            "ja-JP": 23
+          },
+          "cues": [
+            {
+              "cueId": "cue-76bdc22c52a08f9b",
+              "kind": "voice",
+              "timing": "utterance",
+              "mediaId": "asset/a-833b0749fb604cf9",
+              "resolverId": "research-media-v1",
+              "raw": {
+                "sourceKey": "Etc5302",
+                "playbackPath": "raw/kana/VOICE.unpacked/ETC5302.OGG",
+                "instructionIndex": 186
+              }
+            }
+          ]
+        },
+        {
+          "eventId": "ikura-83d",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 194,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 2294,
+            "jaOffset": 2109,
+            "originalDisplayText": {
+              "zh-CN": "　母亲已然做出一副婆婆的样子了。",
+              "ja-JP": "　母親はもう理解ある姑気取りだ。"
+            }
+          },
+          "nextEventId": "ikura-86c",
+          "textLineIndex": {
+            "ja-JP": 24
+          }
+        },
+        {
+          "eventId": "ikura-86c",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 197,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 2350,
+            "jaOffset": 2156,
+            "originalDisplayText": {
+              "zh-CN": "　看来他们对夕美挺满意。",
+              "ja-JP": "　どうも、夕美のことをいたく気に入ったらしい。"
+            }
+          },
+          "nextEventId": "ikura-8ba",
+          "textLineIndex": {
+            "ja-JP": 25
+          }
+        },
+        {
+          "eventId": "ikura-8ba",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 205,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 2425,
+            "jaOffset": 2234,
+            "originalDisplayText": {
+              "zh-CN": "　母　：「不过，你们可不能把交往恋爱当儿戏啊。」",
+              "ja-JP": "　母　：「でも、あなたたちはただれた付き合いをしたら駄目よ」"
+            }
+          },
+          "nextEventId": "ikura-93b",
+          "textLineIndex": {
+            "ja-JP": 26
+          },
+          "cues": [
+            {
+              "cueId": "cue-84e91568c940b1ac",
+              "kind": "voice",
+              "timing": "utterance",
+              "mediaId": "asset/a-4546d43dafd4b63a",
+              "resolverId": "research-media-v1",
+              "raw": {
+                "sourceKey": "Etc5303",
+                "playbackPath": "raw/kana/VOICE.unpacked/ETC5303.OGG",
+                "instructionIndex": 205
+              }
+            }
+          ]
+        },
+        {
+          "eventId": "ikura-93b",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 218,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 2566,
+            "jaOffset": 2363,
+            "originalDisplayText": {
+              "zh-CN": "夕　美：「您放心。我和隆道是纯洁地在交往的，对吧？」",
+              "ja-JP": "夕　美：「ええ、大丈夫です。清く正しく交際してますから、ね、藤堂君？」"
+            }
+          },
+          "nextEventId": "ikura-98c",
+          "textLineIndex": {
+            "ja-JP": 27
+          },
+          "cues": [
+            {
+              "cueId": "cue-5e150ff90f82164d",
+              "kind": "voice",
+              "timing": "utterance",
+              "mediaId": "asset/a-453ec52608eaed69",
+              "resolverId": "research-media-v1",
+              "raw": {
+                "sourceKey": "Yum5505",
+                "playbackPath": "raw/kana/VOICE.unpacked/YUM5505.OGG",
+                "instructionIndex": 218
+              }
+            },
+            {
+              "cueId": "cue-2cc773042353dbca",
+              "kind": "image",
+              "timing": "scene",
+              "mediaId": "asset/a-05f7b5fdb9ed5dbf",
+              "resolverId": "research-media-v1",
+              "raw": {
+                "sourceKey": "KBG39A",
+                "playbackPath": "derived/images/kana/GGD.unpacked/KBG39A.png",
+                "instructionIndex": 208,
+                "targetInstructionIndex": 915
+              }
+            },
+            {
+              "cueId": "cue-6a5afe5141907813",
+              "kind": "image",
+              "timing": "scene",
+              "mediaId": "asset/a-e98417999be8e76f",
+              "resolverId": "research-media-v1",
+              "raw": {
+                "sourceKey": "KSY19",
+                "playbackPath": "derived/images/kana/GGD.unpacked/KSY19.png",
+                "instructionIndex": 210,
+                "targetInstructionIndex": 1536
+              }
+            }
+          ]
+        },
+        {
+          "eventId": "ikura-98c",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 221,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 2651,
+            "jaOffset": 2444,
+            "originalDisplayText": {
+              "zh-CN": "隆　道：「啊，啊啊……」",
+              "ja-JP": "隆　道：「あ、ああ……」"
+            }
+          },
+          "nextEventId": "ikura-9d0",
+          "textLineIndex": {
+            "ja-JP": 28
+          }
+        },
+        {
+          "eventId": "ikura-9d0",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 229,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 2726,
+            "jaOffset": 2512,
+            "originalDisplayText": {
+              "zh-CN": "　见到我有那么一瞬间的迟疑，父亲朝我投来了意味深长的视线。",
+              "ja-JP": "　俺が一瞬口ごもると、父親が意味深な視線を向けた。"
+            }
+          },
+          "nextEventId": "ikura-a0d",
+          "textLineIndex": {
+            "ja-JP": 29
+          }
+        },
+        {
+          "eventId": "ikura-a0d",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 232,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 2808,
+            "jaOffset": 2573,
+            "originalDisplayText": {
+              "zh-CN": "　……被发现了吗。",
+              "ja-JP": "　……気づかれたかな。"
+            }
+          },
+          "nextEventId": "ikura-a4e",
+          "textLineIndex": {
+            "ja-JP": 30
+          }
+        },
+        {
+          "eventId": "ikura-a4e",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 240,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 2877,
+            "jaOffset": 2638,
+            "originalDisplayText": {
+              "zh-CN": "　母　：「好好，那样就好。」",
+              "ja-JP": "　母　：「そうそう、それがいいのよ」"
+            }
+          },
+          "nextEventId": "ikura-a9e",
+          "textLineIndex": {
+            "ja-JP": 31
+          },
+          "cues": [
+            {
+              "cueId": "cue-e2f5c7d84e66757e",
+              "kind": "voice",
+              "timing": "utterance",
+              "mediaId": "asset/a-1cfcc745de2bcba3",
+              "resolverId": "research-media-v1",
+              "raw": {
+                "sourceKey": "Etc5304",
+                "playbackPath": "raw/kana/VOICE.unpacked/ETC5304.OGG",
+                "instructionIndex": 240
+              }
+            }
+          ]
+        },
+        {
+          "eventId": "ikura-a9e",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 248,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 2965,
+            "jaOffset": 2718,
+            "originalDisplayText": {
+              "zh-CN": "　母亲倒似乎没有觉察到什么。",
+              "ja-JP": "　母親は気づいていない様子だ。"
+            }
+          },
+          "nextEventId": "ikura-ae5",
+          "textLineIndex": {
+            "ja-JP": 32
+          }
+        },
+        {
+          "eventId": "ikura-ae5",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 256,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 3044,
+            "jaOffset": 2789,
+            "originalDisplayText": {
+              "zh-CN": "　父　：「好啊，这下在我家也就圆满了。」",
+              "ja-JP": "　父　：「まあ、これで我が家も安泰かな」"
+            }
+          },
+          "nextEventId": "ikura-b3b",
+          "textLineIndex": {
+            "ja-JP": 33
+          },
+          "cues": [
+            {
+              "cueId": "cue-514bbe41f389c77e",
+              "kind": "voice",
+              "timing": "utterance",
+              "mediaId": "asset/a-dc5d9864ad7cca64",
+              "resolverId": "research-media-v1",
+              "raw": {
+                "sourceKey": "Etc5305",
+                "playbackPath": "raw/kana/VOICE.unpacked/ETC5305.OGG",
+                "instructionIndex": 256
+              }
+            }
+          ]
+        },
+        {
+          "eventId": "ikura-b3b",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 264,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 3144,
+            "jaOffset": 2875,
+            "originalDisplayText": {
+              "zh-CN": "　父亲说道。",
+              "ja-JP": "　父親が言う。"
+            }
+          },
+          "nextEventId": "ikura-b5d",
+          "textLineIndex": {
+            "ja-JP": 34
+          }
+        },
+        {
+          "eventId": "ikura-b5d",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 267,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 3180,
+            "jaOffset": 2909,
+            "originalDisplayText": {
+              "zh-CN": "　这话让我有些感到排斥。",
+              "ja-JP": "　その言葉に、俺は少し反発を感じる。"
+            }
+          },
+          "nextEventId": "ikura-ba9",
+          "textLineIndex": {
+            "ja-JP": 35
+          }
+        },
+        {
+          "eventId": "ikura-ba9",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 275,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 3255,
+            "jaOffset": 2985,
+            "originalDisplayText": {
+              "zh-CN": "　圆满？",
+              "ja-JP": "　安泰？"
+            }
+          },
+          "nextEventId": "ikura-be2",
+          "textLineIndex": {
+            "ja-JP": 36
+          }
+        },
+        {
+          "eventId": "ikura-be2",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 283,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 3314,
+            "jaOffset": 3042,
+            "originalDisplayText": {
+              "zh-CN": "　现在时考虑家庭圆不圆满的时候吗？",
+              "ja-JP": "　今、家庭が安泰かどうかを考える時なのか？"
+            }
+          },
+          "nextEventId": "ikura-c16",
+          "textLineIndex": {
+            "ja-JP": 37
+          }
+        },
+        {
+          "eventId": "ikura-c16",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 286,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 3372,
+            "jaOffset": 3094,
+            "originalDisplayText": {
+              "zh-CN": "　加奈眼看就要离开人世了。",
+              "ja-JP": "　加奈が死を目前としているこの時に。"
+            }
+          },
+          "nextEventId": "ikura-c61",
+          "textLineIndex": {
+            "ja-JP": 38
+          }
+        },
+        {
+          "eventId": "ikura-c61",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 294,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 3449,
+            "jaOffset": 3169,
+            "originalDisplayText": {
+              "zh-CN": "隆　道：「鹿岛小姐，不好意思。我们现在要去探望妹妹了。」",
+              "ja-JP": "隆　道：「鹿島さん、悪いけど俺たち、これから妹の見舞いに行くんだ」"
+            }
+          },
+          "nextEventId": "ikura-ca8",
+          "textLineIndex": {
+            "ja-JP": 39
+          }
+        },
+        {
+          "eventId": "ikura-ca8",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 297,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 3529,
+            "jaOffset": 3240,
+            "originalDisplayText": {
+              "zh-CN": "夕　美：「妹妹？」",
+              "ja-JP": "夕　美：「妹さん？」"
+            }
+          },
+          "nextEventId": "ikura-cd7",
+          "textLineIndex": {
+            "ja-JP": 40
+          },
+          "cues": [
+            {
+              "cueId": "cue-7cf939b13ea01611",
+              "kind": "voice",
+              "timing": "utterance",
+              "mediaId": "asset/a-c0464540a2b8ef30",
+              "resolverId": "research-media-v1",
+              "raw": {
+                "sourceKey": "Yum5506",
+                "playbackPath": "raw/kana/VOICE.unpacked/YUM5506.OGG",
+                "instructionIndex": 297
+              }
+            }
+          ]
+        },
+        {
+          "eventId": "ikura-cd7",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 300,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 3580,
+            "jaOffset": 3287,
+            "originalDisplayText": {
+              "zh-CN": "隆　道：「所以……」",
+              "ja-JP": "隆　道：「だから……」"
+            }
+          },
+          "nextEventId": "ikura-cff",
+          "textLineIndex": {
+            "ja-JP": 41
+          }
+        },
+        {
+          "eventId": "ikura-cff",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 303,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 3624,
+            "jaOffset": 3327,
+            "originalDisplayText": {
+              "zh-CN": "夕　美：「能不能让我也一起去啊？」",
+              "ja-JP": "夕　美：「一緒に行ったら駄目でしょうか？」"
+            }
+          },
+          "nextEventId": "ikura-d3d",
+          "textLineIndex": {
+            "ja-JP": 42
+          },
+          "cues": [
+            {
+              "cueId": "cue-e820008c07da205c",
+              "kind": "voice",
+              "timing": "utterance",
+              "mediaId": "asset/a-ac28041f5f68b61f",
+              "resolverId": "research-media-v1",
+              "raw": {
+                "sourceKey": "Yum5507",
+                "playbackPath": "raw/kana/VOICE.unpacked/YUM5507.OGG",
+                "instructionIndex": 303
+              }
+            }
+          ]
+        },
+        {
+          "eventId": "ikura-d3d",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 306,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 3691,
+            "jaOffset": 3389,
+            "originalDisplayText": {
+              "zh-CN": "隆　道：「咦？」",
+              "ja-JP": "隆　道：「え？」"
+            }
+          },
+          "nextEventId": "ikura-d60",
+          "textLineIndex": {
+            "ja-JP": 43
+          }
+        },
+        {
+          "eventId": "ikura-d60",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 309,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 3731,
+            "jaOffset": 3424,
+            "originalDisplayText": {
+              "zh-CN": "夕　美：「反正我也没什么事。难得一次嘛，而且，看到这么多人来看她，妹妹也会高兴地吧？」",
+              "ja-JP": "夕　美：「私、どうせ暇ですし、せっかくなら大勢で行った方が妹さんも喜ばれるんじゃありません？」"
+            }
+          },
+          "nextEventId": "ikura-dc1",
+          "textLineIndex": {
+            "ja-JP": 44
+          },
+          "cues": [
+            {
+              "cueId": "cue-aa0bf8c537c4d09f",
+              "kind": "voice",
+              "timing": "utterance",
+              "mediaId": "asset/a-68bda11b7c105b26",
+              "resolverId": "research-media-v1",
+              "raw": {
+                "sourceKey": "Yum5508",
+                "playbackPath": "raw/kana/VOICE.unpacked/YUM5508.OGG",
+                "instructionIndex": 309
+              }
+            }
+          ]
+        },
+        {
+          "eventId": "ikura-dc1",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 312,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 3850,
+            "jaOffset": 3521,
+            "originalDisplayText": {
+              "zh-CN": "　母　：「哎，就是啊，这想法不错。对吧，亲爱的？」",
+              "ja-JP": "　母　：「ええ、そうね、いい考えだわ。ねえ、あなた？」"
+            }
+          },
+          "nextEventId": "ikura-e1e",
+          "textLineIndex": {
+            "ja-JP": 45
+          },
+          "cues": [
+            {
+              "cueId": "cue-5210ddb4cb614fbc",
+              "kind": "voice",
+              "timing": "utterance",
+              "mediaId": "asset/a-0a989b67f3d54ffd",
+              "resolverId": "research-media-v1",
+              "raw": {
+                "sourceKey": "Etc5306",
+                "playbackPath": "raw/kana/VOICE.unpacked/ETC5306.OGG",
+                "instructionIndex": 312
+              }
+            }
+          ]
+        },
+        {
+          "eventId": "ikura-e1e",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 320,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 3960,
+            "jaOffset": 3614,
+            "originalDisplayText": {
+              "zh-CN": "　母亲轻易地就同意了。",
+              "ja-JP": "　母親が安易に同調する。"
+            }
+          },
+          "nextEventId": "ikura-e63",
+          "textLineIndex": {
+            "ja-JP": 46
+          }
+        },
+        {
+          "eventId": "ikura-e63",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 328,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 4033,
+            "jaOffset": 3683,
+            "originalDisplayText": {
+              "zh-CN": "　父　：「啊啊，那就一起来吧。」",
+              "ja-JP": "　父　：「ああ、そうしてもらうか」"
+            }
+          },
+          "nextEventId": "ikura-e97",
+          "textLineIndex": {
+            "ja-JP": 47
+          },
+          "cues": [
+            {
+              "cueId": "cue-4f4a9c3ff61580ca",
+              "kind": "voice",
+              "timing": "utterance",
+              "mediaId": "asset/a-2198385e1c77261e",
+              "resolverId": "research-media-v1",
+              "raw": {
+                "sourceKey": "Etc5307",
+                "playbackPath": "raw/kana/VOICE.unpacked/ETC5307.OGG",
+                "instructionIndex": 328
+              }
+            }
+          ]
+        },
+        {
+          "eventId": "ikura-e97",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 331,
+            "opcode": 43,
+            "status": "unchanged",
+            "zhOffset": 4098,
+            "jaOffset": 3735,
+            "originalDisplayText": {
+              "zh-CN": "隆　道：「……」",
+              "ja-JP": "隆　道：「……」"
+            }
+          },
+          "nextEventId": "ikura-ec1",
+          "textLineIndex": {
+            "ja-JP": 48
+          }
+        },
+        {
+          "eventId": "ikura-ec1",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 335,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 4143,
+            "jaOffset": 3777,
+            "originalDisplayText": {
+              "zh-CN": "　夕美向着无言以对的我眨了眨眼。",
+              "ja-JP": "　絶句する俺に、夕美はパチリとウインクをよこした。"
+            }
+          },
+          "nextEventId": "ikura-f68",
+          "textLineIndex": {
+            "ja-JP": 49
+          }
+        },
+        {
+          "eventId": "ikura-f68",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 356,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 4308,
+            "jaOffset": 3944,
+            "originalDisplayText": {
+              "zh-CN": "　父　：「那，我们先去跟医生打下招呼，隆道你们就先去加奈那里吧。」",
+              "ja-JP": "　父　：「じゃあ、私たちは先に先生にご挨拶してくるから、隆道たちは加奈のところに行っててくれないか」"
+            }
+          },
+          "nextEventId": "ikura-fe3",
+          "textLineIndex": {
+            "ja-JP": 50
+          },
+          "cues": [
+            {
+              "cueId": "cue-c4171a4a35787aca",
+              "kind": "voice",
+              "timing": "utterance",
+              "mediaId": "asset/a-70876f1673eece07",
+              "resolverId": "research-media-v1",
+              "raw": {
+                "sourceKey": "Etc5308",
+                "playbackPath": "raw/kana/VOICE.unpacked/ETC5308.OGG",
+                "instructionIndex": 356
+              }
+            },
+            {
+              "cueId": "cue-785c81c51cf26b75",
+              "kind": "image",
+              "timing": "scene",
+              "mediaId": "asset/a-dc9cf3ab554a56ab",
+              "resolverId": "research-media-v1",
+              "raw": {
+                "sourceKey": "BLACK",
+                "playbackPath": "derived/images/kana/GGD.unpacked/BLACK.png",
+                "instructionIndex": 340,
+                "targetInstructionIndex": 705
+              }
+            },
+            {
+              "cueId": "cue-8393b2e5fb485369",
+              "kind": "image",
+              "timing": "scene",
+              "mediaId": "asset/a-2186da77fcab02ec",
+              "resolverId": "research-media-v1",
+              "raw": {
+                "sourceKey": "KBG07A",
+                "playbackPath": "derived/images/kana/GGD.unpacked/KBG07A.png",
+                "instructionIndex": 345,
+                "targetInstructionIndex": 762
+              }
+            }
+          ]
+        },
+        {
+          "eventId": "ikura-fe3",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 364,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 4434,
+            "jaOffset": 4067,
+            "originalDisplayText": {
+              "zh-CN": "　双亲朝着早已成熟人的加奈的主治医师走去。",
+              "ja-JP": "　両親はすでになじみになった加奈の担当医のところに向かった。"
+            }
+          },
+          "nextEventId": "ikura-1021",
+          "textLineIndex": {
+            "ja-JP": 51
+          }
+        },
+        {
+          "eventId": "ikura-1021",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 367,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 4500,
+            "jaOffset": 4129,
+            "originalDisplayText": {
+              "zh-CN": "　我和夕美则走向病房。",
+              "ja-JP": "　俺と夕美は加奈の病室へ。"
+            }
+          },
+          "nextEventId": "ikura-104d",
+          "textLineIndex": {
+            "ja-JP": 52
+          }
+        },
+        {
+          "eventId": "ikura-104d",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 370,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 4546,
+            "jaOffset": 4173,
+            "originalDisplayText": {
+              "zh-CN": "　然而我却十分不想让夕美和加奈见面。",
+              "ja-JP": "　けど俺は、加奈と夕美を合わせたくない気持ちで一杯だった。"
+            }
+          },
+          "nextEventId": "ikura-10e3",
+          "textLineIndex": {
+            "ja-JP": 53
+          }
+        },
+        {
+          "eventId": "ikura-10e3",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 388,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 4693,
+            "jaOffset": 4323,
+            "originalDisplayText": {
+              "zh-CN": "隆　道：「不过你啊，还真是会演戏呢。」",
+              "ja-JP": "隆　道：「だけどまあ、よくそこまで演技できるもんだよな」"
+            }
+          },
+          "nextEventId": "ikura-111c",
+          "textLineIndex": {
+            "ja-JP": 54
+          },
+          "cues": [
+            {
+              "cueId": "cue-8ffc27c5c7c7ab3f",
+              "kind": "image",
+              "timing": "scene",
+              "mediaId": "asset/a-0310d0cf97c0fe0a",
+              "resolverId": "research-media-v1",
+              "raw": {
+                "sourceKey": "KBG09A",
+                "playbackPath": "derived/images/kana/GGD.unpacked/KBG09A.png",
+                "instructionIndex": 374,
+                "targetInstructionIndex": 771
+              }
+            },
+            {
+              "cueId": "cue-dea8a17715fdaf06",
+              "kind": "image",
+              "timing": "scene",
+              "mediaId": "asset/a-e98417999be8e76f",
+              "resolverId": "research-media-v1",
+              "raw": {
+                "sourceKey": "KSY19",
+                "playbackPath": "derived/images/kana/GGD.unpacked/KSY19.png",
+                "instructionIndex": 376,
+                "targetInstructionIndex": 1536
+              }
+            }
+          ]
+        },
+        {
+          "eventId": "ikura-111c",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 391,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 4755,
+            "jaOffset": 4380,
+            "originalDisplayText": {
+              "zh-CN": "夕　美：「因为我有演戏的才能啊。」",
+              "ja-JP": "夕　美：「演劇の才能があるのかもね」"
+            }
+          },
+          "nextEventId": "ikura-1156",
+          "textLineIndex": {
+            "ja-JP": 55
+          },
+          "cues": [
+            {
+              "cueId": "cue-e190933c6d6dbe9d",
+              "kind": "voice",
+              "timing": "utterance",
+              "mediaId": "asset/a-bbaae428646dafe5",
+              "resolverId": "research-media-v1",
+              "raw": {
+                "sourceKey": "Yum5509",
+                "playbackPath": "raw/kana/VOICE.unpacked/YUM5509.OGG",
+                "instructionIndex": 391
+              }
+            }
+          ]
+        },
+        {
+          "eventId": "ikura-1156",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 394,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 4822,
+            "jaOffset": 4438,
+            "originalDisplayText": {
+              "zh-CN": "隆　道：「……之前练习过了吧。」",
+              "ja-JP": "隆　道：「……予行練習してたな」"
+            }
+          },
+          "nextEventId": "ikura-11c3",
+          "textLineIndex": {
+            "ja-JP": 56
+          }
+        },
+        {
+          "eventId": "ikura-11c3",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 407,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 4938,
+            "jaOffset": 4547,
+            "originalDisplayText": {
+              "zh-CN": "夕　美：「露馅啦。」",
+              "ja-JP": "夕　美：「ばれたか」"
+            }
+          },
+          "nextEventId": "ikura-11f1",
+          "textLineIndex": {
+            "ja-JP": 57
+          },
+          "cues": [
+            {
+              "cueId": "cue-df6dc60803bbb681",
+              "kind": "voice",
+              "timing": "utterance",
+              "mediaId": "asset/a-58ef3f94bf9be937",
+              "resolverId": "research-media-v1",
+              "raw": {
+                "sourceKey": "Yum5510",
+                "playbackPath": "raw/kana/VOICE.unpacked/YUM5510.OGG",
+                "instructionIndex": 407
+              }
+            },
+            {
+              "cueId": "cue-de4ec9157e11306c",
+              "kind": "image",
+              "timing": "scene",
+              "mediaId": "asset/a-0310d0cf97c0fe0a",
+              "resolverId": "research-media-v1",
+              "raw": {
+                "sourceKey": "KBG09A",
+                "playbackPath": "derived/images/kana/GGD.unpacked/KBG09A.png",
+                "instructionIndex": 397,
+                "targetInstructionIndex": 771
+              }
+            },
+            {
+              "cueId": "cue-062a9dbbf18ea944",
+              "kind": "image",
+              "timing": "scene",
+              "mediaId": "asset/a-9439338c3fe8c1e4",
+              "resolverId": "research-media-v1",
+              "raw": {
+                "sourceKey": "KSY20A",
+                "playbackPath": "derived/images/kana/GGD.unpacked/KSY20A.png",
+                "instructionIndex": 399,
+                "targetInstructionIndex": 1539
+              }
+            }
+          ]
+        },
+        {
+          "eventId": "ikura-11f1",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 410,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 4991,
+            "jaOffset": 4593,
+            "originalDisplayText": {
+              "zh-CN": "隆　道：「真是的……」",
+              "ja-JP": "隆　道：「まったく……」"
+            }
+          },
+          "nextEventId": "ikura-1235",
+          "textLineIndex": {
+            "ja-JP": 58
+          }
+        },
+        {
+          "eventId": "ikura-1235",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 418,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 5064,
+            "jaOffset": 4661,
+            "originalDisplayText": {
+              "zh-CN": "　很快就到了加奈的病房前。",
+              "ja-JP": "　ほどなくして加奈の病室につく。"
+            }
+          },
+          "nextEventId": "ikura-127c",
+          "textLineIndex": {
+            "ja-JP": 59
+          }
+        },
+        {
+          "eventId": "ikura-127c",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 426,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 5141,
+            "jaOffset": 4732,
+            "originalDisplayText": {
+              "zh-CN": "隆　道：「……我说，真的你也要来？」",
+              "ja-JP": "隆　道：「……なあ、本当におまえも来るのか？」"
+            }
+          },
+          "nextEventId": "ikura-12ef",
+          "textLineIndex": {
+            "ja-JP": 60
+          }
+        },
+        {
+          "eventId": "ikura-12ef",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 439,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 5261,
+            "jaOffset": 4847,
+            "originalDisplayText": {
+              "zh-CN": "夕　美：「都到这里了你还在说些什么啊。」",
+              "ja-JP": "夕　美：「ここまで連れてきておいて何言ってるのよ」"
+            }
+          },
+          "nextEventId": "ikura-132f",
+          "textLineIndex": {
+            "ja-JP": 61
+          },
+          "cues": [
+            {
+              "cueId": "cue-3f495be696302c87",
+              "kind": "voice",
+              "timing": "utterance",
+              "mediaId": "asset/a-1b587e9e02f01688",
+              "resolverId": "research-media-v1",
+              "raw": {
+                "sourceKey": "Yum5511",
+                "playbackPath": "raw/kana/VOICE.unpacked/YUM5511.OGG",
+                "instructionIndex": 439
+              }
+            },
+            {
+              "cueId": "cue-b429b5c6fbe69cdc",
+              "kind": "image",
+              "timing": "scene",
+              "mediaId": "asset/a-0310d0cf97c0fe0a",
+              "resolverId": "research-media-v1",
+              "raw": {
+                "sourceKey": "KBG09A",
+                "playbackPath": "derived/images/kana/GGD.unpacked/KBG09A.png",
+                "instructionIndex": 429,
+                "targetInstructionIndex": 771
+              }
+            },
+            {
+              "cueId": "cue-0c55fd600be2331e",
+              "kind": "image",
+              "timing": "scene",
+              "mediaId": "asset/a-e98417999be8e76f",
+              "resolverId": "research-media-v1",
+              "raw": {
+                "sourceKey": "KSY19",
+                "playbackPath": "derived/images/kana/GGD.unpacked/KSY19.png",
+                "instructionIndex": 431,
+                "targetInstructionIndex": 1536
+              }
+            }
+          ]
+        },
+        {
+          "eventId": "ikura-132f",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 442,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 5334,
+            "jaOffset": 4911,
+            "originalDisplayText": {
+              "zh-CN": "隆　道：「又不是我带你来的。」",
+              "ja-JP": "隆　道：「別に連れてきたわけじゃないけどな」"
+            }
+          },
+          "nextEventId": "ikura-1362",
+          "textLineIndex": {
+            "ja-JP": 62
+          }
+        },
+        {
+          "eventId": "ikura-1362",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 445,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 5388,
+            "jaOffset": 4962,
+            "originalDisplayText": {
+              "zh-CN": "夕　美：「啊，好过分。这是该对自己的女朋友说的话吗？」",
+              "ja-JP": "夕　美：「あ、ひどい。それが自分のラ・マンに言う言葉？」"
+            }
+          },
+          "nextEventId": "ikura-13a9",
+          "textLineIndex": {
+            "ja-JP": 63
+          },
+          "cues": [
+            {
+              "cueId": "cue-acb8c6401bd4d3e1",
+              "kind": "voice",
+              "timing": "utterance",
+              "mediaId": "asset/a-9b4883b94944a7e1",
+              "resolverId": "research-media-v1",
+              "raw": {
+                "sourceKey": "Yum5512",
+                "playbackPath": "raw/kana/VOICE.unpacked/YUM5512.OGG",
+                "instructionIndex": 445
+              }
+            }
+          ]
+        },
+        {
+          "eventId": "ikura-13a9",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 448,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 5475,
+            "jaOffset": 5033,
+            "originalDisplayText": {
+              "zh-CN": "隆　道：「……只是说这件事而已。」",
+              "ja-JP": "隆　道：「……そのことなんだけど」"
+            }
+          },
+          "nextEventId": "ikura-13d7",
+          "textLineIndex": {
+            "ja-JP": 64
+          }
+        },
+        {
+          "eventId": "ikura-13d7",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 451,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 5533,
+            "jaOffset": 5079,
+            "originalDisplayText": {
+              "zh-CN": "夕　美：「嗯？」",
+              "ja-JP": "夕　美：「うん？」"
+            }
+          },
+          "nextEventId": "ikura-141f",
+          "textLineIndex": {
+            "ja-JP": 65
+          },
+          "cues": [
+            {
+              "cueId": "cue-5028245bbe185fff",
+              "kind": "voice",
+              "timing": "utterance",
+              "mediaId": "asset/a-08f452c018999ae2",
+              "resolverId": "research-media-v1",
+              "raw": {
+                "sourceKey": "Yum5513",
+                "playbackPath": "raw/kana/VOICE.unpacked/YUM5513.OGG",
+                "instructionIndex": 451
+              }
+            }
+          ]
+        },
+        {
+          "eventId": "ikura-141f",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 459,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 5609,
+            "jaOffset": 5151,
+            "originalDisplayText": {
+              "zh-CN": "隆　道：「加奈……我妹妹她啊，似乎兄控情结有点重。所以啊，能不能别太强调你是恋人这一点？」",
+              "ja-JP": "隆　道：「加奈……妹はさ、かなりブラコンの気があるんだ。それで、その恋人っていうのを強調するのはやめてくれないか」"
+            }
+          },
+          "nextEventId": "ikura-1480",
+          "textLineIndex": {
+            "ja-JP": 66
+          }
+        },
+        {
+          "eventId": "ikura-1480",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 462,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 5723,
+            "jaOffset": 5248,
+            "originalDisplayText": {
+              "zh-CN": "夕　美：「那我该怎样自我介绍才好呢？」",
+              "ja-JP": "夕　美：「じゃあ私、どういう風に自己紹介すればいいの？」"
+            }
+          },
+          "nextEventId": "ikura-14c6",
+          "textLineIndex": {
+            "ja-JP": 67
+          },
+          "cues": [
+            {
+              "cueId": "cue-39933dc9fcc76380",
+              "kind": "voice",
+              "timing": "utterance",
+              "mediaId": "asset/a-f7d922a88fc9cf4b",
+              "resolverId": "research-media-v1",
+              "raw": {
+                "sourceKey": "Yum5514",
+                "playbackPath": "raw/kana/VOICE.unpacked/YUM5514.OGG",
+                "instructionIndex": 462
+              }
+            }
+          ]
+        },
+        {
+          "eventId": "ikura-14c6",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 465,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 5794,
+            "jaOffset": 5318,
+            "originalDisplayText": {
+              "zh-CN": "隆　道：「大学的朋友。」",
+              "ja-JP": "隆　道：「大学関係の友達」"
+            }
+          },
+          "nextEventId": "ikura-1530",
+          "textLineIndex": {
+            "ja-JP": 68
+          }
+        },
+        {
+          "eventId": "ikura-1530",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 478,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 5902,
+            "jaOffset": 5424,
+            "originalDisplayText": {
+              "zh-CN": "夕　美：「哎——？」",
+              "ja-JP": "夕　美：「えーっ！？」"
+            }
+          },
+          "nextEventId": "ikura-1560",
+          "textLineIndex": {
+            "ja-JP": 69
+          },
+          "cues": [
+            {
+              "cueId": "cue-bd51bb988ec59c9c",
+              "kind": "voice",
+              "timing": "utterance",
+              "mediaId": "asset/a-a2b612bbfb65198c",
+              "resolverId": "research-media-v1",
+              "raw": {
+                "sourceKey": "Yum5515",
+                "playbackPath": "raw/kana/VOICE.unpacked/YUM5515.OGG",
+                "instructionIndex": 478
+              }
+            },
+            {
+              "cueId": "cue-a2b8a7a45d205493",
+              "kind": "image",
+              "timing": "scene",
+              "mediaId": "asset/a-0310d0cf97c0fe0a",
+              "resolverId": "research-media-v1",
+              "raw": {
+                "sourceKey": "KBG09A",
+                "playbackPath": "derived/images/kana/GGD.unpacked/KBG09A.png",
+                "instructionIndex": 468,
+                "targetInstructionIndex": 771
+              }
+            },
+            {
+              "cueId": "cue-ba60b0e140e648cc",
+              "kind": "image",
+              "timing": "scene",
+              "mediaId": "asset/a-a899853f4ea98164",
+              "resolverId": "research-media-v1",
+              "raw": {
+                "sourceKey": "KSY25",
+                "playbackPath": "derived/images/kana/GGD.unpacked/KSY25.png",
+                "instructionIndex": 470,
+                "targetInstructionIndex": 1566
+              }
+            }
+          ]
+        },
+        {
+          "eventId": "ikura-1560",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 481,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 5955,
+            "jaOffset": 5472,
+            "originalDisplayText": {
+              "zh-CN": "隆　道：「拜托了。」",
+              "ja-JP": "隆　道：「頼む」"
+            }
+          },
+          "nextEventId": "ikura-159f",
+          "textLineIndex": {
+            "ja-JP": 70
+          }
+        },
+        {
+          "eventId": "ikura-159f",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 489,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 6026,
+            "jaOffset": 5535,
+            "originalDisplayText": {
+              "zh-CN": "　看我一脸认真样子，夕美不情愿地同意了。",
+              "ja-JP": "　俺が真剣な顔で言うと、夕美はしぶしぶ納得する。"
+            }
+          },
+          "nextEventId": "ikura-15f6",
+          "textLineIndex": {
+            "ja-JP": 71
+          }
+        },
+        {
+          "eventId": "ikura-15f6",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 497,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 6117,
+            "jaOffset": 5622,
+            "originalDisplayText": {
+              "zh-CN": "夕　美：「……没办法。就这一次哦。」",
+              "ja-JP": "夕　美：「……仕方ないなあ。今回だけね」"
+            }
+          },
+          "nextEventId": "ikura-1634",
+          "textLineIndex": {
+            "ja-JP": 72
+          },
+          "cues": [
+            {
+              "cueId": "cue-d0a2c5337d414102",
+              "kind": "voice",
+              "timing": "utterance",
+              "mediaId": "asset/a-e3c2f6caa4037225",
+              "resolverId": "research-media-v1",
+              "raw": {
+                "sourceKey": "Yum5516",
+                "playbackPath": "raw/kana/VOICE.unpacked/YUM5516.OGG",
+                "instructionIndex": 497
+              }
+            }
+          ]
+        },
+        {
+          "eventId": "ikura-1634",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 500,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 6186,
+            "jaOffset": 5684,
+            "originalDisplayText": {
+              "zh-CN": "隆　道：「谢谢。」",
+              "ja-JP": "隆　道：「感謝」"
+            }
+          },
+          "nextEventId": "ikura-1695",
+          "textLineIndex": {
+            "ja-JP": 73
+          }
+        },
+        {
+          "eventId": "ikura-1695",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 513,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 6288,
+            "jaOffset": 5781,
+            "originalDisplayText": {
+              "zh-CN": "夕　美：「倒也没什么……之后能陪我做吗？」",
+              "ja-JP": "夕　美：「いいけど……あとでしてくれる？」"
+            }
+          },
+          "nextEventId": "ikura-16d0",
+          "textLineIndex": {
+            "ja-JP": 74
+          },
+          "cues": [
+            {
+              "cueId": "cue-5428eef8c2d2907e",
+              "kind": "voice",
+              "timing": "utterance",
+              "mediaId": "asset/a-90d4b3bdbba46a66",
+              "resolverId": "research-media-v1",
+              "raw": {
+                "sourceKey": "Yum5517",
+                "playbackPath": "raw/kana/VOICE.unpacked/YUM5517.OGG",
+                "instructionIndex": 513
+              }
+            },
+            {
+              "cueId": "cue-0b8fc31e41fce6bb",
+              "kind": "image",
+              "timing": "scene",
+              "mediaId": "asset/a-0310d0cf97c0fe0a",
+              "resolverId": "research-media-v1",
+              "raw": {
+                "sourceKey": "KBG09A",
+                "playbackPath": "derived/images/kana/GGD.unpacked/KBG09A.png",
+                "instructionIndex": 503,
+                "targetInstructionIndex": 771
+              }
+            },
+            {
+              "cueId": "cue-e5bbff5e6f7229e0",
+              "kind": "image",
+              "timing": "scene",
+              "mediaId": "asset/a-a02876267d341531",
+              "resolverId": "research-media-v1",
+              "raw": {
+                "sourceKey": "KSY22",
+                "playbackPath": "derived/images/kana/GGD.unpacked/KSY22.png",
+                "instructionIndex": 505,
+                "targetInstructionIndex": 1557
+              }
+            }
+          ]
+        },
+        {
+          "eventId": "ikura-16d0",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 516,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 6363,
+            "jaOffset": 5840,
+            "originalDisplayText": {
+              "zh-CN": "隆　道：「我说你啊，为什么就能把这种事说的这么直白啊……」",
+              "ja-JP": "隆　道：「だからさあ、どうしておまえはそうあからさまに……」"
+            }
+          },
+          "nextEventId": "ikura-173c",
+          "textLineIndex": {
+            "ja-JP": 75
+          }
+        },
+        {
+          "eventId": "ikura-173c",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 527,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 6494,
+            "jaOffset": 5948,
+            "originalDisplayText": {
+              "zh-CN": "　也许是我的怒鸣被里面听到了吧。",
+              "ja-JP": "　怒鳴り声が中に聞こえたのだろうか。"
+            }
+          },
+          "nextEventId": "ikura-176b",
+          "textLineIndex": {
+            "ja-JP": 76
+          }
+        },
+        {
+          "eventId": "ikura-176b",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 530,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 6550,
+            "jaOffset": 5995,
+            "originalDisplayText": {
+              "zh-CN": "　感觉到病房里发出一阵慌乱地骚动。",
+              "ja-JP": "　病室内がにわかに慌ただしくなったような気がした。"
+            }
+          },
+          "nextEventId": "ikura-17a1",
+          "textLineIndex": {
+            "ja-JP": 77
+          }
+        },
+        {
+          "eventId": "ikura-17a1",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 533,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 6608,
+            "jaOffset": 6049,
+            "originalDisplayText": {
+              "zh-CN": "　先是听到床嘎吱嘎吱作响，然后就啪挞啪挞啪挞地，之后——",
+              "ja-JP": "　ベッドがきしむ音がして、パタパタパタというスリッパの音、そして―――"
+            }
+          },
+          "nextEventId": "end-001",
+          "textLineIndex": {
+            "ja-JP": 78
+          }
+        },
+        {
+          "eventId": "end-001",
+          "kind": "end",
+          "cues": [
+            {
+              "cueId": "cue-58316e3136677e60",
+              "kind": "image",
+              "timing": "scene",
+              "mediaId": "asset/a-dc9cf3ab554a56ab",
+              "resolverId": "research-media-v1",
+              "raw": {
+                "sourceKey": "BLACK",
+                "playbackPath": "derived/images/kana/GGD.unpacked/BLACK.png",
+                "instructionIndex": 675,
+                "targetInstructionIndex": 705
+              }
+            }
+          ]
+        }
+      ],
+      "titleAuthority": {
+        "sectionId": "main",
+        "authorityId": "section/kana-okaeri/ev48/main",
+        "title_cn": "高等期·和家人一起。",
+        "title_jp": "高等期・家族で",
+        "source": {
+          "zh-CN": "archive/derived/ikura-scripts/ISC.unpacked/EV48.script.json",
+          "ja-JP": "archive/derived/ikura-scripts/ISF.unpacked/EV48.script.json"
+        },
+        "evidence": {
+          "zh-CN": [
+            "textEvents entry has explicit kind=title",
+            "instructionOffset=67",
+            "rawHex=b8dfb5c8c6daa1a4bacdbcd2c8cbd2bbc6f0a1a3",
+            "variantId=ikura/isc.unpacked/ev48"
+          ],
+          "ja-JP": [
+            "textEvents entry has explicit kind=title",
+            "instructionOffset=67",
+            "rawHex=8d8293998afa814589c691b082c5",
+            "variantId=ikura/isf.unpacked/ev48"
+          ]
+        },
+        "confidence": {
+          "zh-CN": 1,
+          "ja-JP": 1
+        }
+      }
+    }
+  ],
+  "variantRoutes": [
+    {
+      "variantId": "paired/kana-okaeri/ev48/zh-ja",
+      "locales": [
+        "zh-CN",
+        "ja-JP"
+      ],
+      "readerLocales": [
+        "ja-JP",
+        "zh-CN"
+      ],
+      "textLineCounts": {
+        "ja-JP": 79,
+        "zh-CN": 79
+      },
+      "sections": [
+        {
+          "sectionId": "main",
+          "entryEventId": "ikura-43",
+          "events": [
+            {
+              "eventId": "ikura-43",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 10,
+                "opcode": 247,
+                "status": "translated",
+                "zhOffset": 67,
+                "jaOffset": 67,
+                "originalDisplayText": {
+                  "zh-CN": "高等期·和家人一起。",
+                  "ja-JP": "高等期・家族で"
+                }
+              },
+              "nextEventId": "ikura-74",
+              "textLineIndex": {
+                "ja-JP": 0,
+                "zh-CN": 0
+              },
+              "cues": [
+                {
+                  "cueId": "cue-9625444ca006e47d",
+                  "kind": "image",
+                  "timing": "scene",
+                  "mediaId": "asset/a-05f7b5fdb9ed5dbf",
+                  "resolverId": "research-media-v1",
+                  "raw": {
+                    "sourceKey": "KBG39A",
+                    "playbackPath": "derived/images/kana/GGD.unpacked/KBG39A.png",
+                    "instructionIndex": 3,
+                    "targetInstructionIndex": 915
+                  }
+                }
+              ]
+            },
+            {
+              "eventId": "ikura-74",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 16,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 122,
+                "jaOffset": 116,
+                "originalDisplayText": {
+                  "zh-CN": "　今天全家人一起去看望加奈。",
+                  "ja-JP": "　今日は家族全員で見舞いに行くことになった。"
+                }
+              },
+              "nextEventId": "ikura-c6",
+              "textLineIndex": {
+                "ja-JP": 1,
+                "zh-CN": 1
+              }
+            },
+            {
+              "eventId": "ikura-c6",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 24,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 201,
+                "jaOffset": 198,
+                "originalDisplayText": {
+                  "zh-CN": "　家人都觉得，应该给加奈留下一个温暖家庭的回忆。",
+                  "ja-JP": "　一つでも加奈に思い出を残してやろうという、家族全員の判断だった。"
+                }
+              },
+              "nextEventId": "ikura-10b",
+              "textLineIndex": {
+                "ja-JP": 2,
+                "zh-CN": 2
+              }
+            },
+            {
+              "eventId": "ikura-10b",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 27,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 273,
+                "jaOffset": 267,
+                "originalDisplayText": {
+                  "zh-CN": "　去医院的路上，遇到了夕美。",
+                  "ja-JP": "　病院に向かう途中、夕美と出会った。"
+                }
+              },
+              "nextEventId": "ikura-199",
+              "textLineIndex": {
+                "ja-JP": 3,
+                "zh-CN": 3
+              }
+            },
+            {
+              "eventId": "ikura-199",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 46,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 416,
+                "jaOffset": 409,
+                "originalDisplayText": {
+                  "zh-CN": "夕　美：「啊咧，藤堂君。」",
+                  "ja-JP": "夕　美：「あれー、藤堂くーん？」"
+                }
+              },
+              "nextEventId": "ikura-1d1",
+              "textLineIndex": {
+                "ja-JP": 4,
+                "zh-CN": 4
+              },
+              "cues": [
+                {
+                  "cueId": "cue-d3908bc439cbd084",
+                  "kind": "voice",
+                  "timing": "utterance",
+                  "mediaId": "asset/a-cae95943ffee5bed",
+                  "resolverId": "research-media-v1",
+                  "raw": {
+                    "sourceKey": "Yum5501",
+                    "playbackPath": "raw/kana/VOICE.unpacked/YUM5501.OGG",
+                    "instructionIndex": 46
+                  }
+                },
+                {
+                  "cueId": "cue-492a036a6515c371",
+                  "kind": "bgm",
+                  "timing": "scene",
+                  "mediaId": "asset/a-d9ee14ec700484ad",
+                  "resolverId": "research-media-v1",
+                  "raw": {
+                    "sourceKey": "TK07.ogg",
+                    "playbackPath": "raw/kana/WMSC.unpacked/TK07.OGG",
+                    "instructionIndex": 30,
+                    "targetInstructionIndex": 3067
+                  }
+                },
+                {
+                  "cueId": "cue-0ef3280f6f8136cd",
+                  "kind": "image",
+                  "timing": "scene",
+                  "mediaId": "asset/a-05f7b5fdb9ed5dbf",
+                  "resolverId": "research-media-v1",
+                  "raw": {
+                    "sourceKey": "KBG39A",
+                    "playbackPath": "derived/images/kana/GGD.unpacked/KBG39A.png",
+                    "instructionIndex": 32,
+                    "targetInstructionIndex": 915
+                  }
+                },
+                {
+                  "cueId": "cue-07739ba719b520ff",
+                  "kind": "image",
+                  "timing": "scene",
+                  "mediaId": "asset/a-e98417999be8e76f",
+                  "resolverId": "research-media-v1",
+                  "raw": {
+                    "sourceKey": "KSY19",
+                    "playbackPath": "derived/images/kana/GGD.unpacked/KSY19.png",
+                    "instructionIndex": 34,
+                    "targetInstructionIndex": 1536
+                  }
+                }
+              ]
+            },
+            {
+              "eventId": "ikura-1d1",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 49,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 475,
+                "jaOffset": 465,
+                "originalDisplayText": {
+                  "zh-CN": "隆　道：「啊……」",
+                  "ja-JP": "隆　道：「あ……」"
+                }
+              },
+              "nextEventId": "ikura-212",
+              "textLineIndex": {
+                "ja-JP": 5,
+                "zh-CN": 5
+              }
+            },
+            {
+              "eventId": "ikura-212",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 57,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 544,
+                "jaOffset": 530,
+                "originalDisplayText": {
+                  "zh-CN": "　出现的真不是时候。",
+                  "ja-JP": "　まずい時に、と思った。"
+                }
+              },
+              "nextEventId": "ikura-253",
+              "textLineIndex": {
+                "ja-JP": 6,
+                "zh-CN": 6
+              }
+            },
+            {
+              "eventId": "ikura-253",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 65,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 615,
+                "jaOffset": 595,
+                "originalDisplayText": {
+                  "zh-CN": "夕　美：「和家人一起出门啊。」",
+                  "ja-JP": "夕　美：「家族でお出かけなんだ」"
+                }
+              },
+              "nextEventId": "ikura-28a",
+              "textLineIndex": {
+                "ja-JP": 7,
+                "zh-CN": 7
+              },
+              "cues": [
+                {
+                  "cueId": "cue-8c98bfa0ce2e5c5a",
+                  "kind": "voice",
+                  "timing": "utterance",
+                  "mediaId": "asset/a-f1ddd8515f057614",
+                  "resolverId": "research-media-v1",
+                  "raw": {
+                    "sourceKey": "Yum5502",
+                    "playbackPath": "raw/kana/VOICE.unpacked/YUM5502.OGG",
+                    "instructionIndex": 65
+                  }
+                }
+              ]
+            },
+            {
+              "eventId": "ikura-28a",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 68,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 678,
+                "jaOffset": 650,
+                "originalDisplayText": {
+                  "zh-CN": "隆　道：「啊，嗯……」",
+                  "ja-JP": "隆　道：「ああ、まあ……」"
+                }
+              },
+              "nextEventId": "ikura-2b4",
+              "textLineIndex": {
+                "ja-JP": 8,
+                "zh-CN": 8
+              }
+            },
+            {
+              "eventId": "ikura-2b4",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 71,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 724,
+                "jaOffset": 692,
+                "originalDisplayText": {
+                  "zh-CN": "　父　：「这位小姐是？」",
+                  "ja-JP": "　父　：「こちらのお嬢さんは？」"
+                }
+              },
+              "nextEventId": "ikura-303",
+              "textLineIndex": {
+                "ja-JP": 9,
+                "zh-CN": 9
+              },
+              "cues": [
+                {
+                  "cueId": "cue-1d6db5e4c61d978a",
+                  "kind": "voice",
+                  "timing": "utterance",
+                  "mediaId": "asset/a-23bc829d397bf6a1",
+                  "resolverId": "research-media-v1",
+                  "raw": {
+                    "sourceKey": "Etc5298",
+                    "playbackPath": "raw/kana/VOICE.unpacked/ETC5298.OGG",
+                    "instructionIndex": 71
+                  }
+                }
+              ]
+            },
+            {
+              "eventId": "ikura-303",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 79,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 808,
+                "jaOffset": 771,
+                "originalDisplayText": {
+                  "zh-CN": "　父亲问道。",
+                  "ja-JP": "　父親が俺に問う。"
+                }
+              },
+              "nextEventId": "ikura-328",
+              "textLineIndex": {
+                "ja-JP": 10,
+                "zh-CN": 10
+              }
+            },
+            {
+              "eventId": "ikura-328",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 82,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 844,
+                "jaOffset": 808,
+                "originalDisplayText": {
+                  "zh-CN": "　还没等到我回答，夕美就恭恭敬敬地低了下头做起了自我介绍。就好像是在照剧本念似的说道。",
+                  "ja-JP": "　俺が答える前に、夕美はぺこりとお辞儀をして自己紹介した。まるで台本を用意していたかのようにすらすらと喋った。"
+                }
+              },
+              "nextEventId": "ikura-3df",
+              "textLineIndex": {
+                "ja-JP": 11,
+                "zh-CN": 11
+              }
+            },
+            {
+              "eventId": "ikura-3df",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 100,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 1041,
+                "jaOffset": 991,
+                "originalDisplayText": {
+                  "zh-CN": "夕　美：「我是正在和隆道君纯洁地交往的来自青心女子大学的鹿岛夕美。」",
+                  "ja-JP": "夕　美：「私、隆道君と清く正しくお付き合いさせていただいてます、青心女子大の鹿島夕美と申しまーす！」"
+                }
+              },
+              "nextEventId": "ikura-463",
+              "textLineIndex": {
+                "ja-JP": 12,
+                "zh-CN": 12
+              },
+              "cues": [
+                {
+                  "cueId": "cue-bb75967f91c817cf",
+                  "kind": "voice",
+                  "timing": "utterance",
+                  "mediaId": "asset/a-312789481d22c213",
+                  "resolverId": "research-media-v1",
+                  "raw": {
+                    "sourceKey": "Yum5503",
+                    "playbackPath": "raw/kana/VOICE.unpacked/YUM5503.OGG",
+                    "instructionIndex": 100
+                  }
+                },
+                {
+                  "cueId": "cue-7ce072fb07c7b5ba",
+                  "kind": "image",
+                  "timing": "scene",
+                  "mediaId": "asset/a-05f7b5fdb9ed5dbf",
+                  "resolverId": "research-media-v1",
+                  "raw": {
+                    "sourceKey": "KBG39A",
+                    "playbackPath": "derived/images/kana/GGD.unpacked/KBG39A.png",
+                    "instructionIndex": 86,
+                    "targetInstructionIndex": 915
+                  }
+                },
+                {
+                  "cueId": "cue-f5a560b54cb4d7b7",
+                  "kind": "image",
+                  "timing": "scene",
+                  "mediaId": "asset/a-9439338c3fe8c1e4",
+                  "resolverId": "research-media-v1",
+                  "raw": {
+                    "sourceKey": "KSY20A",
+                    "playbackPath": "derived/images/kana/GGD.unpacked/KSY20A.png",
+                    "instructionIndex": 88,
+                    "targetInstructionIndex": 1539
+                  }
+                }
+              ]
+            },
+            {
+              "eventId": "ikura-463",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 108,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 1169,
+                "jaOffset": 1123,
+                "originalDisplayText": {
+                  "zh-CN": "　父母都是一愣。",
+                  "ja-JP": "　きょとん、とした両親だった。"
+                }
+              },
+              "nextEventId": "ikura-4f9",
+              "textLineIndex": {
+                "ja-JP": 13,
+                "zh-CN": 13
+              }
+            },
+            {
+              "eventId": "ikura-4f9",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 129,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 1318,
+                "jaOffset": 1273,
+                "originalDisplayText": {
+                  "zh-CN": "　母　：「最近的女孩真是大大方方的啊。我那时候……呐，亲爱的。」",
+                  "ja-JP": "　母　：「最近の娘って物怖じしないのねえ。私の時なんて……ねえあなた？」"
+                }
+              },
+              "nextEventId": "ikura-549",
+              "textLineIndex": {
+                "ja-JP": 14,
+                "zh-CN": 14
+              },
+              "cues": [
+                {
+                  "cueId": "cue-f523c8768552d313",
+                  "kind": "voice",
+                  "timing": "utterance",
+                  "mediaId": "asset/a-377d51a8edec6ba2",
+                  "resolverId": "research-media-v1",
+                  "raw": {
+                    "sourceKey": "Etc5299",
+                    "playbackPath": "raw/kana/VOICE.unpacked/ETC5299.OGG",
+                    "instructionIndex": 129
+                  }
+                },
+                {
+                  "cueId": "cue-304341eab80a82bf",
+                  "kind": "image",
+                  "timing": "scene",
+                  "mediaId": "asset/a-dc9cf3ab554a56ab",
+                  "resolverId": "research-media-v1",
+                  "raw": {
+                    "sourceKey": "BLACK",
+                    "playbackPath": "derived/images/kana/GGD.unpacked/BLACK.png",
+                    "instructionIndex": 113,
+                    "targetInstructionIndex": 705
+                  }
+                },
+                {
+                  "cueId": "cue-9c0cb19e987675d2",
+                  "kind": "image",
+                  "timing": "scene",
+                  "mediaId": "asset/a-05f7b5fdb9ed5dbf",
+                  "resolverId": "research-media-v1",
+                  "raw": {
+                    "sourceKey": "KBG39A",
+                    "playbackPath": "derived/images/kana/GGD.unpacked/KBG39A.png",
+                    "instructionIndex": 118,
+                    "targetInstructionIndex": 915
+                  }
+                }
+              ]
+            },
+            {
+              "eventId": "ikura-549",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 132,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 1415,
+                "jaOffset": 1353,
+                "originalDisplayText": {
+                  "zh-CN": "　父　：「啊啊。正式见父母时可是不小的骚动呢。」",
+                  "ja-JP": "　父　：「ああ。親に打ち明ける時は大騒ぎだったな」"
+                }
+              },
+              "nextEventId": "ikura-5a6",
+              "textLineIndex": {
+                "ja-JP": 15,
+                "zh-CN": 15
+              },
+              "cues": [
+                {
+                  "cueId": "cue-a42f0fbb8d96e9fa",
+                  "kind": "voice",
+                  "timing": "utterance",
+                  "mediaId": "asset/a-40374430386f206f",
+                  "resolverId": "research-media-v1",
+                  "raw": {
+                    "sourceKey": "Etc5300",
+                    "playbackPath": "raw/kana/VOICE.unpacked/ETC5300.OGG",
+                    "instructionIndex": 132
+                  }
+                }
+              ]
+            },
+            {
+              "eventId": "ikura-5a6",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 140,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 1523,
+                "jaOffset": 1446,
+                "originalDisplayText": {
+                  "zh-CN": "　双亲的反应看来没什么问题。",
+                  "ja-JP": "　両親の反応は、おおむねいいようだ。"
+                }
+              },
+              "nextEventId": "ikura-5d4",
+              "textLineIndex": {
+                "ja-JP": 16,
+                "zh-CN": 16
+              }
+            },
+            {
+              "eventId": "ikura-5d4",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 143,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 1575,
+                "jaOffset": 1492,
+                "originalDisplayText": {
+                  "zh-CN": "　我还一直在担心父母是不是因为加奈的事已经变得有些神经质了，看来是我多心了。也没看出母亲那自己儿子要被别的女人抢走了的嫉妒心。",
+                  "ja-JP": "　加奈があんな状態なので、変に神経質になってしまわないかと心配したが、そんなことはなかった。息子を取られる母親の嫉妬、みたいなものもなかった。"
+                }
+              },
+              "nextEventId": "ikura-644",
+              "textLineIndex": {
+                "ja-JP": 17,
+                "zh-CN": 17
+              }
+            },
+            {
+              "eventId": "ikura-644",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 146,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 1725,
+                "jaOffset": 1604,
+                "originalDisplayText": {
+                  "zh-CN": "　……或许这就是所谓的人之父母吧。",
+                  "ja-JP": "　……親なんてそんなもんなんだろうか。"
+                }
+              },
+              "nextEventId": "ikura-6c9",
+              "textLineIndex": {
+                "ja-JP": 18,
+                "zh-CN": 18
+              }
+            },
+            {
+              "eventId": "ikura-6c9",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 164,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 1870,
+                "jaOffset": 1737,
+                "originalDisplayText": {
+                  "zh-CN": "夕　美：「叔叔和阿姨那时是通过自由恋爱结婚的吗？」",
+                  "ja-JP": "夕　美：「おじさまとおばさまって恋愛結婚でいらっしゃるんですか？」"
+                }
+              },
+              "nextEventId": "ikura-72d",
+              "textLineIndex": {
+                "ja-JP": 19,
+                "zh-CN": 19
+              },
+              "cues": [
+                {
+                  "cueId": "cue-c07c21247bf19c04",
+                  "kind": "voice",
+                  "timing": "utterance",
+                  "mediaId": "asset/a-af84942cd55cb76a",
+                  "resolverId": "research-media-v1",
+                  "raw": {
+                    "sourceKey": "Yum5504",
+                    "playbackPath": "raw/kana/VOICE.unpacked/YUM5504.OGG",
+                    "instructionIndex": 164
+                  }
+                },
+                {
+                  "cueId": "cue-6c8a09ef7cf76f4e",
+                  "kind": "image",
+                  "timing": "scene",
+                  "mediaId": "asset/a-05f7b5fdb9ed5dbf",
+                  "resolverId": "research-media-v1",
+                  "raw": {
+                    "sourceKey": "KBG39A",
+                    "playbackPath": "derived/images/kana/GGD.unpacked/KBG39A.png",
+                    "instructionIndex": 150,
+                    "targetInstructionIndex": 915
+                  }
+                },
+                {
+                  "cueId": "cue-c0409f3f259189d7",
+                  "kind": "image",
+                  "timing": "scene",
+                  "mediaId": "asset/a-9439338c3fe8c1e4",
+                  "resolverId": "research-media-v1",
+                  "raw": {
+                    "sourceKey": "KSY20A",
+                    "playbackPath": "derived/images/kana/GGD.unpacked/KSY20A.png",
+                    "instructionIndex": 152,
+                    "targetInstructionIndex": 1539
+                  }
+                }
+              ]
+            },
+            {
+              "eventId": "ikura-72d",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 172,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 1980,
+                "jaOffset": 1837,
+                "originalDisplayText": {
+                  "zh-CN": "　夕美已经和家里人打成一片了。",
+                  "ja-JP": "　夕美はもう家族に溶け込んでいる。"
+                }
+              },
+              "nextEventId": "ikura-75c",
+              "textLineIndex": {
+                "ja-JP": 20,
+                "zh-CN": 20
+              }
+            },
+            {
+              "eventId": "ikura-75c",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 175,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 2034,
+                "jaOffset": 1884,
+                "originalDisplayText": {
+                  "zh-CN": "　真是了不起的才能。",
+                  "ja-JP": "　すごい才能だ。"
+                }
+              },
+              "nextEventId": "ikura-799",
+              "textLineIndex": {
+                "ja-JP": 21,
+                "zh-CN": 21
+              }
+            },
+            {
+              "eventId": "ikura-799",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 183,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 2105,
+                "jaOffset": 1945,
+                "originalDisplayText": {
+                  "zh-CN": "　父　：「啊啊，是的，鹿岛小姐。」",
+                  "ja-JP": "　父　：「ああ、そうなんですよ、鹿島さん」"
+                }
+              },
+              "nextEventId": "ikura-7d3",
+              "textLineIndex": {
+                "ja-JP": 22,
+                "zh-CN": 22
+              },
+              "cues": [
+                {
+                  "cueId": "cue-4d78fa5f68a9c0ed",
+                  "kind": "voice",
+                  "timing": "utterance",
+                  "mediaId": "asset/a-575e033befc2a340",
+                  "resolverId": "research-media-v1",
+                  "raw": {
+                    "sourceKey": "Etc5301",
+                    "playbackPath": "raw/kana/VOICE.unpacked/ETC5301.OGG",
+                    "instructionIndex": 183
+                  }
+                }
+              ]
+            },
+            {
+              "eventId": "ikura-7d3",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 186,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 2172,
+                "jaOffset": 2003,
+                "originalDisplayText": {
+                  "zh-CN": "　母　：「是怀上隆道之后才结婚的哦，这事在当时可是闹得不小。」",
+                  "ja-JP": "　母　：「隆道を身ごもってからの結婚だったわね。大騒ぎになったのよ」"
+                }
+              },
+              "nextEventId": "ikura-83d",
+              "textLineIndex": {
+                "ja-JP": 23,
+                "zh-CN": 23
+              },
+              "cues": [
+                {
+                  "cueId": "cue-76bdc22c52a08f9b",
+                  "kind": "voice",
+                  "timing": "utterance",
+                  "mediaId": "asset/a-833b0749fb604cf9",
+                  "resolverId": "research-media-v1",
+                  "raw": {
+                    "sourceKey": "Etc5302",
+                    "playbackPath": "raw/kana/VOICE.unpacked/ETC5302.OGG",
+                    "instructionIndex": 186
+                  }
+                }
+              ]
+            },
+            {
+              "eventId": "ikura-83d",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 194,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 2294,
+                "jaOffset": 2109,
+                "originalDisplayText": {
+                  "zh-CN": "　母亲已然做出一副婆婆的样子了。",
+                  "ja-JP": "　母親はもう理解ある姑気取りだ。"
+                }
+              },
+              "nextEventId": "ikura-86c",
+              "textLineIndex": {
+                "ja-JP": 24,
+                "zh-CN": 24
+              }
+            },
+            {
+              "eventId": "ikura-86c",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 197,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 2350,
+                "jaOffset": 2156,
+                "originalDisplayText": {
+                  "zh-CN": "　看来他们对夕美挺满意。",
+                  "ja-JP": "　どうも、夕美のことをいたく気に入ったらしい。"
+                }
+              },
+              "nextEventId": "ikura-8ba",
+              "textLineIndex": {
+                "ja-JP": 25,
+                "zh-CN": 25
+              }
+            },
+            {
+              "eventId": "ikura-8ba",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 205,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 2425,
+                "jaOffset": 2234,
+                "originalDisplayText": {
+                  "zh-CN": "　母　：「不过，你们可不能把交往恋爱当儿戏啊。」",
+                  "ja-JP": "　母　：「でも、あなたたちはただれた付き合いをしたら駄目よ」"
+                }
+              },
+              "nextEventId": "ikura-93b",
+              "textLineIndex": {
+                "ja-JP": 26,
+                "zh-CN": 26
+              },
+              "cues": [
+                {
+                  "cueId": "cue-84e91568c940b1ac",
+                  "kind": "voice",
+                  "timing": "utterance",
+                  "mediaId": "asset/a-4546d43dafd4b63a",
+                  "resolverId": "research-media-v1",
+                  "raw": {
+                    "sourceKey": "Etc5303",
+                    "playbackPath": "raw/kana/VOICE.unpacked/ETC5303.OGG",
+                    "instructionIndex": 205
+                  }
+                }
+              ]
+            },
+            {
+              "eventId": "ikura-93b",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 218,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 2566,
+                "jaOffset": 2363,
+                "originalDisplayText": {
+                  "zh-CN": "夕　美：「您放心。我和隆道是纯洁地在交往的，对吧？」",
+                  "ja-JP": "夕　美：「ええ、大丈夫です。清く正しく交際してますから、ね、藤堂君？」"
+                }
+              },
+              "nextEventId": "ikura-98c",
+              "textLineIndex": {
+                "ja-JP": 27,
+                "zh-CN": 27
+              },
+              "cues": [
+                {
+                  "cueId": "cue-5e150ff90f82164d",
+                  "kind": "voice",
+                  "timing": "utterance",
+                  "mediaId": "asset/a-453ec52608eaed69",
+                  "resolverId": "research-media-v1",
+                  "raw": {
+                    "sourceKey": "Yum5505",
+                    "playbackPath": "raw/kana/VOICE.unpacked/YUM5505.OGG",
+                    "instructionIndex": 218
+                  }
+                },
+                {
+                  "cueId": "cue-2cc773042353dbca",
+                  "kind": "image",
+                  "timing": "scene",
+                  "mediaId": "asset/a-05f7b5fdb9ed5dbf",
+                  "resolverId": "research-media-v1",
+                  "raw": {
+                    "sourceKey": "KBG39A",
+                    "playbackPath": "derived/images/kana/GGD.unpacked/KBG39A.png",
+                    "instructionIndex": 208,
+                    "targetInstructionIndex": 915
+                  }
+                },
+                {
+                  "cueId": "cue-6a5afe5141907813",
+                  "kind": "image",
+                  "timing": "scene",
+                  "mediaId": "asset/a-e98417999be8e76f",
+                  "resolverId": "research-media-v1",
+                  "raw": {
+                    "sourceKey": "KSY19",
+                    "playbackPath": "derived/images/kana/GGD.unpacked/KSY19.png",
+                    "instructionIndex": 210,
+                    "targetInstructionIndex": 1536
+                  }
+                }
+              ]
+            },
+            {
+              "eventId": "ikura-98c",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 221,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 2651,
+                "jaOffset": 2444,
+                "originalDisplayText": {
+                  "zh-CN": "隆　道：「啊，啊啊……」",
+                  "ja-JP": "隆　道：「あ、ああ……」"
+                }
+              },
+              "nextEventId": "ikura-9d0",
+              "textLineIndex": {
+                "ja-JP": 28,
+                "zh-CN": 28
+              }
+            },
+            {
+              "eventId": "ikura-9d0",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 229,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 2726,
+                "jaOffset": 2512,
+                "originalDisplayText": {
+                  "zh-CN": "　见到我有那么一瞬间的迟疑，父亲朝我投来了意味深长的视线。",
+                  "ja-JP": "　俺が一瞬口ごもると、父親が意味深な視線を向けた。"
+                }
+              },
+              "nextEventId": "ikura-a0d",
+              "textLineIndex": {
+                "ja-JP": 29,
+                "zh-CN": 29
+              }
+            },
+            {
+              "eventId": "ikura-a0d",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 232,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 2808,
+                "jaOffset": 2573,
+                "originalDisplayText": {
+                  "zh-CN": "　……被发现了吗。",
+                  "ja-JP": "　……気づかれたかな。"
+                }
+              },
+              "nextEventId": "ikura-a4e",
+              "textLineIndex": {
+                "ja-JP": 30,
+                "zh-CN": 30
+              }
+            },
+            {
+              "eventId": "ikura-a4e",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 240,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 2877,
+                "jaOffset": 2638,
+                "originalDisplayText": {
+                  "zh-CN": "　母　：「好好，那样就好。」",
+                  "ja-JP": "　母　：「そうそう、それがいいのよ」"
+                }
+              },
+              "nextEventId": "ikura-a9e",
+              "textLineIndex": {
+                "ja-JP": 31,
+                "zh-CN": 31
+              },
+              "cues": [
+                {
+                  "cueId": "cue-e2f5c7d84e66757e",
+                  "kind": "voice",
+                  "timing": "utterance",
+                  "mediaId": "asset/a-1cfcc745de2bcba3",
+                  "resolverId": "research-media-v1",
+                  "raw": {
+                    "sourceKey": "Etc5304",
+                    "playbackPath": "raw/kana/VOICE.unpacked/ETC5304.OGG",
+                    "instructionIndex": 240
+                  }
+                }
+              ]
+            },
+            {
+              "eventId": "ikura-a9e",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 248,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 2965,
+                "jaOffset": 2718,
+                "originalDisplayText": {
+                  "zh-CN": "　母亲倒似乎没有觉察到什么。",
+                  "ja-JP": "　母親は気づいていない様子だ。"
+                }
+              },
+              "nextEventId": "ikura-ae5",
+              "textLineIndex": {
+                "ja-JP": 32,
+                "zh-CN": 32
+              }
+            },
+            {
+              "eventId": "ikura-ae5",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 256,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 3044,
+                "jaOffset": 2789,
+                "originalDisplayText": {
+                  "zh-CN": "　父　：「好啊，这下在我家也就圆满了。」",
+                  "ja-JP": "　父　：「まあ、これで我が家も安泰かな」"
+                }
+              },
+              "nextEventId": "ikura-b3b",
+              "textLineIndex": {
+                "ja-JP": 33,
+                "zh-CN": 33
+              },
+              "cues": [
+                {
+                  "cueId": "cue-514bbe41f389c77e",
+                  "kind": "voice",
+                  "timing": "utterance",
+                  "mediaId": "asset/a-dc5d9864ad7cca64",
+                  "resolverId": "research-media-v1",
+                  "raw": {
+                    "sourceKey": "Etc5305",
+                    "playbackPath": "raw/kana/VOICE.unpacked/ETC5305.OGG",
+                    "instructionIndex": 256
+                  }
+                }
+              ]
+            },
+            {
+              "eventId": "ikura-b3b",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 264,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 3144,
+                "jaOffset": 2875,
+                "originalDisplayText": {
+                  "zh-CN": "　父亲说道。",
+                  "ja-JP": "　父親が言う。"
+                }
+              },
+              "nextEventId": "ikura-b5d",
+              "textLineIndex": {
+                "ja-JP": 34,
+                "zh-CN": 34
+              }
+            },
+            {
+              "eventId": "ikura-b5d",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 267,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 3180,
+                "jaOffset": 2909,
+                "originalDisplayText": {
+                  "zh-CN": "　这话让我有些感到排斥。",
+                  "ja-JP": "　その言葉に、俺は少し反発を感じる。"
+                }
+              },
+              "nextEventId": "ikura-ba9",
+              "textLineIndex": {
+                "ja-JP": 35,
+                "zh-CN": 35
+              }
+            },
+            {
+              "eventId": "ikura-ba9",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 275,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 3255,
+                "jaOffset": 2985,
+                "originalDisplayText": {
+                  "zh-CN": "　圆满？",
+                  "ja-JP": "　安泰？"
+                }
+              },
+              "nextEventId": "ikura-be2",
+              "textLineIndex": {
+                "ja-JP": 36,
+                "zh-CN": 36
+              }
+            },
+            {
+              "eventId": "ikura-be2",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 283,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 3314,
+                "jaOffset": 3042,
+                "originalDisplayText": {
+                  "zh-CN": "　现在时考虑家庭圆不圆满的时候吗？",
+                  "ja-JP": "　今、家庭が安泰かどうかを考える時なのか？"
+                }
+              },
+              "nextEventId": "ikura-c16",
+              "textLineIndex": {
+                "ja-JP": 37,
+                "zh-CN": 37
+              }
+            },
+            {
+              "eventId": "ikura-c16",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 286,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 3372,
+                "jaOffset": 3094,
+                "originalDisplayText": {
+                  "zh-CN": "　加奈眼看就要离开人世了。",
+                  "ja-JP": "　加奈が死を目前としているこの時に。"
+                }
+              },
+              "nextEventId": "ikura-c61",
+              "textLineIndex": {
+                "ja-JP": 38,
+                "zh-CN": 38
+              }
+            },
+            {
+              "eventId": "ikura-c61",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 294,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 3449,
+                "jaOffset": 3169,
+                "originalDisplayText": {
+                  "zh-CN": "隆　道：「鹿岛小姐，不好意思。我们现在要去探望妹妹了。」",
+                  "ja-JP": "隆　道：「鹿島さん、悪いけど俺たち、これから妹の見舞いに行くんだ」"
+                }
+              },
+              "nextEventId": "ikura-ca8",
+              "textLineIndex": {
+                "ja-JP": 39,
+                "zh-CN": 39
+              }
+            },
+            {
+              "eventId": "ikura-ca8",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 297,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 3529,
+                "jaOffset": 3240,
+                "originalDisplayText": {
+                  "zh-CN": "夕　美：「妹妹？」",
+                  "ja-JP": "夕　美：「妹さん？」"
+                }
+              },
+              "nextEventId": "ikura-cd7",
+              "textLineIndex": {
+                "ja-JP": 40,
+                "zh-CN": 40
+              },
+              "cues": [
+                {
+                  "cueId": "cue-7cf939b13ea01611",
+                  "kind": "voice",
+                  "timing": "utterance",
+                  "mediaId": "asset/a-c0464540a2b8ef30",
+                  "resolverId": "research-media-v1",
+                  "raw": {
+                    "sourceKey": "Yum5506",
+                    "playbackPath": "raw/kana/VOICE.unpacked/YUM5506.OGG",
+                    "instructionIndex": 297
+                  }
+                }
+              ]
+            },
+            {
+              "eventId": "ikura-cd7",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 300,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 3580,
+                "jaOffset": 3287,
+                "originalDisplayText": {
+                  "zh-CN": "隆　道：「所以……」",
+                  "ja-JP": "隆　道：「だから……」"
+                }
+              },
+              "nextEventId": "ikura-cff",
+              "textLineIndex": {
+                "ja-JP": 41,
+                "zh-CN": 41
+              }
+            },
+            {
+              "eventId": "ikura-cff",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 303,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 3624,
+                "jaOffset": 3327,
+                "originalDisplayText": {
+                  "zh-CN": "夕　美：「能不能让我也一起去啊？」",
+                  "ja-JP": "夕　美：「一緒に行ったら駄目でしょうか？」"
+                }
+              },
+              "nextEventId": "ikura-d3d",
+              "textLineIndex": {
+                "ja-JP": 42,
+                "zh-CN": 42
+              },
+              "cues": [
+                {
+                  "cueId": "cue-e820008c07da205c",
+                  "kind": "voice",
+                  "timing": "utterance",
+                  "mediaId": "asset/a-ac28041f5f68b61f",
+                  "resolverId": "research-media-v1",
+                  "raw": {
+                    "sourceKey": "Yum5507",
+                    "playbackPath": "raw/kana/VOICE.unpacked/YUM5507.OGG",
+                    "instructionIndex": 303
+                  }
+                }
+              ]
+            },
+            {
+              "eventId": "ikura-d3d",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 306,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 3691,
+                "jaOffset": 3389,
+                "originalDisplayText": {
+                  "zh-CN": "隆　道：「咦？」",
+                  "ja-JP": "隆　道：「え？」"
+                }
+              },
+              "nextEventId": "ikura-d60",
+              "textLineIndex": {
+                "ja-JP": 43,
+                "zh-CN": 43
+              }
+            },
+            {
+              "eventId": "ikura-d60",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 309,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 3731,
+                "jaOffset": 3424,
+                "originalDisplayText": {
+                  "zh-CN": "夕　美：「反正我也没什么事。难得一次嘛，而且，看到这么多人来看她，妹妹也会高兴地吧？」",
+                  "ja-JP": "夕　美：「私、どうせ暇ですし、せっかくなら大勢で行った方が妹さんも喜ばれるんじゃありません？」"
+                }
+              },
+              "nextEventId": "ikura-dc1",
+              "textLineIndex": {
+                "ja-JP": 44,
+                "zh-CN": 44
+              },
+              "cues": [
+                {
+                  "cueId": "cue-aa0bf8c537c4d09f",
+                  "kind": "voice",
+                  "timing": "utterance",
+                  "mediaId": "asset/a-68bda11b7c105b26",
+                  "resolverId": "research-media-v1",
+                  "raw": {
+                    "sourceKey": "Yum5508",
+                    "playbackPath": "raw/kana/VOICE.unpacked/YUM5508.OGG",
+                    "instructionIndex": 309
+                  }
+                }
+              ]
+            },
+            {
+              "eventId": "ikura-dc1",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 312,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 3850,
+                "jaOffset": 3521,
+                "originalDisplayText": {
+                  "zh-CN": "　母　：「哎，就是啊，这想法不错。对吧，亲爱的？」",
+                  "ja-JP": "　母　：「ええ、そうね、いい考えだわ。ねえ、あなた？」"
+                }
+              },
+              "nextEventId": "ikura-e1e",
+              "textLineIndex": {
+                "ja-JP": 45,
+                "zh-CN": 45
+              },
+              "cues": [
+                {
+                  "cueId": "cue-5210ddb4cb614fbc",
+                  "kind": "voice",
+                  "timing": "utterance",
+                  "mediaId": "asset/a-0a989b67f3d54ffd",
+                  "resolverId": "research-media-v1",
+                  "raw": {
+                    "sourceKey": "Etc5306",
+                    "playbackPath": "raw/kana/VOICE.unpacked/ETC5306.OGG",
+                    "instructionIndex": 312
+                  }
+                }
+              ]
+            },
+            {
+              "eventId": "ikura-e1e",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 320,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 3960,
+                "jaOffset": 3614,
+                "originalDisplayText": {
+                  "zh-CN": "　母亲轻易地就同意了。",
+                  "ja-JP": "　母親が安易に同調する。"
+                }
+              },
+              "nextEventId": "ikura-e63",
+              "textLineIndex": {
+                "ja-JP": 46,
+                "zh-CN": 46
+              }
+            },
+            {
+              "eventId": "ikura-e63",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 328,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 4033,
+                "jaOffset": 3683,
+                "originalDisplayText": {
+                  "zh-CN": "　父　：「啊啊，那就一起来吧。」",
+                  "ja-JP": "　父　：「ああ、そうしてもらうか」"
+                }
+              },
+              "nextEventId": "ikura-e97",
+              "textLineIndex": {
+                "ja-JP": 47,
+                "zh-CN": 47
+              },
+              "cues": [
+                {
+                  "cueId": "cue-4f4a9c3ff61580ca",
+                  "kind": "voice",
+                  "timing": "utterance",
+                  "mediaId": "asset/a-2198385e1c77261e",
+                  "resolverId": "research-media-v1",
+                  "raw": {
+                    "sourceKey": "Etc5307",
+                    "playbackPath": "raw/kana/VOICE.unpacked/ETC5307.OGG",
+                    "instructionIndex": 328
+                  }
+                }
+              ]
+            },
+            {
+              "eventId": "ikura-e97",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 331,
+                "opcode": 43,
+                "status": "unchanged",
+                "zhOffset": 4098,
+                "jaOffset": 3735,
+                "originalDisplayText": {
+                  "zh-CN": "隆　道：「……」",
+                  "ja-JP": "隆　道：「……」"
+                }
+              },
+              "nextEventId": "ikura-ec1",
+              "textLineIndex": {
+                "ja-JP": 48,
+                "zh-CN": 48
+              }
+            },
+            {
+              "eventId": "ikura-ec1",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 335,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 4143,
+                "jaOffset": 3777,
+                "originalDisplayText": {
+                  "zh-CN": "　夕美向着无言以对的我眨了眨眼。",
+                  "ja-JP": "　絶句する俺に、夕美はパチリとウインクをよこした。"
+                }
+              },
+              "nextEventId": "ikura-f68",
+              "textLineIndex": {
+                "ja-JP": 49,
+                "zh-CN": 49
+              }
+            },
+            {
+              "eventId": "ikura-f68",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 356,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 4308,
+                "jaOffset": 3944,
+                "originalDisplayText": {
+                  "zh-CN": "　父　：「那，我们先去跟医生打下招呼，隆道你们就先去加奈那里吧。」",
+                  "ja-JP": "　父　：「じゃあ、私たちは先に先生にご挨拶してくるから、隆道たちは加奈のところに行っててくれないか」"
+                }
+              },
+              "nextEventId": "ikura-fe3",
+              "textLineIndex": {
+                "ja-JP": 50,
+                "zh-CN": 50
+              },
+              "cues": [
+                {
+                  "cueId": "cue-c4171a4a35787aca",
+                  "kind": "voice",
+                  "timing": "utterance",
+                  "mediaId": "asset/a-70876f1673eece07",
+                  "resolverId": "research-media-v1",
+                  "raw": {
+                    "sourceKey": "Etc5308",
+                    "playbackPath": "raw/kana/VOICE.unpacked/ETC5308.OGG",
+                    "instructionIndex": 356
+                  }
+                },
+                {
+                  "cueId": "cue-785c81c51cf26b75",
+                  "kind": "image",
+                  "timing": "scene",
+                  "mediaId": "asset/a-dc9cf3ab554a56ab",
+                  "resolverId": "research-media-v1",
+                  "raw": {
+                    "sourceKey": "BLACK",
+                    "playbackPath": "derived/images/kana/GGD.unpacked/BLACK.png",
+                    "instructionIndex": 340,
+                    "targetInstructionIndex": 705
+                  }
+                },
+                {
+                  "cueId": "cue-8393b2e5fb485369",
+                  "kind": "image",
+                  "timing": "scene",
+                  "mediaId": "asset/a-2186da77fcab02ec",
+                  "resolverId": "research-media-v1",
+                  "raw": {
+                    "sourceKey": "KBG07A",
+                    "playbackPath": "derived/images/kana/GGD.unpacked/KBG07A.png",
+                    "instructionIndex": 345,
+                    "targetInstructionIndex": 762
+                  }
+                }
+              ]
+            },
+            {
+              "eventId": "ikura-fe3",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 364,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 4434,
+                "jaOffset": 4067,
+                "originalDisplayText": {
+                  "zh-CN": "　双亲朝着早已成熟人的加奈的主治医师走去。",
+                  "ja-JP": "　両親はすでになじみになった加奈の担当医のところに向かった。"
+                }
+              },
+              "nextEventId": "ikura-1021",
+              "textLineIndex": {
+                "ja-JP": 51,
+                "zh-CN": 51
+              }
+            },
+            {
+              "eventId": "ikura-1021",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 367,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 4500,
+                "jaOffset": 4129,
+                "originalDisplayText": {
+                  "zh-CN": "　我和夕美则走向病房。",
+                  "ja-JP": "　俺と夕美は加奈の病室へ。"
+                }
+              },
+              "nextEventId": "ikura-104d",
+              "textLineIndex": {
+                "ja-JP": 52,
+                "zh-CN": 52
+              }
+            },
+            {
+              "eventId": "ikura-104d",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 370,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 4546,
+                "jaOffset": 4173,
+                "originalDisplayText": {
+                  "zh-CN": "　然而我却十分不想让夕美和加奈见面。",
+                  "ja-JP": "　けど俺は、加奈と夕美を合わせたくない気持ちで一杯だった。"
+                }
+              },
+              "nextEventId": "ikura-10e3",
+              "textLineIndex": {
+                "ja-JP": 53,
+                "zh-CN": 53
+              }
+            },
+            {
+              "eventId": "ikura-10e3",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 388,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 4693,
+                "jaOffset": 4323,
+                "originalDisplayText": {
+                  "zh-CN": "隆　道：「不过你啊，还真是会演戏呢。」",
+                  "ja-JP": "隆　道：「だけどまあ、よくそこまで演技できるもんだよな」"
+                }
+              },
+              "nextEventId": "ikura-111c",
+              "textLineIndex": {
+                "ja-JP": 54,
+                "zh-CN": 54
+              },
+              "cues": [
+                {
+                  "cueId": "cue-8ffc27c5c7c7ab3f",
+                  "kind": "image",
+                  "timing": "scene",
+                  "mediaId": "asset/a-0310d0cf97c0fe0a",
+                  "resolverId": "research-media-v1",
+                  "raw": {
+                    "sourceKey": "KBG09A",
+                    "playbackPath": "derived/images/kana/GGD.unpacked/KBG09A.png",
+                    "instructionIndex": 374,
+                    "targetInstructionIndex": 771
+                  }
+                },
+                {
+                  "cueId": "cue-dea8a17715fdaf06",
+                  "kind": "image",
+                  "timing": "scene",
+                  "mediaId": "asset/a-e98417999be8e76f",
+                  "resolverId": "research-media-v1",
+                  "raw": {
+                    "sourceKey": "KSY19",
+                    "playbackPath": "derived/images/kana/GGD.unpacked/KSY19.png",
+                    "instructionIndex": 376,
+                    "targetInstructionIndex": 1536
+                  }
+                }
+              ]
+            },
+            {
+              "eventId": "ikura-111c",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 391,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 4755,
+                "jaOffset": 4380,
+                "originalDisplayText": {
+                  "zh-CN": "夕　美：「因为我有演戏的才能啊。」",
+                  "ja-JP": "夕　美：「演劇の才能があるのかもね」"
+                }
+              },
+              "nextEventId": "ikura-1156",
+              "textLineIndex": {
+                "ja-JP": 55,
+                "zh-CN": 55
+              },
+              "cues": [
+                {
+                  "cueId": "cue-e190933c6d6dbe9d",
+                  "kind": "voice",
+                  "timing": "utterance",
+                  "mediaId": "asset/a-bbaae428646dafe5",
+                  "resolverId": "research-media-v1",
+                  "raw": {
+                    "sourceKey": "Yum5509",
+                    "playbackPath": "raw/kana/VOICE.unpacked/YUM5509.OGG",
+                    "instructionIndex": 391
+                  }
+                }
+              ]
+            },
+            {
+              "eventId": "ikura-1156",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 394,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 4822,
+                "jaOffset": 4438,
+                "originalDisplayText": {
+                  "zh-CN": "隆　道：「……之前练习过了吧。」",
+                  "ja-JP": "隆　道：「……予行練習してたな」"
+                }
+              },
+              "nextEventId": "ikura-11c3",
+              "textLineIndex": {
+                "ja-JP": 56,
+                "zh-CN": 56
+              }
+            },
+            {
+              "eventId": "ikura-11c3",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 407,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 4938,
+                "jaOffset": 4547,
+                "originalDisplayText": {
+                  "zh-CN": "夕　美：「露馅啦。」",
+                  "ja-JP": "夕　美：「ばれたか」"
+                }
+              },
+              "nextEventId": "ikura-11f1",
+              "textLineIndex": {
+                "ja-JP": 57,
+                "zh-CN": 57
+              },
+              "cues": [
+                {
+                  "cueId": "cue-df6dc60803bbb681",
+                  "kind": "voice",
+                  "timing": "utterance",
+                  "mediaId": "asset/a-58ef3f94bf9be937",
+                  "resolverId": "research-media-v1",
+                  "raw": {
+                    "sourceKey": "Yum5510",
+                    "playbackPath": "raw/kana/VOICE.unpacked/YUM5510.OGG",
+                    "instructionIndex": 407
+                  }
+                },
+                {
+                  "cueId": "cue-de4ec9157e11306c",
+                  "kind": "image",
+                  "timing": "scene",
+                  "mediaId": "asset/a-0310d0cf97c0fe0a",
+                  "resolverId": "research-media-v1",
+                  "raw": {
+                    "sourceKey": "KBG09A",
+                    "playbackPath": "derived/images/kana/GGD.unpacked/KBG09A.png",
+                    "instructionIndex": 397,
+                    "targetInstructionIndex": 771
+                  }
+                },
+                {
+                  "cueId": "cue-062a9dbbf18ea944",
+                  "kind": "image",
+                  "timing": "scene",
+                  "mediaId": "asset/a-9439338c3fe8c1e4",
+                  "resolverId": "research-media-v1",
+                  "raw": {
+                    "sourceKey": "KSY20A",
+                    "playbackPath": "derived/images/kana/GGD.unpacked/KSY20A.png",
+                    "instructionIndex": 399,
+                    "targetInstructionIndex": 1539
+                  }
+                }
+              ]
+            },
+            {
+              "eventId": "ikura-11f1",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 410,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 4991,
+                "jaOffset": 4593,
+                "originalDisplayText": {
+                  "zh-CN": "隆　道：「真是的……」",
+                  "ja-JP": "隆　道：「まったく……」"
+                }
+              },
+              "nextEventId": "ikura-1235",
+              "textLineIndex": {
+                "ja-JP": 58,
+                "zh-CN": 58
+              }
+            },
+            {
+              "eventId": "ikura-1235",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 418,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 5064,
+                "jaOffset": 4661,
+                "originalDisplayText": {
+                  "zh-CN": "　很快就到了加奈的病房前。",
+                  "ja-JP": "　ほどなくして加奈の病室につく。"
+                }
+              },
+              "nextEventId": "ikura-127c",
+              "textLineIndex": {
+                "ja-JP": 59,
+                "zh-CN": 59
+              }
+            },
+            {
+              "eventId": "ikura-127c",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 426,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 5141,
+                "jaOffset": 4732,
+                "originalDisplayText": {
+                  "zh-CN": "隆　道：「……我说，真的你也要来？」",
+                  "ja-JP": "隆　道：「……なあ、本当におまえも来るのか？」"
+                }
+              },
+              "nextEventId": "ikura-12ef",
+              "textLineIndex": {
+                "ja-JP": 60,
+                "zh-CN": 60
+              }
+            },
+            {
+              "eventId": "ikura-12ef",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 439,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 5261,
+                "jaOffset": 4847,
+                "originalDisplayText": {
+                  "zh-CN": "夕　美：「都到这里了你还在说些什么啊。」",
+                  "ja-JP": "夕　美：「ここまで連れてきておいて何言ってるのよ」"
+                }
+              },
+              "nextEventId": "ikura-132f",
+              "textLineIndex": {
+                "ja-JP": 61,
+                "zh-CN": 61
+              },
+              "cues": [
+                {
+                  "cueId": "cue-3f495be696302c87",
+                  "kind": "voice",
+                  "timing": "utterance",
+                  "mediaId": "asset/a-1b587e9e02f01688",
+                  "resolverId": "research-media-v1",
+                  "raw": {
+                    "sourceKey": "Yum5511",
+                    "playbackPath": "raw/kana/VOICE.unpacked/YUM5511.OGG",
+                    "instructionIndex": 439
+                  }
+                },
+                {
+                  "cueId": "cue-b429b5c6fbe69cdc",
+                  "kind": "image",
+                  "timing": "scene",
+                  "mediaId": "asset/a-0310d0cf97c0fe0a",
+                  "resolverId": "research-media-v1",
+                  "raw": {
+                    "sourceKey": "KBG09A",
+                    "playbackPath": "derived/images/kana/GGD.unpacked/KBG09A.png",
+                    "instructionIndex": 429,
+                    "targetInstructionIndex": 771
+                  }
+                },
+                {
+                  "cueId": "cue-0c55fd600be2331e",
+                  "kind": "image",
+                  "timing": "scene",
+                  "mediaId": "asset/a-e98417999be8e76f",
+                  "resolverId": "research-media-v1",
+                  "raw": {
+                    "sourceKey": "KSY19",
+                    "playbackPath": "derived/images/kana/GGD.unpacked/KSY19.png",
+                    "instructionIndex": 431,
+                    "targetInstructionIndex": 1536
+                  }
+                }
+              ]
+            },
+            {
+              "eventId": "ikura-132f",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 442,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 5334,
+                "jaOffset": 4911,
+                "originalDisplayText": {
+                  "zh-CN": "隆　道：「又不是我带你来的。」",
+                  "ja-JP": "隆　道：「別に連れてきたわけじゃないけどな」"
+                }
+              },
+              "nextEventId": "ikura-1362",
+              "textLineIndex": {
+                "ja-JP": 62,
+                "zh-CN": 62
+              }
+            },
+            {
+              "eventId": "ikura-1362",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 445,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 5388,
+                "jaOffset": 4962,
+                "originalDisplayText": {
+                  "zh-CN": "夕　美：「啊，好过分。这是该对自己的女朋友说的话吗？」",
+                  "ja-JP": "夕　美：「あ、ひどい。それが自分のラ・マンに言う言葉？」"
+                }
+              },
+              "nextEventId": "ikura-13a9",
+              "textLineIndex": {
+                "ja-JP": 63,
+                "zh-CN": 63
+              },
+              "cues": [
+                {
+                  "cueId": "cue-acb8c6401bd4d3e1",
+                  "kind": "voice",
+                  "timing": "utterance",
+                  "mediaId": "asset/a-9b4883b94944a7e1",
+                  "resolverId": "research-media-v1",
+                  "raw": {
+                    "sourceKey": "Yum5512",
+                    "playbackPath": "raw/kana/VOICE.unpacked/YUM5512.OGG",
+                    "instructionIndex": 445
+                  }
+                }
+              ]
+            },
+            {
+              "eventId": "ikura-13a9",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 448,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 5475,
+                "jaOffset": 5033,
+                "originalDisplayText": {
+                  "zh-CN": "隆　道：「……只是说这件事而已。」",
+                  "ja-JP": "隆　道：「……そのことなんだけど」"
+                }
+              },
+              "nextEventId": "ikura-13d7",
+              "textLineIndex": {
+                "ja-JP": 64,
+                "zh-CN": 64
+              }
+            },
+            {
+              "eventId": "ikura-13d7",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 451,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 5533,
+                "jaOffset": 5079,
+                "originalDisplayText": {
+                  "zh-CN": "夕　美：「嗯？」",
+                  "ja-JP": "夕　美：「うん？」"
+                }
+              },
+              "nextEventId": "ikura-141f",
+              "textLineIndex": {
+                "ja-JP": 65,
+                "zh-CN": 65
+              },
+              "cues": [
+                {
+                  "cueId": "cue-5028245bbe185fff",
+                  "kind": "voice",
+                  "timing": "utterance",
+                  "mediaId": "asset/a-08f452c018999ae2",
+                  "resolverId": "research-media-v1",
+                  "raw": {
+                    "sourceKey": "Yum5513",
+                    "playbackPath": "raw/kana/VOICE.unpacked/YUM5513.OGG",
+                    "instructionIndex": 451
+                  }
+                }
+              ]
+            },
+            {
+              "eventId": "ikura-141f",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 459,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 5609,
+                "jaOffset": 5151,
+                "originalDisplayText": {
+                  "zh-CN": "隆　道：「加奈……我妹妹她啊，似乎兄控情结有点重。所以啊，能不能别太强调你是恋人这一点？」",
+                  "ja-JP": "隆　道：「加奈……妹はさ、かなりブラコンの気があるんだ。それで、その恋人っていうのを強調するのはやめてくれないか」"
+                }
+              },
+              "nextEventId": "ikura-1480",
+              "textLineIndex": {
+                "ja-JP": 66,
+                "zh-CN": 66
+              }
+            },
+            {
+              "eventId": "ikura-1480",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 462,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 5723,
+                "jaOffset": 5248,
+                "originalDisplayText": {
+                  "zh-CN": "夕　美：「那我该怎样自我介绍才好呢？」",
+                  "ja-JP": "夕　美：「じゃあ私、どういう風に自己紹介すればいいの？」"
+                }
+              },
+              "nextEventId": "ikura-14c6",
+              "textLineIndex": {
+                "ja-JP": 67,
+                "zh-CN": 67
+              },
+              "cues": [
+                {
+                  "cueId": "cue-39933dc9fcc76380",
+                  "kind": "voice",
+                  "timing": "utterance",
+                  "mediaId": "asset/a-f7d922a88fc9cf4b",
+                  "resolverId": "research-media-v1",
+                  "raw": {
+                    "sourceKey": "Yum5514",
+                    "playbackPath": "raw/kana/VOICE.unpacked/YUM5514.OGG",
+                    "instructionIndex": 462
+                  }
+                }
+              ]
+            },
+            {
+              "eventId": "ikura-14c6",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 465,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 5794,
+                "jaOffset": 5318,
+                "originalDisplayText": {
+                  "zh-CN": "隆　道：「大学的朋友。」",
+                  "ja-JP": "隆　道：「大学関係の友達」"
+                }
+              },
+              "nextEventId": "ikura-1530",
+              "textLineIndex": {
+                "ja-JP": 68,
+                "zh-CN": 68
+              }
+            },
+            {
+              "eventId": "ikura-1530",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 478,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 5902,
+                "jaOffset": 5424,
+                "originalDisplayText": {
+                  "zh-CN": "夕　美：「哎——？」",
+                  "ja-JP": "夕　美：「えーっ！？」"
+                }
+              },
+              "nextEventId": "ikura-1560",
+              "textLineIndex": {
+                "ja-JP": 69,
+                "zh-CN": 69
+              },
+              "cues": [
+                {
+                  "cueId": "cue-bd51bb988ec59c9c",
+                  "kind": "voice",
+                  "timing": "utterance",
+                  "mediaId": "asset/a-a2b612bbfb65198c",
+                  "resolverId": "research-media-v1",
+                  "raw": {
+                    "sourceKey": "Yum5515",
+                    "playbackPath": "raw/kana/VOICE.unpacked/YUM5515.OGG",
+                    "instructionIndex": 478
+                  }
+                },
+                {
+                  "cueId": "cue-a2b8a7a45d205493",
+                  "kind": "image",
+                  "timing": "scene",
+                  "mediaId": "asset/a-0310d0cf97c0fe0a",
+                  "resolverId": "research-media-v1",
+                  "raw": {
+                    "sourceKey": "KBG09A",
+                    "playbackPath": "derived/images/kana/GGD.unpacked/KBG09A.png",
+                    "instructionIndex": 468,
+                    "targetInstructionIndex": 771
+                  }
+                },
+                {
+                  "cueId": "cue-ba60b0e140e648cc",
+                  "kind": "image",
+                  "timing": "scene",
+                  "mediaId": "asset/a-a899853f4ea98164",
+                  "resolverId": "research-media-v1",
+                  "raw": {
+                    "sourceKey": "KSY25",
+                    "playbackPath": "derived/images/kana/GGD.unpacked/KSY25.png",
+                    "instructionIndex": 470,
+                    "targetInstructionIndex": 1566
+                  }
+                }
+              ]
+            },
+            {
+              "eventId": "ikura-1560",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 481,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 5955,
+                "jaOffset": 5472,
+                "originalDisplayText": {
+                  "zh-CN": "隆　道：「拜托了。」",
+                  "ja-JP": "隆　道：「頼む」"
+                }
+              },
+              "nextEventId": "ikura-159f",
+              "textLineIndex": {
+                "ja-JP": 70,
+                "zh-CN": 70
+              }
+            },
+            {
+              "eventId": "ikura-159f",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 489,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 6026,
+                "jaOffset": 5535,
+                "originalDisplayText": {
+                  "zh-CN": "　看我一脸认真样子，夕美不情愿地同意了。",
+                  "ja-JP": "　俺が真剣な顔で言うと、夕美はしぶしぶ納得する。"
+                }
+              },
+              "nextEventId": "ikura-15f6",
+              "textLineIndex": {
+                "ja-JP": 71,
+                "zh-CN": 71
+              }
+            },
+            {
+              "eventId": "ikura-15f6",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 497,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 6117,
+                "jaOffset": 5622,
+                "originalDisplayText": {
+                  "zh-CN": "夕　美：「……没办法。就这一次哦。」",
+                  "ja-JP": "夕　美：「……仕方ないなあ。今回だけね」"
+                }
+              },
+              "nextEventId": "ikura-1634",
+              "textLineIndex": {
+                "ja-JP": 72,
+                "zh-CN": 72
+              },
+              "cues": [
+                {
+                  "cueId": "cue-d0a2c5337d414102",
+                  "kind": "voice",
+                  "timing": "utterance",
+                  "mediaId": "asset/a-e3c2f6caa4037225",
+                  "resolverId": "research-media-v1",
+                  "raw": {
+                    "sourceKey": "Yum5516",
+                    "playbackPath": "raw/kana/VOICE.unpacked/YUM5516.OGG",
+                    "instructionIndex": 497
+                  }
+                }
+              ]
+            },
+            {
+              "eventId": "ikura-1634",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 500,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 6186,
+                "jaOffset": 5684,
+                "originalDisplayText": {
+                  "zh-CN": "隆　道：「谢谢。」",
+                  "ja-JP": "隆　道：「感謝」"
+                }
+              },
+              "nextEventId": "ikura-1695",
+              "textLineIndex": {
+                "ja-JP": 73,
+                "zh-CN": 73
+              }
+            },
+            {
+              "eventId": "ikura-1695",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 513,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 6288,
+                "jaOffset": 5781,
+                "originalDisplayText": {
+                  "zh-CN": "夕　美：「倒也没什么……之后能陪我做吗？」",
+                  "ja-JP": "夕　美：「いいけど……あとでしてくれる？」"
+                }
+              },
+              "nextEventId": "ikura-16d0",
+              "textLineIndex": {
+                "ja-JP": 74,
+                "zh-CN": 74
+              },
+              "cues": [
+                {
+                  "cueId": "cue-5428eef8c2d2907e",
+                  "kind": "voice",
+                  "timing": "utterance",
+                  "mediaId": "asset/a-90d4b3bdbba46a66",
+                  "resolverId": "research-media-v1",
+                  "raw": {
+                    "sourceKey": "Yum5517",
+                    "playbackPath": "raw/kana/VOICE.unpacked/YUM5517.OGG",
+                    "instructionIndex": 513
+                  }
+                },
+                {
+                  "cueId": "cue-0b8fc31e41fce6bb",
+                  "kind": "image",
+                  "timing": "scene",
+                  "mediaId": "asset/a-0310d0cf97c0fe0a",
+                  "resolverId": "research-media-v1",
+                  "raw": {
+                    "sourceKey": "KBG09A",
+                    "playbackPath": "derived/images/kana/GGD.unpacked/KBG09A.png",
+                    "instructionIndex": 503,
+                    "targetInstructionIndex": 771
+                  }
+                },
+                {
+                  "cueId": "cue-e5bbff5e6f7229e0",
+                  "kind": "image",
+                  "timing": "scene",
+                  "mediaId": "asset/a-a02876267d341531",
+                  "resolverId": "research-media-v1",
+                  "raw": {
+                    "sourceKey": "KSY22",
+                    "playbackPath": "derived/images/kana/GGD.unpacked/KSY22.png",
+                    "instructionIndex": 505,
+                    "targetInstructionIndex": 1557
+                  }
+                }
+              ]
+            },
+            {
+              "eventId": "ikura-16d0",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 516,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 6363,
+                "jaOffset": 5840,
+                "originalDisplayText": {
+                  "zh-CN": "隆　道：「我说你啊，为什么就能把这种事说的这么直白啊……」",
+                  "ja-JP": "隆　道：「だからさあ、どうしておまえはそうあからさまに……」"
+                }
+              },
+              "nextEventId": "ikura-173c",
+              "textLineIndex": {
+                "ja-JP": 75,
+                "zh-CN": 75
+              }
+            },
+            {
+              "eventId": "ikura-173c",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 527,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 6494,
+                "jaOffset": 5948,
+                "originalDisplayText": {
+                  "zh-CN": "　也许是我的怒鸣被里面听到了吧。",
+                  "ja-JP": "　怒鳴り声が中に聞こえたのだろうか。"
+                }
+              },
+              "nextEventId": "ikura-176b",
+              "textLineIndex": {
+                "ja-JP": 76,
+                "zh-CN": 76
+              }
+            },
+            {
+              "eventId": "ikura-176b",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 530,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 6550,
+                "jaOffset": 5995,
+                "originalDisplayText": {
+                  "zh-CN": "　感觉到病房里发出一阵慌乱地骚动。",
+                  "ja-JP": "　病室内がにわかに慌ただしくなったような気がした。"
+                }
+              },
+              "nextEventId": "ikura-17a1",
+              "textLineIndex": {
+                "ja-JP": 77,
+                "zh-CN": 77
+              }
+            },
+            {
+              "eventId": "ikura-17a1",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 533,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 6608,
+                "jaOffset": 6049,
+                "originalDisplayText": {
+                  "zh-CN": "　先是听到床嘎吱嘎吱作响，然后就啪挞啪挞啪挞地，之后——",
+                  "ja-JP": "　ベッドがきしむ音がして、パタパタパタというスリッパの音、そして―――"
+                }
+              },
+              "nextEventId": "end-001",
+              "textLineIndex": {
+                "ja-JP": 78,
+                "zh-CN": 78
+              }
+            },
+            {
+              "eventId": "end-001",
+              "kind": "end",
+              "cues": [
+                {
+                  "cueId": "cue-58316e3136677e60",
+                  "kind": "image",
+                  "timing": "scene",
+                  "mediaId": "asset/a-dc9cf3ab554a56ab",
+                  "resolverId": "research-media-v1",
+                  "raw": {
+                    "sourceKey": "BLACK",
+                    "playbackPath": "derived/images/kana/GGD.unpacked/BLACK.png",
+                    "instructionIndex": 675,
+                    "targetInstructionIndex": 705
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "media": [
+    {
+      "mediaId": "asset/a-cae95943ffee5bed",
+      "role": "voice",
+      "url": "/corpus/archive/raw/kana/VOICE.unpacked/YUM5501.OGG",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "asset/a-f1ddd8515f057614",
+      "role": "voice",
+      "url": "/corpus/archive/raw/kana/VOICE.unpacked/YUM5502.OGG",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "asset/a-23bc829d397bf6a1",
+      "role": "voice",
+      "url": "/corpus/archive/raw/kana/VOICE.unpacked/ETC5298.OGG",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "asset/a-312789481d22c213",
+      "role": "voice",
+      "url": "/corpus/archive/raw/kana/VOICE.unpacked/YUM5503.OGG",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "asset/a-377d51a8edec6ba2",
+      "role": "voice",
+      "url": "/corpus/archive/raw/kana/VOICE.unpacked/ETC5299.OGG",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "asset/a-40374430386f206f",
+      "role": "voice",
+      "url": "/corpus/archive/raw/kana/VOICE.unpacked/ETC5300.OGG",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "asset/a-af84942cd55cb76a",
+      "role": "voice",
+      "url": "/corpus/archive/raw/kana/VOICE.unpacked/YUM5504.OGG",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "asset/a-575e033befc2a340",
+      "role": "voice",
+      "url": "/corpus/archive/raw/kana/VOICE.unpacked/ETC5301.OGG",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "asset/a-833b0749fb604cf9",
+      "role": "voice",
+      "url": "/corpus/archive/raw/kana/VOICE.unpacked/ETC5302.OGG",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "asset/a-4546d43dafd4b63a",
+      "role": "voice",
+      "url": "/corpus/archive/raw/kana/VOICE.unpacked/ETC5303.OGG",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "asset/a-453ec52608eaed69",
+      "role": "voice",
+      "url": "/corpus/archive/raw/kana/VOICE.unpacked/YUM5505.OGG",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "asset/a-1cfcc745de2bcba3",
+      "role": "voice",
+      "url": "/corpus/archive/raw/kana/VOICE.unpacked/ETC5304.OGG",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "asset/a-dc5d9864ad7cca64",
+      "role": "voice",
+      "url": "/corpus/archive/raw/kana/VOICE.unpacked/ETC5305.OGG",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "asset/a-c0464540a2b8ef30",
+      "role": "voice",
+      "url": "/corpus/archive/raw/kana/VOICE.unpacked/YUM5506.OGG",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "asset/a-ac28041f5f68b61f",
+      "role": "voice",
+      "url": "/corpus/archive/raw/kana/VOICE.unpacked/YUM5507.OGG",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "asset/a-68bda11b7c105b26",
+      "role": "voice",
+      "url": "/corpus/archive/raw/kana/VOICE.unpacked/YUM5508.OGG",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "asset/a-0a989b67f3d54ffd",
+      "role": "voice",
+      "url": "/corpus/archive/raw/kana/VOICE.unpacked/ETC5306.OGG",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "asset/a-2198385e1c77261e",
+      "role": "voice",
+      "url": "/corpus/archive/raw/kana/VOICE.unpacked/ETC5307.OGG",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "asset/a-70876f1673eece07",
+      "role": "voice",
+      "url": "/corpus/archive/raw/kana/VOICE.unpacked/ETC5308.OGG",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "asset/a-bbaae428646dafe5",
+      "role": "voice",
+      "url": "/corpus/archive/raw/kana/VOICE.unpacked/YUM5509.OGG",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "asset/a-58ef3f94bf9be937",
+      "role": "voice",
+      "url": "/corpus/archive/raw/kana/VOICE.unpacked/YUM5510.OGG",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "asset/a-1b587e9e02f01688",
+      "role": "voice",
+      "url": "/corpus/archive/raw/kana/VOICE.unpacked/YUM5511.OGG",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "asset/a-9b4883b94944a7e1",
+      "role": "voice",
+      "url": "/corpus/archive/raw/kana/VOICE.unpacked/YUM5512.OGG",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "asset/a-08f452c018999ae2",
+      "role": "voice",
+      "url": "/corpus/archive/raw/kana/VOICE.unpacked/YUM5513.OGG",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "asset/a-f7d922a88fc9cf4b",
+      "role": "voice",
+      "url": "/corpus/archive/raw/kana/VOICE.unpacked/YUM5514.OGG",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "asset/a-a2b612bbfb65198c",
+      "role": "voice",
+      "url": "/corpus/archive/raw/kana/VOICE.unpacked/YUM5515.OGG",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "asset/a-e3c2f6caa4037225",
+      "role": "voice",
+      "url": "/corpus/archive/raw/kana/VOICE.unpacked/YUM5516.OGG",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "asset/a-90d4b3bdbba46a66",
+      "role": "voice",
+      "url": "/corpus/archive/raw/kana/VOICE.unpacked/YUM5517.OGG",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "asset/a-05f7b5fdb9ed5dbf",
+      "role": "image",
+      "url": "/corpus/archive/derived/images/kana/GGD.unpacked/KBG39A.png",
+      "mimeType": "image/png"
+    },
+    {
+      "mediaId": "asset/a-d9ee14ec700484ad",
+      "role": "bgm",
+      "url": "/corpus/archive/raw/kana/WMSC.unpacked/TK07.OGG",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "asset/a-e98417999be8e76f",
+      "role": "image",
+      "url": "/corpus/archive/derived/images/kana/GGD.unpacked/KSY19.png",
+      "mimeType": "image/png"
+    },
+    {
+      "mediaId": "asset/a-9439338c3fe8c1e4",
+      "role": "image",
+      "url": "/corpus/archive/derived/images/kana/GGD.unpacked/KSY20A.png",
+      "mimeType": "image/png"
+    },
+    {
+      "mediaId": "asset/a-dc9cf3ab554a56ab",
+      "role": "image",
+      "url": "/corpus/archive/derived/images/kana/GGD.unpacked/BLACK.png",
+      "mimeType": "image/png"
+    },
+    {
+      "mediaId": "asset/a-2186da77fcab02ec",
+      "role": "image",
+      "url": "/corpus/archive/derived/images/kana/GGD.unpacked/KBG07A.png",
+      "mimeType": "image/png"
+    },
+    {
+      "mediaId": "asset/a-0310d0cf97c0fe0a",
+      "role": "image",
+      "url": "/corpus/archive/derived/images/kana/GGD.unpacked/KBG09A.png",
+      "mimeType": "image/png"
+    },
+    {
+      "mediaId": "asset/a-a899853f4ea98164",
+      "role": "image",
+      "url": "/corpus/archive/derived/images/kana/GGD.unpacked/KSY25.png",
+      "mimeType": "image/png"
+    },
+    {
+      "mediaId": "asset/a-a02876267d341531",
+      "role": "image",
+      "url": "/corpus/archive/derived/images/kana/GGD.unpacked/KSY22.png",
+      "mimeType": "image/png"
+    }
+  ]
+}

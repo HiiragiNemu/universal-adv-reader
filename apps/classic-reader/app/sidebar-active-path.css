@@ -1,0 +1,37 @@
+@layer reader-visual-revision {
+  html[data-reader-theme='paper'] { --magi-path-lit: #725123; --magi-path-glow: transparent; }
+  html[data-reader-theme='green'] { --magi-path-lit: #226742; --magi-path-glow: transparent; }
+  html[data-reader-theme='light'] { --magi-path-lit: #485e63; --magi-path-glow: transparent; }
+  html[data-reader-theme='frost'] { --magi-path-lit: #bdece1; --magi-path-glow: #78d3c6; }
+  html[data-reader-theme='dark'] body #magi-reader-display { --magi-path-lit: color-mix(in srgb,var(--magi-tube-ink,#a7ff54) 80%,white); --magi-path-glow: var(--magi-tube-ink,#a7ff54); }
+  html[data-reader-theme] body #magi-reader-display
+    .magi-reader-sidebar-section-item[aria-current='location']::before {
+    border-top: 2px solid var(--magi-path-lit) !important;
+    filter: drop-shadow(0 0 2px var(--magi-path-glow)) drop-shadow(0 0 5px var(--magi-path-glow)) !important;
+    opacity: 1 !important;
+  }
+  html[data-reader-theme] body #magi-reader-display
+    .magi-reader-sidebar-section-tree[data-active-path='true']::after {
+    content: ''; position: absolute; pointer-events: none; inset-inline-start: -1px;
+    top: 0; width: 2px; height: var(--magi-section-path-end);
+    background: var(--magi-path-lit);
+    box-shadow: 0 0 3px var(--magi-path-glow),0 0 7px var(--magi-path-glow);
+  }
+  html[data-reader-theme] body #magi-reader-display
+    :is(.magi-reader-sidebar-folder-node:has(> .magi-reader-sidebar-folder-button[aria-expanded='true']),.magi-reader-story-entry:has(.magi-reader-story-link[aria-current='page']))::before {
+    border-top: 2px solid var(--magi-path-lit) !important;
+    filter: drop-shadow(0 0 2px var(--magi-path-glow)) drop-shadow(0 0 5px var(--magi-path-glow)) !important;
+    opacity: 1 !important;
+  }
+  /* Segment the trunk: it ends at the last selected branch, not at the final
+     unselected sibling. Existing dim lines remain as the structural tree. */
+  html[data-reader-theme] body #magi-reader-display
+    :is(.magi-reader-sidebar-folder-node:has(> .magi-reader-sidebar-folder-button[aria-expanded='true']),.magi-reader-story-entry:has(.magi-reader-story-link[aria-current='page']),.magi-reader-sidebar-folder-node:has(~ .magi-reader-sidebar-folder-node > .magi-reader-sidebar-folder-button[aria-expanded='true']),.magi-reader-story-entry:has(~ .magi-reader-story-entry .magi-reader-story-link[aria-current='page']))::after {
+    content: '' !important; position: absolute; pointer-events: none;
+    top: -4px; inset-inline-start: calc(-.78rem - 1px); width: 2px; height: calc(1rem + 4px);
+    background: var(--magi-path-lit) !important;
+    box-shadow: 0 0 3px var(--magi-path-glow),0 0 7px var(--magi-path-glow);
+  }
+  html[data-reader-theme] body #magi-reader-display
+    :is(.magi-reader-sidebar-folder-node:has(~ .magi-reader-sidebar-folder-node > .magi-reader-sidebar-folder-button[aria-expanded='true']),.magi-reader-story-entry:has(~ .magi-reader-story-entry .magi-reader-story-link[aria-current='page']))::after { height: calc(100% + 8px); }
+}

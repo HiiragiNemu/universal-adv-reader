@@ -1,0 +1,51 @@
+{
+  "name": "universal-adv-reader-web",
+  "version": "0.2.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.6.0"
+  },
+  "scripts": {
+    "dev": "next dev --webpack",
+    "build": "next build --webpack",
+    "type-check": "tsc --noEmit",
+    "test": "node --experimental-strip-types --test",
+    "audit:prod": "npm audit --omit=dev --audit-level=high",
+    "build:pages": "node ../../tools/build-cloudflare-pages.mjs",
+    "deploy:pages": "node ../../tools/deploy-cloudflare.mjs"
+  },
+  "dependencies": {
+    "@tailwindcss/postcss": "^4.0.7",
+    "autoprefixer": "^10.4.20",
+    "lucide-react": "^0.563.0",
+    "next": "16.4.0",
+    "postcss": "^8.5.23",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "tailwindcss": "^4.0.7"
+  },
+  "devDependencies": {
+    "@opennextjs/cloudflare": "1.20.11",
+    "@tailwindcss/typography": "^0.5.19",
+    "@types/node": "^20.19.33",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "eslint": "9.39.2",
+    "eslint-config-next": "16.4.0",
+    "typescript": "^5.9.3",
+    "wrangler": "4.150.0",
+    "undici": "8.11.2"
+  },
+  "overrides": {
+    "postcss": "$postcss",
+    "sharp": "0.35.5",
+    "typescript-eslint": "8.65.0",
+    "minimatch@3.1.5": {
+      "brace-expansion": "1.1.16"
+    },
+    "browserslist": "4.29.3",
+    "baseline-browser-mapping": "2.11.28",
+    "source-map-js": "1.2.2"
+  }
+}

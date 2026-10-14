@@ -1,0 +1,1561 @@
+{
+  "schema": "classic-reader-story-routes/v1",
+  "canonicalStoryId": "narcissu-sumire/narsumi00",
+  "sourceCanonicalStoryId": "narcissu-sumire/narsumi00",
+  "preferredVariantId": "mjo/patches/narci_sumire/%23mjo/narsumi00",
+  "japaneseVariantId": "mjo/patches/narci_sumire/%23mjo/narsumi00",
+  "chineseVariantId": "mjo/patches/narci_sumire/%23mjo/narsumi00",
+  "voiceRouting": {
+    "schema": "classic-reader-voice-routing/v1",
+    "defaultState": "collapsed",
+    "expandedSlotMode": "all-lines",
+    "unresolvedLineBehavior": "visible"
+  },
+  "titleAuthority": {
+    "work": {
+      "authorityId": "work/narcissu10",
+      "title_cn": "Narcissu 10th Anniversary Anthology Project",
+      "title_jp": "Narcissu 10th Anniversary Anthology Project",
+      "source": {
+        "zh-CN": "research/steam/appinfo-426690-build-3467893.txt",
+        "ja-JP": "research/steam/appinfo-426690-build-3467893.txt"
+      },
+      "evidence": {
+        "zh-CN": [
+          "official Steam app name at UTF-8 lines 13,96,224",
+          "exactLiteral=Narcissu 10th Anniversary Anthology Project"
+        ],
+        "ja-JP": [
+          "official Steam app name at UTF-8 lines 13,96,224",
+          "exactLiteral=Narcissu 10th Anniversary Anthology Project"
+        ]
+      },
+      "confidence": {
+        "zh-CN": 1,
+        "ja-JP": 1
+      }
+    },
+    "arc": {
+      "authorityId": "arc/narcissu-sumire",
+      "title_cn": "ナルキッソス -スミレ-",
+      "title_jp": "ナルキッソス－スミレ－",
+      "source": {
+        "zh-CN": "archive/raw/patches/narci_sumire/Narcissu_cn.dll",
+        "ja-JP": "archive/raw/narcissu10-original-ja-JP/narci_sumire/fastdata.arc.unpacked/majiro.env"
+      },
+      "evidence": {
+        "zh-CN": [
+          "PE imports CreateWindowExA",
+          "32-bit wrapper writes the exact title pointer to [ebp+0x10], the third CreateWindowExA argument lpWindowName, then tail-jumps",
+          "wrapperFileOffset=18160",
+          "wrapperRawHex=558becc74510c09903105dff25b4100410",
+          "titleFileOffset=231872",
+          "titleRva=0x399c0",
+          "titleRawHex=a5caa5eba5ada5c3a5bda5b9202da5b9a5dfa5ec2d",
+          "apiReference=https://learn.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-createwindowexa"
+        ],
+        "ja-JP": [
+          "active TITLEBAR at cp932 line 40: ナルキッソス－スミレ－",
+          "rawLineHex=5449544c4542415209098369838b834c8362835c8358817c8358837e838c817c"
+        ]
+      },
+      "confidence": {
+        "zh-CN": 1,
+        "ja-JP": 1
+      }
+    },
+    "story": {
+      "authorityId": "story/narcissu-sumire/narsumi00",
+      "title_cn": "说明",
+      "title_jp": "説明",
+      "source": {
+        "zh-CN": "archive/raw/patch-archives/narci_sumire/update1.arc.unpacked/小タイトル_off.png",
+        "ja-JP": "archive/raw/narcissu10-original-ja-JP/narci_sumire/update.arc.unpacked/小タイトル_off.png"
+      },
+      "evidence": {
+        "zh-CN": [
+          "official runtime menu image [800, 600]",
+          "groupId=n10-sumire",
+          "visibleEntry=explanation",
+          "imageRegion=[0, 120, 800, 310]",
+          "routeSource=archive/derived/scripts/narcissu10-original-ja-JP/narci_sumire/scenario.arc.unpacked/start.strings.json",
+          "routeMode=explicit-target",
+          "routeTarget=narsumi00"
+        ],
+        "ja-JP": [
+          "official runtime menu image [800, 600]",
+          "groupId=n10-sumire",
+          "visibleEntry=explanation",
+          "imageRegion=[0, 120, 800, 310]",
+          "routeSource=archive/derived/scripts/narcissu10-original-ja-JP/narci_sumire/scenario.arc.unpacked/start.strings.json",
+          "routeMode=explicit-target",
+          "routeTarget=narsumi00"
+        ]
+      },
+      "confidence": {
+        "zh-CN": 1,
+        "ja-JP": 1
+      }
+    }
+  },
+  "sections": [
+    {
+      "sectionId": "main",
+      "entryEventId": "mjo-ac",
+      "events": [
+        {
+          "eventId": "mjo-ac",
+          "kind": "line",
+          "source": {
+            "engine": "majiro",
+            "variantSourceId": "mjo/patches/narci_sumire/%23mjo/narsumi00",
+            "scriptPath": "archive/derived/scripts/patches/narci_sumire/#mjo/narsumi00.script.json",
+            "textEventIndices": [
+              0
+            ],
+            "codeOffsets": [
+              172
+            ],
+            "nativeUnit": {
+              "schema": "majiro-display-unit/v1",
+              "codeOffset": 172,
+              "endCodeOffset": 199,
+              "bodyCodeOffset": 172,
+              "codeOffsets": [
+                172,
+                197
+              ],
+              "textEventIndices": [
+                0
+              ],
+              "textParts": [
+                {
+                  "kind": "text",
+                  "text": "■先に簡単なご説明を",
+                  "codeOffset": 172,
+                  "rawText": "■先に簡単なご説明を",
+                  "rawHex": "81a190e682c98ac8925082c882b290e096be82f0",
+                  "textEventIndex": 0,
+                  "segmentIndex": 0
+                }
+              ],
+              "speakerRaw": null,
+              "ruby": [],
+              "controls": [],
+              "boundary": {
+                "codeOffset": 199,
+                "control": "p"
+              },
+              "translationBindings": [
+                {
+                  "field": "text",
+                  "translationLine": 1,
+                  "targetCodeOffset": 172,
+                  "sourceTextEventIndex": 0,
+                  "sourceRawHex": "a02596994851db8f4c88807b55538476f48b0e66",
+                  "text": "■首先进行简单的说明"
+                }
+              ]
+            }
+          },
+          "nextEventId": "mjo-d7",
+          "textLineIndex": {
+            "ja-JP": 0
+          },
+          "cues": [
+            {
+              "cueId": "cue-0eea105134a4dbdd",
+              "kind": "image",
+              "timing": "scene",
+              "mediaId": "asset/a-df4250964c616f6e",
+              "resolverId": "research-media-v1",
+              "raw": {
+                "sourceKey": "b",
+                "codeOffset": 62,
+                "playbackPath": "archive/raw/narcissu10-original-ja-JP/narci_sumire/data.arc.unpacked/b.png",
+                "targetEventId": "mjo-ac"
+              }
+            },
+            {
+              "cueId": "cue-9121069a153570fa",
+              "kind": "image",
+              "timing": "scene",
+              "mediaId": "asset/a-722fb495150c5e6e",
+              "resolverId": "research-media-v1",
+              "raw": {
+                "sourceKey": "ns_37",
+                "codeOffset": 90,
+                "playbackPath": "archive/raw/narcissu10-original-ja-JP/narci_sumire/data.arc.unpacked/ns_37.png",
+                "targetEventId": "mjo-ac"
+              }
+            },
+            {
+              "cueId": "cue-f447000509c8ac86",
+              "kind": "bgm",
+              "timing": "scene",
+              "mediaId": "asset/a-a1b5e458b0e62b31",
+              "resolverId": "research-media-v1",
+              "raw": {
+                "sourceKey": "pl_v2",
+                "codeOffset": 128,
+                "playbackPath": "archive/raw/narcissu10-original-ja-JP/narci_sumire/stream.arc.unpacked/pl_v2.wav",
+                "targetEventId": "mjo-ac"
+              }
+            }
+          ]
+        },
+        {
+          "eventId": "mjo-d7",
+          "kind": "line",
+          "source": {
+            "engine": "majiro",
+            "variantSourceId": "mjo/patches/narci_sumire/%23mjo/narsumi00",
+            "scriptPath": "archive/derived/scripts/patches/narci_sumire/#mjo/narsumi00.script.json",
+            "textEventIndices": [
+              1
+            ],
+            "codeOffsets": [
+              215
+            ],
+            "nativeUnit": {
+              "schema": "majiro-display-unit/v1",
+              "codeOffset": 215,
+              "endCodeOffset": 250,
+              "bodyCodeOffset": 215,
+              "codeOffsets": [
+                215,
+                248
+              ],
+              "textEventIndices": [
+                1
+              ],
+              "textParts": [
+                {
+                  "kind": "text",
+                  "text": "ナルキッソス　スミレには……",
+                  "codeOffset": 215,
+                  "rawText": "ナルキッソス　スミレには……",
+                  "rawHex": "8369838b834c8362835c835881408358837e838c82c982cd81638163",
+                  "textEventIndex": 1,
+                  "segmentIndex": 0
+                }
+              ],
+              "speakerRaw": null,
+              "ruby": [],
+              "controls": [],
+              "boundary": {
+                "codeOffset": 250,
+                "control": "p"
+              },
+              "translationBindings": [
+                {
+                  "field": "text",
+                  "translationLine": 2,
+                  "targetCodeOffset": 215,
+                  "sourceTextEventIndex": 1,
+                  "sourceRawHex": "346cd94e0030eb8326202620",
+                  "text": "水仙　菫……"
+                }
+              ]
+            }
+          },
+          "nextEventId": "mjo-10a",
+          "textLineIndex": {
+            "ja-JP": 1
+          }
+        },
+        {
+          "eventId": "mjo-10a",
+          "kind": "line",
+          "source": {
+            "engine": "majiro",
+            "variantSourceId": "mjo/patches/narci_sumire/%23mjo/narsumi00",
+            "scriptPath": "archive/derived/scripts/patches/narci_sumire/#mjo/narsumi00.script.json",
+            "textEventIndices": [
+              2
+            ],
+            "codeOffsets": [
+              266
+            ],
+            "nativeUnit": {
+              "schema": "majiro-display-unit/v1",
+              "codeOffset": 266,
+              "endCodeOffset": 370,
+              "bodyCodeOffset": 266,
+              "codeOffsets": [
+                266,
+                315,
+                317,
+                327,
+                368
+              ],
+              "textEventIndices": [
+                2
+              ],
+              "textParts": [
+                {
+                  "kind": "text",
+                  "text": "ねこねこソフトの『すみれ』のヒロインである、",
+                  "codeOffset": 266,
+                  "rawText": "ねこねこソフトの『すみれ』のヒロインである、",
+                  "rawHex": "82cb82b182cb82b1835c8374836782cc817782b782dd82ea817882cc8371838d8343839382c582a082e98141",
+                  "textEventIndex": 2,
+                  "segmentIndex": 0
+                },
+                {
+                  "kind": "linebreak",
+                  "text": "\n",
+                  "codeOffset": 317
+                },
+                {
+                  "kind": "text",
+                  "text": "あかりが重要な役で登場しております。",
+                  "codeOffset": 327,
+                  "rawText": "あかりが重要な役で登場しております。",
+                  "rawHex": "82a082a982e882aa8f64977682c896f082c5936f8fea82b582c482a882e882dc82b78142",
+                  "textEventIndex": 2,
+                  "segmentIndex": 1
+                }
+              ],
+              "speakerRaw": null,
+              "ruby": [],
+              "controls": [
+                {
+                  "codeOffset": 317,
+                  "value": "n"
+                }
+              ],
+              "boundary": {
+                "codeOffset": 370,
+                "control": "p"
+              },
+              "translationBindings": [
+                {
+                  "field": "text",
+                  "translationLine": 3,
+                  "targetCodeOffset": 266,
+                  "sourceTextEventIndex": 2,
+                  "sourceRawHex": "6e0065006b006f006e0065006b006f00200073006f006600740084760e30eb830f30847673593b4ed289eb8301305c006e00065c5c4f3a4ecd9181893b4ed2897b763a57847645658b4e0230",
+                  "text": "nekoneko soft的『菫』的女主角菫、\n将作为重要主角登场的故事。"
+                }
+              ]
+            }
+          },
+          "nextEventId": "mjo-182",
+          "textLineIndex": {
+            "ja-JP": 2
+          }
+        },
+        {
+          "eventId": "mjo-182",
+          "kind": "line",
+          "source": {
+            "engine": "majiro",
+            "variantSourceId": "mjo/patches/narci_sumire/%23mjo/narsumi00",
+            "scriptPath": "archive/derived/scripts/patches/narci_sumire/#mjo/narsumi00.script.json",
+            "textEventIndices": [
+              3
+            ],
+            "codeOffsets": [
+              386
+            ],
+            "nativeUnit": {
+              "schema": "majiro-display-unit/v1",
+              "codeOffset": 386,
+              "endCodeOffset": 500,
+              "bodyCodeOffset": 386,
+              "codeOffsets": [
+                386,
+                439,
+                441,
+                451,
+                498
+              ],
+              "textEventIndices": [
+                3
+              ],
+              "textParts": [
+                {
+                  "kind": "text",
+                  "text": "その為に、あかりの設定やキャラ背景となる部分も、",
+                  "codeOffset": 386,
+                  "rawText": "その為に、あかりの設定やキャラ背景となる部分も、",
+                  "rawHex": "82bb82cc88d782c9814182a082a982e882cc90dd92e882e2834c8383838994778c6982c682c882e9959495aa82e08141",
+                  "textEventIndex": 3,
+                  "segmentIndex": 0
+                },
+                {
+                  "kind": "linebreak",
+                  "text": "\n",
+                  "codeOffset": 441
+                },
+                {
+                  "kind": "text",
+                  "text": "ある程度は分かるくらいに入れておきました。",
+                  "codeOffset": 451,
+                  "rawText": "ある程度は分かるくらいに入れておきました。",
+                  "rawHex": "82a082e992f6937882cd95aa82a982e982ad82e782a282c993fc82ea82c482a882ab82dc82b582bd8142",
+                  "textEventIndex": 3,
+                  "segmentIndex": 1
+                }
+              ],
+              "speakerRaw": null,
+              "ruby": [],
+              "controls": [
+                {
+                  "codeOffset": 441,
+                  "value": "n"
+                }
+              ],
+              "boundary": {
+                "codeOffset": 500,
+                "control": "p"
+              },
+              "translationBindings": [
+                {
+                  "field": "text",
+                  "translationLine": 4,
+                  "targetCodeOffset": 386,
+                  "sourceTextEventIndex": 3,
+                  "sourceRawHex": "e056646b0cff3a4e864ec289174ffd801f590674e3890cff5c006e000c80a0526551864e004e9a5b6f70cc918476d2897282be8b9a5b0e4ecc806f668476e89006520230",
+                  "text": "因此，为了观众能够理解，\n而加入了一定灯里的角色设定与背景的部分。"
+                }
+              ]
+            }
+          },
+          "nextEventId": "mjo-204",
+          "textLineIndex": {
+            "ja-JP": 3
+          }
+        },
+        {
+          "eventId": "mjo-204",
+          "kind": "line",
+          "source": {
+            "engine": "majiro",
+            "variantSourceId": "mjo/patches/narci_sumire/%23mjo/narsumi00",
+            "scriptPath": "archive/derived/scripts/patches/narci_sumire/#mjo/narsumi00.script.json",
+            "textEventIndices": [
+              4
+            ],
+            "codeOffsets": [
+              516
+            ],
+            "nativeUnit": {
+              "schema": "majiro-display-unit/v1",
+              "codeOffset": 516,
+              "endCodeOffset": 581,
+              "bodyCodeOffset": 516,
+              "codeOffsets": [
+                516,
+                579
+              ],
+              "textEventIndices": [
+                4
+              ],
+              "textParts": [
+                {
+                  "kind": "text",
+                  "text": "元々、トリッキーな構成でしたから、分かり辛いと思いますが、",
+                  "codeOffset": 516,
+                  "rawText": "元々、トリッキーな構成でしたから、分かり辛いと思いますが、",
+                  "rawHex": "8cb3815881418367838a8362834c815b82c88d5c90ac82c582b582bd82a982e7814195aa82a982e8906882a282c68e7682a282dc82b782aa8141",
+                  "textEventIndex": 4,
+                  "segmentIndex": 0
+                }
+              ],
+              "speakerRaw": null,
+              "ruby": [],
+              "controls": [],
+              "boundary": {
+                "codeOffset": 581,
+                "control": "p"
+              },
+              "translationBindings": [
+                {
+                  "field": "text",
+                  "translationLine": 5,
+                  "targetCodeOffset": 516,
+                  "sourceTextEventIndex": 4,
+                  "sourceRawHex": "2c67ab8e2f66004ecd79d9538b4ee18ba18b8476846710620cff4062e54e1162f3601a4f885fbe960674e3892754",
+                  "text": "本身是一种叙事诡计的构成，所以我想会很难理解吧"
+                }
+              ]
+            }
+          },
+          "nextEventId": "mjo-255",
+          "textLineIndex": {
+            "ja-JP": 4
+          }
+        },
+        {
+          "eventId": "mjo-255",
+          "kind": "line",
+          "source": {
+            "engine": "majiro",
+            "variantSourceId": "mjo/patches/narci_sumire/%23mjo/narsumi00",
+            "scriptPath": "archive/derived/scripts/patches/narci_sumire/#mjo/narsumi00.script.json",
+            "textEventIndices": [
+              5
+            ],
+            "codeOffsets": [
+              597
+            ],
+            "nativeUnit": {
+              "schema": "majiro-display-unit/v1",
+              "codeOffset": 597,
+              "endCodeOffset": 699,
+              "bodyCodeOffset": 597,
+              "codeOffsets": [
+                597,
+                644,
+                646,
+                656,
+                697
+              ],
+              "textEventIndices": [
+                5
+              ],
+              "textParts": [
+                {
+                  "kind": "text",
+                  "text": "こういう背景を持ったキャラなんだな～っと、",
+                  "codeOffset": 597,
+                  "rawText": "こういう背景を持ったキャラなんだな～っと、",
+                  "rawHex": "82b182a482a282a494778c6982f08e9d82c182bd834c8383838982c882f182be82c8816082c182c68141",
+                  "textEventIndex": 5,
+                  "segmentIndex": 0
+                },
+                {
+                  "kind": "linebreak",
+                  "text": "\n",
+                  "codeOffset": 646
+                },
+                {
+                  "kind": "text",
+                  "text": "ぼんやりでも考えて頂けると幸いです。",
+                  "codeOffset": 656,
+                  "rawText": "ぼんやりでも考えて頂けると幸いです。",
+                  "rawHex": "82da82f182e282e882c582e08d6c82a682c492b882af82e982c68d4b82a282c582b78142",
+                  "textEventIndex": 5,
+                  "segmentIndex": 1
+                }
+              ],
+              "speakerRaw": null,
+              "ruby": [],
+              "controls": [
+                {
+                  "codeOffset": 646,
+                  "value": "n"
+                }
+              ],
+              "boundary": {
+                "codeOffset": 699,
+                "control": "p"
+              },
+              "translationBindings": [
+                {
+                  "field": "text",
+                  "translationLine": 6,
+                  "targetCodeOffset": 597,
+                  "sourceTextEventIndex": 5,
+                  "sourceRawHex": "4062e54e82599c67604ffd80f360305210309f5365672f66d98fcd79be8b9a5b8476d2897282175411305c006e002759b65bea538189d98f3768216aca7c30571f61d75330520cff11625f4e1a4f5e97385e1f61228c8476",
+                  "text": "所以如果你能想到【原来是这种设定的角色吗】\n大家只要这样模糊地感受到，我也会非常感谢的"
+                }
+              ]
+            }
+          },
+          "nextEventId": "mjo-2cb",
+          "textLineIndex": {
+            "ja-JP": 5
+          }
+        },
+        {
+          "eventId": "mjo-2cb",
+          "kind": "line",
+          "source": {
+            "engine": "majiro",
+            "variantSourceId": "mjo/patches/narci_sumire/%23mjo/narsumi00",
+            "scriptPath": "archive/derived/scripts/patches/narci_sumire/#mjo/narsumi00.script.json",
+            "textEventIndices": [
+              6
+            ],
+            "codeOffsets": [
+              715
+            ],
+            "nativeUnit": {
+              "schema": "majiro-display-unit/v1",
+              "codeOffset": 715,
+              "endCodeOffset": 833,
+              "bodyCodeOffset": 715,
+              "codeOffsets": [
+                715,
+                772,
+                774,
+                784,
+                831
+              ],
+              "textEventIndices": [
+                6
+              ],
+              "textParts": [
+                {
+                  "kind": "text",
+                  "text": "取り合えず、無理やりナルキのプログラムに載せたから、",
+                  "codeOffset": 715,
+                  "rawText": "取り合えず、無理やりナルキのプログラムに載せたから、",
+                  "rawHex": "8ee682e88d8782a682b8814196b3979d82e282e88369838b834c82cc8376838d834f8389838082c98dda82b982bd82a982e78141",
+                  "textEventIndex": 6,
+                  "segmentIndex": 0
+                },
+                {
+                  "kind": "linebreak",
+                  "text": "\n",
+                  "codeOffset": 774
+                },
+                {
+                  "kind": "text",
+                  "text": "ちょっと立ち絵が変なのは無視して下さい＞＜",
+                  "codeOffset": 784,
+                  "rawText": "ちょっと立ち絵が変なのは無視して下さい＞＜",
+                  "rawHex": "82bf82e582c182c697a782bf8a4782aa95cf82c882cc82cd96b38e8b82b582c489ba82b382a281848183",
+                  "textEventIndex": 6,
+                  "segmentIndex": 1
+                }
+              ],
+              "speakerRaw": null,
+              "ruby": [],
+              "controls": [
+                {
+                  "codeOffset": 774,
+                  "value": "n"
+                }
+              ],
+              "boundary": {
+                "codeOffset": 833,
+                "control": "p"
+              },
+              "translationBindings": [
+                {
+                  "field": "text",
+                  "translationLine": 7,
+                  "targetCodeOffset": 715,
+                  "sourceTextEventIndex": 6,
+                  "sourceRawHex": "3b604b4e023011623a5f4c888a62835b3e65db8f864e346cd94e847645658b4ecc9101305c006e00f78bfd5f6575cb7ad87ed853975f47592a6084768b4e9e5b1eff1cff",
+                  "text": "总之。我强行把它放进了水仙的故事里、\n请忽略立绘变得奇怪的事实＞＜"
+                }
+              ]
+            }
+          },
+          "nextEventId": "mjo-351",
+          "textLineIndex": {
+            "ja-JP": 6
+          }
+        },
+        {
+          "eventId": "mjo-351",
+          "kind": "line",
+          "source": {
+            "engine": "majiro",
+            "variantSourceId": "mjo/patches/narci_sumire/%23mjo/narsumi00",
+            "scriptPath": "archive/derived/scripts/patches/narci_sumire/#mjo/narsumi00.script.json",
+            "textEventIndices": [
+              7
+            ],
+            "codeOffsets": [
+              849
+            ],
+            "nativeUnit": {
+              "schema": "majiro-display-unit/v1",
+              "codeOffset": 849,
+              "endCodeOffset": 922,
+              "bodyCodeOffset": 849,
+              "codeOffsets": [
+                849,
+                920
+              ],
+              "textEventIndices": [
+                7
+              ],
+              "textParts": [
+                {
+                  "kind": "text",
+                  "text": "あと、今作はナルキ２の４～５年後、ナルキ１の１～２年前となります。",
+                  "codeOffset": 849,
+                  "rawText": "あと、今作はナルキ２の４～５年後、ナルキ１の１～２年前となります。",
+                  "rawHex": "82a082c681418da18dec82cd8369838b834c825182cc825381608254944e8ce381418369838b834c825082cc825081608251944e914f82c682c882e882dc82b78142",
+                  "textEventIndex": 7,
+                  "segmentIndex": 0
+                }
+              ],
+              "speakerRaw": null,
+              "ruby": [],
+              "controls": [],
+              "boundary": {
+                "codeOffset": 922,
+                "control": "p"
+              },
+              "translationBindings": [
+                {
+                  "field": "text",
+                  "translationLine": 8,
+                  "targetCodeOffset": 849,
+                  "sourceTextEventIndex": 7,
+                  "sourceRawHex": "e65316590cffd98f5c4f8476f665f495b9702f66346cd94e32004b4e0e5434002d003500745e0130346cd94e3100847631002d003200745e4d520230",
+                  "text": "另外，这作的时间点是水仙2之后4-5年、水仙1的1-2年前。"
+                }
+              ]
+            }
+          },
+          "nextEventId": "mjo-3aa",
+          "textLineIndex": {
+            "ja-JP": 7
+          }
+        },
+        {
+          "eventId": "mjo-3aa",
+          "kind": "line",
+          "source": {
+            "engine": "majiro",
+            "variantSourceId": "mjo/patches/narci_sumire/%23mjo/narsumi00",
+            "scriptPath": "archive/derived/scripts/patches/narci_sumire/#mjo/narsumi00.script.json",
+            "textEventIndices": [
+              8
+            ],
+            "codeOffsets": [
+              938
+            ],
+            "nativeUnit": {
+              "schema": "majiro-display-unit/v1",
+              "codeOffset": 938,
+              "endCodeOffset": 995,
+              "bodyCodeOffset": 938,
+              "codeOffsets": [
+                938,
+                993
+              ],
+              "textEventIndices": [
+                8
+              ],
+              "textParts": [
+                {
+                  "kind": "text",
+                  "text": "なので久しぶりにプレイして頂けるとうれしいです＞＜",
+                  "codeOffset": 938,
+                  "rawText": "なので久しぶりにプレイして頂けるとうれしいです＞＜",
+                  "rawHex": "82c882cc82c58b7682b582d482e882c98376838c834382b582c492b882af82e982c682a482ea82b582a282c582b781848183",
+                  "textEventIndex": 8,
+                  "segmentIndex": 0
+                }
+              ],
+              "speakerRaw": null,
+              "ruby": [],
+              "controls": [],
+              "boundary": {
+                "codeOffset": 995,
+                "control": "p"
+              },
+              "translationBindings": [
+                {
+                  "field": "text",
+                  "translationLine": 9,
+                  "targetCodeOffset": 938,
+                  "sourceTextEventIndex": 8,
+                  "sourceRawHex": "a390484e20007d59454e0d4ec18920001f61228ca8608476386ea9731eff1cff",
+                  "text": "那么 好久不见 感谢您的游玩＞＜"
+                }
+              ]
+            }
+          },
+          "nextEventId": "end-001",
+          "textLineIndex": {
+            "ja-JP": 8
+          }
+        },
+        {
+          "eventId": "end-001",
+          "kind": "end"
+        }
+      ],
+      "titleAuthority": {
+        "sectionId": "main",
+        "authorityId": "section/narcissu-sumire/narsumi00/main",
+        "title_cn": "说明",
+        "title_jp": "説明",
+        "source": {
+          "zh-CN": "archive/raw/patch-archives/narci_sumire/update1.arc.unpacked/小タイトル_off.png",
+          "ja-JP": "archive/raw/narcissu10-original-ja-JP/narci_sumire/update.arc.unpacked/小タイトル_off.png"
+        },
+        "evidence": {
+          "zh-CN": [
+            "official runtime menu image [800, 600]",
+            "groupId=n10-sumire",
+            "visibleEntry=explanation",
+            "imageRegion=[0, 120, 800, 310]",
+            "routeSource=archive/derived/scripts/narcissu10-original-ja-JP/narci_sumire/scenario.arc.unpacked/start.strings.json",
+            "routeMode=explicit-target",
+            "routeTarget=narsumi00"
+          ],
+          "ja-JP": [
+            "official runtime menu image [800, 600]",
+            "groupId=n10-sumire",
+            "visibleEntry=explanation",
+            "imageRegion=[0, 120, 800, 310]",
+            "routeSource=archive/derived/scripts/narcissu10-original-ja-JP/narci_sumire/scenario.arc.unpacked/start.strings.json",
+            "routeMode=explicit-target",
+            "routeTarget=narsumi00"
+          ]
+        },
+        "confidence": {
+          "zh-CN": 1,
+          "ja-JP": 1
+        }
+      }
+    }
+  ],
+  "variantRoutes": [
+    {
+      "variantId": "mjo/patches/narci_sumire/%23mjo/narsumi00",
+      "locales": [
+        "ja-JP",
+        "zh-CN"
+      ],
+      "readerLocales": [
+        "ja-JP",
+        "zh-CN"
+      ],
+      "textLineCounts": {
+        "ja-JP": 9,
+        "zh-CN": 9
+      },
+      "sections": [
+        {
+          "sectionId": "main",
+          "entryEventId": "mjo-ac",
+          "events": [
+            {
+              "eventId": "mjo-ac",
+              "kind": "line",
+              "source": {
+                "engine": "majiro",
+                "variantSourceId": "mjo/patches/narci_sumire/%23mjo/narsumi00",
+                "scriptPath": "archive/derived/scripts/patches/narci_sumire/#mjo/narsumi00.script.json",
+                "textEventIndices": [
+                  0
+                ],
+                "codeOffsets": [
+                  172
+                ],
+                "nativeUnit": {
+                  "schema": "majiro-display-unit/v1",
+                  "codeOffset": 172,
+                  "endCodeOffset": 199,
+                  "bodyCodeOffset": 172,
+                  "codeOffsets": [
+                    172,
+                    197
+                  ],
+                  "textEventIndices": [
+                    0
+                  ],
+                  "textParts": [
+                    {
+                      "kind": "text",
+                      "text": "■先に簡単なご説明を",
+                      "codeOffset": 172,
+                      "rawText": "■先に簡単なご説明を",
+                      "rawHex": "81a190e682c98ac8925082c882b290e096be82f0",
+                      "textEventIndex": 0,
+                      "segmentIndex": 0
+                    }
+                  ],
+                  "speakerRaw": null,
+                  "ruby": [],
+                  "controls": [],
+                  "boundary": {
+                    "codeOffset": 199,
+                    "control": "p"
+                  },
+                  "translationBindings": [
+                    {
+                      "field": "text",
+                      "translationLine": 1,
+                      "targetCodeOffset": 172,
+                      "sourceTextEventIndex": 0,
+                      "sourceRawHex": "a02596994851db8f4c88807b55538476f48b0e66",
+                      "text": "■首先进行简单的说明"
+                    }
+                  ]
+                }
+              },
+              "nextEventId": "mjo-d7",
+              "textLineIndex": {
+                "ja-JP": 0,
+                "zh-CN": 0
+              },
+              "cues": [
+                {
+                  "cueId": "cue-0eea105134a4dbdd",
+                  "kind": "image",
+                  "timing": "scene",
+                  "mediaId": "asset/a-df4250964c616f6e",
+                  "resolverId": "research-media-v1",
+                  "raw": {
+                    "sourceKey": "b",
+                    "codeOffset": 62,
+                    "playbackPath": "archive/raw/narcissu10-original-ja-JP/narci_sumire/data.arc.unpacked/b.png",
+                    "targetEventId": "mjo-ac"
+                  }
+                },
+                {
+                  "cueId": "cue-9121069a153570fa",
+                  "kind": "image",
+                  "timing": "scene",
+                  "mediaId": "asset/a-722fb495150c5e6e",
+                  "resolverId": "research-media-v1",
+                  "raw": {
+                    "sourceKey": "ns_37",
+                    "codeOffset": 90,
+                    "playbackPath": "archive/raw/narcissu10-original-ja-JP/narci_sumire/data.arc.unpacked/ns_37.png",
+                    "targetEventId": "mjo-ac"
+                  }
+                },
+                {
+                  "cueId": "cue-f447000509c8ac86",
+                  "kind": "bgm",
+                  "timing": "scene",
+                  "mediaId": "asset/a-a1b5e458b0e62b31",
+                  "resolverId": "research-media-v1",
+                  "raw": {
+                    "sourceKey": "pl_v2",
+                    "codeOffset": 128,
+                    "playbackPath": "archive/raw/narcissu10-original-ja-JP/narci_sumire/stream.arc.unpacked/pl_v2.wav",
+                    "targetEventId": "mjo-ac"
+                  }
+                }
+              ]
+            },
+            {
+              "eventId": "mjo-d7",
+              "kind": "line",
+              "source": {
+                "engine": "majiro",
+                "variantSourceId": "mjo/patches/narci_sumire/%23mjo/narsumi00",
+                "scriptPath": "archive/derived/scripts/patches/narci_sumire/#mjo/narsumi00.script.json",
+                "textEventIndices": [
+                  1
+                ],
+                "codeOffsets": [
+                  215
+                ],
+                "nativeUnit": {
+                  "schema": "majiro-display-unit/v1",
+                  "codeOffset": 215,
+                  "endCodeOffset": 250,
+                  "bodyCodeOffset": 215,
+                  "codeOffsets": [
+                    215,
+                    248
+                  ],
+                  "textEventIndices": [
+                    1
+                  ],
+                  "textParts": [
+                    {
+                      "kind": "text",
+                      "text": "ナルキッソス　スミレには……",
+                      "codeOffset": 215,
+                      "rawText": "ナルキッソス　スミレには……",
+                      "rawHex": "8369838b834c8362835c835881408358837e838c82c982cd81638163",
+                      "textEventIndex": 1,
+                      "segmentIndex": 0
+                    }
+                  ],
+                  "speakerRaw": null,
+                  "ruby": [],
+                  "controls": [],
+                  "boundary": {
+                    "codeOffset": 250,
+                    "control": "p"
+                  },
+                  "translationBindings": [
+                    {
+                      "field": "text",
+                      "translationLine": 2,
+                      "targetCodeOffset": 215,
+                      "sourceTextEventIndex": 1,
+                      "sourceRawHex": "346cd94e0030eb8326202620",
+                      "text": "水仙　菫……"
+                    }
+                  ]
+                }
+              },
+              "nextEventId": "mjo-10a",
+              "textLineIndex": {
+                "ja-JP": 1,
+                "zh-CN": 1
+              }
+            },
+            {
+              "eventId": "mjo-10a",
+              "kind": "line",
+              "source": {
+                "engine": "majiro",
+                "variantSourceId": "mjo/patches/narci_sumire/%23mjo/narsumi00",
+                "scriptPath": "archive/derived/scripts/patches/narci_sumire/#mjo/narsumi00.script.json",
+                "textEventIndices": [
+                  2
+                ],
+                "codeOffsets": [
+                  266
+                ],
+                "nativeUnit": {
+                  "schema": "majiro-display-unit/v1",
+                  "codeOffset": 266,
+                  "endCodeOffset": 370,
+                  "bodyCodeOffset": 266,
+                  "codeOffsets": [
+                    266,
+                    315,
+                    317,
+                    327,
+                    368
+                  ],
+                  "textEventIndices": [
+                    2
+                  ],
+                  "textParts": [
+                    {
+                      "kind": "text",
+                      "text": "ねこねこソフトの『すみれ』のヒロインである、",
+                      "codeOffset": 266,
+                      "rawText": "ねこねこソフトの『すみれ』のヒロインである、",
+                      "rawHex": "82cb82b182cb82b1835c8374836782cc817782b782dd82ea817882cc8371838d8343839382c582a082e98141",
+                      "textEventIndex": 2,
+                      "segmentIndex": 0
+                    },
+                    {
+                      "kind": "linebreak",
+                      "text": "\n",
+                      "codeOffset": 317
+                    },
+                    {
+                      "kind": "text",
+                      "text": "あかりが重要な役で登場しております。",
+                      "codeOffset": 327,
+                      "rawText": "あかりが重要な役で登場しております。",
+                      "rawHex": "82a082a982e882aa8f64977682c896f082c5936f8fea82b582c482a882e882dc82b78142",
+                      "textEventIndex": 2,
+                      "segmentIndex": 1
+                    }
+                  ],
+                  "speakerRaw": null,
+                  "ruby": [],
+                  "controls": [
+                    {
+                      "codeOffset": 317,
+                      "value": "n"
+                    }
+                  ],
+                  "boundary": {
+                    "codeOffset": 370,
+                    "control": "p"
+                  },
+                  "translationBindings": [
+                    {
+                      "field": "text",
+                      "translationLine": 3,
+                      "targetCodeOffset": 266,
+                      "sourceTextEventIndex": 2,
+                      "sourceRawHex": "6e0065006b006f006e0065006b006f00200073006f006600740084760e30eb830f30847673593b4ed289eb8301305c006e00065c5c4f3a4ecd9181893b4ed2897b763a57847645658b4e0230",
+                      "text": "nekoneko soft的『菫』的女主角菫、\n将作为重要主角登场的故事。"
+                    }
+                  ]
+                }
+              },
+              "nextEventId": "mjo-182",
+              "textLineIndex": {
+                "ja-JP": 2,
+                "zh-CN": 2
+              }
+            },
+            {
+              "eventId": "mjo-182",
+              "kind": "line",
+              "source": {
+                "engine": "majiro",
+                "variantSourceId": "mjo/patches/narci_sumire/%23mjo/narsumi00",
+                "scriptPath": "archive/derived/scripts/patches/narci_sumire/#mjo/narsumi00.script.json",
+                "textEventIndices": [
+                  3
+                ],
+                "codeOffsets": [
+                  386
+                ],
+                "nativeUnit": {
+                  "schema": "majiro-display-unit/v1",
+                  "codeOffset": 386,
+                  "endCodeOffset": 500,
+                  "bodyCodeOffset": 386,
+                  "codeOffsets": [
+                    386,
+                    439,
+                    441,
+                    451,
+                    498
+                  ],
+                  "textEventIndices": [
+                    3
+                  ],
+                  "textParts": [
+                    {
+                      "kind": "text",
+                      "text": "その為に、あかりの設定やキャラ背景となる部分も、",
+                      "codeOffset": 386,
+                      "rawText": "その為に、あかりの設定やキャラ背景となる部分も、",
+                      "rawHex": "82bb82cc88d782c9814182a082a982e882cc90dd92e882e2834c8383838994778c6982c682c882e9959495aa82e08141",
+                      "textEventIndex": 3,
+                      "segmentIndex": 0
+                    },
+                    {
+                      "kind": "linebreak",
+                      "text": "\n",
+                      "codeOffset": 441
+                    },
+                    {
+                      "kind": "text",
+                      "text": "ある程度は分かるくらいに入れておきました。",
+                      "codeOffset": 451,
+                      "rawText": "ある程度は分かるくらいに入れておきました。",
+                      "rawHex": "82a082e992f6937882cd95aa82a982e982ad82e782a282c993fc82ea82c482a882ab82dc82b582bd8142",
+                      "textEventIndex": 3,
+                      "segmentIndex": 1
+                    }
+                  ],
+                  "speakerRaw": null,
+                  "ruby": [],
+                  "controls": [
+                    {
+                      "codeOffset": 441,
+                      "value": "n"
+                    }
+                  ],
+                  "boundary": {
+                    "codeOffset": 500,
+                    "control": "p"
+                  },
+                  "translationBindings": [
+                    {
+                      "field": "text",
+                      "translationLine": 4,
+                      "targetCodeOffset": 386,
+                      "sourceTextEventIndex": 3,
+                      "sourceRawHex": "e056646b0cff3a4e864ec289174ffd801f590674e3890cff5c006e000c80a0526551864e004e9a5b6f70cc918476d2897282be8b9a5b0e4ecc806f668476e89006520230",
+                      "text": "因此，为了观众能够理解，\n而加入了一定灯里的角色设定与背景的部分。"
+                    }
+                  ]
+                }
+              },
+              "nextEventId": "mjo-204",
+              "textLineIndex": {
+                "ja-JP": 3,
+                "zh-CN": 3
+              }
+            },
+            {
+              "eventId": "mjo-204",
+              "kind": "line",
+              "source": {
+                "engine": "majiro",
+                "variantSourceId": "mjo/patches/narci_sumire/%23mjo/narsumi00",
+                "scriptPath": "archive/derived/scripts/patches/narci_sumire/#mjo/narsumi00.script.json",
+                "textEventIndices": [
+                  4
+                ],
+                "codeOffsets": [
+                  516
+                ],
+                "nativeUnit": {
+                  "schema": "majiro-display-unit/v1",
+                  "codeOffset": 516,
+                  "endCodeOffset": 581,
+                  "bodyCodeOffset": 516,
+                  "codeOffsets": [
+                    516,
+                    579
+                  ],
+                  "textEventIndices": [
+                    4
+                  ],
+                  "textParts": [
+                    {
+                      "kind": "text",
+                      "text": "元々、トリッキーな構成でしたから、分かり辛いと思いますが、",
+                      "codeOffset": 516,
+                      "rawText": "元々、トリッキーな構成でしたから、分かり辛いと思いますが、",
+                      "rawHex": "8cb3815881418367838a8362834c815b82c88d5c90ac82c582b582bd82a982e7814195aa82a982e8906882a282c68e7682a282dc82b782aa8141",
+                      "textEventIndex": 4,
+                      "segmentIndex": 0
+                    }
+                  ],
+                  "speakerRaw": null,
+                  "ruby": [],
+                  "controls": [],
+                  "boundary": {
+                    "codeOffset": 581,
+                    "control": "p"
+                  },
+                  "translationBindings": [
+                    {
+                      "field": "text",
+                      "translationLine": 5,
+                      "targetCodeOffset": 516,
+                      "sourceTextEventIndex": 4,
+                      "sourceRawHex": "2c67ab8e2f66004ecd79d9538b4ee18ba18b8476846710620cff4062e54e1162f3601a4f885fbe960674e3892754",
+                      "text": "本身是一种叙事诡计的构成，所以我想会很难理解吧"
+                    }
+                  ]
+                }
+              },
+              "nextEventId": "mjo-255",
+              "textLineIndex": {
+                "ja-JP": 4,
+                "zh-CN": 4
+              }
+            },
+            {
+              "eventId": "mjo-255",
+              "kind": "line",
+              "source": {
+                "engine": "majiro",
+                "variantSourceId": "mjo/patches/narci_sumire/%23mjo/narsumi00",
+                "scriptPath": "archive/derived/scripts/patches/narci_sumire/#mjo/narsumi00.script.json",
+                "textEventIndices": [
+                  5
+                ],
+                "codeOffsets": [
+                  597
+                ],
+                "nativeUnit": {
+                  "schema": "majiro-display-unit/v1",
+                  "codeOffset": 597,
+                  "endCodeOffset": 699,
+                  "bodyCodeOffset": 597,
+                  "codeOffsets": [
+                    597,
+                    644,
+                    646,
+                    656,
+                    697
+                  ],
+                  "textEventIndices": [
+                    5
+                  ],
+                  "textParts": [
+                    {
+                      "kind": "text",
+                      "text": "こういう背景を持ったキャラなんだな～っと、",
+                      "codeOffset": 597,
+                      "rawText": "こういう背景を持ったキャラなんだな～っと、",
+                      "rawHex": "82b182a482a282a494778c6982f08e9d82c182bd834c8383838982c882f182be82c8816082c182c68141",
+                      "textEventIndex": 5,
+                      "segmentIndex": 0
+                    },
+                    {
+                      "kind": "linebreak",
+                      "text": "\n",
+                      "codeOffset": 646
+                    },
+                    {
+                      "kind": "text",
+                      "text": "ぼんやりでも考えて頂けると幸いです。",
+                      "codeOffset": 656,
+                      "rawText": "ぼんやりでも考えて頂けると幸いです。",
+                      "rawHex": "82da82f182e282e882c582e08d6c82a682c492b882af82e982c68d4b82a282c582b78142",
+                      "textEventIndex": 5,
+                      "segmentIndex": 1
+                    }
+                  ],
+                  "speakerRaw": null,
+                  "ruby": [],
+                  "controls": [
+                    {
+                      "codeOffset": 646,
+                      "value": "n"
+                    }
+                  ],
+                  "boundary": {
+                    "codeOffset": 699,
+                    "control": "p"
+                  },
+                  "translationBindings": [
+                    {
+                      "field": "text",
+                      "translationLine": 6,
+                      "targetCodeOffset": 597,
+                      "sourceTextEventIndex": 5,
+                      "sourceRawHex": "4062e54e82599c67604ffd80f360305210309f5365672f66d98fcd79be8b9a5b8476d2897282175411305c006e002759b65bea538189d98f3768216aca7c30571f61d75330520cff11625f4e1a4f5e97385e1f61228c8476",
+                      "text": "所以如果你能想到【原来是这种设定的角色吗】\n大家只要这样模糊地感受到，我也会非常感谢的"
+                    }
+                  ]
+                }
+              },
+              "nextEventId": "mjo-2cb",
+              "textLineIndex": {
+                "ja-JP": 5,
+                "zh-CN": 5
+              }
+            },
+            {
+              "eventId": "mjo-2cb",
+              "kind": "line",
+              "source": {
+                "engine": "majiro",
+                "variantSourceId": "mjo/patches/narci_sumire/%23mjo/narsumi00",
+                "scriptPath": "archive/derived/scripts/patches/narci_sumire/#mjo/narsumi00.script.json",
+                "textEventIndices": [
+                  6
+                ],
+                "codeOffsets": [
+                  715
+                ],
+                "nativeUnit": {
+                  "schema": "majiro-display-unit/v1",
+                  "codeOffset": 715,
+                  "endCodeOffset": 833,
+                  "bodyCodeOffset": 715,
+                  "codeOffsets": [
+                    715,
+                    772,
+                    774,
+                    784,
+                    831
+                  ],
+                  "textEventIndices": [
+                    6
+                  ],
+                  "textParts": [
+                    {
+                      "kind": "text",
+                      "text": "取り合えず、無理やりナルキのプログラムに載せたから、",
+                      "codeOffset": 715,
+                      "rawText": "取り合えず、無理やりナルキのプログラムに載せたから、",
+                      "rawHex": "8ee682e88d8782a682b8814196b3979d82e282e88369838b834c82cc8376838d834f8389838082c98dda82b982bd82a982e78141",
+                      "textEventIndex": 6,
+                      "segmentIndex": 0
+                    },
+                    {
+                      "kind": "linebreak",
+                      "text": "\n",
+                      "codeOffset": 774
+                    },
+                    {
+                      "kind": "text",
+                      "text": "ちょっと立ち絵が変なのは無視して下さい＞＜",
+                      "codeOffset": 784,
+                      "rawText": "ちょっと立ち絵が変なのは無視して下さい＞＜",
+                      "rawHex": "82bf82e582c182c697a782bf8a4782aa95cf82c882cc82cd96b38e8b82b582c489ba82b382a281848183",
+                      "textEventIndex": 6,
+                      "segmentIndex": 1
+                    }
+                  ],
+                  "speakerRaw": null,
+                  "ruby": [],
+                  "controls": [
+                    {
+                      "codeOffset": 774,
+                      "value": "n"
+                    }
+                  ],
+                  "boundary": {
+                    "codeOffset": 833,
+                    "control": "p"
+                  },
+                  "translationBindings": [
+                    {
+                      "field": "text",
+                      "translationLine": 7,
+                      "targetCodeOffset": 715,
+                      "sourceTextEventIndex": 6,
+                      "sourceRawHex": "3b604b4e023011623a5f4c888a62835b3e65db8f864e346cd94e847645658b4ecc9101305c006e00f78bfd5f6575cb7ad87ed853975f47592a6084768b4e9e5b1eff1cff",
+                      "text": "总之。我强行把它放进了水仙的故事里、\n请忽略立绘变得奇怪的事实＞＜"
+                    }
+                  ]
+                }
+              },
+              "nextEventId": "mjo-351",
+              "textLineIndex": {
+                "ja-JP": 6,
+                "zh-CN": 6
+              }
+            },
+            {
+              "eventId": "mjo-351",
+              "kind": "line",
+              "source": {
+                "engine": "majiro",
+                "variantSourceId": "mjo/patches/narci_sumire/%23mjo/narsumi00",
+                "scriptPath": "archive/derived/scripts/patches/narci_sumire/#mjo/narsumi00.script.json",
+                "textEventIndices": [
+                  7
+                ],
+                "codeOffsets": [
+                  849
+                ],
+                "nativeUnit": {
+                  "schema": "majiro-display-unit/v1",
+                  "codeOffset": 849,
+                  "endCodeOffset": 922,
+                  "bodyCodeOffset": 849,
+                  "codeOffsets": [
+                    849,
+                    920
+                  ],
+                  "textEventIndices": [
+                    7
+                  ],
+                  "textParts": [
+                    {
+                      "kind": "text",
+                      "text": "あと、今作はナルキ２の４～５年後、ナルキ１の１～２年前となります。",
+                      "codeOffset": 849,
+                      "rawText": "あと、今作はナルキ２の４～５年後、ナルキ１の１～２年前となります。",
+                      "rawHex": "82a082c681418da18dec82cd8369838b834c825182cc825381608254944e8ce381418369838b834c825082cc825081608251944e914f82c682c882e882dc82b78142",
+                      "textEventIndex": 7,
+                      "segmentIndex": 0
+                    }
+                  ],
+                  "speakerRaw": null,
+                  "ruby": [],
+                  "controls": [],
+                  "boundary": {
+                    "codeOffset": 922,
+                    "control": "p"
+                  },
+                  "translationBindings": [
+                    {
+                      "field": "text",
+                      "translationLine": 8,
+                      "targetCodeOffset": 849,
+                      "sourceTextEventIndex": 7,
+                      "sourceRawHex": "e65316590cffd98f5c4f8476f665f495b9702f66346cd94e32004b4e0e5434002d003500745e0130346cd94e3100847631002d003200745e4d520230",
+                      "text": "另外，这作的时间点是水仙2之后4-5年、水仙1的1-2年前。"
+                    }
+                  ]
+                }
+              },
+              "nextEventId": "mjo-3aa",
+              "textLineIndex": {
+                "ja-JP": 7,
+                "zh-CN": 7
+              }
+            },
+            {
+              "eventId": "mjo-3aa",
+              "kind": "line",
+              "source": {
+                "engine": "majiro",
+                "variantSourceId": "mjo/patches/narci_sumire/%23mjo/narsumi00",
+                "scriptPath": "archive/derived/scripts/patches/narci_sumire/#mjo/narsumi00.script.json",
+                "textEventIndices": [
+                  8
+                ],
+                "codeOffsets": [
+                  938
+                ],
+                "nativeUnit": {
+                  "schema": "majiro-display-unit/v1",
+                  "codeOffset": 938,
+                  "endCodeOffset": 995,
+                  "bodyCodeOffset": 938,
+                  "codeOffsets": [
+                    938,
+                    993
+                  ],
+                  "textEventIndices": [
+                    8
+                  ],
+                  "textParts": [
+                    {
+                      "kind": "text",
+                      "text": "なので久しぶりにプレイして頂けるとうれしいです＞＜",
+                      "codeOffset": 938,
+                      "rawText": "なので久しぶりにプレイして頂けるとうれしいです＞＜",
+                      "rawHex": "82c882cc82c58b7682b582d482e882c98376838c834382b582c492b882af82e982c682a482ea82b582a282c582b781848183",
+                      "textEventIndex": 8,
+                      "segmentIndex": 0
+                    }
+                  ],
+                  "speakerRaw": null,
+                  "ruby": [],
+                  "controls": [],
+                  "boundary": {
+                    "codeOffset": 995,
+                    "control": "p"
+                  },
+                  "translationBindings": [
+                    {
+                      "field": "text",
+                      "translationLine": 9,
+                      "targetCodeOffset": 938,
+                      "sourceTextEventIndex": 8,
+                      "sourceRawHex": "a390484e20007d59454e0d4ec18920001f61228ca8608476386ea9731eff1cff",
+                      "text": "那么 好久不见 感谢您的游玩＞＜"
+                    }
+                  ]
+                }
+              },
+              "nextEventId": "end-001",
+              "textLineIndex": {
+                "ja-JP": 8,
+                "zh-CN": 8
+              }
+            },
+            {
+              "eventId": "end-001",
+              "kind": "end"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "media": [
+    {
+      "mediaId": "asset/a-df4250964c616f6e",
+      "role": "image",
+      "url": "/corpus/archive/raw/narcissu10-original-ja-JP/narci_sumire/data.arc.unpacked/b.png",
+      "mimeType": "image/png"
+    },
+    {
+      "mediaId": "asset/a-722fb495150c5e6e",
+      "role": "image",
+      "url": "/corpus/archive/raw/narcissu10-original-ja-JP/narci_sumire/data.arc.unpacked/ns_37.png",
+      "mimeType": "image/png"
+    },
+    {
+      "mediaId": "asset/a-a1b5e458b0e62b31",
+      "role": "bgm",
+      "url": "/corpus/archive/raw/narcissu10-original-ja-JP/narci_sumire/stream.arc.unpacked/pl_v2.wav",
+      "mimeType": "audio/wav"
+    },
+    {
+      "mediaId": "asset/a-38ffcb082ee5859f",
+      "role": "image",
+      "url": "/corpus/archive/raw/narcissu10-original/narci_sumire/data.arc.unpacked/b.png",
+      "mimeType": "image/png"
+    },
+    {
+      "mediaId": "asset/a-2134f2b5eee01153",
+      "role": "image",
+      "url": "/corpus/archive/raw/narcissu10-original/narci_sumire/data.arc.unpacked/ns_37_e.png",
+      "mimeType": "image/png"
+    },
+    {
+      "mediaId": "asset/a-4aaf076e1c35b010",
+      "role": "bgm",
+      "url": "/corpus/archive/raw/narcissu10-original/narci_sumire/stream.arc.unpacked/pl_v2.wav",
+      "mimeType": "audio/wav"
+    }
+  ]
+}

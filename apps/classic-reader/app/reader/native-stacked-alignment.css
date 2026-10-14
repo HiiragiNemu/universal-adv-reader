@@ -1,0 +1,22 @@
+@layer reader-visual-revision {
+  /* Native routes retain explicit unresolved voice slots and untranslated rows.
+     Their structure differs from Reader's voice button, not its three columns. */
+  html body #magi-reader-display .magi-bilingual-pair > [lang] > [data-voice-slot] {
+    grid-column: 1 !important; grid-row: 1 !important; min-width: 0;
+  }
+  html body #magi-reader-display [data-voice-unavailable-mark] { display: none; }
+  @media (max-width: 767px) {
+    html body #magi-reader-display .magi-bilingual-pair .magi-reader-voice-unavailable {
+    display: inline-flex; width: 24px; min-width: 24px; height: 24px; min-height: 24px;
+    padding: 0; align-items: center; justify-content: center;
+  }
+  html body #magi-reader-display .magi-bilingual-pair [data-voice-unavailable-label] { display: none; }
+  html body #magi-reader-display .magi-bilingual-pair [data-voice-unavailable-mark] { display: inline; }
+  }
+  html body #magi-reader-display .magi-bilingual-pair-stacked .magi-reader-voice-unavailable {
+    display: inline-flex; width: 24px; min-width: 24px; height: 24px; min-height: 24px;
+    padding: 0; align-items: center; justify-content: center;
+  }
+  html body #magi-reader-display .magi-bilingual-pair-stacked [data-voice-unavailable-label] { display: none; }
+  html body #magi-reader-display .magi-bilingual-pair-stacked [data-voice-unavailable-mark] { display: inline; }
+}

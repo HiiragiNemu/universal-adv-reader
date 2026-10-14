@@ -1,0 +1,22 @@
+@layer reader-visual-revision {
+  /* Keep the native gutter/layout, hide only its displaced paint. */
+  html body .magi-optical-scroll-owned { scrollbar-color: transparent transparent !important; }
+  html body .magi-optical-scroll-owned::-webkit-scrollbar-thumb,
+  html body .magi-optical-scroll-owned::-webkit-scrollbar-track,
+  html body .magi-optical-scroll-owned::-webkit-scrollbar-button { background: transparent !important; border-color: transparent !important; }
+  .magi-optical-scrollbars { position: fixed; inset: 0; z-index: 120; pointer-events: none; }
+  .magi-optical-scrollbars svg { position: absolute; overflow: visible; pointer-events: none; }
+  .magi-optical-scrollbars g { outline: none; touch-action: none; }
+  .magi-optical-scrollbars path,.magi-optical-scroll-paint path { fill: none; stroke-linecap: round; }
+  .magi-optical-scroll-paint { position: absolute; inset: 0; z-index: 15; pointer-events: none; }
+  /* Home also inherits a legacy Reader-green variable. Use its existing amber
+     palette only for amber night; every other theme keeps its previous color. */
+  html[data-night-phosphor='amber'] #magi-home-display.magi-home-dark-root:not(.magi-home-frost-root) {
+    --magi-optical-scroll-color: var(--home-scroll-thumb);
+  }
+  .magi-optical-scroll-thumb-hit { stroke: transparent; stroke-width: 20; pointer-events: none; }
+  .magi-optical-scroll-hit { stroke: transparent; stroke-width: 20; pointer-events: stroke; cursor: default; }
+  .magi-optical-scroll-track { stroke: currentColor; stroke-width: 6; opacity: .12; pointer-events: none; }
+  .magi-optical-scroll-thumb { stroke: currentColor; stroke-width: 6; opacity: .84; pointer-events: none; }
+  .magi-optical-scroll-paint[data-active='true'] .magi-optical-scroll-thumb { opacity: 1; stroke-width: 8; }
+}

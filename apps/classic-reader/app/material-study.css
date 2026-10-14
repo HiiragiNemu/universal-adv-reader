@@ -1,0 +1,57 @@
+/* 4192 only: material belongs to the surface, not a blur applied to glyphs. */
+@layer reader-visual-revision {
+  html[data-reader-theme]:is([data-reader-theme='light'],[data-reader-theme='paper'],[data-reader-theme='green']) body {
+    --magi-material-rule: color-mix(in srgb, var(--magi-ui-ink, #403d32) 15%, transparent);
+  }
+  html[data-reader-theme]:is([data-reader-theme='light'],[data-reader-theme='paper'],[data-reader-theme='green']) body :is(.magi-home-light-folder-card,.magi-reader-document) {
+    background-image: url('/textures/paper-fibres-4192.svg') !important;
+    background-size: 320px 256px !important;
+  }
+  html[data-reader-theme]:is([data-reader-theme='light'],[data-reader-theme='paper'],[data-reader-theme='green']) body .magi-folder-heading-flow {
+    border-bottom: 1px solid var(--magi-material-rule);
+    box-shadow: inset 0 -3px 0 color-mix(in srgb, var(--magi-ui-ink, #403d32) 3%, transparent);
+  }
+  html[data-reader-theme]:is([data-reader-theme='light'],[data-reader-theme='paper'],[data-reader-theme='green']) body .magi-folder-id {
+    border: 1px solid var(--magi-material-rule);
+    background: transparent;
+    border-radius: 0;
+    letter-spacing: .07em;
+    font-variant-numeric: tabular-nums;
+  }
+  html[data-reader-theme]:is([data-reader-theme='light'],[data-reader-theme='paper'],[data-reader-theme='green']) body .magi-folder-display-title {
+    /* Less than 2.5% variation in heading ink; body and name colours stay intact. */
+    mask-image: linear-gradient(106deg, #000, rgb(0 0 0 / .976) 32%, #000 58%, rgb(0 0 0 / .982) 81%, #000);
+  }
+  html[data-reader-theme]:is([data-reader-theme='light'],[data-reader-theme='paper'],[data-reader-theme='green']) body .magi-reader-document [data-reader-row-index] {
+    border-bottom: 1px solid var(--magi-material-rule);
+    /* Two exceptionally pale ink impressions: no motion or opacity on text. */
+    background: linear-gradient(100deg, rgb(63 49 28 / .012), transparent 43%, rgb(63 49 28 / .018));
+  }
+  .magi-material-ledger {
+    display: flex; align-items: center; justify-content: flex-start; gap: clamp(8px, 2vw, 24px);
+    padding: 7px 0; margin: 0 0 12px; min-width: 0;
+    border-block: 1px solid var(--magi-material-rule, rgb(166 229 237 / .22));
+    font: 10px/1.4 ui-monospace, Consolas, monospace; letter-spacing: .08em;
+    color: var(--magi-ui-ink); opacity: .72; font-variant-numeric: tabular-nums;
+  }
+  .magi-material-ledger > span:first-child { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .magi-material-ledger > span:last-of-type { white-space: nowrap; }
+  html[data-reader-theme='frost'] body .magi-material-ledger {
+    padding: 8px 12px; border-inline: 7px double rgb(166 229 237 / .25);
+    background: rgb(0 17 24 / .25); opacity: .84;
+  }
+  html[data-reader-theme='frost'] body .magi-reader-film-surface::after {
+    content: ''; position: absolute; inset: 0; pointer-events: none;
+    /* Small fixed edge exposure falloff, not a moving TV band. */
+    background: linear-gradient(90deg, rgb(2 14 22 / .17), transparent 9% 89%, rgb(188 243 243 / .055)),
+      linear-gradient(0deg, rgb(0 9 18 / .15), transparent 8% 92%, rgb(198 240 249 / .045));
+  }
+  .magi-material-film-gate {
+    position: fixed; inset: 0; z-index: 8; pointer-events: none;
+    background: linear-gradient(0deg, transparent 30%, rgb(188 232 240 / .1) 50%, transparent 70%);
+    animation: magi-material-gate 380ms ease-out both;
+  }
+  @keyframes magi-material-gate { from { opacity: .5; transform: translateY(12%); } to { opacity: 0; transform: none; } }
+  @media (prefers-reduced-motion: reduce) { .magi-material-film-gate { display: none; animation: none; } }
+  @media (max-width: 600px) { .magi-material-ledger { font-size: 9px; letter-spacing: .015em; } }
+}

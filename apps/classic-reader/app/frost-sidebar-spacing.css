@@ -1,0 +1,13 @@
+@layer reader-visual-revision {
+  @media (min-width: 768px) {
+    html[data-reader-theme='frost'] body #magi-home-display.magi-home-shell.magi-home-frost-root.magi-home-dark-root
+      .magi-home-category-nav {
+      display: flex !important; flex-direction: column !important; justify-content: space-between !important;
+      gap: 6px !important; min-height: 0 !important; padding-block: clamp(8px,1.6vh,18px) !important;
+    }
+    html[data-reader-theme='frost'] body #magi-home-display.magi-home-shell.magi-home-frost-root.magi-home-dark-root
+      .magi-home-category-nav > .magi-home-category-node {
+      flex: 0 0 auto !important; margin-block: 0 !important;
+    }
+  }
+}

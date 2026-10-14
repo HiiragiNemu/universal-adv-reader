@@ -1,0 +1,741 @@
+{
+  "schema": "classic-reader-story-routes/v1",
+  "canonicalStoryId": "kana-okaeri/ed5b",
+  "sourceCanonicalStoryId": "kana-okaeri/ed5b",
+  "preferredVariantId": "paired/kana-okaeri/ed5b/zh-ja",
+  "japaneseVariantId": "paired/kana-okaeri/ed5b/zh-ja",
+  "chineseVariantId": "paired/kana-okaeri/ed5b/zh-ja",
+  "voiceRouting": {
+    "schema": "classic-reader-voice-routing/v1",
+    "defaultState": "collapsed",
+    "expandedSlotMode": "all-lines",
+    "unresolvedLineBehavior": "visible"
+  },
+  "titleAuthority": {
+    "work": {
+      "authorityId": "work/kana",
+      "title_cn": "加奈～欢迎回来～",
+      "title_jp": "加奈…おかえり!!",
+      "source": {
+        "zh-CN": "archive/source-patches/kana-v1.01/payload/KANACHS.INI",
+        "ja-JP": "archive/inputs/kana/KANAOKA.EXE"
+      },
+      "evidence": {
+        "zh-CN": [
+          "UTF-16 line 7: TITLE=加奈～欢迎回来～",
+          "rawHex=5400490054004c0045003d00a05248595eff226bce8fde5665675eff"
+        ],
+        "ja-JP": [
+          "UTF-16LE product-title literal at byte offsets 792384,792608,792900",
+          "rawHex=a052485926204a304b3048308a3021002100"
+        ]
+      },
+      "confidence": {
+        "zh-CN": 1,
+        "ja-JP": 1
+      }
+    },
+    "arc": {
+      "authorityId": "arc/kana-okaeri",
+      "title_cn": "加奈～欢迎回来～",
+      "title_jp": "加奈…おかえり!!",
+      "source": {
+        "zh-CN": "archive/source-patches/kana-v1.01/payload/KANACHS.INI",
+        "ja-JP": "archive/inputs/kana/KANAOKA.EXE"
+      },
+      "evidence": {
+        "zh-CN": [
+          "UTF-16 line 7: TITLE=加奈～欢迎回来～",
+          "rawHex=5400490054004c0045003d00a05248595eff226bce8fde5665675eff"
+        ],
+        "ja-JP": [
+          "UTF-16LE product-title literal at byte offsets 792384,792608,792900",
+          "rawHex=a052485926204a304b3048308a3021002100"
+        ]
+      },
+      "confidence": {
+        "zh-CN": 1,
+        "ja-JP": 1
+      }
+    },
+    "story": {
+      "authorityId": "story/kana-okaeri/ed5b",
+      "title_cn": "追忆",
+      "title_jp": "おもいで",
+      "source": {
+        "zh-CN": "archive/derived/ikura-scripts/ISC.unpacked/ED5B.script.json",
+        "ja-JP": "archive/derived/ikura-scripts/ISF.unpacked/ED5B.script.json"
+      },
+      "evidence": {
+        "zh-CN": [
+          "textEvents entry has explicit kind=title",
+          "instructionOffset=19",
+          "rawHex=d7b7d2e4",
+          "variantId=ikura/isc.unpacked/ed5b"
+        ],
+        "ja-JP": [
+          "textEvents entry has explicit kind=title",
+          "instructionOffset=19",
+          "rawHex=82a882e082a282c5",
+          "variantId=ikura/isf.unpacked/ed5b"
+        ]
+      },
+      "confidence": {
+        "zh-CN": 1,
+        "ja-JP": 1
+      }
+    }
+  },
+  "sections": [
+    {
+      "sectionId": "main",
+      "entryEventId": "ikura-13",
+      "events": [
+        {
+          "eventId": "ikura-13",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 2,
+            "opcode": 247,
+            "status": "translated",
+            "zhOffset": 19,
+            "jaOffset": 19,
+            "originalDisplayText": {
+              "zh-CN": "追忆",
+              "ja-JP": "おもいで"
+            }
+          },
+          "nextEventId": "ikura-3e",
+          "textLineIndex": {
+            "ja-JP": 0
+          }
+        },
+        {
+          "eventId": "ikura-3e",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 8,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 58,
+            "jaOffset": 62,
+            "originalDisplayText": {
+              "zh-CN": "加　奈：『哥哥！』",
+              "ja-JP": "加　奈：『お兄ちゃん！』"
+            }
+          },
+          "nextEventId": "ikura-8c",
+          "textLineIndex": {
+            "ja-JP": 1
+          },
+          "cues": [
+            {
+              "cueId": "cue-b17940cc53066b40",
+              "kind": "voice",
+              "timing": "utterance",
+              "mediaId": "asset/a-ea04212edec33bf7",
+              "resolverId": "research-media-v1",
+              "raw": {
+                "sourceKey": "Kan5450",
+                "playbackPath": "raw/kana/VOICE.unpacked/KAN5450.OGG",
+                "instructionIndex": 8
+              }
+            }
+          ]
+        },
+        {
+          "eventId": "ikura-8c",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 16,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 136,
+            "jaOffset": 140,
+            "originalDisplayText": {
+              "zh-CN": "　仿佛从背后被叫住一般，不知为何有这种飘渺的感觉。",
+              "ja-JP": "　背後から呼びとめられそうな、そんな雰囲気が漂う。"
+            }
+          },
+          "nextEventId": "ikura-df",
+          "textLineIndex": {
+            "ja-JP": 2
+          }
+        },
+        {
+          "eventId": "ikura-df",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 24,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 237,
+            "jaOffset": 223,
+            "originalDisplayText": {
+              "zh-CN": "　虽然这是让人很悲伤的事故，但我相信加奈是全力以赴地过完了她的人生的。",
+              "ja-JP": "　それは、とても悲しい出来事だったけど、俺は加奈の人生が精一杯のものだということを今は信じている。"
+            }
+          },
+          "nextEventId": "ikura-136",
+          "textLineIndex": {
+            "ja-JP": 3
+          }
+        },
+        {
+          "eventId": "ikura-136",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 27,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 331,
+            "jaOffset": 310,
+            "originalDisplayText": {
+              "zh-CN": "　即使同样是悲哀的回忆，虽然有些令人撕心裂肺，有的却不尽然，最近的我发现了这点。",
+              "ja-JP": "　同じ悲しい思い出でも、胸が引き裂かれそうなものと、そうでないものがあることを最近知った。"
+            }
+          },
+          "nextEventId": "ikura-1a0",
+          "textLineIndex": {
+            "ja-JP": 4
+          }
+        },
+        {
+          "eventId": "ikura-1a0",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 35,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 462,
+            "jaOffset": 416,
+            "originalDisplayText": {
+              "zh-CN": "　一边仔细的斟酌着计划，一边在校园内散步着。",
+              "ja-JP": "　つらつらと計画を練りながら、キャンパスを歩いていく。"
+            }
+          },
+          "nextEventId": "ikura-1f5",
+          "textLineIndex": {
+            "ja-JP": 5
+          }
+        },
+        {
+          "eventId": "ikura-1f5",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 43,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 557,
+            "jaOffset": 501,
+            "originalDisplayText": {
+              "zh-CN": "　秋天的天空显得有点晃眼。",
+              "ja-JP": "　秋空がまぶしい。"
+            }
+          },
+          "nextEventId": "ikura-218",
+          "textLineIndex": {
+            "ja-JP": 6
+          }
+        },
+        {
+          "eventId": "ikura-218",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 46,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 607,
+            "jaOffset": 536,
+            "originalDisplayText": {
+              "zh-CN": "　拭去眼边浮着的水汽。",
+              "ja-JP": "　目の端に浮いた水っ気を払う。"
+            }
+          },
+          "nextEventId": "ikura-260",
+          "textLineIndex": {
+            "ja-JP": 7
+          }
+        },
+        {
+          "eventId": "ikura-260",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 54,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 680,
+            "jaOffset": 608,
+            "originalDisplayText": {
+              "zh-CN": "　冬天，还没有到呢，我想到。",
+              "ja-JP": "　また、冬がやって来るな、と思った。"
+            }
+          },
+          "nextEventId": "ikura-2a8",
+          "textLineIndex": {
+            "ja-JP": 8
+          }
+        },
+        {
+          "eventId": "ikura-2a8",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 62,
+            "opcode": 43,
+            "status": "translated",
+            "zhOffset": 759,
+            "jaOffset": 680,
+            "originalDisplayText": {
+              "zh-CN": "　到了周年忌的话，一定又能看到白雪飘落吧。",
+              "ja-JP": "　一周忌にはきっと、思わず目をみはるような白い雪が降るだろう。"
+            }
+          },
+          "nextEventId": "ikura-306",
+          "textLineIndex": {
+            "ja-JP": 9
+          }
+        },
+        {
+          "eventId": "ikura-306",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 72,
+            "opcode": 43,
+            "status": "unchanged",
+            "zhOffset": 856,
+            "jaOffset": 774,
+            "originalDisplayText": {
+              "zh-CN": "",
+              "ja-JP": ""
+            }
+          },
+          "nextEventId": "ikura-318"
+        },
+        {
+          "eventId": "ikura-318",
+          "kind": "line",
+          "source": {
+            "engine": "ikura",
+            "instructionIndex": 74,
+            "opcode": 43,
+            "status": "unchanged",
+            "zhOffset": 869,
+            "jaOffset": 792,
+            "originalDisplayText": {
+              "zh-CN": "　　　　　　　　　［Ｆｉｎ］",
+              "ja-JP": "　　　　　　　　　［Ｆｉｎ］"
+            }
+          },
+          "nextEventId": "end-001",
+          "textLineIndex": {
+            "ja-JP": 10
+          }
+        },
+        {
+          "eventId": "end-001",
+          "kind": "end",
+          "cues": [
+            {
+              "cueId": "cue-410c53f3c7c9c1ab",
+              "kind": "image",
+              "timing": "scene",
+              "mediaId": "asset/a-dc9cf3ab554a56ab",
+              "resolverId": "research-media-v1",
+              "raw": {
+                "sourceKey": "BLACK",
+                "playbackPath": "derived/images/kana/GGD.unpacked/BLACK.png",
+                "instructionIndex": 78,
+                "targetInstructionIndex": 253
+              }
+            },
+            {
+              "cueId": "cue-f8921703ae5b91e5",
+              "kind": "image",
+              "timing": "scene",
+              "mediaId": "asset/a-dc9cf3ab554a56ab",
+              "resolverId": "research-media-v1",
+              "raw": {
+                "sourceKey": "BLACK",
+                "playbackPath": "derived/images/kana/GGD.unpacked/BLACK.png",
+                "instructionIndex": 223,
+                "targetInstructionIndex": 253
+              }
+            }
+          ]
+        }
+      ],
+      "titleAuthority": {
+        "sectionId": "main",
+        "authorityId": "section/kana-okaeri/ed5b/main",
+        "title_cn": "追忆",
+        "title_jp": "おもいで",
+        "source": {
+          "zh-CN": "archive/derived/ikura-scripts/ISC.unpacked/ED5B.script.json",
+          "ja-JP": "archive/derived/ikura-scripts/ISF.unpacked/ED5B.script.json"
+        },
+        "evidence": {
+          "zh-CN": [
+            "textEvents entry has explicit kind=title",
+            "instructionOffset=19",
+            "rawHex=d7b7d2e4",
+            "variantId=ikura/isc.unpacked/ed5b"
+          ],
+          "ja-JP": [
+            "textEvents entry has explicit kind=title",
+            "instructionOffset=19",
+            "rawHex=82a882e082a282c5",
+            "variantId=ikura/isf.unpacked/ed5b"
+          ]
+        },
+        "confidence": {
+          "zh-CN": 1,
+          "ja-JP": 1
+        }
+      }
+    }
+  ],
+  "variantRoutes": [
+    {
+      "variantId": "paired/kana-okaeri/ed5b/zh-ja",
+      "locales": [
+        "zh-CN",
+        "ja-JP"
+      ],
+      "readerLocales": [
+        "ja-JP",
+        "zh-CN"
+      ],
+      "textLineCounts": {
+        "ja-JP": 11,
+        "zh-CN": 11
+      },
+      "sections": [
+        {
+          "sectionId": "main",
+          "entryEventId": "ikura-13",
+          "events": [
+            {
+              "eventId": "ikura-13",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 2,
+                "opcode": 247,
+                "status": "translated",
+                "zhOffset": 19,
+                "jaOffset": 19,
+                "originalDisplayText": {
+                  "zh-CN": "追忆",
+                  "ja-JP": "おもいで"
+                }
+              },
+              "nextEventId": "ikura-3e",
+              "textLineIndex": {
+                "ja-JP": 0,
+                "zh-CN": 0
+              }
+            },
+            {
+              "eventId": "ikura-3e",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 8,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 58,
+                "jaOffset": 62,
+                "originalDisplayText": {
+                  "zh-CN": "加　奈：『哥哥！』",
+                  "ja-JP": "加　奈：『お兄ちゃん！』"
+                }
+              },
+              "nextEventId": "ikura-8c",
+              "textLineIndex": {
+                "ja-JP": 1,
+                "zh-CN": 1
+              },
+              "cues": [
+                {
+                  "cueId": "cue-b17940cc53066b40",
+                  "kind": "voice",
+                  "timing": "utterance",
+                  "mediaId": "asset/a-ea04212edec33bf7",
+                  "resolverId": "research-media-v1",
+                  "raw": {
+                    "sourceKey": "Kan5450",
+                    "playbackPath": "raw/kana/VOICE.unpacked/KAN5450.OGG",
+                    "instructionIndex": 8
+                  }
+                }
+              ]
+            },
+            {
+              "eventId": "ikura-8c",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 16,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 136,
+                "jaOffset": 140,
+                "originalDisplayText": {
+                  "zh-CN": "　仿佛从背后被叫住一般，不知为何有这种飘渺的感觉。",
+                  "ja-JP": "　背後から呼びとめられそうな、そんな雰囲気が漂う。"
+                }
+              },
+              "nextEventId": "ikura-df",
+              "textLineIndex": {
+                "ja-JP": 2,
+                "zh-CN": 2
+              }
+            },
+            {
+              "eventId": "ikura-df",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 24,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 237,
+                "jaOffset": 223,
+                "originalDisplayText": {
+                  "zh-CN": "　虽然这是让人很悲伤的事故，但我相信加奈是全力以赴地过完了她的人生的。",
+                  "ja-JP": "　それは、とても悲しい出来事だったけど、俺は加奈の人生が精一杯のものだということを今は信じている。"
+                }
+              },
+              "nextEventId": "ikura-136",
+              "textLineIndex": {
+                "ja-JP": 3,
+                "zh-CN": 3
+              }
+            },
+            {
+              "eventId": "ikura-136",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 27,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 331,
+                "jaOffset": 310,
+                "originalDisplayText": {
+                  "zh-CN": "　即使同样是悲哀的回忆，虽然有些令人撕心裂肺，有的却不尽然，最近的我发现了这点。",
+                  "ja-JP": "　同じ悲しい思い出でも、胸が引き裂かれそうなものと、そうでないものがあることを最近知った。"
+                }
+              },
+              "nextEventId": "ikura-1a0",
+              "textLineIndex": {
+                "ja-JP": 4,
+                "zh-CN": 4
+              }
+            },
+            {
+              "eventId": "ikura-1a0",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 35,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 462,
+                "jaOffset": 416,
+                "originalDisplayText": {
+                  "zh-CN": "　一边仔细的斟酌着计划，一边在校园内散步着。",
+                  "ja-JP": "　つらつらと計画を練りながら、キャンパスを歩いていく。"
+                }
+              },
+              "nextEventId": "ikura-1f5",
+              "textLineIndex": {
+                "ja-JP": 5,
+                "zh-CN": 5
+              }
+            },
+            {
+              "eventId": "ikura-1f5",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 43,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 557,
+                "jaOffset": 501,
+                "originalDisplayText": {
+                  "zh-CN": "　秋天的天空显得有点晃眼。",
+                  "ja-JP": "　秋空がまぶしい。"
+                }
+              },
+              "nextEventId": "ikura-218",
+              "textLineIndex": {
+                "ja-JP": 6,
+                "zh-CN": 6
+              }
+            },
+            {
+              "eventId": "ikura-218",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 46,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 607,
+                "jaOffset": 536,
+                "originalDisplayText": {
+                  "zh-CN": "　拭去眼边浮着的水汽。",
+                  "ja-JP": "　目の端に浮いた水っ気を払う。"
+                }
+              },
+              "nextEventId": "ikura-260",
+              "textLineIndex": {
+                "ja-JP": 7,
+                "zh-CN": 7
+              }
+            },
+            {
+              "eventId": "ikura-260",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 54,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 680,
+                "jaOffset": 608,
+                "originalDisplayText": {
+                  "zh-CN": "　冬天，还没有到呢，我想到。",
+                  "ja-JP": "　また、冬がやって来るな、と思った。"
+                }
+              },
+              "nextEventId": "ikura-2a8",
+              "textLineIndex": {
+                "ja-JP": 8,
+                "zh-CN": 8
+              }
+            },
+            {
+              "eventId": "ikura-2a8",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 62,
+                "opcode": 43,
+                "status": "translated",
+                "zhOffset": 759,
+                "jaOffset": 680,
+                "originalDisplayText": {
+                  "zh-CN": "　到了周年忌的话，一定又能看到白雪飘落吧。",
+                  "ja-JP": "　一周忌にはきっと、思わず目をみはるような白い雪が降るだろう。"
+                }
+              },
+              "nextEventId": "ikura-306",
+              "textLineIndex": {
+                "ja-JP": 9,
+                "zh-CN": 9
+              }
+            },
+            {
+              "eventId": "ikura-306",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 72,
+                "opcode": 43,
+                "status": "unchanged",
+                "zhOffset": 856,
+                "jaOffset": 774,
+                "originalDisplayText": {
+                  "zh-CN": "",
+                  "ja-JP": ""
+                }
+              },
+              "nextEventId": "ikura-318"
+            },
+            {
+              "eventId": "ikura-318",
+              "kind": "line",
+              "source": {
+                "engine": "ikura",
+                "instructionIndex": 74,
+                "opcode": 43,
+                "status": "unchanged",
+                "zhOffset": 869,
+                "jaOffset": 792,
+                "originalDisplayText": {
+                  "zh-CN": "　　　　　　　　　［Ｆｉｎ］",
+                  "ja-JP": "　　　　　　　　　［Ｆｉｎ］"
+                }
+              },
+              "nextEventId": "end-001",
+              "textLineIndex": {
+                "ja-JP": 10,
+                "zh-CN": 10
+              }
+            },
+            {
+              "eventId": "end-001",
+              "kind": "end",
+              "cues": [
+                {
+                  "cueId": "cue-410c53f3c7c9c1ab",
+                  "kind": "image",
+                  "timing": "scene",
+                  "mediaId": "asset/a-dc9cf3ab554a56ab",
+                  "resolverId": "research-media-v1",
+                  "raw": {
+                    "sourceKey": "BLACK",
+                    "playbackPath": "derived/images/kana/GGD.unpacked/BLACK.png",
+                    "instructionIndex": 78,
+                    "targetInstructionIndex": 253
+                  }
+                },
+                {
+                  "cueId": "cue-f8921703ae5b91e5",
+                  "kind": "image",
+                  "timing": "scene",
+                  "mediaId": "asset/a-dc9cf3ab554a56ab",
+                  "resolverId": "research-media-v1",
+                  "raw": {
+                    "sourceKey": "BLACK",
+                    "playbackPath": "derived/images/kana/GGD.unpacked/BLACK.png",
+                    "instructionIndex": 223,
+                    "targetInstructionIndex": 253
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "media": [
+    {
+      "mediaId": "asset/a-ea04212edec33bf7",
+      "role": "voice",
+      "url": "/corpus/archive/raw/kana/VOICE.unpacked/KAN5450.OGG",
+      "mimeType": "audio/ogg"
+    },
+    {
+      "mediaId": "asset/a-dc9cf3ab554a56ab",
+      "role": "image",
+      "url": "/corpus/archive/derived/images/kana/GGD.unpacked/BLACK.png",
+      "mimeType": "image/png"
+    }
+  ]
+}

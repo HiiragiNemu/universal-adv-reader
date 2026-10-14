@@ -1,0 +1,3928 @@
+{
+  "schema": "native-reader-revision/v1",
+  "storyId": "narcissu-3rd/nar2_18",
+  "revision": "ea88028f0774ae1a7bfe4dad12e2e3222daac43ab68e4e8132c579dddb7e6b79",
+  "parentRevision": null,
+  "baseSourceSha256": "f2cad9205e1835b8380328859f2dde8c51a203a53d13369272039149ae0c7643",
+  "parentSourceSha256": "f2cad9205e1835b8380328859f2dde8c51a203a53d13369272039149ae0c7643",
+  "patchSha256": "f9405d3cffd329ce9e83404b2c6750f15a18860ee757030f0c705624c912a443",
+  "source": {
+    "schema": "native-reader-edit-source/v1",
+    "storyId": "narcissu-3rd/nar2_18",
+    "binding": {
+      "route": "745667f797fe2a18c6a7c7b8ec5128bbf70760d0ed67a1feff81ea4a760405ef",
+      "cnText": "74a558e561526b5d9d06385fc47a7d2d96f7345ed594c84e5a9666f8d7a45217",
+      "jpText": "6367fe68b42bdaee0633deeeb8bf66329d36109c6110beb1fdeb7b81ac92ecce",
+      "adapter": "d66d0576de230228f884ae0c70be53334ad5a5395efc575d39dd2f6e55806f39",
+      "normalizedStory": "e8a1d50ca991a6f3c5626a7c5f718df9fe5e531183c67c02e8a4ad90c95b39d8"
+    },
+    "nativeSources": [
+      {
+        "path": "archive/derived/scripts/narcissu3/scenario.arc.unpacked/nar2_18.plain.mjo",
+        "sha256": "27a0da97053ae5e1ea9ea8885b619c4fd97786edf98cea7b4f0c795310486d1a"
+      },
+      {
+        "path": "archive/derived/scripts/narcissu3/scenario.arc.unpacked/nar2_18.script.json",
+        "sha256": "bed76e61f864aaec30e2934aa0ba554c158f12edef97f5a29cdd0b31646a4099"
+      },
+      {
+        "path": "archive/derived/scripts/narcissu3/scenario.arc.unpacked/nar2_18.strings.json",
+        "sha256": "bf21367b02c81c1429fe45fd4ca2de239dd07e001a19abe1d886098a06910259"
+      },
+      {
+        "path": "archive/derived/scripts/narcissu3/update.arc.unpacked/nar2_18.plain.mjo",
+        "sha256": "34dee131c685a4a2d7c0aff0801de04a08176d2a6df073e4644cff7e969fec51"
+      },
+      {
+        "path": "archive/derived/scripts/narcissu3/update.arc.unpacked/nar2_18.script.json",
+        "sha256": "cf61fa2afdeadaf0078a1cd72b68ab1d9e65a7e382d35d51984bbb356a55e664"
+      },
+      {
+        "path": "archive/derived/scripts/narcissu3/update.arc.unpacked/nar2_18.strings.json",
+        "sha256": "f977dcad8bbdcb9d8e4db98c5c7eedb1f7fe3192130e294b8cdae5e3a5307ac3"
+      },
+      {
+        "path": "archive/raw/narcissu3/scenario.arc.unpacked/nar2_18.mjo",
+        "sha256": "5f9e73cbd27bc61a9a5f431d9a089f6d51473523c21977ebdb30c1972956970f"
+      },
+      {
+        "path": "archive/raw/narcissu3/update.arc.unpacked/nar2_18.mjo",
+        "sha256": "33f411e2861218ddc18c895397c18cce26e2838d4eb6398d75d759ace9fdaea9"
+      }
+    ],
+    "rows": [
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/header\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/header\"]",
+        "target": null,
+        "allowed": [],
+        "speakerReason": "structural-row",
+        "baseline": {
+          "text": "--- Start: nar2_18.txt Section 1 ---",
+          "speaker": ""
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-d4\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-d4\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-d4"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "被染成橙色的天空……",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-ff\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-103\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-ff"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "\n不知不觉，变成夜晚的黯蓝……",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-194\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-189\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-194"
+        },
+        "allowed": [
+          "text",
+          "speaker"
+        ],
+        "speakerReason": "separate-native-message",
+        "baseline": {
+          "text": "「这里就可以了……」",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-1f6\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-1e9\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-1f6"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "终于停下脚步的姬子。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-264\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-25d\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-264"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "差不多已过7合目的地方吧？\n是个有很多岩石，景致美丽的地方。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-2c5\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-2cf\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-2c5"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "看下时间，已是凌晨3点了。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-2f5\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-304\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-2f5"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "\n一天也差不多就这样过去了。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-337\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-33b\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-337"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "因为是这种时间，也因为前日的天气，\n其他登山者的身影，几乎看不到了。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-3cb\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-3e1\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-3cb"
+        },
+        "allowed": [
+          "text",
+          "speaker"
+        ],
+        "speakerReason": "separate-native-message",
+        "baseline": {
+          "text": "「等到黎明后，就在这里说出来。」",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-402\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-418\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-402"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "这样说着，走到了岩石的边端。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-435\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-45d\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-435"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "俯瞰崖下方，黑暗得看不见任何东西，\n这个谷底，也到了不知道到底有多深的程度。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-4a7\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-4e1\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-4a7"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "……不过至少，要是飞身而下的话，\n是绝对不会有生还的希望的。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-533\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-579\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-533"
+        },
+        "allowed": [
+          "text",
+          "speaker"
+        ],
+        "speakerReason": "separate-native-message",
+        "baseline": {
+          "text": "「……终于差不多，盛况空前了呢……」",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-59b\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-5e3\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-59b"
+        },
+        "allowed": [
+          "text",
+          "speaker"
+        ],
+        "speakerReason": "separate-native-message",
+        "baseline": {
+          "text": "「高度也十分足够了呢……」",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-5f6\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-63a\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-5f6"
+        },
+        "allowed": [
+          "text",
+          "speaker"
+        ],
+        "speakerReason": "separate-native-message",
+        "baseline": {
+          "text": "「嗯，7楼的100倍喔。」",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-623\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-671\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-623"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "海拔，约3000米。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-64a\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-69c\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-64a"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "\n然后，防护用的，高高的围栏也没有。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-6be\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-707\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-6be"
+        },
+        "allowed": [
+          "text",
+          "speaker"
+        ],
+        "speakerReason": "separate-native-message",
+        "baseline": {
+          "text": "「濑津美……有想问的事情就要趁现在喔。」",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-6fd\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-748\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-6fd"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "对于这句话，我想到了各种各样的事。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-736\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-787\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-736"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "不过，明明应该持有很多的疑问……\n不知为何，却很难把那些问题用言语来表达。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-7a6\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-807\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-7a6"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "暂且考虑一下后，我开了口。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-819\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-892\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-819"
+        },
+        "allowed": [
+          "text",
+          "speaker"
+        ],
+        "speakerReason": "separate-native-message",
+        "baseline": {
+          "text": "「……更多的，告诉我关于姬子的事。」",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-87e\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-8f7\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-87e"
+        },
+        "allowed": [
+          "text",
+          "speaker"
+        ],
+        "speakerReason": "separate-native-message",
+        "baseline": {
+          "text": "「……………」",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-8a3\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-91c\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-8a3"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "虽说是这样，但也是我考虑之后问出的问题。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-90c\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-98b\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-90c"
+        },
+        "allowed": [
+          "text",
+          "speaker"
+        ],
+        "speakerReason": "separate-native-message",
+        "baseline": {
+          "text": "「想听我的事情吗？\n或者说是，想听像我这样立场的人的事情吗？」",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-9b2\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-a45\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-9b2"
+        },
+        "allowed": [
+          "text",
+          "speaker"
+        ],
+        "speakerReason": "separate-native-message",
+        "baseline": {
+          "text": "「……姬子自己的事情。」",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-a0b\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-a9e\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-a0b"
+        },
+        "allowed": [
+          "text",
+          "speaker"
+        ],
+        "speakerReason": "separate-native-message",
+        "baseline": {
+          "text": "「………………」",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-a5c\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-aef\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-a5c"
+        },
+        "allowed": [
+          "text",
+          "speaker"
+        ],
+        "speakerReason": "separate-native-message",
+        "baseline": {
+          "text": "「我是，这个世界众多天主教徒当中的其中一人。」",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-acb\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-b64\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-acb"
+        },
+        "allowed": [
+          "text",
+          "speaker"
+        ],
+        "speakerReason": "separate-native-message",
+        "baseline": {
+          "text": "「除此之外的，就什么都不是了。」",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-b02\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-b9f\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-b02"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "不过现在……打算向着神明说出抱怨的话。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-b3f\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-bea\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-b3f"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "\n然后恐怕……也打算违背最大禁忌。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-bb3\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-c5b\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-bb3"
+        },
+        "allowed": [
+          "text",
+          "speaker"
+        ],
+        "speakerReason": "separate-native-message",
+        "baseline": {
+          "text": "「那么，关于以前佛德兰斯的狗说的话……」",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-c1e\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-cc8\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-c1e"
+        },
+        "allowed": [
+          "text",
+          "speaker"
+        ],
+        "speakerReason": "separate-native-message",
+        "baseline": {
+          "text": "「不论如何，3人之中不选择一个就不行吗？」",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-c88\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-d3b\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-c88"
+        },
+        "allowed": [
+          "text",
+          "speaker"
+        ],
+        "speakerReason": "separate-native-message",
+        "baseline": {
+          "text": "「嗯，人是没有其他的选项。」",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-cbb\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-d78\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-cbb"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "……坚定的说出来了。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-ce6\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-da1\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-ce6"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "即将去世的是尼洛，被留下来的是阿洛伊斯。\n绝对不会交集的两者……",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-db8\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-e77\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-db8"
+        },
+        "allowed": [
+          "text",
+          "speaker"
+        ],
+        "speakerReason": "separate-native-message",
+        "baseline": {
+          "text": "「那么，姬子是…",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-e3a\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-eee\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-e3a"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "…谁？」",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-e99\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-f4d\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-e99"
+        },
+        "allowed": [
+          "text",
+          "speaker"
+        ],
+        "speakerReason": "separate-native-message",
+        "baseline": {
+          "text": "「………………」",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-ec0\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-f74\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-ec0"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "这个问题却没有回答。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-eeb\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-fa5\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-eeb"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "在天空逐渐变亮的地方……\n在双手可以达到天际的地方，默默地低下了头。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-f55\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-101d\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-f55"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "……大概，穿着睡衣的姬子是尼洛吧。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-f8e\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-106a\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-f8e"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "那么，现在的姬子还是阿洛伊斯吗……\n不能对神明说出怨的，是尼洛的话我能够理解。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-1002\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-10f2\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-1002"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "那，我又是谁呢？\n是为了什么，而被带到这种地方来呢……",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-10ea\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-11f4\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-10ea"
+        },
+        "allowed": [
+          "text",
+          "speaker"
+        ],
+        "speakerReason": "separate-native-message",
+        "baseline": {
+          "text": "「看来，时间差不多了。」",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-1119\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-1229\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-1119"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "这样说着，仰望着天空的姬子。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-11a6\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-12bc\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-11a6"
+        },
+        "allowed": [
+          "text",
+          "speaker"
+        ],
+        "speakerReason": "separate-native-message",
+        "baseline": {
+          "text": "「濑津美，收下吧。」",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-11d1\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-12ed\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-11d1"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "然后，从口袋里拿出了什么，递给了我。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-1238\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-1366\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-1238"
+        },
+        "allowed": [
+          "text",
+          "speaker"
+        ],
+        "speakerReason": "separate-native-message",
+        "baseline": {
+          "text": "「……十字架？」",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-1289\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-13b7\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-1289"
+        },
+        "allowed": [
+          "text",
+          "speaker"
+        ],
+        "speakerReason": "separate-native-message",
+        "baseline": {
+          "text": "「即使扔掉也是可以的喔……」",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-12e6\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-1418\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-12e6"
+        },
+        "allowed": [
+          "text",
+          "speaker"
+        ],
+        "speakerReason": "separate-native-message",
+        "baseline": {
+          "text": "「只是……我已经，没有资格再持有这东西了。」",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-1329\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-145b\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-1329"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "这是表示着何种意义……即使不问也能知道。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-1368\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-14a8\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-1368"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "……不过……",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-138b\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-14c9\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-138b"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "到现在，明明说着是原天主教徒，\n却为什么又一直带在身上呢…",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-13eb\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-1533\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-13eb"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "结束思考的我这样觉得，\n在内心，不是真的想去选择做这样的事吧……",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-147e\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-15d4\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-147e"
+        },
+        "allowed": [
+          "text",
+          "speaker"
+        ],
+        "speakerReason": "separate-native-message",
+        "baseline": {
+          "text": "「……真的可以吗？」",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-14d3\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-1629\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-14d3"
+        },
+        "allowed": [
+          "text",
+          "speaker"
+        ],
+        "speakerReason": "separate-native-message",
+        "baseline": {
+          "text": "「有祈祷的话……也是诅咒的。」",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-1534\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-1694\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-1534"
+        },
+        "allowed": [
+          "text",
+          "speaker"
+        ],
+        "speakerReason": "separate-native-message",
+        "baseline": {
+          "text": "「………………」",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-159e\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-16fe\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-159e"
+        },
+        "allowed": [
+          "text",
+          "speaker"
+        ],
+        "speakerReason": "separate-native-message",
+        "baseline": {
+          "text": "「希望不要这样……这么说不行？」",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-1615\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-1779\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-1615"
+        },
+        "allowed": [
+          "text",
+          "speaker"
+        ],
+        "speakerReason": "separate-native-message",
+        "baseline": {
+          "text": "「……………」",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-167b\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-17df\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-167b"
+        },
+        "allowed": [
+          "text",
+          "speaker"
+        ],
+        "speakerReason": "separate-native-message",
+        "baseline": {
+          "text": "「……要看理由了……」",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-16d0\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-1832\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-16d0"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "……理由。阻止她的理由……",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-1701\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-1861\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-1701"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "……大概，姬子本人是希望这样的吧？\n如果是7楼病人，就没有未来了吗？",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-176a\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-18e1\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-176a"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "如果，如同活着一样，\n人，也有寻死的权利的话……",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-17dc\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-1969\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-17dc"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "阻止她的理由……",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-1803\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-199c\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-1803"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "\n…到底，还有谁可以拥有呢……",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-1847\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-19d7\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-1847"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "我连，什么是对的，\n什么是温柔的都不知道……",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-18f6\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-1aa2\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-18f6"
+        },
+        "allowed": [
+          "text",
+          "speaker"
+        ],
+        "speakerReason": "separate-native-message",
+        "baseline": {
+          "text": "「呜，呜……」",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-191b\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-1ad1\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-191b"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "……不知为何……",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-1938\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-1ae8\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-1938"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "哭了起来。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-1959\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-1b0b\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-1959"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "\n站在身旁却什么也做不到，体会到了自己的无能。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-19ad\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-1b5a\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-19ad"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "天空渐渐明亮，仰望着一望无际的天空，\n不知为何难过了起来。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-1a0d\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-1bc8\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-1a0d"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "……不管怎么想，\n阻止她的理由，我未曾持有过。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-1a61\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-1c36\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-1a61"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "如果是姬子自己决定了的事情，\n或许我根本就没有插嘴的权利……",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-1ac3\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-1caa\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-1ac3"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "不过……反过来说就真的是这样吗……",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-1afc\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-1ce1\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-1afc"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "\n难道，我就没有可以阻止她的理由吗……",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-1bb3\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-1d93\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-1bb3"
+        },
+        "allowed": [
+          "text",
+          "speaker"
+        ],
+        "speakerReason": "separate-native-message",
+        "baseline": {
+          "text": "「因，因为……我也很难过……」",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-1be8\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-1dce\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-1be8"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "不是其他的什么……",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-1c07\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-1deb\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-1c07"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "只是这样的我很难过。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-1c32\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-1e1a\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-1c32"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "这样的我……希望能够阻止……",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-1c65\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-1e51\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-1c65"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "就算，这是我……",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-1c8c\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-1e7e\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-1c8c"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "\n被留下来的人，单方面的任性……",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-1cd2\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-1ebd\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-1cd2"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "就算可以忍受住自己的痛苦，但却忍受不了别人的痛苦。\n比起去世的人的痛苦，被留下来的人却更加的痛苦吧……",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-1d70\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-1f5d\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-1d70"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "而且……",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-1d97\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-1f84\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-1d97"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "我还……",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-1e21\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-2016\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-1e21"
+        },
+        "allowed": [
+          "text",
+          "speaker"
+        ],
+        "speakerReason": "separate-native-message",
+        "baseline": {
+          "text": "「……成为阿洛伊斯……是不行的……」",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-1e89\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-2074\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-1e89"
+        },
+        "allowed": [
+          "text",
+          "speaker"
+        ],
+        "speakerReason": "separate-native-message",
+        "baseline": {
+          "text": "「呜，呜……」",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-1f04\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-20f9\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-1f04"
+        },
+        "allowed": [
+          "text",
+          "speaker"
+        ],
+        "speakerReason": "separate-native-message",
+        "baseline": {
+          "text": "「……………」",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-1f54\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-2149\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-1f54"
+        },
+        "allowed": [
+          "text",
+          "speaker"
+        ],
+        "speakerReason": "separate-native-message",
+        "baseline": {
+          "text": "「……不要露出这样的表情……」",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-1fcd\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-21be\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-1fcd"
+        },
+        "allowed": [
+          "text",
+          "speaker"
+        ],
+        "speakerReason": "separate-native-message",
+        "baseline": {
+          "text": "「你，你露出这样的表情……不是连我也难过起来了吗？」",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-20da\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-22c9\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-20da"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "……如果……我是圣者的话……",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-211f\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-230a\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-211f"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "如果，我所说出的话……不只是安慰，也不只是骗小孩的魔法……",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-2186\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-236d\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-2186"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "……真正的魔法的话……",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-22e1\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-24c6\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-22e1"
+        },
+        "allowed": [
+          "text",
+          "speaker"
+        ],
+        "speakerReason": "separate-native-message",
+        "baseline": {
+          "text": "「呜，呜……」",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-236b\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-2558\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-236b"
+        },
+        "allowed": [
+          "text",
+          "speaker"
+        ],
+        "speakerReason": "separate-native-message",
+        "baseline": {
+          "text": "「对不起，姐姐……」",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-23c3\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-25b4\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-23c3"
+        },
+        "allowed": [
+          "text",
+          "speaker"
+        ],
+        "speakerReason": "separate-native-message",
+        "baseline": {
+          "text": "「没成为朋友就好了。」",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-23f0\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-25e9\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-23f0"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "在不停哭泣的我面前，寂寞地说着道歉的她。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-245c\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-2655\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-245c"
+        },
+        "allowed": [
+          "text",
+          "speaker"
+        ],
+        "speakerReason": "separate-native-message",
+        "baseline": {
+          "text": "「明明在规则里也有这条……」",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-24bc\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-26bb\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-24bc"
+        },
+        "allowed": [
+          "text",
+          "speaker"
+        ],
+        "speakerReason": "separate-native-message",
+        "baseline": {
+          "text": "「来到这里后，就不能在交朋友了。」",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-2522\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-272b\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-2522"
+        },
+        "allowed": [
+          "text",
+          "speaker"
+        ],
+        "speakerReason": "separate-native-message",
+        "baseline": {
+          "text": "「对不起，如果我有好好遵守的话。」",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-2588\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-2799\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-2588"
+        },
+        "allowed": [
+          "text",
+          "speaker"
+        ],
+        "speakerReason": "separate-native-message",
+        "baseline": {
+          "text": "「……也不会让姐姐哭泣了。」",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-261e\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-283d\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-261e"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "然后……再次面向天际，开始祈祷的她。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-266f\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-2894\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-266f"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "面向着广阔的，一望无际的天空，\n向着应该就在那里的……神明献上了祈祷……",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-26f3\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-2926\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-26f3"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "真挚的摸样……",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-272e\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-2963\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-272e"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "将我的十字架拿在手中，\n只是主祷文，却相信着是磨法咒文的摸样……",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-2806\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-2a3f\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-2806"
+        },
+        "allowed": [
+          "text",
+          "speaker"
+        ],
+        "speakerReason": "separate-native-message",
+        "baseline": {
+          "text": "「不，不用了，不用在祈祷了。」",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-287e\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-2ac9\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-287e"
+        },
+        "allowed": [
+          "text",
+          "speaker"
+        ],
+        "speakerReason": "separate-native-message",
+        "baseline": {
+          "text": "「……为什么？」",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-28d0\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-2b1b\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-28d0"
+        },
+        "allowed": [
+          "text",
+          "speaker"
+        ],
+        "speakerReason": "separate-native-message",
+        "baseline": {
+          "text": "「呜，呜……」",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-2920\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-2b79\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-2920"
+        },
+        "allowed": [
+          "text",
+          "speaker"
+        ],
+        "speakerReason": "separate-native-message",
+        "baseline": {
+          "text": "「……没用的……就算这样也……」",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-2957\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-2bba\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-2957"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "终于……",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-296c\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-2bd1\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-296c"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "身为天主教徒，\n说出了不能说出口的话语。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-29e5\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-2c5e\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-29e5"
+        },
+        "allowed": [
+          "text",
+          "speaker"
+        ],
+        "speakerReason": "separate-native-message",
+        "baseline": {
+          "text": "「所，所以停下来吧，你不会得到救助的……」",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-2a67\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-2cea\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-2a67"
+        },
+        "allowed": [
+          "text",
+          "speaker"
+        ],
+        "speakerReason": "separate-native-message",
+        "baseline": {
+          "text": "「不管怎么做……都会死的……」",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-2ab2\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-2d3f\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-2ab2"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "然后身为陪护……",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-2aeb\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-2d80\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-2aeb"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "身为尼洛的挚友阿洛伊斯……",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-2b32\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-2dcd\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-2b32"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "……也说出了不能说出口的话语……",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-2bac\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-2e4f\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-2bac"
+        },
+        "allowed": [
+          "text",
+          "speaker"
+        ],
+        "speakerReason": "separate-native-message",
+        "baseline": {
+          "text": "「嗯，我知道的……」",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-2c17\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-2ebc\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-2c17"
+        },
+        "allowed": [
+          "text",
+          "speaker"
+        ],
+        "speakerReason": "separate-native-message",
+        "baseline": {
+          "text": "「那……为什么？」",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-2c83\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-2f30\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-2c83"
+        },
+        "allowed": [
+          "text",
+          "speaker"
+        ],
+        "speakerReason": "separate-native-message",
+        "baseline": {
+          "text": "「………………」",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-2d15\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-2fc2\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-2d15"
+        },
+        "allowed": [
+          "text",
+          "speaker"
+        ],
+        "speakerReason": "separate-native-message",
+        "baseline": {
+          "text": "「……没什么，我已经没关系了……」",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-2df5\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-30a0\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-2df5"
+        },
+        "allowed": [
+          "text",
+          "speaker"
+        ],
+        "speakerReason": "separate-native-message",
+        "baseline": {
+          "text": "「只是，希望哭泣着的姐姐……停止哭泣而已……」",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-2e67\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-3114\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-2e67"
+        },
+        "allowed": [
+          "text",
+          "speaker"
+        ],
+        "speakerReason": "separate-native-message",
+        "baseline": {
+          "text": "「……早一点……恢复一如往常的笑容……」",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-2f15\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-31c8\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-2f15"
+        },
+        "allowed": [
+          "text",
+          "speaker"
+        ],
+        "speakerReason": "separate-native-message",
+        "baseline": {
+          "text": "「……只是为了这个而祈祷……」",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-30cc\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-337d\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-30cc"
+        },
+        "allowed": [
+          "text",
+          "speaker"
+        ],
+        "speakerReason": "separate-native-message",
+        "baseline": {
+          "text": "「……为什么……哭泣了？」",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-313f\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-33f4\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-313f"
+        },
+        "allowed": [
+          "text",
+          "speaker"
+        ],
+        "speakerReason": "separate-native-message",
+        "baseline": {
+          "text": "「笨，笨蛋，怎么会知道……」",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-31b4\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-346b\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-31b4"
+        },
+        "allowed": [
+          "text",
+          "speaker"
+        ],
+        "speakerReason": "separate-native-message",
+        "baseline": {
+          "text": "「这个时候……哭泣也是可以的。」",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-3250\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-350f\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-3250"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "……姬子哭泣着。\n在双手好象能触及天际的地方，第一次看见了她的眼泪。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-32d0\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-3593\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-32d0"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "……这个时候的我……",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-3311\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-35d4\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-3311"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "应该说怎样的话才好呢……\n到底，什么才是温柔呢……",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-337f\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-365a\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-337f"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "因为不曾知道……",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-33bc\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-369d\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-33bc"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "只是，尽可能早地停止她的哭泣，\n尽可能早恢复一如往常的笑容，",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-3434\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-3731\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-3434"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "只能做到在她的后背轻轻地，\n温柔地拍打着……",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-3501\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-3812\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-3501"
+        },
+        "allowed": [
+          "text",
+          "speaker"
+        ],
+        "speakerReason": "separate-native-message",
+        "baseline": {
+          "text": "「快住手……」",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-3569\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-3886\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-3569"
+        },
+        "allowed": [
+          "text",
+          "speaker"
+        ],
+        "speakerReason": "separate-native-message",
+        "baseline": {
+          "text": "「被国中生同情到这种地步……我的人生还不至于这样的。」",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-35f8\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-3919\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-35f8"
+        },
+        "allowed": [
+          "text",
+          "speaker"
+        ],
+        "speakerReason": "separate-native-message",
+        "baseline": {
+          "text": "「………………」",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-364b\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-396c\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-364b"
+        },
+        "allowed": [
+          "text",
+          "speaker"
+        ],
+        "speakerReason": "separate-native-message",
+        "baseline": {
+          "text": "「别在意……病史的话比你还长喔……」",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-36c8\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-39f1\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-36c8"
+        },
+        "allowed": [
+          "text",
+          "speaker"
+        ],
+        "speakerReason": "separate-native-message",
+        "baseline": {
+          "text": "「呜，呜……」",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-372f\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-3a66\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-372f"
+        },
+        "allowed": [
+          "text",
+          "speaker"
+        ],
+        "speakerReason": "separate-native-message",
+        "baseline": {
+          "text": "「什，什么嘛……明明年纪比我小……」",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-37b7\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-3aec\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-37b7"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "青紫色的黎明逐渐明亮，转变为白色的日出。\n迎面吹过的风，",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-3827\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-3b80\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-3827"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "……姬子哭泣了。连山谷间吹着的风也哭泣了。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-387a\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-3bd3\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-387a"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "我大概也……",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-38a5\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-3c02\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-38a5"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "哭泣了吧……",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-399a\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-3d01\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-399a"
+        },
+        "allowed": [
+          "text",
+          "speaker"
+        ],
+        "speakerReason": "separate-native-message",
+        "baseline": {
+          "text": "「还是不要了……抱怨的话……」",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-39cf\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-3d34\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-39cf"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "说完，向着天空将双手合并。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-3a2c\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-3da9\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-3a2c"
+        },
+        "allowed": [
+          "text",
+          "speaker"
+        ],
+        "speakerReason": "separate-native-message",
+        "baseline": {
+          "text": "「……那……还你。」",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-3a81\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-3e02\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-3a81"
+        },
+        "allowed": [
+          "text",
+          "speaker"
+        ],
+        "speakerReason": "separate-native-message",
+        "baseline": {
+          "text": "「是呢，没有这个的话效果很微弱的。」",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-3abc\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-3e41\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-3abc"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "然后，将我返还给她的十字架挂在了自己的劲项，",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-3b15\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-3ea2\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-3b15"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "在很高很高的地方……",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-3b52\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-3ee1\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-3b52"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "更高的……向着天空献上了祈祷……",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-3c0d\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-3fa2\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-3c0d"
+        },
+        "allowed": [
+          "text",
+          "speaker"
+        ],
+        "speakerReason": "separate-native-message",
+        "baseline": {
+          "text": "「请仔细听着……\n似乎听不清楚所以特地来到这里……」",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-3ca7\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-404a\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-3ca7"
+        },
+        "allowed": [
+          "text",
+          "speaker"
+        ],
+        "speakerReason": "separate-native-message",
+        "baseline": {
+          "text": "「……没什么，我怎样都已经无所谓了……」",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-3d10\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-40b5\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-3d10"
+        },
+        "allowed": [
+          "text",
+          "speaker"
+        ],
+        "speakerReason": "separate-native-message",
+        "baseline": {
+          "text": "「不过，至少希望因为我……」",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-3d6d\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-4118\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-3d6d"
+        },
+        "allowed": [
+          "text",
+          "speaker"
+        ],
+        "speakerReason": "separate-native-message",
+        "baseline": {
+          "text": "「……一直，内心痛苦着的人……」",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-3dce\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-418b\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-3dce"
+        },
+        "allowed": [
+          "text",
+          "speaker"
+        ],
+        "speakerReason": "separate-native-message",
+        "baseline": {
+          "text": "「然后，尽可能早的，重新再站起来……」",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-3e38\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-41fd\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-3e38"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "……就像是，自言自语淡淡地轻声说着的姬子。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-3e79\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-4240\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-3e79"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "虽然继续说着其他的话，\n这之后，我却未曾知道是些什么了。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-3ed7\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-42c0\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-3ed7"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "……也许姬子是……",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-3ef6\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-42e7\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-3ef6"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "想同神明和好吧……",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-3f1f\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-431c\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-3f1f"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "这样的表情，既不是悲怆，\n也不是怜悯，而令人感到凛然的美丽。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-3f81\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-4386\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-3f81"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "……然后这是，绝对不会交集的两者……",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-3fce\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-43e3\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-3fce"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "即将去世的人，对于留下来的人的愿望吧……",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-407e\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-4495\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-407e"
+        },
+        "allowed": [
+          "text",
+          "speaker"
+        ],
+        "speakerReason": "separate-native-message",
+        "baseline": {
+          "text": "「呼……这个就是全部了。」",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-40c1\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-44d4\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-40c1"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "然后，向着我的方向转过身来，",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-4134\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-454d\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-4134"
+        },
+        "allowed": [
+          "text",
+          "speaker"
+        ],
+        "speakerReason": "separate-native-message",
+        "baseline": {
+          "text": "「如何？如此平凡的愿望感到失望了吧？」",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-41b3\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-45d0\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-41b3"
+        },
+        "allowed": [
+          "text",
+          "speaker"
+        ],
+        "speakerReason": "separate-native-message",
+        "baseline": {
+          "text": "「……没……」",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-41d8\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-45f5\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-41d8"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "我轻轻地摇了下头。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-4201\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-4624\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-4201"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "就算是如此平凡的愿望，\n如果自己是姬子的立场的话……",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-425b\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-468c\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-425b"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "也能同她一样，纯粹地为着留下来的人祈祷吗？",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-42dc\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-4719\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-42dc"
+        },
+        "allowed": [
+          "text",
+          "speaker"
+        ],
+        "speakerReason": "separate-native-message",
+        "baseline": {
+          "text": "「濑津美……你是证人喔。」",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-434f\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-478c\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-434f"
+        },
+        "allowed": [
+          "text",
+          "speaker"
+        ],
+        "speakerReason": "separate-native-message",
+        "baseline": {
+          "text": "「……我？」",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-43b2\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-47f3\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-43b2"
+        },
+        "allowed": [
+          "text",
+          "speaker"
+        ],
+        "speakerReason": "separate-native-message",
+        "baseline": {
+          "text": "「嗯，如果愿望和结果不一致的时候……」",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-442f\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-486a\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-442f"
+        },
+        "allowed": [
+          "text",
+          "speaker"
+        ],
+        "speakerReason": "separate-native-message",
+        "baseline": {
+          "text": "「下一次，由你代替我抱怨吧……对着神明。」",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-44b3\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-48fc\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-44b3"
+        },
+        "allowed": [
+          "text",
+          "speaker"
+        ],
+        "speakerReason": "separate-native-message",
+        "baseline": {
+          "text": "「这是……带我一起来这里的目的？」",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-452c\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-497d\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-452c"
+        },
+        "allowed": [
+          "text",
+          "speaker"
+        ],
+        "speakerReason": "separate-native-message",
+        "baseline": {
+          "text": "「那个，一半吧……」",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-4599\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-49ea\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-4599"
+        },
+        "allowed": [
+          "text",
+          "speaker"
+        ],
+        "speakerReason": "separate-native-message",
+        "baseline": {
+          "text": "「………………」",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-4602\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-4a53\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-4602"
+        },
+        "allowed": [
+          "text",
+          "speaker"
+        ],
+        "speakerReason": "separate-native-message",
+        "baseline": {
+          "text": "「剩下的一半……果然还是秘密？」",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-4679\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-4ac8\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-4679"
+        },
+        "allowed": [
+          "text",
+          "speaker"
+        ],
+        "speakerReason": "separate-native-message",
+        "baseline": {
+          "text": "「是呢……」",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-469c\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-4aed\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-469c"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "这样说着，思考了一下之后……",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-4738\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-4b97\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-4738"
+        },
+        "allowed": [
+          "text",
+          "speaker"
+        ],
+        "speakerReason": "separate-native-message",
+        "baseline": {
+          "text": "「……魔法……相似的东西吧。」",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-47af\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-4c0a\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-47af"
+        },
+        "allowed": [
+          "text",
+          "speaker"
+        ],
+        "speakerReason": "separate-native-message",
+        "baseline": {
+          "text": "「魔法？」",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-4810\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-4c6b\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-4810"
+        },
+        "allowed": [
+          "text",
+          "speaker"
+        ],
+        "speakerReason": "separate-native-message",
+        "baseline": {
+          "text": "「嗯，现在没有效果呢，之后会渐渐浮现出效果的。」",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-48a0\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-4d01\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-48a0"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "在清晨的天空下，我们来到了回家的路上。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-4906\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-4d69\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-4906"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "之后，将商店买到的便当拿在手里，\n姬子自言自语地说着。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-49b4\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-4e25\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-49b4"
+        },
+        "allowed": [
+          "text",
+          "speaker"
+        ],
+        "speakerReason": "separate-native-message",
+        "baseline": {
+          "text": "「总之，也让我在规则上追加一条吧。」",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-4a31\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-4eb0\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-4a31"
+        },
+        "allowed": [
+          "text",
+          "speaker"
+        ],
+        "speakerReason": "separate-native-message",
+        "baseline": {
+          "text": "「……规则？」",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-4a96\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-4f15\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-4a96"
+        },
+        "allowed": [
+          "text",
+          "speaker"
+        ],
+        "speakerReason": "separate-native-message",
+        "baseline": {
+          "text": "「嗯，交朋友也是可以的。」",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-4ac7\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-4f4e\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-4ac7"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "然后从口袋中取出了十字架，",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-4b22\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-4fb7\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-4b22"
+        },
+        "allowed": [
+          "text",
+          "speaker"
+        ],
+        "speakerReason": "separate-native-message",
+        "baseline": {
+          "text": "「原本这个十字架，\n送给你也是可以的……」",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-4b9c\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-5047\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-4b9c"
+        },
+        "allowed": [
+          "text",
+          "speaker"
+        ],
+        "speakerReason": "separate-native-message",
+        "baseline": {
+          "text": "「不过，我还是需要这个。」",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-4bcd\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-5080\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-4bcd"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "这样说着，戴在了自己胸前原来的位置。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-4c32\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-50ed\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-4c32"
+        },
+        "allowed": [
+          "text",
+          "speaker"
+        ],
+        "speakerReason": "separate-native-message",
+        "baseline": {
+          "text": "「所以濑津美，送其他不同的东西给你喔。」",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-4cb3\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-5176\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-4cb3"
+        },
+        "allowed": [
+          "text",
+          "speaker"
+        ],
+        "speakerReason": "separate-native-message",
+        "baseline": {
+          "text": "「……不同的东西？」",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-4d08\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-51c7\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-4d08"
+        },
+        "allowed": [
+          "text",
+          "speaker"
+        ],
+        "speakerReason": "separate-native-message",
+        "baseline": {
+          "text": "「嗯……由你来决定。」",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-4d78\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-523d\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-4d78"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "继续前进的Roadster，\n从山谷之间，慢慢的往街道前进。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-4da3\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-52a9\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-4da3"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "握着方向盘的姬子。\n虽然不是穿着睡衣，不过却是平常熟悉的姬子。",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-4dd8\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-52dc\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-4dd8"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-4e01\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-5323\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-4e01"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "……如今不同的是，\n能看见她胸前戴着的十字架……",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-4eb0\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-53f1\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-4eb0"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "「那个濑津美……给你说一件事。」",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-4f46\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-5468\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-4f46"
+        },
+        "allowed": [
+          "text",
+          "speaker"
+        ],
+        "speakerReason": "separate-native-message",
+        "baseline": {
+          "text": "「不管之后，你选择的是谁……」",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-4fbd\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-54e5\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-4fbd"
+        },
+        "allowed": [
+          "text",
+          "speaker"
+        ],
+        "speakerReason": "separate-native-message",
+        "baseline": {
+          "text": "「最后的最后，都不能抹杀自己的内心……」",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-5034\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-5568\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-5034"
+        },
+        "allowed": [
+          "text",
+          "speaker"
+        ],
+        "speakerReason": "separate-native-message",
+        "baseline": {
+          "text": "「……是指什么？」",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-50b4\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-55d2\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-50b4"
+        },
+        "allowed": [
+          "text",
+          "speaker"
+        ],
+        "speakerReason": "separate-native-message",
+        "baseline": {
+          "text": "「没什么，现在的话。」",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-511d\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-563d\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-511d"
+        },
+        "allowed": [
+          "text",
+          "speaker"
+        ],
+        "speakerReason": "separate-native-message",
+        "baseline": {
+          "text": "「一定没问题的…最后应该也能笑着的」",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-515c\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-568e\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-515c"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "这里，所指的…",
+          "speaker": "旁白"
+        }
+      },
+      {
+        "key": "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-519d\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-56c7\"]",
+        "target": {
+          "variantId": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+          "sectionId": "main",
+          "eventId": "mjo-519d"
+        },
+        "allowed": [
+          "text"
+        ],
+        "speakerReason": "no-native-speaker",
+        "baseline": {
+          "text": "就是刚刚说过的魔法吧…",
+          "speaker": "旁白"
+        }
+      }
+    ]
+  },
+  "cnKeys": [
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/header\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/header\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-d4\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-d4\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-ff\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-103\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-194\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-189\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-1f6\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-1e9\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-264\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-25d\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-2c5\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-2cf\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-2f5\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-304\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-337\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-33b\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-3cb\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-3e1\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-402\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-418\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-435\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-45d\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-4a7\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-4e1\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-533\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-579\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-59b\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-5e3\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-5f6\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-63a\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-623\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-671\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-64a\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-69c\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-6be\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-707\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-6fd\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-748\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-736\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-787\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-7a6\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-807\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-819\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-892\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-87e\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-8f7\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-8a3\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-91c\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-90c\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-98b\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-9b2\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-a45\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-a0b\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-a9e\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-a5c\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-aef\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-acb\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-b64\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-b02\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-b9f\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-b3f\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-bea\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-bb3\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-c5b\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-c1e\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-cc8\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-c88\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-d3b\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-cbb\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-d78\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-ce6\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-da1\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-db8\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-e77\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-e3a\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-eee\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-e99\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-f4d\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-ec0\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-f74\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-eeb\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-fa5\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-f55\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-101d\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-f8e\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-106a\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-1002\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-10f2\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-10ea\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-11f4\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-1119\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-1229\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-11a6\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-12bc\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-11d1\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-12ed\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-1238\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-1366\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-1289\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-13b7\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-12e6\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-1418\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-1329\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-145b\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-1368\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-14a8\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-138b\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-14c9\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-13eb\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-1533\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-147e\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-15d4\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-14d3\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-1629\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-1534\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-1694\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-159e\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-16fe\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-1615\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-1779\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-167b\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-17df\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-16d0\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-1832\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-1701\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-1861\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-176a\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-18e1\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-17dc\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-1969\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-1803\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-199c\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-1847\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-19d7\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-18f6\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-1aa2\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-191b\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-1ad1\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-1938\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-1ae8\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-1959\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-1b0b\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-19ad\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-1b5a\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-1a0d\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-1bc8\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-1a61\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-1c36\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-1ac3\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-1caa\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-1afc\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-1ce1\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-1bb3\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-1d93\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-1be8\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-1dce\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-1c07\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-1deb\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-1c32\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-1e1a\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-1c65\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-1e51\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-1c8c\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-1e7e\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-1cd2\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-1ebd\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-1d70\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-1f5d\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-1d97\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-1f84\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-1e21\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-2016\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-1e89\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-2074\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-1f04\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-20f9\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-1f54\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-2149\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-1fcd\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-21be\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-20da\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-22c9\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-211f\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-230a\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-2186\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-236d\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-22e1\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-24c6\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-236b\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-2558\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-23c3\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-25b4\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-23f0\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-25e9\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-245c\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-2655\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-24bc\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-26bb\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-2522\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-272b\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-2588\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-2799\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-261e\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-283d\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-266f\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-2894\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-26f3\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-2926\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-272e\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-2963\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-2806\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-2a3f\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-287e\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-2ac9\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-28d0\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-2b1b\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-2920\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-2b79\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-2957\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-2bba\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-296c\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-2bd1\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-29e5\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-2c5e\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-2a67\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-2cea\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-2ab2\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-2d3f\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-2aeb\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-2d80\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-2b32\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-2dcd\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-2bac\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-2e4f\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-2c17\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-2ebc\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-2c83\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-2f30\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-2d15\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-2fc2\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-2df5\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-30a0\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-2e67\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-3114\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-2f15\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-31c8\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-30cc\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-337d\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-313f\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-33f4\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-31b4\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-346b\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-3250\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-350f\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-32d0\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-3593\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-3311\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-35d4\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-337f\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-365a\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-33bc\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-369d\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-3434\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-3731\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-3501\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-3812\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-3569\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-3886\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-35f8\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-3919\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-364b\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-396c\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-36c8\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-39f1\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-372f\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-3a66\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-37b7\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-3aec\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-3827\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-3b80\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-387a\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-3bd3\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-38a5\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-3c02\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-399a\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-3d01\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-39cf\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-3d34\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-3a2c\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-3da9\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-3a81\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-3e02\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-3abc\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-3e41\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-3b15\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-3ea2\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-3b52\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-3ee1\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-3c0d\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-3fa2\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-3ca7\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-404a\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-3d10\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-40b5\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-3d6d\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-4118\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-3dce\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-418b\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-3e38\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-41fd\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-3e79\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-4240\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-3ed7\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-42c0\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-3ef6\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-42e7\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-3f1f\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-431c\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-3f81\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-4386\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-3fce\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-43e3\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-407e\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-4495\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-40c1\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-44d4\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-4134\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-454d\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-41b3\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-45d0\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-41d8\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-45f5\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-4201\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-4624\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-425b\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-468c\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-42dc\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-4719\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-434f\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-478c\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-43b2\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-47f3\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-442f\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-486a\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-44b3\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-48fc\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-452c\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-497d\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-4599\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-49ea\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-4602\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-4a53\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-4679\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-4ac8\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-469c\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-4aed\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-4738\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-4b97\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-47af\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-4c0a\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-4810\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-4c6b\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-48a0\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-4d01\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-4906\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-4d69\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-49b4\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-4e25\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-4a31\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-4eb0\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-4a96\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-4f15\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-4ac7\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-4f4e\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-4b22\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-4fb7\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-4b9c\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-5047\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-4bcd\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-5080\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-4c32\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-50ed\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-4cb3\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-5176\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-4d08\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-51c7\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-4d78\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-523d\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-4da3\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-52a9\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-4dd8\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-52dc\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-4e01\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-5323\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-4eb0\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-53f1\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-4f46\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-5468\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-4fbd\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-54e5\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-5034\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-5568\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-50b4\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-55d2\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-511d\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-563d\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-515c\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-568e\"]",
+    "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-519d\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-56c7\"]"
+  ],
+  "translationReview": {
+    "policy": "original-reviewed-author-pending/v1",
+    "rows": {
+      "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-4d78\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-523d\"]": {
+        "state": "reviewed",
+        "origin": "existing-translation",
+        "credit": "原汉化组",
+        "sources": [
+          {
+            "identity": "narcissu-one-two/nar2_18",
+            "cnEventIds": [
+              "mjo-523d"
+            ],
+            "jpEventIds": [
+              "mjo-523d"
+            ],
+            "cn": "继续前进的Roadster，\n从山谷之间，慢慢的往街道前进。",
+            "jp": "尚も走るロードスター。\n山あいの道から、少しずつ街中へと向かっていた。",
+            "method": "identical-japanese-passage",
+            "matchedPassageRows": 183
+          }
+        ],
+        "recipeSha256": "c126c0ab1812bfd01daa9305d2c01115f2b69315a5a62c15d396ddb46a747035",
+        "targetJapanese": "尚も走るロードスター。\n山あいの道から、少しずつ街中へと向かっていた。"
+      },
+      "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-4da3\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-52a9\"]": {
+        "state": "reviewed",
+        "origin": "existing-translation",
+        "credit": "原汉化组",
+        "sources": [
+          {
+            "identity": "narcissu-one-two/nar2_18",
+            "cnEventIds": [
+              "mjo-52a9",
+              "mjo-52dc"
+            ],
+            "jpEventIds": [
+              "mjo-52a9",
+              "mjo-52dc"
+            ],
+            "cn": "握着方向盘的姬子。\n虽然不是穿着睡衣，不过却是平常熟悉的姬子。",
+            "jp": "ハンドルを握るのは姫子さん。\nパジャマではないけど、いつもの見知った姫子さん。",
+            "method": "identical-japanese-passage",
+            "matchedPassageRows": 183
+          }
+        ],
+        "recipeSha256": "c126c0ab1812bfd01daa9305d2c01115f2b69315a5a62c15d396ddb46a747035",
+        "targetJapanese": "ハンドルを握るのは姫子さん。\nパジャマではないけど、いつもの見知った姫子さん。"
+      },
+      "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-4dd8\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-52dc\"]": {
+        "state": "reviewed",
+        "origin": "existing-translation",
+        "credit": "原汉化组",
+        "sources": [
+          {
+            "identity": "narcissu-one-two/nar2_18",
+            "cnEventIds": [
+              "mjo-52a9",
+              "mjo-52dc"
+            ],
+            "jpEventIds": [
+              "mjo-52a9",
+              "mjo-52dc"
+            ],
+            "cn": "握着方向盘的姬子。\n虽然不是穿着睡衣，不过却是平常熟悉的姬子。",
+            "jp": "ハンドルを握るのは姫子さん。\nパジャマではないけど、いつもの見知った姫子さん。",
+            "method": "identical-japanese-passage",
+            "matchedPassageRows": 183
+          }
+        ],
+        "recipeSha256": "c126c0ab1812bfd01daa9305d2c01115f2b69315a5a62c15d396ddb46a747035",
+        "targetJapanese": "ハンドルを握るのは姫子さん。\nパジャマではないけど、いつもの見知った姫子さん。"
+      },
+      "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-4e01\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-5323\"]": {
+        "state": "reviewed",
+        "origin": "existing-translation",
+        "credit": "原汉化组",
+        "sources": [
+          {
+            "identity": "narcissu-one-two/nar2_18",
+            "cnEventIds": [
+              "mjo-5323"
+            ],
+            "jpEventIds": [
+              "mjo-5323"
+            ],
+            "cn": "……如今不同的是，\n能看见她胸前戴着的十字架……",
+            "jp": "…今までと違うのは、\nその胸元にロザリオが見えていることだった…",
+            "method": "identical-japanese-passage",
+            "matchedPassageRows": 183
+          }
+        ],
+        "recipeSha256": "c126c0ab1812bfd01daa9305d2c01115f2b69315a5a62c15d396ddb46a747035",
+        "targetJapanese": "…今までと違うのは、\nその胸元にロザリオが見えていることだった…"
+      },
+      "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-4eb0\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-53f1\"]": {
+        "state": "reviewed",
+        "origin": "existing-translation",
+        "credit": "原汉化组",
+        "sources": [
+          {
+            "identity": "narcissu-one-two/nar2_18",
+            "cnEventIds": [
+              "mjo-53f1"
+            ],
+            "jpEventIds": [
+              "mjo-53f1"
+            ],
+            "cn": "「那个濑津美……给你说一件事。」",
+            "jp": "「ねえセツミ…一つだけ言わせて」",
+            "method": "identical-japanese-passage",
+            "matchedPassageRows": 183
+          }
+        ],
+        "recipeSha256": "c126c0ab1812bfd01daa9305d2c01115f2b69315a5a62c15d396ddb46a747035",
+        "targetJapanese": "「ねえセツミ…一つだけ言わせて」"
+      },
+      "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-4f46\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-5468\"]": {
+        "state": "reviewed",
+        "origin": "existing-translation",
+        "credit": "原汉化组",
+        "sources": [
+          {
+            "identity": "narcissu-one-two/nar2_18",
+            "cnEventIds": [
+              "mjo-5468"
+            ],
+            "jpEventIds": [
+              "mjo-5468"
+            ],
+            "cn": "「不管之后，你选择的是谁……」",
+            "jp": "「これから先、あなたが誰を選んでも…」",
+            "method": "identical-japanese-passage",
+            "matchedPassageRows": 183
+          }
+        ],
+        "recipeSha256": "c126c0ab1812bfd01daa9305d2c01115f2b69315a5a62c15d396ddb46a747035",
+        "targetJapanese": "「これから先、あなたが誰を選んでも…」"
+      },
+      "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-4fbd\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-54e5\"]": {
+        "state": "reviewed",
+        "origin": "existing-translation",
+        "credit": "原汉化组",
+        "sources": [
+          {
+            "identity": "narcissu-one-two/nar2_18",
+            "cnEventIds": [
+              "mjo-54e5"
+            ],
+            "jpEventIds": [
+              "mjo-54e5"
+            ],
+            "cn": "「最后的最后，都不能抹杀自己的内心……」",
+            "jp": "「最後の最後には、心まで殺しちゃダメよ…」",
+            "method": "identical-japanese-passage",
+            "matchedPassageRows": 183
+          }
+        ],
+        "recipeSha256": "c126c0ab1812bfd01daa9305d2c01115f2b69315a5a62c15d396ddb46a747035",
+        "targetJapanese": "「最後の最後には、心まで殺しちゃダメよ…」"
+      },
+      "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-5034\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-5568\"]": {
+        "state": "reviewed",
+        "origin": "existing-translation",
+        "credit": "原汉化组",
+        "sources": [
+          {
+            "identity": "narcissu-one-two/nar2_18",
+            "cnEventIds": [
+              "mjo-5568"
+            ],
+            "jpEventIds": [
+              "mjo-5568"
+            ],
+            "cn": "「……是指什么？」",
+            "jp": "「…なんのこと？」",
+            "method": "identical-japanese-passage",
+            "matchedPassageRows": 183
+          }
+        ],
+        "recipeSha256": "c126c0ab1812bfd01daa9305d2c01115f2b69315a5a62c15d396ddb46a747035",
+        "targetJapanese": "「…なんのこと？」"
+      },
+      "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-50b4\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-55d2\"]": {
+        "state": "reviewed",
+        "origin": "existing-translation",
+        "credit": "原汉化组",
+        "sources": [
+          {
+            "identity": "narcissu-one-two/nar2_18",
+            "cnEventIds": [
+              "mjo-55d2"
+            ],
+            "jpEventIds": [
+              "mjo-55d2"
+            ],
+            "cn": "「没什么，现在的话。」",
+            "jp": "「いいのよ、今はね」",
+            "method": "identical-japanese-passage",
+            "matchedPassageRows": 183
+          }
+        ],
+        "recipeSha256": "c126c0ab1812bfd01daa9305d2c01115f2b69315a5a62c15d396ddb46a747035",
+        "targetJapanese": "「いいのよ、今はね」"
+      },
+      "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-511d\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-563d\"]": {
+        "state": "reviewed",
+        "origin": "existing-translation",
+        "credit": "原汉化组",
+        "sources": [
+          {
+            "identity": "narcissu-one-two/nar2_18",
+            "cnEventIds": [
+              "mjo-563d"
+            ],
+            "jpEventIds": [
+              "mjo-563d"
+            ],
+            "cn": "「一定没问题的…最后应该也能笑着的」",
+            "jp": "「きっと大丈夫…最後には笑える筈よ」",
+            "method": "identical-japanese-passage",
+            "matchedPassageRows": 183
+          }
+        ],
+        "recipeSha256": "c126c0ab1812bfd01daa9305d2c01115f2b69315a5a62c15d396ddb46a747035",
+        "targetJapanese": "「きっと大丈夫…最後には笑える筈よ」"
+      },
+      "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-515c\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-568e\"]": {
+        "state": "reviewed",
+        "origin": "existing-translation",
+        "credit": "原汉化组",
+        "sources": [
+          {
+            "identity": "narcissu-one-two/nar2_18",
+            "cnEventIds": [
+              "mjo-568e"
+            ],
+            "jpEventIds": [
+              "mjo-568e"
+            ],
+            "cn": "这里，所指的…",
+            "jp": "それが、さっき言っていた…",
+            "method": "identical-japanese-passage",
+            "matchedPassageRows": 183
+          }
+        ],
+        "recipeSha256": "c126c0ab1812bfd01daa9305d2c01115f2b69315a5a62c15d396ddb46a747035",
+        "targetJapanese": "それが、さっき言っていた…"
+      },
+      "[\"[\\\"mjo/narcissu3/update.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-519d\",\"[\\\"mjo/narcissu3/scenario.arc.unpacked/nar2_18\\\",\\\"main\\\"]/mjo-56c7\"]": {
+        "state": "reviewed",
+        "origin": "existing-translation",
+        "credit": "原汉化组",
+        "sources": [
+          {
+            "identity": "narcissu-one-two/nar2_18",
+            "cnEventIds": [
+              "mjo-56c7"
+            ],
+            "jpEventIds": [
+              "mjo-56c7"
+            ],
+            "cn": "就是刚刚说过的魔法吧…",
+            "jp": "魔法とやらなのだろうか…",
+            "method": "identical-japanese-passage",
+            "matchedPassageRows": 183
+          }
+        ],
+        "recipeSha256": "c126c0ab1812bfd01daa9305d2c01115f2b69315a5a62c15d396ddb46a747035",
+        "targetJapanese": "魔法とやらなのだろうか…"
+      }
+    }
+  }
+}

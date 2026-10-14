@@ -1,66 +1,78 @@
 # Universal ADV Reader
 
-独立的通用 ADV 在线阅读器与接入基线。
+通用 ADV 双语阅读、原生章节导航、语音播放和文本修订项目。正式界面是 `apps/classic-reader`，不是为单一游戏重建的阅读器。`AdvIR`、适配器、媒体解析、稳定深链与跨站桥接继续采用作品无关的协议；目前接入 Majiro、IKURA 以及中文 TXT 资料。
 
-这个仓库与资源归档仓库分离：
+**公共网站：** https://universal-adv-reader.pages.dev/apps/web  
+**公开源码与投稿：** https://github.com/HiiragiNemu/universal-adv-reader
 
-- 本仓库：Reader 外壳、AdvIR、适配器/媒体解析器接口、稳定深链和跨站桥接。
-- `D:\PROGETTO\narcissu-kana-research`：原始归档、提取结果、逆向证据和后续的游戏格式适配产物。
-- `magi-reader`：只读架构参考；本仓库没有复制或修改其源码。
+仓库为 public；`package.json` 中的 `private: true` 仅防止误发布到 npm。仓库级 GitHub Actions 已关闭，代码同步和 Cloudflare 直接发布不依赖 Actions。
 
-## 当前阶段
+## 当前内容与校对口径
 
-已实现的目标：
+当前索引收录 202 个游戏脚本，展开为 255 个原生章节／片段、20 张作品／阶段卡；另有 10 个来源版本的 121 个中文资料篇目，共 323 个索引条目。518 条归档、1,207 个源版本属于研究归档口径，不代表 518 篇独立公开剧情。
 
-- 作品无关的 `adv-story/v1` 中间表示；
-- `corpusId + adapterId + sourceFormat` 精确选择适配器，禁止轮流试读；
-- 稳定的 `canonicalStoryId / sectionId / eventId / variantId` 定位；
-- 文本、选项、分支以及图像/音频 cue 的统一事件模型；
-- 媒体 resolver 注册表；
-- 所有剧情都可展开语音路由面板，未解析 cue 也保留可见槽位；
-- 深链与 `MessagePort` App Bridge provider；
-- 无框架依赖的可运行 Web Reader；
-- `classic` 继承版与 `next` 迁移候选双外壳，共用同一 ReaderSession / AdvIR / media / bridge；
-- 十周年版 `narcissu-himeko/himeko_ep00` 的日文、中文对照与英文三版本；
-- Narcissu 3 `narcissu-3rd/nard14` 的 30 条短篇逻辑文本，以及 `nar3_01` 的 385 条场景文本、114 条语音、28 张场景/转场图、BGM 与音效路由；舞台会保留真实场景图而不让转场规则图覆盖；
-- KANA `EV494` 的 40 组日中精确对齐文本、6 条语音、3 张场景图与 BGM；
-- KANA `EV00` 的两项日中选项、两个用户分支及原 VM 的第三个内部错误分支；
-- Majiro 与 IKURA 两种生产适配器，共用相同 ReaderSession、媒体和深链合同。
+当前阅读投影为 84,311 个中文段落／选项，其中 84,175 个已校对、136 个站长补译待校对，涉及 7 个游戏脚本。原汉化组译文及站长提供的中文资料按已校对统计，补译逐段标为“站长补译 · 待校对”；跨章中文直接显示，中文独有资料不伪造日文。动态计数以实际索引和版本绑定的进度快照为准，不以 README 数字替代运行时校验。
 
-当前三个作品切片均直接读取 `narcissu-kana-research` 的已验证产物；资源仓库保持只读。其余剧情沿用同一批量生产导入边界继续接入。
+## 本地开发
 
-## 运行
-
-需要 Node.js 22 或更新版本，不需要安装第三方依赖。
+需要 Node.js 24 或更新版本。依赖在本项目独立安装，不再联接其他 Reader 的 `node_modules`。
 
 ```powershell
-npm run check
-npm run serve
+npm --prefix apps/classic-reader ci
+npm run serve:classic
 ```
 
-然后打开：
+本机入口为 `http://127.0.0.1:4176/apps/web`。默认只读挂载相邻的 `../narcissu-kana-research`；也可以通过 `ADV_CORPUS_REPOSITORY` 指定资源研究仓目录。不要把原始安装包、存档或临时 RAMDISK 当作可覆盖的发布目录。
 
-```text
-http://127.0.0.1:4173/apps/web/
+公开源码不包含第三方字体二进制、游戏安装包或原始音视频。完整的保真测试和媒体发布需要另外准备有权使用的资源；缺少这些输入时应明确报错，不下载未知替代品、不假报通过。现有部署机器保留这些输入，不受 Git 忽略规则影响。必要历史基准已整理到 `test-support/fixtures`，记录来源和 SHA-256，不再依赖维护者私有报告目录或另一 UI 仓库的绝对路径。
+
+当前锁定 Next.js 16.4.0、React 19.3.0、Wrangler 4.150.0，并修复本轮审计发现的间接依赖漏洞。锁文件是复现依据，不通过安装浮动 latest 隐式升级其他项目。
+
+## Cloudflare 公共发布：不使用 GitHub Actions
+
+独立公共站点名为 `universal-adv-reader`。使用本机构建和 Wrangler Direct Upload，不配置 GitHub Actions 或 Cloudflare Git 自动构建。
+
+```powershell
+npm run publish:cloudflare
 ```
 
-开发服务器把相邻的 `D:\PROGETTO\narcissu-kana-research` 以 `/corpus/` 只读挂载；也可用 `ADV_CORPUS_REPOSITORY` 指定同一仓库的实际位置。大体积图像和音频不会复制进本仓库。
+该命令执行根测试、应用测试、TypeScript、生产依赖审计、静态构建、本机生产浏览器验收、Cloudflare 上传以及公网版本／HTTP／浏览器复核。先把确认的改动提交并推送到本仓库 `main`，再发布；发布回执必须与当前 Git 提交一致。失败则停止，不使用旧产物假报成功。
 
-## 目录
+首次准备或媒体发生变化时：
 
-```text
-apps/web                 可运行 Reader 外壳
-contracts                JSON Schema
-packages/contracts       AdvIR 与清单验证
-packages/core            适配器、媒体解析器、阅读会话
-packages/bridge          稳定深链与 MessagePort 协议
-packages/adapters        AdvIR、Majiro、IKURA 精确适配器
-packages/ui-shell        classic / next 共享外壳合同
-tools/import-*           只读导入十周年版、Narcissu 3 与 KANA
-docs                     架构和接入说明
-test                     Node 内建测试
+```powershell
+npm run publish:cloudflare -- --media
 ```
 
-## 许可
+运行前需要已登录的 Wrangler，以及现有媒体输入。网络代理仅对当前命令设置，不改全局代理。完整操作与安全边界见 [Cloudflare 部署说明](docs/cloudflare-deployment.md)。
 
-当前仓库标记为 `UNLICENSED`，在明确开源或商业许可策略前不附加许可证。
+### 本地功能与公网功能
+
+公共站保留五主题、搜索、目录、双语阅读、语音、浏览器内文本编辑、补丁导入和导出，以及打开本地文件。选择的本地文件不上传，公共静态入口不把文件名放入 URL。
+
+本机工程保留审核队列、批准、显式安装和回滚。公共站不暴露这些基于本机文件系统的写接口。在线投稿使用 GitHub Issues：用户明确同意公开后生成草稿，再在 GitHub 登录、检查并提交；只有获得 Issue 编号才算投稿成功。导出或生成草稿不表示已上传。站长导入时校验当前原生来源与修改前值，投稿不会自动批准或覆盖正文。详见 [投稿与审核](docs/github-contributions.md)。
+
+## 部署布局
+
+主站以静态页面、JSON、搜索块与字节不变的剧情数据发布。常规媒体拆分为两个静态资源项目，保持原 URL 对应和原始音质；超过 Pages 单文件限制的 11 份去重音频由专用 R2 桶及只读 Worker 提供，支持 Range、HEAD、ETag 与 CORS。
+
+所有公开剧情页和可变索引要求重新验证缓存，带哈希的 JS/CSS 长期缓存。`release.json` 公开本次构建 ID、来源代码和内容哈希、Git HEAD 以及工作区是否含未提交修改，防止用旧提交号冒充最新未提交代码。
+
+本项目与 `magi-reader`、资源研究仓、AIO、L2D、3Dviewer 的部署和写入边界分离。唯一工程远端为 `HiiragiNemu/universal-adv-reader`；不向资源研究仓推送 UI，也不解档或覆盖其他仓库。
+
+## 目录与历史夹具
+
+- `apps/classic-reader`：当前正式 UI、本机 API 及独立依赖。
+- `packages/contracts`、`packages/core`、`packages/bridge`、`packages/adapters`：通用 AdvIR、适配器、媒体解析及桥接。
+- `tools/build-cloudflare-pages.mjs`、`tools/deploy-cloudflare.mjs`：构建投影和直接上传。
+- `tools/cloudflare`：静态协议投影、媒体 Worker、真实浏览器与公网验证。
+- `test-support/fixtures`：25 份独立测试基准及逐文件来源哈希；不是已通过测试的代用品。
+- `apps/web`、原 `npm run serve`：隔离的无框架历史回归夹具，不是当前正式目录。
+- `reports/handoff`、`reports/verification`：本地交接与验证证据；不批量公开内部报告或浏览器资料。
+- `work/`：可重建的构建产物、媒体硬链接、上传回执，不提交 Git。
+
+`tools/materialize-classic-reader-data.mjs` 的旧全量物化入口可能清空目标目录。已有修订和审核记录未保护前不得在活跃数据目录直接运行；先生成候选并校验差异。
+
+## 来源与许可
+
+Classic UI 继承了现有 `magi-reader` 实现和材质，不宣称整个仓库是未复制 UI 的 clean-room 项目。来源边界见 [NOTICE](NOTICE.md)。游戏素材、原作文字和汉化文本保留各自归属和署名。本项目继续标记 `UNLICENSED`，不擅自为第三方素材重新授予开源许可。

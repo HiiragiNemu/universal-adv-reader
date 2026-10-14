@@ -1,0 +1,24 @@
+@layer reader-visual-revision {
+  html[data-reader-theme='dark'] { --tw-source-ink:#c5ff92; --tw-source-fill:#164232; --tw-source-edge:#aaff77; --tw-source-glow:#8dff65; }
+  html[data-reader-theme='dark'][data-night-phosphor='amber'] { --tw-source-ink:#ffec9d; --tw-source-fill:#50391c; --tw-source-edge:#ffe48b; --tw-source-glow:#ffce64; }
+  html[data-reader-theme='frost'] { --tw-source-ink:#ccfff0; --tw-source-fill:#143d43; --tw-source-edge:#b3f6df; --tw-source-glow:#7eebd9; }
+  html[data-reader-theme='paper'] { --tw-source-ink:#634616; --tw-source-fill:#e6d393; --tw-source-edge:#9d8047; }
+  html[data-reader-theme='green'] { --tw-source-ink:#204f41; --tw-source-fill:#b7dfc8; --tw-source-edge:#527f6c; }
+  html[data-reader-theme][data-screen-registration]:not([data-reader-theme='light']) body
+    :is(#magi-home-display.magi-home-shell[data-theme],#magi-reader-display)
+    :is(.magi-official-tw-badge,.magi-reader-source-badge) {
+    color: var(--tw-source-ink) !important; -webkit-text-fill-color: var(--tw-source-ink) !important;
+    background: var(--tw-source-fill) !important; background-image: none !important;
+    border-color: var(--tw-source-edge) !important; opacity: 1 !important;
+    box-shadow: none !important; filter: none !important;
+    text-shadow: none !important;
+  }
+  html[data-reader-theme][data-screen-registration]:is([data-reader-theme='dark'],[data-reader-theme='frost']) body
+    :is(#magi-home-display.magi-home-shell[data-theme],#magi-reader-display)
+    :is(.magi-official-tw-badge,.magi-reader-source-badge) {
+    box-shadow: inset 0 0 7px color-mix(in srgb,var(--tw-source-glow) 22%,transparent),
+      0 0 2px var(--tw-source-edge),0 0 9px color-mix(in srgb,var(--tw-source-glow) 65%,transparent),
+      0 0 20px color-mix(in srgb,var(--tw-source-glow) 32%,transparent) !important;
+    text-shadow: 0 0 2px var(--tw-source-ink),0 0 7px var(--tw-source-glow) !important;
+  }
+}

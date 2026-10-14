@@ -6,8 +6,19 @@ import { AdapterRegistry, AdapterRegistryError } from '../packages/core/src/adap
 import { fixtureJson } from '../test-support/helpers.js';
 
 const inputs = async () => {
-  const catalog = await fixtureJson('catalog.json');
-  const corpus = catalog.corpora.find((item) => item.corpusId === 'architecture-demo');
+  const corpus = {
+    corpusId: 'architecture-demo',
+    title: 'Adapter fixture',
+    adapterId: 'adv-ir-v1',
+    sourceFormat: 'adv-story/v1',
+    stories: [{
+      canonicalStoryId: 'demo/arrival',
+      title: 'Arrival',
+      source: './data/demo-story.json',
+      mediaManifest: './data/media.json',
+      preferredVariantId: 'demo/default',
+    }],
+  };
   return {
     corpus,
     storyEntry: corpus.stories[0],

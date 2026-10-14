@@ -1,0 +1,91 @@
+/* Shared material paint is available before hydration, including route and asset loading. */
+:is(#magi-home-display, .magi-review-theme, .magi-loading-screen) .magi-reader-film-surface {
+  --magi-reader-left-material-fade: linear-gradient(90deg,rgba(0,0,0,.46),rgba(0,0,0,.6) 16%,#000 38%);
+  position: fixed; inset: 0; z-index: 1000; pointer-events: none;
+  user-select: none; contain: strict; overflow: hidden;
+  mix-blend-mode: screen;
+}
+
+:is(#magi-home-display, .magi-review-theme, .magi-loading-screen) .magi-reader-film-surface * { pointer-events: none; }
+
+:is(#magi-home-display, .magi-review-theme, .magi-loading-screen) .magi-reader-film-grain {
+  position: absolute; inset: 0; opacity: .95; mix-blend-mode: screen;
+  background:
+    url('/textures/magi-lofi-grain.png') 19px 17px / 384px 384px repeat,
+    url('/textures/magi-lofi-grain.png') 19px 17px / 384px 384px repeat,
+    url('/textures/magi-lofi-grain.png') 19px 17px / 384px 384px repeat,
+    url('/textures/magi-lofi-grain.png') 19px 17px / 384px 384px repeat;
+  background-blend-mode: screen;
+  /* Density, not just a uniform tile whose brightness is turned down. Several
+     overlapping exposure patches leave genuinely sparse emulsion between. */
+  mask-image:
+    radial-gradient(ellipse 19% 13% at 78% 34%,#000 12%,transparent 90%),
+    radial-gradient(ellipse 14% 26% at 94% 68%,rgba(0,0,0,.86),transparent 93%),
+    radial-gradient(ellipse 17% 19% at 54% 77%,rgba(0,0,0,.7),transparent 92%),
+    radial-gradient(ellipse 11% 12% at 44% 17%,rgba(0,0,0,.62),transparent 94%),
+    linear-gradient(90deg,rgba(0,0,0,.38),rgba(0,0,0,.45) 20%,rgba(0,0,0,.76) 38%,rgba(0,0,0,.84) 70%,rgba(0,0,0,.68));
+}
+
+:is(#magi-home-display, .magi-review-theme, .magi-loading-screen) .magi-reader-film-smudges {
+  position: absolute; inset: 0; opacity: .24; mix-blend-mode: screen;
+  background: url('/textures/stories-untold/DirtHighContrast.png') center / cover no-repeat;
+  filter: grayscale(1);
+  mask-image: radial-gradient(ellipse at 48% 43%,rgba(0,0,0,.22) 15%,#000 82%),var(--magi-reader-left-material-fade);
+  mask-composite: intersect;
+}
+
+:is(#magi-home-display, .magi-review-theme, .magi-loading-screen) .magi-reader-film-wear {
+  position: absolute; inset: 0; width: 100%; height: 100%;
+  mask-image: var(--magi-reader-left-material-fade);
+  color: rgba(187,235,218,.56); stroke-width: .65;
+  filter: drop-shadow(.45px 0 rgba(81,226,217,.34)) drop-shadow(-.35px 0 rgba(226,131,164,.24));
+}
+
+:is(#magi-home-display, .magi-review-theme, .magi-loading-screen) .magi-reader-film-glass {
+  position: absolute; inset: 0; pointer-events: none;
+  background: url('/textures/stories-untold/2k_BG_Texture.png') center / 100% 100% no-repeat;
+  filter: grayscale(1); mix-blend-mode: screen; opacity: .86;
+  mask-image: var(--magi-reader-left-material-fade);
+}
+
+:is(#magi-home-display, .magi-review-theme, .magi-loading-screen) .magi-reader-film-glass::after {
+  content: ''; position: absolute; inset: 1px;
+  border: 1px solid rgba(176,215,206,.22);
+  box-shadow: inset 0 0 5px rgba(198,233,212,.18);
+  background: radial-gradient(ellipse 9px 31% at 100% 33%,rgba(191,226,212,.3),transparent),
+    radial-gradient(ellipse 26% 6px at 63% 100%,rgba(182,228,212,.22),transparent);
+}
+
+:is(#magi-home-display, .magi-review-theme, .magi-loading-screen) .magi-reader-tube-lens { position: absolute; pointer-events: none; }
+
+:is(#magi-home-display, .magi-review-theme, .magi-loading-screen) .magi-reader-tube-surface {
+  position: fixed; inset: 0; z-index: 1000; pointer-events: none;
+  contain: strict; overflow: hidden; border-radius: 18px / 13px;
+}
+
+:is(#magi-home-display, .magi-review-theme, .magi-loading-screen) .magi-reader-tube-phosphor {
+  position: fixed; inset: 0; z-index: 1000; pointer-events: none;
+  mix-blend-mode: soft-light;
+  background:
+    repeating-linear-gradient(0deg,rgba(5,0,2,.52) 0 .6px,transparent .6px 2px),
+    url('/textures/stories-untold/NoiseAndGrain.png') 0 0 / 128px 64px repeat,
+    url('/textures/stories-untold/PixelOverlay_RGB_16.png') 0 0 / 4px 4px repeat;
+  background-blend-mode: multiply,soft-light,normal;
+  opacity: var(--magi-tube-scan);
+}
+
+:is(#magi-home-display, .magi-review-theme, .magi-loading-screen) .magi-reader-tube-surface::after {
+  content: ''; position: absolute; inset: 0;
+  background: radial-gradient(ellipse at 50% 47%,transparent 37%,rgba(0,0,0,.025) 64%,rgba(0,0,0,.16) 92%,rgba(0,0,0,.34) 100%);
+  box-shadow: inset 0 0 3px rgba(218,233,213,.22), inset 0 0 17px rgba(0,0,0,.6);
+}
+
+:is(#magi-home-display, .magi-review-theme, .magi-loading-screen) .magi-reader-tube-grain { display: none; }
+
+html[data-night-phosphor='amber'] :is(#magi-home-display, .magi-review-theme, .magi-loading-screen) .magi-reader-tube-grain {
+  display: block; position: fixed; inset: 0; z-index: 1000; pointer-events: none;
+  background: url('/textures/magi-lofi-grain.png') 7px 13px / 384px 384px repeat,
+    url('/textures/magi-lofi-grain.png') 7px 13px / 384px 384px repeat;
+  background-blend-mode: screen; mix-blend-mode: screen; opacity: .66;
+  filter: sepia(.65);
+}

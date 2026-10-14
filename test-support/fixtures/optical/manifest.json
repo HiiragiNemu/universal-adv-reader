@@ -1,0 +1,678 @@
+{
+  "schema": 1,
+  "root": "D:\\PROGETTO\\universal-adv-reader",
+  "app": "D:\\PROGETTO\\universal-adv-reader\\apps\\classic-reader",
+  "sourceRepo": "D:/magia/MyProducts/magi-reader",
+  "commit": "56309ca742130e36d8d10fdb4f72de2a04cda02a",
+  "entries": [
+    {
+      "file": "app/layout.tsx",
+      "existed": true,
+      "baselineBytes": 706,
+      "modifiedBytes": 1795,
+      "source": "56309ca742130e36d8d10fdb4f72de2a04cda02a:website/app/layout.tsx"
+    },
+    {
+      "file": "app/providers.tsx",
+      "existed": true,
+      "baselineBytes": 4459,
+      "modifiedBytes": 9200,
+      "source": "56309ca742130e36d8d10fdb4f72de2a04cda02a:website/app/providers.tsx"
+    },
+    {
+      "file": "app/loading.tsx",
+      "existed": false,
+      "baselineBytes": null,
+      "modifiedBytes": 123,
+      "source": "56309ca742130e36d8d10fdb4f72de2a04cda02a:website/app/loading.tsx"
+    },
+    {
+      "file": "app/reader/loading.tsx",
+      "existed": false,
+      "baselineBytes": null,
+      "modifiedBytes": 126,
+      "source": "56309ca742130e36d8d10fdb4f72de2a04cda02a:website/app/reader/loading.tsx"
+    },
+    {
+      "file": "app/reader/reader-current-refinements.css",
+      "existed": true,
+      "baselineBytes": 456099,
+      "modifiedBytes": 551220,
+      "source": "56309ca742130e36d8d10fdb4f72de2a04cda02a:website/app/reader/reader-current-refinements.css"
+    },
+    {
+      "file": "app/home-optical-refinements.css",
+      "existed": false,
+      "baselineBytes": null,
+      "modifiedBytes": 72892,
+      "source": "56309ca742130e36d8d10fdb4f72de2a04cda02a:website/app/home-optical-refinements.css"
+    },
+    {
+      "file": "app/review/layout.tsx",
+      "existed": false,
+      "baselineBytes": null,
+      "modifiedBytes": 733,
+      "source": "56309ca742130e36d8d10fdb4f72de2a04cda02a:website/app/review/layout.tsx"
+    },
+    {
+      "file": "components/ReaderFontSettings.tsx",
+      "existed": true,
+      "baselineBytes": 7830,
+      "modifiedBytes": 10550,
+      "source": "56309ca742130e36d8d10fdb4f72de2a04cda02a:website/components/ReaderFontSettings.tsx"
+    },
+    {
+      "file": "components/ScreenEffectsSettings.tsx",
+      "existed": false,
+      "baselineBytes": null,
+      "modifiedBytes": 3092,
+      "source": "56309ca742130e36d8d10fdb4f72de2a04cda02a:website/components/ScreenEffectsSettings.tsx"
+    },
+    {
+      "file": "components/SiteSettingsWindow.tsx",
+      "existed": true,
+      "baselineBytes": 4635,
+      "modifiedBytes": 4465,
+      "source": "56309ca742130e36d8d10fdb4f72de2a04cda02a:website/components/SiteSettingsWindow.tsx"
+    },
+    {
+      "file": "components/FloatingWindow.tsx",
+      "existed": true,
+      "baselineBytes": 6492,
+      "modifiedBytes": 10307,
+      "source": "56309ca742130e36d8d10fdb4f72de2a04cda02a:website/components/FloatingWindow.tsx"
+    },
+    {
+      "file": "components/DraggableReaderWidget.tsx",
+      "existed": true,
+      "baselineBytes": 6577,
+      "modifiedBytes": 6803,
+      "source": "56309ca742130e36d8d10fdb4f72de2a04cda02a:website/components/DraggableReaderWidget.tsx"
+    },
+    {
+      "file": "components/RetroDisplaySurface.tsx",
+      "existed": false,
+      "baselineBytes": null,
+      "modifiedBytes": 8192,
+      "source": "56309ca742130e36d8d10fdb4f72de2a04cda02a:website/components/RetroDisplaySurface.tsx"
+    },
+    {
+      "file": "components/ReaderStyleScope.tsx",
+      "existed": false,
+      "baselineBytes": null,
+      "modifiedBytes": 429,
+      "source": "56309ca742130e36d8d10fdb4f72de2a04cda02a:website/components/ReaderStyleScope.tsx"
+    },
+    {
+      "file": "components/IOSViewportHost.tsx",
+      "existed": false,
+      "baselineBytes": null,
+      "modifiedBytes": 401,
+      "source": "56309ca742130e36d8d10fdb4f72de2a04cda02a:website/components/IOSViewportHost.tsx"
+    },
+    {
+      "file": "components/IOSHeaderSurface.tsx",
+      "existed": false,
+      "baselineBytes": null,
+      "modifiedBytes": 409,
+      "source": "56309ca742130e36d8d10fdb4f72de2a04cda02a:website/components/IOSHeaderSurface.tsx"
+    },
+    {
+      "file": "app/globals.css",
+      "existed": true,
+      "baselineBytes": 59924,
+      "modifiedBytes": 54882,
+      "source": "56309ca742130e36d8d10fdb4f72de2a04cda02a:website/app/globals.css"
+    },
+    {
+      "file": "app/ui-refinements.css",
+      "existed": true,
+      "baselineBytes": 523333,
+      "modifiedBytes": 519491,
+      "source": "56309ca742130e36d8d10fdb4f72de2a04cda02a:website/app/ui-refinements.css"
+    },
+    {
+      "file": "app/home-story-tree.css",
+      "existed": false,
+      "baselineBytes": null,
+      "modifiedBytes": 1723,
+      "source": "56309ca742130e36d8d10fdb4f72de2a04cda02a:website/app/home-story-tree.css"
+    },
+    {
+      "file": "app/home-controller-refinements.css",
+      "existed": false,
+      "baselineBytes": null,
+      "modifiedBytes": 28782,
+      "source": "56309ca742130e36d8d10fdb4f72de2a04cda02a:website/app/home-controller-refinements.css"
+    },
+    {
+      "file": "app/night-pixel-font.css",
+      "existed": false,
+      "baselineBytes": null,
+      "modifiedBytes": 767,
+      "source": "56309ca742130e36d8d10fdb4f72de2a04cda02a:website/app/night-pixel-font.css"
+    },
+    {
+      "file": "app/accepted-baseline-increments.css",
+      "existed": false,
+      "baselineBytes": null,
+      "modifiedBytes": 20137,
+      "source": "56309ca742130e36d8d10fdb4f72de2a04cda02a:website/app/accepted-baseline-increments.css"
+    },
+    {
+      "file": "app/material-study.css",
+      "existed": false,
+      "baselineBytes": null,
+      "modifiedBytes": 3789,
+      "source": "56309ca742130e36d8d10fdb4f72de2a04cda02a:website/app/material-study.css"
+    },
+    {
+      "file": "app/display-material.css",
+      "existed": false,
+      "baselineBytes": null,
+      "modifiedBytes": 5066,
+      "source": "56309ca742130e36d8d10fdb4f72de2a04cda02a:website/app/display-material.css"
+    },
+    {
+      "file": "app/loading-screen.css",
+      "existed": false,
+      "baselineBytes": null,
+      "modifiedBytes": 11370,
+      "source": "56309ca742130e36d8d10fdb4f72de2a04cda02a:website/app/loading-screen.css"
+    },
+    {
+      "file": "app/display-startup.css",
+      "existed": false,
+      "baselineBytes": null,
+      "modifiedBytes": 2303,
+      "source": "56309ca742130e36d8d10fdb4f72de2a04cda02a:website/app/display-startup.css"
+    },
+    {
+      "file": "app/ios-optical-pipeline.css",
+      "existed": false,
+      "baselineBytes": null,
+      "modifiedBytes": 2730,
+      "source": "56309ca742130e36d8d10fdb4f72de2a04cda02a:website/app/ios-optical-pipeline.css"
+    },
+    {
+      "file": "app/display-stability.css",
+      "existed": false,
+      "baselineBytes": null,
+      "modifiedBytes": 10858,
+      "source": "56309ca742130e36d8d10fdb4f72de2a04cda02a:website/app/display-stability.css"
+    },
+    {
+      "file": "app/reader/reader-editor-surface.css",
+      "existed": false,
+      "baselineBytes": null,
+      "modifiedBytes": 7130,
+      "source": "56309ca742130e36d8d10fdb4f72de2a04cda02a:website/app/reader/reader-editor-surface.css"
+    },
+    {
+      "file": "app/screen-effects.css",
+      "existed": false,
+      "baselineBytes": null,
+      "modifiedBytes": 30202,
+      "source": "56309ca742130e36d8d10fdb4f72de2a04cda02a:website/app/screen-effects.css"
+    },
+    {
+      "file": "app/night-display-surface.css",
+      "existed": false,
+      "baselineBytes": null,
+      "modifiedBytes": 1938,
+      "source": "56309ca742130e36d8d10fdb4f72de2a04cda02a:website/app/night-display-surface.css"
+    },
+    {
+      "file": "app/frost-glass-surface.css",
+      "existed": false,
+      "baselineBytes": null,
+      "modifiedBytes": 3668,
+      "source": "56309ca742130e36d8d10fdb4f72de2a04cda02a:website/app/frost-glass-surface.css"
+    },
+    {
+      "file": "app/frost-curved-edge.css",
+      "existed": false,
+      "baselineBytes": null,
+      "modifiedBytes": 2464,
+      "source": "56309ca742130e36d8d10fdb4f72de2a04cda02a:website/app/frost-curved-edge.css"
+    },
+    {
+      "file": "app/viewport-scene.css",
+      "existed": false,
+      "baselineBytes": null,
+      "modifiedBytes": 5407,
+      "source": "56309ca742130e36d8d10fdb4f72de2a04cda02a:website/app/viewport-scene.css"
+    },
+    {
+      "file": "app/cold-scene-composition.css",
+      "existed": false,
+      "baselineBytes": null,
+      "modifiedBytes": 1461,
+      "source": "56309ca742130e36d8d10fdb4f72de2a04cda02a:website/app/cold-scene-composition.css"
+    },
+    {
+      "file": "lib/loading-appearance-bootstrap.ts",
+      "existed": false,
+      "baselineBytes": null,
+      "modifiedBytes": 4905,
+      "source": "56309ca742130e36d8d10fdb4f72de2a04cda02a:website/lib/loading-appearance-bootstrap.ts"
+    },
+    {
+      "file": "components/DisplayStartupCover.tsx",
+      "existed": false,
+      "baselineBytes": null,
+      "modifiedBytes": 1274,
+      "source": "56309ca742130e36d8d10fdb4f72de2a04cda02a:website/components/DisplayStartupCover.tsx"
+    },
+    {
+      "file": "components/LoadingAssetReadiness.tsx",
+      "existed": false,
+      "baselineBytes": null,
+      "modifiedBytes": 2196,
+      "source": "56309ca742130e36d8d10fdb4f72de2a04cda02a:website/components/LoadingAssetReadiness.tsx"
+    },
+    {
+      "file": "components/LoadingScreen.tsx",
+      "existed": false,
+      "baselineBytes": null,
+      "modifiedBytes": 3884,
+      "source": "56309ca742130e36d8d10fdb4f72de2a04cda02a:website/components/LoadingScreen.tsx"
+    },
+    {
+      "file": "app/review/review-theme.css",
+      "existed": false,
+      "baselineBytes": null,
+      "modifiedBytes": 4361,
+      "source": "56309ca742130e36d8d10fdb4f72de2a04cda02a:website/app/review/review-theme.css"
+    },
+    {
+      "file": "lib/floating-geometry.ts",
+      "existed": false,
+      "baselineBytes": null,
+      "modifiedBytes": 2124,
+      "source": "56309ca742130e36d8d10fdb4f72de2a04cda02a:website/lib/floating-geometry.ts"
+    },
+    {
+      "file": "lib/floating-window-events.ts",
+      "existed": false,
+      "baselineBytes": null,
+      "modifiedBytes": 303,
+      "source": "56309ca742130e36d8d10fdb4f72de2a04cda02a:website/lib/floating-window-events.ts"
+    },
+    {
+      "file": "app/frost-translation-status.css",
+      "existed": false,
+      "baselineBytes": null,
+      "modifiedBytes": 5556,
+      "source": "56309ca742130e36d8d10fdb4f72de2a04cda02a:website/app/frost-translation-status.css"
+    },
+    {
+      "file": "app/frost-phosphor-ink.css",
+      "existed": false,
+      "baselineBytes": null,
+      "modifiedBytes": 721,
+      "source": "56309ca742130e36d8d10fdb4f72de2a04cda02a:website/app/frost-phosphor-ink.css"
+    },
+    {
+      "file": "app/frost-control-light.css",
+      "existed": false,
+      "baselineBytes": null,
+      "modifiedBytes": 7437,
+      "source": "56309ca742130e36d8d10fdb4f72de2a04cda02a:website/app/frost-control-light.css"
+    },
+    {
+      "file": "app/theme-source-badges.css",
+      "existed": false,
+      "baselineBytes": null,
+      "modifiedBytes": 1920,
+      "source": "56309ca742130e36d8d10fdb4f72de2a04cda02a:website/app/theme-source-badges.css"
+    },
+    {
+      "file": "app/theme-ranges.css",
+      "existed": false,
+      "baselineBytes": null,
+      "modifiedBytes": 998,
+      "source": "56309ca742130e36d8d10fdb4f72de2a04cda02a:website/app/theme-ranges.css"
+    },
+    {
+      "file": "app/night-interaction-contrast.css",
+      "existed": false,
+      "baselineBytes": null,
+      "modifiedBytes": 4313,
+      "source": "56309ca742130e36d8d10fdb4f72de2a04cda02a:website/app/night-interaction-contrast.css"
+    },
+    {
+      "file": "app/frost-sidebar-spacing.css",
+      "existed": false,
+      "baselineBytes": null,
+      "modifiedBytes": 678,
+      "source": "56309ca742130e36d8d10fdb4f72de2a04cda02a:website/app/frost-sidebar-spacing.css"
+    },
+    {
+      "file": "app/sidebar-active-path.css",
+      "existed": false,
+      "baselineBytes": null,
+      "modifiedBytes": 3013,
+      "source": "56309ca742130e36d8d10fdb4f72de2a04cda02a:website/app/sidebar-active-path.css"
+    },
+    {
+      "file": "app/reader-widget-spacing.css",
+      "existed": false,
+      "baselineBytes": null,
+      "modifiedBytes": 3489,
+      "source": "56309ca742130e36d8d10fdb4f72de2a04cda02a:website/app/reader-widget-spacing.css"
+    },
+    {
+      "file": "app/paper-source-exposure.css",
+      "existed": false,
+      "baselineBytes": null,
+      "modifiedBytes": 369,
+      "source": "56309ca742130e36d8d10fdb4f72de2a04cda02a:website/app/paper-source-exposure.css"
+    },
+    {
+      "file": "app/font-range-light.css",
+      "existed": false,
+      "baselineBytes": null,
+      "modifiedBytes": 4253,
+      "source": "56309ca742130e36d8d10fdb4f72de2a04cda02a:website/app/font-range-light.css"
+    },
+    {
+      "file": "components/ScanlineSurface.tsx",
+      "existed": false,
+      "baselineBytes": null,
+      "modifiedBytes": 292,
+      "source": "56309ca742130e36d8d10fdb4f72de2a04cda02a:website/components/ScanlineSurface.tsx"
+    },
+    {
+      "file": "components/NightDisplaySurface.tsx",
+      "existed": false,
+      "baselineBytes": null,
+      "modifiedBytes": 2097,
+      "source": "56309ca742130e36d8d10fdb4f72de2a04cda02a:website/components/NightDisplaySurface.tsx"
+    },
+    {
+      "file": "components/SceneRegistration.tsx",
+      "existed": false,
+      "baselineBytes": null,
+      "modifiedBytes": 6713,
+      "source": "56309ca742130e36d8d10fdb4f72de2a04cda02a:website/components/SceneRegistration.tsx"
+    },
+    {
+      "file": "components/TubeOpticalFilters.tsx",
+      "existed": false,
+      "baselineBytes": null,
+      "modifiedBytes": 4528,
+      "source": "56309ca742130e36d8d10fdb4f72de2a04cda02a:website/components/TubeOpticalFilters.tsx"
+    },
+    {
+      "file": "components/OpticalScrollbars.tsx",
+      "existed": false,
+      "baselineBytes": null,
+      "modifiedBytes": 12198,
+      "source": "56309ca742130e36d8d10fdb4f72de2a04cda02a:website/components/OpticalScrollbars.tsx"
+    },
+    {
+      "file": "lib/tube-lens.ts",
+      "existed": false,
+      "baselineBytes": null,
+      "modifiedBytes": 587,
+      "source": "56309ca742130e36d8d10fdb4f72de2a04cda02a:website/lib/tube-lens.ts"
+    },
+    {
+      "file": "components/DisplayReadiness.tsx",
+      "existed": false,
+      "baselineBytes": null,
+      "modifiedBytes": 3340,
+      "source": "56309ca742130e36d8d10fdb4f72de2a04cda02a:website/components/DisplayReadiness.tsx"
+    },
+    {
+      "file": "components/IOSOpticalPipeline.tsx",
+      "existed": false,
+      "baselineBytes": null,
+      "modifiedBytes": 1001,
+      "source": "56309ca742130e36d8d10fdb4f72de2a04cda02a:website/components/IOSOpticalPipeline.tsx"
+    },
+    {
+      "file": "lib/viewport-filter.ts",
+      "existed": false,
+      "baselineBytes": null,
+      "modifiedBytes": 2503,
+      "source": "56309ca742130e36d8d10fdb4f72de2a04cda02a:website/lib/viewport-filter.ts"
+    },
+    {
+      "file": "lib/cached-glass-mask.ts",
+      "existed": false,
+      "baselineBytes": null,
+      "modifiedBytes": 7653,
+      "source": "56309ca742130e36d8d10fdb4f72de2a04cda02a:website/lib/cached-glass-mask.ts"
+    },
+    {
+      "file": "lib/reader-style-scope.ts",
+      "existed": false,
+      "baselineBytes": null,
+      "modifiedBytes": 675,
+      "source": "56309ca742130e36d8d10fdb4f72de2a04cda02a:website/lib/reader-style-scope.ts"
+    },
+    {
+      "file": "lib/display-assets.ts",
+      "existed": false,
+      "baselineBytes": null,
+      "modifiedBytes": 2802,
+      "source": "56309ca742130e36d8d10fdb4f72de2a04cda02a:website/lib/display-assets.ts"
+    },
+    {
+      "file": "components/LoadingResolutionChart.tsx",
+      "existed": false,
+      "baselineBytes": null,
+      "modifiedBytes": 4688,
+      "source": "56309ca742130e36d8d10fdb4f72de2a04cda02a:website/components/LoadingResolutionChart.tsx"
+    },
+    {
+      "file": "components/LoadingDisplaySurface.tsx",
+      "existed": false,
+      "baselineBytes": null,
+      "modifiedBytes": 3119,
+      "source": "56309ca742130e36d8d10fdb4f72de2a04cda02a:website/components/LoadingDisplaySurface.tsx"
+    },
+    {
+      "file": "components/MagiusEmblem.tsx",
+      "existed": false,
+      "baselineBytes": null,
+      "modifiedBytes": 2202,
+      "source": "56309ca742130e36d8d10fdb4f72de2a04cda02a:website/components/MagiusEmblem.tsx"
+    },
+    {
+      "file": "lib/scene-registration.ts",
+      "existed": false,
+      "baselineBytes": null,
+      "modifiedBytes": 706,
+      "source": "56309ca742130e36d8d10fdb4f72de2a04cda02a:website/lib/scene-registration.ts"
+    },
+    {
+      "file": "app/scene-registration.css",
+      "existed": false,
+      "baselineBytes": null,
+      "modifiedBytes": 6172,
+      "source": "56309ca742130e36d8d10fdb4f72de2a04cda02a:website/app/scene-registration.css"
+    },
+    {
+      "file": "lib/optical-scroll.ts",
+      "existed": false,
+      "baselineBytes": null,
+      "modifiedBytes": 964,
+      "source": "56309ca742130e36d8d10fdb4f72de2a04cda02a:website/lib/optical-scroll.ts"
+    },
+    {
+      "file": "lib/scrollbar-occlusion.ts",
+      "existed": false,
+      "baselineBytes": null,
+      "modifiedBytes": 1396,
+      "source": "56309ca742130e36d8d10fdb4f72de2a04cda02a:website/lib/scrollbar-occlusion.ts"
+    },
+    {
+      "file": "app/optical-scrollbars.css",
+      "existed": false,
+      "baselineBytes": null,
+      "modifiedBytes": 1794,
+      "source": "56309ca742130e36d8d10fdb4f72de2a04cda02a:website/app/optical-scrollbars.css"
+    },
+    {
+      "file": "lib/display-font-readiness.ts",
+      "existed": false,
+      "baselineBytes": null,
+      "modifiedBytes": 989,
+      "source": "56309ca742130e36d8d10fdb4f72de2a04cda02a:website/lib/display-font-readiness.ts"
+    },
+    {
+      "file": "lib/film-readiness.ts",
+      "existed": false,
+      "baselineBytes": null,
+      "modifiedBytes": 698,
+      "source": "56309ca742130e36d8d10fdb4f72de2a04cda02a:website/lib/film-readiness.ts"
+    },
+    {
+      "file": "lib/display-publication.ts",
+      "existed": false,
+      "baselineBytes": null,
+      "modifiedBytes": 741,
+      "source": "56309ca742130e36d8d10fdb4f72de2a04cda02a:website/lib/display-publication.ts"
+    },
+    {
+      "file": "lib/ios-optics-diagnostics.ts",
+      "existed": false,
+      "baselineBytes": null,
+      "modifiedBytes": 3519,
+      "source": "56309ca742130e36d8d10fdb4f72de2a04cda02a:website/lib/ios-optics-diagnostics.ts"
+    },
+    {
+      "file": "public/textures/magi-tube-lens-512.png",
+      "existed": false,
+      "baselineBytes": null,
+      "modifiedBytes": 111444,
+      "source": "56309ca742130e36d8d10fdb4f72de2a04cda02a:website/public/textures/magi-tube-lens-512.png"
+    },
+    {
+      "file": "public/textures/magi-lofi-grain.png",
+      "existed": true,
+      "baselineBytes": 155538,
+      "modifiedBytes": 155538,
+      "source": "56309ca742130e36d8d10fdb4f72de2a04cda02a:website/public/textures/magi-lofi-grain.png"
+    },
+    {
+      "file": "public/textures/stories-untold/DirtHighContrast.png",
+      "existed": false,
+      "baselineBytes": null,
+      "modifiedBytes": 424357,
+      "source": "56309ca742130e36d8d10fdb4f72de2a04cda02a:website/public/textures/stories-untold/DirtHighContrast.png"
+    },
+    {
+      "file": "public/textures/stories-untold/2k_BG_Texture.png",
+      "existed": false,
+      "baselineBytes": null,
+      "modifiedBytes": 1158159,
+      "source": "56309ca742130e36d8d10fdb4f72de2a04cda02a:website/public/textures/stories-untold/2k_BG_Texture.png"
+    },
+    {
+      "file": "public/textures/stories-untold/NoiseAndGrain.png",
+      "existed": false,
+      "baselineBytes": null,
+      "modifiedBytes": 10905,
+      "source": "56309ca742130e36d8d10fdb4f72de2a04cda02a:website/public/textures/stories-untold/NoiseAndGrain.png"
+    },
+    {
+      "file": "public/textures/stories-untold/PixelOverlay_RGB_16.png",
+      "existed": false,
+      "baselineBytes": null,
+      "modifiedBytes": 129,
+      "source": "56309ca742130e36d8d10fdb4f72de2a04cda02a:website/public/textures/stories-untold/PixelOverlay_RGB_16.png"
+    },
+    {
+      "file": "public/textures/frost-glass-scratches.png",
+      "existed": false,
+      "baselineBytes": null,
+      "modifiedBytes": 192888,
+      "source": "56309ca742130e36d8d10fdb4f72de2a04cda02a:website/public/textures/frost-glass-scratches.png"
+    },
+    {
+      "file": "public/fonts/night-pixel/fusion-pixel-12px-monospaced-zh_hans.2026.07.20.woff2",
+      "existed": false,
+      "baselineBytes": null,
+      "modifiedBytes": 659528,
+      "source": "56309ca742130e36d8d10fdb4f72de2a04cda02a:website/public/fonts/night-pixel/fusion-pixel-12px-monospaced-zh_hans.2026.07.20.woff2"
+    },
+    {
+      "file": "public/fonts/night-pixel/fusion-pixel-12px-monospaced-ja.2026.07.20.woff2",
+      "existed": false,
+      "baselineBytes": null,
+      "modifiedBytes": 665140,
+      "source": "56309ca742130e36d8d10fdb4f72de2a04cda02a:website/public/fonts/night-pixel/fusion-pixel-12px-monospaced-ja.2026.07.20.woff2"
+    },
+    {
+      "file": "public/textures/paper-fibres-4192.svg",
+      "existed": false,
+      "baselineBytes": null,
+      "modifiedBytes": 8882,
+      "source": "56309ca742130e36d8d10fdb4f72de2a04cda02a:website/public/textures/paper-fibres-4192.svg"
+    },
+    {
+      "file": "public/textures/frost-phosphor-ink-mask.svg",
+      "existed": false,
+      "baselineBytes": null,
+      "modifiedBytes": 258792,
+      "source": "56309ca742130e36d8d10fdb4f72de2a04cda02a:website/public/textures/frost-phosphor-ink-mask.svg"
+    },
+    {
+      "file": "app/page.tsx",
+      "existed": true,
+      "baselineBytes": 136872,
+      "modifiedBytes": 137735,
+      "source": "retained-local-awaiting-wiring"
+    },
+    {
+      "file": "components/ClassicHome.tsx",
+      "existed": true,
+      "baselineBytes": 111427,
+      "modifiedBytes": 111915,
+      "source": "retained-local-awaiting-wiring"
+    },
+    {
+      "file": "app/reader/[id]/page.tsx",
+      "existed": true,
+      "baselineBytes": 119875,
+      "modifiedBytes": 121411,
+      "source": "retained-local-awaiting-wiring"
+    },
+    {
+      "file": "lib/floating-geometry.test.ts",
+      "existed": false,
+      "baselineBytes": null,
+      "modifiedBytes": 1094,
+      "source": "56309ca742130e36d8d10fdb4f72de2a04cda02a:website/lib/floating-geometry.test.ts"
+    },
+    {
+      "file": "lib/viewport-filter.test.ts",
+      "existed": false,
+      "baselineBytes": null,
+      "modifiedBytes": 1241,
+      "source": "56309ca742130e36d8d10fdb4f72de2a04cda02a:website/lib/viewport-filter.test.ts"
+    }
+  ],
+  "retainedDependencies": [
+    "components/CategoryLabelNormalizer.tsx",
+    "lib/use-ios-webkit.ts",
+    "lib/exedra-fonts.ts",
+    "lib/reader-fonts.ts",
+    "lib/reader-display-preferences.ts",
+    "lib/use-screen-effects.ts",
+    "components/ExedraFontSettings.tsx",
+    "lib/screen-effects.ts",
+    "lib/ios-optics.ts"
+  ],
+  "adaptations": [
+    "Preserve generic default category and product metadata",
+    "Mount exact shared optical stack in both retained home implementations and read/edit route",
+    "Keep generic voice/content adapters and reader event handlers unchanged",
+    "Limit startup cover to routes with optical readiness ownership",
+    "Name-color setting controls existing generic speaker chips"
+  ]
+}

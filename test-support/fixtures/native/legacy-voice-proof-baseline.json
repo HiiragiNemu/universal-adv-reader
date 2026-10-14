@@ -1,0 +1,756 @@
+{
+  "schema": "legacy-native-voice-proof-regression/v1",
+  "capturedAt": "2026-10-12T19:40:25.731Z",
+  "scope": "Nine source-evidenced native-voice/next-message pairs from the retained ATOM19/20/21 public baseline; positive and mutation-test fixtures, not an aggregate completeness oracle.",
+  "records": [
+    {
+      "storyId": "narcissu-3rd/nar1_00",
+      "cnEventId": "mjo-c0d",
+      "sourceSidecarPath": "apps/classic-reader/public/data/legacy-vn/narcissu-3rd/nar1_00.alignment.json",
+      "sourceSidecarSha256": "861fa7d3f37d6a035919640fb6192762406549030817d4a8a803ccb09375444f",
+      "sourceRouteSha256": "34922433d9981a2bee7d121a396225d80dc203d98c0d00f646a021c4912f6fc5",
+      "variantIds": {
+        "cn": "mjo/narcissu3/update.arc.unpacked/nar1_00",
+        "jp": "mjo/narcissu3/scenario.arc.unpacked/nar1_00"
+      },
+      "sourceGuards": {
+        "cnPlainSha256": "c1ae55682d541206c6e2bf24dc161b040f4505be893315b8364ef0b0b8069c9c",
+        "jpPlainSha256": "b6e92a3f64e6edb5007995917166443fa9bcbf2974dc30a211e0540b50a6ef41",
+        "cnScriptSha256": "3a8941ae7ee15550a27721390595ef1a0c7a153742e8a136fa9c286d104730ff",
+        "jpScriptSha256": "db25e75324948cd3d9394e595e33495ee7f9b5c1ce1b6edc8c0ed17237e39a48"
+      },
+      "proof": {
+        "cnEventId": "mjo-c0d",
+        "jpEventId": "mjo-bf9",
+        "method": "mapped-native-voice-next-message-branch-checked",
+        "cue": {
+          "cnCueId": "cue-8bdfad0e00df62cd",
+          "jpCueId": "cue-5e66fb75231bd98d",
+          "cnEventId": "mjo-c0d",
+          "jpEventId": "mjo-bf9",
+          "mediaId": "asset/a-426ca83a65b29d4e",
+          "occurrenceId": "narcissu-3rd/nar1_00:instruction:209"
+        },
+        "tokenRanges": {
+          "cn": [
+            209,
+            213
+          ],
+          "jp": [
+            209,
+            213
+          ]
+        },
+        "literalInstructionCorridors": {
+          "cn": [
+            "010807006e3030385f3200",
+            "1008f0fd2a81000000000100",
+            "010814004543484f20b4a6d3dab4f2bfaad7b4ccaca1a300",
+            "10084131808e000000000100"
+          ],
+          "jp": [
+            "010807006e3030385f3200",
+            "1008f0fd2a81000000000100",
+            "01080300814000",
+            "10084131808e000000000100"
+          ]
+        },
+        "controlEdges": {
+          "cn": [
+            {
+              "opcode": 2094,
+              "codeOffset": 36,
+              "sourceToken": 5,
+              "supported": true,
+              "targetCodeOffset": 114,
+              "targetToken": 15
+            }
+          ],
+          "jp": [
+            {
+              "opcode": 2094,
+              "codeOffset": 36,
+              "sourceToken": 5,
+              "supported": true,
+              "targetCodeOffset": 114,
+              "targetToken": 15
+            }
+          ]
+        }
+      },
+      "firstCandidate": {
+        "paired": false,
+        "aliasRetained": false,
+        "sidecarSha256": "9d02b8754f6e3c689cb2f866125b3a25da9a4d3ff44256c887e7add4b0b27e8e"
+      }
+    },
+    {
+      "storyId": "narcissu-3rd/nar1_01",
+      "cnEventId": "mjo-4140",
+      "sourceSidecarPath": "apps/classic-reader/public/data/legacy-vn/narcissu-3rd/nar1_01.alignment.json",
+      "sourceSidecarSha256": "bb3b9e2a34074627c0fbeed97f10ccaa98c097710a246111ebdfc44be903ba94",
+      "sourceRouteSha256": "02b3f2291b9a75b7dac01e8335e6da587382e1b9761cdcc435c3d9643cbe93a4",
+      "variantIds": {
+        "cn": "mjo/narcissu3/update.arc.unpacked/nar1_01",
+        "jp": "mjo/narcissu3/scenario.arc.unpacked/nar1_01"
+      },
+      "sourceGuards": {
+        "cnPlainSha256": "6d06fa0cc7a1bb84008af89e0238e987149401de7d5b786b9a644be708dd229f",
+        "jpPlainSha256": "7d1d78bf294ff9dda9e50a1f1ed35eef297aeffee4e18cbc543f57b81e3734bf",
+        "cnScriptSha256": "14c18c7dbc101051e60c50f70d528b1d9ed6b4d85dc9f64d793f24025ace4bf2",
+        "jpScriptSha256": "9f0c797eb885f5baaf7780cf9e2abbe65daa7157369b733ed829b5c9bd2ce97a"
+      },
+      "proof": {
+        "cnEventId": "mjo-4140",
+        "jpEventId": "mjo-47a7",
+        "method": "mapped-native-voice-next-message-branch-checked",
+        "cue": {
+          "cnCueId": "cue-dc362a15e06640cb",
+          "jpCueId": "cue-4fe4dc1d545aa518",
+          "cnEventId": "mjo-4140",
+          "jpEventId": "mjo-47a7",
+          "mediaId": "asset/a-ae70f41a50cd4a73",
+          "occurrenceId": "narcissu-3rd/nar1_01:instruction:1105"
+        },
+        "tokenRanges": {
+          "cn": [
+            1105,
+            1109
+          ],
+          "jp": [
+            1105,
+            1109
+          ]
+        },
+        "literalInstructionCorridors": {
+          "cn": [
+            "010808006e763035365f3200",
+            "1008f0fd2a81000000000100",
+            "010814004543484f20b4a6d3dab4f2bfaad7b4ccaca1a300",
+            "10084131808e000000000100"
+          ],
+          "jp": [
+            "010808006e763035365f3200",
+            "1008f0fd2a81000000000100",
+            "01080300814000",
+            "10084131808e000000000100"
+          ]
+        },
+        "controlEdges": {
+          "cn": [
+            {
+              "opcode": 2094,
+              "codeOffset": 36,
+              "sourceToken": 5,
+              "supported": true,
+              "targetCodeOffset": 114,
+              "targetToken": 15
+            }
+          ],
+          "jp": [
+            {
+              "opcode": 2094,
+              "codeOffset": 36,
+              "sourceToken": 5,
+              "supported": true,
+              "targetCodeOffset": 114,
+              "targetToken": 15
+            }
+          ]
+        }
+      },
+      "firstCandidate": {
+        "paired": true,
+        "aliasRetained": false,
+        "sidecarSha256": "c16be52a9adb4bc5f23d76da1edca1c3cf3071cd60eba76f46437bb067f4c6ca"
+      }
+    },
+    {
+      "storyId": "narcissu-3rd/nar1_03",
+      "cnEventId": "mjo-11c7",
+      "sourceSidecarPath": "apps/classic-reader/public/data/legacy-vn/narcissu-3rd/nar1_03.alignment.json",
+      "sourceSidecarSha256": "fed0254339c442cfeafb2a2dbfb936d448566a2aa9b5ee426fa9be815b06b522",
+      "sourceRouteSha256": "654b309194736effa207c941e194071be48bf0520321e9e179138596a23114ba",
+      "variantIds": {
+        "cn": "mjo/narcissu3/update.arc.unpacked/nar1_03",
+        "jp": "mjo/narcissu3/scenario.arc.unpacked/nar1_03"
+      },
+      "sourceGuards": {
+        "cnPlainSha256": "4334024f94667ea045f1b3b9cb9b0a734e3cceb55f020c9acec82cae8a31395f",
+        "jpPlainSha256": "44fd720c6247b6b6be6e34a8cc4f04e43589e7032706ec49b490868494f9b03b",
+        "cnScriptSha256": "b8ca27912a81a96276094f82aaa6e09de4bb8c5757d1c567809378a120bb5df7",
+        "jpScriptSha256": "a59e4a4f450a1e62c21a63b0b3aa98fa81c30d13ab30de80921d31de691409cc"
+      },
+      "proof": {
+        "cnEventId": "mjo-11c7",
+        "jpEventId": "mjo-1318",
+        "method": "mapped-native-voice-next-message-branch-checked",
+        "cue": {
+          "cnCueId": "cue-73e506c6d0901862",
+          "jpCueId": "cue-6cea62c113277226",
+          "cnEventId": "mjo-11c7",
+          "jpEventId": "mjo-1318",
+          "mediaId": "asset/a-bbf7365484e054c8",
+          "occurrenceId": "narcissu-3rd/nar1_03:instruction:313"
+        },
+        "tokenRanges": {
+          "cn": [
+            313,
+            317
+          ],
+          "jp": [
+            313,
+            317
+          ]
+        },
+        "literalInstructionCorridors": {
+          "cn": [
+            "010807006e3132315f3200",
+            "1008f0fd2a81000000000100",
+            "01080300a1a100",
+            "10084131808e000000000100"
+          ],
+          "jp": [
+            "010807006e3132315f3200",
+            "1008f0fd2a81000000000100",
+            "01080300814000",
+            "10084131808e000000000100"
+          ]
+        },
+        "controlEdges": {
+          "cn": [
+            {
+              "opcode": 2094,
+              "codeOffset": 36,
+              "sourceToken": 5,
+              "supported": true,
+              "targetCodeOffset": 114,
+              "targetToken": 15
+            }
+          ],
+          "jp": [
+            {
+              "opcode": 2094,
+              "codeOffset": 36,
+              "sourceToken": 5,
+              "supported": true,
+              "targetCodeOffset": 114,
+              "targetToken": 15
+            }
+          ]
+        }
+      },
+      "firstCandidate": {
+        "paired": true,
+        "aliasRetained": false,
+        "sidecarSha256": "6dae972f7fdb3b009f801dbeeffd9cfe1ca86e5b0a4fb5703ee9a78afa1883d7"
+      }
+    },
+    {
+      "storyId": "narcissu-3rd/nar2_11",
+      "cnEventId": "mjo-d5c",
+      "sourceSidecarPath": "apps/classic-reader/public/data/legacy-vn/narcissu-3rd/nar2_11.alignment.json",
+      "sourceSidecarSha256": "4e260654f05f0108683e434d4630ca69ae0e2e0086b4bc84dd82832b6f1ad942",
+      "sourceRouteSha256": "9c4811be80fd1a132f2a7fc53ef9d99f9c3f9ced2f7c1c0904982fa23cd7a146",
+      "variantIds": {
+        "cn": "mjo/narcissu3/update.arc.unpacked/nar2_11",
+        "jp": "mjo/narcissu3/scenario.arc.unpacked/nar2_11"
+      },
+      "sourceGuards": {
+        "cnPlainSha256": "322ed50eb28b8c14901fa8b1f70b1dbf4343b10f233aea46bdb6d1a0a968951c",
+        "jpPlainSha256": "ab5dc4f34b7ad26810ce791829d693035be8c7bafca1b7436be8614972fa72d6",
+        "cnScriptSha256": "33415b3229ab10234d0435565a40819364f6f5368fad329749685f69b5471181",
+        "jpScriptSha256": "1010d6ff6af0a5fd918290ec05c0ebd6413122df84e5018eafc024d277543269"
+      },
+      "proof": {
+        "cnEventId": "mjo-d5c",
+        "jpEventId": "mjo-e75",
+        "method": "mapped-native-voice-next-message-branch-checked",
+        "cue": {
+          "cnCueId": "cue-148621fb8b9d52ab",
+          "jpCueId": "cue-80ba20d9dfa359ad",
+          "cnEventId": "mjo-d5c",
+          "jpEventId": "mjo-e75",
+          "mediaId": "asset/a-f49d53f1c271b732",
+          "occurrenceId": "narcissu-3rd/nar2_11:instruction:250"
+        },
+        "tokenRanges": {
+          "cn": [
+            250,
+            254
+          ],
+          "jp": [
+            250,
+            254
+          ]
+        },
+        "literalInstructionCorridors": {
+          "cn": [
+            "01080d0068696d65315f303238375f3200",
+            "1008f0fd2a81000000000100",
+            "010814004543484f20b4a6d3dab4f2bfaad7b4ccaca1a300",
+            "10084131808e000000000100"
+          ],
+          "jp": [
+            "01080d0068696d65315f303238375f3200",
+            "1008f0fd2a81000000000100",
+            "01080300814000",
+            "10084131808e000000000100"
+          ]
+        },
+        "controlEdges": {
+          "cn": [
+            {
+              "opcode": 2094,
+              "codeOffset": 36,
+              "sourceToken": 5,
+              "supported": true,
+              "targetCodeOffset": 114,
+              "targetToken": 15
+            }
+          ],
+          "jp": [
+            {
+              "opcode": 2094,
+              "codeOffset": 36,
+              "sourceToken": 5,
+              "supported": true,
+              "targetCodeOffset": 114,
+              "targetToken": 15
+            }
+          ]
+        }
+      },
+      "firstCandidate": {
+        "paired": true,
+        "aliasRetained": false,
+        "sidecarSha256": "ce03d74e7e75ad4df1ee735e7aa9c0d0e7a34bf5e40f0ebcce2c1367ea2c58a3"
+      }
+    },
+    {
+      "storyId": "narcissu-3rd/nar1_02",
+      "cnEventId": "mjo-42b1",
+      "sourceSidecarPath": "apps/classic-reader/public/data/legacy-vn/narcissu-3rd/nar1_02.alignment.json",
+      "sourceSidecarSha256": "e3dde94d8acd5e335ceca583c5db784b46b6d579a0bdde83903572b31b75a80e",
+      "sourceRouteSha256": "54b94021cdf360c380d640afbeee1744ed96d0a2f82be730b1cbcb99b48c98cc",
+      "variantIds": {
+        "cn": "mjo/narcissu3/update.arc.unpacked/nar1_02",
+        "jp": "mjo/narcissu3/scenario.arc.unpacked/nar1_02"
+      },
+      "sourceGuards": {
+        "cnPlainSha256": "75b61f1c098591d5977affe8a9b236b029d4c6eb05e8d878542a13fc86bcb1c2",
+        "jpPlainSha256": "3a677e9d94f09d945d35be15052deb1ce86d795d8938ba5ec704953b965de47f",
+        "cnScriptSha256": "8de3539f2b27a1247f04e4acfedf2a8feece40dd4d1a452ccd2b1717469cf4cc",
+        "jpScriptSha256": "4d7fd1cc48cc936ffa450d0818837f416c8168690b00e5007b8187f4c6f34f54"
+      },
+      "proof": {
+        "cnEventId": "mjo-42b1",
+        "jpEventId": "mjo-4871",
+        "method": "mapped-native-voice-next-message-branch-checked",
+        "cue": {
+          "cnCueId": "cue-4e6454aefd0c3e43",
+          "jpCueId": "cue-6214401a122712fd",
+          "cnEventId": "mjo-42b1",
+          "jpEventId": "mjo-4871",
+          "mediaId": "asset/a-4cc4de4b0fbdf482",
+          "occurrenceId": "narcissu-3rd/nar1_02:instruction:1190"
+        },
+        "tokenRanges": {
+          "cn": [
+            1190,
+            1196
+          ],
+          "jp": [
+            1190,
+            1196
+          ]
+        },
+        "literalInstructionCorridors": {
+          "cn": [
+            "010807006e3038345f3200",
+            "1008f0fd2a81000000000100",
+            "000855000000",
+            "1008575bea49000000000100",
+            "010814004543484f20b4a6d3dab4f2bfaad7b4ccaca1a300",
+            "10084131808e000000000100"
+          ],
+          "jp": [
+            "010807006e3038345f3200",
+            "1008f0fd2a81000000000100",
+            "000855000000",
+            "1008575bea49000000000100",
+            "01080300814000",
+            "10084131808e000000000100"
+          ]
+        },
+        "controlEdges": {
+          "cn": [
+            {
+              "opcode": 2094,
+              "codeOffset": 36,
+              "sourceToken": 5,
+              "supported": true,
+              "targetCodeOffset": 114,
+              "targetToken": 15
+            }
+          ],
+          "jp": [
+            {
+              "opcode": 2094,
+              "codeOffset": 36,
+              "sourceToken": 5,
+              "supported": true,
+              "targetCodeOffset": 114,
+              "targetToken": 15
+            }
+          ]
+        }
+      },
+      "firstCandidate": {
+        "paired": true,
+        "aliasRetained": true,
+        "sidecarSha256": "5d2484f60bd9ca911be17c6e145daf94875fbccf5c05338d3e2ef667fe6ff862"
+      }
+    },
+    {
+      "storyId": "narcissu-3rd/nar1_08",
+      "cnEventId": "mjo-114e",
+      "sourceSidecarPath": "apps/classic-reader/public/data/legacy-vn/narcissu-3rd/nar1_08.alignment.json",
+      "sourceSidecarSha256": "656f930a1f7f0b334b46daffed747bfdbdd0c32f23a89e5d1b727ce8306a146f",
+      "sourceRouteSha256": "44a4a5889b89fcce723a410ee0d2f07b5b996df313026562272656c77fe0799b",
+      "variantIds": {
+        "cn": "mjo/narcissu3/update.arc.unpacked/nar1_08",
+        "jp": "mjo/narcissu3/scenario.arc.unpacked/nar1_08"
+      },
+      "sourceGuards": {
+        "cnPlainSha256": "7dbcdd385fc983ca8b6322b229017993406235d63205bbe55301e2d5f64a7beb",
+        "jpPlainSha256": "87f3be7f4352d160604f5c039cfd5bf110f56cc4ccd2882b397aaaeb9c4fd0fa",
+        "cnScriptSha256": "078b52d68aac668f952db888b2c4e1eff4413a3590421699eecc23f45e18a0cb",
+        "jpScriptSha256": "871ce27e2a2a8230d98dc00d1af51ccd61f4aef338bdf958e4976ddf4464b9ba"
+      },
+      "proof": {
+        "cnEventId": "mjo-114e",
+        "jpEventId": "mjo-1347",
+        "method": "mapped-native-voice-next-message-branch-checked",
+        "cue": {
+          "cnCueId": "cue-f67e376f50250a61",
+          "jpCueId": "cue-9c440e4bcbb35102",
+          "cnEventId": "mjo-114e",
+          "jpEventId": "mjo-1347",
+          "mediaId": "asset/a-4d792559cbd84e6d",
+          "occurrenceId": "narcissu-3rd/nar1_08:instruction:342"
+        },
+        "tokenRanges": {
+          "cn": [
+            342,
+            348
+          ],
+          "jp": [
+            342,
+            348
+          ]
+        },
+        "literalInstructionCorridors": {
+          "cn": [
+            "010809006e76333937625f3200",
+            "1008f0fd2a81000000000100",
+            "000864000000",
+            "1008575bea49000000000100",
+            "010814004543484f20b4a6d3dab4f2bfaad7b4ccaca1a300",
+            "10084131808e000000000100"
+          ],
+          "jp": [
+            "010809006e76333937625f3200",
+            "1008f0fd2a81000000000100",
+            "000864000000",
+            "1008575bea49000000000100",
+            "01080300814000",
+            "10084131808e000000000100"
+          ]
+        },
+        "controlEdges": {
+          "cn": [
+            {
+              "opcode": 2094,
+              "codeOffset": 36,
+              "sourceToken": 5,
+              "supported": true,
+              "targetCodeOffset": 114,
+              "targetToken": 15
+            }
+          ],
+          "jp": [
+            {
+              "opcode": 2094,
+              "codeOffset": 36,
+              "sourceToken": 5,
+              "supported": true,
+              "targetCodeOffset": 114,
+              "targetToken": 15
+            }
+          ]
+        }
+      },
+      "firstCandidate": {
+        "paired": true,
+        "aliasRetained": true,
+        "sidecarSha256": "4b63e54a661369d37fdb97cd38c0b20c3e7f6ba378a4f5e913d4a96bb08a58fb"
+      }
+    },
+    {
+      "storyId": "narcissu-3rd/nar1_08",
+      "cnEventId": "mjo-2246",
+      "sourceSidecarPath": "apps/classic-reader/public/data/legacy-vn/narcissu-3rd/nar1_08.alignment.json",
+      "sourceSidecarSha256": "656f930a1f7f0b334b46daffed747bfdbdd0c32f23a89e5d1b727ce8306a146f",
+      "sourceRouteSha256": "44a4a5889b89fcce723a410ee0d2f07b5b996df313026562272656c77fe0799b",
+      "variantIds": {
+        "cn": "mjo/narcissu3/update.arc.unpacked/nar1_08",
+        "jp": "mjo/narcissu3/scenario.arc.unpacked/nar1_08"
+      },
+      "sourceGuards": {
+        "cnPlainSha256": "7dbcdd385fc983ca8b6322b229017993406235d63205bbe55301e2d5f64a7beb",
+        "jpPlainSha256": "87f3be7f4352d160604f5c039cfd5bf110f56cc4ccd2882b397aaaeb9c4fd0fa",
+        "cnScriptSha256": "078b52d68aac668f952db888b2c4e1eff4413a3590421699eecc23f45e18a0cb",
+        "jpScriptSha256": "871ce27e2a2a8230d98dc00d1af51ccd61f4aef338bdf958e4976ddf4464b9ba"
+      },
+      "proof": {
+        "cnEventId": "mjo-2246",
+        "jpEventId": "mjo-265e",
+        "method": "mapped-native-voice-next-message-branch-checked",
+        "cue": {
+          "cnCueId": "cue-ca43b1132c893534",
+          "jpCueId": "cue-3994ab9810b1a2fe",
+          "cnEventId": "mjo-2246",
+          "jpEventId": "mjo-265e",
+          "mediaId": "asset/a-91867c23a4ae8f45",
+          "occurrenceId": "narcissu-3rd/nar1_08:instruction:679"
+        },
+        "tokenRanges": {
+          "cn": [
+            679,
+            685
+          ],
+          "jp": [
+            679,
+            685
+          ]
+        },
+        "literalInstructionCorridors": {
+          "cn": [
+            "010808006e763431305f3200",
+            "1008f0fd2a81000000000100",
+            "000864000000",
+            "1008575bea49000000000100",
+            "010814004543484f20b4a6d3dab4f2bfaad7b4ccaca1a300",
+            "10084131808e000000000100"
+          ],
+          "jp": [
+            "010808006e763431305f3200",
+            "1008f0fd2a81000000000100",
+            "000864000000",
+            "1008575bea49000000000100",
+            "01080300814000",
+            "10084131808e000000000100"
+          ]
+        },
+        "controlEdges": {
+          "cn": [
+            {
+              "opcode": 2094,
+              "codeOffset": 36,
+              "sourceToken": 5,
+              "supported": true,
+              "targetCodeOffset": 114,
+              "targetToken": 15
+            }
+          ],
+          "jp": [
+            {
+              "opcode": 2094,
+              "codeOffset": 36,
+              "sourceToken": 5,
+              "supported": true,
+              "targetCodeOffset": 114,
+              "targetToken": 15
+            }
+          ]
+        }
+      },
+      "firstCandidate": {
+        "paired": true,
+        "aliasRetained": true,
+        "sidecarSha256": "4b63e54a661369d37fdb97cd38c0b20c3e7f6ba378a4f5e913d4a96bb08a58fb"
+      }
+    },
+    {
+      "storyId": "narcissu-3rd/nar2_17",
+      "cnEventId": "mjo-366a",
+      "sourceSidecarPath": "apps/classic-reader/public/data/legacy-vn/narcissu-3rd/nar2_17.alignment.json",
+      "sourceSidecarSha256": "dba11a4b6feca71fbdd5ec4bcd079a54e61071f040b01f33825c18c2c3523e16",
+      "sourceRouteSha256": "88d12d956018d56695055716a1d50873bff45b9368f51954228032c86ae774eb",
+      "variantIds": {
+        "cn": "mjo/narcissu3/update.arc.unpacked/nar2_17",
+        "jp": "mjo/narcissu3/scenario.arc.unpacked/nar2_17"
+      },
+      "sourceGuards": {
+        "cnPlainSha256": "6699b6bae00793494513c659807532bd2b62bc129b08af52f970c059d10fa14e",
+        "jpPlainSha256": "a1bea6013a9daecea2914564a74d7a6e715759124bd74e3392d6b3b70333dc30",
+        "cnScriptSha256": "e35a1b2292ac5a81995c17eb5b31dca37c92720108ecba9e21f966f775dc5daa",
+        "jpScriptSha256": "63497078f7c2d14e9d041ca3d92bcf79028fb67c5b095c145e13e2498b4c5763"
+      },
+      "proof": {
+        "cnEventId": "mjo-366a",
+        "jpEventId": "mjo-3b78",
+        "method": "mapped-native-voice-next-message-branch-checked",
+        "cue": {
+          "cnCueId": "cue-067bc6a78510edff",
+          "jpCueId": "cue-8b7fa1145d9d7c93",
+          "cnEventId": "mjo-366a",
+          "jpEventId": "mjo-3b78",
+          "mediaId": "asset/a-5dfdcef8943d6982",
+          "occurrenceId": "narcissu-3rd/nar2_17:instruction:972"
+        },
+        "tokenRanges": {
+          "cn": [
+            972,
+            978
+          ],
+          "jp": [
+            972,
+            978
+          ]
+        },
+        "literalInstructionCorridors": {
+          "cn": [
+            "010810006f6e6e616e6f6b6f5f303135325f3200",
+            "1008f0fd2a81000000000100",
+            "000850000000",
+            "1008575bea49000000000100",
+            "010814004543484f20b4a6d3dab4f2bfaad7b4ccaca1a300",
+            "10084131808e000000000100"
+          ],
+          "jp": [
+            "010810006f6e6e616e6f6b6f5f303135325f3200",
+            "1008f0fd2a81000000000100",
+            "000850000000",
+            "1008575bea49000000000100",
+            "01080300814000",
+            "10084131808e000000000100"
+          ]
+        },
+        "controlEdges": {
+          "cn": [
+            {
+              "opcode": 2094,
+              "codeOffset": 36,
+              "sourceToken": 5,
+              "supported": true,
+              "targetCodeOffset": 114,
+              "targetToken": 15
+            }
+          ],
+          "jp": [
+            {
+              "opcode": 2094,
+              "codeOffset": 36,
+              "sourceToken": 5,
+              "supported": true,
+              "targetCodeOffset": 114,
+              "targetToken": 15
+            }
+          ]
+        }
+      },
+      "firstCandidate": {
+        "paired": true,
+        "aliasRetained": true,
+        "sidecarSha256": "fefbbfff952ff0affb152373cfa37cb5794b4a855afaf7c10c67b0895b539bf0"
+      }
+    },
+    {
+      "storyId": "narcissu-3rd/nar2_18",
+      "cnEventId": "mjo-e3a",
+      "sourceSidecarPath": "apps/classic-reader/public/data/legacy-vn/narcissu-3rd/nar2_18.alignment.json",
+      "sourceSidecarSha256": "61f4746458e192f6e08afeacedb1b076d4d1bf4c1f18430ba2829f01cbc64683",
+      "sourceRouteSha256": "70168a3c6eadcd7a1cf987c6b6bca1bc94b4423ed437cae2e29a7056c7a96871",
+      "variantIds": {
+        "cn": "mjo/narcissu3/update.arc.unpacked/nar2_18",
+        "jp": "mjo/narcissu3/scenario.arc.unpacked/nar2_18"
+      },
+      "sourceGuards": {
+        "cnPlainSha256": "34dee131c685a4a2d7c0aff0801de04a08176d2a6df073e4644cff7e969fec51",
+        "jpPlainSha256": "27a0da97053ae5e1ea9ea8885b619c4fd97786edf98cea7b4f0c795310486d1a",
+        "cnScriptSha256": "cf61fa2afdeadaf0078a1cd72b68ab1d9e65a7e382d35d51984bbb356a55e664",
+        "jpScriptSha256": "bed76e61f864aaec30e2934aa0ba554c158f12edef97f5a29cdd0b31646a4099"
+      },
+      "proof": {
+        "cnEventId": "mjo-e3a",
+        "jpEventId": "mjo-eee",
+        "method": "mapped-native-voice-next-message-branch-checked",
+        "cue": {
+          "cnCueId": "cue-2719da6918c2d683",
+          "jpCueId": "cue-b6ddf64572b53387",
+          "cnEventId": "mjo-e3a",
+          "jpEventId": "mjo-eee",
+          "mediaId": "asset/a-362eb4b38fc296f3",
+          "occurrenceId": "narcissu-3rd/nar2_18:instruction:247"
+        },
+        "tokenRanges": {
+          "cn": [
+            247,
+            253
+          ],
+          "jp": [
+            247,
+            253
+          ]
+        },
+        "literalInstructionCorridors": {
+          "cn": [
+            "01080f0073657473756d695f303338375f3200",
+            "1008f0fd2a81000000000100",
+            "00085a000000",
+            "1008575bea49000000000100",
+            "010814004543484f20b4a6d3dab4f2bfaad7b4ccaca1a300",
+            "10084131808e000000000100"
+          ],
+          "jp": [
+            "01080f0073657473756d695f303338375f3200",
+            "1008f0fd2a81000000000100",
+            "00085a000000",
+            "1008575bea49000000000100",
+            "01080300814000",
+            "10084131808e000000000100"
+          ]
+        },
+        "controlEdges": {
+          "cn": [
+            {
+              "opcode": 2094,
+              "codeOffset": 36,
+              "sourceToken": 5,
+              "supported": true,
+              "targetCodeOffset": 114,
+              "targetToken": 15
+            }
+          ],
+          "jp": [
+            {
+              "opcode": 2094,
+              "codeOffset": 36,
+              "sourceToken": 5,
+              "supported": true,
+              "targetCodeOffset": 114,
+              "targetToken": 15
+            }
+          ]
+        }
+      },
+      "firstCandidate": {
+        "paired": true,
+        "aliasRetained": true,
+        "sidecarSha256": "1e4072ec66d7b17578142c0dccc96ba1c7958380fde7118bf5d4b5e850648b0e"
+      }
+    }
+  ]
+}

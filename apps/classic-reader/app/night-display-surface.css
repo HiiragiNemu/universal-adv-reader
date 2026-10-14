@@ -1,0 +1,36 @@
+@layer reader-visual-revision {
+  html:is([data-reader-theme='dark'],[data-reader-theme='frost'])[data-screen-curvature='true'] body
+    :is(#magi-home-display,#magi-reader-display):has(.magi-night-surface[data-lens-ready='true']) {
+    filter: var(--magi-active-tube-filter) !important;
+  }
+  .magi-night-lens { position: absolute; pointer-events: none; }
+  .magi-night-surface {
+    position: fixed; inset: 0; z-index: 1000; pointer-events: none;
+    border-radius: 18px / 13px;
+    background: radial-gradient(ellipse at 50% 47%,transparent 37%,rgba(0,0,0,.025) 64%,rgba(0,0,0,.16) 92%,rgba(0,0,0,.34) 100%);
+    box-shadow: inset 0 0 3px rgba(218,233,213,.22),inset 0 0 17px rgba(0,0,0,.6);
+  }
+  .magi-night-phosphor {
+    position: fixed; inset: 0; z-index: 1000; pointer-events: none;
+    /* Restore the pre-split 56d6b235e phosphor raster: 0.6px / 2px,
+       composed under grain with soft-light, not the newer irregular SVG lines. */
+    background: repeating-linear-gradient(0deg,rgba(5,0,2,.52) 0 .6px,transparent .6px 2px),
+      url('/textures/stories-untold/NoiseAndGrain.png') 0 0 / 128px 64px repeat,
+      url('/textures/stories-untold/PixelOverlay_RGB_16.png') 0 0 / 4px 4px repeat;
+    background-blend-mode: multiply,soft-light,normal; mix-blend-mode: soft-light;
+    opacity: var(--magi-tube-scan,.28);
+  }
+  .magi-night-grain {
+    position: fixed; inset: 0; z-index: 1000; pointer-events: none;
+    background: url('/textures/magi-lofi-grain.png') 7px 13px / 384px 384px repeat,
+      url('/textures/magi-lofi-grain.png') 7px 13px / 384px 384px repeat;
+    background-blend-mode: screen; mix-blend-mode: screen;
+    opacity: .495; filter: sepia(.2) hue-rotate(42deg) saturate(.72);
+  }
+  html[data-night-phosphor='amber'] .magi-night-grain {
+    opacity: .66; filter: sepia(.65);
+  }
+  .magi-screen-scanlines[data-scanline-profile='night'] {
+    opacity: var(--magi-tube-scan,.28); mix-blend-mode: multiply;
+  }
+}

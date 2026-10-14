@@ -1,0 +1,3 @@
+# Native scripts, exported text and provenance hashes are byte-sensitive.
+# Preserve exact bytes on every platform; do not apply automatic CRLF conversion.
+* -text

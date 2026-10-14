@@ -1,0 +1,20 @@
+/* Real CJK pixel faces. Merely declaring a face does not request its file;
+   the Reader night-only, preference-gated selectors consume these variables. */
+@font-face {
+  font-family: 'MagiReaderNightPixelSC';
+  src: url('/fonts/night-pixel/fusion-pixel-12px-monospaced-zh_hans.2026.07.20.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'MagiReaderNightPixelJP';
+  src: url('/fonts/night-pixel/fusion-pixel-12px-monospaced-ja.2026.07.20.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+:root {
+  --magi-night-pixel-font: 'MagiReaderNightPixelSC', 'MS Gothic', monospace;
+  --magi-night-pixel-font-jp: 'MagiReaderNightPixelJP', 'MS Gothic', monospace;
+}

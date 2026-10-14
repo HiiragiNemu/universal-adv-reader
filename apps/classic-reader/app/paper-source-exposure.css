@@ -1,0 +1,8 @@
+@layer reader-visual-revision {
+  /* Only lift the existing progress paint. No hue rotation, changed ink,
+     percentage, endpoint geometry, or other theme receives this adjustment. */
+  html[data-reader-theme='paper'] body #magi-home-display.magi-home-shell.magi-home-paper-root
+    .magi-home-category-filter::before {
+    filter: brightness(1.16) !important;
+  }
+}

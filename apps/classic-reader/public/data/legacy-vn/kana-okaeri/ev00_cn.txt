@@ -1,0 +1,4 @@
+--- Start: EV00.txt Section 1 ---
+旁白: 开始
+选项: 【我曾经有个妹妹。】 -> group_end-001
+选项: 【我有个妹妹。】 -> group_end-001
