@@ -1,0 +1,246 @@
+{
+  "schema": "adv-contributors/v1",
+  "policy": "原署名分作品和版本保留；作者、翻译、润色、录入、校对等角色不相互冒认；名单次序不代表贡献大小。",
+  "groups": [
+    {
+      "title": "原作与剧本作者",
+      "source": "Narcissu 3rd 原生作品选择菜单；KANA 原生 STAFF_C／ST1_07；小说原署名",
+      "roles": [
+        [
+          "Narcissu／小小的伊丽丝／小说",
+          "片岡とも（文本中亦署作“片冈とも”）"
+        ],
+        [
+          "死神的新娘",
+          "ごぉ"
+        ],
+        [
+          "−Ci− 向着卷云的高度",
+          "酸橙ひびき"
+        ],
+        [
+          "弥赛亚",
+          "早狩武志"
+        ],
+        [
+          "KANA: Okaeri!! 剧本",
+          "山田一"
+        ]
+      ]
+    },
+    {
+      "title": "风铃汉化组 · Narcissu 3rd",
+      "source": "游戏内《汉化后记》，2012 年 3 月",
+      "roles": [
+        [
+          "主催",
+          "huoyanyan"
+        ],
+        [
+          "后期担当",
+          "弥赛亚"
+        ],
+        [
+          "初翻",
+          "小炎　落樱时节　右代宫绪　little487　寒蝉　style7th　50kg　觅　扇扇"
+        ],
+        [
+          "校对",
+          "dameyui　风铃　寒蝉　小天　月夜　星屑　阁阁　蓝秀吉　深海の布"
+        ],
+        [
+          "润色",
+          "七羽叶　大林　SS-sam　牧者　Konpaku777　XL beycom　优衣　KZ　长尾庆虎　蓝斯洛　被遗忘的某蛋　天下骡子是一家　樱花　lrs　藤原妹红　山闲　海洋　　konomi　小SA　弥赛亚"
+        ],
+        [
+          "修图",
+          "HY　LeKFigure"
+        ],
+        [
+          "程序",
+          "憧憬这一切　冰丨枫"
+        ],
+        [
+          "测试",
+          "十六　绝对宅男　霜　海洋　Nichijou　黑白配　月夜　若忆　Konpaku777　水水　原界　╰＇韶华"
+        ]
+      ],
+      "sourceSha256": "6599758b9f98e3f86df77c8acbee886b700d55a5ad34f1200bb068a4169167d4",
+      "sourceHref": "/data/legacy-vn/narcissu-3rd/product_cn.txt"
+    },
+    {
+      "title": "风铃汉化组 · Narcissu 10th",
+      "source": "N10 ver1.1 补丁 readme，2025 年 10 月 31 日；各岗位保留原署名",
+      "roles": [
+        [
+          "统筹",
+          "huoyanyan、镜月☆萌虎"
+        ],
+        [
+          "翻译",
+          "master 、素晴Kw、所以说、雨のmusique、yukina ibara、Master chef、素晴Kw、梦特"
+        ],
+        [
+          "校对",
+          "孤狼、呪い、alsrf、yukina ibara、huoyanyan、SweeTnT、梦特、云彩之塔塔主、托托巴斯"
+        ],
+        [
+          "后期",
+          "1000th、stay cool、嘎嘎嘎068、七夜志贵"
+        ],
+        [
+          "润色",
+          "huoyanyan、梦特、嘎嘎嘎068、托托巴斯"
+        ],
+        [
+          "程序",
+          "天殇、镜月☆萌虎"
+        ],
+        [
+          "美工",
+          "心神不宁"
+        ],
+        [
+          "测试",
+          "y酱、Setsumi22、flunk、selenar、yoko4ever"
+        ]
+      ],
+      "sourceSha256": "7c1e7b6877532c0c8310a82050addb6f5400945cf066900a0123779be633f9dd"
+    },
+    {
+      "title": "妹乃萌汉化组 · KANA",
+      "source": "按站长提供的汉化版本归属记录；未署名的个人不代填姓名",
+      "roles": [
+        [
+          "中文化",
+          "妹乃萌汉化组"
+        ]
+      ]
+    },
+    {
+      "title": "《水仙花》轻小说 · 中文资料原署名",
+      "source": "水仙1 轻小说版.txt，第 4–11 行",
+      "roles": [
+        [
+          "作者",
+          "片冈とも"
+        ],
+        [
+          "译者",
+          "陆怡帆"
+        ],
+        [
+          "录入、校对",
+          "盆栽"
+        ],
+        [
+          "插画",
+          "ごとＰ（封面）、いくたたかのん（内页）"
+        ],
+        [
+          "图源",
+          "明日酱X傲娇"
+        ],
+        [
+          "整理出处",
+          "泉川生徒会"
+        ]
+      ],
+      "sourceSha256": "57ec173f4bd9934fbb56db58e899eee4cc410aa86c4310d2e227cef69670c533",
+      "sourceHref": "/data/legacy-vn/supplement-sources/57ec173f4bd9934fbb56db58e899eee4cc410aa86c4310d2e227cef69670c533.txt"
+    },
+    {
+      "title": "KEY FANS CLUB／KeyFC · Narcissu 1st 中文版及附属作品",
+      "source": "Narcissu -1st-.txt 的原中文化后记（2005 年 12 月 31 日）",
+      "roles": [
+        [
+          "策划、翻译",
+          "梦想残光霞"
+        ],
+        [
+          "文章润色",
+          "Liknight（Julian·Liknight Hu de Milchstrasse）"
+        ],
+        [
+          "美工、附加壁纸",
+          "hino"
+        ],
+        [
+          "繁体中文转换、校对",
+          "cheong00"
+        ],
+        [
+          "MAD／屏幕保护程序",
+          "6MB"
+        ],
+        [
+          "MAD 插图",
+          "hoshie☆绘"
+        ],
+        [
+          "OK 字幕",
+          "福尔摩斯"
+        ],
+        [
+          "系统主题套件",
+          "翎萘"
+        ],
+        [
+          "文本整理",
+          "沙发的均势"
+        ]
+      ],
+      "sourceSha256": "0e833345f16b26dcb6f2e14536f96650d378ddf32c3a85041810138bfa0624e2",
+      "sourceHref": "/data/legacy-vn/supplement-sources/0e833345f16b26dcb6f2e14536f96650d378ddf32c3a85041810138bfa0624e2.txt"
+    },
+    {
+      "title": "《姬子终章》· 独立中文整理文本",
+      "source": "姬子终章.txt 第 3 行的翻译署名；不与合集内其他汉化版本混同",
+      "roles": [
+        [
+          "翻译",
+          "50kg（Narcissu 吧）"
+        ]
+      ],
+      "sourceSha256": "e75e8ead6cdf54dffa164dcfdc933532d2fbf13692b8f044a7348bf2a867254e",
+      "sourceHref": "/data/legacy-vn/supplement-sources/e75e8ead6cdf54dffa164dcfdc933532d2fbf13692b8f044a7348bf2a867254e.txt"
+    },
+    {
+      "title": "其他文本来源与整理",
+      "source": "保留各原文件的独立版本、署名与转载说明，不将转载者冒认为译者",
+      "roles": [
+        [
+          "死神的新娘 · 整理文本署名",
+          "Phantasya Palace"
+        ],
+        [
+          "小说另一整理版／第二卷原整理本",
+          "178 在线轻小说站（原文件发布来源）"
+        ],
+        [
+          "《1980》原作",
+          "片岡とも"
+        ],
+        [
+          "未具个人署名的版本",
+          "《1993》、SIDE 2nd 及其他整理文本继续保留全文出处；不编造译者、录入或校对者。"
+        ]
+      ],
+      "sourceHref": "/data/legacy-vn/supplement-sources/20749060ce92c1cd2931645fe3ea29a5e6fcb020d41796d711dce1f35a883e64.txt"
+    },
+    {
+      "title": "网站制作、整理与补译",
+      "source": "本站角色与汉化原作贡献分开记录",
+      "roles": [
+        [
+          "创建、开发、维护与资料整合",
+          "MadeInMagius"
+        ],
+        [
+          "站长补译",
+          "MadeInMagius（仅补充译文保持待校对，不改变原汉化的已校对状态）"
+        ]
+      ]
+    }
+  ]
+}

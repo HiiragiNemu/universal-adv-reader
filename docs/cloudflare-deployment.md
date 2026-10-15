@@ -1,4 +1,16 @@
-# Cloudflare Direct Upload 发布与维护
+# Cloudflare Git 云构建与 Direct Upload 维护
+
+## Git 云构建（2026-10-15 新入口）
+
+`npm run build:cloudflare:git` 在 Cloudflare 自身的构建环境完成工作，不调用本机、不执行 GitHub Actions、不需要 Cloudflare/GitHub 发布令牌。Pages 在该命令成功后自行发布 `work/cloudflare-app/out`。精确配置见 README。
+
+流程：核对 CF_PAGES_COMMIT_SHA／main → 安装 apps/classic-reader/package-lock.json → 从受控公开来源恢复九项原有界面资产并核对完整 SHA-256 → 使用受控媒体映射 → 根测试／应用测试／TypeScript／依赖审计 → 静态导出／原文指纹与资源边界校验。所有生成文件均在 ignored work 中，来源工作区必须干净。现有原音频不随网页代码更新重复上传。
+
+`universal-adv-reader-git` 为独立 Git 迁移候选。旧 `universal-adv-reader` 是 Direct Upload 项目，Cloudflare API 已拒绝更新 source。同名重建会使旧的不可变部署 URL 失效，因此未经站长再次确认不删除旧项目。候选发布、正式域名切换和人工验收分开记录。
+
+旧直传工具继续保留，供过渡维护、媒体新增和应急使用，不作为云端自动发布的依赖。媒体变更需要先发布新的内容寻址媒体，再把 `config/cloudflare/media-*.json` 中的公开映射和校验值更新至 Git；不能只编辑清单假装对象已上传。现有界面字体只从既有公开 origin 恢复相同字节，不进源码仓库。
+
+Cloudflare 云构建报告属于代码／数据检查；真实浏览器的语音、编辑和五主题矩阵仍使用仓库的浏览器检查器对对应公开版本执行，不把云构建日志冒充浏览器／iOS 真机验收。
 
 ## 独立项目及权限
 
@@ -6,7 +18,7 @@
 
 运行时原始资源来自相邻 `../narcissu-kana-research`，可用 `ADV_CORPUS_REPOSITORY` 指定。本机已有依赖已从其他项目的目录联接改为物理独立安装。使用 Node.js 24、`npm --prefix apps/classic-reader ci` 复现锁定依赖；使用已有 Wrangler 登录或正常 `wrangler login`，不读取和复制凭据文件。
 
-## 日常更新
+## 过渡期／应急直接发布
 
 ```powershell
 Set-Location -LiteralPath 'D:\PROGETTO\universal-adv-reader'
@@ -30,7 +42,7 @@ npm run publish:cloudflare
 
 ## 为什么不消耗 GitHub Actions
 
-所有构建和验收在本机执行，Wrangler 把预构建文件直接上传 Cloudflare。没有 Actions workflow，没有通过推送触发云端构建，也没有连接 Cloudflare Git 构建；GitHub 代码同步与网站部署分开。此保证指 GitHub Actions 运行额度，不表示 Cloudflare 存储和请求量永远零费用；R2 和大音频 Worker 仍按账户自身配额／套餐计量。
+Git 模式由 Cloudflare 拉取和构建，GitHub Actions 保持关闭；旧直传模式则由本机 Wrangler 上传预构建文件。两种模式均不需要 Actions workflow。此保证指 GitHub Actions 运行额度，不表示 Cloudflare 存储和请求量永远零费用；R2 和大音频 Worker 仍按账户自身配额／套餐计量。
 
 站长于 2026-10-15 明确授权后，创建公开仓库 `HiiragiNemu/universal-adv-reader` 并绑定为本机 `origin`；默认分支为 `main`，仓库级 Actions 已关闭。当前工程正常提交推送，不强推、不覆写历史，不改动已归档的 `narcissu-kana-research` 或其他 Reader 仓库。正式发布前确认本机提交与 `origin/main` 一致、工作区干净；发布后检查 `release.json` 的 `gitRevision` 和 `sourceDirty=false`，再读回 GitHub 与公网版本。
 

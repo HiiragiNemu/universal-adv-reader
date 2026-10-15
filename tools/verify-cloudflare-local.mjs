@@ -18,7 +18,7 @@ const run = async (name, cmd, args, cwd = root) => {
 };
 await run('root-tests-final', process.execPath, ['--test', 'test/*.test.js']);
 await run('app-tests-final', process.execPath, ['--experimental-strip-types', '--test',
-  'lib/reader-character-ruler.test.ts', 'lib/reader-display-preferences.test.ts', 'lib/screen-effects.test.ts',
+  'lib/machine-review-panel.test.ts', 'lib/reader-character-ruler.test.ts', 'lib/reader-display-preferences.test.ts', 'lib/screen-effects.test.ts',
   'lib/floating-geometry.test.ts', 'lib/viewport-filter.test.ts', 'lib/legacy-vn-corpus.test.ts',
   'lib/legacy-vn-voice-routing.test.ts', 'lib/legacy-vn-voice-routing-corpus.test.ts'], app);
 await run('typescript-final', process.execPath, ['node_modules/typescript/bin/tsc', '--noEmit', '--incremental', 'false'], app);

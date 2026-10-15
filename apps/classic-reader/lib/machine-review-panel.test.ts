@@ -6,6 +6,7 @@ import {
   isMachineReviewPanelCollapsedValue,
   readMachineReviewPanelCollapsed,
   writeMachineReviewPanelCollapsed,
+  getMachineReviewPanelServerSnapshot,
 } from './machine-review-panel.ts';
 
 test('machine-review panel stores and restores both display choices', () => {
@@ -17,7 +18,7 @@ test('machine-review panel stores and restores both display choices', () => {
     },
   };
 
-  assert.equal(readMachineReviewPanelCollapsed(() => storage), false);
+  assert.equal(readMachineReviewPanelCollapsed(() => storage), true);
   assert.equal(writeMachineReviewPanelCollapsed(() => storage, true), true);
   assert.equal(
     values.get(MACHINE_REVIEW_PANEL_STORAGE_KEY),
@@ -32,15 +33,17 @@ test('machine-review panel stores and restores both display choices', () => {
   assert.equal(readMachineReviewPanelCollapsed(() => storage), false);
 });
 
-test('machine-review panel falls back to expanded when storage is blocked', () => {
+test('machine-review panel defaults to collapsed without changing an explicitly saved expanded choice', () => {
   const blocked = () => {
     throw new Error('storage blocked');
   };
 
-  assert.equal(readMachineReviewPanelCollapsed(blocked), false);
+  assert.equal(readMachineReviewPanelCollapsed(blocked), true);
   assert.equal(writeMachineReviewPanelCollapsed(blocked, true), false);
-  assert.equal(isMachineReviewPanelCollapsedValue(null), false);
-  assert.equal(isMachineReviewPanelCollapsedValue('unexpected'), false);
+  assert.equal(isMachineReviewPanelCollapsedValue(null), true);
+  assert.equal(isMachineReviewPanelCollapsedValue('unexpected'), true);
+  assert.equal(isMachineReviewPanelCollapsedValue('expanded'), false);
+  assert.equal(getMachineReviewPanelServerSnapshot(), true);
 });
 
 test('home keeps a keyboard-accessible compact reopen entry without replacing existing controls', () => {
@@ -51,7 +54,7 @@ test('home keeps a keyboard-accessible compact reopen entry without replacing ex
   assert.match(source, /aria-expanded=\{!machineReviewPanelCollapsed\}/u);
   assert.match(source, /打开' : '收起'\}校验清单/u);
   assert.match(source, /className=\{`inline-flex[\s\S]*?md:hidden/u);
-  assert.match(source, /只看来源待核验剧情/u);
+  assert.match(source, /只看补译待校对剧情/u);
   assert.match(source, /href="\/review\/machine-translations"/u);
   assert.match(source, /href="\/review\/submissions"/u);
 });

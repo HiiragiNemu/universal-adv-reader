@@ -106,7 +106,7 @@ type CategoryConfig = {
 };
 
 export const CATEGORY_CONFIG: Record<string, CategoryConfig> = {
-  main_story: { label: 'Narcissu 10th Anniversary Anthology Project', icon: Book },
+  main_story: { label: 'Narcissu 10th', icon: Book },
   event_story: { label: 'Narcissu 3rd', icon: Calendar },
   character_story: { label: 'KANA: Okaeri!!', icon: User },
   supplement_story: {label:'Narcissu 文本资料',icon:FileText},

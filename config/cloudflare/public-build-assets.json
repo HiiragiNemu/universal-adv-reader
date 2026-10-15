@@ -1,0 +1,87 @@
+{
+  "schema": "adv-public-build-assets/v1",
+  "description": "Already-published UI assets restored by pinned SHA-256; never commit font binaries or machine credentials.",
+  "files": [
+    {
+      "path": "fonts/exedra-jp-story-newcinema.687768deeccd.full.woff2",
+      "bytes": 3370224,
+      "sha256": "687768deeccd50f66a4aefc7f30bc7d8095be462628507715f26be7f8eea7762",
+      "sources": [
+        "https://5d87cd3c.magireader.pages.dev/fonts/exedra-jp-story-newcinema.687768deeccd.full.woff2",
+        "https://magireader.pages.dev/fonts/exedra-jp-story-newcinema.687768deeccd.full.woff2"
+      ]
+    },
+    {
+      "path": "fonts/exedra-jp-ui-tsuku.431afe7080dc.full.woff2",
+      "bytes": 2750668,
+      "sha256": "431afe7080dcb5c6337bf2ab6ec1d04449123aa4841a1f85a9bdfd3c5bd8b7b3",
+      "sources": [
+        "https://5d87cd3c.magireader.pages.dev/fonts/exedra-jp-ui-tsuku.431afe7080dc.full.woff2",
+        "https://magireader.pages.dev/fonts/exedra-jp-ui-tsuku.431afe7080dc.full.woff2"
+      ]
+    },
+    {
+      "path": "fonts/exedra-zh-tangyuan.0901bb62ccd1.full.woff2",
+      "bytes": 1386160,
+      "sha256": "0901bb62ccd113f214201a8760146875bec0769664765a66172a5fe79e19b411",
+      "sources": [
+        "https://5d87cd3c.magireader.pages.dev/fonts/exedra-zh-tangyuan.0901bb62ccd1.full.woff2",
+        "https://magireader.pages.dev/fonts/exedra-zh-tangyuan.0901bb62ccd1.full.woff2"
+      ]
+    },
+    {
+      "path": "fonts/magi-cn-body.55b5dffd7c95.full.woff2",
+      "bytes": 8071072,
+      "sha256": "55b5dffd7c9505c54b83cb3c4f86b70cb67bc45b3a1588a972155e650fa95adf",
+      "sources": [
+        "https://5d87cd3c.magireader.pages.dev/fonts/magi-cn-body.55b5dffd7c95.full.woff2",
+        "https://magireader.pages.dev/fonts/magi-cn-body.55b5dffd7c95.full.woff2"
+      ]
+    },
+    {
+      "path": "fonts/magi-cn-title.9d7f95bc2c7d.full.woff2",
+      "bytes": 3642144,
+      "sha256": "9d7f95bc2c7d747f5a744f43cfc2e2de988ce03aea4ab58677fa2ab1ee2789f5",
+      "sources": [
+        "https://5d87cd3c.magireader.pages.dev/fonts/magi-cn-title.9d7f95bc2c7d.full.woff2",
+        "https://magireader.pages.dev/fonts/magi-cn-title.9d7f95bc2c7d.full.woff2"
+      ]
+    },
+    {
+      "path": "fonts/magi-jp-body.3f691cafa21d.full.woff2",
+      "bytes": 1252504,
+      "sha256": "3f691cafa21dd5c5095b72112bad2ced77c47f8acdb2257ea7b69b0b9b59addb",
+      "sources": [
+        "https://5d87cd3c.magireader.pages.dev/fonts/magi-jp-body.3f691cafa21d.full.woff2",
+        "https://magireader.pages.dev/fonts/magi-jp-body.3f691cafa21d.full.woff2"
+      ]
+    },
+    {
+      "path": "fonts/magi-jp-title.b9c8b6b87882.full.woff2",
+      "bytes": 1109948,
+      "sha256": "b9c8b6b878826f6ec2a97cfa013c7b30590eb6ffe9d32bbefb02b2f95a87f7c5",
+      "sources": [
+        "https://5d87cd3c.magireader.pages.dev/fonts/magi-jp-title.b9c8b6b87882.full.woff2",
+        "https://magireader.pages.dev/fonts/magi-jp-title.b9c8b6b87882.full.woff2"
+      ]
+    },
+    {
+      "path": "fonts/night-pixel/fusion-pixel-12px-monospaced-ja.2026.07.20.woff2",
+      "bytes": 665140,
+      "sha256": "c59c40673fe7e6641693da93224596c88af4fae464611fa89131be8ecbdeb32a",
+      "sources": [
+        "https://5d87cd3c.magireader.pages.dev/fonts/night-pixel/fusion-pixel-12px-monospaced-ja.2026.07.20.woff2",
+        "https://magireader.pages.dev/fonts/night-pixel/fusion-pixel-12px-monospaced-ja.2026.07.20.woff2"
+      ]
+    },
+    {
+      "path": "fonts/night-pixel/fusion-pixel-12px-monospaced-zh_hans.2026.07.20.woff2",
+      "bytes": 659528,
+      "sha256": "7a08aa2bf8970d10bc0f902e9256b86628f17e119efcd9bbcd6c4a169290d867",
+      "sources": [
+        "https://5d87cd3c.magireader.pages.dev/fonts/night-pixel/fusion-pixel-12px-monospaced-zh_hans.2026.07.20.woff2",
+        "https://magireader.pages.dev/fonts/night-pixel/fusion-pixel-12px-monospaced-zh_hans.2026.07.20.woff2"
+      ]
+    }
+  ]
+}

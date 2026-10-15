@@ -4,14 +4,14 @@ export const MACHINE_REVIEW_PANEL_STORAGE_KEY =
 const COLLAPSED_VALUE = 'collapsed';
 const EXPANDED_VALUE = 'expanded';
 const CHANGE_EVENT = 'magi-reader-machine-review-panel-change';
-let volatileCollapsed = false;
+let volatileCollapsed = true;
 
 type StorageReader = Pick<Storage, 'getItem'>;
 type StorageWriter = Pick<Storage, 'setItem'>;
 
 export const isMachineReviewPanelCollapsedValue = (
   value: string | null,
-): boolean => value === COLLAPSED_VALUE;
+): boolean => value !== EXPANDED_VALUE;
 
 export const readMachineReviewPanelCollapsed = (
   getStorage: () => StorageReader,
@@ -21,7 +21,7 @@ export const readMachineReviewPanelCollapsed = (
       getStorage().getItem(MACHINE_REVIEW_PANEL_STORAGE_KEY),
     );
   } catch {
-    return false;
+    return true;
   }
 };
 
@@ -54,7 +54,7 @@ export const getMachineReviewPanelSnapshot = (): boolean => {
   }
 };
 
-export const getMachineReviewPanelServerSnapshot = (): boolean => false;
+export const getMachineReviewPanelServerSnapshot = (): boolean => true;
 
 export const subscribeMachineReviewPanel = (
   onStoreChange: () => void,

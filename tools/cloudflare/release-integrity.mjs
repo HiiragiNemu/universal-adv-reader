@@ -60,7 +60,7 @@ export async function buildInputHashes(root) {
     }
   }
   const code = file => /\.(?:[cm]?[jt]sx?|json|jsonc|py|css)$/.test(file) && !/\.(?:test|spec)\.[cm]?[jt]sx?$/.test(file);
-  for (const folder of ['apps/classic-reader/app', 'apps/classic-reader/components', 'apps/classic-reader/lib', 'packages', 'tools']) {
+  for (const folder of ['apps/classic-reader/app', 'apps/classic-reader/components', 'apps/classic-reader/lib', 'packages', 'tools', 'config']) {
     await walk(path.join(root, folder), code);
   }
   for (const file of ['package.json', 'apps/classic-reader/package.json', 'apps/classic-reader/package-lock.json',

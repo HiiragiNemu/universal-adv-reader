@@ -5,7 +5,7 @@
 **公共网站：** https://universal-adv-reader.pages.dev/apps/web  
 **公开源码与投稿：** https://github.com/HiiragiNemu/universal-adv-reader
 
-仓库为 public；`package.json` 中的 `private: true` 仅防止误发布到 npm。仓库级 GitHub Actions 已关闭，代码同步和 Cloudflare 直接发布不依赖 Actions。
+仓库为 public；`package.json` 中的 `private: true` 仅防止误发布到 npm。仓库级 GitHub Actions 已关闭，代码同步、Cloudflare Git 云构建和保留的直接发布工具均不依赖 Actions。
 
 ## 当前内容与校对口径
 
@@ -30,21 +30,23 @@ npm run serve:classic
 
 ## Cloudflare 公共发布：不使用 GitHub Actions
 
-独立公共站点名为 `universal-adv-reader`。使用本机构建和 Wrangler Direct Upload，不配置 GitHub Actions 或 Cloudflare Git 自动构建。
+日常网站构建新增 Cloudflare 原生 Git 模式：`main` 的提交由 Cloudflare 拉取，使用嵌套依赖锁安装、校验云端输入、执行根／应用测试、TypeScript 与依赖审计，再生成静态网站。无需站长电脑在线，无需 GitHub Actions，也不向 GitHub 提交字体或游戏音频二进制。
 
-```powershell
-npm run publish:cloudflare
-```
+Cloudflare 项目构建设置：
 
-该命令执行根测试、应用测试、TypeScript、生产依赖审计、静态构建、本机生产浏览器验收、Cloudflare 上传以及公网版本／HTTP／浏览器复核。先把确认的改动提交并推送到本仓库 `main`，再发布；发布回执必须与当前 Git 提交一致。失败则停止，不使用旧产物假报成功。
+| 设置 | 值 |
+|---|---|
+| Git 仓库 / 生产分支 | `HiiragiNemu/universal-adv-reader` / `main` |
+| 构建命令 | `npm run build:cloudflare:git` |
+| 输出目录 | `work/cloudflare-app/out` |
+| 根目录 | 仓库根目录 |
+| 环境变量 | `NODE_VERSION=24.19.0`, `SKIP_DEPENDENCY_INSTALL=1`, `NODE_OPTIONS=--max-old-space-size=6144` |
 
-首次准备或媒体发生变化时：
+原站 `universal-adv-reader.pages.dev` 创建为 Direct Upload，Cloudflare 不允许原地增加 Git source。迁移候选 `universal-adv-reader-git` 用于先验证原生 Git 构建；同名重建及旧固定版本链接失效需要单独确认，在切换前原正式项目不删除。实际服务版本与构建模式以站点 `release.json` 的 `gitRevision`、`sourceDirty`、`delivery` 为准，不把候选成功冒充正式域名完成切换。
 
-```powershell
-npm run publish:cloudflare -- --media
-```
+`config/cloudflare` 保存可复现的公开媒体映射和已发布界面资产的完整 SHA-256。构建只接受精确字节，缺少资产或源不符时失败，不借用本机研究目录、不降级成缺字字体。媒体仍由现有静态分片及 R2 提供，不因普通代码／正文更新而重复上传。
 
-运行前需要已登录的 Wrangler，以及现有媒体输入。网络代理仅对当前命令设置，不改全局代理。完整操作与安全边界见 [Cloudflare 部署说明](docs/cloudflare-deployment.md)。
+保留的 `npm run publish:cloudflare` 是迁移前维护／应急直传链，执行本机和公网真实浏览器验收；它不是 Git 云构建的前置步骤。Cloudflare 云端的测试与构建通过不等于 iOS 真机或人工全文验收。完整操作、媒体更新和回退边界见 [Cloudflare 部署说明](docs/cloudflare-deployment.md)。
 
 ### 本地功能与公网功能
 

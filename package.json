@@ -21,7 +21,8 @@
     "test": "node --test \"test/*.test.js\"",
     "verify:corpus": "node tools/verify-full-corpus.mjs",
     "check": "node tools/check.mjs && node --test \"test/*.test.js\"",
-    "review:github": "node tools/import-github-review.mjs"
+    "review:github": "node tools/import-github-review.mjs",
+    "build:cloudflare:git": "node tools/build-cloudflare-git.mjs"
   },
   "repository": {
     "type": "git",
