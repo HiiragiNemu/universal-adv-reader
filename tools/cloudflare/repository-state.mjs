@@ -20,3 +20,17 @@ export function assertPublishedRepository(root, run = spawnSync) {
   if (records.length !== 1 || records[0][0] !== revision || records[0][1] !== 'refs/heads/main') throw Error('Remote main differs from local HEAD; synchronize before publication');
   return { repository: 'HiiragiNemu/universal-adv-reader', branch, revision, clean: true, remoteMatches: true };
 }
+
+/** Bind an existing build to the clean, published source at the upload boundary.
+ * File hashes alone cannot detect a newer commit with identical source bytes.
+ * This guard also applies when the upload helper is invoked directly. */
+export function assertReleaseRepository(root, receipt, run = spawnSync) {
+  if (!receipt || !/^[a-f0-9]{40}$/.test(receipt.gitRevision || '') || receipt.sourceDirty !== false) {
+    throw Error('Build receipt must identify a clean published Git revision; rebuild before publication');
+  }
+  const state = assertPublishedRepository(root, run);
+  if (receipt.gitRevision !== state.revision) {
+    throw Error('Build receipt revision differs from current published main; rebuild before publication');
+  }
+  return state;
+}

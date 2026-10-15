@@ -44,6 +44,7 @@ try {
   await run('tools/cloudflare/verify-browser.mjs', [], { ADV_TEST_BASE: local, ADV_TEST_NAME: 'release-local/content' });
   await run('tools/cloudflare/verify-public-workflow.mjs', [], { ADV_TEST_BASE: local, ADV_TEST_NAME: 'release-local/workflow' });
   await run('tools/cloudflare/verify-search-recovery.mjs', [], { ADV_TEST_BASE: local, ADV_TEST_NAME: 'release-local/search' });
+  await run('tools/cloudflare/verify-expanded-matrix.mjs', [], { ADV_TEST_BASE: local, ADV_TEST_NAME: 'release-local/matrix' });
 } finally {
   preview.kill();
   await fs.writeFile(path.join(root, 'reports/verification/cloudflare-20261014/release-preview.log'), previewLog);
@@ -54,6 +55,7 @@ const site = 'https://universal-adv-reader.pages.dev';
 await run('tools/cloudflare/verify-browser.mjs', [], { ADV_TEST_BASE: site, ADV_TEST_NAME: 'release-public/content' });
 await run('tools/cloudflare/verify-public-workflow.mjs', [], { ADV_TEST_BASE: site, ADV_TEST_NAME: 'release-public/workflow' });
 await run('tools/cloudflare/verify-search-recovery.mjs', [], { ADV_TEST_BASE: site, ADV_TEST_NAME: 'release-public/search' });
+await run('tools/cloudflare/verify-expanded-matrix.mjs', [], { ADV_TEST_BASE: site, ADV_TEST_NAME: 'release-public/matrix' });
 console.log('\nCloudflare publication and public verification passed. No GitHub Actions were invoked. Git synchronization remains a separate explicitly authorized operation.');
 } finally {
   await releaseLock.close();

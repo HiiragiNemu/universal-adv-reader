@@ -6,6 +6,7 @@ import { spawn } from 'node:child_process';
 import { createRequire } from 'node:module';
 import { publicInputHashes } from './cloudflare/static-projection.mjs';
 import { readPublishedJson, sameRelease, buildInputHashes, assertFileMapUnchanged, assertOutputUnchanged } from './cloudflare/release-integrity.mjs';
+import { assertPublishedRepository, assertReleaseRepository } from './cloudflare/repository-state.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const work = path.join(root, 'work/cloudflare');
@@ -57,6 +58,7 @@ const lock = await fs.open(lockFile, 'wx').catch(error => { throw Error(error.co
 try {
   await lock.writeFile(JSON.stringify({ pid: process.pid, startedAt: new Date().toISOString() }));
   if (process.argv.includes('--media')) {
+    console.log('Media repository preflight:', JSON.stringify(assertPublishedRepository(root)));
     const result = await run(['deploy', '--config', path.join(work, 'large-media/wrangler.jsonc')], 'large-worker-deploy');
     const url = result.match(/https:\/\/universal-adv-large-media\.[a-z0-9.-]+\.workers\.dev/);
     if (!url) throw Error('Dedicated large-media Worker URL not returned');
@@ -108,9 +110,10 @@ try {
     try { pending = await readJson(pendingFile); } catch { /* First upload. */ }
     const verifyOnly = process.argv.includes('--verify-only');
     if (verifyOnly && (!pending || !sameRelease(pending.release, receipt))) throw Error('No matching recorded upload to verify; use normal publish');
+    console.log('Upload repository preflight:', JSON.stringify(assertReleaseRepository(root, receipt)));
     if (!verifyOnly && (!pending || !sameRelease(pending.release, receipt))) {
       await ensurePages(project);
-      const output = await run(['pages', 'deploy', receipt.output, '--project-name', project, '--branch', 'main', '--commit-dirty=' + receipt.sourceDirty, '--commit-message', 'Universal ADV ' + receipt.buildId + ' local direct upload; no Actions'], 'deploy-reader');
+      const output = await run(['pages', 'deploy', receipt.output, '--project-name', project, '--branch', 'main', '--commit-hash', receipt.gitRevision, '--commit-dirty=' + receipt.sourceDirty, '--commit-message', 'Universal ADV ' + receipt.buildId + ' local direct upload; no Actions'], 'deploy-reader');
       const immutable = output.match(/https:\/\/[a-f0-9]+\.universal-adv-reader\.pages\.dev/);
       if (!immutable) throw Error('Upload returned no immutable deployment URL; inspect deployment log before retry');
       const { sourceFiles, inputFiles, publicFiles, inventory, rscAliases, output: outputPath, ...release } = receipt;

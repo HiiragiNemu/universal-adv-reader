@@ -1,6 +1,8 @@
 import assert from 'node:assert/strict';
+import fs from 'node:fs/promises';
 import test from 'node:test';
 import { assertPublishedRepository } from '../tools/cloudflare/repository-state.mjs';
+import * as repositoryState from '../tools/cloudflare/repository-state.mjs';
 const revision='a'.repeat(40);
 const values={
   'branch --show-current':'main',
@@ -26,4 +28,28 @@ test('dirty state, wrong branch and wrong repository fail before querying remote
 test('stale remote, missing refs and Git command failures cannot be accepted as current publication',()=>{
   for(const remote of ['b'.repeat(40)+'\trefs/heads/main','',revision+'\trefs/heads/main\n'+'b'.repeat(40)+'\trefs/heads/other'])assert.throws(()=>assertPublishedRepository('.',runner({'ls-remote --exit-code origin refs/heads/main':remote})));
   assert.throws(()=>assertPublishedRepository('.',()=>({status:1,stdout:''})));
+});
+
+test('the upload boundary rejects a receipt from a different commit even when source file bytes match',()=>{
+  assert.equal(typeof repositoryState.assertReleaseRepository,'function');
+  const receipt={gitRevision:revision,sourceDirty:false};
+  assert.equal(repositoryState.assertReleaseRepository('.',receipt,runner()).revision,revision);
+  assert.throws(()=>repositoryState.assertReleaseRepository('.',{...receipt,gitRevision:'b'.repeat(40)},runner()),/receipt.*revision/i);
+});
+
+test('the upload boundary rejects dirty or missing receipt identity and a moved remote',()=>{
+  assert.equal(typeof repositoryState.assertReleaseRepository,'function');
+  for(const receipt of [null,{}, {gitRevision:revision,sourceDirty:true},{gitRevision:revision}]){
+    assert.throws(()=>repositoryState.assertReleaseRepository('.',receipt,runner()));
+  }
+  assert.throws(()=>repositoryState.assertReleaseRepository('.',{gitRevision:revision,sourceDirty:false},runner({'ls-remote --exit-code origin refs/heads/main':'b'.repeat(40)+'\trefs/heads/main'})));
+});
+
+test('direct upload rechecks repository state and all page/theme combinations belong to the release gates',async()=>{
+  const deploy=await fs.readFile(new URL('../tools/deploy-cloudflare.mjs',import.meta.url),'utf8');
+  const release=await fs.readFile(new URL('../tools/release-cloudflare.mjs',import.meta.url),'utf8');
+  assert.match(deploy,/assertReleaseRepository\(root, receipt\)/);
+  assert(deploy.indexOf('assertReleaseRepository(root, receipt)')<deploy.indexOf("['pages', 'deploy', receipt.output"));
+  assert.match(release,/verify-expanded-matrix\.mjs[^\n]+release-local\/matrix/);
+  assert.match(release,/verify-expanded-matrix\.mjs[^\n]+release-public\/matrix/);
 });
