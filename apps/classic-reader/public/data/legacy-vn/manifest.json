@@ -1,8 +1,8 @@
 {
   "schema": "classic-reader-resource-bundle/v1",
   "result": "PASS",
-  "revision": "selection-v1-reviewed-518-included-200-excluded-318--content-selection-ee66555b6c481c4a97ba--reader-v5-mjo-1086-curated-1-ikura-120-events-499330-archived-518-visible-200-zh-263--content-selection-ee66555b6c481c4a97ba--titles-v5-nodes-410-zh-410-ja-410--content-selection-ee66555b6c481c4a97ba--sha256-95d800c5dd2b7d8dfd0008405a88b79004cf25749ad15f0e354c17706c158eff",
-  "sourcePipelineRevision": "sha256-95d800c5dd2b7d8dfd0008405a88b79004cf25749ad15f0e354c17706c158eff",
+  "revision": "selection-v1-reviewed-518-included-200-excluded-318--content-selection-ee66555b6c481c4a97ba--reader-v5-mjo-1086-curated-1-ikura-120-events-499330-archived-518-visible-200-zh-263--content-selection-ee66555b6c481c4a97ba--titles-v5-nodes-410-zh-410-ja-410--content-selection-ee66555b6c481c4a97ba--sha256-3c58ba9ddd136b19f5139ad3cd5ce0634e7fde47c9a5804562b3c34111950e14",
+  "sourcePipelineRevision": "sha256-3c58ba9ddd136b19f5139ad3cd5ce0634e7fde47c9a5804562b3c34111950e14",
   "sourceBridgeRevision": "reader-v5-mjo-1086-curated-1-ikura-120-events-499330-archived-518-visible-200-zh-263--content-selection-ee66555b6c481c4a97ba",
   "sourceTitleRevision": "titles-v5-nodes-410-zh-410-ja-410--content-selection-ee66555b6c481c4a97ba",
   "sourceManifests": {

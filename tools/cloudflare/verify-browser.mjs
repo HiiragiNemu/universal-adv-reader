@@ -50,7 +50,7 @@ try{
  });
  await check('Original Chinese speaker and actual voice playback still work after content revisions',async()=>{
   await reader('legacy-narcissu-3rd-nard14','对哥哥');const names=await browser.evaluate("document.querySelector('#reader-document').innerText");assert(names.includes('千里')&&names.includes('チサト'));
-  await browser.click('[aria-label="展开全部剧情语音"]');await browser.wait("!!document.querySelector('[data-voice-cue-id] button')");await browser.click('[data-voice-cue-id] button');
+  assert.equal(await browser.evaluate("document.querySelector('[aria-label=\"收起全部剧情语音\"]')?.getAttribute('aria-expanded')"),'true');await browser.wait("!!document.querySelector('[data-voice-cue-id] button')");await browser.click('[data-voice-cue-id] button');
   await browser.wait("window.__readerAudio.some(a=>a.currentTime>0.1&&a.readyState>=2&&!a.error)",20000);
   await browser.wait("window.__readerAudio.some(a=>Number.isFinite(a.duration)&&a.duration>0.5&&a.readyState>=3&&!a.error&&a.seekable.length>0&&a.seekable.end(a.seekable.length-1)>0)",30000);
   const seek=await browser.evaluate(`(async()=>{const a=window.__readerAudio.find(a=>Number.isFinite(a.duration)&&a.duration>0.5&&a.readyState>=3&&!a.error);a.pause();const target=a.duration/3;a.currentTime=target;await a.play();await new Promise(r=>setTimeout(r,250));return {url:a.currentSrc,target,time:a.currentTime,duration:a.duration,error:a.error?.code??null};})()`);

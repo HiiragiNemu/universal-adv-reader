@@ -1,7 +1,7 @@
 import type { StoryLine } from './story-parser.ts';
 import type { LegacyVoiceCue, LegacyVoiceRouteDocument, NativePresentationGroup } from './legacy-vn-voice-routing.ts';
 import { legacyVoiceRoutePath } from './legacy-vn-voice-routing.ts';
-import { buildSharedNativeAlignment, type NativeAlignedRow, type ReviewedBilingualPassage } from './legacy-vn-alignment.ts';
+import { buildSharedNativeAlignment, type NativeAlignedRow, type ReviewedBilingualPassage, type PendingBilingualPassage } from './legacy-vn-alignment.ts';
 
 export type NativeCorrespondence = {
   schema: 'native-story-correspondence/v1';
@@ -11,6 +11,7 @@ export type NativeCorrespondence = {
   hashes: { route: string; cnText: string; jpText: string };
   pairs: Array<{ cnEventId: string; jpEventId: string }>;
   reviewedPassages?: ReviewedBilingualPassage[];
+  pendingReviewPassages?: PendingBilingualPassage[];
   groupPairs?: Array<{ cnEventIds: string[]; jpEventIds: string[]; proof: {
     classification: 'exact-native-display-text' | 'lexical-with-punctuation-variation';
     completeNativeBuffers: true; existingAnchorsRetainOrder: true;
@@ -369,6 +370,30 @@ export function buildParallelNativeAlignment(
       speaker:{'zh-CN':cg.speaker['zh-CN'],'ja-JP':jg.speaker['ja-JP']},
       joinBeforeByEventId:separators,allowFollowingVoiceCues:true };
     for (const index of ordered) rows[index]={...rows[index],presentationGroup:group};
+  }
+  const pendingIds = new Set<string>(), pendingEvents = {cn:new Set<string>(),jp:new Set<string>()};
+  for (const pending of manifest.pendingReviewPassages ?? []) {
+    if (pending.schema !== 'source-bound-bilingual-review-pending/v1' || pending.reviewer !== 'AI'
+      || pending.humanVerified !== false || pending.translationQualityVerified !== false || pending.correspondenceVerified !== false
+      || !/^pending-[A-Za-z0-9_-]+$/.test(pending.id) || pendingIds.has(pending.id)
+      || !/^[a-f0-9]{64}$/.test(pending.evidenceSha256) || !pending.contextId || typeof pending.note !== 'string' || pending.note.length < 8)
+      throw Error('待核验对应缺少来源或误标完成');
+    pendingIds.add(pending.id);
+    for (const language of ['cn','jp'] as const) {
+      const ids = pending[language === 'cn' ? 'cnEventIds' : 'jpEventIds'];
+      if (!Array.isArray(ids) || !ids.length || ids.length > 12 || new Set(ids).size !== ids.length
+        || ids.some(id=>!manifest.unpaired[language].includes(id) || pendingEvents[language].has(id))) throw Error('待核验对应重复或覆盖已配对事件');
+      const events = nativeEvents[language], positions = ids.map(id=>events.findIndex(e=>e.eventId===id));
+      if (positions.some((at,i)=>at<0 || i>0 && (at!==positions[i-1]+1 || events[positions[i-1]].nextEventId!==ids[i]))) throw Error('待核验对应跨越原生控制边界');
+      for (const id of ids) pendingEvents[language].add(id);
+      const key = language === 'cn' ? 'cnSlot' : 'jpSlot', locale = language === 'cn' ? 'zh-CN' : 'ja-JP';
+      for (const row of rows.filter(row=>row[key]?.eventIds.some(id=>ids.includes(id)))) {
+        if (row.pairing !== (language === 'cn' ? 'unpaired-cn' : 'unpaired-jp') || row.reviewedPassage
+          || row[key]!.eventIds.some(id=>!ids.includes(id)) || row.presentationGroup?.visibleEventIdsByLocale[locale].some(id=>!ids.includes(id)))
+          throw Error('待核验对应截断原生缓冲或改变独立显示');
+        row.pendingReviewPassage = pending;
+      }
+    }
   }
   return rows;
 }

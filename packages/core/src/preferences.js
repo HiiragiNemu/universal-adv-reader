@@ -4,7 +4,7 @@ export const DEFAULT_READER_PREFERENCES = Object.freeze({
   localeMode: 'parallel',
   primaryLocale: 'zh-CN',
   secondaryLocale: 'ja-JP',
-  voicePanelExpanded: false,
+  voicePanelExpanded: true,
   voiceSlotMode: 'all',
 });
 
@@ -33,7 +33,7 @@ export function parseReaderPreferences(value) {
       : DEFAULT_READER_PREFERENCES.localeMode,
     primaryLocale: locale(input.primaryLocale, DEFAULT_READER_PREFERENCES.primaryLocale),
     secondaryLocale: locale(input.secondaryLocale, DEFAULT_READER_PREFERENCES.secondaryLocale),
-    voicePanelExpanded: input.voicePanelExpanded === true,
+    voicePanelExpanded: input.voicePanelExpanded !== false,
     voiceSlotMode: voiceSlotModes.has(input.voiceSlotMode)
       ? input.voiceSlotMode
       : DEFAULT_READER_PREFERENCES.voiceSlotMode,

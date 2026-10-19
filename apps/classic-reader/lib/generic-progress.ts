@@ -10,6 +10,7 @@ export type GenericProgressEntry = {
   category: keyof typeof GENERIC_PROGRESS_WORKS; work: string;
   variants: number; revision: string | null; supplemental?: boolean;
   nativeChapters?: number; nativeGroupId?: string;
+  pendingCorrespondenceRows?: number; pendingCorrespondenceJapaneseRows?: number;
   rows: number; chineseRows: number; nonemptyChineseRows: number; japaneseRows: number;
   unmatchedChineseRows: number; unmatchedJapaneseRows: number;
   reviewedRows: number; pendingReviewRows: number; reviewedPercent: number;
@@ -36,7 +37,8 @@ export function nativeCoverage(rows: NativeAlignedRow[], review?: TranslationRev
   const chineseRows = content.filter(row => nonempty(row,'cn')).length;
   const pendingReviewRows = content.filter(row => nonempty(row,'cn') && translationReviewForRow(row,review).state==='pending').length;
   const reviewedRows = chineseRows - pendingReviewRows;
-  return { rows:content.length,chineseRows,nonemptyChineseRows:chineseRows,
+  const pendingCorrespondence = content.filter(row=>row.pendingReviewPassage);
+  return { ...(pendingCorrespondence.length ? {pendingCorrespondenceRows:pendingCorrespondence.length, pendingCorrespondenceJapaneseRows:pendingCorrespondence.filter(row=>nonempty(row,'jp')&&!nonempty(row,'cn')).length} : {}), rows:content.length,chineseRows,nonemptyChineseRows:chineseRows,
     japaneseRows:content.filter(row=>nonempty(row,'jp')).length,
     unmatchedChineseRows:content.filter(row=>nonempty(row,'cn')&&!nonempty(row,'jp')).length,
     unmatchedJapaneseRows:content.filter(row=>nonempty(row,'jp')&&!nonempty(row,'cn')).length,

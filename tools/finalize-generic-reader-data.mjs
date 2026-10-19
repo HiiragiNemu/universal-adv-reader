@@ -1,4 +1,5 @@
 import fs from 'node:fs/promises';
+import fsSync from 'node:fs';
 import path from 'node:path';
 import assert from 'node:assert/strict';
 import {createHash} from 'node:crypto';
@@ -14,16 +15,16 @@ export async function finalizeGenericReaderData(inputPublic,reportPath){
  inputPublic=path.resolve(inputPublic);assert(inputPublic.startsWith(root+path.sep)&&inputPublic!==publicRoot,'Finalize a separate data candidate');
  const progress=await buildCurrentGenericProgress(inputPublic);
  assert.equal(progress.withoutChinese,0,'Every published entry must contain Chinese');
- assert.equal(progress.entries.reduce((n,e)=>n+e.unmatchedJapaneseRows,0),0,'Do not publish readable Japanese without Chinese');
+ for(const entry of progress.entries) assert.equal(entry.unmatchedJapaneseRows, entry.pendingCorrespondenceJapaneseRows ?? 0,'Unpaired Japanese must retain a source-bound pending correspondence record: '+entry.identity);
  const index=JSON.parse(await fs.readFile(path.join(inputPublic,'story_index.json'),'utf8')),byId=new Map(progress.entries.map(e=>[e.id,e]));
  const registry=JSON.parse(await fs.readFile(path.join(inputPublic,'native-reader-revisions.json'),'utf8'));
  for(const story of index){const record=registry.entries[story.source_identity];if(record)story.reader_revision_cn={path:record.textPath,sha256:record.textSha256,revision:record.revision};}
- for(const story of index){const p=byId.get(story.id);assert(p);Object.assign(story,{percent:p.coveragePercent,has_cn:p.hasChinese,source_unverified:p.pendingReviewRows>0,human_verified:p.hasChinese&&p.pendingReviewRows===0,progress_rows:p.rows,chinese_rows:p.chineseRows,reviewed_rows:p.reviewedRows,pending_review_rows:p.pendingReviewRows,translation_review_policy:progress.policy});}
+ for(const story of index){const p=byId.get(story.id);assert(p);Object.assign(story,{percent:Math.floor(p.coveragePercent),has_cn:p.hasChinese,source_unverified:p.pendingReviewRows>0,human_verified:p.hasChinese&&p.pendingReviewRows===0,progress_rows:p.rows,chinese_rows:p.chineseRows,reviewed_rows:p.reviewedRows,pending_review_rows:p.pendingReviewRows,translation_review_policy:progress.policy});}
  parseStoryIndex(index);
  await write(path.join(inputPublic,'story_index.json'),index);await write(path.join(inputPublic,'apps/web/story_index.json'),index);
  await write(path.join(inputPublic,'data/story_ids.generated.json'),classicStoryIds(index));
  const search=await buildGenericSearchIndex(inputPublic,inputPublic);
- const bindings={};for(const file of ['story_index.json','native-reader-revisions.json','data/legacy-vn/manifest.json','data/legacy-vn/manifests/reader-adapter.json','data/legacy-vn/manifests/supplemental-texts.json'])bindings[file]=hash(await fs.readFile(path.join(inputPublic,file)));
+ const bindings={};for(const file of ['story_index.json','native-reader-revisions.json','data/legacy-vn/manifest.json','data/legacy-vn/manifests/reader-adapter.json','data/legacy-vn/manifests/supplemental-texts.json', ...index.filter(s=>s.source_format!=='supplemental-text/v1').map(s=>'data/legacy-vn/'+s.source_identity+'.alignment.json').filter(p=>fsSync.existsSync(path.join(inputPublic,p)))])bindings[file]=hash(await fs.readFile(path.join(inputPublic,file)));
  await write(path.join(inputPublic,'generic-progress.json'),{schema:'generic-progress-snapshot/v1',bindings,progress});
  assert.deepEqual(await loadCurrentGenericProgress(inputPublic),progress);
  const report={schema:'generic-reader-finalization/v1',inputPublic,total:progress.total,nativeTotal:progress.nativeTotal,nativeChapters:progress.nativeChapters,supplementalSources:progress.supplementalSources,supplementalTotal:progress.supplementalTotal,rows:progress.rows,chineseRows:progress.chineseRows,reviewedRows:progress.reviewedRows,pendingReviewRows:progress.pendingReviewRows,needsReview:progress.needsReview,fullyReviewedEntries:progress.humanVerified,coveragePercent:progress.coveragePercent,reviewedPercent:progress.reviewedPercent,missingChinese:0,works:progress.works,pending:progress.entries.filter(e=>e.pendingReviewRows>0),search};

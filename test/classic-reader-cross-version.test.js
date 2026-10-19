@@ -85,7 +85,7 @@ test('effective cross-version sidecars bind exact source bytes and independently
           assert.equal(group.cnEventIds.includes(pair.cnEventId), group.jpEventIds.includes(pair.jpEventId), 'a retained pair cannot cross a group boundary');
         }
       }
-      const reviewSource = JSON.parse(fs.readFileSync(path.join(root, 'tools/data/narcissu3-bilingual-review.json'), 'utf8'));
+      const reviewSource = JSON.parse(fs.readFileSync(path.join(root, story.source_identity === 'narcissu-3rd/nard01' ? 'tools/data/nard01-bilingual-review.json' : 'tools/data/narcissu3-bilingual-review.json'), 'utf8'));
       const expectedReview = reviewSource.stories.find(item => item.storyId === story.source_identity)?.blocks.flatMap(block => block.passages) ?? [];
       const actualReview = sidecar.reviewedPassages ?? [];
       assert.deepEqual(actualReview.map(item => [item.id, item.cnEventIds, item.jpEventIds]), expectedReview.map(item => [item.id, item.cnEventIds, item.jpEventIds]), 'review IDs come from independently frozen source passages, never native offset guesses');

@@ -1,4 +1,6 @@
 "use client";
+import NativeCorrespondenceReview from '@/components/NativeCorrespondenceReview';
+import '../native-correspondence-review.css';
 
 import {
   Fragment,
@@ -479,7 +481,7 @@ export default function ReaderPage({ params }: { params: Promise<{ id: string }>
   const [aboutOpen, setAboutOpen] = useState(false);
   const [utilityPanelOpen, setUtilityPanelOpen] = useState(true);
   const [editMessage, setEditMessage] = useState('');
-  const [voicePanelExpanded, setVoicePanelExpanded] = useState(false);
+  const [voicePanelExpanded, setVoicePanelExpanded] = useState(true);
   const activeVoiceRow = useSyncExternalStore(voicePlaybackController.subscribe,
     () => voicePlaybackController.getSnapshot().sequence?.rowIndex ?? -1, () => -1);
   const [legacyVoiceRoute, setLegacyVoiceRoute] =
@@ -818,7 +820,7 @@ export default function ReaderPage({ params }: { params: Promise<{ id: string }>
 
   useEffect(() => {
     const sourceIdentity = currentStory?.source_identity ?? '';
-    setVoicePanelExpanded(false);
+    setVoicePanelExpanded(true);
     setLegacyVoiceRoute(null);
     setLegacyVoiceRouteError('');
     if (isLocal || !sourceIdentity || !currentLegacyVoiceRoutePath) {
@@ -2642,6 +2644,7 @@ export default function ReaderPage({ params }: { params: Promise<{ id: string }>
                 <Fragment key={index}>
                 {nativeSections.map(section => <NativeChapterHeading key={section.anchorId} section={section} mode={mode} />)}
                 {!titleOnly && <StoryRow
+                  sourceStoryId={currentStory?.source_identity}
                   counterpartRelation={crossChapterRelationForRow(currentStory, row)}
                   translationReview={'nativeKeys' in row ? translationReviewForRow(row as NativeAlignedRow,currentTranslationReview) : undefined}
                   row={row}
@@ -2968,6 +2971,7 @@ type StoryRowProps = {
   theme: string;
   isExedra: boolean;
   officialSectionTitles?: string[];
+  sourceStoryId?: string;
   voicePanelExpanded: boolean;
   voiceRouteError: string;
   voiceSlot: LegacyVoiceSlot | null;
@@ -2991,6 +2995,7 @@ type StoryRowProps = {
 };
 
 function StoryRow({
+  sourceStoryId,
   row,
   index,
   editIndex,
@@ -3242,10 +3247,11 @@ function StoryRow({
         data-native-pairing={'pairing' in row ? String(row.pairing ?? 'same-variant') : undefined}
       data-lines-cn={lineCounts?.cn}
       data-native-review={reviewedRow.reviewedPassage ? 'source-correspondence' : undefined}
+      data-correspondence-layout={sourceStoryId === 'narcissu-3rd/nard01' && mode === 'split' && (reviewedRow.reviewedPassage || reviewedRow.pendingReviewPassage) ? bilingualLayout : undefined}
       data-translation-review={translationReview?.state}
       title={translationReview?.state==='pending' ? `${translationReview.credit}补译 · 待校对` : undefined}
       data-lines-jp={lineCounts?.jp}
-      className={`group relative flex transition-colors ${bilingualStoryPairClass(
+      className={`group relative flex transition-colors ${sourceStoryId === 'narcissu-3rd/nard01' && (reviewedRow.reviewedPassage || reviewedRow.pendingReviewPassage) ? 'flex-wrap' : ''} ${bilingualStoryPairClass(
         mode,
         bilingualLayout,
       )} ${
@@ -3256,6 +3262,7 @@ function StoryRow({
           : 'hover:border-current hover:border-opacity-10'
       }`}
     >
+      {sourceStoryId === 'narcissu-3rd/nard01' && <NativeCorrespondenceReview storyId={sourceStoryId} row={reviewedRow} />}
       {lineCounts && <span className="magi-reader-row-metrics" aria-label={`中文 ${lineCounts.cnChars} 字，日文 ${lineCounts.jpChars} 字；中文 ${lineCounts.cn} 行，日文 ${lineCounts.jp} 行`}>
         <span>CN {textStats?.cn ?? lineCounts.cnChars}</span><span>JP {textStats?.jp ?? lineCounts.jpChars}</span>
         <span>TOTAL {textStats ? textStats.cn + textStats.jp : lineCounts.cnChars + lineCounts.jpChars}</span>

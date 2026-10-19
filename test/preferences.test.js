@@ -7,11 +7,13 @@ import {
   saveReaderPreferences,
 } from '../packages/core/src/preferences.js';
 
-test('voice controls default collapsed but retain all-slot expansion mode', () => {
-  assert.equal(DEFAULT_READER_PREFERENCES.voicePanelExpanded, false);
+test('voice controls default visible and retain all-slot expansion mode', () => {
+  assert.equal(DEFAULT_READER_PREFERENCES.voicePanelExpanded, true);
   assert.equal(DEFAULT_READER_PREFERENCES.voiceSlotMode, 'all');
   assert.deepEqual(parseReaderPreferences('{bad json'), { ...DEFAULT_READER_PREFERENCES });
 
+  assert.equal(parseReaderPreferences({}).voicePanelExpanded, true);
+  assert.equal(parseReaderPreferences({voicePanelExpanded:false}).voicePanelExpanded, false);
   const writes = [];
   const normalized = saveReaderPreferences({
     voicePanelExpanded: true,

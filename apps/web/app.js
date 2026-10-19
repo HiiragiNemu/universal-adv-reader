@@ -210,7 +210,7 @@ let theme = readStoredValue(THEME_KEY, THEMES.map((item) => item.id), 'frost');
 let displayMode = readStoredValue(DISPLAY_KEY, ['cn', 'parallel', 'jp'], 'parallel');
 let preferences = saveReaderPreferences({
   ...loadReaderPreferences(),
-  voicePanelExpanded: false,
+  voicePanelExpanded: true,
 });
 let toastTimer = null;
 let resolutionCache = new Map();

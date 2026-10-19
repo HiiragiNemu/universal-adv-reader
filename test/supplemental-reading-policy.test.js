@@ -54,14 +54,15 @@ test('single-newline novel and Himeko editions never collapse a whole chapter in
  assert(prologue.paragraphs.length>30);assert.equal(index.find(s=>s.id===prologue.id).progress_rows,prologue.paragraphs.length);
 });
 
-test('live native projection contains Chinese for every Japanese reading row and pending marks only seven supplemented scripts',async()=>{
+test('native projection keeps two source-bound pending Japanese rows separate from seven translation proofreading tasks',async()=>{
  const direct=await buildCurrentGenericProgress(pub),snapshot=await loadCurrentGenericProgress(pub);
  assert.deepEqual(snapshot,direct,'initial catalog/snapshot and asynchronous API use the same counts');
- assert.equal(direct.withoutChinese,0);assert.equal(direct.entries.reduce((n,e)=>n+e.unmatchedJapaneseRows,0),0);
- assert.equal(direct.chineseRows,direct.rows);assert.equal(direct.pendingReviewRows,136);assert.equal(direct.humanVerified,316);
+ assert.equal(direct.withoutChinese,0);assert.equal(direct.entries.reduce((n,e)=>n+e.unmatchedJapaneseRows,0),2);
+ assert.deepEqual(direct.entries.filter(e=>e.unmatchedJapaneseRows).map(e=>[e.identity,e.unmatchedJapaneseRows,e.pendingCorrespondenceRows,e.pendingCorrespondenceJapaneseRows]),[['narcissu-3rd/nard01',2,3,2]]);
+ assert.equal(direct.chineseRows+2,direct.rows);assert.equal(direct.pendingReviewRows,136);assert.equal(direct.humanVerified,316);
  assert.deepEqual(direct.entries.filter(e=>e.pendingReviewRows).map(e=>[e.identity,e.pendingReviewRows]).sort(),[
   ['kana-okaeri/ev49b',1],['narcissu-3rd/nar3_04',2],['narcissu-3rd/nar3_05',2],['narcissu-3rd/nar3_07',1],['narcissu-3rd/nar3_08',1],['narcissu-3rd/product',4],['narcissu-himeko/omake_062',125],
  ].sort());
- assert.equal(direct.rows,direct.reviewedRows+direct.pendingReviewRows);
+ assert.equal(direct.rows,direct.reviewedRows+direct.pendingReviewRows+2);
  for(const e of direct.entries){const s=index.find(s=>s.id===e.id);assert.equal(s.reviewed_rows,e.reviewedRows);assert.equal(s.pending_review_rows,e.pendingReviewRows);assert.equal(s.progress_rows,e.rows);}
 });

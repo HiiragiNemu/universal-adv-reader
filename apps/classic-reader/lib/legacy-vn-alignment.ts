@@ -8,9 +8,14 @@ export type ReviewedBilingualPassage = {
   cnEventIds: string[]; jpEventIds: string[];
 };
 
+export type PendingBilingualPassage = Omit<ReviewedBilingualPassage, 'schema'> & {
+  schema: 'source-bound-bilingual-review-pending/v1'; correspondenceVerified: false;
+};
+
 export type NativeAlignedRow = AlignedStoryLine & {
   pairing?: 'verified' | 'reviewed' | 'unpaired-cn' | 'unpaired-jp';
   reviewedPassage?: ReviewedBilingualPassage;
+  pendingReviewPassage?: PendingBilingualPassage;
   reviewedParagraphs?: { cn: StoryLine[]; jp: StoryLine[] };
   nativeKeys: string[];
   nativeEventId?: string;

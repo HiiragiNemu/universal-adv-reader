@@ -11,6 +11,7 @@ export async function computeContentPipelineRevision(repositoryRoot) {
     'tools/lib/majiro_native_group_bridge.py',
     'tools/lib/source_bound_bilingual_review.py',
     'tools/data/narcissu3-bilingual-review.json',
+    'tools/data/nard01-bilingual-review.json',
     'tools/build-native-edit-sources.mjs',
     'tools/build-generic-search-index.mjs',
     'tools/generate-classic-story-ids.mjs',

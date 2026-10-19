@@ -20,7 +20,7 @@ import sys
 
 sys.path.insert(0, str(Path(__file__).resolve().parent / 'lib'))
 from majiro_native_group_bridge import build_native_group_translation_bridges
-from source_bound_bilingual_review import apply_source_bound_reviews
+from source_bound_bilingual_review import apply_source_bound_review_overrides
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.dont_write_bytecode = True
@@ -963,7 +963,8 @@ def generate(output_root, public=None):
             method += '-with-native-revision-and-identical-Japanese-text-bridge'
         group_bridge = build_native_group_translation_bridges(identity, ce, je, body_pairs, translation_bridges)
         group_pairs = group_bridge['groupPairs']
-        reviewed_passages, review_proof = apply_source_bound_reviews(identity, cn, jp, ce, je, body_pairs, group_pairs)
+        body_pairs, reviewed_passages, review_proof, quarantine_proof, pending_reviews = apply_source_bound_review_overrides(
+            identity, cn, jp, ce, je, body_pairs, group_pairs)
         choice_pairs = native_choice_pairs(cn, jp, token_pairs, body_pairs)
         unpaired_choices = {lang: [e['eventId'] for e in events if e['kind'] == 'choice' and e['eventId'] not in {p[lang + 'EventId'] for p in choice_pairs}] for lang, events in (('cn', ce), ('jp', je))}
         covered = {lang: {p[lang+'EventId'] for p in body_pairs} | {event for g in group_pairs for event in g[lang+'EventIds']} | {event for g in reviewed_passages for event in g[lang+'EventIds']} for lang in ('cn','jp')}
@@ -997,6 +998,9 @@ def generate(output_root, public=None):
         record['proof']['nativeGroupBridgeCounts'] = group_bridge['counts']
         if review_proof:
             record['proof']['sourceBoundBilingualReview'] = review_proof
+        if quarantine_proof:
+            record['proof']['sourceBoundPairQuarantine'] = quarantine_proof
+            record['pendingReviewPassages'] = pending_reviews
         record['proof']['nativeGroupBridgeRejections'] = group_bridge['rejections']
         if bridge_proofs:
             record['proof']['exactN10TranslationBridges'] = bridge_proofs

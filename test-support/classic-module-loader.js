@@ -72,6 +72,7 @@ export function readerRowFragments(theme = 'frost') {
   const names = ['countLineBreaks', 'translatedSpeaker', 'lineTextAlignClass', 'lineKindClass', 'speakerColor',
     'SourceStatistics', 'SpeakerLabel', 'StoryRow'];
   return modules.fragments('app/reader/[id]/page.tsx', names, {
+    NativeCorrespondenceReview: modules.load('components/NativeCorrespondenceReview.tsx').default,
     StoryText: text.default, LineBreakMarkerText: text.LineBreakMarkerText,
     ...dictionary, ...layout, ...titles, ...modules.load('lib/native-section-anchors.ts'),
     isNightTheme: value => ['dark', 'frost'].includes(value),

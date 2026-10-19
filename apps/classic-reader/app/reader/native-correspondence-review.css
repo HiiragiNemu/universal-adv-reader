@@ -1,0 +1,7 @@
+/* A full-width review note must not make the two existing language cells wrap. */
+@media (min-width: 768px) {
+  .magi-reader-root [data-correspondence-layout='side-by-side'] > div[lang] {
+    flex: 1 1 0%;
+    min-width: 0;
+  }
+}
