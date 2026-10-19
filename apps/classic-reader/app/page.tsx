@@ -825,7 +825,7 @@ function CategoryNav({
   searchActive,
   theme,
   mobile = false,
-  mobileSourceRailOpen = true,
+  mobileSourceRailOpen = false,
   mobileLayout = 'graph',
   onSelect,
   onToggleCategory,
@@ -895,38 +895,21 @@ function CategoryNav({
     const nav = navRef.current;
     if (!nav || !overlayCategory || !categoryNavVisible(false)) return;
 
-    const navRect = nav.getBoundingClientRect();
     const viewportWidth = nav.clientWidth;
     const viewportHeight = nav.clientHeight;
     if (viewportWidth <= 0 || viewportHeight <= 0) return;
 
-    const widestTriggerRight = Array.from(triggerRefs.current.values()).reduce(
-      (right, trigger) => Math.max(
-        right,
-        trigger.getBoundingClientRect().right - navRect.left,
-      ),
-      0,
-    );
+    // The left category row reserves this rail plus its socket/connector gap.
     const rightInset = 8;
-    const connectorGap = 8;
-    const minimumMenuWidth = Math.min(50, Math.max(1, viewportWidth - rightInset));
-    const desiredMenuWidth = Math.min(56, Math.max(1, viewportWidth - rightInset * 2));
-    const rightAlignedLeft = Math.max(
-      0,
-      viewportWidth - rightInset - desiredMenuWidth,
-    );
-    const blankAreaLeft = Math.max(0, widestTriggerRight + connectorGap);
-    const latestMenuLeft = Math.min(
-      Math.max(rightAlignedLeft, blankAreaLeft),
-      Math.max(0, viewportWidth - rightInset - minimumMenuWidth),
-    );
+    const menuWidth = Math.min(56, Math.max(1, viewportWidth - rightInset));
+    const menuLeft = Math.max(0, viewportWidth - rightInset - menuWidth);
     const latestLayout = {
       top: nav.scrollTop,
       left: nav.scrollLeft,
       width: viewportWidth,
       height: viewportHeight,
-      menuLeft: latestMenuLeft,
-      menuWidth: Math.max(1, viewportWidth - rightInset - latestMenuLeft),
+      menuLeft,
+      menuWidth,
     };
 
     setOverlayLayout(current => (
@@ -1436,6 +1419,7 @@ function CategoryNav({
                 }
               }}
               type="button"
+              title={config.label}
               aria-current={isActive ? 'page' : undefined}
               aria-expanded={mobile ? undefined : isExpanded}
               aria-controls={mobile ? undefined : `category-filters-${category}`}
@@ -1959,7 +1943,7 @@ function FrostHome() {
     useState<MobileReviewPlacement>('floating');
   const [mobileCategoryLayout, setMobileCategoryLayout] =
     useState<MobileCategoryLayout>('graph');
-  const [mobileSourceRailOpen, setMobileSourceRailOpen] = useState(true);
+  const [mobileSourceRailOpen, setMobileSourceRailOpen] = useState(false);
   const [reviewDragPosition, setReviewDragPosition] =
     useState<{ x: number; y: number } | null>(null);
   const reviewDragStartRef = useRef<{
@@ -2938,7 +2922,6 @@ function FrostHome() {
                 <span className="text-xs font-bold whitespace-nowrap">JP</span>
               </label>
 
-              <LocalStoryPicker theme={theme} />
               <button
                 type="button"
                 aria-label="打开字体与站点设置"
@@ -2967,7 +2950,6 @@ function FrostHome() {
               >
                 关于
               </button>
-              <Link href="/proofreading/status" data-generic-revisions-link className="magi-home-review-action rounded-lg border px-3 py-2 text-xs font-black">修订与投稿</Link>
               <button
                 type="button" onClick={selectAllWorks}
                 aria-pressed={GENERIC_CATEGORIES.every(category => selectedCategories.has(category))}
@@ -3145,6 +3127,8 @@ function FrostHome() {
                         查看翻译与校对清单
                       </Link>
                       <div className="magi-home-review-tail-actions">
+                        <LocalStoryPicker theme={theme} />
+                        <Link href="/proofreading/status" data-generic-revisions-link className="magi-home-review-action rounded-lg border px-3 py-2 text-xs font-black">修订与投稿</Link>
                         <Link
                           href="/review/submissions"
                           className="magi-home-review-action is-secondary rounded-lg border px-3 py-2 text-xs font-black transition"

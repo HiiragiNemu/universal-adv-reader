@@ -13,12 +13,13 @@ export const loadingAppearanceBootstrap = `(() => {
     (/iPhone|iPad|iPod/.test(navigator.userAgent) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1));
   root.dataset.iosFlat = String(ios);
   root.dataset.loadingTheme = theme;
-  root.dataset.loadingPhosphor = preferences.nightPhosphor === 'amber' ? 'amber' : 'green';
+  const phosphor = preferences.nightPhosphor === 'green' ? 'green' : 'amber';
+  root.dataset.loadingPhosphor = phosphor;
   root.dataset.loadingScanlines = theme === 'dark' || effects[theme]?.scanlines === true ? 'on' : 'off';
   const night = theme === 'dark';
   const selected = effects[theme] || {};
   const flag = (key) => selected[key] === true;
-  const nightPixel = preferences.nightPhosphor === 'amber'
+  const nightPixel = phosphor === 'amber'
     ? preferences.nightPixelFontEnabled !== false : preferences.nightGreenPixelFontEnabled === true;
   root.dataset.readerTheme = theme;
   root.dataset.nightPhosphor = root.dataset.loadingPhosphor;

@@ -334,3 +334,35 @@ html[data-night-phosphor='amber'][data-reader-theme='dark'] {
     text-shadow: none !important;
   }
 }
+
+/* Keep the category socket and source rail in separate desktop columns. */
+@layer reader-visual-revision {
+  @media (min-width: 768px) {
+    html body .magi-home-shell .magi-home-category-nav > .magi-home-category-node {
+      max-width: calc(100% - 80px) !important;
+    }
+    html body .magi-home-shell:not(.magi-home-frost-root)
+      .magi-home-category-nav .magi-home-category-trigger {
+      flex: 0 1 auto !important;
+      max-width: calc(100% - 20px) !important;
+    }
+    html body .magi-home-shell.magi-home-frost-root.magi-home-dark-root
+      .magi-home-category-nav .magi-home-category-trigger {
+      width: min(6.55rem, 100%) !important;
+      max-width: 100% !important;
+    }
+    html body .magi-home-shell .magi-home-category-nav .magi-home-category-trigger > svg {
+      flex-shrink: 0;
+    }
+  }
+}
+
+@layer reader-visual-revision {
+  html body #magi-home-display.magi-home-shell .magi-home-review-panel .magi-home-review-tail-actions {
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+    flex: 1 1 100% !important;
+    flex-wrap: wrap !important;
+  }
+}

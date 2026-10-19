@@ -29,7 +29,7 @@ const DEFAULT_PREFERENCES: ReaderDisplayPreferences = {
   showLineBreaks: true,
   showVoiceButtons: true,
   nameColorsEnabled: true,
-  nightPhosphor: 'green',
+  nightPhosphor: 'amber',
   nightPixelFontEnabled: true,
   nightGreenPixelFontEnabled: false,
   rulerEnabled: 'auto',
@@ -82,7 +82,7 @@ export const parseReaderDisplayPreferences = (
           : DEFAULT_PREFERENCES.showLineBreaks,
       nameColorsEnabled: record.nameColorsEnabled !== false,
       showVoiceButtons: record.showVoiceButtons !== false,
-      nightPhosphor: record.nightPhosphor === 'amber' ? 'amber' : 'green',
+      nightPhosphor: record.nightPhosphor === 'green' ? 'green' : 'amber',
       nightPixelFontEnabled: record.nightPixelFontEnabled !== false,
       nightGreenPixelFontEnabled: record.nightGreenPixelFontEnabled === true,
       rulerEnabled:
@@ -105,7 +105,7 @@ const serializeReaderDisplayPreferences = (
     showLineBreaks: preferences.showLineBreaks !== false,
     nameColorsEnabled: preferences.nameColorsEnabled !== false,
     showVoiceButtons: preferences.showVoiceButtons !== false,
-    nightPhosphor: preferences.nightPhosphor === 'amber' ? 'amber' : 'green',
+    nightPhosphor: preferences.nightPhosphor === 'green' ? 'green' : 'amber',
     nightPixelFontEnabled: preferences.nightPixelFontEnabled !== false,
     nightGreenPixelFontEnabled: preferences.nightGreenPixelFontEnabled === true,
     rulerEnabled:
