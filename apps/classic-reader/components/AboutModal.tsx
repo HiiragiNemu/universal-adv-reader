@@ -7,11 +7,11 @@ import contributors from '@/lib/adv-contributors.json';
 
 const LINKS = [
   {
-    "href": "https://pd.qq.com/qqweb/qunpro/share?_wv=3&_wwv=128&appChannel=share&inviteCode=2oaXZG3lL1g&attaContentID=e5616861ea2047e3820bf63bb854aa8e&businessType=9&from=181074&biz=ka&mainSourceId=share&subSourceId=others&b=9",
+    "href": "https://wpa.qq.com/msgrd?v=3&uin=254489200&site=qq&menu=yes",
     "icon": "QQ",
     "iconClass": "from-[#12b7f5] to-[#0084d1]",
-    "title": "加入交流群",
-    "subtitle": "群号：858083286"
+    "title": "联系作者",
+    "subtitle": "QQ：254489200"
   },
   {
     "href": "https://search.bilibili.com/all?keyword=MadeInMagius",
@@ -21,18 +21,53 @@ const LINKS = [
     "subtitle": "关注我的B站动态"
   },
   {
+    "href": "https://magireader.pages.dev/",
+    "icon": "剧情",
+    "iconClass": "from-[#10b981] to-[#059669]",
+    "title": "魔法纪录／Exedra 阅读网站",
+    "subtitle": "魔法纪录与 Magia Exedra 剧情、语音"
+  },
+  {
+    "href": "https://magiaexedralive2dviewer.pages.dev/",
+    "icon": "L2D",
+    "iconClass": "from-[#f59e0b] to-[#d97706]",
+    "title": "magia exedra 魔法纪录l2d查看器",
+    "subtitle": "在线查看角色 Live2D 动态模型"
+  },
+  {
+    "href": "https://magius3dviewer.pages.dev/",
+    "icon": "3D",
+    "iconClass": "from-[#14b8a6] to-[#0f766e]",
+    "title": "MAGIA EXEDRA 3D网站",
+    "subtitle": "在线查看 MAGIA EXEDRA 3D 模型"
+  },
+  {
+    "href": "https://madeinmagius-site.pages.dev/",
+    "icon": "下载",
+    "iconClass": "from-[#6366f1] to-[#4338ca]",
+    "title": "MADE IN MAGIUS下载中心和教程网站",
+    "subtitle": "下载中心与使用教程"
+  },
+  {
+    "href": "https://magireco-call-search-cn.pages.dev/",
+    "icon": "搜索",
+    "iconClass": "from-[#06b6d4] to-[#0891b2]",
+    "title": "魔法少女称呼搜索与身高对比",
+    "subtitle": "魔法纪录·Magia Exedra"
+  },
+  {
+    "href": "https://exedra.wiki/wiki/Characters/zh",
+    "icon": "WIKI",
+    "iconClass": "from-[#8b5cf6] to-[#7c3aed]",
+    "title": "MAGIA EXEDRA WIKI中文化中…",
+    "subtitle": "角色剧情、活动剧情与语音"
+  },
+  {
     "href": "/review/machine-translations",
     "icon": "进度",
     "iconClass": "from-[#f59e0b] to-[#d97706]",
     "title": "中文覆盖与待核对",
-    "subtitle": "按实际原生事件、作品和版本统计，不冒认人工验收"
-  },
-  {
-    "href": "/proofreading/status",
-    "icon": "帮助",
-    "iconClass": "from-[#06b6d4] to-[#0891b2]",
-    "title": "汉化修订与投稿帮助",
-    "subtitle": "原生补丁、版本化 TXT、检索及本地回滚"
+    "subtitle": "查看各作品的中文覆盖与校对进度"
   }
 ];
 
@@ -52,7 +87,7 @@ export default function AboutModal({
       isOpen={isOpen}
       onClose={onClose}
       theme={theme}
-      title="关于与帮助"
+      title="我的其他工具和动态"
       titleId="about-dialog-title"
       systemLabel="SYS://ADVREADER.LINKS"
       initialOffset={{ x: 84, y: 62 }}
@@ -75,7 +110,7 @@ export default function AboutModal({
         </div>
         <div className="magi-floating-link-copy flex-1">
           <div className="magi-floating-link-title text-sm font-bold">贡献名单</div>
-          <div className="magi-floating-link-subtitle mt-0.5 text-xs opacity-60">原作、翻译、录入与校对 · 按版本保留署名</div>
+          <div className="magi-floating-link-subtitle mt-0.5 text-xs opacity-60">Narcissu：风铃汉化组 · 加奈：妹乃萌汉化组</div>
         </div>
         <span aria-hidden="true" className="text-sm opacity-60">{contributionsOpen ? '−' : '+'}</span>
       </button>

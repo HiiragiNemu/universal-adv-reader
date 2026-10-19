@@ -2,8 +2,8 @@ import type { NativeAlignedRow } from './legacy-vn-alignment.ts';
 import { translationReviewForRow, type TranslationReview } from './translation-review.ts';
 
 export const GENERIC_PROGRESS_WORKS = {
-  main_story: 'Narcissu 10th Anniversary', event_story: 'Narcissu 3rd',
-  character_story: '加奈欢迎回来', supplement_story: 'Narcissu 文本资料',
+  main_story: 'Narcissu10周年', event_story: 'Narcissu 3rd',
+  character_story: '加奈，欢迎回来！', supplement_story: 'Narcissu 文本资料',
 } as const;
 export type GenericProgressEntry = {
   id: string; identity: string; title: string; titleJp: string;

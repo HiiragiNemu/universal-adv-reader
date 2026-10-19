@@ -107,9 +107,9 @@ type ProofreadingStatus = {
 };
 
 const CATEGORY_CONFIG: Record<string, CategoryConfig> = {
-  main_story: { label: 'Narcissu 10th', icon: Book },
+  main_story: { label: 'Narcissu10周年', icon: Book },
   event_story: { label: 'Narcissu 3rd', icon: Calendar },
-  character_story: { label: 'KANA: Okaeri!!', icon: User },
+  character_story: { label: '加奈，欢迎回来！', icon: User },
   costume_story: { label: '服装', icon: Layers },
   login_story: { label: '登录', icon: FileText },
   mirror_story: { label: '镜层', icon: Folder },

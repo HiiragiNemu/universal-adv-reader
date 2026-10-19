@@ -24,7 +24,7 @@ export default function GenericProgressReview({ initialProgress = null }: { init
   const entries = useMemo(() => (status?.entries ?? []).filter(entry =>
     (work === 'all' || entry.category === work)
     && (coverage === 'all' || (coverage === 'with-cn' ? entry.hasChinese : coverage === 'without-cn' ? !entry.hasChinese : entry.review === 'pending'))
-    && [entry.id,entry.identity,entry.title,entry.titleJp,entry.work].join(' ').toLowerCase().includes(query.trim().toLowerCase())),[status,query,work,coverage]);
+    && [entry.id,entry.identity,entry.title,entry.titleJp,entry.work,GENERIC_PROGRESS_WORKS[entry.category]].join(' ').toLowerCase().includes(query.trim().toLowerCase())),[status,query,work,coverage]);
   const panel = `magi-home-light-folder-card ${dark ? 'border-white/15 bg-white/5' : 'border-black/15 bg-white/75'}`;
   return (
     <GenericReviewSurface>
@@ -54,7 +54,7 @@ export default function GenericProgressReview({ initialProgress = null }: { init
             <p className="text-sm">游戏 {status.nativeTotal} 个脚本、{status.nativeChapters} 个原生章节；文本资料 {status.supplementalSources} 个来源版本、{status.supplementalTotal} 个篇目。游戏归档 {status.archive.stories} 项与补充资料分别统计。</p>
             <p className="mt-2 text-sm">中文 {status.chineseRows}/{status.rows} 段（{status.coveragePercent}%）；已校对 {status.reviewedRows} 段，站长补译待校对 {status.pendingReviewRows} 段。分母为实际阅读段落及选项。</p>
             <div className="mt-2 h-2 overflow-hidden rounded-full bg-black/10"><div className="h-full bg-amber-500" style={{width:`${status.coveragePercent}%`}} /></div>
-            <ul className="mt-3 space-y-1 text-sm">{status.works.map(w => <li key={w.category}>{w.title}：{w.total} 篇，有中文 {w.withChinese}，无中文 {w.withoutChinese}，补译待校对 {w.needsReview}</li>)}</ul>
+            <ul className="mt-3 space-y-1 text-sm">{status.works.map(w => <li key={w.category}>{GENERIC_PROGRESS_WORKS[w.category]}：{w.total} 篇，有中文 {w.withChinese}，无中文 {w.withoutChinese}，补译待校对 {w.needsReview}</li>)}</ul>
           </section>
         </>}
         {message && <div role="status" className={`rounded-xl border p-3 text-sm ${panel}`}>{message}；保留上次已读取数据，可点击刷新重试。</div>}
@@ -68,7 +68,7 @@ export default function GenericProgressReview({ initialProgress = null }: { init
           <div className="max-h-[72vh] overflow-auto rounded-lg border">
             {entries.map(entry => <article key={entry.id} className={`grid gap-3 border-b p-3 md:grid-cols-[10rem_minmax(0,1fr)_10rem] md:items-center ${entry.pendingReviewRows>0 ? 'bg-amber-500/10' : ''}`}>
               <strong className="break-all font-mono text-xs">{entry.identity}</strong>
-              <div className="min-w-0"><p className="font-bold">{entry.title || entry.identity}</p><p className="text-xs opacity-70">{entry.work} · {entry.variants} 版本 · 中文 {entry.chineseRows}/{entry.rows} · {entry.pendingReviewRows>0 ? `补译 ${entry.pendingReviewRows} 段待校对` : entry.hasChinese ? '已校对' : '无中文'}</p>
+              <div className="min-w-0"><p className="font-bold">{entry.title || entry.identity}</p><p className="text-xs opacity-70">{GENERIC_PROGRESS_WORKS[entry.category]} · {entry.variants} 版本 · 中文 {entry.chineseRows}/{entry.rows} · {entry.pendingReviewRows>0 ? `补译 ${entry.pendingReviewRows} 段待校对` : entry.hasChinese ? '已校对' : '无中文'}</p>
                 <p className="mt-1 text-xs opacity-60">版本独有中文 {entry.unmatchedChineseRows} 段（不补日文）；缺中文 {entry.unmatchedJapaneseRows} 段{entry.revision ? ' · 已安装本地修订' : ''}</p></div>
               <div className="flex gap-3 text-xs font-black"><Link href={`/reader/${entry.id}`} className="underline">阅读</Link><Link href={`/reader/${entry.id}?edit=1`} className="underline">协助汉化</Link></div>
             </article>)}

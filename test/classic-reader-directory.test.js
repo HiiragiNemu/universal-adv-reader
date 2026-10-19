@@ -111,7 +111,7 @@ test('actual sidebar selects first section without a hash and emits exact native
     const html = renderToStaticMarkup(React.createElement(Sidebar, { stories: [story], currentId: story.id, isOpen: true, onClose() {} }));
     assert.match(html, /aria-current="page"/);
     assert.match(html, /data-section-anchor="sec-himeko_atogaki-1" aria-current="location"/);
-    assert.match(html, />Narcissu 10th<\/span>/);
+    assert.match(html, />Narcissu10周年<\/span>/);
     assert.doesNotMatch(html, /Narcissu 10th Anniversary Anthology Project/);
     assert.ok(html.includes(`title="后记 · ${story.id}"`));
     assert.ok(html.includes(`#sec-himeko_atogaki-2-branch-3`));

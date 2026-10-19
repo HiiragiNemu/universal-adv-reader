@@ -94,3 +94,13 @@ html[data-reader-theme='green'] .magi-app-backdrop { background: #c7edcc; }
 html[data-reader-theme='dark'] .magi-app-backdrop { background: var(--magi-tube-field,#030702); }
 html[data-reader-theme='frost'] .magi-app-backdrop { background: var(--magi-cold-field,#010910); }
 html[data-screen-curvature='true'] .magi-app-backdrop { background: #000; }
+
+/* Review/help routes have no catalog flex column. Bind their own scroll host
+   to the viewport: percentage height otherwise grows with the long content
+   while the shared outer tube clips it. Do not alter home/reader geometry. */
+@layer reader-visual-revision {
+  html body #magi-home-display[data-generic-review-surface] {
+    height: 100dvh !important;
+    max-height: 100dvh !important;
+  }
+}

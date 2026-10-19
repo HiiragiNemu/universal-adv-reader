@@ -17,7 +17,8 @@ export default function GenericReviewSurface({ children }: { children: ReactNode
       {theme === 'frost' && <ReaderFilmSurface />}
       <ReaderTubeSurface theme={theme} />
       <div className="magi-scene-content">
-        <div className="magi-home-story-scroll h-full w-full min-h-0 min-w-0 overflow-y-auto">
+        <div data-generic-review-scroll tabIndex={0} role="region" aria-label="校对与帮助页面滚动区"
+          className="magi-home-story-scroll h-full w-full min-h-0 min-w-0 overflow-y-auto">
           {children}
         </div>
       </div>

@@ -147,10 +147,11 @@ test('active home offers discoverable local revision status using inherited cont
 
 test('actual progress filtering and refresh handle category, bilingual queries, failure, retry and cancellation',async()=>{
   const status=await buildCurrentGenericProgress(path.join(classicApp,'public')),m=classicModules();
-  const entries=(work,coverage,query='')=>m.fragments('components/GenericProgressReview.tsx',['entries'],{status,work,coverage,query,useMemo:f=>f()}).entries;
+  const entries=(work,coverage,query='')=>m.fragments('components/GenericProgressReview.tsx',['entries'],{status,work,coverage,query,GENERIC_PROGRESS_WORKS:m.load('lib/generic-progress.ts').GENERIC_PROGRESS_WORKS,useMemo:f=>f()}).entries;
   assert.equal(entries('all','with-cn').length,expectedChinese);assert.equal(entries('all','without-cn').length,expectedTotal-expectedChinese);assert.equal(entries('all','needs-review').length,expectedPending);
   assert.equal(entries('main_story','all').length,expectedWorks[0]);assert.equal(entries('event_story','all').length,expectedWorks[1]);assert.equal(entries('character_story','all').length,expectedWorks[2]);assert.equal(entries('supplement_story','all').length,expectedWorks[3]);
   assert.ok(entries('all','all',status.entries[0].titleJp).some(e=>e.id===status.entries[0].id));
+  assert.equal(entries('all','all','加奈，欢迎回来！').length,expectedWorks[2]);
   const updates=[],errors=[],loads=[];let failure=true;
   const {readGenericProgress}=m.load('lib/generic-progress.ts');
   const {refresh}=m.fragments('components/GenericProgressReview.tsx',['refresh'],{useCallback:f=>f,setLoading:v=>loads.push(v),setMessage:v=>errors.push(v),setStatus:v=>updates.push(v),readGenericProgress,
