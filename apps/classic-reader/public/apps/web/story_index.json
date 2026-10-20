@@ -11753,9 +11753,9 @@
       }
     ],
     "reader_revision_cn": {
-      "path": "/native-reader-revisions/narcissu-3rd/nara03/8f064abe694cc2de7619fd92fdbc5e0981cbd6d47d72d130250147100fc54036.native.txt",
-      "sha256": "b3dd3dbf5b4c9f5c6b70e85e734bcf30205b71b215d481b53309205b1c15c2e0",
-      "revision": "8f064abe694cc2de7619fd92fdbc5e0981cbd6d47d72d130250147100fc54036"
+      "path": "/native-reader-revisions/narcissu-3rd/nara03/9aad93dd2b7ecfeedcc75b950acb6c2b28c18053a962abea7e38a9f0ba27ed0c.native.txt",
+      "sha256": "81249b20e90c98e272435b988961f631d7b60e934210b0091b7e56f67283d09e",
+      "revision": "9aad93dd2b7ecfeedcc75b950acb6c2b28c18053a962abea7e38a9f0ba27ed0c"
     },
     "source_unverified": false,
     "human_verified": true,

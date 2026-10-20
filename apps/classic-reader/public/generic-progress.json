@@ -1,8 +1,8 @@
 {
   "schema": "generic-progress-snapshot/v1",
   "bindings": {
-    "story_index.json": "5f52cdcc786a0270c9c0aceddcb17439252e0afa34fdea5fc95da36299d135d4",
-    "native-reader-revisions.json": "4ebf3e0e7548937cff427310749ab97af72edb7cf9f7bb99c1bdae79695ac9f0",
+    "story_index.json": "8ed85a77774cc24929e7ac7ca30c803395541035a90c4dd32cdb7286027147a2",
+    "native-reader-revisions.json": "65d0ef0c541563f679115b08dab077e4055d2652f9808fd8a97d33e43da56331",
     "data/legacy-vn/manifest.json": "88b66bea82d20f9df13b44ac24918ddb31e57b0e61719a00c7bfb512c8998c43",
     "data/legacy-vn/manifests/reader-adapter.json": "d66d0576de230228f884ae0c70be53334ad5a5395efc575d39dd2f6e55806f39",
     "data/legacy-vn/manifests/supplemental-texts.json": "f44e9d5e33790d917d94947514dde0e36a252b9384ec71bf05b4746335bf10fd",
@@ -92,7 +92,7 @@
   "progress": {
     "schema": "generic-reader-progress/v2",
     "policy": "original-reviewed-author-pending/v1",
-    "sourceRevision": "62ace04d56d1a6f3008837c8f17e54a65f42142306c9a6b354d28ddd80b9942c",
+    "sourceRevision": "5f9e8fa733372c1c06eeee193d42694be2b6827f7f964980f5532ecece3bbecb",
     "adapterSha256": "d66d0576de230228f884ae0c70be53334ad5a5395efc575d39dd2f6e55806f39",
     "archive": {
       "games": 7,
@@ -2770,7 +2770,7 @@
         "nativeChapters": 1,
         "nativeGroupId": "n3-bride",
         "variants": 2,
-        "revision": "8f064abe694cc2de7619fd92fdbc5e0981cbd6d47d72d130250147100fc54036",
+        "revision": "9aad93dd2b7ecfeedcc75b950acb6c2b28c18053a962abea7e38a9f0ba27ed0c",
         "rows": 1233,
         "chineseRows": 1233,
         "nonemptyChineseRows": 1233,
