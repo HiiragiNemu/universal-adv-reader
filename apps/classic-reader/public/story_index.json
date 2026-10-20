@@ -11682,7 +11682,7 @@
     "id": "legacy-narcissu-3rd-nara03",
     "category": "event_story",
     "folder": "死神的新娘",
-    "percent": 100,
+    "percent": 99,
     "has_cn": true,
     "has_jp": true,
     "filename_cn": "nara03_cn.txt",
@@ -11777,12 +11777,10 @@
     "nav_title_jp": "転居",
     "cross_chapter_relations": [
       {
-        "id": "ci-relocated-notice-cn",
+        "id": "ci-relocated-mjo-213d-cn",
         "source_locale": "zh-CN",
         "source_event_ids": [
-          "mjo-213d",
-          "mjo-218b",
-          "mjo-221f"
+          "mjo-213d"
         ],
         "target_story_id": "legacy-narcissu-3rd-nara03",
         "target_locale": "ja-JP",
@@ -11791,30 +11789,76 @@
         "message_jp": "中国語版と日本語版では、海璃と英治のこの3つの台詞が、章内の異なる位置に配置されています。"
       },
       {
-        "id": "ci-relocated-notice-jp",
+        "id": "ci-relocated-mjo-213d-jp",
         "source_locale": "ja-JP",
         "source_event_ids": [
-          "mjo-32d1",
-          "mjo-3344",
-          "mjo-3407"
+          "mjo-32d1"
         ],
         "target_story_id": "legacy-narcissu-3rd-nara03",
         "target_locale": "zh-CN",
         "target_event_id": "mjo-213d",
         "message_cn": "中日版本将海璃与英治的这三句对话放在了本章不同的位置。",
         "message_jp": "中国語版と日本語版では、海璃と英治のこの3つの台詞が、章内の異なる位置に配置されています。"
+      },
+      {
+        "id": "ci-relocated-mjo-218b-cn",
+        "source_locale": "zh-CN",
+        "source_event_ids": [
+          "mjo-218b"
+        ],
+        "target_story_id": "legacy-narcissu-3rd-nara03",
+        "target_locale": "ja-JP",
+        "target_event_id": "mjo-3344",
+        "message_cn": "中日版本将海璃与英治的这三句对话放在了本章不同的位置。",
+        "message_jp": "中国語版と日本語版では、海璃と英治のこの3つの台詞が、章内の異なる位置に配置されています。"
+      },
+      {
+        "id": "ci-relocated-mjo-218b-jp",
+        "source_locale": "ja-JP",
+        "source_event_ids": [
+          "mjo-3344"
+        ],
+        "target_story_id": "legacy-narcissu-3rd-nara03",
+        "target_locale": "zh-CN",
+        "target_event_id": "mjo-218b",
+        "message_cn": "中日版本将海璃与英治的这三句对话放在了本章不同的位置。",
+        "message_jp": "中国語版と日本語版では、海璃と英治のこの3つの台詞が、章内の異なる位置に配置されています。"
+      },
+      {
+        "id": "ci-relocated-mjo-221f-cn",
+        "source_locale": "zh-CN",
+        "source_event_ids": [
+          "mjo-221f"
+        ],
+        "target_story_id": "legacy-narcissu-3rd-nara03",
+        "target_locale": "ja-JP",
+        "target_event_id": "mjo-3407",
+        "message_cn": "中日版本将海璃与英治的这三句对话放在了本章不同的位置。",
+        "message_jp": "中国語版と日本語版では、海璃と英治のこの3つの台詞が、章内の異なる位置に配置されています。"
+      },
+      {
+        "id": "ci-relocated-mjo-221f-jp",
+        "source_locale": "ja-JP",
+        "source_event_ids": [
+          "mjo-3407"
+        ],
+        "target_story_id": "legacy-narcissu-3rd-nara03",
+        "target_locale": "zh-CN",
+        "target_event_id": "mjo-221f",
+        "message_cn": "中日版本将海璃与英治的这三句对话放在了本章不同的位置。",
+        "message_jp": "中国語版と日本語版では、海璃と英治のこの3つの台詞が、章内の異なる位置に配置されています。"
       }
     ],
     "reader_revision_cn": {
-      "path": "/native-reader-revisions/narcissu-3rd/nara03/9aad93dd2b7ecfeedcc75b950acb6c2b28c18053a962abea7e38a9f0ba27ed0c.native.txt",
-      "sha256": "81249b20e90c98e272435b988961f631d7b60e934210b0091b7e56f67283d09e",
-      "revision": "9aad93dd2b7ecfeedcc75b950acb6c2b28c18053a962abea7e38a9f0ba27ed0c"
+      "path": "/native-reader-revisions/narcissu-3rd/nara03/6ced95ad79554fd0aa0717483c9048a497998ad25a9952564e336e54afa0e629.native.txt",
+      "sha256": "623ca93eeddccd00093f6fdc746e83ebfe552f811174b10291b7274c38d090ca",
+      "revision": "6ced95ad79554fd0aa0717483c9048a497998ad25a9952564e336e54afa0e629"
     },
     "source_unverified": false,
     "human_verified": true,
     "progress_rows": 1233,
-    "chinese_rows": 1233,
-    "reviewed_rows": 1233,
+    "chinese_rows": 1230,
+    "reviewed_rows": 1230,
     "pending_review_rows": 0,
     "translation_review_policy": "original-reviewed-author-pending/v1"
   },

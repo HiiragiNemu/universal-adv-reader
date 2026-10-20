@@ -99,7 +99,17 @@ export async function buildNarcissu3ChapterRelations(inputs, corpusRoot) {
         {...relation(wheatJp,wheatCn,'两版本的种麦对白位于伊丽丝应答的不同侧：对应中文原文在应答之前；两版原文顺序分别保留。','対応する中国語原文を参照。'),id:'nar3_08-wheat-relocation-jp-to-cn'},
         {...relation(wheatCn,wheatJp,'对应日文原文在伊丽丝应答之后；两版本保留原位，不重复复用中文。','対応する日本語原文を参照。'),id:'nar3_08-wheat-relocation-cn-to-jp'},
       ],
-      [movedCn.identity]:[relation(movedCn,movedJp,movedMessageCn,movedMessageJp,'ci-relocated-notice'),relation(movedJp,movedCn,movedMessageCn,movedMessageJp,'ci-relocated-notice')],
+      [movedCn.identity]:[
+        // Explicit reviewed native pairs, not an ordinal zip. Each original
+        // needs its own target for navigation and required-translation policy.
+        ['mjo-213d','mjo-32d1'],['mjo-218b','mjo-3344'],['mjo-221f','mjo-3407'],
+      ].flatMap(([cnId,jpId])=>{
+        const c={...movedCn,events:movedCn.events.filter(e=>e.eventId===cnId)};
+        const j={...movedJp,events:movedJp.events.filter(e=>e.eventId===jpId)};
+        if(c.events.length!==1||j.events.length!==1)throw Error('Reviewed relocated dialogue pair changed');
+        return [relation(c,j,movedMessageCn,movedMessageJp,'ci-relocated-'+cnId),
+          relation(j,c,movedMessageCn,movedMessageJp,'ci-relocated-'+cnId)];
+      }),
       [cn.identity]:[relation(cn,jp,'中日版本的分章位置不同：本章末段的对应日文位于下一章开头。','章の区切りが異なります。この章の中国語末尾に対応する日本語は、次の章の冒頭にあります。')],
       [jp.identity]:[relation(jp,cn,'中日版本的分章位置不同：本章日文开头的对应中文位于上一章末段。','章の区切りが異なります。この章の日本語冒頭に対応する中国語は、前の章の末尾にあります。')],
     },
