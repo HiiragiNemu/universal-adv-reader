@@ -2071,13 +2071,7 @@ export default function ReaderPage({ params }: { params: Promise<{ id: string }>
                 });
               }}
               className={`z-30 flex items-center gap-1.5 rounded-full px-3 py-1.5 text-xs font-bold transition ${
-                voicePanelExpanded
-                  ? isNightTheme(theme)
-                    ? 'bg-sky-700 text-white shadow-lg'
-                    : 'bg-sky-600 text-white shadow-lg'
-                  : isNightTheme(theme)
-                    ? 'bg-white/10 text-gray-200 hover:bg-white/15'
-                    : 'bg-sky-100 text-sky-800 hover:bg-sky-200'
+                voicePanelExpanded ? 'shadow-lg' : ''
               }`}
             >
               <Music2 size={14} />

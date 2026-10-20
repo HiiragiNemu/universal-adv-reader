@@ -791,6 +791,20 @@
   --magi-tool-alert: rgba(153, 112, 36, 0.3);
 }
 
+/* Header voice toggle uses the existing tool palette without changing its
+   dimensions. The more specific night/frost header rules retain their paint. */
+.magi-reader-root .magi-reader-header [data-voice-panel-toggle='true'] {
+  color: var(--magi-tool-text) !important;
+  background: var(--magi-tool-control) !important;
+  border-color: var(--magi-tool-border) !important;
+}
+
+.magi-reader-root .magi-reader-header [data-voice-panel-toggle='true']:is([aria-pressed='true'], :hover, :focus-visible) {
+  color: var(--magi-tool-accent-text) !important;
+  background: var(--magi-tool-accent) !important;
+  border-color: var(--magi-tool-accent) !important;
+}
+
 /* Dark proofreading is a dedicated Hacker-green terminal channel.  It stays
    scoped to edit mode so the surrounding reading surface and other themes keep
    their own palette. */
