@@ -15,7 +15,10 @@ export async function finalizeGenericReaderData(inputPublic,reportPath){
  inputPublic=path.resolve(inputPublic);assert(inputPublic.startsWith(root+path.sep)&&inputPublic!==publicRoot,'Finalize a separate data candidate');
  const progress=await buildCurrentGenericProgress(inputPublic);
  assert.equal(progress.withoutChinese,0,'Every published entry must contain Chinese');
- for(const entry of progress.entries) assert.equal(entry.unmatchedJapaneseRows, entry.pendingCorrespondenceJapaneseRows ?? 0,'Unpaired Japanese must retain a source-bound pending correspondence record: '+entry.identity);
+ for(const entry of progress.entries){
+  assert.equal(entry.unmatchedJapaneseRows,(entry.pendingCorrespondenceJapaneseRows??0)+(entry.relocatedJapaneseRows??0)+(entry.missingChineseRows??0),'Unpaired Japanese classification must retain its denominator: '+entry.identity);
+  assert.equal(entry.missingChineseRows??0,0,'Japanese needs a source-bound pending record or resolved original translation: '+entry.identity);
+ }
  const index=JSON.parse(await fs.readFile(path.join(inputPublic,'story_index.json'),'utf8')),byId=new Map(progress.entries.map(e=>[e.id,e]));
  const registry=JSON.parse(await fs.readFile(path.join(inputPublic,'native-reader-revisions.json'),'utf8'));
  for(const story of index){const record=registry.entries[story.source_identity];if(record)story.reader_revision_cn={path:record.textPath,sha256:record.textSha256,revision:record.revision};}

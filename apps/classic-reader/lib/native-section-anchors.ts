@@ -78,8 +78,112 @@ export function resolveNativeSourceAnchor(
   return rowIndex === undefined ? undefined : { rowIndex, mode };
 }
 
-export function nativeChapterRelationHref(relation: NativeChapterRelation): string {
-  return `/reader/${relation.target_story_id}#${sourceEventAnchor(relation.target_locale, relation.target_event_id)}`;
+export function nativeChapterRelationHref(relation: NativeChapterRelation, currentStoryId?: string): string {
+  const anchor = `#${sourceEventAnchor(relation.target_locale, relation.target_event_id)}`;
+  // Same-document navigation retains edit/query state and unsaved local changes.
+  return relation.target_story_id === currentStoryId ? anchor : `/reader/${relation.target_story_id}${anchor}`;
+}
+
+export type NativeCounterpartContext = {
+  byKey: Map<string, NativeChapterRelation>;
+  readonlyTranslationKeys: Set<string>;
+  requiredTranslationKeys: Set<string>;
+};
+
+/** Resolve location hints against the unfiltered, unedited native source rows.
+ * This does not pair or copy text. A real local translation remains stronger
+ * than a location hint, and a derived CN slot cannot establish original CN.
+ */
+export function resolveSameStoryNativeCounterparts(
+  story: Pick<StoryIndexEntry, 'id' | 'cross_chapter_relations'> | undefined,
+  rows: NativeAlignedRow[],
+): NativeCounterpartContext {
+  const result: NativeCounterpartContext = {
+    byKey: new Map(), readonlyTranslationKeys: new Set(), requiredTranslationKeys: new Set(),
+  };
+  if (!story?.id || !story.cross_chapter_relations?.length) return result;
+  type Language = 'cn' | 'jp';
+  const nonempty = (row: NativeAlignedRow, language: Language) =>
+    Boolean((row[language]?.choiceLabel ?? row[language]?.text ?? '').trim());
+  const keyCounts = new Map<string, number>();
+  for (const row of rows) for (const key of row.nativeKeys) keyCounts.set(key, (keyCounts.get(key) ?? 0) + 1);
+  const validKeys = (row: NativeAlignedRow) => row.nativeKeys.length > 0
+    && row.nativeKeys.every(key => typeof key === 'string' && key.length > 0 && keyCounts.get(key) === 1);
+  const nativeIds = (row: NativeAlignedRow, language: Language): string[] => {
+    const indices = language === 'cn' ? row.cnIndices : row.jpIndices;
+    const ids = (language === 'cn' ? row.cnSlot : row.jpSlot)?.eventIds ?? [];
+    if (!validKeys(row) || !nonempty(row, language) || row[language]?.isHeader || row[language]?.isChoice
+      || !indices.length || indices.some(index => !Number.isSafeInteger(index) || index < 0)
+      || new Set(indices).size !== indices.length || !ids.length
+      || ids.some(id => typeof id !== 'string' || !id.length) || new Set(ids).size !== ids.length) return [];
+    return ids;
+  };
+  const events: Record<Language, Map<string, NativeAlignedRow[]>> = {cn:new Map(), jp:new Map()};
+  for (const language of ['cn', 'jp'] as const) for (const row of rows) {
+    for (const id of nativeIds(row, language)) {
+      events[language].set(id, [...(events[language].get(id) ?? []), row]);
+    }
+  }
+  const relationIdCounts = new Map<string, number>();
+  for (const relation of story.cross_chapter_relations) {
+    relationIdCounts.set(relation.id, (relationIdCounts.get(relation.id) ?? 0) + 1);
+  }
+  const candidates: Array<{
+    relation: NativeChapterRelation; keys: string[]; targetKeys: string[]; sourceLanguage: Language;
+  }> = [];
+  for (const relation of story.cross_chapter_relations) {
+    if (relation.target_story_id !== story.id || relationIdCounts.get(relation.id) !== 1
+      || !['zh-CN', 'ja-JP'].includes(relation.source_locale)
+      || !['zh-CN', 'ja-JP'].includes(relation.target_locale)
+      || relation.source_locale === relation.target_locale || !relation.source_event_ids.length
+      || new Set(relation.source_event_ids).size !== relation.source_event_ids.length) continue;
+    const sourceLanguage: Language = relation.source_locale === 'zh-CN' ? 'cn' : 'jp';
+    const targetLanguage: Language = sourceLanguage === 'cn' ? 'jp' : 'cn';
+    const targetMatches = events[targetLanguage].get(relation.target_event_id);
+    if (targetMatches?.length !== 1) continue;
+    const target = targetMatches[0], sources = new Set<NativeAlignedRow>();
+    let complete = true;
+    for (const id of relation.source_event_ids) {
+      const matches = events[sourceLanguage].get(id);
+      if (matches?.length !== 1) { complete = false; break; }
+      sources.add(matches[0]);
+    }
+    // One matching member must never classify the rest of a merged paragraph.
+    const sourceIds = new Set(relation.source_event_ids);
+    if (!complete || [...sources].some(row => nativeIds(row, sourceLanguage).some(id => !sourceIds.has(id)))) continue;
+    const unpaired = [...sources].filter(row => !nonempty(row, targetLanguage));
+    if (!unpaired.length) continue;
+    if (target.pendingReviewPassage || [...sources].some(row => row.pendingReviewPassage)) {
+      throw Error('原文定位与待核实对应记录冲突 (pending): ' + relation.id);
+    }
+    candidates.push({relation, sourceLanguage, keys:unpaired.flatMap(row => row.nativeKeys), targetKeys:target.nativeKeys});
+  }
+  // Reject every overlapping candidate, not just the last relation encountered.
+  // Otherwise relation order would decide which original translation is locked.
+  const claims = new Map<string, number>();
+  for (const candidate of candidates) for (const key of candidate.keys) claims.set(key, (claims.get(key) ?? 0) + 1);
+  for (const candidate of candidates) {
+    if (candidate.keys.some(key => claims.get(key) !== 1)) continue;
+    for (const key of candidate.keys) result.byKey.set(key, candidate.relation);
+    if (candidate.sourceLanguage === 'jp') {
+      for (const key of candidate.keys) result.readonlyTranslationKeys.add(key);
+      for (const key of candidate.targetKeys) result.requiredTranslationKeys.add(key);
+    }
+  }
+  return result;
+}
+
+/** Native keys survive CN-only filtering and the editor's empty CN projection.
+ * Every member of a merged row must resolve to the same source relation.
+ */
+export function nativeCounterpartForRow(
+  context: NativeCounterpartContext | null | undefined,
+  row: Partial<NativeAlignedRow>,
+): NativeChapterRelation | undefined {
+  const keys = row.nativeKeys ?? [];
+  if (!context || !keys.length || new Set(keys).size !== keys.length) return undefined;
+  const relation = context.byKey.get(keys[0]);
+  return relation && keys.every(key => context.byKey.get(key) === relation) ? relation : undefined;
 }
 
 /** Locate a known counterpart without copying it into another source chapter. */

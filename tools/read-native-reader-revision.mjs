@@ -2,7 +2,8 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 import { createHash } from 'node:crypto';
 import { createNativeSourceContext, buildNativeEditSource, publicRoot } from './build-native-edit-sources.mjs';
-import { readNativeEditSource } from '../apps/classic-reader/lib/native-translation-patch.ts';
+import { readNativeEditSource, withNativeCounterpartPolicy } from '../apps/classic-reader/lib/native-translation-patch.ts';
+import { resolveSameStoryNativeCounterparts } from '../apps/classic-reader/lib/native-section-anchors.ts';
 import { EMPTY_NATIVE_REVISIONS, parseNativeRevisionRegistry, readNativeReaderRevision, projectNativeReaderRevisionRows } from '../apps/classic-reader/lib/native-reader-revision.ts';
 export const sha = value => createHash('sha256').update(value).digest('hex');
 export async function readRevisionRegistry(inputPublic = publicRoot) {
@@ -20,11 +21,12 @@ export async function loadNativeRevisionContext(entry, inputPublic = publicRoot,
   const built = await buildNativeEditSource(context ?? await createNativeSourceContext(),entry,inputPublic);
   const base = await readNativeEditSource(built.raw,built.document);
   const registry = await readRevisionRegistry(inputPublic), record = registry.entries[entry.source_identity];
-  if(!record)return{base,source:base,story:built.story,rows:built.rows,registry,built};
+  if(!record)return{base,source:withNativeCounterpartPolicy(base,resolveSameStoryNativeCounterparts(entry,built.rows)),story:built.story,rows:built.rows,registry,built};
   const source = await readNativeReaderRevision(await fs.readFile(path.join(inputPublic,record.path),'utf8'),record,base);
   const storyBytes = await fs.readFile(path.join(inputPublic,record.storyPath));
   if(sha(storyBytes)!==record.storySha256)throw Error('Versioned ADV bytes changed');
   const story=JSON.parse(storyBytes);
   if(sha(JSON.stringify(story))!==source.document.binding.normalizedStory)throw Error('Versioned ADV/source binding changed');
-  return{base,source,story,rows:projectNativeReaderRevisionRows(built.rows,source),registry,built};
+  const rows=projectNativeReaderRevisionRows(built.rows,source);
+  return{base,source:withNativeCounterpartPolicy(source,resolveSameStoryNativeCounterparts(entry,rows)),story,rows,registry,built};
 }

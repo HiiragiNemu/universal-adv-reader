@@ -10757,7 +10757,7 @@
     "id": "legacy-narcissu-3rd-nar3_05",
     "category": "event_story",
     "folder": "小小的伊丽丝",
-    "percent": 100,
+    "percent": 99,
     "has_cn": true,
     "has_jp": true,
     "filename_cn": "nar3_05_cn.txt",
@@ -10851,17 +10851,44 @@
     "nav_title_cn": "祈祷",
     "nav_title_jp": "祈り",
     "reader_revision_cn": {
-      "path": "/native-reader-revisions/narcissu-3rd/nar3_05/4fb406b1b33fa05b5a7b1f4b15bf100dab2583338c48e1658601aad5a961c187.native.txt",
-      "sha256": "c18243069b91c0603c4541e40309aa5467f8ae357e881e10aa62560b7c9009e0",
-      "revision": "4fb406b1b33fa05b5a7b1f4b15bf100dab2583338c48e1658601aad5a961c187"
+      "path": "/native-reader-revisions/narcissu-3rd/nar3_05/7e6a4aebfcb11cb53580203fe60c89aa3a5eb0a3d8cca08987e301565e285957.native.txt",
+      "sha256": "3360886af4526527f2419e312681490c2693934b8f1b4e9335ed8cf302150fc9",
+      "revision": "7e6a4aebfcb11cb53580203fe60c89aa3a5eb0a3d8cca08987e301565e285957"
     },
-    "source_unverified": true,
-    "human_verified": false,
+    "source_unverified": false,
+    "human_verified": true,
     "progress_rows": 300,
-    "chinese_rows": 300,
+    "chinese_rows": 298,
     "reviewed_rows": 298,
-    "pending_review_rows": 2,
-    "translation_review_policy": "original-reviewed-author-pending/v1"
+    "pending_review_rows": 0,
+    "translation_review_policy": "original-reviewed-author-pending/v1",
+    "cross_chapter_relations": [
+      {
+        "id": "nar3_05-father-recollection-jp-to-cn",
+        "source_locale": "ja-JP",
+        "source_event_ids": [
+          "mjo-521e",
+          "mjo-526f"
+        ],
+        "target_story_id": "legacy-narcissu-3rd-nar3_05",
+        "target_locale": "zh-CN",
+        "target_event_id": "mjo-3eac",
+        "message_cn": "两版本的父亲回忆段落位置不同：对应中文原文位于本章妹妹对话之前；原文顺序分别保留。",
+        "message_jp": "対応する中国語原文を参照。"
+      },
+      {
+        "id": "nar3_05-father-recollection-cn-to-jp",
+        "source_locale": "zh-CN",
+        "source_event_ids": [
+          "mjo-3eac"
+        ],
+        "target_story_id": "legacy-narcissu-3rd-nar3_05",
+        "target_locale": "ja-JP",
+        "target_event_id": "mjo-521e",
+        "message_cn": "对应日文为妹妹回忆之后的两个连续原生段落；两版本不交叉拼接。",
+        "message_jp": "対応する日本語原文を参照。"
+      }
+    ]
   },
   {
     "id": "legacy-narcissu-3rd-nar3_06",

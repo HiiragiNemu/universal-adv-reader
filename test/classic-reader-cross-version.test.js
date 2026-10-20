@@ -43,8 +43,10 @@ function fixture(story) {
 function manifest(f) { return JSON.parse(read(`/data/legacy-vn/${f.route.canonicalStoryId}.alignment.json`)); }
 function actualPage(f, document, mode = 'split') {
   return modules.fragments('app/reader/[id]/page.tsx', [
-    'activeLegacyVoiceSlot', 'currentNativeCorrespondence', 'nativeAlignmentState', 'nativePresentationState', 'cnVoiceSlots', 'jpVoiceSlots', 'renderList', 'activeVoiceSlots',
-  ], { ...routing, ...alignment(), ...cross(), currentNativeEditSource: null, nativeEditState: { error: '' }, ...modules.load('lib/native-reader-revision.ts'), useMemo: fn => fn(), legacyVoiceRoute: f.route,
+    'activeLegacyVoiceSlot', 'currentNativeCorrespondence', 'nativeAlignmentState', 'nativeCounterpartState', 'nativePresentationState', 'cnVoiceSlots', 'jpVoiceSlots', 'renderList', 'activeVoiceSlots',
+  ], { ...routing, ...alignment(), ...cross(), ...modules.load('lib/native-section-anchors.ts'),
+    currentStory: stories.find(story => story.source_identity === f.route.canonicalStoryId),
+    currentNativeEditSource: null, nativeEditState: { error: '' }, ...modules.load('lib/native-reader-revision.ts'), useMemo: fn => fn(), legacyVoiceRoute: f.route,
     cnEventLines: f.cn, jpEventLines: f.jp, cnSource: { raw: f.cnText }, jpSource: { raw: f.jpText },
     currentLegacyVoiceRoutePath: routing.legacyVoiceRoutePath(f.route.canonicalStoryId),
     nativeCorrespondenceState: { route: f.route, cnRaw: f.cnText, jpRaw: f.jpText, data: document, error: '', loading: false },

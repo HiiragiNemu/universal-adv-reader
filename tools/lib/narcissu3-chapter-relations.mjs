@@ -3,6 +3,10 @@ import path from 'node:path';
 import { createHash } from 'node:crypto';
 const sha=bytes=>createHash('sha256').update(bytes).digest('hex');
 const SOURCE_BINDINGS={
+  'archive/derived/scripts/narcissu3/update.arc.unpacked/nar3_05.plain.mjo':'a9835b41e4f9faf6ddfdb1feac7270f0a216518b75e60c91bcab9af12d1412bb',
+  'archive/derived/scripts/narcissu3/update.arc.unpacked/nar3_05.script.json':'0e2ad2281b7e791c2a9193cc227cf39ee8536562234370658e131b37e8e499b6',
+  'archive/derived/scripts/narcissu3/scenario.arc.unpacked/nar3_05.plain.mjo':'b047e12a9b356c9ed5549db0e1cdba9e50c8ce7c60fe0e82e7d92036832e0dfb',
+  'archive/derived/scripts/narcissu3/scenario.arc.unpacked/nar3_05.script.json':'5dc2cb5a20d2069ccd49a622200bf10e7b51713db5e8f389353ae37e0bbbafee',
   'archive/derived/scripts/narcissu3/update.arc.unpacked/nara03.plain.mjo':'e751480b97c3dd5787357f2c8c0fef896a89f2437b6699f999bd945a4421673a',
   'archive/derived/scripts/narcissu3/update.arc.unpacked/nara03.script.json':'56d229fb129ec08c4e963e24c33edf1fb25d390d78fea2038c3093de7270ad21',
   'archive/derived/scripts/narcissu3/scenario.arc.unpacked/nara03.plain.mjo':'593fcb46fda34dedd1ebb5007e22c4645addfd5c0e0a8402f65cd064fec4386d',
@@ -49,6 +53,10 @@ export async function buildNarcissu3ChapterRelations(inputs, corpusRoot) {
   if(movedCnVoices.some((c,i)=>c.mediaId!==movedJpVoices[i].mediaId))throw Error('Relocated native voice media changed');
   const movedMessageCn='中日版本将海璃与英治的这三句对话放在了本章不同的位置。';
   const movedMessageJp='中国語版と日本語版では、海璃と英治のこの3つの台詞が、章内の異なる位置に配置されています。';
+  const fatherCn=pick('narcissu-3rd/nar3_05','mjo/narcissu3/update.arc.unpacked/nar3_05','mjo-3eac','mjo-3eac',1,'zh-CN');
+  const fatherJp=pick('narcissu-3rd/nar3_05','mjo/narcissu3/scenario.arc.unpacked/nar3_05','mjo-521e','mjo-526f',2,'ja-JP');
+  if([...fatherCn.events,...fatherJp.events].some(e=>(e.cues??[]).length||e.source?.nativeUnit?.speakerRaw))
+    throw Error('Relocated father recollection gained unreviewed cue/name controls');
   const relation=(source,target,message_cn,message_jp,name='iris-border-scene')=>({
     id:name+'-'+(source.locale==='zh-CN'?'cn':'jp'),
     source_locale:source.locale,source_event_ids:source.events.map(e=>e.eventId),
@@ -63,9 +71,14 @@ export async function buildNarcissu3ChapterRelations(inputs, corpusRoot) {
     nativeVoiceCalls:{cn:cv,jp:jv},
     sameChapterRelocationExplanation:'Three complete native text units in nara03 have the same two byte-bound native voice operands surrounding Eiji\'s matching landlord instructions, but occupy different positions. Location links preserve the full order of both versions; they never override existing stronger message anchors.',
     additionalNativeVoiceCalls:{ciRelocation:{cn:movedCnVoices,jp:movedJpVoices}},
-    sourceBlocks:[cn,jp,movedCn,movedJp].map(side=>({storyId:side.identity,variantId:side.variantId,locale:side.locale,
+    fatherRecollectionEvidence:'Byte-bound native instructions and next-event chains put the original Chinese father/killer recollection before the sister dialogue, and the two Japanese units after it. Same-scene location only; no line-number matching, new translation or word-for-word quality approval.',
+    sourceBlocks:[cn,jp,movedCn,movedJp,fatherCn,fatherJp].map(side=>({storyId:side.identity,variantId:side.variantId,locale:side.locale,
       events:side.events.map(e=>({eventId:e.eventId,text:e.text?.[side.locale],source:e.source?.nativeUnit}))})),
     byStory:{
+      [fatherCn.identity]:[
+        {...relation(fatherJp,fatherCn,'两版本的父亲回忆段落位置不同：对应中文原文位于本章妹妹对话之前；原文顺序分别保留。','対応する中国語原文を参照。'),id:'nar3_05-father-recollection-jp-to-cn'},
+        {...relation(fatherCn,fatherJp,'对应日文为妹妹回忆之后的两个连续原生段落；两版本不交叉拼接。','対応する日本語原文を参照。'),id:'nar3_05-father-recollection-cn-to-jp'},
+      ],
       [movedCn.identity]:[relation(movedCn,movedJp,movedMessageCn,movedMessageJp,'ci-relocated-notice'),relation(movedJp,movedCn,movedMessageCn,movedMessageJp,'ci-relocated-notice')],
       [cn.identity]:[relation(cn,jp,'中日版本的分章位置不同：本章末段的对应日文位于下一章开头。','章の区切りが異なります。この章の中国語末尾に対応する日本語は、次の章の冒頭にあります。')],
       [jp.identity]:[relation(jp,cn,'中日版本的分章位置不同：本章日文开头的对应中文位于上一章末段。','章の区切りが異なります。この章の日本語冒頭に対応する中国語は、前の章の末尾にあります。')],

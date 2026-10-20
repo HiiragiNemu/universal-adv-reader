@@ -87,10 +87,12 @@ test('actual page downloads/imports the native patch with empty fields and never
   const name=f.document.rows.findIndex(r=>r.allowed.includes('speaker'));if(name>=0)lines[name].speaker='';
   const downloads=[],messages=[],captured=[],nativeRef={current:f.source};
   const bindings={currentNativeEditSource:f.source,currentLegacyVoiceRoutePath:'/native/routes',nativeEditState:{error:''},nativeAlignmentState:{rows:f.rows,error:''},editedCnLines:lines,id:index[0].id,
+    currentStory:index[0],useMemo:fn=>fn(),...modules.load('lib/native-section-anchors.ts'),...modules.load('lib/native-translation-patch.ts'),
     createNativeTranslationPatch,importNativeTranslationPatch,triggerUtf8Download:(raw,name)=>downloads.push({raw,name}),setEditMessage:message=>messages.push(message),
     nativeEditSourceRef:nativeRef,readScenarioFile,setEditedCnLines:next=>captured.push(next),setMode(){},jpEventLines:[{}],
     fetch:()=>{throw Error('Native editing must not submit to the old backend');}};
-  const {downloadNativePatch,downloadTranslation,uploadTranslation,submitToCloud}=modules.fragments('app/reader/[id]/page.tsx',['downloadNativePatch','downloadTranslation','uploadTranslation','submitToCloud'],bindings);
+  const {downloadNativePatch,downloadTranslation,uploadTranslation,submitToCloud}=modules.fragments('app/reader/[id]/page.tsx',
+    ['nativeCounterpartState','nativeCounterparts','effectiveNativeEditSource','downloadNativePatch','downloadTranslation','uploadTranslation','submitToCloud'],bindings);
   downloadTranslation();assert.equal(downloads.length,1);assert.match(downloads[0].name,/_native-translation\.patch\.json$/);
   const payload=JSON.parse(downloads[0].raw);assert.equal(payload.schema,'native-reader-translation-patch/v1');assert.ok(payload.changes.some(c=>c.after===''));
   await uploadTranslation({target:{files:[new File([downloads[0].raw],'progress.json')],value:'input'}});assert.deepEqual(captured[0],lines);

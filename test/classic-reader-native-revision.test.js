@@ -109,8 +109,9 @@ test('JP-origin revision survives actual reader pipeline, TXT, regenerated searc
   assert.deepEqual(rows[added].cnSlot,rows[added].jpSlot,'new Chinese uses its own Japanese native occurrence, not old CN offset');
   const modules=classicModules(),parse=t=>parseStoryContent(t,{mergeConsecutiveTextLines:false}).lines;
   const currentNativeCorrespondence=await fs.readFile(path.join(target,`data/legacy-vn/${identity}.alignment.json`),'utf8').then(JSON.parse).catch(error=>{if(error.code==='ENOENT')return null;throw error;});
-  const actual=modules.fragments('app/reader/[id]/page.tsx',['nativeAlignmentState','nativePresentationState'],{
-    ...modules.load('lib/legacy-vn-alignment.ts'),...modules.load('lib/legacy-vn-correspondence.ts'),projectNativeReaderRevisionRows,
+  const actual=modules.fragments('app/reader/[id]/page.tsx',['nativeAlignmentState','nativeCounterpartState','nativePresentationState'],{
+    ...modules.load('lib/legacy-vn-alignment.ts'),...modules.load('lib/legacy-vn-correspondence.ts'),...modules.load('lib/native-section-anchors.ts'),projectNativeReaderRevisionRows,
+    currentStory:entry,
     currentNativeEditSource:loaded.source,nativeEditState:{error:''},useMemo:f=>f(),legacyVoiceRoute:loaded.route,cnEventLines:parse(loaded.cn),jpEventLines:parse(loaded.jp),
     currentLegacyVoiceRoutePath:'/native/routes',currentNativeCorrespondence,nativeCorrespondenceState:{error:''},isEditMode:false,editedCnLines:[],mode:'split',
   });

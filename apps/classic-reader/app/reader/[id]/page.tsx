@@ -76,7 +76,7 @@ import {
   type NativeChapterRelation,
 } from '@/lib/story-index';
 import { triggerUtf8Download } from '@/lib/browser-download';
-import { createNativeTranslationPatch, importNativeTranslationPatch } from '@/lib/native-translation-patch';
+import { createNativeTranslationPatch, importNativeTranslationPatch, withNativeCounterpartPolicy, seedNativeTranslationLines } from '@/lib/native-translation-patch';
 import NativeReviewSubmit from '@/components/NativeReviewSubmit';
 import { loadCurrentNativeEditSource as loadNativeEditSource, projectNativeReaderRevisionRows,
   serializeNativeRevisionText, type CurrentNativeEditSource as LoadedNativeEditSource } from '@/lib/native-reader-revision';
@@ -88,7 +88,7 @@ import {
 import { resolveOfficialSectionTitle } from '@/lib/official-tw-titles';
 import { initializeReaderFonts } from '@/lib/reader-fonts';
 import { indexNativeEventRows, indexNativeSectionAnchors, isNativeSectionTitleRow,
-  resolveNativeSourceAnchor, crossChapterRelationForRow, nativeChapterRelationHref, type NativeSectionDescriptor } from '@/lib/native-section-anchors';
+  resolveNativeSourceAnchor, crossChapterRelationForRow, nativeChapterRelationHref, resolveSameStoryNativeCounterparts, nativeCounterpartForRow, type NativeSectionDescriptor } from '@/lib/native-section-anchors';
 import {
   isReaderRulerEnabled,
   READER_FONT_SIZE_MAX,
@@ -959,16 +959,24 @@ export default function ReaderPage({ params }: { params: Promise<{ id: string }>
     }
     catch (error) { return { rows: [], error: error instanceof Error ? error.message : '原作事件对应失败' }; }
   }, [legacyVoiceRoute, cnEventLines, jpEventLines, currentNativeCorrespondence, nativeCorrespondenceState.error, currentLegacyVoiceRoutePath, currentNativeEditSource, nativeEditState.error]);
+  const nativeCounterpartState = useMemo(() => {
+    try { return { context: resolveSameStoryNativeCounterparts(currentStory,nativeAlignmentState.rows??[]), error:'' }; }
+    catch(error) { return { context: resolveSameStoryNativeCounterparts(undefined,[]), error:error instanceof Error ? error.message : '原译文对应关系无效' }; }
+  },[currentStory,nativeAlignmentState.rows]);
+  const nativeCounterparts = nativeCounterpartState.context;
+  const effectiveNativeEditSource = useMemo(() => currentNativeEditSource
+    ? withNativeCounterpartPolicy(currentNativeEditSource,nativeCounterparts) : null,[currentNativeEditSource,nativeCounterparts]);
   const nativePresentationState = useMemo(() => {
     if (nativeAlignmentState.rows === null) return { rows: null, error: nativeAlignmentState.error };
     try {
+      if(nativeCounterpartState.error)throw Error(nativeCounterpartState.error);
       const rows = isEditMode ? (editedCnLines.length > 0
         ? applyNativeEditedLines(nativeAlignmentState.rows, editedCnLines) : nativeAlignmentState.rows)
         : mergeNativeAlignedRows(nativeAlignmentState.rows);
       return { rows: mode === 'split' || isEditMode ? rows : rows.filter(row => mode === 'cn' ? row.cn : row.jp), error: nativeAlignmentState.error };
     }
     catch (error) { return { rows: [], error: error instanceof Error ? error.message : '编辑事件对应失败' }; }
-  }, [nativeAlignmentState, isEditMode, editedCnLines, mode]);
+  }, [nativeAlignmentState, nativeCounterpartState.error, isEditMode, editedCnLines, mode]);
   const cnVoiceSlots = nativePresentationState.rows !== null
     ? nativePresentationState.rows.map(row => row.cnSlot) : isEditMode
     ? legacyVoiceSlotState.cn.eventSlots
@@ -1399,11 +1407,11 @@ export default function ReaderPage({ params }: { params: Promise<{ id: string }>
     if (currentStory?.source_identity && !currentNativeEditSource) {
       setEditMessage(nativeEditState.error || '原生修订版本准备中，请稍后进入编辑'); return false;
     }
-    if (currentStory?.source_identity && (!legacyVoiceRoute || nativeAlignmentState.error)) {
-      setEditMessage(nativeAlignmentState.error || '原作事件索引准备中，请稍后进入编辑'); return false;
+    if (currentStory?.source_identity && (!legacyVoiceRoute || nativeAlignmentState.error || nativeCounterpartState.error)) {
+      setEditMessage(nativeAlignmentState.error || nativeCounterpartState.error || '原作事件索引准备中，请稍后进入编辑'); return false;
     }
     const next = nativeAlignmentState.rows !== null
-      ? seedNativeEditableLines(nativeAlignmentState.rows, seed)
+      ? effectiveNativeEditSource ? seedNativeTranslationLines(effectiveNativeEditSource,nativeAlignmentState.rows,seed) : seedNativeEditableLines(nativeAlignmentState.rows, seed)
       : seedEditableLines(cnEventLines, jpEventLines, seed);
     if (next.length === 0) {
       setEditMessage('当前剧情没有可编辑的文本。');
@@ -1414,11 +1422,11 @@ export default function ReaderPage({ params }: { params: Promise<{ id: string }>
     setEditMessage('');
     return true;
   }, [currentStory?.source_identity, currentNativeEditSource, nativeEditState.error,
-    legacyVoiceRoute, nativeAlignmentState, cnEventLines, jpEventLines]);
+    legacyVoiceRoute, nativeAlignmentState, nativeCounterpartState.error, effectiveNativeEditSource, cnEventLines, jpEventLines]);
 
   const nativeEditingLoading = Boolean(currentStory?.source_identity) &&
     (!currentNativeEditSource || !legacyVoiceRoute || !nativeAlignmentState.rows?.length);
-  const nativeEditingError = nativeEditState.error || nativeAlignmentState.error;
+  const nativeEditingError = nativeEditState.error || nativeAlignmentState.error || nativeCounterpartState.error;
   useEffect(() => {
     if (!editRequestedByUrl) { consumedEditDeepLink.current = ''; return; }
     if (!storyIndexReady || loading || loadError || consumedEditDeepLink.current === id) return;
@@ -1465,7 +1473,7 @@ export default function ReaderPage({ params }: { params: Promise<{ id: string }>
     try {
       if (!currentNativeEditSource) throw Error(nativeEditState.error || '原生编辑来源准备中');
       if (nativeAlignmentState.error) throw Error(nativeAlignmentState.error);
-      const patch = createNativeTranslationPatch(currentNativeEditSource, editedCnLines);
+      const patch = createNativeTranslationPatch(effectiveNativeEditSource!, editedCnLines);
       triggerUtf8Download(JSON.stringify(patch, null, 2) + '\n', id + '_native-translation.patch.json');
       setEditMessage(`已下载原生翻译补丁：${patch.changes.length} 个文本字段；原作指令、分支和媒体保持只读`);
     } catch (error) { setEditMessage(error instanceof Error ? error.message : '原生补丁生成失败'); }
@@ -1672,12 +1680,13 @@ export default function ReaderPage({ params }: { params: Promise<{ id: string }>
     event.target.value = '';
     if (!file) return;
     const nativeSourceAtStart = currentNativeEditSource;
+    const effectiveSourceAtStart = effectiveNativeEditSource;
     try {
       const source = await readScenarioFile(file);
       if (currentLegacyVoiceRoutePath) {
-        if (!nativeSourceAtStart || nativeEditSourceRef.current !== nativeSourceAtStart) throw Error('原生编辑来源准备中或剧情已切换');
+        if (!nativeSourceAtStart || !effectiveSourceAtStart || nativeEditSourceRef.current !== nativeSourceAtStart) throw Error('原生编辑来源准备中或剧情已切换');
         if (!nativeAlignmentState.rows || nativeAlignmentState.error) throw Error(nativeAlignmentState.error || '原作事件尚未就绪');
-        const next = importNativeTranslationPatch(nativeSourceAtStart, JSON.parse(source.raw), nativeAlignmentState.rows);
+        const next = importNativeTranslationPatch(effectiveSourceAtStart, JSON.parse(source.raw), nativeAlignmentState.rows);
         setEditedCnLines(next); setMode(jpEventLines.length > 0 ? 'split' : 'cn');
         setEditMessage('已按原生事件与源哈希导入翻译补丁；空字幕、空姓名与选项文本保留');
         return;
@@ -1908,7 +1917,7 @@ export default function ReaderPage({ params }: { params: Promise<{ id: string }>
   if (loading) return <LoadingScreen />;
 
   const currentTranslationReview=currentNativeEditSource?.revision?.translationReview;
-  const readingCoverage=nativeAlignmentState.rows ? nativeCoverage(mergeNativeAlignedRows(nativeAlignmentState.rows),currentTranslationReview) : null;
+  const readingCoverage=nativeAlignmentState.rows && !nativeCounterpartState.error ? nativeCoverage(mergeNativeAlignedRows(nativeAlignmentState.rows),currentTranslationReview,currentStory) : null;
   const hasChineseDisplay =
     cnLines.length > 0 || (readingCoverage?.hasChinese ?? false) || (isEditMode && editedCnLines.length > 0);
   const hasJapaneseDisplay = jpLines.length > 0;
@@ -2525,7 +2534,7 @@ export default function ReaderPage({ params }: { params: Promise<{ id: string }>
 
                 <div className="magi-proofreading-submit-panel mt-3">
                   {currentLegacyVoiceRoutePath ? (
-                    currentNativeEditSource ? <NativeReviewSubmit key={currentNativeEditSource.sha256} source={currentNativeEditSource} lines={editedCnLines} /> : <p className="magi-proofreading-help">正在核对原生补丁来源…</p>
+                    effectiveNativeEditSource ? <NativeReviewSubmit key={effectiveNativeEditSource.sha256} source={effectiveNativeEditSource} lines={editedCnLines} /> : <p className="magi-proofreading-help">正在核对原生补丁来源…</p>
                   ) : proofreadingConfigLoading ? (
                     <p className="magi-proofreading-help">正在连接投稿服务…</p>
                   ) : proofreadingConfig?.submissions_enabled && proofreadingConfig.turnstile_site_key ? (
@@ -2595,8 +2604,8 @@ export default function ReaderPage({ params }: { params: Promise<{ id: string }>
               <a className="underline" href={currentStory.supplement_source.original_path} download={currentStory.supplement_source.filename}>原始文本</a>
             </aside>}
             {currentStory?.cross_chapter_relations?.length ? <details data-native-source-details="true" className="mb-3 text-xs opacity-70">
-              <summary className="cursor-pointer">跨章原译文已在本页补显 · 查看版本来源</summary>
-              {currentStory.cross_chapter_relations.filter((relation,index,list)=>list.findIndex(other=>other.message_cn===relation.message_cn)===index).map(relation=><NativeChapterRelationNotice key={relation.id} relation={relation} mode={mode}/>)}
+              <summary className="cursor-pointer">版本对应位置 · 查看原文来源</summary>
+              {currentStory.cross_chapter_relations.map(relation=><NativeChapterRelationNotice key={relation.id} relation={relation} mode={mode} currentStoryId={currentStory.id}/>)}
             </details> : null}
             {nativeCorrespondenceState.loading && <p role="status" className="mb-4 text-xs opacity-60">正在载入原作事件对应…</p>}
             {nativePresentationState.error && <p role="alert" className="mb-4 text-sm text-red-600">{nativePresentationState.error}</p>}
@@ -2645,7 +2654,8 @@ export default function ReaderPage({ params }: { params: Promise<{ id: string }>
                 {nativeSections.map(section => <NativeChapterHeading key={section.anchorId} section={section} mode={mode} />)}
                 {!titleOnly && <StoryRow
                   sourceStoryId={currentStory?.source_identity}
-                  counterpartRelation={crossChapterRelationForRow(currentStory, row)}
+                  readerStoryId={currentStory?.id}
+                  counterpartRelation={nativeCounterpartForRow(nativeCounterparts,row) ?? crossChapterRelationForRow(currentStory, row)}
                   translationReview={'nativeKeys' in row ? translationReviewForRow(row as NativeAlignedRow,currentTranslationReview) : undefined}
                   row={row}
                   nativeScriptHeader={Boolean(currentStory?.native_sections && currentStory.native_sections.length > 1)}
@@ -2667,7 +2677,7 @@ export default function ReaderPage({ params }: { params: Promise<{ id: string }>
                   editedLines={editedCnLines}
                   setEditedLines={setEditedCnLines}
                   embeddedNativeSpeaker={legacyVoiceRoute?.canonicalStoryId.startsWith('kana-okaeri/') ?? false}
-                  nativeReadOnlyReason={currentLegacyVoiceRoutePath ? nativeEditRowsByKey.get(nativePresentationState.rows?.[index]?.nativeKeys[0] ?? '')?.readOnlyReason : undefined}
+                  nativeReadOnlyReason={currentLegacyVoiceRoutePath ? nativeCounterparts.readonlyTranslationKeys.has(nativePresentationState.rows?.[index]?.nativeKeys[0] ?? '') ? 'translation-on-relocated-source' : nativeEditRowsByKey.get(nativePresentationState.rows?.[index]?.nativeKeys[0] ?? '')?.readOnlyReason : undefined}
                   nativeSpeakerEditable={currentLegacyVoiceRoutePath ? nativeEditRowsByKey.get(nativePresentationState.rows?.[index]?.nativeKeys[0] ?? '')?.allowed.includes('speaker') ?? false : undefined}
                   query={deferredSearchQuery}
                   lineCounts={lineCounts[index]}
@@ -2952,10 +2962,10 @@ function NativeChapterHeading({ section, mode }: { section: NativeSectionDescrip
   </section>;
 }
 
-function NativeChapterRelationNotice({ relation, mode }: { relation: NativeChapterRelation; mode: ReaderMode }) {
+function NativeChapterRelationNotice({ relation, mode, currentStoryId }: { relation: NativeChapterRelation; mode: ReaderMode; currentStoryId?: string }) {
   return <aside data-native-chapter-relation={relation.id} className="mb-4 rounded-lg border border-current/20 p-3 text-sm">
     <p lang={mode === 'jp' ? 'ja' : 'zh-Hans'}>{mode === 'jp' ? relation.message_jp : relation.message_cn}</p>
-    <a className="mt-1 inline-block font-semibold underline underline-offset-4" href={nativeChapterRelationHref(relation)}>
+    <a className="mt-1 inline-block font-semibold underline underline-offset-4" href={nativeChapterRelationHref(relation,currentStoryId)}>
       {relation.target_locale === 'zh-CN' ? '查看对应中文' : '查看对应日文'}
     </a>
   </aside>;
@@ -2972,6 +2982,7 @@ type StoryRowProps = {
   isExedra: boolean;
   officialSectionTitles?: string[];
   sourceStoryId?: string;
+  readerStoryId?: string;
   voicePanelExpanded: boolean;
   voiceRouteError: string;
   voiceSlot: LegacyVoiceSlot | null;
@@ -2996,6 +3007,7 @@ type StoryRowProps = {
 
 function StoryRow({
   sourceStoryId,
+  readerStoryId,
   row,
   index,
   editIndex,
@@ -3278,7 +3290,12 @@ function StoryRow({
           }`}
         >
           {renderVoiceControls()}
-          {isEditMode ? nativeReadOnlyReason === 'translation-on-native-group-members' ? (
+          {isEditMode ? nativeReadOnlyReason === 'translation-on-relocated-source' && counterpartRelation ? (
+            <p data-reader-text-cell="cn-relocated-note" className="flex-1 py-2 text-sm opacity-70">
+              对应原译文位于本章另一位置，请在原译位置编辑。
+              <a data-native-counterpart-link={counterpartRelation.id} className="ml-1 underline underline-offset-4" href={nativeChapterRelationHref(counterpartRelation,readerStoryId)}>查看对应中文原文</a>
+            </p>
+          ) : nativeReadOnlyReason === 'translation-on-native-group-members' ? (
             <p data-reader-text-cell="cn-native-group-note" className="flex-1 py-2 text-sm opacity-70">
               译文位于同一句段的中文事件，请修改对应中文行。
             </p>
@@ -3368,11 +3385,12 @@ function StoryRow({
                 <span data-reader-text-content="cn">
                 {renderBodyText('cn')}
                 </span>
+                {mode==='cn'&&counterpartRelation&&<a data-native-counterpart-link={counterpartRelation.id} className="mt-1 block text-xs underline underline-offset-4 opacity-70" href={nativeChapterRelationHref(counterpartRelation,readerStoryId)}>查看对应日文原文</a>}
               </div>
             </>
           ) : (
             <div data-reader-text-cell="cn-empty" className={`flex-1 border-b border-dashed border-black/5 py-1 text-xs ${counterpartRelation ? 'opacity-70' : 'italic opacity-20'}`}>
-              {counterpartRelation ? <a data-native-counterpart-link={counterpartRelation.id} className="underline underline-offset-4" href={nativeChapterRelationHref(counterpartRelation)}>查看对应中文原文</a>
+              {counterpartRelation ? <a data-native-counterpart-link={counterpartRelation.id} className="underline underline-offset-4" href={nativeChapterRelationHref(counterpartRelation,readerStoryId)}>查看对应中文原文</a>
                 : 'pairing' in row && row.pairing === 'unpaired-jp' ? '中日对应待核实' : '等待翻译…'}
             </div>
           )}
@@ -3396,11 +3414,12 @@ function StoryRow({
                 <span data-reader-text-content="jp">
                 {renderBodyText('jp')}
                 </span>
+                {mode==='jp'&&counterpartRelation&&<a data-native-counterpart-link={counterpartRelation.id} className="mt-1 block text-xs underline underline-offset-4 opacity-70" href={nativeChapterRelationHref(counterpartRelation,readerStoryId)}>查看对应中文原文</a>}
               </div>
             </>
           ) : (
             <div data-reader-text-cell="jp-empty" className={`flex-1 py-1 text-xs ${counterpartRelation ? 'opacity-70' : 'italic opacity-20'}`}>
-              {counterpartRelation ? <a data-native-counterpart-link={counterpartRelation.id} className="underline underline-offset-4" href={nativeChapterRelationHref(counterpartRelation)}>查看对应日文原文</a> : '…'}
+              {counterpartRelation ? <a data-native-counterpart-link={counterpartRelation.id} className="underline underline-offset-4" href={nativeChapterRelationHref(counterpartRelation,readerStoryId)}>查看对应日文原文</a> : '…'}
             </div>
           )}
         </div>

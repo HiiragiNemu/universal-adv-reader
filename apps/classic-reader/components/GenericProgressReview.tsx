@@ -69,8 +69,8 @@ export default function GenericProgressReview({ initialProgress = null }: { init
             {entries.map(entry => <article key={entry.id} className={`grid gap-3 border-b p-3 md:grid-cols-[10rem_minmax(0,1fr)_10rem] md:items-center ${entry.pendingReviewRows>0 ? 'bg-amber-500/10' : ''}`}>
               <strong className="break-all font-mono text-xs">{entry.identity}</strong>
               <div className="min-w-0"><p className="font-bold">{entry.title || entry.identity}</p><p className="text-xs opacity-70">{GENERIC_PROGRESS_WORKS[entry.category]} · {entry.variants} 版本 · 中文 {entry.chineseRows}/{entry.rows} · {entry.pendingReviewRows>0 ? `补译 ${entry.pendingReviewRows} 段待校对` : entry.hasChinese ? '已校对' : '无中文'}</p>
-                <p className="mt-1 text-xs opacity-60">版本独有中文 {entry.unmatchedChineseRows} 段（不补日文）；缺中文 {entry.unmatchedJapaneseRows} 段{entry.revision ? ' · 已安装本地修订' : ''}</p></div>
-              <div className="flex gap-3 text-xs font-black"><Link href={`/reader/${entry.id}`} className="underline">阅读</Link><Link href={`/reader/${entry.id}?edit=1`} className="underline">协助汉化</Link></div>
+                <p className="mt-1 text-xs opacity-60">本行无日文 {entry.unmatchedChineseRows} 段{entry.relocatedChineseRows ? `（其中 ${entry.relocatedChineseRows} 段已定位对应日文）` : ''}；缺中文 {entry.missingChineseRows ?? Math.max(0,entry.unmatchedJapaneseRows-(entry.pendingCorrespondenceJapaneseRows??0))} 段{entry.relocatedJapaneseRows ? `；${entry.relocatedJapaneseRows} 个日文段落对应已有中文原文` : ''}{entry.pendingCorrespondenceRows ? `；中日对应待核实 ${entry.pendingCorrespondenceRows} 段` : ''}{entry.revision ? ' · 已安装本地修订' : ''}</p></div>
+              <div className="flex gap-3 text-xs font-black"><Link href={`/reader/${entry.id}`} className="underline">阅读</Link><Link href={`/reader/${entry.id}?edit=1`} className="underline">{entry.relocatedJapaneseRows && !entry.pendingReviewRows ? '校对原译文' : '协助汉化'}</Link></div>
             </article>)}
             {!entries.length && <p className="p-8 text-center opacity-60">{loading ? '正在读取本地进度…' : '没有符合筛选条件的剧情。'}</p>}
           </div>

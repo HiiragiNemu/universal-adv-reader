@@ -4,6 +4,7 @@ import { seedNativeEditableLines } from './legacy-vn-alignment.ts';
 import { hashNativeText } from './legacy-vn-correspondence.ts';
 import { legacyVoiceRoutePath, type LegacyVoiceRouteDocument } from './legacy-vn-voice-routing.ts';
 import { readBoundedResponseBody } from './story-index.ts';
+import type { NativeCounterpartContext } from './native-section-anchors.ts';
 
 export type NativeEditableField = 'text' | 'speaker' | 'choiceLabel';
 export type NativeEditTarget = { variantId: string; sectionId: string; eventId: string; choiceId?: string };
@@ -22,7 +23,10 @@ export type NativeEditSource = {
   nativeSources: Array<{ path: string; sha256: string }>;
   rows: NativeEditRow[];
 };
-export type LoadedNativeEditSource = { document: NativeEditSource; sha256: string };
+export type LoadedNativeEditSource = { document: NativeEditSource; sha256: string;
+  /** Derived from current trusted source rows and index, never from an upload. */
+  translationPolicy?: { readonlyKeys: ReadonlySet<string>; requiredTextKeys: ReadonlySet<string> };
+};
 export type NativeTranslationPatch = {
   schema: 'native-reader-translation-patch/v1';
   storyId: string;
@@ -50,6 +54,26 @@ const record = (value: unknown): value is Record<string, unknown> => Boolean(val
 const exactKeys = (value: unknown, keys: string[]) => record(value) && equal(Object.keys(value).sort(), [...keys].sort());
 const validText = (value: unknown): value is string => typeof value === 'string' && value.length <= 200_000
   && !/[\u0000-\u0008\u000b\u000c\u000e-\u001f\u007f]/u.test(value);
+
+export function withNativeCounterpartPolicy<T extends LoadedNativeEditSource>(source: T, counterparts: NativeCounterpartContext): T {
+  return { ...source, translationPolicy: {
+    readonlyKeys: counterparts.readonlyTranslationKeys, requiredTextKeys: counterparts.requiredTranslationKeys,
+  } };
+}
+
+/** Seed editable native fields while leaving relocated translations at their
+ * original source event. The immutable source document/hash is not rewritten. */
+export function seedNativeTranslationLines(source: LoadedNativeEditSource, rows: NativeAlignedRow[], seed: 'current' | 'empty' | 'jp'): StoryLine[] {
+  const definitions = new Map(source.document.rows.map(row=>[row.key,row]));
+  return seedNativeEditableLines(rows,seed).map(line=>{
+    const key=(line as EditedLine).nativeAlignmentKey!;
+    const baseline=definitions.get(key)?.baseline;
+    if(!baseline)throw Error('编辑事件与原生来源不匹配');
+    if(source.translationPolicy?.readonlyKeys.has(key))return {...line,...baseline};
+    if(source.translationPolicy?.requiredTextKeys.has(key)&&!line.text.trim())return {...line,text:baseline.text};
+    return line;
+  });
+}
 
 export function splitIkuraMessageText(value: string): { speaker: string; body: string; prefix: string } {
   const match = value.match(/^(\s*)([^:：「『\n]{1,24})([：:])(?=[「『])/u);
@@ -160,6 +184,8 @@ export function validateNativeTranslationPatch(source: LoadedNativeEditSource, v
     if (!row || !row.target || !row.allowed.includes(change.field) || changed.has(identity)
       || !validText(change.before) || !validText(change.after) || change.before !== row.baseline[change.field]
       || change.before === change.after) throw Error('补丁字段重复、只读或基准不一致');
+    if(source.translationPolicy?.readonlyKeys.has(change.key))throw Error('对应原译文位于另一原生事件，请在原译位置编辑');
+    if(change.field==='text'&&source.translationPolicy?.requiredTextKeys.has(change.key)&&!change.after.trim())throw Error('已有版本对应指向此原译文，清空前须先复核对应关系');
     changed.add(identity);
   }
   return patch;

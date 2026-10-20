@@ -54,15 +54,29 @@ test('single-newline novel and Himeko editions never collapse a whole chapter in
  assert(prologue.paragraphs.length>30);assert.equal(index.find(s=>s.id===prologue.id).progress_rows,prologue.paragraphs.length);
 });
 
-test('native projection keeps two source-bound pending Japanese rows separate from seven translation proofreading tasks',async()=>{
+test('native projection separates two pending and two relocated Japanese rows from six translation proofreading tasks',async()=>{
  const direct=await buildCurrentGenericProgress(pub),snapshot=await loadCurrentGenericProgress(pub);
  assert.deepEqual(snapshot,direct,'initial catalog/snapshot and asynchronous API use the same counts');
- assert.equal(direct.withoutChinese,0);assert.equal(direct.entries.reduce((n,e)=>n+e.unmatchedJapaneseRows,0),2);
- assert.deepEqual(direct.entries.filter(e=>e.unmatchedJapaneseRows).map(e=>[e.identity,e.unmatchedJapaneseRows,e.pendingCorrespondenceRows,e.pendingCorrespondenceJapaneseRows]),[['narcissu-3rd/nard01',2,3,2]]);
- assert.equal(direct.chineseRows+2,direct.rows);assert.equal(direct.pendingReviewRows,136);assert.equal(direct.humanVerified,316);
+ assert.equal(direct.withoutChinese,0);assert.equal(direct.entries.reduce((n,e)=>n+e.unmatchedJapaneseRows,0),4);
+ assert.deepEqual(direct.entries.filter(e=>e.unmatchedJapaneseRows).map(e=>[
+   e.identity,e.unmatchedJapaneseRows,e.pendingCorrespondenceRows??0,e.pendingCorrespondenceJapaneseRows??0,e.relocatedJapaneseRows??0,e.missingChineseRows,
+ ]).sort(),[['narcissu-3rd/nard01',2,3,2,0,0],['narcissu-3rd/nar3_05',2,0,0,2,0]].sort());
+ assert.equal(direct.entries.reduce((n,e)=>n+(e.pendingCorrespondenceJapaneseRows??0),0),2);
+ assert.equal(direct.entries.reduce((n,e)=>n+(e.relocatedJapaneseRows??0),0),2);
+ assert.equal(direct.entries.reduce((n,e)=>n+e.missingChineseRows,0),0);
+ assert.equal(direct.chineseRows+4,direct.rows);assert.equal(direct.pendingReviewRows,134);
+ const policyHumanVerified=direct.humanVerified;
+ assert.equal(policyHumanVerified,317,'translation-policy count is separate from human correspondence acceptance');
+ assert.equal(direct.needsReview,6);
  assert.deepEqual(direct.entries.filter(e=>e.pendingReviewRows).map(e=>[e.identity,e.pendingReviewRows]).sort(),[
-  ['kana-okaeri/ev49b',1],['narcissu-3rd/nar3_04',2],['narcissu-3rd/nar3_05',2],['narcissu-3rd/nar3_07',1],['narcissu-3rd/nar3_08',1],['narcissu-3rd/product',4],['narcissu-himeko/omake_062',125],
+  ['kana-okaeri/ev49b',1],['narcissu-3rd/nar3_04',2],['narcissu-3rd/nar3_07',1],['narcissu-3rd/nar3_08',1],['narcissu-3rd/product',4],['narcissu-himeko/omake_062',125],
  ].sort());
- assert.equal(direct.rows,direct.reviewedRows+direct.pendingReviewRows+2);
- for(const e of direct.entries){const s=index.find(s=>s.id===e.id);assert.equal(s.reviewed_rows,e.reviewedRows);assert.equal(s.pending_review_rows,e.pendingReviewRows);assert.equal(s.progress_rows,e.rows);}
+ assert.equal(direct.rows,direct.reviewedRows+direct.pendingReviewRows+4);
+ for(const e of direct.entries){
+  const pending=e.pendingCorrespondenceJapaneseRows??0,relocated=e.relocatedJapaneseRows??0,missing=e.missingChineseRows;
+  assert.ok([pending,relocated,missing].every(n=>Number.isSafeInteger(n)&&n>=0),e.identity);
+  assert.equal(e.unmatchedJapaneseRows,pending+relocated+missing,e.identity+' exact correspondence decomposition');
+  assert.equal(missing,0,e.identity+' has no unexplained Chinese gap');
+  const s=index.find(s=>s.id===e.id);assert.equal(s.reviewed_rows,e.reviewedRows);assert.equal(s.pending_review_rows,e.pendingReviewRows);assert.equal(s.progress_rows,e.rows);
+ }
 });

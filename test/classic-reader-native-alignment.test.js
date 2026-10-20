@@ -21,9 +21,11 @@ function pageState(f, edit = false, edited = [], mode = 'split') {
   const a = alignment();
   const display = lines => parser.parseStoryContent(lines.map(parser.serializeStoryLine).join('\n'), { mergeConsecutiveTextLines: true }).lines;
   return modules.fragments('app/reader/[id]/page.tsx', [
-    'activeLegacyVoiceSlot', 'nativeAlignmentState', 'nativePresentationState', 'cnVoiceSlots', 'jpVoiceSlots', 'renderList', 'activeVoiceSlots',
+    'activeLegacyVoiceSlot', 'nativeAlignmentState', 'nativeCounterpartState', 'nativePresentationState', 'cnVoiceSlots', 'jpVoiceSlots', 'renderList', 'activeVoiceSlots',
   ], {
-    ...routing, ...a, currentNativeEditSource: null, nativeEditState: { error: '' }, ...modules.load('lib/native-reader-revision.ts'), useMemo: fn => fn(), legacyVoiceRoute: f.route, cnEventLines: f.cn, jpEventLines: f.jp,
+    ...routing, ...a, ...modules.load('lib/native-section-anchors.ts'),
+    currentStory: stories.find(story => story.source_identity === f.route.canonicalStoryId),
+    currentNativeEditSource: null, nativeEditState: { error: '' }, ...modules.load('lib/native-reader-revision.ts'), useMemo: fn => fn(), legacyVoiceRoute: f.route, cnEventLines: f.cn, jpEventLines: f.jp,
     isEditMode: edit, editedCnLines: edited, mode, alignStoryLines: parser.alignStoryLines,
     currentNativeCorrespondence: null, nativeCorrespondenceState: { error: '' }, currentLegacyVoiceRoutePath: '/data/legacy-vn/fixture.routes.json',
     displayedCnLines: edit ? edited : display(f.cn), displayedJpLines: edit ? f.jp : display(f.jp),
@@ -153,13 +155,24 @@ test('native TXT import keeps keys/structure and rejects missing rows or changed
 });
 test('actual editing initializer uses native event rows, and shared-variant structure errors do not silently zip', () => {
   const a = alignment(), f = omissionFixture(), rows = a.buildSharedNativeAlignment(f.route, f.cn, f.jp), calls = [];
-  const { initializeEditing } = modules.fragments('app/reader/[id]/page.tsx', ['initializeEditing'], {
-    useCallback: callback => callback,
-    ...a, currentNativeEditSource: {}, nativeEditState: { error: '' }, nativeAlignmentState: { rows, error: '' }, legacyVoiceRoute: f.route, currentStory: { source_identity: 'fixture/story' },
+  const patch = modules.load('lib/native-translation-patch.ts');
+  const source = {sha256:'0'.repeat(64), document:{
+    schema:'native-reader-edit-source/v1', storyId:f.route.canonicalStoryId, nativeSources:[],
+    binding:Object.fromEntries(['route','cnText','jpText','adapter','normalizedStory'].map(key=>[key,'0'.repeat(64)])),
+    rows:patch.buildNativeEditRows({variants:f.route.variantRoutes}, rows),
+  }};
+  const { initializeEditing, nativeCounterpartState, effectiveNativeEditSource } = modules.fragments('app/reader/[id]/page.tsx',
+    ['nativeCounterpartState', 'nativeCounterparts', 'effectiveNativeEditSource', 'initializeEditing'], {
+    useCallback: callback => callback, useMemo: callback => callback(),
+    ...a, ...patch, ...modules.load('lib/native-section-anchors.ts'),
+    currentNativeEditSource: source, nativeEditState: { error: '' }, nativeAlignmentState: { rows, error: '' }, legacyVoiceRoute: f.route,
+    currentStory: { id:'legacy-fixture-story', source_identity: 'fixture/story' },
     cnEventLines: f.cn, jpEventLines: f.jp, setEditMessage: x => calls.push(['message', x]),
     setEditedCnLines: x => calls.push(['edited', x]), setMode: x => calls.push(['mode', x]),
     seedEditableLines() { throw Error('Native fixture reached old zip seeding'); },
   });
+  assert.equal(nativeCounterpartState.error, '');
+  assert.equal(effectiveNativeEditSource.document, source.document, 'real policy wrapper retains the native source document');
   assert.equal(initializeEditing('current'), true);
   assert.equal(calls.find(([key]) => key === 'edited')[1][2].text, '');
   const broken = structuredClone(f); broken.cn.splice(1, 1);

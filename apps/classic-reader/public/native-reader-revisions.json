@@ -101,13 +101,13 @@
       "textSha256": "91ddb85362b53a869a94cc4b3c6094c8052e17d7aa5bab8162522e19dbb6f9ad"
     },
     "narcissu-3rd/nar3_05": {
-      "revision": "4fb406b1b33fa05b5a7b1f4b15bf100dab2583338c48e1658601aad5a961c187",
-      "path": "/native-reader-revisions/narcissu-3rd/nar3_05/4fb406b1b33fa05b5a7b1f4b15bf100dab2583338c48e1658601aad5a961c187.json",
-      "sha256": "75a143377caf6efde23241abe0931d39d8ed51844de6d20aa4f34032cff6c1da",
-      "storyPath": "/native-reader-revisions/narcissu-3rd/nar3_05/4fb406b1b33fa05b5a7b1f4b15bf100dab2583338c48e1658601aad5a961c187.adv.json",
-      "storySha256": "351a396ad4f6763c1394dc8fad3c5464a31052685890872aabf6311aad9c011b",
-      "textPath": "/native-reader-revisions/narcissu-3rd/nar3_05/4fb406b1b33fa05b5a7b1f4b15bf100dab2583338c48e1658601aad5a961c187.native.txt",
-      "textSha256": "c18243069b91c0603c4541e40309aa5467f8ae357e881e10aa62560b7c9009e0"
+      "revision": "7e6a4aebfcb11cb53580203fe60c89aa3a5eb0a3d8cca08987e301565e285957",
+      "path": "/native-reader-revisions/narcissu-3rd/nar3_05/7e6a4aebfcb11cb53580203fe60c89aa3a5eb0a3d8cca08987e301565e285957.json",
+      "sha256": "81d50b038c5744cb9212cf67837479f43821a22a4870c5107120f441d75bffc3",
+      "storyPath": "/native-reader-revisions/narcissu-3rd/nar3_05/7e6a4aebfcb11cb53580203fe60c89aa3a5eb0a3d8cca08987e301565e285957.adv.json",
+      "storySha256": "22b31e83ebd3794fc42411a69ab6b847a80ce688e9b36ffc3ff5d76c3591721c",
+      "textPath": "/native-reader-revisions/narcissu-3rd/nar3_05/7e6a4aebfcb11cb53580203fe60c89aa3a5eb0a3d8cca08987e301565e285957.native.txt",
+      "textSha256": "3360886af4526527f2419e312681490c2693934b8f1b4e9335ed8cf302150fc9"
     },
     "narcissu-3rd/nar3_07": {
       "revision": "42007728c8de3463a004b06eedee0e6486b163e376d38b23a2ff8aebe662c920",

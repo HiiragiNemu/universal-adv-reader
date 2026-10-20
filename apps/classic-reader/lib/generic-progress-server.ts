@@ -8,8 +8,9 @@ import {buildParallelNativeAlignment,type NativeCorrespondence} from './legacy-v
 import {readNativeEditSource} from './native-translation-patch.ts';
 import {parseNativeRevisionRegistry,readNativeReaderRevision,projectNativeReaderRevisionRows} from './native-reader-revision.ts';
 import {GENERIC_PROGRESS_WORKS,nativeCoverage,summarizeGenericProgress,readGenericProgress,type GenericProgressEntry} from './generic-progress.ts';
+import type {NativeChapterRelation} from './story-index.ts';
 const sha=(b:string|Buffer)=>createHash('sha256').update(b).digest('hex');
-type Entry={id:string;source_identity:string;source_format?:string;title:string;title_jp?:string;category:GenericProgressEntry['category'];path_cn?:string;path_jp?:string;native_sections?:unknown[];sections?:unknown[];native_group_id?:string};
+type Entry={id:string;source_identity:string;source_format?:string;title:string;title_jp?:string;category:GenericProgressEntry['category'];path_cn?:string;path_jp?:string;native_sections?:unknown[];sections?:unknown[];native_group_id?:string;cross_chapter_relations?:NativeChapterRelation[]};
 const reader=(root:string)=>(relative:string)=>{const full=path.resolve(root,relative.replace(/^\//,''));if(!full.startsWith(path.resolve(root)+path.sep))throw Error('进度来源越界');return fs.readFile(full,'utf8');};
 export async function buildCurrentGenericProgress(publicRoot=path.join(process.cwd(),'public'),adapterPath=path.join(publicRoot,'data/legacy-vn/manifests/reader-adapter.json')){
  const read=reader(publicRoot),adapterRaw=await fs.readFile(adapterPath,'utf8'),adapter=JSON.parse(adapterRaw);
@@ -40,9 +41,10 @@ export async function buildCurrentGenericProgress(publicRoot=path.join(process.c
   if(rows===null){const c=JSON.parse(await read(stem+'.alignment.json')) as NativeCorrespondence;if(c.hashes.route!==sha(routeRaw)||c.hashes.cnText!==sha(cnRaw)||c.hashes.jpText!==sha(jpRaw))throw Error('原生对应版本改变');rows=buildParallelNativeAlignment(route,parse(cnRaw),parse(jpRaw),c);}
   const record=registry.entries[item.source_identity],current=record?await readNativeReaderRevision(await read(record.path),record,base):null;
   if(current)rows=projectNativeReaderRevisionRows(rows,current);
-  entries.push({...common,variants:original.variants.length,revision:record?.revision??null,...nativeCoverage(mergeNativeAlignedRows(rows),current?.revision?.translationReview)});
+  entries.push({...common,variants:original.variants.length,revision:record?.revision??null,...nativeCoverage(mergeNativeAlignedRows(rows),current?.revision?.translationReview,item)});
  }
- return summarizeGenericProgress(entries,{sourceRevision:sha(bundle.revision+registryRaw+supplementRaw),adapterSha256:sha(adapterRaw),archive:{games:adapter.games.length,stories:archived.size,visible:native.length,excluded:archived.size-native.length,variants:adapter.counts.variants,textEvents:adapter.counts.textEvents,chineseStories:adapter.counts.chineseStories}});
+ const relationsIdentity=JSON.stringify(index.map(item=>[item.id,item.cross_chapter_relations??[]]));
+ return summarizeGenericProgress(entries,{sourceRevision:sha(bundle.revision+registryRaw+supplementRaw+relationsIdentity),adapterSha256:sha(adapterRaw),archive:{games:adapter.games.length,stories:archived.size,visible:native.length,excluded:archived.size-native.length,variants:adapter.counts.variants,textEvents:adapter.counts.textEvents,chineseStories:adapter.counts.chineseStories}});
 }
 /** Hash-bound generation snapshot: no optimistic first paint and no 30-second
  * recalculation on every API request. Outdated snapshots are never accepted. */

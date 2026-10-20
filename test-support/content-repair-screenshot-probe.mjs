@@ -14,8 +14,9 @@ function fixture(identity){
   const cnText=fs.readFileSync(path.join(pub,story.path_cn),'utf8'),jpText=fs.readFileSync(path.join(pub,story.path_jp),'utf8');
   const cn=parser.parseStoryContent(cnText,{mergeConsecutiveTextLines:false}).lines,jp=parser.parseStoryContent(jpText,{mergeConsecutiveTextLines:false}).lines;
   const doc=route.chineseVariantId===route.japaneseVariantId?null:read(path.join(pub,`data/legacy-vn/${identity}.alignment.json`));
-  const state=modules.fragments(page,['activeLegacyVoiceSlot','currentNativeCorrespondence','nativeAlignmentState','nativePresentationState','cnVoiceSlots','jpVoiceSlots','renderList','activeVoiceSlots'],{
-    ...routing,...alignment,...cross,...modules.load('lib/native-reader-revision.ts'),useMemo:f=>f(),currentNativeEditSource:null,nativeEditState:{error:''},legacyVoiceRoute:route,
+  const state=modules.fragments(page,['activeLegacyVoiceSlot','currentNativeCorrespondence','nativeAlignmentState','nativeCounterpartState','nativePresentationState','cnVoiceSlots','jpVoiceSlots','renderList','activeVoiceSlots'],{
+    ...routing,...alignment,...cross,...modules.load('lib/native-reader-revision.ts'),...modules.load('lib/native-section-anchors.ts'),
+    currentStory:story,useMemo:f=>f(),currentNativeEditSource:null,nativeEditState:{error:''},legacyVoiceRoute:route,
     cnEventLines:cn,jpEventLines:jp,cnSource:{raw:cnText},jpSource:{raw:jpText},currentLegacyVoiceRoutePath:routing.legacyVoiceRoutePath(identity),
     nativeCorrespondenceState:{route,cnRaw:cnText,jpRaw:jpText,data:doc,error:'',loading:false},isEditMode:false,editedCnLines:[],mode:'split',
     alignStoryLines(){throw Error('Native source fell back to ordinal zip')},displayedCnLines:cn,displayedJpLines:jp,

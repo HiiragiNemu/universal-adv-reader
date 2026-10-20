@@ -9948,40 +9948,6 @@
       "sources": []
     },
     {
-      "identity": "narcissu-3rd/nar3_05",
-      "targetRow": 222,
-      "targetNativeKeys": [
-        "[\"mjo/narcissu3/scenario.arc.unpacked/nar3_05\",\"main\"]/mjo-521e"
-      ],
-      "targetJpEventIds": [
-        "mjo-521e"
-      ],
-      "beforeCN": "",
-      "expectedJP": "そして何故か…匪賊呼ばわりしていた父親のことも思い出した。",
-      "afterCN": "然后，不知为什么……我也想起了那个被我称作匪贼的父亲。",
-      "speaker": "旁白",
-      "origin": "author-supplement",
-      "review": "pending",
-      "sources": []
-    },
-    {
-      "identity": "narcissu-3rd/nar3_05",
-      "targetRow": 223,
-      "targetNativeKeys": [
-        "[\"mjo/narcissu3/scenario.arc.unpacked/nar3_05\",\"main\"]/mjo-526f"
-      ],
-      "targetJpEventIds": [
-        "mjo-526f"
-      ],
-      "beforeCN": "",
-      "expectedJP": "あの暗い目をした、人殺しのことを思い出していた…",
-      "afterCN": "想起了那个眼神阴沉的杀人犯……",
-      "speaker": "旁白",
-      "origin": "author-supplement",
-      "review": "pending",
-      "sources": []
-    },
-    {
       "identity": "narcissu-3rd/nar3_07",
       "targetRow": 60,
       "targetNativeKeys": [
