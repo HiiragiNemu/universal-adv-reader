@@ -2,7 +2,15 @@ import { readFile } from 'node:fs/promises';
 import path from 'node:path';
 import { createHash } from 'node:crypto';
 const sha=bytes=>createHash('sha256').update(bytes).digest('hex');
+export const NARCISSU3_CHAPTER_RELATION_STORIES = [
+  'narcissu-3rd/nar3_05','narcissu-3rd/nar3_06','narcissu-3rd/nar3_07',
+  'narcissu-3rd/nar3_08','narcissu-3rd/nara03',
+];
 const SOURCE_BINDINGS={
+  'archive/derived/scripts/narcissu3/update.arc.unpacked/nar3_08.plain.mjo':'b0d6044c9b41e77345e6add59f7291fba1ce74610a37c34bc853a01a754501e4',
+  'archive/derived/scripts/narcissu3/update.arc.unpacked/nar3_08.script.json':'84f6b12d7d7403768a565c2a7466e97a8c3d1a9ca52998ec60997660dc84c513',
+  'archive/derived/scripts/narcissu3/scenario.arc.unpacked/nar3_08.plain.mjo':'d0ef6ef1fc7358f744263080ba865c6239ad8c62cc84743c310ca75bdda35c87',
+  'archive/derived/scripts/narcissu3/scenario.arc.unpacked/nar3_08.script.json':'c904c4e6dd232d92db494712d553e0ed4ea658cea76bb864c01076fa444b3108',
   'archive/derived/scripts/narcissu3/update.arc.unpacked/nar3_05.plain.mjo':'a9835b41e4f9faf6ddfdb1feac7270f0a216518b75e60c91bcab9af12d1412bb',
   'archive/derived/scripts/narcissu3/update.arc.unpacked/nar3_05.script.json':'0e2ad2281b7e791c2a9193cc227cf39ee8536562234370658e131b37e8e499b6',
   'archive/derived/scripts/narcissu3/scenario.arc.unpacked/nar3_05.plain.mjo':'b047e12a9b356c9ed5549db0e1cdba9e50c8ce7c60fe0e82e7d92036832e0dfb',
@@ -57,6 +65,13 @@ export async function buildNarcissu3ChapterRelations(inputs, corpusRoot) {
   const fatherJp=pick('narcissu-3rd/nar3_05','mjo/narcissu3/scenario.arc.unpacked/nar3_05','mjo-521e','mjo-526f',2,'ja-JP');
   if([...fatherCn.events,...fatherJp.events].some(e=>(e.cues??[]).length||e.source?.nativeUnit?.speakerRaw))
     throw Error('Relocated father recollection gained unreviewed cue/name controls');
+  const wheatCn=pick('narcissu-3rd/nar3_08','mjo/narcissu3/update.arc.unpacked/nar3_08','mjo-de8','mjo-de8',1,'zh-CN');
+  const wheatJp=pick('narcissu-3rd/nar3_08','mjo/narcissu3/scenario.arc.unpacked/nar3_08','mjo-101f','mjo-101f',1,'ja-JP');
+  for(const [side,text] of [[wheatCn,'「然后从此种些麦子什么的活下去。」'],[wheatJp,'「…そしてこれからは…麦でも作って生きろ」']]){
+    const event=side.events[0];
+    if(event.text?.[side.locale]!==text||event.source?.nativeUnit?.speakerRaw?.rawHex!=='8ee5906c8cf6'||(event.cues??[]).length)
+      throw Error('Relocated wheat dialogue differs from reviewed native source');
+  }
   const relation=(source,target,message_cn,message_jp,name='iris-border-scene')=>({
     id:name+'-'+(source.locale==='zh-CN'?'cn':'jp'),
     source_locale:source.locale,source_event_ids:source.events.map(e=>e.eventId),
@@ -72,12 +87,17 @@ export async function buildNarcissu3ChapterRelations(inputs, corpusRoot) {
     sameChapterRelocationExplanation:'Three complete native text units in nara03 have the same two byte-bound native voice operands surrounding Eiji\'s matching landlord instructions, but occupy different positions. Location links preserve the full order of both versions; they never override existing stronger message anchors.',
     additionalNativeVoiceCalls:{ciRelocation:{cn:movedCnVoices,jp:movedJpVoices}},
     fatherRecollectionEvidence:'Byte-bound native instructions and next-event chains put the original Chinese father/killer recollection before the sister dialogue, and the two Japanese units after it. Same-scene location only; no line-number matching, new translation or word-for-word quality approval.',
-    sourceBlocks:[cn,jp,movedCn,movedJp,fatherCn,fatherJp].map(side=>({storyId:side.identity,variantId:side.variantId,locale:side.locale,
+    wheatRelocationEvidence:'Reviewed native dialogue and byte-bound source place the wheat command before n3iri_0239 in Chinese and after it in Japanese, between the shared sword command and n3iri_0240. Link the original occurrences without duplicating the Chinese body or moving native calls.',
+    sourceBlocks:[cn,jp,movedCn,movedJp,fatherCn,fatherJp,wheatCn,wheatJp].map(side=>({storyId:side.identity,variantId:side.variantId,locale:side.locale,
       events:side.events.map(e=>({eventId:e.eventId,text:e.text?.[side.locale],source:e.source?.nativeUnit}))})),
     byStory:{
       [fatherCn.identity]:[
         {...relation(fatherJp,fatherCn,'两版本的父亲回忆段落位置不同：对应中文原文位于本章妹妹对话之前；原文顺序分别保留。','対応する中国語原文を参照。'),id:'nar3_05-father-recollection-jp-to-cn'},
         {...relation(fatherCn,fatherJp,'对应日文为妹妹回忆之后的两个连续原生段落；两版本不交叉拼接。','対応する日本語原文を参照。'),id:'nar3_05-father-recollection-cn-to-jp'},
+      ],
+      [wheatCn.identity]:[
+        {...relation(wheatJp,wheatCn,'两版本的种麦对白位于伊丽丝应答的不同侧：对应中文原文在应答之前；两版原文顺序分别保留。','対応する中国語原文を参照。'),id:'nar3_08-wheat-relocation-jp-to-cn'},
+        {...relation(wheatCn,wheatJp,'对应日文原文在伊丽丝应答之后；两版本保留原位，不重复复用中文。','対応する日本語原文を参照。'),id:'nar3_08-wheat-relocation-cn-to-jp'},
       ],
       [movedCn.identity]:[relation(movedCn,movedJp,movedMessageCn,movedMessageJp,'ci-relocated-notice'),relation(movedJp,movedCn,movedMessageCn,movedMessageJp,'ci-relocated-notice')],
       [cn.identity]:[relation(cn,jp,'中日版本的分章位置不同：本章末段的对应日文位于下一章开头。','章の区切りが異なります。この章の中国語末尾に対応する日本語は、次の章の冒頭にあります。')],

@@ -10094,31 +10094,6 @@
       ]
     },
     {
-      "identity": "narcissu-3rd/nar3_08",
-      "targetRow": 46,
-      "targetNativeKeys": [
-        "[\"mjo/narcissu3/scenario.arc.unpacked/nar3_08\",\"main\"]/mjo-101f"
-      ],
-      "targetJpEventIds": [
-        "mjo-101f"
-      ],
-      "beforeCN": "",
-      "expectedJP": "「…そしてこれからは…麦でも作って生きろ」",
-      "afterCN": "「然后从此种些麦子什么的活下去。」",
-      "speaker": "主人公",
-      "origin": "existing-translation",
-      "review": "reviewed",
-      "sources": [
-        {
-          "identity": "narcissu-3rd/nar3_08",
-          "cnEventIds": [
-            "mjo-de8"
-          ],
-          "text": "「然后从此种些麦子什么的活下去。」"
-        }
-      ]
-    },
-    {
       "identity": "narcissu-3rd/nar3_07",
       "targetRow": 1,
       "targetNativeKeys": [

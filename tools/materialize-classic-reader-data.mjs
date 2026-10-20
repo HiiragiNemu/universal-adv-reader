@@ -14,7 +14,7 @@ import { computeContentPipelineRevision } from './lib/content-pipeline-revision.
 import { readEffectiveReaderManifests } from './lib/content-selection-corrections.mjs';
 import { buildNativeStoryGroups } from './lib/native-story-groups.mjs';
 import { buildNarcissu3ProductNavigation } from './lib/narcissu3-product-navigation.mjs';
-import { buildNarcissu3ChapterRelations } from './lib/narcissu3-chapter-relations.mjs';
+import { buildNarcissu3ChapterRelations, NARCISSU3_CHAPTER_RELATION_STORIES } from './lib/narcissu3-chapter-relations.mjs';
 import { buildKanaNativePlan, kanaNarrativeOrderFromMainRoute } from './lib/kana-native-sections.mjs';
 
 import {
@@ -183,7 +183,7 @@ for (const corpus of catalog.corpora) {
   byCorpus[corpus.corpusId] = 0;
   for (const storyEntry of corpus.stories) {
     const story = await adapter.load({ corpus, storyEntry, io });
-    if (['narcissu-3rd/nar3_06','narcissu-3rd/nar3_07','narcissu-3rd/nara03'].includes(storyEntry.canonicalStoryId)) {
+    if (NARCISSU3_CHAPTER_RELATION_STORIES.includes(storyEntry.canonicalStoryId)) {
       chapterRelationInputs.push({identity:storyEntry.canonicalStoryId,story});
     }
     const preferredVariant = story.variants.find((item) =>

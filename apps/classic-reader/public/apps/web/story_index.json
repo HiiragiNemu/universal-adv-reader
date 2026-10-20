@@ -11231,7 +11231,7 @@
     "id": "legacy-narcissu-3rd-nar3_08",
     "category": "event_story",
     "folder": "小小的伊丽丝",
-    "percent": 100,
+    "percent": 99,
     "has_cn": true,
     "has_jp": true,
     "filename_cn": "nar3_08_cn.txt",
@@ -11325,17 +11325,43 @@
     "nav_title_cn": "圣人",
     "nav_title_jp": "聖者",
     "reader_revision_cn": {
-      "path": "/native-reader-revisions/narcissu-3rd/nar3_08/63e26436569ff403db5b291ec44325aa9a8de8f4f0431954ae39a2493a20f3d0.native.txt",
-      "sha256": "45349446ac66d0305251673e34739df66dd132ec2873212b5fdb6815abc407ee",
-      "revision": "63e26436569ff403db5b291ec44325aa9a8de8f4f0431954ae39a2493a20f3d0"
+      "path": "/native-reader-revisions/narcissu-3rd/nar3_08/a39f0db27c030f5cd7c1699ac992f2b158385c88584ca22d49f5730d11d9e2f7.native.txt",
+      "sha256": "1cf9a4f6904a3527c3b088ffe5e34929ee8c3fb97960bc3b1f3f0019f01d8c63",
+      "revision": "a39f0db27c030f5cd7c1699ac992f2b158385c88584ca22d49f5730d11d9e2f7"
     },
     "source_unverified": true,
     "human_verified": false,
     "progress_rows": 428,
-    "chinese_rows": 428,
-    "reviewed_rows": 427,
+    "chinese_rows": 427,
+    "reviewed_rows": 426,
     "pending_review_rows": 1,
-    "translation_review_policy": "original-reviewed-author-pending/v1"
+    "translation_review_policy": "original-reviewed-author-pending/v1",
+    "cross_chapter_relations": [
+      {
+        "id": "nar3_08-wheat-relocation-jp-to-cn",
+        "source_locale": "ja-JP",
+        "source_event_ids": [
+          "mjo-101f"
+        ],
+        "target_story_id": "legacy-narcissu-3rd-nar3_08",
+        "target_locale": "zh-CN",
+        "target_event_id": "mjo-de8",
+        "message_cn": "两版本的种麦对白位于伊丽丝应答的不同侧：对应中文原文在应答之前；两版原文顺序分别保留。",
+        "message_jp": "対応する中国語原文を参照。"
+      },
+      {
+        "id": "nar3_08-wheat-relocation-cn-to-jp",
+        "source_locale": "zh-CN",
+        "source_event_ids": [
+          "mjo-de8"
+        ],
+        "target_story_id": "legacy-narcissu-3rd-nar3_08",
+        "target_locale": "ja-JP",
+        "target_event_id": "mjo-101f",
+        "message_cn": "对应日文原文在伊丽丝应答之后；两版本保留原位，不重复复用中文。",
+        "message_jp": "対応する日本語原文を参照。"
+      }
+    ]
   },
   {
     "id": "legacy-narcissu-3rd-nara00",
