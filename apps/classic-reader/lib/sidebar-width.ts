@@ -5,7 +5,7 @@ export const SIDEBAR_WIDTH_MAX = 560;
 export const SIDEBAR_WIDTH_STEP = 16;
 
 export const HOME_SIDEBAR_WIDTH_STORAGE_KEY = 'magi-reader-home-sidebar-width-v1';
-export const HOME_SIDEBAR_WIDTH_DEFAULT = 256;
+export const HOME_SIDEBAR_WIDTH_DEFAULT = 320;
 export const HOME_SIDEBAR_WIDTH_MIN = 208;
 export const HOME_SIDEBAR_WIDTH_MAX = 480;
 export const HOME_SIDEBAR_WIDTH_STEP = 16;

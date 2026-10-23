@@ -301,7 +301,7 @@ html[data-reader-font-japanese='ready'] .reader-font-jp-title {
 }
 
 .magi-home-sidebar {
-  width: var(--magi-home-sidebar-width, 16rem);
+  width: var(--magi-home-sidebar-width, 20rem);
 }
 
 .magi-sidebar-resize-handle::after {
@@ -335,10 +335,10 @@ body.magi-sidebar-resizing * {
   }
 
   .magi-home-sidebar {
-    width: var(--magi-home-sidebar-width, 16rem);
-    min-width: var(--magi-home-sidebar-width, 16rem);
-    max-width: var(--magi-home-sidebar-width, 16rem);
-    flex-basis: var(--magi-home-sidebar-width, 16rem);
+    width: var(--magi-home-sidebar-width, 20rem);
+    min-width: var(--magi-home-sidebar-width, 20rem);
+    max-width: var(--magi-home-sidebar-width, 20rem);
+    flex-basis: var(--magi-home-sidebar-width, 20rem);
   }
 }
 

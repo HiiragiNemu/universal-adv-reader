@@ -347,8 +347,13 @@ html[data-night-phosphor='amber'][data-reader-theme='dark'] {
       max-width: calc(100% - 20px) !important;
     }
     html body .magi-home-shell.magi-home-frost-root.magi-home-dark-root
+      .magi-home-category-nav > .magi-home-category-node {
+      width: 100% !important;
+      grid-template-columns: minmax(0, 1fr) 1rem !important;
+    }
+    html body .magi-home-shell.magi-home-frost-root.magi-home-dark-root
       .magi-home-category-nav .magi-home-category-trigger {
-      width: min(6.55rem, 100%) !important;
+      width: 100% !important;
       max-width: 100% !important;
     }
     html body .magi-home-shell .magi-home-category-nav .magi-home-category-trigger > svg {
