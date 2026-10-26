@@ -14,7 +14,8 @@ test('unvoiced placeholder uses a compact non-interactive height', () => {
 
 test('ruler uses actual responsive layout and retains original CN top / JP bottom design', () => {
   const component=fs.readFileSync(path.join(classicApp,'components/ReaderFilmViewport.tsx'),'utf8');
-  assert.match(component,/getComputedStyle\(pair\)\.flexDirection === 'column'/);
+  assert.match(component,/getComputedStyle\(pair!\)\.flexDirection === 'column'/);
+  assert.match(component,/const stacked = Boolean\(bilingual &&/);
   assert.doesNotMatch(component,/rails\[1\]\.left < rails\[0\]\.left/);
   assert.match(component,/state\.stacked \? \[rail\.language === 'cn' \? 'top' : 'bottom'\]/);
   assert.doesNotMatch(component,/data-ruler-track/);

@@ -73,7 +73,8 @@ export default function ReaderFilmViewport({ readerRef, marks, theme, direction,
       }
       // Read the actual responsive layout, not the width of a short text line.
       const pair = doc.querySelector<HTMLElement>('.magi-bilingual-pair');
-      const stacked = Boolean(pair && getComputedStyle(pair).flexDirection === 'column');
+      const bilingual = pair?.querySelector(':scope > [lang="zh-Hans"]') && pair?.querySelector(':scope > [lang="ja"]');
+      const stacked = Boolean(bilingual && getComputedStyle(pair!).flexDirection === 'column');
       if (rails[0]) rails[0].lineLeft = Math.max(4, paper.left - view.left + 4);
       if (stacked && rails[1]) rails[1].lineLeft = Math.min(view.width - 35, paper.right - view.left - 35);
       const next = { left: view.left, top: view.top, width: view.width, height: view.height, docTop, stacked, rails };
