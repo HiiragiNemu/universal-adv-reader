@@ -71,7 +71,9 @@ export default function ReaderFilmViewport({ readerRef, marks, theme, direction,
           lineLeft: (pane?.left ?? measured.left - 30) - view.left,
           row: active.rowIndex, line: active.displayIndex });
       }
-      const stacked = rails.length === 2 && rails[1].left < rails[0].left + rails[0].width - 4;
+      // Read the actual responsive layout, not the width of a short text line.
+      const pair = doc.querySelector<HTMLElement>('.magi-bilingual-pair');
+      const stacked = Boolean(pair && getComputedStyle(pair).flexDirection === 'column');
       if (rails[0]) rails[0].lineLeft = Math.max(4, paper.left - view.left + 4);
       if (stacked && rails[1]) rails[1].lineLeft = Math.min(view.width - 35, paper.right - view.left - 35);
       const next = { left: view.left, top: view.top, width: view.width, height: view.height, docTop, stacked, rails };
@@ -93,7 +95,7 @@ export default function ReaderFilmViewport({ readerRef, marks, theme, direction,
     // Font switches live above the document. They may change glyph advances
     // without resizing this particular line or changing its printed-line mark.
     mutation?.observe(document.documentElement, { attributes: true,
-      attributeFilter: ['data-screen-pixel-font', 'data-night-pixel-font'] });
+      attributeFilter: ['data-screen-pixel-font', 'data-night-pixel-font', 'data-native-font-chinese', 'data-native-font-japanese'] });
     main.addEventListener('scroll', scroll, { passive: true });
     doc.addEventListener('pointermove', pointer, { passive: true });
     doc.addEventListener('pointerdown', pointer, { passive: true });

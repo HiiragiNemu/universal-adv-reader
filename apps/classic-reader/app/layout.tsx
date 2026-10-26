@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import './globals.css';
+import './reader/native-game-fonts.css';
 import './ui-refinements.css';
 import './home-story-tree.css';
 import './home-controller-refinements.css';

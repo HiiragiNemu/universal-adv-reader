@@ -1,0 +1,34 @@
+/* Match installed native-game faces; never ship Windows fonts as web assets.
+   Supplemental texts and site UI have no asserted native-game font. */
+@layer reader-visual-revision {
+  #magi-reader-display[data-native-font-profile='kana'],
+  #magi-reader-display[data-native-font-profile='narcissu-3rd'] {
+    --adv-cn-font: SimHei, "黑体", "Noto Sans SC", "Microsoft YaHei", sans-serif;
+    --adv-cn-weight: 400;
+  }
+  #magi-reader-display[data-native-font-profile='narcissu-10th'] {
+    --adv-cn-font: YouYuan, "幼圆", "Noto Sans SC", "Microsoft YaHei", sans-serif;
+    --adv-cn-weight: 700;
+  }
+  #magi-reader-display[data-native-font-work='narcissu-one-two'] {
+    --adv-cn-font: Narci_chs_Font, YouYuan, "幼圆", "Noto Sans SC", "Microsoft YaHei", sans-serif;
+  }
+  /* Native body faces take priority over the optional theme pixel face.
+     UI, playback controls and statistics retain the selected theme font. */
+  html[data-native-font-chinese='on'] #magi-reader-display:not([data-native-font-profile='system']) #reader-document
+    :is([data-reader-text-content='cn'], .magi-reader-speaker-label.reader-font-cn-title, .magi-translation-speaker-input, .magi-translation-choice-input, .magi-translation-textarea, .magi-translation-linebreak-overlay),
+  html[data-native-font-chinese='on'] #magi-reader-display:not([data-native-font-profile='system']) #reader-document
+    :is([data-reader-text-content='cn'], .magi-reader-speaker-label.reader-font-cn-title, .magi-translation-speaker-input, .magi-translation-choice-input, .magi-translation-linebreak-overlay) * {
+    font-family: var(--adv-cn-font) !important;
+    font-weight: var(--adv-cn-weight) !important;
+    font-synthesis: weight style !important;
+  }
+  html[data-native-font-japanese='on'] #magi-reader-display:not([data-native-font-profile='system']) #reader-document
+    :is([data-reader-text-content='jp'], .magi-reader-speaker-label.reader-font-jp-title),
+  html[data-native-font-japanese='on'] #magi-reader-display:not([data-native-font-profile='system']) #reader-document
+    :is([data-reader-text-content='jp'], .magi-reader-speaker-label.reader-font-jp-title) * {
+    font-family: "MS Gothic", "ＭＳ ゴシック", "Noto Sans JP", "Yu Gothic", sans-serif !important;
+    font-weight: 400 !important;
+    font-synthesis: weight style !important;
+  }
+}

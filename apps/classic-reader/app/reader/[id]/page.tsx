@@ -87,6 +87,7 @@ import {
 } from '@/lib/bilingual-layout';
 import { resolveOfficialSectionTitle } from '@/lib/official-tw-titles';
 import { initializeReaderFonts } from '@/lib/reader-fonts';
+import { nativeFontProfile } from '@/lib/native-game-fonts';
 import { indexNativeEventRows, indexNativeSectionAnchors, isNativeSectionTitleRow,
   resolveNativeSourceAnchor, crossChapterRelationForRow, nativeChapterRelationHref, resolveSameStoryNativeCounterparts, nativeCounterpartForRow, type NativeSectionDescriptor } from '@/lib/native-section-anchors';
 import {
@@ -1935,6 +1936,8 @@ export default function ReaderPage({ params }: { params: Promise<{ id: string }>
   return (
     <IOSViewportHost><div
       id="magi-reader-display"
+      data-native-font-profile={nativeFontProfile(currentStory?.source_identity)}
+      data-native-font-work={currentStory?.source_identity?.split('/')[0]}
       data-reader-mode={isEditMode ? 'edit' : 'read'}
       data-reading-ruler={readingRulerEnabled ? 'on' : 'off'}
       data-mobile-sidebar-open={sidebarOpen ? 'true' : 'false'}
@@ -3224,7 +3227,7 @@ function StoryRow({
           />
         ) : (
           <span
-            className={`magi-reader-voice-unavailable min-h-11 rounded-lg border px-2 py-2 text-[10px] font-semibold opacity-55 ${
+            className={`magi-reader-voice-unavailable inline-flex h-6 min-h-6 items-center whitespace-nowrap rounded-lg border px-2 py-0 text-[10px] font-semibold opacity-55 ${
               isNightTheme(theme)
                 ? 'border-white/15 bg-white/5 text-gray-300'
                 : 'border-gray-300 bg-gray-50 text-gray-500'
