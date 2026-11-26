@@ -6910,7 +6910,7 @@ html[data-exedra-font-tsuku='ready']
 
 .magi-reader-theme-dark
   .magi-reader-sidebar [data-sidebar-scroll-container='true']
-  > section > button[aria-expanded='true'] {
+  > section > button[data-current-path='true'] {
   border-color: rgba(103, 247, 194, 0.78) !important;
   color: #e1fff3 !important;
   background:
@@ -6956,7 +6956,7 @@ html[data-exedra-font-tsuku='ready']
 .magi-reader-theme-dark
   .magi-reader-sidebar .magi-reader-sidebar-folder-button[aria-expanded]:is(:hover, :focus-visible),
 .magi-reader-theme-dark
-  .magi-reader-sidebar .magi-reader-sidebar-folder-button[aria-expanded='true'] {
+  .magi-reader-sidebar .magi-reader-sidebar-folder-button[data-current-path='true'] {
   border-color: rgba(83, 226, 178, 0.55) !important;
   color: #d4ffef !important;
   background:

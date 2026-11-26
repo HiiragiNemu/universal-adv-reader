@@ -475,6 +475,7 @@ export default function ReaderPage({ params }: { params: Promise<{ id: string }>
   const readerDocumentRef = useRef<HTMLDivElement>(null);
   const fontRangeRef = useCurvedFontRange();
   const pageTouchStartRef = useRef<{ x: number; y: number } | null>(null);
+  const [readingSection, setReadingSection] = useState<{story: string; anchor: string} | null>(null);
   const [pendingRowScroll, setPendingRowScroll] = useState<{
     rowIndex: number;
     highlight: boolean;
@@ -1321,6 +1322,19 @@ export default function ReaderPage({ params }: { params: Promise<{ id: string }>
     );
     if (targetPage !== visiblePage) return;
 
+    // Choice jumps, source links and page turns do not necessarily set a chapter hash.
+    // Use the same row-to-section map as the rendered native chapter headings.
+    let nearestRow = -1, nearestAnchor = '';
+    for (const [anchor, rowIndex] of nativeSectionAnchors.byAnchor) {
+      if (rowIndex <= pendingRowScroll.rowIndex && rowIndex > nearestRow) {
+        nearestRow = rowIndex; nearestAnchor = anchor;
+      }
+    }
+    if (nearestAnchor) {
+      const requested = window.location.hash.slice(1);
+      const anchor = nativeSectionAnchors.byAnchor.get(requested) === nearestRow ? requested : nearestAnchor;
+      setReadingSection(previous => previous?.story === id && previous.anchor === anchor ? previous : { story: id, anchor });
+    }
     const frame = window.requestAnimationFrame(() => {
       const pendingRow = renderList[pendingRowScroll.rowIndex];
       const header = pendingRow?.cn?.isHeader
@@ -1347,7 +1361,7 @@ export default function ReaderPage({ params }: { params: Promise<{ id: string }>
       setPendingRowScroll(null);
     });
     return () => window.cancelAnimationFrame(frame);
-  }, [pendingRowScroll, renderList, storyRowsPerPage, visiblePage, nativeSectionAnchors]);
+  }, [id, pendingRowScroll, renderList, storyRowsPerPage, visiblePage, nativeSectionAnchors]);
 
   const normalizedQuery = useMemo(
     () => normalizeSearchText(deferredSearchQuery),
@@ -1951,6 +1965,7 @@ export default function ReaderPage({ params }: { params: Promise<{ id: string }>
         sourceLocale={mode === 'split' ? undefined : mode === 'jp' ? 'ja-JP' : 'zh-CN'}
         stories={allStories}
         currentId={currentStory?.id ?? id}
+        readingAnchor={readingSection?.story === id ? readingSection.anchor : undefined}
         isOpen={sidebarOpen}
         onClose={() => setSidebarOpen(false)}
         className={sidebarOpen ? '' : 'hidden md:flex'}
@@ -2667,7 +2682,6 @@ export default function ReaderPage({ params }: { params: Promise<{ id: string }>
                      ? [mode === 'jp' ? currentStory.title_jp || currentStory.title || '' : currentStory.title_cn || currentStory.title || '']
                      : currentStory?.official_tw_section_titles}
                   voicePanelExpanded={voicePanelExpanded}
-                  voiceRouteError={effectiveLegacyVoiceError}
                   voiceSlot={activeVoiceSlots[index]}
                   isFirstStoryHeader={index === firstStoryHeaderIndex}
                   isEditMode={isEditMode}
@@ -2981,7 +2995,6 @@ type StoryRowProps = {
   sourceStoryId?: string;
   readerStoryId?: string;
   voicePanelExpanded: boolean;
-  voiceRouteError: string;
   voiceSlot: LegacyVoiceSlot | null;
   isFirstStoryHeader: boolean;
   isEditMode: boolean;
@@ -3015,7 +3028,6 @@ function StoryRow({
   isExedra,
   officialSectionTitles,
   voicePanelExpanded,
-  voiceRouteError,
   voiceSlot,
   isFirstStoryHeader,
   isEditMode,
@@ -3182,7 +3194,6 @@ function StoryRow({
   const jpSpeakerMatches =
     Boolean(normalizedQuery) &&
     normalizeSearchText(row.jp?.speaker || '').includes(normalizedQuery);
-  const audioCueId = row.cn?.audioCueId || row.jp?.audioCueId;
   const reviewedRow = row as Partial<NativeAlignedRow>;
   const renderBodyText = (language: 'cn' | 'jp') => {
     const line = row[language];
@@ -3198,15 +3209,14 @@ function StoryRow({
   };
   const legacyVoiceCues = voiceSlot?.cues ?? [];
   const renderVoiceControls = () => {
-    if (!voicePanelExpanded) return null;
-    const resolved = legacyVoiceCues.length > 0 || Boolean(audioCueId);
+    if (!voicePanelExpanded || legacyVoiceCues.length === 0) return null;
     return (
       <span
         data-voice-slot="true"
-        data-voice-slot-status={resolved ? 'resolved' : 'unresolved'}
+        data-voice-slot-status="resolved"
         className="inline-flex shrink-0 flex-col items-start gap-1"
       >
-        {legacyVoiceCues.length > 0 ? legacyVoiceCues.map((cue, cueIndex) => (
+        {legacyVoiceCues.map((cue, cueIndex) => (
           <span
             key={`${cue.cueId}:${cue.url}`}
             data-voice-cue-id={cue.cueId}
@@ -3219,26 +3229,7 @@ function StoryRow({
               className="shrink-0 px-2"
             />
           </span>
-        )) : audioCueId ? (
-          <VoicePlayButton
-            cueId={audioCueId}
-            label="播放"
-            className="shrink-0 px-2"
-          />
-        ) : (
-          <span
-            className={`magi-reader-voice-unavailable inline-flex h-6 min-h-6 items-center whitespace-nowrap rounded-lg border px-2 py-0 text-[10px] font-semibold opacity-55 ${
-              isNightTheme(theme)
-                ? 'border-white/15 bg-white/5 text-gray-300'
-                : 'border-gray-300 bg-gray-50 text-gray-500'
-            }`}
-            aria-label={voiceRouteError ? '路由异常：' + voiceRouteError : '无对应语音'}
-            title={voiceRouteError || '原作脚本没有为这一行提供语音提示'}
-          >
-            <span data-voice-unavailable-mark aria-hidden="true">—</span>
-            <span data-voice-unavailable-label>{voiceRouteError ? '路由异常' : '无对应语音'}</span>
-          </span>
-        )}
+        ))}
       </span>
     );
   };

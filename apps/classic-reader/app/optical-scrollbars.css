@@ -1,4 +1,31 @@
 @layer reader-visual-revision {
+  /* On desktop, reserve a grabbable native rail in day themes. Curvature
+     keeps its own hit surface and must never paint a second native thumb. */
+  @media (min-width: 768px) and (pointer: fine) {
+    html:is([data-reader-theme='light'],[data-reader-theme='paper'],[data-reader-theme='green'])
+      #magi-reader-display :is(.magi-reader-main,[data-sidebar-scroll-container]):not(.magi-optical-scroll-owned) {
+      scrollbar-gutter: stable;
+      overflow-y: scroll;
+      scrollbar-width: auto !important;
+      scrollbar-color: var(--magi-reader-scroll-thumb-hover) var(--magi-reader-scroll-track) !important;
+    }
+    /* The eight-pixel resize grip stays on the outer edge. Its hit region
+       must not cover the center of the adjacent native thumb. */
+    #magi-reader-display .magi-reader-sidebar [data-sidebar-scroll-container] {
+      margin-inline-end: .625rem;
+    }
+    @supports selector(::-webkit-scrollbar) {
+      html:is([data-reader-theme='light'],[data-reader-theme='paper'],[data-reader-theme='green'])
+        #magi-reader-display :is(.magi-reader-main,[data-sidebar-scroll-container]):not(.magi-optical-scroll-owned) {
+        scrollbar-color: auto !important;
+        &::-webkit-scrollbar { width: 13px !important; background: var(--magi-reader-scroll-track) !important; }
+        &::-webkit-scrollbar-thumb {
+          border: 2px solid var(--magi-reader-scroll-track) !important; border-radius: 8px;
+          background: var(--magi-reader-scroll-thumb-hover) !important;
+        }
+      }
+    }
+  }
   /* Keep the native gutter/layout, hide only its displaced paint. */
   html body .magi-optical-scroll-owned { scrollbar-color: transparent transparent !important; }
   html body .magi-optical-scroll-owned::-webkit-scrollbar-thumb,
@@ -9,6 +36,12 @@
   .magi-optical-scrollbars g { outline: none; touch-action: none; }
   .magi-optical-scrollbars path,.magi-optical-scroll-paint path { fill: none; stroke-linecap: round; }
   .magi-optical-scroll-paint { position: absolute; inset: 0; z-index: 15; pointer-events: none; }
+  /* In day themes only the sidebar paint must sit above its opaque drawer
+     (z50). Keep the body rail and floating windows in their original order. */
+  html:is([data-reader-theme='light'],[data-reader-theme='paper'],[data-reader-theme='green'])
+    #magi-reader-display .magi-optical-scroll-paint[data-sidebar-paint='true'] {
+    z-index: 51; color: var(--magi-reader-scroll-thumb-hover) !important;
+  }
   /* Home also inherits a legacy Reader-green variable. Use its existing amber
      palette only for amber night; every other theme keeps its previous color. */
   html[data-night-phosphor='amber'] #magi-home-display.magi-home-dark-root:not(.magi-home-frost-root) {

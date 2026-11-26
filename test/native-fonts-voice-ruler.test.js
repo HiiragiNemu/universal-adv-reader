@@ -4,14 +4,6 @@ import fs from 'node:fs';
 import path from 'node:path';
 import {classicApp, classicModules} from '../test-support/classic-module-loader.js';
 
-test('unvoiced placeholder uses a compact non-interactive height', () => {
-  const page=fs.readFileSync(path.join(classicApp,'app/reader/[id]/page.tsx'),'utf8');
-  const classes=page.match(/magi-reader-voice-unavailable[^`]+/)[0];
-  assert.doesNotMatch(classes,/min-h-11|py-2/);
-  assert.match(classes,/h-6/);
-  assert.match(classes,/items-center/);
-});
-
 test('ruler uses actual responsive layout and retains original CN top / JP bottom design', () => {
   const component=fs.readFileSync(path.join(classicApp,'components/ReaderFilmViewport.tsx'),'utf8');
   assert.match(component,/getComputedStyle\(pair!\)\.flexDirection === 'column'/);

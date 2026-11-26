@@ -178,7 +178,7 @@
     :is(#magi-home-display,#magi-reader-display,.magi-floating-window)
     :is(.magi-home-category-trigger[data-selected='true'],.magi-home-category-filter[data-selected='true'],
       button[aria-pressed='true'],.magi-reader-header-identity,.magi-floating-window-titlebar,
-      .magi-reader-sidebar-category-button[aria-expanded='true'],.magi-reader-sidebar-folder-button[aria-expanded='true'],
+      .magi-reader-sidebar-category-button[data-current-path='true'],.magi-reader-sidebar-folder-button[data-current-path='true'],
       .magi-reader-sidebar-section-item[aria-current='location'],.magi-reader-sidebar-folder-button > span:last-child,.magi-reader-branch-header) {
     --magi-display-text-echo: var(--magi-display-inverse-echo);
     --magi-global-text-registration: clamp(.65px,.085em,1.4px) 0 .012em rgba(255,255,248,.95);

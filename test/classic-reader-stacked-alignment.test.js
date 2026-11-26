@@ -19,7 +19,7 @@ function components(theme, status = 'idle') {
   const { VoicePlayButton } = modules.fragments('components/voice/VoicePlayButton.tsx', ['VoicePlayButton'], {
     useSyncExternalStore: (_subscribe, getSnapshot) => getSnapshot(),
     voicePlaybackController: { subscribe() {}, getSnapshot: () => snapshot, getServerSnapshot: () => snapshot, toggle() {} },
-    isLegacyVnVoiceUrl: value => typeof value === 'string' && value.startsWith('/corpus/'),
+    isLegacyVnVoiceUrl: modules.load('lib/audio/voice-cue.ts').isLegacyVnVoiceUrl,
     LoaderCircle: 'svg', Square: 'svg', Volume2: 'svg',
   });
   return modules.fragments('app/reader/[id]/page.tsx', ['countLineBreaks','translatedSpeaker','lineTextAlignClass','lineKindClass','speakerColor','SourceStatistics','SpeakerLabel','StoryRow'], {
@@ -36,7 +36,7 @@ const propsFor = (theme, mode, layout, editing, voice, missing = null) => ({ ...
   row: { cn: missing === 'cn' ? undefined : { speaker: '很长很长很长的中文角色姓名', text: '中文第一行\n第二行' },
     jp: missing === 'jp' ? undefined : { speaker: 'とても長い日本語の登場人物名', text: '日本語第一行\n第二行' } },
   isEditMode: editing, editedLines: [{ speaker: '', text: '编辑第一行\n第二行' }], nativeSpeakerEditable: true,
-  voicePanelExpanded: voice !== 'hidden', voiceRouteError: voice === 'error' ? '路由读取失败' : '',
+  voicePanelExpanded: voice !== 'hidden',
   voiceSlot: voice === 'resolved' ? { eventIds: ['native-event'], cues: [{ cueId: 'native-cue', url: '/corpus/voice/native.ogg', sourceKey: 'native-source' }] } : null,
 });
 
@@ -53,9 +53,11 @@ test('actual StoryRow and VoicePlayButton DOM match voice/name/text columns acro
   let cases = 0, paneChecks = 0;
   for (const theme of ['light','paper','green','dark','frost']) {
     const { StoryRow } = components(theme);
-    for (const mode of ['cn','jp','split']) for (const editing of [false,true]) for (const voice of ['hidden','resolved','unresolved','error'])
+    for (const mode of ['cn','jp','split']) for (const editing of [false,true]) for (const voice of ['hidden','resolved','unresolved','bare-id'])
       for (const [layout,width] of [['stacked',390],['stacked',1280],['side-by-side',390],['side-by-side',1280]]) {
-        const dom = markup(StoryRow, propsFor(theme,mode,layout,editing,voice));
+        const props = propsFor(theme,mode,layout,editing,voice);
+        if (voice === 'bare-id') props.row.cn.audioCueId = 'vo_char_3031_00_01';
+        const dom = markup(StoryRow, props);
         const panes = query(dom, '.magi-bilingual-pair > [lang]');
         assert.equal(panes.length, mode === 'split' ? 2 : 1);
         for (const pane of panes) {
@@ -74,11 +76,10 @@ test('actual StoryRow and VoicePlayButton DOM match voice/name/text columns acro
               assert.match(control.attrs['aria-label'],/native-cue/);
               if (grid) { assert.equal(declarations(control,width).width,'24px'); assert.equal(declarations(control,width).height,'24px'); }
             }
-            for (const label of query(slot,'[data-voice-unavailable-label]')) if (grid) assert.equal(declarations(label,width).display,'none');
           }
           paneChecks++;
         }
-        assert.equal(query(dom,'[data-voice-slot]').length,voice === 'hidden' ? 0 : 1);
+        assert.equal(query(dom,'[data-voice-slot]').length,voice === 'resolved' ? 1 : 0);
         cases++;
       }
   }
@@ -103,5 +104,37 @@ test('actual native voice button retains loading/playing/error accessibility and
     assert.match(buttons[0].attrs['aria-label'],status === 'loading' ? /停止加载/ : ['playing','paused'].includes(status) ? /停止语音/ : /播放/);
     assert.equal(buttons[0].attrs['aria-pressed'],String(['playing','paused'].includes(status)));
     assert.equal(query(dom,'[role="status"]').length,status === 'error' ? 1 : 0);
+  }
+});
+
+test('Kana EV01 renders the resolved original recording only; adjacent silent lines match the collapsed DOM exactly', () => {
+  const modules = classicModules(), id = 'kana-okaeri/ev01';
+  const base = path.join(process.env.ADV_CLASSIC_PUBLIC_ROOT ?? path.join(classicApp,'public'), 'data/legacy-vn', id);
+  const { parseLegacyVoiceRouteDocument } = modules.load('lib/legacy-vn-voice-routing.ts');
+  const { buildSharedNativeAlignment, mergeNativeAlignedRows } = modules.load('lib/legacy-vn-alignment.ts');
+  const { parseStoryContent } = modules.load('lib/story-parser.ts');
+  const route = parseLegacyVoiceRouteDocument(JSON.parse(fs.readFileSync(base + '.routes.json','utf8')),id);
+  const lines = language => parseStoryContent(fs.readFileSync(base + '_' + language + '.txt','utf8'), { mergeConsecutiveTextLines:false }).lines;
+  const rows = mergeNativeAlignedRows(buildSharedNativeAlignment(route,lines('cn'),lines('jp')));
+  const cueId = 'cue-9192076e385ecf58';
+  assert.equal(rows[25].cn.text, '「哥哥」');
+  assert.equal(rows[25].jpSlot.cues[0].url, '/corpus/archive/raw/kana/VOICE.unpacked/KAN2354.OGG');
+  for (const theme of ['light','dark','frost']) {
+    const { StoryRow } = components(theme);
+    for (const index of [24,25,26]) {
+      const row = rows[index], props = { ...rowProps, index, theme, row, voiceSlot: row.jpSlot };
+      const render = expanded => renderToStaticMarkup(React.createElement(StoryRow, { ...props, voicePanelExpanded:expanded }));
+      const expanded = render(true);
+      if (index === 25) {
+        const buttons = query(parseMarkup(expanded),'button');
+        assert.equal(buttons.length,1);
+        assert.equal(buttons[0].attrs['aria-label'], '播放：' + cueId);
+        assert.equal(Object.hasOwn(buttons[0].attrs,'disabled'),false);
+      } else {
+        assert.equal(row.jpSlot.cues.length,0);
+        assert.equal(expanded,render(false));
+        assert.equal(query(parseMarkup(expanded),'button, [tabindex]').length,0);
+      }
+    }
   }
 });

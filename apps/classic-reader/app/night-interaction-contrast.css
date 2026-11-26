@@ -3,10 +3,10 @@
      Hover still uses the separately defined dark face and white registered ink. */
   html[data-reader-theme='dark'][data-night-phosphor] body
     #magi-reader-display.magi-reader-root.magi-reader-theme-dark:not(.magi-reader-theme-frost) .magi-reader-sidebar
-    :is(.magi-reader-sidebar-category-button[aria-expanded='true'],.magi-reader-sidebar-folder-button[aria-expanded='true'],.magi-reader-sidebar-section-item[aria-current='location']):not(:hover):not(:focus-visible),
+    :is(.magi-reader-sidebar-category-button[data-current-path='true'],.magi-reader-sidebar-folder-button[data-current-path='true'],.magi-reader-sidebar-section-item[aria-current='location']):not(:hover):not(:focus-visible),
   html[data-reader-theme='dark'][data-night-phosphor] body
     #magi-reader-display.magi-reader-root.magi-reader-theme-dark:not(.magi-reader-theme-frost) .magi-reader-sidebar
-    :is(.magi-reader-sidebar-category-button[aria-expanded='true'],.magi-reader-sidebar-folder-button[aria-expanded='true'],.magi-reader-sidebar-section-item[aria-current='location']):not(:hover):not(:focus-visible) :is(span,svg) {
+    :is(.magi-reader-sidebar-category-button[data-current-path='true'],.magi-reader-sidebar-folder-button[data-current-path='true'],.magi-reader-sidebar-section-item[aria-current='location']):not(:hover):not(:focus-visible) :is(span,svg) {
     color: #141b12 !important; -webkit-text-fill-color: currentColor !important;
     opacity: 1 !important;
   }

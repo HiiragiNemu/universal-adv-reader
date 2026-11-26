@@ -196,7 +196,8 @@ function ScrollRail({ rail }: { rail: Rail }) {
       <path ref={hitThumb} className="magi-optical-scroll-thumb-hit" d={path(thumb.start, thumb.length)} />
     </g>
   </svg>{createPortal(<svg className="magi-optical-scroll-paint" aria-hidden="true"
-    data-scroll-paint-for={rail.id} data-active={active} width={root.width} height={root.height} style={{ color: rail.color }}>
+    data-scroll-paint-for={rail.id} data-sidebar-paint={target.matches('[data-sidebar-scroll-container]') || undefined}
+    data-active={active} width={root.width} height={root.height} style={{ color: rail.color }}>
     {/* Paint in source coordinates under the original grain/beam/registration.
         Only the transparent hit path above uses inverse-lens coordinates. */}
     <path className="magi-optical-scroll-track" d={`M${rail.x},${rail.y} v${height}`} />

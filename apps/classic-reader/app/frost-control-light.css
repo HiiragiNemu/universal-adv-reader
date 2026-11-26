@@ -54,7 +54,7 @@
   /* Transparent hit buttons do not receive paint. Their visible parent does. */
   html[data-reader-theme='frost'] body
     :is(#magi-home-display.magi-home-shell.magi-home-frost-root.magi-home-dark-root,#magi-reader-display.magi-reader-root.magi-reader-theme-frost.magi-reader-theme-dark,.magi-floating-window[data-reader-theme='frost'])
-    :is(button,a,[role='button'],summary,label:has(input)):not(.magi-reader-brand,.magi-folder-heading-flow,.magi-home-category-filter-hit):not(:disabled):not([aria-disabled='true']):is(:hover,:focus-visible,[aria-pressed='true'],[aria-expanded='true'],[aria-current='page'],[aria-current='location'],[data-selected='true'],:has(input:checked)) {
+    :is(button,a,[role='button'],summary,label:has(input)):not(.magi-reader-brand,.magi-folder-heading-flow,.magi-home-category-filter-hit):not(:disabled):not([aria-disabled='true']):is(:hover,:focus-visible,[aria-pressed='true'],[aria-expanded='true']:not(.magi-reader-sidebar-category-button,.magi-reader-sidebar-folder-button,.magi-reader-story-expand-button),[data-current-path='true'],[aria-current='page'],[aria-current='location'],[data-selected='true'],:has(input:checked)) {
     clip-path: none !important;
     overflow: visible !important;
     border-color: #b5ded1 !important;
@@ -66,7 +66,7 @@
   }
   html[data-reader-theme='frost'] body
     :is(#magi-home-display.magi-home-shell.magi-home-frost-root.magi-home-dark-root,#magi-reader-display.magi-reader-root.magi-reader-theme-frost.magi-reader-theme-dark,.magi-floating-window[data-reader-theme='frost'])
-    :is(button,a,[role='button'],summary,label:has(input)):not(.magi-reader-brand,.magi-home-category-filter-hit):is(:hover,:focus-visible,[aria-pressed='true'],[aria-expanded='true'],[aria-current='page'],[aria-current='location'],[data-selected='true']) :is(span,strong,b,small,svg) {
+    :is(button,a,[role='button'],summary,label:has(input)):not(.magi-reader-brand,.magi-home-category-filter-hit):is(:hover,:focus-visible,[aria-pressed='true'],[aria-expanded='true']:not(.magi-reader-sidebar-category-button,.magi-reader-sidebar-folder-button,.magi-reader-story-expand-button),[data-current-path='true'],[aria-current='page'],[aria-current='location'],[data-selected='true']) :is(span,strong,b,small,svg) {
     color: #d8eee3 !important; -webkit-text-fill-color: currentColor !important;
     text-shadow: var(--magi-film-lit-text) !important;
   }

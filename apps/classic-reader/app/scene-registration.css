@@ -61,7 +61,7 @@
     --magi-night-text-shadow: var(--magi-night-white-shadow);
   }
   html[data-reader-theme='dark'][data-night-phosphor] body :is(#magi-home-display,#magi-reader-display,.magi-floating-window)
-    :is(button[aria-pressed='true'],.magi-home-category-trigger[data-selected='true'],.magi-home-category-filter[data-selected='true'],.magi-reader-header-identity,.magi-floating-window-titlebar,.magi-reader-sidebar-category-button[aria-expanded='true'],.magi-reader-sidebar-folder-button[aria-expanded='true'],.magi-reader-sidebar-section-item[aria-current='location'],.magi-reader-branch-header) {
+    :is(button[aria-pressed='true'],.magi-home-category-trigger[data-selected='true'],.magi-home-category-filter[data-selected='true'],.magi-reader-header-identity,.magi-floating-window-titlebar,.magi-reader-sidebar-category-button[data-current-path='true'],.magi-reader-sidebar-folder-button[data-current-path='true'],.magi-reader-sidebar-section-item[aria-current='location'],.magi-reader-branch-header) {
     --magi-night-text-shadow: clamp(.08px,calc(.14em - 1.03px),1.7px) 0 .007em #fffef1,clamp(.12px,calc(.21em - 1.52px),2.6px) .006em .015em #ffffd980;
   }
   html[data-screen-registration='true'][data-reader-theme='dark'][data-night-phosphor] body

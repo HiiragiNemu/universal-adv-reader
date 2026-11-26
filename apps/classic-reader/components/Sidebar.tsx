@@ -144,6 +144,7 @@ const NATURAL_COLLATOR = new Intl.Collator(['zh-CN', 'ja-JP'], {
 type SidebarProps = {
   stories: Story[];
   currentId?: string;
+  readingAnchor?: string;
   isOpen: boolean;
   onClose: () => void;
   className?: string;
@@ -166,6 +167,7 @@ const displayFolder = (category: string, folder: string): string => {
 export default function Sidebar({
   stories,
   currentId,
+  readingAnchor,
   isOpen,
   onClose,
   className = '',
@@ -214,7 +216,7 @@ export default function Sidebar({
       tree.style.removeProperty('--magi-section-path-end');
       delete tree.dataset.activePath;
     };
-  }, [activeSectionAnchor, currentId, stories, storySectionOverrides, theme]);
+  }, [activeSectionAnchor, readingAnchor, currentId, stories, categoryOverrides, folderOverrides, storySectionOverrides, sourceLocale, theme]);
 
   useEffect(() => {
     if (!isOpen) setStorySectionOverrides({});
@@ -291,6 +293,8 @@ export default function Sidebar({
     () => stories.find(story => story.id === currentId),
     [currentId, stories],
   );
+  const selectedCategory = currentStory && (currentStory.category || 'Unclassified');
+  const selectedFolder = currentStory && (currentStory.folder || '未分类');
   const showExedra =
     currentStory
       ? currentStory.game === 'exedra' || currentStory.category.startsWith('exedra_')
@@ -425,7 +429,7 @@ export default function Sidebar({
             const config = CATEGORY_CONFIG[category] || { label: category, icon: Folder };
             const Icon = config.icon;
             const defaultOpen =
-              category === currentStory?.category ||
+              category === selectedCategory ||
               (!currentStory && category === lastCategory);
             const categoryOpen = categoryOverrides[category] ?? defaultOpen;
 
@@ -434,6 +438,7 @@ export default function Sidebar({
                 <button
                   type="button"
                   aria-expanded={categoryOpen}
+                  data-current-path={category === selectedCategory || undefined}
                   onClick={() => {
                     setLastCategory(category);
                     setCategoryOverrides(previous => ({
@@ -442,7 +447,7 @@ export default function Sidebar({
                     }));
                   }}
                   className={`magi-reader-sidebar-category-button flex w-full items-center gap-2 rounded-md px-2 py-3 text-sm font-bold transition-colors ${
-                    categoryOpen ? 'bg-black/10' : 'opacity-70'
+                    category === selectedCategory ? 'bg-black/10' : 'opacity-70'
                   } ${hoverClass}`}
                 >
                   {categoryOpen ? <ChevronDown size={14} /> : <ChevronRight size={14} />}
@@ -459,8 +464,8 @@ export default function Sidebar({
                       .map(folder => {
                         const folderKey = `${category}\u0000${folder}`;
                         const defaultFolderOpen =
-                          category === currentStory?.category &&
-                          folder === currentStory.folder;
+                          category === selectedCategory &&
+                          folder === selectedFolder;
                         const folderOpen =
                           folderOverrides[folderKey] ?? defaultFolderOpen;
                         const items = [...groupedData[category][folder]].sort(compareNativeStories);
@@ -493,6 +498,7 @@ export default function Sidebar({
                           <button
                             type="button"
                             aria-expanded={folderOpen}
+                            data-current-path={defaultFolderOpen || undefined}
                             onClick={() => setFolderOverrides(previous => ({
                               ...previous,
                               [folderKey]: !(previous[folderKey] ?? defaultFolderOpen),
@@ -550,7 +556,7 @@ export default function Sidebar({
                                 });
                                 const hasSections = sectionLinks.length > 0;
                                 const selectedSectionAnchor = sectionLinks.find(section =>
-                                  section.anchorId === activeSectionAnchor,
+                                  section.anchorId === (readingAnchor || activeSectionAnchor),
                                 )?.anchorId ?? sectionLinks[0]?.anchorId;
                                 const defaultSectionsOpen = active;
                                 const sectionsOpen = storySectionOverrides[story.id]
