@@ -8,6 +8,12 @@ const base=path.dirname(fileURLToPath(import.meta.url)),site=process.env.ADV_TES
 const expectedIndex=JSON.parse(await fs.readFile(path.resolve(base,'../../apps/classic-reader/public/story_index.json'),'utf8'));
 const expectedPending=expectedIndex.reduce((sum,row)=>sum+(row.pending_review_rows||0),0),expectedReviewScripts=expectedIndex.filter(row=>row.pending_review_rows>0).length;
 const pendingFor=id=>expectedIndex.find(row=>row.id===id)?.pending_review_rows||0;
+const irisSource=expectedIndex.filter(row=>row.native_group_id==='n3-main');
+assert(irisSource.length>0,'Missing native Iris source group');
+const irisTotals=irisSource.reduce((totals,row)=>({rows:totals.rows+row.progress_rows,chinese:totals.chinese+row.chinese_rows,reviewed:totals.reviewed+row.reviewed_rows}),{rows:0,chinese:0,reviewed:0});
+assert(irisTotals.rows>0&&irisTotals.reviewed<=irisTotals.chinese&&irisTotals.chinese<=irisTotals.rows,'Invalid native Iris source counts');
+const irisCoverage=Math.floor(irisTotals.chinese/irisTotals.rows*10000)/100;
+const irisCompletion=Math.floor(irisTotals.reviewed/irisTotals.rows*10000)/100;
 const browser=await localBrowser(out),report={schema:'reader-content-browser/v1',date:new Date().toISOString(),browser:'isolated headless Edge',humanAccepted:false,humanListeningVerified:false,checks:[]};
 const save=()=>fs.writeFile(path.join(out,'verification.json'),JSON.stringify(report,null,2));
 const check=async(name,run)=>{try{report.checks.push({name,result:'PASS',details:await run()});console.log('PASS '+name);}catch(e){report.checks.push({name,result:'FAIL',error:e.stack??String(e)});console.log('FAIL '+name+' '+e.message);await browser.screenshot('failed-'+report.checks.length).catch(()=>{});}await save();};
@@ -21,7 +27,7 @@ try{
  await check('Initial load, asynchronous progress, clicks and reload keep identical paragraph-weighted colors',async()=>{
   await nav('/apps/web/','.magi-folder-source-card');const before=await snapshot();assert.equal(before.cards.length,8);
   await browser.wait('window.__progressReturned',20000);await delay(300);const after=await snapshot();assert.deepEqual(after,before);
-  const iris=after.cards.find(c=>c.title?.includes('小小的伊丽丝'));assert(iris);assert(Number(iris.completion)>99&&Number(iris.completion)<=100);assert.equal(Number(iris.coverage),100);
+  const iris=after.cards.find(c=>c.title?.includes('小小的伊丽丝'));assert(iris);assert.equal(Number(iris.completion),irisCompletion);assert.equal(Number(iris.coverage),irisCoverage);
   await browser.click('.magi-folder-source-card > button');const clicked=await snapshot();assert.deepEqual(clicked,after);
   await nav('/apps/web','.magi-folder-source-card');await browser.wait('window.__progressReturned',20000);assert.deepEqual(await snapshot(),after);
   await browser.screenshot('home-paper-desktop');return {before,after};
