@@ -52,7 +52,7 @@ test('cloud input restore rejects corrupt remote data and never overwrites exist
 test('About retains exactly the requested menu kinds and native complete staff roles', async () => {
   const source = await read('apps/classic-reader/components/AboutModal.tsx');
   const links = JSON.parse(source.match(/const LINKS = (\[[\s\S]*?\n\]);/)[1]);
-  assert.deepEqual(links.map(l => l.icon), ['QQ', 'B站', '剧情', 'L2D', '3D', '下载', '搜索', 'WIKI', '进度']);
+  assert.deepEqual(links.map(l => l.icon), ['QQ', 'B站', '剧情', 'L2D', '3D', '下载', 'Pixiv', '搜索', 'WIKI', '进度']);
   assert.equal(links[0].subtitle, 'QQ：254489200');
   assert.match(source, /贡献名单/); assert.match(source, /赞助支持/);
   assert.doesNotMatch(source, /928098518|858083286|圆环攻略组|汉化修订与投稿帮助|本地修订索引/);

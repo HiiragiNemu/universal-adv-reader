@@ -49,6 +49,13 @@ const LINKS = [
     "subtitle": "下载中心与使用教程"
   },
   {
+    "href": "https://madeinmagius-site.pages.dev/pixez/",
+    "icon": "Pixiv",
+    "iconClass": "from-[#0ea5e9] to-[#0284c7]",
+    "title": "Pixez Pulse · Pixiv 标签分析",
+    "subtitle": "关联标签统计、分类与提示词收集"
+  },
+  {
     "href": "https://magireco-call-search-cn.pages.dev/",
     "icon": "搜索",
     "iconClass": "from-[#06b6d4] to-[#0891b2]",
