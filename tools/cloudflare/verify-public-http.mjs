@@ -33,7 +33,9 @@ try {
     assert.match(response.headers.get('cache-control') || '', /max-age=0/);
     const progress = await readPublic('/api/proofreading/machine-status', value => value.total === index.length && value.pendingReviewRows === expected.pendingReviewRows && value.chineseRows === expected.chineseRows);
     assert.equal(progress.total, index.length); assert.equal(progress.entries.length, index.length); assert.equal(progress.pendingReviewRows, expected.pendingReviewRows); assert.equal(progress.needsReview, expected.needsReview);
-    assert.equal(progress.rows, progress.chineseRows);
+    // Native source rows include entries for which there is no Chinese line.
+    assert.equal(progress.rows, expected.rows);
+    assert.equal(progress.chineseRows, expected.chineseRows);
     const config = await readPublic('/api/proofreading/config', value => value.source_revision === receipt.buildId); assert.equal(config.submissions_enabled, false); assert.equal(config.source_revision, receipt.buildId);
     return { buildId: release.buildId, stories: progress.total, pendingRows: progress.pendingReviewRows, chineseRows: progress.chineseRows, publicSubmissionEnabled: false };
   });

@@ -417,6 +417,7 @@ export default function ReaderPage({ params }: { params: Promise<{ id: string }>
   const [loading, setLoading] = useState(true);
   const [mode, setMode] = useState<ReaderMode>('cn');
   const [sidebarOpen, setSidebarOpen] = useState(false);
+  const closeSidebar = useCallback(() => setSidebarOpen(false), []);
   const [showSettings, setShowSettings] = useState(false);
   const [lineHeight, setLineHeight] = useState(1.1);
   const [bilingualLayout, setBilingualLayout] =
@@ -1967,7 +1968,7 @@ export default function ReaderPage({ params }: { params: Promise<{ id: string }>
         currentId={currentStory?.id ?? id}
         readingAnchor={readingSection?.story === id ? readingSection.anchor : undefined}
         isOpen={sidebarOpen}
-        onClose={() => setSidebarOpen(false)}
+        onClose={closeSidebar}
         className={sidebarOpen ? '' : 'hidden md:flex'}
       />
 

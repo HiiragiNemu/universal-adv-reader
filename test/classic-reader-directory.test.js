@@ -39,12 +39,13 @@ function sidebarModule(theme, extras = {}) {
   const { modules, bindings } = common(theme);
   return modules.fragments('components/Sidebar.tsx', ['READER_SIDEBAR_COMPACT_DEFAULT', 'FROST_SIDEBAR_WIDTH_STORAGE_KEY',
     'SIDEBAR_WIDTH_SCOPE_RESTORE_KEY', 'subscribeSectionAnchor', 'sectionAnchorSnapshot', 'CATEGORY_CONFIG',
-    'EXEDRA_CATEGORIES', 'NATURAL_COLLATOR', 'storyPercent', 'displayLabel', 'displayFolder', 'Sidebar'], {
+    'EXEDRA_CATEGORIES', 'NATURAL_COLLATOR', 'storyPercent', 'displayLabel', 'displayFolder', 'buildSidebarIndex', 'SidebarStory', 'SidebarFolder', 'Sidebar'], {
     ...bindings, useRouter: () => ({ prefetch() {} }), useDialog: () => React.useRef(null),
     MadeInMagiusLogo: () => React.createElement('span', null, 'logo fixture'), ...extras,
   });
 }
 function descendants(node) {
+  if (node?.type?.$$typeof === Symbol.for('react.memo')) return descendants(node.type.type(node.props));
   if (!node || typeof node !== 'object') return [];
   if (Array.isArray(node)) return node.flatMap(descendants);
   return [node, ...descendants(node.props?.children)];
@@ -115,6 +116,23 @@ test('actual sidebar selects first section without a hash and emits exact native
     assert.doesNotMatch(html, /Narcissu 10th Anniversary Anthology Project/);
     assert.ok(html.includes(`title="后记 · ${story.id}"`));
     assert.ok(html.includes(`#sec-himeko_atogaki-2-branch-3`));
+  }
+});
+
+test('sidebar indexing preserves native navigation order without sorting the source corpus in place', () => {
+  const { buildSidebarIndex } = sidebarModule('paper');
+  const source = Object.freeze([...stories].reverse());
+  const groups = buildSidebarIndex(source, false);
+  assert.equal(groups.flatMap(c => c.folders.flatMap(f => f.items)).length, source.length);
+  for (const { category, folders } of groups) {
+    for (const { folder, items } of folders) {
+      assert.deepEqual(items, source.filter(s => s.category === category && s.folder === folder)
+        .sort(commonOrdering));
+    }
+  }
+  function commonOrdering(a, b) {
+    return (a.native_story_order ?? Number.MAX_SAFE_INTEGER) - (b.native_story_order ?? Number.MAX_SAFE_INTEGER)
+      || a.id.localeCompare(b.id, ['zh-CN', 'ja-JP'], { numeric: true, sensitivity: 'base' });
   }
 });
 

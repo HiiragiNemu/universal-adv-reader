@@ -52,7 +52,7 @@ const rootLayout = path.join(stage, 'app/layout.tsx');
 let layout = await fs.readFile(rootLayout, 'utf8');
 layout = "import { Suspense } from 'react';\n" + layout.replace('{children}', '<Suspense fallback={null}>{children}</Suspense>');
 await fs.writeFile(rootLayout, layout);
-await fs.writeFile(path.join(stage, 'next.config.mjs'), `import path from 'node:path';\nexport default { output: 'export', images: { unoptimized: true }, outputFileTracingRoot: process.cwd(), experimental: { optimizePackageImports: ['lucide-react'], cpus: ${process.env.ADV_BUILD_MODE === 'cloudflare-git' ? 2 : 8} }, webpack(config) { config.resolve.alias = { ...config.resolve.alias, '@vercel/og': false, resvg: false, sharp: false, 'yoga-wasm-web': false }; return config; } };\n`);
+await fs.writeFile(path.join(stage, 'next.config.mjs'), `import path from 'node:path';\nexport default { output: 'export', images: { unoptimized: true }, outputFileTracingRoot: process.cwd(), experimental: { optimizePackageImports: ['lucide-react'], cpus: ${process.env.ADV_LOW_LOAD === '1' ? 1 : process.env.ADV_BUILD_MODE === 'cloudflare-git' ? 2 : 8} }, webpack(config) { config.resolve.alias = { ...config.resolve.alias, '@vercel/og': false, resvg: false, sharp: false, 'yoga-wasm-web': false }; return config; } };\n`);
 const ts = JSON.parse(await fs.readFile(path.join(source, 'tsconfig.json'), 'utf8'));
 ts.include = ['next-env.d.ts', 'cloudflare-env.d.ts', 'app/**/*.ts', 'app/**/*.tsx', 'components/**/*.tsx', '.next/types/**/*.ts'];
 ts.exclude = ['node_modules', '**/*.test.ts', '**/*.test.tsx'];

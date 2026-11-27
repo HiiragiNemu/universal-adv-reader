@@ -1,6 +1,7 @@
 "use client";
 
 import {
+  memo,
   useCallback,
   useEffect,
   useMemo,
@@ -28,7 +29,7 @@ import {
 } from 'lucide-react';
 
 import { characterFolderColorFor } from '@/app/config/dictionary';
-import { isNightTheme, useGlobal } from '@/app/providers';
+import { isNightTheme, useGlobal, type Theme } from '@/app/providers';
 import { categoryOrder } from '@/lib/category-order';
 import { storySectionDetails } from '@/lib/story-parser';
 import {
@@ -164,6 +165,303 @@ const displayFolder = (category: string, folder: string): string => {
 };
 
 
+
+type OpenMap = Record<string, boolean>;
+type ToggleStory = (folderKey: string, storyId: string, defaultOpen: boolean) => void;
+function buildSidebarIndex(stories: Story[], showExedra: boolean) {
+  const result: Record<string, Record<string, Story[]>> = {};
+  for (const story of stories) {
+    const category = story.category || 'Unclassified';
+    const storyIsExedra =
+      story.game === 'exedra' || category.startsWith('exedra_');
+    if (storyIsExedra !== showExedra) continue;
+    if (showExedra && !EXEDRA_CATEGORIES.has(category)) continue;
+    const folder = story.folder || '未分类';
+    result[category] ??= {};
+    result[category][folder] ??= [];
+    result[category][folder].push(story);
+  }
+  return Object.keys(result).sort((a, b) => categoryOrder(a) - categoryOrder(b) || NATURAL_COLLATOR.compare(a, b)).map(category => {
+    const folders = Object.entries(result[category]).map(([folder, items]) => {
+      items.sort(compareNativeStories); // Group-local array, never the source list.
+      const average = items.length
+        ? Math.round(
+            items.reduce(
+              (sum, story) => sum + storyPercent(story),
+              0,
+            ) / items.length,
+          )
+        : 0;
+      const coldFolderState = groupTranslationVisualState(items);
+      const folderLabel = items.some(story => story.section_display_titles)
+        ? displayFolder(category, folder)
+        : resolveOfficialChapterTitle(items, displayFolder(category, folder));
+      return { folder, items, average, coldFolderState, folderLabel, order: nativeGroupOrder(items) };
+    }).sort((a, b) => a.order - b.order || NATURAL_COLLATOR.compare(a.folder,b.folder));
+    return {category, folders};
+  });
+}
+type FolderNode = ReturnType<typeof buildSidebarIndex>[number]['folders'][number];
+
+const SidebarStory = memo(function StoryEntry({ story, active, anchor, theme, sourceLocale, sectionsOpen, folderKey, onToggle, onClose }: {
+  story: Story; active: boolean; anchor?: string; theme: Theme; sourceLocale?: SidebarProps['sourceLocale'];
+  sectionsOpen: boolean; folderKey: string; onToggle: ToggleStory; onClose: () => void;
+}) {
+  const percent = storyPercent(story);
+  const coldStoryState = translationVisualState(story);
+  const label = displayLabel(story);
+  const nativeLinks = nativeSectionLinks(story, sourceLocale);
+  const sectionLinks = nativeLinks.length ? nativeLinks : (story.sections ?? []).map((section, sectionIndex) => {
+    const details = storySectionDetails(section);
+    return {
+      anchorId: details.anchorId,
+      title: resolveOfficialSectionTitle(
+        story.official_tw_section_titles,
+        sectionIndex + 1,
+        story.source_identity && story.sections?.length === 1 ? label : details.label,
+        {
+          sourceName: details.sourceName,
+          displayTitles: story.section_display_titles,
+          sources: story.official_tw_section_sources,
+          branch: details.branch,
+        },
+      ),
+    };
+  });
+  const hasSections = sectionLinks.length > 0;
+  const selectedSectionAnchor = sectionLinks.find(section =>
+    section.anchorId === anchor,
+  )?.anchorId ?? sectionLinks[0]?.anchorId;
+  const sectionTree = useRef<HTMLElement>(null);
+  useEffect(() => {
+    if (!active || !sectionsOpen) return;
+    const tree = sectionTree.current;
+    const current = tree?.querySelector<HTMLElement>(
+      '.magi-reader-sidebar-section-item[aria-current="location"]',
+    );
+    if (!current || !tree) return;
+    const measure = () => {
+      const item = current.getBoundingClientRect();
+      const parent = tree.getBoundingClientRect();
+      const end = `${item.top - parent.top + item.height / 2}px`;
+      if (tree.style.getPropertyValue('--magi-section-path-end') !== end) tree.style.setProperty('--magi-section-path-end', end);
+      if (!tree.dataset.activePath) tree.dataset.activePath = 'true';
+    };
+    measure();
+    const observer = new ResizeObserver(measure);
+    observer.observe(tree);
+    return () => {
+      observer.disconnect();
+      tree.style.removeProperty('--magi-section-path-end');
+      delete tree.dataset.activePath;
+    };
+  }, [active, sectionsOpen, selectedSectionAnchor, sourceLocale, story, theme]);
+  const storyHref = `/reader/${encodeURIComponent(story.id)}?cn=${encodeURIComponent(story.path_cn || '')}&jp=${encodeURIComponent(story.path_jp || '')}`;
+  const inactiveClass =
+    percent > 0
+      ? isNightTheme(theme)
+        ? 'border-emerald-500/50 bg-emerald-900/30 text-emerald-400 hover:bg-emerald-900/40'
+        : theme === 'light'
+          ? 'border-[#93866f]/40 bg-[#d8cfbd]/60 text-[#514a3f] hover:bg-[#cec3ae]/75'
+          : theme === 'green'
+            ? 'border-[#6a9368] bg-[#b7d0ae] text-[#234f38] hover:bg-[#acc9a2]'
+            : 'border-emerald-500/50 bg-emerald-50 text-emerald-700 hover:bg-emerald-100'
+      : isNightTheme(theme)
+        ? 'border-gray-700 bg-gray-800 text-gray-500 hover:bg-gray-700'
+        : theme === 'light'
+          ? 'border-[#a79b84]/30 bg-[#ece6d9]/45 text-[#756d60] hover:bg-[#ddd4c3]/65'
+          : theme === 'green'
+            ? 'border-[#99b08d] bg-[#c3d2b8] text-[#58745b] hover:bg-[#b7cba9]'
+            : 'border-gray-200 bg-white text-gray-400 hover:bg-gray-50';
+  const activeClass =
+    theme === 'green'
+      ? 'border-[#1B5E20] bg-[#2E7D32] text-white'
+      : isNightTheme(theme)
+        ? 'border-blue-500 bg-blue-900/30 text-blue-300'
+        : theme === 'light'
+          ? 'border-[#81745e] bg-[#c9bea9]/75 text-[#403a32]'
+          : 'border-blue-500 bg-blue-50 text-blue-700';
+
+  return (
+    <div key={story.id} className="magi-reader-story-entry mb-1">
+      <div className="magi-reader-story-row min-w-0 items-stretch gap-1">
+      {hasSections && (
+        <button
+          type="button"
+          aria-label={`${sectionsOpen ? '收起' : '展开'}${label} Episodes`}
+          aria-controls={`nav-sections-${story.id}`}
+          aria-expanded={sectionsOpen}
+          title={sectionsOpen ? '收起 Episodes' : '展开 Episodes'}
+          onClick={() => onToggle(folderKey, story.id, active)}
+          className="magi-reader-story-expand-button grid shrink-0 place-items-center border text-current transition"
+        >
+          <ChevronRight
+            aria-hidden="true"
+            size={13}
+            className={sectionsOpen ? 'rotate-90' : ''}
+          />
+        </button>
+      )}
+      {!hasSections && (
+        <span className="magi-reader-story-leaf-marker" aria-hidden="true">
+          <span className="magi-reader-story-leaf-dot" />
+        </span>
+      )}
+      <Link
+        id={`nav-item-${story.id}`}
+        data-translation-origin={coldStoryState.origin}
+        data-translation-status={coldStoryState.status}
+        data-progress-percent={coldStoryState.percent}
+        style={translationVisualStyle(coldStoryState) as CSSProperties}
+        href={storyHref}
+        data-source-identity={story.source_identity}
+        prefetch={false}
+        onClick={onClose}
+        title={`${label} · ${story.id}`}
+        aria-current={active ? 'page' : undefined}
+        className={`magi-reader-story-link grid min-w-0 rounded-sm border-l-2 px-2 py-1.5 font-mono text-xs transition-all ${
+          active ? activeClass : inactiveClass
+        }`}
+      >
+        {hasSections ? (
+          <Folder aria-hidden="true" size={12} className="magi-reader-story-file-icon" />
+        ) : (
+          <FileText aria-hidden="true" size={12} className="magi-reader-story-file-icon" />
+        )}
+        <span className="magi-reader-story-label">{label}</span>
+        {(story.official_tw || (percent < 100 && !active)) && (
+          <span className="magi-reader-story-meta">
+            {story.official_tw && (
+              <span className="magi-reader-source-badge inline-flex rounded-full border border-[#81745e]/35 bg-[#f0eadf]/60 px-1.5 py-0.5 font-sans text-[9px] font-bold text-[#655d50]">
+                {story.official_tw_label || '台服'}
+              </span>
+            )}
+            {percent < 100 && !active && (
+              <span className="inline-block text-[9px] opacity-60">{story.source_identity ? (story.has_cn ? '有中文 · 待校对' : '仅日文') : `${percent}%`}</span>
+            )}
+          </span>
+        )}
+      </Link>
+      </div>
+
+      {sectionsOpen && sectionLinks.length > 0 && (
+        <nav
+          ref={sectionTree}
+          id={`nav-sections-${story.id}`}
+          aria-label={`${label} Episodes`}
+          className="magi-reader-story-sections magi-reader-sidebar-section-tree mt-1 space-y-0.5"
+        >
+          {sectionLinks.map(details => {
+            const sectionLabel = details.title;
+            return (
+              <Link
+                key={details.anchorId}
+                href={`${storyHref}#${details.anchorId}`}
+                prefetch={false}
+                title={sectionLabel}
+                data-section-anchor={details.anchorId}
+                aria-current={active && selectedSectionAnchor === details.anchorId ? 'location' : undefined}
+                onClick={event => {
+                  if (!active) {
+                    onClose();
+                    return;
+                  }
+                  event.preventDefault();
+                  onClose();
+                  // All story systems use the page-aware reveal handler.
+                  // A target on another page has no DOM node to scroll yet.
+                  if (sectionAnchorSnapshot() === details.anchorId) {
+                    window.dispatchEvent(new HashChangeEvent('hashchange'));
+                  } else {
+                    window.location.hash = details.anchorId;
+                  }
+                }}
+                className={`magi-reader-sidebar-section-item grid w-full min-w-0 px-2 py-1 text-left text-[10px] transition ${
+                  isNightTheme(theme)
+                    ? 'text-gray-400 hover:bg-white/10 hover:text-white'
+                    : 'text-gray-600 hover:bg-black/5 hover:text-black'
+                }`}
+              >
+                <FileText
+                  aria-hidden="true"
+                  size={11}
+                  className="magi-reader-sidebar-section-icon"
+                />
+                <span className="magi-reader-sidebar-section-label">{sectionLabel}</span>
+              </Link>
+            );
+          })}
+        </nav>
+      )}
+    </div>
+  );
+});
+
+const SidebarFolder = memo(function FolderEntry({ node, category, folderKey, folderOpen, defaultFolderOpen, currentId, anchor, theme,
+  sourceLocale, nameColorsEnabled, hoverClass, storyOverrides, onToggleFolder, onToggle, onClose }: {
+  node: FolderNode; category: string; folderKey: string; folderOpen: boolean; defaultFolderOpen: boolean;
+  currentId?: string; anchor?: string; theme: Theme; sourceLocale?: SidebarProps['sourceLocale']; nameColorsEnabled: boolean;
+  hoverClass: string; storyOverrides?: OpenMap; onToggleFolder: (key: string, defaultOpen: boolean) => void;
+  onToggle: ToggleStory; onClose: () => void;
+}) {
+  const {folder, items, average, coldFolderState, folderLabel} = node;
+  const sectionCount = useMemo(() => items.some(s => s.native_sections?.length)
+    ? `${items.reduce((n,s) => n + (s.native_sections?.length ? nativeSectionLinks(s,sourceLocale).length : 1), 0)} 节`
+    : items.length, [items, sourceLocale]);
+  const folderClass =
+    average === 100
+      ? isNightTheme(theme)
+        ? 'text-emerald-400'
+        : 'font-bold text-emerald-700'
+      : average > 0
+        ? 'text-emerald-600'
+        : 'text-gray-500';
+
+  return (
+    <div
+      key={folder}
+      className={`magi-reader-sidebar-folder-node ${folderOpen ? '' : 'magi-sidebar-folder-collapsed'}`}
+    >
+    <button
+      type="button"
+      aria-expanded={folderOpen}
+      data-current-path={defaultFolderOpen || undefined}
+      onClick={() => onToggleFolder(folderKey, defaultFolderOpen)}
+      data-translation-origin={coldFolderState.origin}
+      data-translation-status={coldFolderState.status}
+      data-progress-percent={coldFolderState.percent}
+      style={translationVisualStyle(coldFolderState) as CSSProperties}
+      className={`magi-reader-sidebar-folder-button grid w-full min-w-0 items-center rounded px-2 py-2 text-left text-xs transition-colors ${hoverClass}`}
+    >
+      <ChevronRight
+        aria-hidden="true"
+        size={13}
+        className={`magi-reader-sidebar-folder-disclosure shrink-0 ${folderOpen ? 'rotate-90' : ''}`}
+      />
+      <Folder aria-hidden="true" size={13} className="magi-reader-sidebar-folder-icon shrink-0" />
+      <span
+        className={`magi-reader-sidebar-folder-label min-w-0 truncate leading-tight ${folderClass}`}
+        title={folderLabel}
+        style={readerNameChip(characterFolderColorFor(category, folderLabel), nameColorsEnabled)}
+      >
+        {folderLabel}
+      </span>
+      <span className="shrink-0 rounded bg-black/5 px-1 text-[10px] opacity-50">
+        {sectionCount}
+      </span>
+    </button>
+
+    {folderOpen && (
+      <div className="magi-reader-sidebar-story-tree mt-0.5 space-y-0.5">
+          {items.map(story => <SidebarStory key={story.id} story={story} active={story.id === currentId}
+            anchor={story.id === currentId ? anchor : undefined} theme={theme} sourceLocale={sourceLocale}
+            sectionsOpen={storyOverrides?.[story.id] ?? (story.id === currentId)} folderKey={folderKey} onToggle={onToggle} onClose={onClose} />)}
+      </div>
+    )}
+    </div>
+  );
+});
+
 export default function Sidebar({
   stories,
   currentId,
@@ -184,7 +482,13 @@ export default function Sidebar({
   const activeSectionAnchor = useSyncExternalStore(subscribeSectionAnchor, sectionAnchorSnapshot, () => '');
   const [categoryOverrides, setCategoryOverrides] = useState<Record<string, boolean>>({});
   const [folderOverrides, setFolderOverrides] = useState<Record<string, boolean>>({});
-  const [storySectionOverrides, setStorySectionOverrides] = useState<Record<string, boolean>>({});
+  const [storySectionOverrides, setStorySectionOverrides] = useState<Record<string, OpenMap>>({});
+  const toggleFolder = useCallback((key: string, defaultOpen: boolean) => {
+    setFolderOverrides(prev => ({ ...prev, [key]: !(prev[key] ?? defaultOpen) }));
+  }, []);
+  const toggleStory = useCallback<ToggleStory>((key, id, defaultOpen) => {
+    setStorySectionOverrides(prev => ({ ...prev, [key]: { ...prev[key], [id]: !(prev[key]?.[id] ?? defaultOpen) } }));
+  }, []);
   const readerSidebarDefaultWidth = theme === 'frost'
     ? READER_SIDEBAR_COMPACT_DEFAULT
     : SIDEBAR_WIDTH_DEFAULT;
@@ -195,28 +499,6 @@ export default function Sidebar({
   const resizeCleanupRef = useRef<(() => void) | null>(null);
   const sidebarRef = useDialog<HTMLElement>(isOpen, onClose);
   const scrollContainerRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    const current = scrollContainerRef.current?.querySelector<HTMLElement>(
-      '.magi-reader-sidebar-section-item[aria-current="location"]',
-    );
-    const tree = current?.closest<HTMLElement>('.magi-reader-sidebar-section-tree');
-    if (!current || !tree) return;
-    const measure = () => {
-      const item = current.getBoundingClientRect();
-      const parent = tree.getBoundingClientRect();
-      tree.style.setProperty('--magi-section-path-end', `${item.top - parent.top + item.height / 2}px`);
-      tree.dataset.activePath = 'true';
-    };
-    measure();
-    const observer = new ResizeObserver(measure);
-    observer.observe(tree);
-    return () => {
-      observer.disconnect();
-      tree.style.removeProperty('--magi-section-path-end');
-      delete tree.dataset.activePath;
-    };
-  }, [activeSectionAnchor, readingAnchor, currentId, stories, categoryOverrides, folderOverrides, storySectionOverrides, sourceLocale, theme]);
 
   useEffect(() => {
     if (!isOpen) setStorySectionOverrides({});
@@ -300,21 +582,7 @@ export default function Sidebar({
       ? currentStory.game === 'exedra' || currentStory.category.startsWith('exedra_')
       : lastCategory.startsWith('exedra_');
 
-  const groupedData = useMemo(() => {
-    const result: Record<string, Record<string, Story[]>> = {};
-    for (const story of stories) {
-      const category = story.category || 'Unclassified';
-      const storyIsExedra =
-        story.game === 'exedra' || category.startsWith('exedra_');
-      if (storyIsExedra !== showExedra) continue;
-      if (showExedra && !EXEDRA_CATEGORIES.has(category)) continue;
-      const folder = story.folder || '未分类';
-      result[category] ??= {};
-      result[category][folder] ??= [];
-      result[category][folder].push(story);
-    }
-    return result;
-  }, [showExedra, stories]);
+  const directory = useMemo(() => buildSidebarIndex(stories, showExedra), [stories, showExedra]);
 
   useEffect(() => {
     if (!currentId || !currentStory) return;
@@ -419,13 +687,7 @@ export default function Sidebar({
           data-sidebar-scroll-container="true"
           className="scrollbar-thin flex-1 overflow-y-auto p-2"
         >
-          {Object.keys(groupedData)
-            .sort(
-              (a, b) =>
-                categoryOrder(a) - categoryOrder(b) ||
-                NATURAL_COLLATOR.compare(a, b),
-            )
-            .map(category => {
+          {directory.map(({category, folders}) => {
             const config = CATEGORY_CONFIG[category] || { label: category, icon: Folder };
             const Icon = config.icon;
             const defaultOpen =
@@ -457,257 +719,15 @@ export default function Sidebar({
 
                 {categoryOpen && (
                   <div className="magi-reader-sidebar-folder-tree mt-1 space-y-1">
-                    {Object.keys(groupedData[category])
-                      .sort((a, b) =>
-                        nativeGroupOrder(groupedData[category][a]) - nativeGroupOrder(groupedData[category][b])
-                        || NATURAL_COLLATOR.compare(a, b))
-                      .map(folder => {
-                        const folderKey = `${category}\u0000${folder}`;
-                        const defaultFolderOpen =
-                          category === selectedCategory &&
-                          folder === selectedFolder;
-                        const folderOpen =
-                          folderOverrides[folderKey] ?? defaultFolderOpen;
-                        const items = [...groupedData[category][folder]].sort(compareNativeStories);
-                        const average = items.length
-                          ? Math.round(
-                              items.reduce(
-                                (sum, story) => sum + storyPercent(story),
-                                0,
-                              ) / items.length,
-                            )
-                          : 0;
-                        const coldFolderState = groupTranslationVisualState(items);
-                        const folderLabel = items.some(story => story.section_display_titles)
-                          ? displayFolder(category, folder)
-                          : resolveOfficialChapterTitle(items, displayFolder(category, folder));
-                        const folderClass =
-                          average === 100
-                            ? isNightTheme(theme)
-                              ? 'text-emerald-400'
-                              : 'font-bold text-emerald-700'
-                            : average > 0
-                              ? 'text-emerald-600'
-                              : 'text-gray-500';
-
-                        return (
-                          <div
-                            key={folder}
-                            className={`magi-reader-sidebar-folder-node ${folderOpen ? '' : 'magi-sidebar-folder-collapsed'}`}
-                          >
-                          <button
-                            type="button"
-                            aria-expanded={folderOpen}
-                            data-current-path={defaultFolderOpen || undefined}
-                            onClick={() => setFolderOverrides(previous => ({
-                              ...previous,
-                              [folderKey]: !(previous[folderKey] ?? defaultFolderOpen),
-                            }))}
-                            data-translation-origin={coldFolderState.origin}
-                            data-translation-status={coldFolderState.status}
-                            data-progress-percent={coldFolderState.percent}
-                            style={translationVisualStyle(coldFolderState) as CSSProperties}
-                            className={`magi-reader-sidebar-folder-button grid w-full min-w-0 items-center rounded px-2 py-2 text-left text-xs transition-colors ${hoverClass}`}
-                          >
-                            <ChevronRight
-                              aria-hidden="true"
-                              size={13}
-                              className={`magi-reader-sidebar-folder-disclosure shrink-0 ${folderOpen ? 'rotate-90' : ''}`}
-                            />
-                            <Folder aria-hidden="true" size={13} className="magi-reader-sidebar-folder-icon shrink-0" />
-                            <span
-                              className={`magi-reader-sidebar-folder-label min-w-0 truncate leading-tight ${folderClass}`}
-                              title={folderLabel}
-                              style={readerNameChip(characterFolderColorFor(category, folderLabel), nameColorsEnabled)}
-                            >
-                              {folderLabel}
-                            </span>
-                            <span className="shrink-0 rounded bg-black/5 px-1 text-[10px] opacity-50">
-                              {items.some(story => story.native_sections?.length)
-                                ? `${items.reduce((total, story) => total + (story.native_sections?.length ? nativeSectionLinks(story, sourceLocale).length : 1), 0)} 节`
-                                : items.length}
-                            </span>
-                          </button>
-
-                          {folderOpen && (
-                            <div className="magi-reader-sidebar-story-tree mt-0.5 space-y-0.5">
-                              {items.map(story => {
-                                const active = story.id === currentId;
-                                const percent = storyPercent(story);
-                                const coldStoryState = translationVisualState(story);
-                                const label = displayLabel(story);
-                                const nativeLinks = nativeSectionLinks(story, sourceLocale);
-                                const sectionLinks = nativeLinks.length ? nativeLinks : (story.sections ?? []).map((section, sectionIndex) => {
-                                  const details = storySectionDetails(section);
-                                  return {
-                                    anchorId: details.anchorId,
-                                    title: resolveOfficialSectionTitle(
-                                      story.official_tw_section_titles,
-                                      sectionIndex + 1,
-                                      story.source_identity && story.sections?.length === 1 ? label : details.label,
-                                      {
-                                        sourceName: details.sourceName,
-                                        displayTitles: story.section_display_titles,
-                                        sources: story.official_tw_section_sources,
-                                        branch: details.branch,
-                                      },
-                                    ),
-                                  };
-                                });
-                                const hasSections = sectionLinks.length > 0;
-                                const selectedSectionAnchor = sectionLinks.find(section =>
-                                  section.anchorId === (readingAnchor || activeSectionAnchor),
-                                )?.anchorId ?? sectionLinks[0]?.anchorId;
-                                const defaultSectionsOpen = active;
-                                const sectionsOpen = storySectionOverrides[story.id]
-                                  ?? defaultSectionsOpen;
-                                const storyHref = `/reader/${encodeURIComponent(story.id)}?cn=${encodeURIComponent(story.path_cn || '')}&jp=${encodeURIComponent(story.path_jp || '')}`;
-                                const inactiveClass =
-                                  percent > 0
-                                    ? isNightTheme(theme)
-                                      ? 'border-emerald-500/50 bg-emerald-900/30 text-emerald-400 hover:bg-emerald-900/40'
-                                      : theme === 'light'
-                                        ? 'border-[#93866f]/40 bg-[#d8cfbd]/60 text-[#514a3f] hover:bg-[#cec3ae]/75'
-                                        : theme === 'green'
-                                          ? 'border-[#6a9368] bg-[#b7d0ae] text-[#234f38] hover:bg-[#acc9a2]'
-                                          : 'border-emerald-500/50 bg-emerald-50 text-emerald-700 hover:bg-emerald-100'
-                                    : isNightTheme(theme)
-                                      ? 'border-gray-700 bg-gray-800 text-gray-500 hover:bg-gray-700'
-                                      : theme === 'light'
-                                        ? 'border-[#a79b84]/30 bg-[#ece6d9]/45 text-[#756d60] hover:bg-[#ddd4c3]/65'
-                                        : theme === 'green'
-                                          ? 'border-[#99b08d] bg-[#c3d2b8] text-[#58745b] hover:bg-[#b7cba9]'
-                                          : 'border-gray-200 bg-white text-gray-400 hover:bg-gray-50';
-                                const activeClass =
-                                  theme === 'green'
-                                    ? 'border-[#1B5E20] bg-[#2E7D32] text-white'
-                                    : isNightTheme(theme)
-                                      ? 'border-blue-500 bg-blue-900/30 text-blue-300'
-                                      : theme === 'light'
-                                        ? 'border-[#81745e] bg-[#c9bea9]/75 text-[#403a32]'
-                                        : 'border-blue-500 bg-blue-50 text-blue-700';
-
-                                return (
-                                  <div key={story.id} className="magi-reader-story-entry mb-1">
-                                    <div className="magi-reader-story-row min-w-0 items-stretch gap-1">
-                                    {hasSections && (
-                                      <button
-                                        type="button"
-                                        aria-label={`${sectionsOpen ? '收起' : '展开'}${label} Episodes`}
-                                        aria-controls={`nav-sections-${story.id}`}
-                                        aria-expanded={sectionsOpen}
-                                        title={sectionsOpen ? '收起 Episodes' : '展开 Episodes'}
-                                        onClick={() => setStorySectionOverrides(previous => ({
-                                          ...previous,
-                                          [story.id]: !(previous[story.id] ?? defaultSectionsOpen),
-                                        }))}
-                                        className="magi-reader-story-expand-button grid shrink-0 place-items-center border text-current transition"
-                                      >
-                                        <ChevronRight
-                                          aria-hidden="true"
-                                          size={13}
-                                          className={sectionsOpen ? 'rotate-90' : ''}
-                                        />
-                                      </button>
-                                    )}
-                                    {!hasSections && (
-                                      <span className="magi-reader-story-leaf-marker" aria-hidden="true">
-                                        <span className="magi-reader-story-leaf-dot" />
-                                      </span>
-                                    )}
-                                    <Link
-                                      id={`nav-item-${story.id}`}
-                                      data-translation-origin={coldStoryState.origin}
-                                      data-translation-status={coldStoryState.status}
-                                      data-progress-percent={coldStoryState.percent}
-                                      style={translationVisualStyle(coldStoryState) as CSSProperties}
-                                      href={storyHref}
-                                      data-source-identity={story.source_identity}
-                                      prefetch={false}
-                                      onClick={onClose}
-                                      title={`${label} · ${story.id}`}
-                                      aria-current={active ? 'page' : undefined}
-                                      className={`magi-reader-story-link grid min-w-0 rounded-sm border-l-2 px-2 py-1.5 font-mono text-xs transition-all ${
-                                        active ? activeClass : inactiveClass
-                                      }`}
-                                    >
-                                      {hasSections ? (
-                                        <Folder aria-hidden="true" size={12} className="magi-reader-story-file-icon" />
-                                      ) : (
-                                        <FileText aria-hidden="true" size={12} className="magi-reader-story-file-icon" />
-                                      )}
-                                      <span className="magi-reader-story-label">{label}</span>
-                                      {(story.official_tw || (percent < 100 && !active)) && (
-                                        <span className="magi-reader-story-meta">
-                                          {story.official_tw && (
-                                            <span className="magi-reader-source-badge inline-flex rounded-full border border-[#81745e]/35 bg-[#f0eadf]/60 px-1.5 py-0.5 font-sans text-[9px] font-bold text-[#655d50]">
-                                              {story.official_tw_label || '台服'}
-                                            </span>
-                                          )}
-                                          {percent < 100 && !active && (
-                                            <span className="inline-block text-[9px] opacity-60">{story.source_identity ? (story.has_cn ? '有中文 · 待校对' : '仅日文') : `${percent}%`}</span>
-                                          )}
-                                        </span>
-                                      )}
-                                    </Link>
-                                    </div>
-
-                                    {sectionsOpen && sectionLinks.length > 0 && (
-                                      <nav
-                                        id={`nav-sections-${story.id}`}
-                                        aria-label={`${label} Episodes`}
-                                        className="magi-reader-story-sections magi-reader-sidebar-section-tree mt-1 space-y-0.5"
-                                      >
-                                        {sectionLinks.map(details => {
-                                          const sectionLabel = details.title;
-                                          return (
-                                            <Link
-                                              key={details.anchorId}
-                                              href={`${storyHref}#${details.anchorId}`}
-                                              prefetch={false}
-                                              title={sectionLabel}
-                                              data-section-anchor={details.anchorId}
-                                              aria-current={active && selectedSectionAnchor === details.anchorId ? 'location' : undefined}
-                                              onClick={event => {
-                                                if (!active) {
-                                                  onClose();
-                                                  return;
-                                                }
-                                                event.preventDefault();
-                                                onClose();
-                                                // All story systems use the page-aware reveal handler.
-                                                // A target on another page has no DOM node to scroll yet.
-                                                if (sectionAnchorSnapshot() === details.anchorId) {
-                                                  window.dispatchEvent(new HashChangeEvent('hashchange'));
-                                                } else {
-                                                  window.location.hash = details.anchorId;
-                                                }
-                                              }}
-                                              className={`magi-reader-sidebar-section-item grid w-full min-w-0 px-2 py-1 text-left text-[10px] transition ${
-                                                isNightTheme(theme)
-                                                  ? 'text-gray-400 hover:bg-white/10 hover:text-white'
-                                                  : 'text-gray-600 hover:bg-black/5 hover:text-black'
-                                              }`}
-                                            >
-                                              <FileText
-                                                aria-hidden="true"
-                                                size={11}
-                                                className="magi-reader-sidebar-section-icon"
-                                              />
-                                              <span className="magi-reader-sidebar-section-label">{sectionLabel}</span>
-                                            </Link>
-                                          );
-                                        })}
-                                      </nav>
-                                    )}
-                                  </div>
-                                );
-                              })}
-                            </div>
-                          )}
-                          </div>
-                        );
-                      })}
+                    {folders.map(node => {
+                      const folderKey = `${category}\u0000${node.folder}`;
+                      const selected = category === selectedCategory && node.folder === selectedFolder;
+                      return <SidebarFolder key={folderKey} category={category} folderKey={folderKey} node={node}
+                        defaultFolderOpen={selected} folderOpen={folderOverrides[folderKey] ?? selected}
+                        currentId={selected ? currentId : undefined} anchor={selected ? readingAnchor || activeSectionAnchor : undefined}
+                        theme={theme} sourceLocale={sourceLocale} nameColorsEnabled={nameColorsEnabled} hoverClass={hoverClass}
+                        storyOverrides={storySectionOverrides[folderKey]} onToggleFolder={toggleFolder} onToggle={toggleStory} onClose={onClose} />;
+                    })}
                   </div>
                 )}
               </section>

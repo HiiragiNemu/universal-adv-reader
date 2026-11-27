@@ -16,8 +16,9 @@ const run = async (name, cmd, args, cwd = root) => {
   console.log(name + ': exit ' + result.status);
   if (result.status !== 0) throw Error(name + ' failed: ' + ((result.stdout || '') + (result.stderr || '')).slice(-3500));
 };
-await run('root-tests-final', process.execPath, ['--test', 'test/*.test.js']);
-await run('app-tests-final', process.execPath, ['--experimental-strip-types', '--test',
+const testLimits = process.env.ADV_LOW_LOAD === '1' ? ['--test-concurrency=1'] : [];
+await run('root-tests-final', process.execPath, ['--test', ...testLimits, 'test/*.test.js']);
+await run('app-tests-final', process.execPath, ['--experimental-strip-types', '--test', ...testLimits,
   'lib/machine-review-panel.test.ts', 'lib/reader-character-ruler.test.ts', 'lib/reader-display-preferences.test.ts', 'lib/screen-effects.test.ts',
   'lib/floating-geometry.test.ts', 'lib/viewport-filter.test.ts', 'lib/legacy-vn-corpus.test.ts',
   'lib/legacy-vn-voice-routing.test.ts', 'lib/legacy-vn-voice-routing-corpus.test.ts'], app);
